@@ -143,7 +143,7 @@ const Navigation = () => {
                             title: t("menu.products.row.col-1.title"),
                             ul: [
                                 { label: t("menu.products.row.col-1.ul.li1"), path: "/products/forex" },
-                                { label: t("menu.products.row.col-1.ul.li2"), path: "/" },
+                                { label: t("menu.products.row.col-1.ul.li2"), path: "/products/pm" },
                                 { label: t("menu.products.row.col-1.ul.li3"), path: "/" },
                                 { label: t("menu.products.row.col-1.ul.li4"), path: "/" },
                                 { label: t("menu.products.row.col-1.ul.li5"), path: "/" },

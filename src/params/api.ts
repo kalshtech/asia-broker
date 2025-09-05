@@ -45,3 +45,11 @@ export const params_forex_quote = {
         symbols: ""
     }
 };
+
+
+export const params_crypto_quotes = {
+    url: "/api/crypto/quotes",
+    params: {
+        symbols: ""
+    }
+};

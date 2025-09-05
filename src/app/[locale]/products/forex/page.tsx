@@ -4,7 +4,7 @@ import Banner from "@/components/common/Banner";
 import Markets from "./Markets";
 import Commission from "@/components/common/Commission";
 import MoreMarkets from "@/components/common/MoreMarkets";
-import Guide from "./Guide";
+import Guide from "../../../../components/common/Guide";
 import Profession from "./Profession";
 import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
@@ -60,6 +60,13 @@ export default async function Page() {
             ),
         },
     ];
+
+    const GuideAry =  [
+        { url: "/images/products/forex-swiper1.png", title: t("guide.row.col2.span1.title"), description: t("guide.row.col2.span1.desc") },
+        { url: "/images/products/forex-swiper2.png", title: t("guide.row.col2.span2.title"), description: t("guide.row.col2.span2.desc") },
+        { url: "/images/products/forex-swiper3.png", title: t("guide.row.col2.span3.title"), description: t("guide.row.col2.span3.desc") },
+    ];
+
     return (
         <div>
             <Banner
@@ -82,7 +89,13 @@ export default async function Page() {
                 btnText={t("moreMarket.btnText")}
                 imageUrl={"bg-[url(/images/products/forex-market-background.png)]"}
             />
-            <Guide/>
+            <Guide
+                title={t("guide.title")}
+                left={{ title: t("guide.row.col1.title"), desc: t("guide.row.col1.desc"), more: t("guide.row.col1.more") }}
+                prevEl={"forex-custom-prev"}
+                nextEl={"forex-custom-next"}
+                ary={GuideAry}
+            />
             <Profession/>
             <FAQSection data={QA_DATA} />
             <JoinCommunity/>
