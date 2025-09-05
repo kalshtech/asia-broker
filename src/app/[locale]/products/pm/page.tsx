@@ -87,7 +87,6 @@ export default async function Page() {
                 nextEl={"crypto-custom-next"}
                 ary={GuideAry}
             />
-
             <FAQSection data={QA_DATA} />
 
             <JoinCommunity/>
