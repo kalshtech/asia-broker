@@ -1,0 +1,13 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 8">
+<rect id="Rectangle 41" width="20" height="20" rx="10" fill="#252525"/>
+<g id="Frame" clip-path="url(#clip0_6266_1593)">
+<path id="Vector" d="M13.5386 5.85767H14.9855L11.9751 8.83697C10.8854 9.91545 9.11858 9.91545 8.02885 8.83697L5.01845 5.85767H6.46539L8.75231 8.12098C9.44248 8.804 10.5614 8.804 11.2516 8.12098L13.5385 5.85767H13.5386ZM6.44697 14.1425H5L8.02901 11.1447C9.11873 10.0663 10.8855 10.0663 11.9753 11.1447L15.0043 14.1425H13.5573L11.2518 11.8607C10.5616 11.1777 9.44264 11.1777 8.75248 11.8607L6.44697 14.1425Z" fill="#F6F6F6"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_6266_1593">
+<rect width="10" height="10" fill="white" transform="translate(5 5)"/>
+</clipPath>
+</defs>
+</svg>
