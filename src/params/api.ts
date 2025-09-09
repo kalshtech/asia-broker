@@ -38,3 +38,9 @@ export const params_forex_list = {
     url: "/api/forex/list"
 };
 
+export const params_search_symbol = {
+    url: "/api/search/symbol",
+    params: {
+        query: ""
+    }
+};

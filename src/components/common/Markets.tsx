@@ -139,11 +139,7 @@ const Markets = (props: Props) => {
                 }
             </motion.div>
             <div className={"mt-16"}>
-                <SimpleSearch
-                    onSelect={(opt) => console.log("picked:", opt)}
-                    placeholder={CommonT("search")}
-                    endpoint={""}
-                />
+                <SimpleSearch onSelect={(opt) => console.log("picked:", opt)}/>
             </div>
             {
                 tabList && (
