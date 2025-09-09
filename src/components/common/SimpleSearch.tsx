@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { params_quote_query } from "@/params/api";
 
 type Option = { value: string; label: string };
 
@@ -20,15 +21,8 @@ type Props = {
     onSelect?: (opt: Option) => void;
 };
 
-export default function SimpleRemoteSearch({
-                                               endpoint,
-                                               minChars = 1,
-                                               debounceMs = 300,
-                                               placeholder = "输入关键字搜索…",
-                                               emptyText = "没有匹配结果",
-                                               className,
-                                               onSelect,
-                                           }: Props) {
+export default function SimpleRemoteSearch(props: Props) {
+    const { endpoint, minChars = 1, debounceMs = 300, placeholder = "Search…", emptyText = "No Data", className, onSelect } = props;
     const [query, setQuery] = useState("");
     const [display, setDisplay] = useState(""); // 选中后回填
     const [options, setOptions] = useState<Option[]>([]);
