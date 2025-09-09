@@ -18,51 +18,35 @@ export default async function Page() {
     ];
 
     const mainList = [
-        { symbol: "BTCUSD", ticker: "BTC/USD", name: "" },
-        { symbol: "ETHUSD", ticker: "ETH/USD", name: "" },
-        { symbol: "SOLUSD", ticker: "SOL/USD", name: "" },
-        { symbol: "AVAXUSD", ticker: "AVAX/USD", name: "" },
-        { symbol: "ADAUSD", ticker: "ADA/USD", name: "" },
-        { symbol: "ATOMUSD", ticker: "ATOM/USD", name: "" },
-        { symbol: "LTCUSD", ticker: "LTC/USD", name: "" },
-        { symbol: "BCHUSD", ticker: "BCH/USD", name: "" },
-        { symbol: "TONUSD", ticker: "TON/USD", name: "" },
-        { symbol: "APTUSD", ticker: "APT/USD", name: "" },
-        { symbol: "TRXUSD", ticker: "TRX/USD", name: "" },
-        { symbol: "EOSUSD", ticker: "EOS/USD", name: "" },
+        { symbol: "XAUUSD", name: "" },
+        { symbol: "XAUCNH", name: "" },
+        { symbol: "XAUHKD", name: "" },
+        { symbol: "LAUHKD", name: "" },
+        { symbol: "RKGCNH", name: "" },
+        { symbol: "XAUEUR", name: "" },
+        { symbol: "XAUJPY", name: "" },
+        { symbol: "XAUTHB", name: "" },
+        { symbol: "XAUAUD", name: "" },
+        { symbol: "XAUGBP", name: "" },
+        { symbol: "XAUSGD", name: "" },
+        { symbol: "XAGUSD", name: "" },
+        { symbol: "XAGEUR", name: "" },
+        { symbol: "XAGSGD", name: "" },
+        { symbol: "XPTUSD", name: "" },
+        { symbol: "XPDUSD", name: "" },
     ];
 
     const secondList = [
-        { symbol: "BNBUSD", ticker: "BNB/USD", name: "" },
-        { symbol: "OKBUSD", ticker: "OKB/USD", name: "" },
-        { symbol: "HTUSD", ticker: "HT/USD", name: "" },
-        { symbol: "BITUSD", ticker: "BIT/USD", name: "" },
-        { symbol: "LDOUSD", ticker: "LDO/USD", name: "" },
-        { symbol: "UNIUSD", ticker: "UNI/USD", name: "" },
-        { symbol: "FILUSD", ticker: "FIL/USD", name: "" },
-        { symbol: "BATUSD", ticker: "BAT/USD", name: "" },
-        { symbol: "XRPUSD", ticker: "XRP/USD", name: "" },
-        { symbol: "XLMUSD", ticker: "XLM/USD", name: "" },
-        { symbol: "LINKUSD", ticker: "LINK/USD", name: "" },
-        { symbol: "PYTHUSD", ticker: "PYTH/USD", name: "" }
+        { symbol: "XCUUSD", name: "" },
+        { symbol: "XALUSD", name: "" },
+        { symbol: "XZNUSD", name: "" },
+        { symbol: "XNIUSD", name: "" },
+        { symbol: "XPBUSD", name: "" },
     ]
-
-    const otherList = [
-        { symbol: "DOGEUSD", ticker: "DOGE/USD", name: "" },
-        { symbol: "SHIBUSD", ticker: "SHIB/USD", name: "" },
-        { symbol: "PEPEUSD", ticker: "PEPE/USD", name: "" },
-        { symbol: "WIFUSD", ticker: "WIF/USD", name: "" },
-        { symbol: "FLOKIUSD", ticker: "FLOKI/USD", name: "" },
-        { symbol: "TRUMPUSD", ticker: "TRUMP/USD", name: "" },
-        { symbol: "XMRUSD", ticker: "XMR/USD", name: "" },
-        { symbol: "ZECUSD", ticker: "ZEC/USD", name: "" },
-        { symbol: "DASHUSD", ticker: "DASH/USD", name: "" }
-    ];
 
     const marketTabList = [
         { label: t("markets.btn.main"), value: "main" },
-        { label: t("markets.btn.second"), value: "second" },
-        { label: t("markets.btn.other"), value: "other" },
+        { label: t("markets.btn.second"), value: "second" }
     ];
 
     const QA_DATA = [
@@ -117,7 +101,6 @@ export default async function Page() {
             <Markets
                 mainRaw={mainList}
                 secondRaw={secondList}
-                otherRaw={otherList}
                 tabList={marketTabList}
                 title={t("markets.title")}
                 desc={t("markets.desc")}

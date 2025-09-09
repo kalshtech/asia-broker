@@ -11,16 +11,12 @@ export async function GET(request: any) {
 
     try {
         const response = await serverFetch(url);
+
+        if(!response.ok) {
+            return ResponseInstance({ status: 500, title: "Error Message", description: "" });
+        }
+
         const data = await response.json();
-
-        if("Error Message" in data) {
-            return ResponseInstance({ status: 500, title: data["Error Message"], description: "" });
-        }
-
-        if(!data.length) {
-            return ResponseInstance({ status: 500, title: "404", description: "" });
-        }
-
         return ResponseInstance({ status: 0, data, title: "success", description: "success" });
     } catch (err: any) {
         return ResponseInstance({status: 500, title: err.message, description: "" });

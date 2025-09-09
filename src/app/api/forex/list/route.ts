@@ -5,9 +5,13 @@ export async function GET(request: any) {
 
     try {
         const response = await serverFetch(url);
+        if(!response.ok) {
+            return ResponseInstance({ status: 500, title: "Error Message", description: "" });
+        }
+
         const data = await response.json();
 
-        return ResponseInstance({status: 0, data: data, title: "success", description: ""});
+        return ResponseInstance({status: 0, data, title: "success", description: ""});
     } catch (err: any) {
         return ResponseInstance({ status: 500, title: err.message, description: "" });
     }

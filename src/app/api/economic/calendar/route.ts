@@ -14,8 +14,12 @@ export async function GET(request: any) {
 
     try {
         const response = await serverFetch(url);
-        const data = await response.json();
 
+        if(!response.ok) {
+            return ResponseInstance({ status: 500, title: "Error Message", description: "" });
+        }
+
+        const data = await response.json();
         const filtered = data.filter((event: any) => {
             const matchCountry = country !== "all" ? country?.toLowerCase() === event.country.toLowerCase() : true;
             const matchImportance = importance !== "all" ? importance?.toLowerCase() === event.impact.toLowerCase() : true;

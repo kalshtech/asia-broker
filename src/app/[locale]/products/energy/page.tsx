@@ -18,20 +18,19 @@ export default async function Page() {
     ];
 
     const mainList = [
-        { symbol: "BTCUSD", ticker: "BTC/USD", name: "" },
-        { symbol: "ETHUSD", ticker: "ETH/USD", name: "" },
-        { symbol: "SOLUSD", ticker: "SOL/USD", name: "" },
-        { symbol: "AVAXUSD", ticker: "AVAX/USD", name: "" },
-        { symbol: "ADAUSD", ticker: "ADA/USD", name: "" },
-        { symbol: "ATOMUSD", ticker: "ATOM/USD", name: "" },
-        { symbol: "LTCUSD", ticker: "LTC/USD", name: "" },
-        { symbol: "BCHUSD", ticker: "BCH/USD", name: "" },
-        { symbol: "TONUSD", ticker: "TON/USD", name: "" },
-        { symbol: "APTUSD", ticker: "APT/USD", name: "" },
-        { symbol: "TRXUSD", ticker: "TRX/USD", name: "" },
-        { symbol: "EOSUSD", ticker: "EOS/USD", name: "" },
+        { symbol: "USOIL",  name: "" },
+        { symbol: "UKOIL",  name: "" },
+        { symbol: "Heating Oil",  name: "" },
     ];
 
+    const sendList = [
+        { symbol: "NATGAS", name: "" }
+    ]
+
+    const marketTabList = [
+        { label: t("markets.btn.main"), value: "main" },
+        { label: t("markets.btn.second"), value: "second" }
+    ];
 
     const QA_DATA = [
         {
@@ -106,6 +105,8 @@ export default async function Page() {
             />
             <Markets
                 mainRaw={mainList}
+                secondRaw={sendList}
+                tabList={marketTabList}
                 title={t("markets.title")}
                 desc={t("markets.desc")}
                 trade={t("markets.trade")}

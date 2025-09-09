@@ -18,56 +18,40 @@ export default async function Page() {
     ];
 
     const mainList = [
-        { symbol: "EURUSD", ticker: "EUR/USD", name: "Euro - U.S. Dollar" },
-        { symbol: "USDJPY", ticker: "USD/JPY", name: "U.S. Dollar - Japanese Yen" },
-        { symbol: "GBPUSD", ticker: "GBP/USD", name: "British Pound Sterling - U.S. Dollar" },
-        { symbol: "USDCHF", ticker: "USD/CHF", name: "U.S. Dollar - Swiss Franc" },
-        { symbol: "AUDUSD", ticker: "AUD/USD", name: "Australian Dollar - U.S. Dollar" },
-        { symbol: "NZDUSD", ticker: "NZD/USD", name: "New Zealand Dollar - U.S. Dollar" },
-        { symbol: "USDCAD", ticker: "USD/CAD", name: "U.S. Dollar - Canadian Dollar" },
-    ];
-
-    const secondList = [
-        { symbol: "AUDCAD", ticker: "AUD/CAD", name: "Australian Dollar - Canadian Dollar" },
-        { symbol: "AUDCHF", ticker: "AUD/CHF", name: "Australian Dollar - Swiss Franc" },
-        { symbol: "AUDJPY", ticker: "AUD/JPY", name: "Australian Dollar - Japanese Yen" },
-        { symbol: "AUDNZD", ticker: "AUD/NZD", name: "Australian Dollar - New Zealand Dollar" },
-        { symbol: "CADCHF", ticker: "CAD/CHF", name: "Canadian Dollar - Swiss Franc" },
-        { symbol: "CADJPY", ticker: "CAD/JPY", name: "Canadian Dollar - Japanese Yen" },
-        { symbol: "CHFJPY", ticker: "CHF/JPY", name: "Swiss Franc - Japanese Yen" },
-        { symbol: "EURAUD", ticker: "EUR/AUD", name: "Euro - Australian Dollar" },
-        { symbol: "EURCAD", ticker: "EUR/CAD", name: "Euro - Canadian Dollar" },
-        { symbol: "EURCHF", ticker: "EUR/CHF", name: "Euro - Swiss Franc" },
-        { symbol: "EURGBP", ticker: "EUR/GBP", name: "Euro - British Pound Sterling" },
-        { symbol: "EURJPY", ticker: "EUR/JPY", name: "Euro - Japanese Yen" },
-        { symbol: "EURNZD", ticker: "EUR/NZD", name: "Euro - New Zealand Dollar" },
-        { symbol: "GBPAUD", ticker: "GBP/AUD", name: "British Pound Sterling - Australian Dollar" },
-        { symbol: "GBPCAD", ticker: "GBP/CAD", name: "British Pound Sterling - Canadian Dollar" },
-        { symbol: "GBPCHF", ticker: "GBP/CHF", name: "British Pound Sterling - Swiss Franc" },
-        { symbol: "GBPJPY", ticker: "GBP/JPY", name: "British Pound Sterling - Japanese Yen" },
-        { symbol: "GBPNZD", ticker: "GBP/NZD", name: "British Pound Sterling - New Zealand Dollar" },
-        { symbol: "NZDCAD", ticker: "NZD/CAD", name: "New Zealand Dollar - Canadian Dollar" },
-        { symbol: "NZDCHF", ticker: "NZD/CHF", name: "New Zealand Dollar - Swiss Franc" },
-        { symbol: "NZDJPY", ticker: "NZD/JPY", name: "New Zealand Dollar - Japanese Yen" },
-    ]
-
-    const otherList = [
-        { symbol: "EURHUF", ticker: "EUR/HUF", name: "Euro - Hungarian Forint" },
-        { symbol: "EURPLN", ticker: "EUR/PLN", name: "Euro - Polish Złoty" },
-        { symbol: "EURTRY", ticker: "EUR/TRY", name: "Euro - Turkish Lira" },
-        { symbol: "USDCNH", ticker: "USD/CNH", name: "U.S. Dollar - Chinese Yuan (Offshore)" },
-        { symbol: "USDHKD", ticker: "USD/HKD", name: "U.S. Dollar - Hong Kong Dollar" },
-        { symbol: "USDSGD", ticker: "USD/SGD", name: "U.S. Dollar - Singapore Dollar" },
-        { symbol: "USDCZK", ticker: "USD/CZK", name: "U.S. Dollar - Czech Koruna" },
-        { symbol: "USDDKK", ticker: "USD/DKK", name: "U.S. Dollar - Danish Krone" },
-        { symbol: "USDHUF", ticker: "USD/HUF", name: "U.S. Dollar - Hungarian Forint" },
-        { symbol: "USDMXN", ticker: "USD/MXN", name: "U.S. Dollar - Mexican Peso" },
-        { symbol: "USDNOK", ticker: "USD/NOK", name: "U.S. Dollar - Norwegian Krone" },
-        { symbol: "USDPLN", ticker: "USD/PLN", name: "U.S. Dollar - Polish Złoty" },
-        { symbol: "USDRUB", ticker: "USD/RUB", name: "U.S. Dollar - Russian Ruble" },
-        { symbol: "USDTRY", ticker: "USD/TRY", name: "U.S. Dollar - Turkish Lira" },
-        { symbol: "USDSEK", ticker: "USD/SEK", name: "U.S. Dollar - Swedish Krona" },
-        { symbol: "USDZAR", ticker: "USD/ZAR", name: "U.S. Dollar - South African Rand" },
+        { symbol: "AA",  name: "" },
+        { symbol: "AAPL",  name: "" },
+        { symbol: "AMZN",  name: "" },
+        { symbol: "AXP",  name: "" },
+        { symbol: "BA",  name: "" },
+        { symbol: "BAC",  name: "" },
+        { symbol: "CAT", name: "" },
+        { symbol: "CSCO", name: "" },
+        { symbol: "CVX", name: "" },
+        { symbol: "DIS", name: "" },
+        { symbol: "EBAY", name: "" },
+        { symbol: "F", name: "" },
+        { symbol: "FDX", name: "" },
+        { symbol: "GE", name: "" },
+        { symbol: "GOOG", name: "" },
+        { symbol: "HD", name: "" },
+        { symbol: "HPQ", name: "" },
+        { symbol: "IBM", name: "" },
+        { symbol: "INTC", name: "" },
+        { symbol: "JNJ", name: "" },
+        { symbol: "JPM", name: "" },
+        { symbol: "KO", name: "" },
+        { symbol: "MCD", name: "" },
+        { symbol: "META", name: "" },
+        { symbol: "MMM", name: "" },
+        { symbol: "MSFT", name: "" },
+        { symbol: "NKE", name: "" },
+        { symbol: "PEP", name: "" },
+        { symbol: "PFE", name: "" },
+        { symbol: "PG", name: "" },
+        { symbol: "T", name: "" },
+        { symbol: "TSLA", name: "" },
+        { symbol: "WMT", name: "" },
+        { symbol: "XOM", name: "" },
     ];
 
     const marketTabList = [
@@ -126,9 +110,6 @@ export default async function Page() {
             />
             <Markets
                 mainRaw={mainList}
-                secondRaw={secondList}
-                otherRaw={otherList}
-                tabList={marketTabList}
                 title={t("markets.title")}
                 desc={t("markets.desc")}
                 trade={t("markets.trade")}

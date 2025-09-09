@@ -598,9 +598,8 @@
           "title": "搜索你想交易的贵金属合约",
           "desc": "输入如 XAUUSD、XAGUSD，可查看实时买入/卖出价格。",
           "btn": {
-            "main": "主要金属",
-            "second": "工业金属",
-            "other": "其他金属"
+            "main": "贵金属",
+            "second": "基础金属"
           },
           "trade": "立即开户，开始交易贵金属"
         },
@@ -681,6 +680,10 @@
         "markets": {
           "title": "搜索你想交易的能源品种",
           "desc": "输入如 WTIUSD、NGASUSD，即可查看实时买入/卖出价格。",
+          "btn": {
+            "main": "原油类",
+            "second": "天然气类"
+          },
           "trade": "立即开户，开始交易能源"
         },
         "commission": {

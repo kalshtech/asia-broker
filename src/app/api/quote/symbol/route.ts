@@ -9,16 +9,12 @@ export async function GET(request: any) {
     try {
         const url = `${process.env.FINNHUB_SERVER}/quote?symbol=${symbol}&apikey=${process.env.FINNHUB_APIKEY}`;
         const response = await serverFetch(url);
+
+        if(!response.ok) {
+            return ResponseInstance({ status: 500, title: "Error Message", description: "" });
+        }
+
         const data = await response.json();
-
-        if("Error Message" in data) {
-            return ResponseInstance({ status: -1, title: data["Error Message"], description: "" });
-        }
-
-        if(!data.length) {
-            return ResponseInstance({ status: -1, title: "404", description: "" });
-        }
-
         return ResponseInstance({ status: 0, data: data[0], title: "success", description: "" });
     } catch (err: any) {
         return ResponseInstance({status: 500, title: err.message, description: "" });
