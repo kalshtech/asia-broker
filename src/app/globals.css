@@ -161,3 +161,7 @@ h1,h2,h3,h4,h5,h6,p {
   opacity: 1;
   transform: none;        /* 如不想放大效果就保持 none */
 }
+
+.text-destructive {
+  color: red;
+}

@@ -287,7 +287,7 @@ const Navigation = () => {
                             ul: [
                                 { label: t("menu.inspiration.row.col-1.ul.li1"), path: "/" },
                                 { label: t("menu.inspiration.row.col-1.ul.li2"), path: "/" },
-                                { label: t("menu.inspiration.row.col-1.ul.li3"), path: "/" },
+                                { label: t("menu.inspiration.row.col-1.ul.li3"), path: "/ideas/vps" },
                                 { label: t("menu.inspiration.row.col-1.ul.li4"), path: "/" },
                             ]
                         },
