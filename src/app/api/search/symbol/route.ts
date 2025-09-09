@@ -10,7 +10,7 @@ export async function GET(request: any) {
         const url = `${process.env.FINNHUB_SERVER}/search-symbol?query=${query}&apikey=${process.env.FINNHUB_APIKEY}`;
         const response = await serverFetch(url);
         const data = await response.json();
-        
+
         if("Error Message" in data) {
             return ResponseInstance({ status: -1, title: data["Error Message"], description: "" });
         }
