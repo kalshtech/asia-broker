@@ -6,6 +6,7 @@ import { Typography } from "@/components/ui/typography";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CircleCheck } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -63,6 +64,14 @@ const Subscribe = () => {
                                 ))
                             }
                         </ul>
+                    </div>
+                    <div className={"px-30"}>
+                        <Button className={"h-10 px-8 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                            {t("watch")}
+                        </Button>
+                        <Button className={"ml-4 border text-theme-active border-theme-active bg-white rounded-full h-10 px-8 hover:bg-transparent"}>
+                            {t("register")}
+                        </Button>
                     </div>
                 </div>
                 <div className={"col-span-1"}>
