@@ -6,8 +6,8 @@ export async function GET(request: any) {
 
     if(!symbols) return ResponseInstance({ status: -1, title: "symbols not found", description: "" });
 
-    const url = `${process.env.FINNHUB_SERVER_V3}/quote/${symbols}?apikey=${process.env.FINNHUB_APIKEY}`;
-    // const url = `${process.env.FINNHUB_SERVER}/quote?symbol=${symbols}&apikey=${process.env.FINNHUB_APIKEY}`;
+    const url = `${process.env.FMP_SERVER_V3}/quote/${symbols}?apikey=${process.env.FMP_APIKEY}`;
+    // const url = `${process.env.FMP_SERVER}/quote?symbol=${symbols}&apikey=${process.env.FMP_APIKEY}`;
 
     try {
         const response = await serverFetch(url);

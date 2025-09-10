@@ -295,7 +295,7 @@ const Navigation = () => {
                             title: t("menu.inspiration.row.col-2.title"),
                             desc: t("menu.inspiration.row.col-2.desc"),
                             ul: [
-                                { label: t("menu.inspiration.row.col-2.ul.li1"), path: "/" },
+                                { label: t("menu.inspiration.row.col-2.ul.li1"), path: "/ideas/professional" },
                                 { label: t("menu.inspiration.row.col-2.ul.li2"), desc: t("menu.inspiration.row.col-2.ul.desc2"), path: "/" },
                             ]
                         },

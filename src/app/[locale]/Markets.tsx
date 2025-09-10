@@ -17,7 +17,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 import { http } from "@/utils/http";
 import { params_quote_symbol, params_quote_query, params_historical_chart } from "@/params/api";
 import dayjs from "dayjs";
-import MiniChart from "@/components/charts/mini";
+import MiniChart from "@/components/charts/Mini";
 import { convert, rangeCls, rangeChange } from "@/utils/common";
 import { Button } from "@/components/ui/button";
 

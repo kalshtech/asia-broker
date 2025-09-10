@@ -7,7 +7,7 @@ export async function GET(request: any) {
     const country = requestUrl.searchParams.get('country');
     const importance = requestUrl.searchParams.get('importance');
 
-    let url = `${process.env.FINNHUB_SERVER}/economic-calendar?apikey=${process.env.FINNHUB_APIKEY}`;
+    let url = `${process.env.FMP_SERVER}/economic-calendar?apikey=${process.env.FMP_APIKEY}`;
 
     // if(from) url = url + `&from=${from}`;
     // if(to) url = url + `&to=${to}`;

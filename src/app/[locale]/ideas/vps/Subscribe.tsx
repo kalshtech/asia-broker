@@ -163,7 +163,7 @@ const Subscribe = () => {
 
 
                         <Button type="submit"
-                                className={"w-full rounded-full h-10 px-8 bg-theme-active hover:bg-theme-active-hover"}
+                                className={"w-full mt-10 rounded-full h-10 px-8 bg-theme-active hover:bg-theme-active-hover"}
                                 disabled={form.formState.isSubmitting}
                         >
                             {form.formState.isSubmitting ?

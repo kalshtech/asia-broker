@@ -10,7 +10,7 @@ export async function GET(request: any) {
     if(!timeframe) return ResponseInstance({status: -1, title: "timeframe not found", description: ""});
     if(!symbol) return ResponseInstance({status: -1, title: "symbol not found", description: ""});
 
-    let url = `${process.env.FINNHUB_SERVER_V3}/historical-chart/${timeframe}/${symbol}?apikey=${process.env.FINNHUB_APIKEY}`;
+    let url = `${process.env.FMP_SERVER_V3}/historical-chart/${timeframe}/${symbol}?apikey=${process.env.FMP_APIKEY}`;
 
     if(from) url = url + `&from=${from}`;
     if(to) url = url + `&to=${to}`;

@@ -1,7 +1,7 @@
 import { serverFetch, ResponseInstance } from "@/utils/http";
 
 export async function GET(request: any) {
-    let url = `${process.env.FINNHUB_SERVER}/forex-list?apikey=${process.env.FINNHUB_APIKEY}`;
+    let url = `${process.env.FMP_SERVER}/forex-list?apikey=${process.env.FMP_APIKEY}`;
 
     try {
         const response = await serverFetch(url);
