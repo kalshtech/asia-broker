@@ -8,7 +8,7 @@ const RegisterBtn = () => {
     return (
         <div className={"cursor-pointer"}>
             <Button
-                className={"rounded-full cursor-pointer bg-theme-active hover:bg-theme-active-hover"}
+                className={"rounded-full px-8 h-10 cursor-pointer bg-theme-active hover:bg-theme-active-hover"}
             >
                 { t("register") }
             </Button>

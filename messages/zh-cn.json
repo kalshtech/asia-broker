@@ -1003,6 +1003,41 @@
           }
         }
       }
+    },
+    "platform": {
+      "banner": {
+        "title1": "Asia Future Trading MetaTrader 5",
+        "title2": "借助先进技术，高效精准交易",
+        "desc": "全球领先的多终端交易平台，畅享 65,000+ 市场产品",
+        "download": "下载",
+        "ul": {
+          "windows": "windows 版",
+          "macos": "macOS 版",
+          "ios": "iOS 版",
+          "android": "Android 版",
+          "webtrader": "WebTrader 版"
+        }
+      },
+      "reasons": {
+        "title": "为什么选择在 Asia Future Trading 使用 MT5？",
+        "desc": "MT5 已成为全球最受欢迎的交易平台之一。在 Asia Future Trading，我们为它注入极速执行、合规保障与多市场接入，让您体验前所未有的交易自由。",
+        "professional": "专业体验",
+        "ul": {
+          "li-title1": "多终端接入",
+          "li-desc1": "Windows、macOS、iOS、Android、WebTrader，随时随地无缝切换",
+          "li-title2": "极速成交",
+          "li-desc2": "直连顶级流动性，毫秒级撮合，捕捉市场瞬息机会",
+          "li-title3": "丰富工具",
+          "li-desc3": "38+ 技术指标，EA 智能交易与策略回测一应俱全"
+        },
+        "safe": "合规保障",
+        "risk": {
+          "li-title1": "智能风控",
+          "li-desc1": "ECN/STP 架构，确保每一笔交易透明、公正",
+          "li-title2": "资金安全",
+          "li-desc2": "受 ASIC 监管，客户资金分级托管，安心无忧"
+        }
+      }
     }
   },
   "Navigation": {

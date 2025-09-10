@@ -181,21 +181,21 @@ const Navigation = () => {
                         {
                             title: t("menu.platforms.row.col-1.title"),
                             ul: [
-                                { label: t("menu.platforms.row.col-1.ul.li1"), path: "/" },
-                                { label: t("menu.platforms.row.col-1.ul.li2"), path: "/" }
+                                { label: t("menu.platforms.row.col-1.ul.li1"), path: "/platform" },
+                                { label: t("menu.platforms.row.col-1.ul.li2"), path: "/platform" }
                             ]
                         },
                         {
                             title: t("menu.platforms.row.col-2.title"),
                             ul: [
-                                { label: t("menu.platforms.row.col-2.ul.li1"), path: "/" },
-                                { label: t("menu.platforms.row.col-2.ul.li2"), path: "/" }
+                                { label: t("menu.platforms.row.col-2.ul.li1"), path: "/platform" },
+                                { label: t("menu.platforms.row.col-2.ul.li2"), path: "/platform" }
                             ]
                         },
                         {
                             title: t("menu.platforms.row.col-3.title"),
                             ul: [
-                                { label: t("menu.platforms.row.col-3.ul.li1"), path: "/" }
+                                { label: t("menu.platforms.row.col-3.ul.li1"), path: "/platform" }
                             ]
                         }
                     ]
