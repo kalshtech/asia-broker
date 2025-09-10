@@ -5,9 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
-
 
 const AutoTrade = () => {
     const t = useTranslations("Pages.ideas.vps.autoTrade");
