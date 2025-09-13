@@ -133,7 +133,7 @@ const Explore = () => {
                             </div>
                             <div className={"col-span-5"}>
                                 <img
-                                    src="/images/accounts/explore1.png"
+                                    src="/images/accounts/explore2.png"
                                     className={"w-full h-full bg-cover"}
                                     title={"placeholder"}
                                     alt="placeholder"

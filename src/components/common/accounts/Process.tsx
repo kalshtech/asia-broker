@@ -1,9 +1,7 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react"
 
 const fadeInUp: Variants = {
@@ -15,15 +13,19 @@ const fadeInUp: Variants = {
     },
 }
 
-const Process = () => {
-    const t = useTranslations("Pages.accounts.classic.process");
-    const ary = [
-        { title: t("step.1.title"), desc: t("step.1.desc"), bottom: t("step.1.bottom") },
-        { title: t("step.2.title"), desc: t("step.2.desc"), bottom: t("step.2.bottom") },
-        { title: t("step.3.title"), desc: t("step.3.desc"), bottom: t("step.3.bottom") },
-        { title: t("step.4.title"), desc: t("step.4.desc"), bottom: t("step.4.bottom") },
-    ];
+interface AryItemProps {
+    title: string;
+    desc: string;
+    bottom: string;
+}
 
+type Props = {
+    ary: AryItemProps[],
+    title: string;
+}
+
+const Process = (props: Props) => {
+    const { ary, title } = props;
     return (
         <section className={"p-30"}>
             <motion.div
@@ -36,7 +38,7 @@ const Process = () => {
                     variant={"h1"}
                     className={"font-medium text-center"}
                 >
-                    {t("title")}
+                    {title}
                 </Typography>
             </motion.div>
             <div className={"mt-16"}>

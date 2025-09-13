@@ -213,7 +213,7 @@ const Navigation = () => {
                             title: t("menu.account.row.col-1.title"),
                             ul: [
                                 { label: t("menu.account.row.col-1.ul.li1"), desc: t("menu.account.row.col-1.ul.desc1"), path: "/accounts/classic" },
-                                { label: t("menu.account.row.col-1.ul.li2"), desc: t("menu.account.row.col-1.ul.desc2"), path: "/" },
+                                { label: t("menu.account.row.col-1.ul.li2"), desc: t("menu.account.row.col-1.ul.desc2"), path: "/accounts/platinum" },
                                 { label: t("menu.account.row.col-1.ul.li3"), desc: t("menu.account.row.col-1.ul.desc3"), path: "/" }
                             ]
                         },

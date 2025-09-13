@@ -6,7 +6,7 @@ import {motion, Variants} from "framer-motion";
 import RegisterBtn from "@/components/RegisterBtn";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {CircleChevronLeft, CircleChevronRight} from "lucide-react";
-import SimpleSwiper from "@/components/common/SimpleSwiper";
+import SimpleSwiper from "@/components/common/products/SimpleSwiper";
 
 
 const fadeInUp: Variants = {

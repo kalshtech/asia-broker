@@ -1,7 +1,6 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 
 const fadeInUp: Variants = {
@@ -13,24 +12,26 @@ const fadeInUp: Variants = {
     },
 }
 
-const Standard = () => {
-    const t = useTranslations("Pages.accounts.classic.standard");
-    const liAry = [
-        { label: t("row.left.ul.li1") },
-        { label: t("row.left.ul.li2") },
-        { label: t("row.left.ul.li3") },
-        { label: t("row.left.ul.li4") },
-        { label: t("row.left.ul.li5") },
-        { label: t("row.left.ul.li6") },
-    ];
+type rightRowItem = {
+    imageUrl: string;
+    title: string;
+    desc: string;
+}
 
-    const rightRowAry = [
-        { imageUrl: "/images/accounts/lightning.png", title: t("row.right.row.col-2-title"), desc: t("row.right.row.col-2-desc") },
-        { imageUrl: "/images/accounts/line.png", title: t("row.right.row.col-3-title"), desc: t("row.right.row.col-3-desc") },
-        { imageUrl: "/images/accounts/house.png", title: t("row.right.row.col-4-title"), desc: t("row.right.row.col-4-desc") },
-        { imageUrl: "/images/accounts/wifi.png", title: t("row.right.row.col-5-title"), desc: t("row.right.row.col-5-desc") },
-        { imageUrl: "/images/accounts/signal.png", title: t("row.right.row.col-6-title"), desc: t("row.right.row.col-6-desc") },
-    ];
+type Props = {
+    title: string;
+    desc?: string;
+    leftTitle: string;
+    leftDesc?: string;
+    rightCol1Title: string;
+    rightCol1Desc: string;
+    liAry: { label: string; }[];
+    rightRowAry: rightRowItem[];
+}
+
+const Introduction = (props: Props) => {
+    const { title, desc, leftTitle, liAry, leftDesc, rightRowAry, rightCol1Title, rightCol1Desc } = props;
+
     return (
         <section className={"p-30"}>
             <motion.div
@@ -43,22 +44,36 @@ const Standard = () => {
                     variant={"h1"}
                     className={"font-medium text-center"}
                 >
-                    {t("title")}
+                    { title }
                 </Typography>
+                {
+                    desc && (
+                        <Typography
+                            variant={"muted"}
+                            className={"text-center mt-6"}
+                        >
+                            { desc }
+                        </Typography>
+                    )
+                }
             </motion.div>
             <div className={"grid grid-cols-12 gap-8 mt-16"}>
                 <div className={"col-span-3"}>
                     <div className={""}>
                         <div>
                             <Typography variant={"h4"}>
-                                {t("row.left.title")}
+                                { leftTitle }
                             </Typography>
-                            <Typography
-                                variant={"muted"}
-                                className={"mt-3"}
-                            >
-                                {t("row.left.desc")}
-                            </Typography>
+                            {
+                                leftDesc && (
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"mt-3"}
+                                    >
+                                        {leftDesc}
+                                    </Typography>
+                                )
+                            }
                         </div>
                         <ul className={"mt-6"}>
                             {
@@ -84,10 +99,10 @@ const Standard = () => {
                                 title={"icon"}
                             />
                             <Typography variant={"h4"} className={"mt-16"}>
-                                {t("row.right.row.col-1-title")}
+                                { rightCol1Title }
                             </Typography>
                             <Typography className={"block mt-4"}>
-                                {t("row.right.row.col-1-desc")}
+                                { rightCol1Desc }
                             </Typography>
                         </div>
                         {
@@ -115,4 +130,4 @@ const Standard = () => {
     )
 }
 
-export default Standard;
+export default Introduction;

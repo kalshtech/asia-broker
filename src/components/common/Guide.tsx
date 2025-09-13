@@ -4,7 +4,7 @@ import { Typography } from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
 import {useTranslations} from "next-intl";
 import { Button } from "@/components/ui/button";
-import SimpleSwiper from "@/components/common/SimpleSwiper";
+import SimpleSwiper from "@/components/common/products/SimpleSwiper";
 import {CircleChevronLeft, CircleChevronRight} from "lucide-react";
 import classnames from "classnames";
 
@@ -19,9 +19,10 @@ const fadeInUp: Variants = {
 
 type leftProps = {
     title: string;
-    desc: string;
+    desc?: string;
     more: string;
     midst?: string;
+    muted?: string;
 }
 
 type ItemProps = {
@@ -73,14 +74,26 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                             </Typography>
                         )
                     }
-                    <Typography variant={"muted"} className={"mt-8"}>
-                        { left.desc }
-                    </Typography>
+                    {
+                        left.desc && (
+                            <Typography variant={"muted"} className={"mt-8"}>
+                                { left.desc }
+                            </Typography>
+                        )
+                    }
                     <div className={"mt-10"}>
                         <Button className={"bg-theme-active h-12 px-8 hover:bg-theme-active-hover rounded-full"}>
                             { left.more }
                         </Button>
                     </div>
+
+                    {
+                        left.muted && (
+                            <Typography variant={"muted"} className={"mt-8"}>
+                                { left.muted }
+                            </Typography>
+                        )
+                    }
                 </div>
                 <div className={"col-span-12 lg:col-span-10"}>
                     <div className={"w-full"}>

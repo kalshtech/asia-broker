@@ -1,0 +1,89 @@
+"use client";
+import * as React from 'react'
+import { motion, Variants } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Typography } from "@/components/ui/typography";
+import { Button } from "@/components/ui/button";
+
+const fadeInUp: Variants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: 'easeOut' },
+    },
+}
+
+
+const Exclusive = () => {
+    const t = useTranslations("Pages.accounts.platinum.exclusive");
+    return (
+        <section className={"p-30"}>
+            <motion.div
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 0.5}}
+            >
+                <Typography
+                    variant={"h1"}
+                    className={"font-medium text-center"}
+                >
+                    {t("title")}
+                </Typography>
+
+                <Typography
+                    variant={"muted"}
+                    className={"font-medium text-center mx-auto mt-10 !max-w-3xl"}
+                >
+                    {t("desc")}
+                </Typography>
+            </motion.div>
+            <div className={"bg-[url(/images/accounts/exclusive-bg.png)] bg-cover bg-center h-[428px] mt-16 py-30"}>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                >
+                    <Typography
+                        variant={"h1"}
+                        className={"font-medium !text-white text-center"}
+                    >
+                        {t("best.title")}
+                    </Typography>
+
+                    <Typography
+                        variant={"h5"}
+                        className={"font-medium text-center !text-white mx-auto mt-10 !max-w-3xl"}
+                    >
+                        {t("best.joint")}
+                    </Typography>
+
+                    <div className={"flex justify-center items-center mt-10"}>
+                        <Typography
+                            variant={"h5"}
+                            className={"font-medium text-center !text-white"}
+                        >
+                            {t("best.desc1")}
+                        </Typography>
+                        <Typography
+                            variant={"h2"}
+                            className={"font-medium text-center !text-white mx-4"}
+                        >
+                          0.1
+                        </Typography>
+                        <Typography
+                            variant={"h5"}
+                            className={"font-medium text-center !text-white"}
+                        >
+                            {t("best.desc2")}
+                        </Typography>
+                    </div>
+                </motion.div>
+            </div>
+        </section>
+    )
+}
+
+export default Exclusive;

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { getTranslations } from "next-intl/server";
-import Banner from "@/components/common/Banner";
-import Markets from "@/components/common/Markets";
-import Commission from "@/components/common/Commission";
-import MoreMarkets from "@/components/common/MoreMarkets";
+import Banner from "@/components/common/products/Banner";
+import Markets from "@/components/common/products/Markets";
+import Commission from "@/components/common/products/Commission";
+import MoreMarkets from "@/components/common/products/MoreMarkets";
 import Guide from "@/components/common/Guide";
 import Profession from "./Profession";
 import FAQSection from "@/components/common/QuestionAnswer";
