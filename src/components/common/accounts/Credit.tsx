@@ -18,9 +18,10 @@ const fadeInUp: Variants = {
 type Props = {
     typeText: string;
     className?: string;
+    number: number | string;
 }
 
-const Credit = ({ typeText, className }: Props) => {
+const Credit = ({ typeText, className, number }: Props) => {
     const t = useTranslations("Pages.accounts.platinum.credit");
     return (
         <section className={classnames(["p-30", className])}>
@@ -84,7 +85,7 @@ const Credit = ({ typeText, className }: Props) => {
                     variant={"h1"}
                     className={"!text-[64px] text-center mx-4"}
                 >
-                    5,000
+                    { number }
                 </Typography>
                 <Typography
                     variant={"h4"}

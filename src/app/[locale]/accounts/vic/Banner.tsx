@@ -14,7 +14,6 @@ const fadeInUp: Variants = {
     },
 }
 
-
 const Banner = () => {
     const t = useTranslations("Pages.accounts.vic.banner");
     return (

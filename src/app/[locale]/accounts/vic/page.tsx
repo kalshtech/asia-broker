@@ -61,7 +61,7 @@ export default async function Page() {
             <Route/>
             <Stream/>
             <Custom/>
-            <Credit className={"bg-gradient-to-b from-[#FFFFFF] to-[#ABC2DC]"} typeText={t("credit.account")} />
+            <Credit number={"50,000"} className={"bg-gradient-to-b from-[#FFFFFF] to-[#ABC2DC]"} typeText={t("credit.account")} />
             <BankCards/>
             <Support/>
             <Experience/>
