@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
+import classnames from "classnames";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -14,10 +15,15 @@ const fadeInUp: Variants = {
     },
 }
 
-const Credit = () => {
+type Props = {
+    typeText: string;
+    className?: string;
+}
+
+const Credit = ({ typeText, className }: Props) => {
     const t = useTranslations("Pages.accounts.platinum.credit");
     return (
-        <section className={"p-30 bg-gradient-to-b from-[#FFFFFF] to-[#D3C5B6]"}>
+        <section className={classnames(["p-30", className])}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -84,7 +90,7 @@ const Credit = () => {
                     variant={"h4"}
                     className={"font-medium text-center"}
                 >
-                    { t("account") }
+                    { typeText }
                 </Typography>
             </div>
 

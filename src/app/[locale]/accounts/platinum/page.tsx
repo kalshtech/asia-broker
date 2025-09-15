@@ -4,8 +4,8 @@ import Banner from "./Banner";
 import Introduction from "@/components/common/accounts/Introduction";
 import Exclusive from "./Exclusive";
 import Environment from "./Environment";
-import Credit from "./Credit";
-import Support from "./Support";
+import Credit from "@/components/common/accounts/Credit";
+import Support from "@/components/common/accounts/Support";
 import Guide from "@/components/common/Guide";
 import Tools from "@/components/common/Tools";
 import QuestionAnswer from "@/components/common/QuestionAnswer";
@@ -134,7 +134,7 @@ export default async function Page() {
             />
             <Exclusive/>
             <Environment/>
-            <Credit/>
+            <Credit className={"bg-gradient-to-b from-[#FFFFFF] to-[#D3C5B6]"} typeText={t("credit.account")} />
             <Support/>
             <Guide
                 title={t("guide.title")}
