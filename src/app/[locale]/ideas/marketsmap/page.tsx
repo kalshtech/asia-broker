@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import HeatCharts from "./HeatCharts";
 import {redirect} from "next/navigation";
 import Interpretation from "./Interpretation";
+import Tools from "@/components/common/Tools"
 
 type Props = {
     params: { locale: string };
@@ -20,7 +21,7 @@ export default async function Page({ params, searchParams }: Props) {
     if (!tab || !type) {
         const sp = new URLSearchParams();
 
-        sp.set("tab", tab ?? "overview");
+        sp.set("tab", tab ?? "Overview");
         sp.set("type", type ?? "cross");
 
         // 如有其他查询参数也要保留，可把它们一并写入 sp
@@ -31,6 +32,7 @@ export default async function Page({ params, searchParams }: Props) {
         <div>
             <HeatCharts />
             <Interpretation/>
+            <Tools/>
         </div>
     )
 }
