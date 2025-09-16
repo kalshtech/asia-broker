@@ -172,17 +172,17 @@ const HeatCharts = () => {
                     variant={"h1"}
                     className={"font-medium text-center"}
                 >
-                    {t("forex-title")}
+                    {t("crypto-title")}
                 </Typography>
                 <Typography
                     variant={"large"}
                     className={"font-medium text-center mx-auto mt-10"}
                 >
-                    {t("forex-desc")}
+                    {t("crypto-desc")}
                 </Typography>
                 <div className={"mt-6 flex justify-center"}>
                     <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                        {t("forex-explore")}
+                        {t("crypto-explore")}
                     </Button>
                 </div>
             </motion.div>
