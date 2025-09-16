@@ -81,34 +81,6 @@ const HeatCharts = () => {
                     variant={"h1"}
                     className={"font-medium text-center"}
                 >
-                    {t("stock-title")}
-                </Typography>
-                <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-10"}
-                >
-                    {t("stock-desc")}
-                </Typography>
-                <div className={"mt-6 flex justify-center"}>
-                    <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                        {t("stock-explore")}
-                    </Button>
-                </div>
-            </motion.div>
-            <div className={"mt-10"}>
-                <TvStockHeatmap/>
-            </div>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                className={"mt-30"}
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h1"}
-                    className={"font-medium text-center"}
-                >
                     {t("forex-title")}
                 </Typography>
                 <Typography
@@ -160,6 +132,34 @@ const HeatCharts = () => {
             </div>
             <div className={"mt-4"}>
                 <TvForexHeatmap type={typeActive} currencies={currencies} locale={locale}/>
+            </div>
+            <motion.div
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                className={"mt-30"}
+                viewport={{once: true, amount: 0.5}}
+            >
+                <Typography
+                    variant={"h1"}
+                    className={"font-medium text-center"}
+                >
+                    {t("stock-title")}
+                </Typography>
+                <Typography
+                    variant={"large"}
+                    className={"font-medium text-center mx-auto mt-10"}
+                >
+                    {t("stock-desc")}
+                </Typography>
+                <div className={"mt-6 flex justify-center"}>
+                    <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        {t("stock-explore")}
+                    </Button>
+                </div>
+            </motion.div>
+            <div className={"mt-10"}>
+                <TvStockHeatmap/>
             </div>
             <motion.div
                 variants={fadeInUp}
