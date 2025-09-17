@@ -19,6 +19,7 @@ const Interpretation = () => {
     const ulAry = [
         { text: t("row.col1.ul.li1") },
         { text: t("row.col1.ul.li2") },
+        { text: t("row.col1.ul.li3") },
     ];
     return (
         <section className={"m-30"}>
@@ -30,6 +31,9 @@ const Interpretation = () => {
                         </Typography>
                         <Typography variant={"muted"} className={"!text-white mt-10"}>
                             { t("row.col1.desc") }
+                        </Typography>
+                        <Typography variant={"muted"} className={"!text-white mt-10"}>
+                            { t("row.col1.ul-title") }
                         </Typography>
                         <ul className={"mt-8"}>
                             {
@@ -50,6 +54,16 @@ const Interpretation = () => {
                         <Typography variant={"muted"} className={"!text-white mt-10"}>
                             { t("row.col1.prompt") }
                         </Typography>
+
+                        <div className={"mt-16"}>
+                            <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                { t("row.col1.enter") }
+                            </Button>
+
+                            <Typography variant={"muted"} className={"!text-white mt-2"}>
+                                { t("row.col1.enter-prompt") }
+                            </Typography>
+                        </div>
                     </div>
                 </div>
                 <div className={"col-span-6"}>

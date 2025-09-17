@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import HeatCharts from "./HeatCharts";
 import {redirect} from "next/navigation";
 import Interpretation from "./Interpretation";
+import MarketBanner from "./MarketBanner";
 import Tools from "@/components/common/Tools"
 
 type Props = {
@@ -30,6 +31,7 @@ export default async function Page({ params, searchParams }: Props) {
 
     return (
         <div>
+            <MarketBanner/>
             <HeatCharts />
             <Interpretation/>
             <Tools/>
