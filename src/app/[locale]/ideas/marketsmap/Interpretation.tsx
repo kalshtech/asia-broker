@@ -67,7 +67,7 @@ const Interpretation = () => {
                     </div>
                 </div>
                 <div className={"col-span-6"}>
-                    <img src="/images/ideas/marketsmap-interpretation.png" className={"object-cover"} alt=""/>
+                    <img src="/images/ideas/marketsmap-interpretation.png" className={"h-full object-cover"} alt=""/>
                 </div>
             </div>
         </section>

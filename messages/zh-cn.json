@@ -2094,6 +2094,22 @@
             }
           }
         }
+      },
+      "profit": {
+        "banner": {
+          "top": "Future Earn Account",
+          "title": "闲置收益增强账户",
+          "desc": "铂金/VIC 账户专享利息无需锁仓、无资金费率、挂钩真实市场利率（SOFR），利息 T+1 自动入账。为长期信任用户打造的可视化利息回报账户。",
+          "register": "立即开通铂金账户",
+          "vic": "立即开通 VIC 账户",
+          "prompt": "Future Earn 是 Asia Future Trading 推出的闲置资金收益解决方案。所有利息每日结算，直接计入交易账户，可随时提取、不影响交易。通过挂钩 SOFR，帮助长期交易者将账户余额转化为稳定的日常回报。",
+          "board": {
+            "rates": "今日市场参考利率（SOFR）：",
+            "from": "数据来源 ：美国纽约联邦储备银行（Federal Reserve Bank of New York）",
+            "desc": "Future Earn Account 的利息计算挂钩公开市场利率（SOFR），用于提供收益估算与透明度锚点。实际利息由 Asia Future Trading 平台发放，并非源自资金再投资或市场操作。用户资金不会被投入任何金融市场或进行资产管理，相关利率仅为市场参考指标，不构成任何投资建议或收益承诺。",
+            "tag": "纽约联储官方（FRED: SOFR）｜利息发放与平台机制详见用户协议"
+          }
+        }
       }
     }
   },

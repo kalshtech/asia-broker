@@ -226,7 +226,7 @@ const Navigation = () => {
                                     icon: (
                                         <img src="/images/navigation/seed.svg" className={"w-4 h-4 ml-2"} alt=""/>
                                     ),
-                                    path: "/"
+                                    path: "/accounts/profit"
                                 }
                             ]
                         },
