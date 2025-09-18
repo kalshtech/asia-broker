@@ -62,7 +62,7 @@ const Banner =  () => {
                     </Typography>
                 </motion.div>
             </section>
-            <div className={"mx-30 bg-white px-10 py-12 -mt-30 rounded-xl"}>
+            <div className={"mx-30 bg-white px-10 py-12 -mt-30 rounded-xl shadow-[0_4px_8px_0_rgba(0,0,0,0.1)]"}>
                 <div className={"flex"}>
                     <div className={"flex items-center"}>
                         <Typography
