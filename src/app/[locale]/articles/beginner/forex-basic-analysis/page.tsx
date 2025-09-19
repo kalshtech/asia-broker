@@ -4,116 +4,100 @@ import ArticleDetails from "@/components/article/Details";
 import { Typography } from "@/components/ui/typography";
 
 export default async function Page() {
-    const t = await getTranslations("Articles.beginner.common-mistakes");
+    const t = await getTranslations("Articles.beginner.forex-basic-analysis");
 
     const sections = [
         {
-            id: "first-essential-lesson",
+            id: "basic",
             title: t("section1.title"),
             content: <Typography>{ t("section1.desc") }</Typography>
         },
         {
-            id: "excess",
+            id: "rates-values",
             title: t("section2.title"),
             content: (
                 <div>
                     <Typography>
-                        { t("section2.desc") }
+                        { t("section2.desc1") }
+                    </Typography>
+                    <Typography className={"block mt-4"}>
+                        { t("section2.desc2") }
+                    </Typography>
+                    <Typography className={"block font-semibold mt-4"}>
+                        { t("section2.demo") }
                     </Typography>
                     <ul className="list-disc mt-4 pl-5 space-y-1">
-                        <li>
-                            <strong>{t("section2.ul.li1-strong")}</strong>
-                            {t("section2.ul.li1-text")}
-                        </li>
-                        <li>
-                            <strong>{t("section2.ul.li2-strong")}</strong>
-                            {t("section2.ul.li2-text")}
-                        </li>
-                        <li>
-                            <strong>{t("section2.ul.li3-strong")}</strong>
-                            {t("section2.ul.li3-text")}
-                        </li>
+                        <li>{t("section2.ul.li1")}</li>
+                        <li>{t("section2.ul.li2")}</li>
                     </ul>
                 </div>
             )
         },
         {
-            id: "stop-loss",
+            id: "power",
             title: t("section3.title"),
             content: (
                 <div>
                     <Typography>
-                        { t("section3.desc") }
+                        { t("section3.desc1") }
+                    </Typography>
+                    <Typography className={"block mt-4"}>
+                        { t("section3.desc2") }
+                    </Typography>
+                    <Typography className={"block font-semibold mt-4"}>
+                        { t("section3.demo") }
                     </Typography>
                     <ul className="list-disc mt-4 pl-5 space-y-1">
-                        <li>
-                            <strong>{t("section3.ul.li1-strong")}</strong>
-                            {t("section3.ul.li1-text")}
-                        </li>
-                        <li>
-                            <strong>{t("section3.ul.li2-strong")}</strong>
-                            {t("section3.ul.li2-text")}
-                        </li>
-                        <li>
-                            <strong>{t("section3.ul.li3-strong")}</strong>
-                            {t("section3.ul.li3-text")}
-                        </li>
+                        <li>{t("section3.ul.li1")}</li>
+                        <li>{t("section3.ul.li2")}</li>
                     </ul>
                 </div>
             )
         },
         {
-            id: "noise",
+            id: "growth",
             title: t("section4.title"),
             content: (
                 <div>
                     <Typography>
-                        { t("section4.desc") }
+                        { t("section4.desc1") }
+                    </Typography>
+                    <Typography className={"block mt-4"}>
+                        { t("section4.desc2") }
+                    </Typography>
+                    <Typography className={"block font-semibold mt-4"}>
+                        { t("section4.demo") }
                     </Typography>
                     <ul className="list-disc mt-4 pl-5 space-y-1">
-                        <li>
-                            <strong>{t("section4.ul.li1-strong")}</strong>
-                            {t("section4.ul.li1-text")}
-                        </li>
-                        <li>
-                            <strong>{t("section4.ul.li2-strong")}</strong>
-                            {t("section4.ul.li2-text")}
-                        </li>
-                        <li>
-                            <strong>{t("section4.ul.li3-strong")}</strong>
-                            {t("section4.ul.li3-text")}
-                        </li>
+                        <li>{t("section4.ul.li1")}</li>
+                        <li>{t("section4.ul.li2")}</li>
                     </ul>
                 </div>
             )
         },
         {
-            id: "emotional",
+            id: "policy",
             title: t("section5.title"),
             content: (
                 <div>
                     <Typography>
-                        { t("section5.desc") }
+                        { t("section5.desc1") }
+                    </Typography>
+                    <Typography className={"block mt-4"}>
+                        { t("section5.desc2") }
+                    </Typography>
+                    <Typography className={"block font-semibold mt-4"}>
+                        { t("section5.demo") }
                     </Typography>
                     <ul className="list-disc mt-4 pl-5 space-y-1">
-                        <li>
-                            <strong>{t("section5.ul.li1-strong")}</strong>
-                            {t("section5.ul.li1-text")}
-                        </li>
-                        <li>
-                            <strong>{t("section5.ul.li2-strong")}</strong>
-                            {t("section5.ul.li2-text")}
-                        </li>
-                        <li>
-                            <strong>{t("section5.ul.li3-strong")}</strong>
-                            {t("section5.ul.li3-text")}
-                        </li>
+                        <li>{t("section5.ul.li1")}</li>
+                        <li>{t("section5.ul.li2")}</li>
                     </ul>
                 </div>
             )
         },
         {
-            id: "ignorance",
+            id: "advance",
             title: t("section6.title"),
             content: (
                 <div>
@@ -129,24 +113,10 @@ export default async function Page() {
                             <strong>{t("section6.ul.li2-strong")}</strong>
                             {t("section6.ul.li2-text")}
                         </li>
-                        <li>
-                            <strong>{t("section6.ul.li3-strong")}</strong>
-                            {t("section6.ul.li3-text")}
-                        </li>
                     </ul>
                     <Typography className={"!mt-4 block"}>
                         { t("section6.advance") }
                     </Typography>
-                    <ul className="list-disc mt-4 pl-5 space-y-1">
-                        <li>
-                            <strong>{t("section6.ul.li1-strong")}</strong>
-                            {t("section6.aul.li1")}
-                        </li>
-                        <li>
-                            <strong>{t("section6.ul.li2-strong")}</strong>
-                            {t("section6.aul.li2")}
-                        </li>
-                    </ul>
                 </div>
             )
         },
@@ -158,18 +128,17 @@ export default async function Page() {
                     <Typography>
                         { t("summary.desc") }
                     </Typography>
-                    <Typography className={"block my-4"}>
-                        { t("summary.prompt") }
-                    </Typography>
                     <ul className="list-decimal pl-5 space-y-1">
                         <li>{t("summary.ul.li1")}</li>
                         <li>{t("summary.ul.li2")}</li>
                         <li>{t("summary.ul.li3")}</li>
                         <li>{t("summary.ul.li4")}</li>
-                        <li>{t("summary.ul.li5")}</li>
                     </ul>
                     <Typography className={"block my-4"}>
-                        { t("summary.end") }
+                        { t("summary.end1") }
+                    </Typography>
+                    <Typography className={"block my-4"}>
+                        { t("summary.end2") }
                     </Typography>
                 </div>
             )
