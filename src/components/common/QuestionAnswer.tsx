@@ -6,7 +6,6 @@ import {motion, Variants} from "framer-motion";
 import {Typography} from "@/components/ui/typography";
 import {useTranslations} from "next-intl";
 
-
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -16,7 +15,7 @@ const fadeInUp: Variants = {
     },
 }
 
-function QAItemRow({ item }: any) {
+export function QAItemRow({ item }: any) {
     const [open, setOpen] = React.useState(false);
     return (
         <Collapsible open={open} onOpenChange={setOpen}>

@@ -42,6 +42,7 @@ export default async function Page() {
         {question: t("qa.ul.li3.title"), answer: t("qa.ul.li3.desc"),},
         {question: t("qa.ul.li4.title"), answer: t("qa.ul.li4.desc"),}
     ];
+
     return (
         <div>
             <Banner/>

@@ -348,7 +348,7 @@ const Navigation = () => {
                             title: t("menu.corporation.row.col-1.title"),
                             ul: [
                                 { label: t("menu.corporation.row.col-1.ul.li1"), path: "/corporation/about" },
-                                { label: t("menu.corporation.row.col-1.ul.li2"), path: "/" },
+                                { label: t("menu.corporation.row.col-1.ul.li2"), path: "/corporation/careers" },
                                 { label: t("menu.corporation.row.col-1.ul.li3"), path: "/" },
                                 { label: t("menu.corporation.row.col-1.ul.li4"), path: "/" },
                                 { label: t("menu.corporation.row.col-1.ul.li5"), path: "/" }

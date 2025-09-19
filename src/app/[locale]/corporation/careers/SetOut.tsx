@@ -3,8 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button }  from "@/components/ui/button";
-import Introduction from "@/components/common/corporation/Introduction";
+import { Button } from "@/components/ui/button";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -15,10 +14,11 @@ const fadeInUp: Variants = {
     },
 }
 
-const JoinUS = () => {
-    const t = useTranslations("Pages.corporation.about.join");
+
+const SetOut = () => {
+    const t = useTranslations("Pages.corporation.careers.setOut");
     return (
-        <section>
+        <section className={"p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -32,17 +32,19 @@ const JoinUS = () => {
                     {t("title")}
                 </Typography>
                 <Typography
-                    variant={"muted"}
-                    className={"font-medium text-center mt-4"}
+                    variant={"h5"}
+                    className={"font-medium mt-6 text-center"}
                 >
                     {t("desc")}
                 </Typography>
+                <div className={"mt-16 flex justify-center items-center"}>
+                    <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        {t("view")}
+                    </Button>
+                </div>
             </motion.div>
-            <div className={"mt-16"}>
-                <Introduction/>
-            </div>
         </section>
     )
 }
 
-export default JoinUS;
+export default SetOut
