@@ -37,7 +37,7 @@ export default async function RootLayout({children, params}: Props) {
         notFound();
     }
   return (
-      <html lang={locale} suppressHydrationWarning>
+      <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <head>
           <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no"/>
           <title></title>
