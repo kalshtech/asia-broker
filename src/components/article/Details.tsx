@@ -102,7 +102,7 @@ export default function ArticleDetails(props: Props) {
 
     return (
         <div className="mx-auto p-30">
-            <div className="grid grid-cols-1 gap-16 lg:grid-cols-[360px_minmax(0,1fr)]">
+            <div className="grid grid-cols-1 gap-16 lg:grid-cols-[388px_minmax(0,1fr)]">
                 <aside className="sticky top-34 self-start">
                     <div className={""}>
                         <img src="/images/logo/en/dark.png" className={"h-[30px] object-cover"} alt=""/>
