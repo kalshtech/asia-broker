@@ -23,7 +23,7 @@ export default async function Page() {
             content: (
                 <div>
                     <Typography>{ t("section2.desc") }</Typography>
-                    <ul className="list-disc mt-4 pl-5 space-y-1">
+                    <ul className="list-disc mt-2 pl-5 space-y-1">
                         <li>
                             {t("section2.ul.li1-text")}
                         </li>
