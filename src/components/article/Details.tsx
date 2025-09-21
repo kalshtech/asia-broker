@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -45,8 +44,6 @@ export default function ArticleDetails(props: Props) {
     const scrollTimeout = useRef<number | null>(null);
 
     const shareAry = [
-        { imgUrl: "/images/articles/micro-blog.png", path: "/" },
-        { imgUrl: "/images/articles/wechat.png", path: "/" },
         { imgUrl: "/images/articles/twitter.png", path: "/" },
         { imgUrl: "/images/articles/ins.png", path: "/" },
         { imgUrl: "/images/articles/facebook.png", path: "/" }
