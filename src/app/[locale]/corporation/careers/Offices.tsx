@@ -86,25 +86,7 @@ const Offices = () => {
                     <Separator/>
                 </>
             )
-        },
-        {
-            question: t("list.item3.title"),
-            answer: (
-                <>
-                    <div className={"flex pb-16"}>
-                        <Typography>
-                            {t("list.item3.text1")}
-                        </Typography>
-                        <img
-                            src="/images/corporation/careers-online.png"
-                            className={"ml-auto max-h-80 object-cover"}
-                            alt=""
-                        />
-                    </div>
-                    <Separator/>
-                </>
-            )
-        },
+        }
     ];
 
     return (

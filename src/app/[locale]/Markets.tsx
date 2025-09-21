@@ -164,16 +164,16 @@ const Markets = () => {
                 <div className={"flex-1 flex flex-col"}>
                     <div className={"flex justify-center"}>
                         <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
-                            <TabsList>
+                            <TabsList className={"h-10"}>
                                 <TabsTrigger
                                     value={"stock"}
-                                    className={"cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-4"}
+                                    className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
                                 >
                                     { commonT("usStock") }
                                 </TabsTrigger>
                                 <TabsTrigger
                                     value={"forex"}
-                                    className={"cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-4"}
+                                    className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
                                 >
                                     { commonT("forex") }
                                 </TabsTrigger>

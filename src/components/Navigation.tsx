@@ -349,7 +349,7 @@ const Navigation = () => {
                             ul: [
                                 { label: t("menu.corporation.row.col-1.ul.li1"), path: "/corporation/about" },
                                 { label: t("menu.corporation.row.col-1.ul.li2"), path: "/corporation/careers" },
-                                { label: t("menu.corporation.row.col-1.ul.li3"), path: "/" },
+                                // { label: t("menu.corporation.row.col-1.ul.li3"), path: "/" },
                                 { label: t("menu.corporation.row.col-1.ul.li4"), path: "/" },
                                 { label: t("menu.corporation.row.col-1.ul.li5"), path: "/" }
                             ]
@@ -371,7 +371,7 @@ const Navigation = () => {
                                 {
                                     label: t("menu.doublewin.row.col-1.ul.li1"),
                                     desc: t("menu.doublewin.row.col-1.ul.desc1"),
-                                    path: "/"
+                                    path: "/mutual/trading-competition"
                                 },
                                 { label: t("menu.doublewin.row.col-1.ul.li2"), desc: t("menu.doublewin.row.col-1.ul.desc2"), path: "/" },
                                 { label: t("menu.doublewin.row.col-1.ul.li3"), desc: t("menu.doublewin.row.col-1.ul.desc3"), path: "/" },

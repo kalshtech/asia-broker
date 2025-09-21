@@ -309,6 +309,23 @@ const Hire = () => {
                             ))
                         }
                     </div>
+                    <Typography
+                        variant={"muted"}
+                        className={"mt-4 font-medium"}
+                    >
+                        { t("list.desc1") }
+                    </Typography>
+                    <Typography
+                        variant={"muted"}
+                        className={"mt-4"}
+                    >
+                        { t("list.desc2") }
+                        <a className={"text-theme-active underline"} href="mailto:career@afttmarkets.com">career@afttmarkets.com</a>
+                    </Typography>
+
+                    <div className={"mt-8 font-medium"}>
+                        { t("list.desc3") }
+                    </div>
                 </div>
             </div>
         </section>

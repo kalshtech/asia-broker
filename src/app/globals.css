@@ -165,3 +165,12 @@ h1,h2,h3,h4,h5,h6,p {
 .text-destructive {
   color: red;
 }
+
+.specially-card {
+  background: linear-gradient( 161deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%), linear-gradient( 160deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%), linear-gradient( 6deg, rgba(0,0,0,0) 0%, #000000 100%), rgba(89,100,136,0.4);
+  border-image: linear-gradient(150deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)) 1 1;
+}
+
+.specially-reward-card {
+  background: linear-gradient( 161deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%), linear-gradient( 6deg, rgba(0,0,0,0) 0%, #000000 100%), rgba(65,76,113,0.4);
+}
