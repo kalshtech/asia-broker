@@ -32,10 +32,11 @@ type Props = {
     time: string;
     tags: Array<{ text: string }>;
     articlesAry: Array<{ imageUrl: string; title: string; disc: string; time: string }>
+    desc?: string
 }
 
 export default function ArticleDetails(props: Props) {
-    const { sections, breadcrumb, title, time, tags, articlesAry } = props;
+    const { sections, breadcrumb, title, time, tags, articlesAry, desc } = props;
     const t = useTranslations("Articles");
     const sectionsAry: Array<{ id: string; title: string; content: any }>= useMemo(() => sections, []);
     const [activeId, setActiveId] = useState<string>(sections[0]?.id);
@@ -153,6 +154,18 @@ export default function ArticleDetails(props: Props) {
                         >
                             {title}
                         </Typography>
+
+                        {
+                            desc && (
+                                <Typography
+                                    variant={"large"}
+                                    className={"font-normal mt-8"}
+                                >
+                                    {desc}
+                                </Typography>
+                            )
+                        }
+
                         <div className={"flex mt-4"}>
                             {
                                 tags.map((item, i) => (

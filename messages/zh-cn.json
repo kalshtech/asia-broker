@@ -3043,6 +3043,122 @@
     "share": "分享到",
     "relation": "相关文章",
     "beginner": {
+      "common-currency": {
+        "title": "常见货币对与其特性",
+        "desc": "好的，下面我专门针对 美元系货币对（USD 作为一方），整理了一篇完整内容。引用了国际清算银行（BIS）、美国联邦储备（Federal Reserve）、IMF 等高权威机构的信息，帮助解释每个主要美元货币对的特性。",
+        "section1": {
+          "title": "一、背景",
+          "desc": "美元（USD）是全球最重要的储备货币。国际清算银行 2022 年调查显示，美元参与了全球 88% 的外汇交易【BIS, Triennial Survey 2022】。因此，所有以美元为一方的货币对（即 “美元系”）都是市场的流动性核心。"
+        },
+        "section2": {
+          "title": "二、主要美元货币对",
+          "eur": "EUR/USD —— 全球交易量第一",
+          "jpy": "USD/JPY —— 亚洲交易核心",
+          "gbp": "GBP/USD —— “Cable”",
+          "cad": "USD/CAD —— “Loonie”",
+          "adu": "AUD/USD —— “Aussie”",
+          "chf": "USD/CHF —— 避险货币对",
+          "nzd": "NZD/USD —— “Kiwi”",
+          "eur-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "全球外汇交易的 22% 以上【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "欧央行（ECB）与美联储（Fed）的利率差。",
+            "li2-text2": "欧元区与美国的通胀与增长差异。",
+            "li3-strong": "特点：",
+            "li3-text": "点差最小，流动性最高，常被用作外汇市场基准。"
+          },
+          "jpy-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 13% 全球成交量【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "日本央行超宽松政策 vs 美联储利率政策。",
+            "li2-text2": "日元作为全球避险货币，在地缘风险或金融危机时常快速升值。",
+            "li3-strong": "特点：",
+            "li3-text": "在亚洲交易时段波动活跃，对美国债券收益率高度敏感"
+          },
+          "gbp-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "全球交易量约 9%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "英格兰银行（BoE）的政策路径。",
+            "li2-text2": "英国宏观数据，如 GDP、通胀、就业。",
+            "li2-text3": "脱欧后政治经济不确定性。",
+            "li3-strong": "特点：",
+            "li3-text": "波动大于 EUR/USD，趋势性更强，点差略高。"
+          },
+          "chf-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 5%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "瑞士央行（SNB）的干预政策。",
+            "li2-text2": "全球金融市场避险情绪。",
+            "li3-strong": "特点：",
+            "li3-text": "CHF 被视为“避险天堂”，当市场动荡时，USD/CHF 常下跌（法郎升值）。"
+          },
+          "cad-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 5%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "加拿大出口依赖原油，油价波动直接影响加元。",
+            "li2-text2": "美加利率差。",
+            "li3-strong": "特点：",
+            "li3-text": "常被称为“石油货币”，适合关注能源市场的交易者。"
+          },
+          "adu-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 5%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "澳大利亚铁矿石、煤炭等大宗商品出口价格。",
+            "li2-text2": "与中国经济关系密切，中国需求直接影响澳元。",
+            "li3-strong": "特点：",
+            "li3-text": "与商品周期同步，波动性中等。"
+          },
+          "nzd-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 2%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "新西兰农业和乳制品出口价格。",
+            "li2-text2": "新西兰储备银行（RBNZ）利率决策。",
+            "li3-strong": "特点：",
+            "li3-text": "流动性低于 AUD/USD，但受商品价格和亚洲需求影响大。"
+          }
+        },
+        "section3": {
+          "title": "三、美元系货币对的共性",
+          "ul": {
+            "li1-strong": "美元的主导地位",
+            "li1-text1": "美元在 IMF 外汇储备中占比 59%【IMF COFER 2023】。",
+            "li1-text2": "美元利率、美国经济数据对所有美元系货币对有“一票否决”效应。",
+            "li2-strong": "避险与风险周期",
+            "li2-text1": "市场动荡时：USD/JPY 和 USD/CHF 常大幅波动。",
+            "li2-text2": "风险偏好上升时：AUD/USD、NZD/USD、USD/CAD 走势更活跃。",
+            "li3-strong": "交易时间特征",
+            "li3-text1": "亚洲盘：USD/JPY 活跃。",
+            "li3-text2": "欧洲盘：EUR/USD、GBP/USD 主导。",
+            "li3-text3": "美洲盘：USD/CAD、USD/CHF、AUD/USD 成交集中。"
+          }
+        },
+        "summary": {
+          "title": "四、总结",
+          "ul": {
+            "li1-strong": "EUR/USD：",
+            "li1-text": "全球最重要基准，点差最低。",
+            "li2-strong": "USD/JPY：",
+            "li2-text": "与美国利率和避险情绪高度挂钩。",
+            "li3-strong": "GBP/USD：",
+            "li3-text": "波动性强，受英国政治经济影响显著。",
+            "li4-strong": "USD/CHF：",
+            "li4-text": "避险货币组合，波动相对温和。",
+            "li5-strong": "USD/CAD：",
+            "li5-text": "石油货币对，关注油价。",
+            "li6-strong": "AUD/USD：",
+            "li6-text": "大宗商品驱动，与中国经济联动。",
+            "li7-strong": "NZD/USD：",
+            "li7-text": "农业出口相关，波动性高于 AUD/USD。"
+          }
+        }
+      },
       "common-mistakes": {
         "title": "新手常犯的五个错误",
         "section1": {
