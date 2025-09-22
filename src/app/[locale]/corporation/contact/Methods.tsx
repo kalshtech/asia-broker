@@ -1,0 +1,74 @@
+"use client";
+import * as React from 'react'
+import { motion, Variants } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { Typography } from "@/components/ui/typography";
+import {Button} from "@/components/ui/button";
+
+const fadeInUp: Variants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: 'easeOut' },
+    },
+}
+
+const Methods = () => {
+    const t = useTranslations("Pages.corporation.contact.methods");
+    const ary = [
+        { imageUrl: "/images/corporation/contact-methods1.png", title: t("row.col1.title"), desc: t("row.col1.desc"), btnText: t("row.col1.btnText") },
+        { imageUrl: "/images/corporation/contact-methods2.png", title: t("row.col2.title"), desc: t("row.col2.desc"), btnText: t("row.col2.btnText") },
+        { imageUrl: "/images/corporation/contact-methods3.png", title: t("row.col3.title"), desc: t("row.col3.desc"), btnText: t("row.col2.btnText") },
+    ];
+
+    return (
+        <section className={"p-30"}>
+            <motion.div
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 0.5}}
+            >
+                <Typography
+                    variant={"h1"}
+                    className={"font-medium text-center"}
+                >
+                    {t("title")}
+                </Typography>
+            </motion.div>
+            <div className={"mt-16"}>
+                <div className={"grid grid-cols-12 gap-8"}>
+                    {
+                        ary.map((item, index) => (
+                            <div className={"col-span-4 p-10 bg-theme-light-bg rounded-2xl"} key={index}>
+                                <img
+                                    src={item.imageUrl}
+                                    alt="icon"
+                                    title={"icon"}
+                                    className={"w-10 h-10 object-cover"}
+                                />
+                                <Typography
+                                    variant={"h4"}
+                                    className={"font-medium my-6"}
+                                >
+                                    {item.title}
+                                </Typography>
+                                <Typography variant={"muted"}>
+                                    {item.desc}
+                                </Typography>
+                                <div className={"mt-16"}>
+                                    <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active"}>
+                                        { item.btnText }
+                                    </Button>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default Methods;
