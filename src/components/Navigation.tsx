@@ -16,6 +16,7 @@ import {
 import { Typography } from "@/components/ui/typography";
 import { Separator } from "@/components/ui/separator";
 import { MoveRight, Globe } from 'lucide-react';
+import {useState, useEffect, useRef} from "react";
 
 const { locales } = routing;
 
@@ -113,8 +114,7 @@ const Navigation = () => {
     const router = useRouter();
     const pathname = usePathname();
     const t = useTranslations("Navigation");
-
-
+    const [open, setOpen] = useState(false)
     const localAry = [
         { value: "en", label: "English", country: t("countries.en") },
         { value: "zh-cn", label: "中文简体", country: t("countries.zh-cn") },
@@ -146,7 +146,7 @@ const Navigation = () => {
                                 { label: t("menu.products.row.col-1.ul.li2"), path: "/products/pm" },
                                 { label: t("menu.products.row.col-1.ul.li3"), path: "/products/energy" },
                                 { label: t("menu.products.row.col-1.ul.li4"), path: "/products/stocks" },
-                                { label: t("menu.products.row.col-1.ul.li5"), path: "/" },
+                                { label: t("menu.products.row.col-1.ul.li5"), path: "/products/future" },
                                 { label: t("menu.products.row.col-1.ul.li6"), path: "/products/crypto" },
                             ]
                         },
@@ -460,8 +460,13 @@ const Navigation = () => {
                 <div className={"flex items-center"}>
                     <NavigationMenu viewport={false}>
                         <NavigationMenuList>
-                            <NavigationMenuItem>
-                                <NavigationMenuTrigger className={"flex justify-center items-center hover:!bg-transparent data-[state=open]:!bg-transparent hover:!text-theme-active data-[state=open]:!text-theme-active"}>
+                            <NavigationMenuItem value={"local"}>
+                                <NavigationMenuTrigger
+                                    onClick={(e) => {
+                                        e.preventDefault()
+                                        setOpen((prev) => !prev)
+                                    }}
+                                    className={"flex justify-center items-center hover:!bg-transparent data-[state=open]:!bg-transparent hover:!text-theme-active data-[state=open]:!text-theme-active"}>
                                     <div className={"flex items-center"}>
                                         <Globe/>
                                         <Typography className={"ml-1"}>
@@ -469,40 +474,44 @@ const Navigation = () => {
                                         </Typography>
                                     </div>
                                 </NavigationMenuTrigger>
-                                <NavigationMenuContent className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}>
-                                    <div>
-                                        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-8 cursor-pointer">
-                                            {
-                                                localAry.map((item, index) => (
-                                                    <li className="flex items-start gap-4"
-                                                        key={index}
-                                                        onClick={() => handleToggleLang({ key: item.value })}
-                                                    >
-                                                        <div className="h-[30px] w-[30px] overflow-hidden grid place-items-center">
-                                                            <img src={`/images/countries/${item.value}.png`} alt={item.value} title={item.value}/>
-                                                        </div>
-                                                        <div className="leading-[18px] flex flex-col">
-                                                            <Typography>
-                                                                { item.label }
-                                                            </Typography>
-                                                            <Typography
-                                                                variant={"muted"}
-                                                                className={"mt-1"}
+                                {
+                                    open && (
+                                        <NavigationMenuContent className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}>
+                                            <div>
+                                                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-8 cursor-pointer">
+                                                    {
+                                                        localAry.map((item, index) => (
+                                                            <li className="flex items-start gap-4"
+                                                                key={index}
+                                                                onClick={() => handleToggleLang({ key: item.value })}
                                                             >
-                                                                { item.country }
-                                                            </Typography>
-                                                        </div>
-                                                    </li>
-                                                ))
-                                            }
-                                        </ul>
-                                    </div>
-                                </NavigationMenuContent>
+                                                                <div className="h-[30px] w-[30px] overflow-hidden grid place-items-center">
+                                                                    <img src={`/images/countries/${item.value}.png`} alt={item.value} title={item.value}/>
+                                                                </div>
+                                                                <div className="leading-[18px] flex flex-col">
+                                                                    <Typography>
+                                                                        { item.label }
+                                                                    </Typography>
+                                                                    <Typography
+                                                                        variant={"muted"}
+                                                                        className={"mt-1"}
+                                                                    >
+                                                                        { item.country }
+                                                                    </Typography>
+                                                                </div>
+                                                            </li>
+                                                        ))
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </NavigationMenuContent>
+                                    )
+                                }
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
                     <Button
-                        className={"mr-4 px-6 lg:px-8 rounded-full bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
+                        className={"mr-4 px-6 ml-4 lg:px-8 rounded-full bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
                         登录
                     </Button>
                     <Button className={"bg-theme-active rounded-full cursor-pointer hover:bg-theme-active-hover"}>

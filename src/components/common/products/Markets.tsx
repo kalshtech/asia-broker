@@ -41,18 +41,20 @@ interface RawItem {
 }
 
 type Props = {
-    mainRaw: RawItem[];
-    secondRaw?: RawItem[];
-    otherRaw?: RawItem[];
+    mainRaw: RawItem[] | any;
+    secondRaw?: RawItem[] | any;
+    otherRaw?: RawItem[] | any;
+    other4Raw?: any;
     title: string;
     desc?: string;
     tabList?: TabItem[];
     trade: string;
+    type?: string;
 };
 
 const Markets = (props: Props) => {
     const CommonT = useTranslations("Common");
-    const { mainRaw, secondRaw, otherRaw, title, desc, tabList, trade } = props;
+    const { mainRaw, secondRaw, otherRaw, title, desc, tabList, trade, other4Raw, type = "elementary" } = props;
 
     const [ tabActive, setTabActive ] = React.useState<string>("main");
     const [ rawData, setRawData ] = React.useState<RawItem[]>(mainRaw);
@@ -73,6 +75,11 @@ const Markets = (props: Props) => {
             case "other":
                 if(otherRaw) {
                     setRawData(otherRaw);
+                }
+                return;
+            case "other-meta":
+                if(otherRaw) {
+                    setRawData(other4Raw);
                 }
                 return;
             default:
@@ -109,8 +116,12 @@ const Markets = (props: Props) => {
     }
 
     React.useEffect(() => {
-        handleLoadQuoteData()
-    }, [ tabActive ])
+        if(type === "elementary") {
+            handleLoadQuoteData();
+        } else if (type === "future") {
+            setLoading(false);
+        }
+    }, [ tabActive ]);
 
     return (
         <section className={"px-30 py-10"}>
@@ -166,69 +177,99 @@ const Markets = (props: Props) => {
                 )
             }
             <div className={"mt-10"}>
-                <Table>
-                    <TableCaption className={"mt-16"}>
-                        <Button className={"bg-theme-active rounded-full px-8 h-10 hover:bg-theme-active-hover"}>
-                            {trade}
-                        </Button>
-                    </TableCaption>
-                    <TableHeader>
-                        <TableRow>
-                            <TableHead className={"w-[120px]"}>{CommonT("code")}</TableHead>
-                            <TableHead>{CommonT("price")}</TableHead>
-                            <TableHead>{CommonT("changePercentage")}</TableHead>
-                            <TableHead>{CommonT("change")}</TableHead>
-                            <TableHead>{CommonT("open")}</TableHead>
-                            <TableHead>{CommonT("high")}</TableHead>
-                            <TableHead>{CommonT("low")}</TableHead>
-                            <TableHead className={"text-right w-[80px]"}>{CommonT("volume")}</TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {loading ? (
-                            Array.from({length: 6}).map((_, i) => (
-                                <TableRow key={i}>
-                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                </TableRow>
-                            ))
-                        ) : rawData.map((item: any, index: number) => (
-                            <TableRow key={index}>
-                                <TableCell className={"flex"}>
-                                    <Typography className="font-medium">
-                                        {item.symbol}
-                                    </Typography>
-                                    <Typography variant={"muted"} className={"ml-2"}>
-                                        {item.name}
-                                    </Typography>
-                                </TableCell>
-                                <TableCell>
+                { type === "elementary" && (
+                    <Table>
+                        <TableCaption className={"mt-16"}>
+                            <Button className={"bg-theme-active rounded-full px-8 h-10 hover:bg-theme-active-hover"}>
+                                {trade}
+                            </Button>
+                        </TableCaption>
+                        <TableHeader>
+                            <TableRow>
+                                <TableHead className={"w-[120px]"}>{CommonT("code")}</TableHead>
+                                <TableHead>{CommonT("price")}</TableHead>
+                                <TableHead>{CommonT("changePercentage")}</TableHead>
+                                <TableHead>{CommonT("change")}</TableHead>
+                                <TableHead>{CommonT("open")}</TableHead>
+                                <TableHead>{CommonT("high")}</TableHead>
+                                <TableHead>{CommonT("low")}</TableHead>
+                                <TableHead className={"text-right w-[80px]"}>{CommonT("volume")}</TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {loading ? (
+                                Array.from({length: 6}).map((_, i) => (
+                                    <TableRow key={i}>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                    </TableRow>
+                                ))
+                            ) : rawData.map((item: any, index: number) => (
+                                <TableRow key={index}>
+                                    <TableCell className={"flex"}>
+                                        <Typography className="font-medium">
+                                            {item.symbol}
+                                        </Typography>
+                                        <Typography variant={"muted"} className={"ml-2"}>
+                                            {item.name}
+                                        </Typography>
+                                    </TableCell>
+                                    <TableCell>
                                     <span className={rangeCls(item.changesPercentage)}>
                                         {formatMaxFixed(item.open)}
                                     </span>
-                                </TableCell>
-                                <TableCell>
+                                    </TableCell>
+                                    <TableCell>
                                     <span className={rangeCls(item.changesPercentage)}>
                                         {rangeChange(item.changesPercentage)}
                                     </span>
-                                </TableCell>
-                                <TableCell>
+                                    </TableCell>
+                                    <TableCell>
                                      <span className={rangeCls(item.changesPercentage)}>
                                         {formatMaxFixed(item.change)}
                                     </span>
-                                </TableCell>
-                                <TableCell>{formatMaxFixed(item.open)}</TableCell>
-                                <TableCell>{formatMaxFixed(item.dayHigh)}</TableCell>
-                                <TableCell>{formatMaxFixed(item.dayLow)}</TableCell>
-                                <TableCell align="right">{convert(item.volume)}</TableCell>
+                                    </TableCell>
+                                    <TableCell>{formatMaxFixed(item.open)}</TableCell>
+                                    <TableCell>{formatMaxFixed(item.dayHigh)}</TableCell>
+                                    <TableCell>{formatMaxFixed(item.dayLow)}</TableCell>
+                                    <TableCell align="right">{convert(item.volume)}</TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                ) }
+
+                { type === "future" && (
+                    <Table>
+                        <TableCaption className={"mt-16"}>
+                            <Button className={"bg-theme-active rounded-full px-8 h-10 hover:bg-theme-active-hover"}>
+                                {trade}
+                            </Button>
+                        </TableCaption>
+                        <TableHeader>
+                            <TableRow>
+                                <TableHead>{CommonT("code")}</TableHead>
+                                <TableHead>{CommonT("productName")}</TableHead>
                             </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
+                        </TableHeader>
+                        <TableBody>
+                            { rawData.map((item: any, index: number) => (
+                                <TableRow key={index}>
+                                    <TableCell className={"flex"}>
+                                        <Typography className="font-medium">
+                                            {item.symbol}
+                                        </Typography>
+                                    </TableCell>
+                                    <TableCell>{item.name}</TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                ) }
             </div>
         </section>
     )
