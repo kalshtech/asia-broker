@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import classnames from "classnames";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
@@ -67,28 +66,27 @@ export function groupByLetter(items: GlossaryItem[]): Array<[string, GlossaryIte
     return ALPHABET.filter((L) => map.has(L)).map((L) => [L, map.get(L)!] as [string, GlossaryItem[]]);
 }
 
-const DEMO: GlossaryItem[] = [
-    { term: "Algorithmic Trading", translation: "（算法交易）", href: "/glossary/algorithmic-trading" },
-    { term: "Arbitrage", translation: "（套利）", href: "/glossary/arbitrage" },
-    { term: "Asian Session", translation: "（亚洲时段）" },
-    { term: "Ask Price", translation: "（卖出价）" },
-    { term: "Ask Price123", translation: "（卖出价）" },
-    { term: "Ask Price456", translation: "（卖出价）" },
-    { term: "Ask Price789", translation: "（卖出价）" },
-    { term: "Bid Price", translation: "（买入价）" },
-    { term: "Base Currency", translation: "（基础货币）" },
-    { term: "Bearish", translation: "（看空）" },
-    { term: "Bullish", translation: "（看多）" }
-];
-
-
-const CoreTerms = ({ items = DEMO }: { items?: GlossaryItem[] }) => {
+const CoreTerms = () => {
     const t = useTranslations("Pages.academy.learning.core");
+
+    const DEMO: GlossaryItem[] = [
+        { term: "Algorithmic Trading", translation: "（算法交易）", href: "/glossary/algorithmic-trading" },
+        { term: "Arbitrage", translation: "（套利）", href: "/glossary/arbitrage" },
+        { term: "Asian Session", translation: "（亚洲时段）" },
+        { term: "Ask Price", translation: "（卖出价）" },
+        { term: "Ask Price", translation: "（卖出价）" },
+        { term: "Ask Price", translation: "（卖出价）" },
+        { term: "Ask Price", translation: "（卖出价）" },
+        { term: "Bid Price", translation: "（买入价）" },
+        { term: "Base Currency", translation: "（基础货币）" },
+        { term: "Bearish", translation: "（看空）" },
+        { term: "Bullish", translation: "（看多）" }
+    ];
+
     const [ tabActive, setTabActive ] = React.useState<string>("term");
     const [q, setQ] = React.useState("");
     const [activeLetter, setActiveLetter] = React.useState<string | null>(null);
-    const searched = React.useMemo(() => filterItems(items, q), [items, q]);
-
+    const searched = React.useMemo(() => filterItems(DEMO, q), [DEMO, q]);
     const lettersWithData = React.useMemo(() => computeLettersWithData(searched), [searched]);
 
     React.useEffect(() => {

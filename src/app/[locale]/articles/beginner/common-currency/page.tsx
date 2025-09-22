@@ -8,7 +8,7 @@ export default async function Page() {
 
     const sections = [
         {
-            id: "first-essential-lesson",
+            id: "background",
             title: t("section1.title"),
             content: (
                 <div>
@@ -17,7 +17,7 @@ export default async function Page() {
             )
         },
         {
-            id: "excess",
+            id: "main",
             title: t("section2.title"),
             content: (
                 <div>
@@ -182,7 +182,7 @@ export default async function Page() {
             )
         },
         {
-            id: "excess12",
+            id: "commonality",
             title: t("section3.title"),
             content: (
                 <div>

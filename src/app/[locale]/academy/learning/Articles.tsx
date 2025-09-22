@@ -17,6 +17,7 @@ const fadeInUp: Variants = {
 }
 
 const Articles = () => {
+    const ArticlesT = useTranslations("Articles.beginner");
     const t = useTranslations("Pages.academy.learning.articles");
     const stageAry = [
         { label: t("stage.before"), value: "before" },
@@ -44,12 +45,15 @@ const Articles = () => {
     ];
 
     const articlesAry = [
-        { imageUrl: "/images/academy/learning-article1.png", title: "基于税收尺度的定量研究：地方保护的“衡量”", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/academy/learning-article2.png", title: "宏观经济深度报告：大财政时代冲击联储独立性...", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/academy/learning-article3.png", title: "人民币升值：短期催化与长期重估", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/academy/learning-article4.png", title: "资产配置日报：风云突变", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/academy/learning-article5.png", title: "债市分析框架之资金面", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/academy/learning-article6.png", title: "盛宴未散 见招拆招", disc: "宏观", time: "2025/9/3" },
+        { imageUrl: "/images/academy/learning-article1.png", title: ArticlesT("common-currency.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/common-currency" },
+        { imageUrl: "/images/academy/learning-article2.png", title: ArticlesT("trading-mechanism.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/trading-mechanism" },
+        { imageUrl: "/images/academy/learning-article3.png", title: ArticlesT("leverage-and-margin.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/leverage-and-margin" },
+        { imageUrl: "/images/academy/learning-article4.png", title: ArticlesT("explain-rates.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/explain-rates" },
+        { imageUrl: "/images/academy/learning-article5.png", title: ArticlesT("what-is-forex.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/what-is-forex" },
+        { imageUrl: "/images/academy/learning-article6.png", title: ArticlesT("forex-vs-stock.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/forex-vs-stock" },
+        { imageUrl: "/images/academy/learning-article2.png", title: ArticlesT("forex-fundamental-knowledge.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/forex-fundamental-knowledge" },
+        { imageUrl: "/images/academy/learning-article3.png", title: ArticlesT("forex-basic-analysis.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/forex-basic-analysis" },
+        { imageUrl: "/images/academy/learning-article1.png", title: ArticlesT("common-mistakes.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/common-mistakes" },
     ];
     return (
         <section className={"p-30"}>

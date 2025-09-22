@@ -8,13 +8,14 @@ type Props = {
     title: string;
     imageUrl: string;
     time: string;
+    href?: string;
 };
 
 const BaseArticle = (props: Props) => {
-    const { title, imageUrl, disc, time } = props;
+    const { title, imageUrl, disc, time, href = "/" } = props;
     return (
         <div>
-            <Link href={"/"}>
+            <Link href={href} target={"_blank"}>
                 <img src={imageUrl} alt="article-placeholder"
                      title={"article-placeholder"}/>
                 <div className={"mt-4"}>
