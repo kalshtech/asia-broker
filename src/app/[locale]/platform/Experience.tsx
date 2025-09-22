@@ -38,7 +38,7 @@ const Experience = () => {
         { one: t("table.row.col1-9-1"), two: t("table.row.col1-9-2"), three: t("table.row.col1-9-3") }
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"

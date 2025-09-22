@@ -39,7 +39,7 @@ const Tools = () => {
         { image: "/images/common/ideas.png", title: t("row.ideas.title"), desc: t("row.ideas.desc") },
     ];
     return (
-        <section className={"p-30 bg-theme-deep-bg"}>
+        <section className={"bg-theme-deep-bg p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -53,12 +53,12 @@ const Tools = () => {
                     { t("title") }
                 </Typography>
             </motion.div>
-            <div className={"mt-20"}>
+            <div className={"mt-4 lg:mt-20"}>
                 <div className={"grid grid-cols-12 gap-8"}>
                     {
                         ary1.map((item, index) => (
-                            <div className={"col-span-4"} key={index}>
-                                <Card>
+                            <div className={"col-span-12 lg:col-span-4 h-full"} key={index}>
+                                <Card className={"h-full"}>
                                     <CardHeader>
                                         <CardTitle>
                                             <img className={"w-10 h-10"} src={item.image} alt=""/>
@@ -108,7 +108,7 @@ const Tools = () => {
                     }
                 </div>
             </div>
-            <div className={"mt-28"}>
+            <div className={"mt-16 lg:mt-28"}>
                 <JoinCommunity theme={"light"} />
             </div>
         </section>

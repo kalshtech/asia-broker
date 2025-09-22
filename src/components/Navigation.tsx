@@ -457,8 +457,8 @@ const Navigation = () => {
                 </NavigationMenuList>
             </NavigationMenu>
             <div className={"ml-auto flex items-center"}>
-                <div className={"flex items-center"}>
-                    <NavigationMenu viewport={false}>
+                <div className={"items-center flex"}>
+                    <NavigationMenu viewport={false} className={"hidden lg:flex"}>
                         <NavigationMenuList>
                             <NavigationMenuItem value={"local"}>
                                 <NavigationMenuTrigger

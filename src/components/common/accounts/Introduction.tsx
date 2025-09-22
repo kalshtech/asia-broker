@@ -33,7 +33,7 @@ const Introduction = (props: Props) => {
     const { title, desc, leftTitle, liAry, leftDesc, rightRowAry, rightCol1Title, rightCol1Desc } = props;
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -57,8 +57,8 @@ const Introduction = (props: Props) => {
                     )
                 }
             </motion.div>
-            <div className={"grid grid-cols-12 gap-8 mt-16"}>
-                <div className={"col-span-3"}>
+            <div className={"grid grid-cols-12 gap-8 mt-4 lg:mt-16"}>
+                <div className={"col-span-12 lg:col-span-3"}>
                     <div className={""}>
                         <div>
                             <Typography variant={"h4"}>
@@ -89,8 +89,8 @@ const Introduction = (props: Props) => {
                         </ul>
                     </div>
                 </div>
-                <div className={"col-span-9"}>
-                    <div className={"grid grid-cols-3 gap-4"}>
+                <div className={"col-span-12 lg:col-span-9"}>
+                    <div className={"grid gap-4 grid-cols-2 lg:grid-cols-3"}>
                         <div className={"bg-theme-light-bg p-6 relative rounded-lg"}>
                             <img
                                 src="/images/accounts/zero.png"

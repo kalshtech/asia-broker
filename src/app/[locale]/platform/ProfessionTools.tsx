@@ -18,7 +18,7 @@ const ProfessionalTools = () => {
     const t = useTranslations("Pages.platform.professionalTools");
     return (
         <section
-            className={"bg-[url(/images/platform/professional-tools-background.png)] bg-cover bg-center p-30 h-[532px]"}>
+            className={"bg-[url(/images/platform/professional-tools-background.png)] bg-cover bg-center h-96 lg:h-[532px] p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"

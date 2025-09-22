@@ -39,7 +39,7 @@ export function QAItemRow({ item }: any) {
 export default function QuestionAnswer({ data } : any) {
     const t = useTranslations("Common");
     return (
-        <section className="lg:p-30 bg-theme-light-bg">
+        <section className="p-4 lg:p-30 bg-theme-light-bg">
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -53,7 +53,7 @@ export default function QuestionAnswer({ data } : any) {
                     {t("qa-title")}
                 </Typography>
             </motion.div>
-            <div className="max-w-4xl mt-16 mx-auto">
+            <div className="max-w-4xl mx-auto mt-4 lg:mt-16">
                 <div className="divide-y divide-border">
                     {data.map((item: any, index: number) => (
                         <QAItemRow key={index} item={item}/>

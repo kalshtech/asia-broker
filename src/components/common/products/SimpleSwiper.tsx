@@ -18,6 +18,11 @@ const SimpleSwiper = ({ ary, prevEl = ".properly-custom-prev", nextEl = ".proper
                 prevEl: prevEl,
                 nextEl: nextEl,
             }}
+            breakpoints={{
+                320: {slidesPerView: 1.2, spaceBetween: 16,},
+                600: {slidesPerView: 1.2, spaceBetween: 24,},
+                900: {slidesPerView: 4.5, spaceBetween: 36,},
+            }}
             className="mySwiper w-full"
         >
             {

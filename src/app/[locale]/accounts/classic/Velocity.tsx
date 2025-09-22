@@ -32,7 +32,7 @@ const Velocity = () => {
             </motion.div>
             <div className="mx-auto max-w-7xl px-4 py-10 mt-16">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
-                    <article className="relative overflow-hidden h-80 -mr-12">
+                    <article className="relative overflow-hidden h-80 mt-4 lg:mt-24 lg:-mr-12">
                         <img
                             src="/images/accounts/velocity1.png"
                             alt="datacenter"
@@ -52,7 +52,7 @@ const Velocity = () => {
                         </div>
                     </article>
 
-                    <article className="relative overflow-hidden h-80 mt-24 -ml-12">
+                    <article className="relative overflow-hidden h-80 mt-4 lg:mt-24 lg:-ml-12">
                         <img
                             src="/images/accounts/velocity2.png"
                             alt="speed"

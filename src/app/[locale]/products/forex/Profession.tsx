@@ -32,12 +32,13 @@ const Profession = () => {
     const activeImageUrl = cols.find(item => item.value === tabActive)?.img;
 
     return (
-        <section className={"lg:p-30"}>
+        <section className={"py-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once: true, amount: 0.5}}
+                className={"px-4 lg:px-0"}
             >
                 <Typography
                     variant={"h1"}
@@ -53,7 +54,7 @@ const Profession = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mx-30 mt-16"}>
+            <div className={"mt-4 lg:mx-30 lg:mt-16"}>
                 <div className={"w-full relative h-[560px]"}>
                     <div className={"w-full grid grid-cols-12 h-full border border-[#E6E6E6] relative"}>
                         {

@@ -13,7 +13,7 @@ type Props = {
 export default async function Banner({ title, description, midst, imageUrl }: Props) {
     const t = await getTranslations("Common");
     return (
-        <section className={`${imageUrl} bg-cover bg-center py-20 px-30 min-h-120`}>
+        <section className={`${imageUrl} bg-cover bg-center py-4 px-6 min-h-80 lg:min-h-120 lg:py-20 lg:px-30`}>
             <div>
                 <Typography
                     variant={"h1"}

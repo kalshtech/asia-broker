@@ -103,7 +103,7 @@ const Advertisement = () => {
 
             <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-3"}>
+                    <div className={"col-span-6 lg:col-span-3"}>
                         <div className={`bg-[url('/images/home/advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
                             <div className={"flex flex-col h-full cursor-pointer relative px-3 py-8 lg:px-6 lg:py-16"}>
                                 <div
@@ -134,7 +134,7 @@ const Advertisement = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-9"}>
+                    <div className={"col-span-6 lg:col-span-9"}>
                         <Swiper
                             slidesPerView={3.5}
                             spaceBetween={36}
@@ -148,8 +148,8 @@ const Advertisement = () => {
                             }}
                             modules={[Navigation]}
                             breakpoints={{
-                                320: {slidesPerView: 2.5, spaceBetween: 16,},
-                                600: {slidesPerView: 2.5, spaceBetween: 24,},
+                                320: {slidesPerView: 1.2, spaceBetween: 16,},
+                                600: {slidesPerView: 1.2, spaceBetween: 24,},
                                 900: {slidesPerView: 4.5, spaceBetween: 36,},
                             }}
                             className="mySwiper"

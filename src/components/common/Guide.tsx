@@ -42,7 +42,7 @@ type Props = {
 const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
     const t = useTranslations("Pages.products.forex.guide");
     return (
-        <section className={"lg:p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -56,7 +56,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                     { title }
                 </Typography>
             </motion.div>
-            <div className={"grid grid-cols-12 gap-4 mt-16"}>
+            <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16"}>
                 <div className={"col-span-12 lg:col-span-2"}>
                     <Typography
                         variant={"h3"}
@@ -68,7 +68,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                         left.midst && (
                             <Typography
                                 variant={"h4"}
-                                className={"font-medium mt-4"}
+                                className={"font-medium mt-2 lg:mt-4"}
                             >
                                 { left.midst }
                             </Typography>
@@ -76,7 +76,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                     }
                     {
                         left.desc && (
-                            <Typography variant={"muted"} className={"mt-8"}>
+                            <Typography variant={"muted"} className={"mt-4 lg:mt-8"}>
                                 { left.desc }
                             </Typography>
                         )

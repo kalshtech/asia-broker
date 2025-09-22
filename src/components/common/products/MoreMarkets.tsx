@@ -12,22 +12,22 @@ type Props = {
 
 export default async function MoreMarkets({ title, desc, midst, btnText, imageUrl }: Props) {
     return (
-        <section className={`mt-20 bg-cover bg-center h-90 py-16 ${imageUrl}`}>
+        <section className={`bg-cover bg-center px-4 mt-10 py-8 lg:py-16 lg:mt-20 lg:px-30 ${imageUrl}`}>
             <div className={"flex flex-col flex-1 h-full"}>
-                <div className={"flex items-center flex-col"}>
+                <div className={"flex items-center flex-col mb-4 lg:mb-16"}>
                     <Typography variant={"h1"} className={"!text-white font-medium"}>
                         {title}
                     </Typography>
                     { midst && (
-                        <Typography variant={"muted"} className={"!text-white mt-8"}>
+                        <Typography variant={"muted"} className={"!text-white mt-4 lg:mt-8"}>
                             {midst}
                         </Typography>
                     ) }
-                    <Typography variant={"muted"} className={"!text-white mt-8"}>
+                    <Typography variant={"muted"} className={"!text-white mt-4 lg:mt-8"}>
                         {desc}
                     </Typography>
                 </div>
-                <div className={"flex justify-center mt-auto"}>
+                <div className={"flex justify-center"}>
                     <Button className={"bg-theme-active h-12 px-8 hover:bg-theme-active-hover rounded-full"}>
                         {btnText}
                     </Button>

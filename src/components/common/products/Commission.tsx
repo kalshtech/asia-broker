@@ -14,13 +14,13 @@ type Props = {
 
 export default async function Commission({ title, desc, midst, more, imageUrl, theme = 'light' }: Props) {
     return (
-        <section className={"w-full flex px-30 mt-30"}>
-            <div className={`flex-1 relative  bg-cover bg-center h-[480px] ${imageUrl}`}>
-                <div className={"grid grid-cols-12 absolute mx-auto bottom-0 left-0 top-0 w-full"}>
-                    <div className={"col-span-4"}></div>
-                    <div className={"col-span-8"}>
-                        <div className={"h-full flex items-center"}>
-                            <div>
+        <section className={"w-full flex px-4 mt-4 lg:mt-30 lg:px-30"}>
+            <div className={`flex-1 relative  bg-cover bg-center h-80 lg:h-120 ${imageUrl}`}>
+                <div className={"grid grid-cols-12 w-full lg:absolute lg:mx-auto lg:bottom-0 lg:left-0 lg:top-0"}>
+                    <div className={"col-span-0 lg:col-span-4"}></div>
+                    <div className={"col-span-12 mt-24 px-4 lg:px-0 lg:mt-0 lg:col-span-8"}>
+                        <div className={"h-full flex flex-1 items-center"}>
+                            <div className={"flex-1"}>
                                 <Typography
                                     variant={"h2"}
                                     className={classnames([{
@@ -51,7 +51,7 @@ export default async function Commission({ title, desc, midst, more, imageUrl, t
                                     { desc }
                                 </Typography>
                             </div>
-                            <div className={"ml-auto mr-50"}>
+                            <div className={"ml-auto mr-4 lg:mr-50"}>
                                 <Button className={classnames(["rounded-full h-12 px-8 bg-theme-active hover:bg-theme-active-hover", {
                                     '!bg-white !text-theme-active' : theme === 'light',
                                     '' : theme === 'dark',

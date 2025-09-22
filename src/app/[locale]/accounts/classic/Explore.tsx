@@ -29,7 +29,7 @@ const Explore = () => {
     ];
 
     return (
-        <section className={"p-30 bg-theme-deep-bg"}>
+        <section className={"p-4 lg:p-30 bg-theme-deep-bg"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -45,9 +45,9 @@ const Explore = () => {
             </motion.div>
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"grid-cols-12 grid"}>
-                            <div className={"col-span-7"}>
+                            <div className={"col-span-12 lg:col-span-7"}>
                                 <div className={"bg-white h-full px-8 py-16"}>
                                     <div>
                                         <Typography variant={"h3"}>
@@ -60,7 +60,7 @@ const Explore = () => {
                                             {t("card1.desc")}
                                         </Typography>
                                     </div>
-                                    <ul className={"mt-10"}>
+                                    <ul className={"mt-4 lg:mt-10"}>
                                         {
                                             card1Ary.map((item, index) => (
                                                 <li className={"flex items-center my-8"} key={index}>
@@ -76,14 +76,14 @@ const Explore = () => {
                                             ))
                                         }
                                     </ul>
-                                    <div className={"mt-20"}>
+                                    <div className={"mt-4 lg:mt-20"}>
                                         <Button className={"rounded-full px-8 h-10"}>
                                             {t("card1.btn")}
                                         </Button>
                                     </div>
                                 </div>
                             </div>
-                            <div className={"col-span-5"}>
+                            <div className={"col-span-12 lg:col-span-5"}>
                                 <img
                                     src="/images/accounts/explore1.png"
                                     className={"w-full h-full bg-cover"}
@@ -93,9 +93,9 @@ const Explore = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"grid-cols-12 grid"}>
-                            <div className={"col-span-7"}>
+                            <div className={"col-span-12 lg:col-span-7"}>
                                 <div className={"bg-white h-full px-8 py-16"}>
                                     <div>
                                         <Typography variant={"h3"}>
@@ -124,14 +124,14 @@ const Explore = () => {
                                             ))
                                         }
                                     </ul>
-                                    <div className={"mt-20"}>
+                                    <div className={"mt-4 lg:mt-20"}>
                                         <Button className={"rounded-full px-8 h-10"}>
                                             {t("card2.btn")}
                                         </Button>
                                     </div>
                                 </div>
                             </div>
-                            <div className={"col-span-5"}>
+                            <div className={"col-span-12 lg:col-span-5"}>
                                 <img
                                     src="/images/accounts/explore2.png"
                                     className={"w-full h-full bg-cover"}

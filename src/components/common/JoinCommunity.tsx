@@ -13,14 +13,14 @@ const JoinCommunity = (props: Props) => {
     const { theme = "dark" } = props;
     return (
         <section className={"bg-theme-light-bg"}>
-            <div className={classnames(["mx-30 mb-30", {
+            <div className={classnames(["lg:mx-30 lg:mb-30", {
                 "bg-theme-deep-bg": theme === "dark",
                 "": theme === "light",
             }])}>
-                <div className={"w-full relative py-8 px-16 flex items-center"}>
-                    <img src="/images/boat.png" className={"w-[60px] h-30 absolute left-16 -top-8"} alt="boat"
+                <div className={"w-full relative flex items-center py-8 px-4 lg:px-16"}>
+                    <img src="/images/boat.png" className={"w-[60px] h-30 absolute left-16 -top-8 hidden lg:block"} alt="boat"
                          title={"boat"}/>
-                    <Typography className={classnames(["ml-20", {
+                    <Typography className={classnames(["ml-4 lg:ml-20", {
                         "text-white": theme === "dark"
                     }])}>
                         {t("join-community")}

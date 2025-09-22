@@ -48,11 +48,11 @@ const DownloadItem = (props: Props) => {
 
 
     return (
-        <section className={classnames(["p-30", {
+        <section className={classnames(["p-4 lg:p-30", {
             "bg-theme-light-bg": direction === "right"
         }])} ref={sectionRef}>
             <div className={'grid grid-cols-12 gap-8'}>
-                <div className={classnames(["col-span-6", {
+                <div className={classnames(["col-span-12 lg:col-span-6", {
                     "order-1": direction === "left",
                     "order-2": direction === "right",
                 }])} ref={leftRef}>
@@ -68,13 +68,13 @@ const DownloadItem = (props: Props) => {
                         </Button>
                     </div>
                 </div>
-                <div className={classnames(["col-span-6", {
+                <div className={classnames(["col-span-12 lg:col-span-6", {
                     "order-2": direction === "left",
                     "order-1": direction === "right",
                 }])} ref={rightRef}>
                     <img
                         src={imageUrl}
-                        className={"w-full h-full object-cover"}
+                        className={"w-full h-full object-cover mx-auto"}
                         alt="exhibition"
                         title={"exhibition"}
                     />

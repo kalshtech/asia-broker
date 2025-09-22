@@ -27,7 +27,7 @@ type Props = {
 const Process = (props: Props) => {
     const { ary, title } = props;
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -41,11 +41,11 @@ const Process = (props: Props) => {
                     {title}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-4"}>
                     {
                         ary.map((item, index) => (
-                            <div className={"col-span-3"}
+                            <div className={"col-span-12 lg:col-span-3"}
                                  key={index}
                             >
                                 <div className={"py-10 px-8 bg-theme-light-bg rounded-lg"}>

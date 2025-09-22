@@ -23,7 +23,7 @@ const Professional = () => {
         { imageUrl: "/images/products/future-professional4.png", title: t("row.col4.title"), midst: t("row.col4.midst"), desc: t("row.col4.desc") },
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -41,7 +41,7 @@ const Professional = () => {
                 <div className={"grid grid-cols-12 gap-8"}>
                     {
                         ary.map((item, index) => (
-                            <div className={"col-span-3 bg-theme-light-bg rounded-2xl py-10 px-8"} key={index}>
+                            <div className={"bg-theme-light-bg rounded-2xl py-10 px-8 col-span-12 lg:col-span-3"} key={index}>
                                 <img src={item.imageUrl} className={"w-10 h-10 object-cover"} alt=""/>
                                 <Typography
                                     variant={"h4"}

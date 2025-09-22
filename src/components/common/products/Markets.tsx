@@ -124,13 +124,13 @@ const Markets = (props: Props) => {
     }, [ tabActive ]);
 
     return (
-        <section className={"px-30 py-10"}>
+        <section className={"px-4 py-2 lg:px-30 lg:py-10"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once: true, amount: 0.5}}
-                className={"mt-16"}
+                className={"mt-4 lg:mt-16"}
             >
                 <Typography
                     variant={"h1"}
@@ -149,7 +149,7 @@ const Markets = (props: Props) => {
                     )
                 }
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <SimpleSearch onSelect={(opt) => console.log("picked:", opt)}/>
             </div>
             {
@@ -165,7 +165,7 @@ const Markets = (props: Props) => {
                                         <TabsTrigger
                                             key={index}
                                             value={item.value}
-                                            className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                            className={"px-4 lg:px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
                                         >
                                             {item.label}
                                         </TabsTrigger>

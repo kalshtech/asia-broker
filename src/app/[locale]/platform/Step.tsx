@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Step = () => {
     const t = useTranslations("Pages.platform.step");
     return (
-        <section className={"bg-[url(/images/platform/step-background.png)] bg-cover bg-center p-30 h-[532px]"}>
+        <section className={"bg-[url(/images/platform/step-background.png)] bg-cover bg-center h-96 lg:h-[532px] p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -32,9 +32,9 @@ const Step = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-4"}>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <div className={"flex items-start"}>
                             <div className={"w-8 h-8 mt-1 flex justify-center items-center bg-white rounded-full text-black"}>
                                 1
@@ -55,7 +55,7 @@ const Step = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <div className={"flex items-start"}>
                             <div
                                 className={"w-8 h-8 mt-1 flex justify-center items-center bg-white rounded-full text-black"}>
@@ -77,7 +77,7 @@ const Step = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <div className={"flex items-start"}>
                             <div
                                 className={"w-8 h-8 mt-1 flex justify-center items-center bg-white rounded-full text-black"}>
@@ -101,7 +101,7 @@ const Step = () => {
                     </div>
                 </div>
             </div>
-            <div className={"mt-24 mx-auto"}>
+            <div className={"mx-auto mt-8 lg:mt-24"}>
                 <div className={"flex justify-center"}>
                     <RegisterBtn/>
                     <Button className={"px-8 h-10 rounded-full ml-12 border bg-transparent hover:bg-transparent"}>

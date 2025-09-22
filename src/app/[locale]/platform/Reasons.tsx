@@ -56,7 +56,7 @@ const Reasons = () => {
         return () => ctx.revert();
     }, []);
     return  (
-        <section ref={sectionRef} className={"p-30"}>
+        <section ref={sectionRef} className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -76,8 +76,8 @@ const Reasons = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"grid grid-cols-12 gap-4 mt-16"}>
-                <div className={"col-span-6"} ref={leftRef}>
+            <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16"}>
+                <div className={"col-span-12 lg:col-span-6"} ref={leftRef}>
                     <div className={""}>
                         <Typography variant={"large"}>
                             {t("professional")}
@@ -132,7 +132,7 @@ const Reasons = () => {
                         </ul>
                     </div>
                 </div>
-                <div className={"col-span-6"} ref={rightRef}>
+                <div className={"col-span-12 lg:col-span-6"} ref={rightRef}>
                     <div>
                         <img src="/images/platform/reasons-cell.png"
                              alt="reasons-cell"
