@@ -8,9 +8,10 @@ type Props = {
     description: string;
     imageUrl: string;
     midst: string;
+    transfer?: boolean;
 }
 
-export default async function Banner({ title, description, midst, imageUrl }: Props) {
+export default async function Banner({ title, description, midst, imageUrl, transfer = false }: Props) {
     const t = await getTranslations("Common");
     return (
         <section className={`${imageUrl} bg-cover bg-center py-4 px-6 min-h-80 lg:min-h-120 lg:py-20 lg:px-30`}>
@@ -37,12 +38,25 @@ export default async function Banner({ title, description, midst, imageUrl }: Pr
                 </Typography>
             </div>
             <div className={"mt-10"}>
-                <Button className={"rounded-full h-12 px-8 bg-theme-active hover:bg-theme-active-hover"}>
-                    { t("trade") }
-                </Button>
-                <Button className={"ml-4 border h-12 px-8 border-white rounded-full bg-transparent hover:bg-transparent"}>
-                    { t("register") }
-                </Button>
+                {
+                    !transfer && (
+                        <>
+                            <Button className={"rounded-full h-12 px-8 bg-theme-active hover:bg-theme-active-hover"}>
+                                { t("trade") }
+                            </Button>
+                            <Button className={"ml-4 border h-12 px-8 border-white rounded-full bg-transparent hover:bg-transparent"}>
+                                { t("register") }
+                            </Button>
+                        </>
+                    )
+                }
+                {
+                    transfer && (
+                        <Button className={"rounded-full h-12 px-8 bg-theme-active hover:bg-theme-active-hover"}>
+                            { t("transfer") }
+                        </Button>
+                    )
+                }
             </div>
         </section>
     )

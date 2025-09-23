@@ -14,14 +14,7 @@ const fadeInUp: Variants = {
     },
 }
 
-const Professional = () => {
-    const t = useTranslations("Pages.products.future.professional");
-    const ary = [
-        { imageUrl: "/images/products/future-professional1.png", title: t("row.col1.title"), midst: t("row.col1.midst"), desc: t("row.col1.desc") },
-        { imageUrl: "/images/products/future-professional2.png", title: t("row.col2.title"), midst: t("row.col2.midst"), desc: t("row.col2.desc") },
-        { imageUrl: "/images/products/future-professional3.png", title: t("row.col3.title"), midst: t("row.col3.midst"), desc: t("row.col3.desc") },
-        { imageUrl: "/images/products/future-professional4.png", title: t("row.col4.title"), midst: t("row.col4.midst"), desc: t("row.col4.desc") },
-    ];
+const Row = ({ ary, title }: any) => {
     return (
         <section className={"p-4 lg:p-30"}>
             <motion.div
@@ -34,13 +27,13 @@ const Professional = () => {
                     variant={"h1"}
                     className={"font-medium text-center"}
                 >
-                    {t("title")}
+                    { title }
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
                     {
-                        ary.map((item, index) => (
+                        ary.map((item: any, index: number) => (
                             <div className={"bg-theme-light-bg rounded-2xl py-10 px-8 col-span-12 lg:col-span-3"} key={index}>
                                 <img src={item.imageUrl} className={"w-10 h-10 object-cover"} alt=""/>
                                 <Typography
@@ -49,12 +42,17 @@ const Professional = () => {
                                 >
                                     {item.title}
                                 </Typography>
-                                <Typography
-                                    variant={"h5"}
-                                    className={"font-medium mt-4"}
-                                >
-                                    {item.midst}
-                                </Typography>
+
+                                {
+                                    item.midst && (
+                                        <Typography
+                                            variant={"h5"}
+                                            className={"font-medium mt-4"}
+                                        >
+                                            {item.midst}
+                                        </Typography>
+                                    )
+                                }
 
                                 <Typography
                                     variant={"muted"}
@@ -71,4 +69,4 @@ const Professional = () => {
     )
 }
 
-export default Professional;
+export default Row;

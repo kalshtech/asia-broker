@@ -2,10 +2,10 @@ import * as React from 'react';
 import { getTranslations } from "next-intl/server";
 import Banner from "@/components/common/products/Banner";
 import Markets from "@/components/common/products/Markets";
-import Professional from "./Professional";
 import QuestionAnswer from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import Guide from "@/components/common/Guide";
+import Row from "@/components/common/products/Row";
 import MoreMarkets from "@/components/common/products/MoreMarkets";
 
 export default async function Page() {
@@ -75,6 +75,13 @@ export default async function Page() {
         { url: "/images/products/future-swiper3.png", title: t("guide.row.col2.span3.title"), description: t("guide.row.col2.span3.desc") },
     ];
 
+    const rowAry = [
+        { imageUrl: "/images/products/future-professional1.png", title: t("professional.row.col1.title"), midst: t("professional.row.col1.midst"), desc: t("professional.row.col1.desc") },
+        { imageUrl: "/images/products/future-professional2.png", title: t("professional.row.col2.title"), midst: t("professional.row.col2.midst"), desc: t("professional.row.col2.desc") },
+        { imageUrl: "/images/products/future-professional3.png", title: t("professional.row.col3.title"), midst: t("professional.row.col3.midst"), desc: t("professional.row.col3.desc") },
+        { imageUrl: "/images/products/future-professional4.png", title: t("professional.row.col4.title"), midst: t("professional.row.col4.midst"), desc: t("professional.row.col4.desc") },
+    ];
+
     const QA_DATA = [
         {
             question: t("qa.ul.li1.title"),
@@ -130,7 +137,7 @@ export default async function Page() {
                 trade={t("markets.trade")}
                 type={"future"}
             />
-            <Professional/>
+            <Row ary={rowAry} title={t("professional.title")} />
             <MoreMarkets
                 title={t("moreMarket.title")}
                 desc={t("moreMarket.desc")}

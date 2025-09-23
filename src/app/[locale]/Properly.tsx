@@ -209,16 +209,16 @@ const Properly = () => {
                     </div>
                     <div className={"col-span-12 lg:col-span-10"}>
                         <div className={"w-full"}>
-                            {tabActive === "classic" && <SimpleSwiper ary={oneAry}/>}
-                            {tabActive === "gold" && <SimpleSwiper ary={twoAry}/>}
-                            {tabActive === "vic" && <SimpleSwiper ary={threeAry}/>}
+                            {tabActive === "classic" && <SimpleSwiper prevEl={".test-custom-prev"} nextEl={".test-custom-next"} ary={oneAry}/>}
+                            {tabActive === "gold" && <SimpleSwiper prevEl={".test-custom-prev"} nextEl={".test-custom-next"} ary={twoAry}/>}
+                            {tabActive === "vic" && <SimpleSwiper prevEl={".test-custom-prev"} nextEl={".test-custom-next"} ary={threeAry}/>}
                         </div>
                     </div>
                 </div>
                 <div className={"mt-4"}>
                     <div className={"flex justify-end"}>
-                        <CircleChevronLeft className={"properly-custom-prev mr-2 cursor-pointer"}/>
-                        <CircleChevronRight className={"properly-custom-next ml-2 cursor-pointer"}/>
+                        <CircleChevronLeft className={"test-custom-prev mr-2 cursor-pointer"}/>
+                        <CircleChevronRight className={"test-custom-next ml-2 cursor-pointer"}/>
                     </div>
                 </div>
             </div>

@@ -162,7 +162,7 @@ const Navigation = () => {
                         {
                             title: t("menu.products.row.col-3.title"),
                             ul: [
-                                { label: t("menu.products.row.col-3.ul.li1"), path: "/" },
+                                { label: t("menu.products.row.col-3.ul.li1"), path: "/products/transfer" },
                                 { label: t("menu.products.row.col-3.ul.li2"), path: "/" },
                                 { label: t("menu.products.row.col-3.ul.li3"), path: "/" },
                             ]

@@ -2,7 +2,6 @@
 import * as React from "react";
 import { Typography } from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
-import {useTranslations} from "next-intl";
 import { Button } from "@/components/ui/button";
 import SimpleSwiper from "@/components/common/products/SimpleSwiper";
 import {CircleChevronLeft, CircleChevronRight} from "lucide-react";
@@ -40,7 +39,6 @@ type Props = {
 };
 
 const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
-    const t = useTranslations("Pages.products.forex.guide");
     return (
         <section className={"p-4 lg:p-30"}>
             <motion.div
