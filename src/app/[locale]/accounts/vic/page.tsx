@@ -9,7 +9,7 @@ import BankCards from "./BankCards";
 import Experience from "./Experience";
 import TableComponent from "./TableComponent";
 import Support from "@/components/common/accounts/Support";
-import Process from "@/components/common/accounts/Process";
+import Process from "@/components/common/Process";
 import QuestionAnswer from "@/components/common/QuestionAnswer";
 import Tools from "@/components/common/Tools";
 import Credit from "@/components/common/accounts/Credit";

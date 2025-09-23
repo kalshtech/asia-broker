@@ -10,7 +10,7 @@ import Guide from "@/components/common/Guide";
 import Tools from "@/components/common/Tools";
 import QuestionAnswer from "@/components/common/QuestionAnswer";
 import TableComponent from "./TableComponent";
-import Process from "@/components/common/accounts/Process";
+import Process from "@/components/common/Process";
 import VIC from "./VIC";
 
 export default async function Page() {

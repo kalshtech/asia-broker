@@ -6,7 +6,7 @@ import QuestionAnswer from "@/components/common/QuestionAnswer";
 import Velocity from "./Velocity";
 import Tools from "@/components/common/Tools";
 import Type from "./Type";
-import Process from "@/components/common/accounts/Process";
+import Process from "@/components/common/Process";
 import Explore from "./Explore";
 
 export default async function Page() {
