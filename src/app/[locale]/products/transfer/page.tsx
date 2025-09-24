@@ -4,6 +4,7 @@ import Banner from "@/components/common/products/Banner";
 import Row from "@/components/common/products/Row";
 import Advertising from "./Advertising";
 import Cards from "./Cards";
+import Process from "@/components/common/accounts/Process";
 import FAQSection from "@/components/common/QuestionAnswer";
 import Tools from "@/components/common/Tools";
 
@@ -14,6 +15,12 @@ export default async function Page() {
         { imageUrl: "/images/products/transfer-professional2.png", title: t("professional.row.col2.title"), desc: t("professional.row.col2.desc") },
         { imageUrl: "/images/products/transfer-professional3.png", title: t("professional.row.col3.title"), desc: t("professional.row.col3.desc") },
         { imageUrl: "/images/products/transfer-professional4.png", title: t("professional.row.col4.title"), desc: t("professional.row.col4.desc") },
+    ];
+
+    const processAry = [
+      { title: t("process.row.col1.title"), desc: t("process.row.col1.desc"), bottom: t("process.row.col1.bottom") },
+      { title: t("process.row.col2.title"), desc: t("process.row.col2.desc"), bottom: t("process.row.col2.bottom") },
+      { title: t("process.row.col3.title"), desc: t("process.row.col3.desc"), bottom: t("process.row.col3.bottom") },
     ];
 
     const QA_DATA = [
@@ -104,6 +111,7 @@ export default async function Page() {
             <Row ary={rowAry} title={t("professional.title")} />
             <Advertising/>
             <Cards/>
+            <Process  ary={processAry} title={t("process.title")} />
             <FAQSection data={QA_DATA} />
             <Tools/>
         </div>

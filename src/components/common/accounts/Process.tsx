@@ -2,7 +2,8 @@
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { Typography } from "@/components/ui/typography";
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react";
+import classnames from "classnames";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -45,7 +46,7 @@ const Process = (props: Props) => {
                 <div className={"grid grid-cols-12 gap-4"}>
                     {
                         ary.map((item, index) => (
-                            <div className={"col-span-12 lg:col-span-3"}
+                            <div className={classnames(["col-span-12", `lg:col-span-${12 / ary.length}`])}
                                  key={index}
                             >
                                 <div className={"py-10 px-8 bg-theme-light-bg rounded-lg"}>
