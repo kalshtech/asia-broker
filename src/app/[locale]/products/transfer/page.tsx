@@ -5,6 +5,7 @@ import Row from "@/components/common/products/Row";
 import Advertising from "./Advertising";
 import Cards from "./Cards";
 import Process from "@/components/common/accounts/Process";
+import AssetsSafe from "./AssetsSafe";
 import FAQSection from "@/components/common/QuestionAnswer";
 import Tools from "@/components/common/Tools";
 
@@ -112,6 +113,7 @@ export default async function Page() {
             <Advertising/>
             <Cards/>
             <Process  ary={processAry} title={t("process.title")} />
+            <AssetsSafe/>
             <FAQSection data={QA_DATA} />
             <Tools/>
         </div>
