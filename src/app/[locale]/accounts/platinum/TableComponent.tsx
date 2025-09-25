@@ -18,7 +18,7 @@ const TableComponent = () => {
         { one: t("row.col1-9-1"), two: t("row.col1-9-2"), three: t("row.col1-9-3") }
     ];
     return (
-        <section className={"p-30  bg-[url(/images/accounts/platinum-table-bg.png)] bg-center bg-cover"}>
+        <section className={"bg-[url(/images/accounts/platinum-table-bg.png)] bg-center bg-cover p-4 lg:p-30"}>
             <div>
                 <Table>
                     <TableHeader>

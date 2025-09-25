@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const VIC = () => {
     const t = useTranslations("Pages.accounts.platinum.VIC");
     return (
-        <section className={"p-30 bg-theme-deep-bg"}>
+        <section className={"bg-theme-deep-bg p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -33,8 +33,8 @@ const VIC = () => {
             </motion.div>
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12"}>
-                    <div className={"col-span-6 h-full"}>
-                        <div className={"bg-white py-20 px-16 h-full"}>
+                    <div className={"h-full col-span-12 lg:col-span-6"}>
+                        <div className={"bg-white h-full p-4 lg:py-20 lg:px-16"}>
                             <Typography
                                 variant={"lead"}
                                 className={"font-medium"}
@@ -42,7 +42,7 @@ const VIC = () => {
                                 {t("left.desc")}
                             </Typography>
 
-                            <div className={"mt-16"}>
+                            <div className={"mt-4 lg:mt-16"}>
                                 <div className={"flex items-center"}>
                                     <Typography
                                         variant={"h3"}
@@ -59,14 +59,14 @@ const VIC = () => {
                                 </div>
                             </div>
 
-                            <div className={"mt-16"}>
+                            <div className={"mt-4 lg:mt-16"}>
                                 <Button className={"px-8 h-10 rounded-full"}>
                                     { t("left.understand") }
                                 </Button>
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <img
                             className={"object-cover max-h-[450px] w-full"}
                             src="/images/accounts/vic-img.png"

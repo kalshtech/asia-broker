@@ -22,7 +22,7 @@ const Experience = () => {
         { imageUrl: "bg-[url(/images/accounts/vic-experience-3.png)]", title: t("row.col3.title"), desc: t("row.col3.desc") },
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -50,11 +50,11 @@ const Experience = () => {
                     {t("prospect")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-4"}>
                     {
                         ary.map((item, i) => (
-                            <div className={"col-span-4"} key={i}>
+                            <div className={"col-span-12 lg:col-span-4"} key={i}>
                                 <div className={`p-6 ${item.imageUrl} h-70 bg-center bg-cover`}>
                                     <Typography
                                         variant={"h4"}

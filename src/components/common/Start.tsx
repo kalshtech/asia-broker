@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Start = () => {
   const t = useTranslations("Common.start");
   return (
-    <section className={"p-30"}>
+    <section className={"p-4 lg:p-30"}>
       <motion.div
         variants={fadeInUp}
         initial="hidden"
@@ -33,12 +33,12 @@ const Start = () => {
         </Typography>
         <Typography
           variant={"large"}
-          className={"font-medium text-center mt-16"}
+          className={"font-medium text-center mt-4 lg:mt-16"}
         >
           {t("desc")}
         </Typography>
       </motion.div>
-      <div className={"mt-16 flex justify-center"}>
+      <div className={"flex justify-center mt-4 lg:mt-16"}>
         <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active"}>
           {t("register")}
         </Button>

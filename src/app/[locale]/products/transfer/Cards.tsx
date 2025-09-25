@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Cards = () => {
     const t = useTranslations("Pages.products.transfer.card");
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -32,9 +32,9 @@ const Cards = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid-cols-12 grid gap-4"}>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <Typography
                             variant={"h4"}
                             className={"font-medium"}
@@ -63,7 +63,7 @@ const Cards = () => {
                             </Button>
                         </div>
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <img src="/images/products/trnasfer-card-img.png" className={"object-cover"} alt=""/>
                     </div>
                 </div>

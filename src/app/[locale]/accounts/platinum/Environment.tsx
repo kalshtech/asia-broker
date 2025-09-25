@@ -24,9 +24,9 @@ const Environment = () => {
     const rightRef = React.useRef<HTMLDivElement>(null);
 
     return (
-        <section ref={sectionRef} className={"py-30 px-10 bg-gradient-to-b from-[#20150A] from-[10%] to-[#5E554C] to-[80%]"}>
+        <section ref={sectionRef} className={"bg-gradient-to-b from-[#20150A] from-[10%] to-[#5E554C] to-[80%] py-4 px-4 lg:py-30 lg:px-10"}>
             <div className={"grid grid-cols-12 gap-4"}>
-                <div className={"col-span-6"} ref={leftRef}>
+                <div className={"col-span-12 lg:col-span-6"} ref={leftRef}>
                     <img
                         src="/images/accounts/envrionment-img.png"
                         alt="environment"
@@ -34,7 +34,7 @@ const Environment = () => {
                         className={"w-full h-full mx-auto max-w-[600px] object-cover"}
                     />
                 </div>
-                <div className={"col-span-6"} ref={rightRef}>
+                <div className={"col-span-12 lg:col-span-6"} ref={rightRef}>
                     <div>
                         <Typography
                             variant={"h1"}
@@ -49,11 +49,11 @@ const Environment = () => {
                             { t("desc") }
                         </Typography>
                     </div>
-                    <div className={"mt-16"}>
+                    <div className={"mt-4 lg:mt-16"}>
                         <Button className={"px-8 h-10 rounded-full bg-white text-black hover:bg-white"}>
                             { t("more") }
                         </Button>
-                        <Button className={"px-8 h-10 border ml-4 text-white rounded-full bg-transparent hover:bg-transparent"}>
+                        <Button className={"px-8 h-10 border ml-1 lg:ml-4 text-white rounded-full bg-transparent hover:bg-transparent"}>
                             { t("download") }
                         </Button>
                     </div>

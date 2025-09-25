@@ -30,7 +30,7 @@ const Permission = () => {
         { title: t("swiper.span6.title"), description: t("swiper.span6.desc"), url: "bg-[url('/images/accounts/permission-swiper6.png')]" },
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -65,7 +65,7 @@ const Permission = () => {
                     }}
                     modules={[Navigation]}
                     breakpoints={{
-                        320: {slidesPerView: 2.5, spaceBetween: 16,},
+                        320: {slidesPerView: 1.5, spaceBetween: 16,},
                         600: {slidesPerView: 2.5, spaceBetween: 24,},
                         900: {slidesPerView: 4.5, spaceBetween: 36,},
                     }}
@@ -106,7 +106,7 @@ const Permission = () => {
                     <CircleChevronRight className={"permission-custom-next ml-2 cursor-pointer"}/>
                 </div>
             </div>
-            <div className={"mt-25"}>
+            <div className={"mt-8 lg:mt-25"}>
                 <Typography variant={"muted"} className={"text-center"}>
                     { t("prompt1") }
                 </Typography>

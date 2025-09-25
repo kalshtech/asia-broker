@@ -22,7 +22,7 @@ const Custom = () => {
         { text: t("row.col2.ul.li3") },
     ];
     return (
-        <section className={"p-30 bg-gradient-to-b from-[#0C1724] from-[10%] to-[#163252] to-[100%]"}>
+        <section className={"bg-gradient-to-b from-[#0C1724] from-[10%] to-[#163252] to-[100%] p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -45,15 +45,15 @@ const Custom = () => {
             </motion.div>
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12 gap-4"}>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <img
                             src="/images/accounts/custom-img.png"
                             alt="custom"
                             title={"custom"}
-                            className={"max-h-[380px] object-cover mx-auto"}
+                            className={"lg:max-h-[380px] object-cover mx-auto"}
                         />
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"flex flex-col flex-1"}>
                             <Typography
                                 variant={"h3"}
@@ -61,7 +61,7 @@ const Custom = () => {
                             >
                                 {t("row.col2.title")}
                             </Typography>
-                            <ul className={"mt-10"}>
+                            <ul className={"mt-4 lg:mt-10"}>
                                 {
                                     ulAry.map((item, index) => (
                                         <li key={index} className={"flex items-center my-4"}>
@@ -78,12 +78,12 @@ const Custom = () => {
                             </ul>
                             <Typography
                                 variant={"muted"}
-                                className={"font-medium !text-white mt-10"}
+                                className={"font-medium !text-white mt-4 lg:mt-10"}
                             >
                                 {t("row.col2.desc")}
                             </Typography>
 
-                            <div className={"mt-10"}>
+                            <div className={"mt-4 lg:mt-10"}>
                                 <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
                                     {t("row.col2.apply")}
                                 </Button>

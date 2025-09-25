@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const Enhance = () => {
     const t = useTranslations("Pages.products.rates.enhance");
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -32,7 +32,7 @@ const Enhance = () => {
                 </Typography>
             </motion.div>
 
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div
                     className={"h-120 bg-[url(/images/products/rates-enhance.png)] bg-cover bg-center flex justify-center items-center"}>
                     <motion.div

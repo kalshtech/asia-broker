@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const Banner = () => {
     const t = useTranslations("Pages.accounts.vic.banner");
     return (
-        <section className={"p-30 bg-[url(/images/accounts/vic-banner.png)] bg-center bg-cover h-[632px]"}>
+        <section className={"bg-[url(/images/accounts/vic-banner.png)] bg-center bg-cover h-80 lg:h-[632px] p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -44,7 +44,7 @@ const Banner = () => {
                     {t("midst2")}
                 </Typography>
 
-                <div className={"mt-16 flex items-center"}>
+                <div className={"flex items-center mt-4 lg:mt-16"}>
                     <Typography
                         variant={"muted"}
                         className={"font-medium !text-white"}
@@ -65,7 +65,7 @@ const Banner = () => {
                     </Typography>
                 </div>
 
-                <div className={"mt-16"}>
+                <div className={"mt-4 lg:mt-16"}>
                     <Button className={"px-8 h-10 rounded-full bg-white text-black hover:bg-white"}>
                         { t("register") }
                     </Button>

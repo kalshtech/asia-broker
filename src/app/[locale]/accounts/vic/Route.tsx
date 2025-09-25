@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Route = () => {
     const t = useTranslations("Pages.accounts.vic.route");
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -55,8 +55,8 @@ const Route = () => {
             </motion.div>
 
             <div className={"mt-16"}>
-                <div className={"grid grid-cols-3"}>
-                    <div className={"bg-[url(/images/accounts/route-bg1.png)] bg-center bg-cover py-20 px-10 -mr-16 h-80 relative z-10"}>
+                <div className={"grid grid-cols-1 lg:grid-cols-3"}>
+                    <div className={"bg-[url(/images/accounts/route-bg1.png)] bg-center bg-cover py-20 px-10 h-80 relative z-10 lg:-mr-16"}>
                         <Typography
                             variant={"h3"}
                             className={"!text-white mr-16"}
@@ -70,7 +70,7 @@ const Route = () => {
                             {t("row.col1.desc")}
                         </Typography>
                     </div>
-                    <div className={"bg-[url(/images/accounts/route-bg2.png)] bg-center bg-cover py-20 px-10 mt-16 h-80 relative z-20"}>
+                    <div className={"bg-[url(/images/accounts/route-bg2.png)] bg-center bg-cover py-20 px-10 h-80 relative z-20 lg:mt-16"}>
                         <Typography
                             variant={"h3"}
                             className={"!text-white"}
@@ -84,7 +84,7 @@ const Route = () => {
                             {t("row.col2.desc")}
                         </Typography>
                     </div>
-                    <div className={"bg-[url(/images/accounts/route-bg3.png)] bg-center bg-cover py-20 px-10 -ml-16 h-80 relative z-10"}>
+                    <div className={"bg-[url(/images/accounts/route-bg3.png)] bg-center bg-cover py-20 px-10 h-80 relative z-10 lg:-ml-16"}>
                         <Typography
                             variant={"h3"}
                             className={"!text-white ml-16"}

@@ -39,7 +39,7 @@ const Stream = (props: Props) => {
     const t = useTranslations("Pages.accounts.vic.stream");
     const { title, desc, col1, col2 = { isShowMore: true, backgroundUrl: "" } } = props;
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -66,7 +66,7 @@ const Stream = (props: Props) => {
             </motion.div>
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <Typography
                             variant={"h3"}
                             className={"font-medium"}
@@ -124,7 +124,7 @@ const Stream = (props: Props) => {
                         }
 
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <img
                             src="/images/accounts/stream-logo.png"
                             className={"w-full object-cover"}

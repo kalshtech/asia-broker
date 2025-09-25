@@ -21,7 +21,7 @@ const Statement = () => {
         { imageUrl: "/images/products/rates-statement2.png", title: t("row.col2.title"), desc: t("row.col2.desc"), more: t("row.col2.more") },
     ]
     return (
-        <section className={"p-30 bg-theme-light-bg"}>
+        <section className={"bg-theme-light-bg p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -43,11 +43,11 @@ const Statement = () => {
                 </Typography>
             </motion.div>
             <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-12"}>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
                     {
                         colAry.map((item, index) => (
                             <div
-                                className={"col-span-6 bg-white rounded-2xl p-10"}
+                                className={"bg-white rounded-2xl p-4 lg:p-10 col-span-12 lg:col-span-6"}
                                 key={index}
                             >
                                 <img src={item.imageUrl} className={"w-10 h-10 object-cover"} alt=""/>

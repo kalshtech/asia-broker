@@ -32,9 +32,9 @@ type Props = {
 const RowTable = (props: Props) => {
     const { title, desc, rowHeadAry, children, overview, overviewText } = props;
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <div className={"grid grid-cols-12 gap-8"}>
-                <div className={"col-span-4"}>
+                <div className={"col-span-12 lg:col-span-4"}>
                     <motion.div
                         variants={fadeInUp}
                         initial="hidden"
@@ -63,7 +63,7 @@ const RowTable = (props: Props) => {
 
                     </motion.div>
                 </div>
-                <div className={"col-span-8"}>
+                <div className={"col-span-12 lg:col-span-8"}>
                     <div>
                         {
                             overview && (

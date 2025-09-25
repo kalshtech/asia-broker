@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Exclusive = () => {
     const t = useTranslations("Pages.accounts.platinum.exclusive");
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -39,7 +39,7 @@ const Exclusive = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"bg-[url(/images/accounts/exclusive-bg.png)] bg-cover bg-center h-[428px] mt-16 py-30"}>
+            <div className={"bg-[url(/images/accounts/exclusive-bg.png)] bg-cover bg-center h-80 lg:h-[428px] mt-4 lg:mt-16 py-4 lg:py-30"}>
                 <motion.div
                     variants={fadeInUp}
                     initial="hidden"
@@ -55,12 +55,12 @@ const Exclusive = () => {
 
                     <Typography
                         variant={"h5"}
-                        className={"font-medium text-center !text-white mx-auto mt-10 !max-w-3xl"}
+                        className={"font-medium text-center !text-white mx-auto mt-4 lg:mt-10 !max-w-3xl"}
                     >
                         {t("best.joint")}
                     </Typography>
 
-                    <div className={"flex justify-center items-center mt-10"}>
+                    <div className={"flex justify-center items-center flex-col lg:flex-row mt-4 lg:mt-10"}>
                         <Typography
                             variant={"h5"}
                             className={"font-medium text-center !text-white"}

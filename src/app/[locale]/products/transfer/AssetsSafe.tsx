@@ -24,7 +24,7 @@ const AssetsSafe = () => {
     { title: t("row.col4.title"), desc: t("row.col4.desc"), imageUrl: "/images/products/transfer-assets-safe4.png" },
   ];
   return (
-    <section className={"p-30"}>
+    <section className={"p-4 lg:p-30"}>
       <motion.div
         variants={fadeInUp}
         initial="hidden"
@@ -38,11 +38,11 @@ const AssetsSafe = () => {
           {t("title")}
         </Typography>
       </motion.div>
-      <div className={"mt-16"}>
-        <div className={"grid grid-cols-2"}>
+      <div className={"mt-4 lg:mt-16"}>
+        <div className={"grid grid-cols-1 lg:grid-cols-2"}>
           {
             ary.map((item, index) => (
-              <div className={classnames(["py-10", {
+              <div className={classnames(["py-4 lg:py-10", {
                 "bg-theme-light-bg": [1,2].includes(index)
               }])} key={index}>
                 <Typography

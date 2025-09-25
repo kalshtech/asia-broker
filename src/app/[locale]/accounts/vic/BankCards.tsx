@@ -24,7 +24,7 @@ const BankCards = () => {
         { text: t("row.col1.ul.li4") },
     ];
     return (
-        <section className={"p-30 bg-theme-deep-bg"}>
+        <section className={"bg-theme-deep-bg p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -45,16 +45,16 @@ const BankCards = () => {
                     {t("title2")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <Typography
                             variant={"h3"}
                             className={"font-medium max-w-lg !text-white"}
                         >
                             {t("row.col1.title")}
                         </Typography>
-                        <ul className={"mt-12"}>
+                        <ul className={"mt-4 lg:mt-12"}>
                             {
                                 ulAry.map((item, index) => (
                                     <li key={index} className={"flex items-center my-4"}>
@@ -70,13 +70,13 @@ const BankCards = () => {
                                 ))
                             }
                         </ul>
-                        <div className={"mt-16"}>
+                        <div className={"mt-4 lg:mt-16"}>
                             <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
                                 {t("row.col1.understand")}
                             </Button>
                         </div>
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <img
                             className={"max-h-90 object-cover mx-auto"}
                             src="/images/accounts/vic-card.png"

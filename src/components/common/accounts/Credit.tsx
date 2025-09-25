@@ -24,7 +24,7 @@ type Props = {
 const Credit = ({ typeText, className, number }: Props) => {
     const t = useTranslations("Pages.accounts.platinum.credit");
     return (
-        <section className={classnames(["p-30", className])}>
+        <section className={classnames(["p-4 lg:p-30", className])}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -58,7 +58,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                     </Typography>
                 </div>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <Typography
                     variant={"h3"}
                     className={"font-medium text-center"}
@@ -74,7 +74,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                 </Typography>
             </div>
 
-            <div className={"mt-16 flex justify-center items-end"}>
+            <div className={"flex justify-center items-end mt-4 lg:mt-16"}>
                 <Typography
                     variant={"h4"}
                     className={"font-medium text-center"}
@@ -95,7 +95,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                 </Typography>
             </div>
 
-            <div className={"mt-16 flex justify-center"}>
+            <div className={"flex justify-center mt-4 lg:mt-16"}>
                 <Button className={"px-8 h-10 rounded-full"}>
                     { t("immediately") }
                 </Button>

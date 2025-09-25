@@ -34,7 +34,7 @@ const Support = () => {
         { label: t("row.col3.ul.li2") },
     ];
     return (
-        <section className={"p-30 bg-[url(/images/accounts/platinum-support-bg.png)] bg-center bg-cover h-[580px]"}>
+        <section className={"bg-[url(/images/accounts/platinum-support-bg.png)] bg-center bg-cover h-180 lg:h-[580px] p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -56,9 +56,9 @@ const Support = () => {
                 </Typography>
             </motion.div>
 
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-4"}>
-                    <div className={"col-span-4 flex"}>
+                    <div className={"flex col-span-12 lg:col-span-4"}>
                         <div>
                             <Typography
                                 variant={"h5"}
@@ -79,9 +79,9 @@ const Support = () => {
                                 }
                             </ul>
                         </div>
-                        <Separator className={"ml-auto mr-40"} orientation={"vertical"} />
+                        <Separator className={"ml-auto hidden lg:block lg:mr-40"} orientation={"vertical"} />
                     </div>
-                    <div className={"col-span-4 flex"}>
+                    <div className={"flex col-span-12 lg:col-span-4"}>
                         <div>
                             <Typography
                                 variant={"h5"}
@@ -102,9 +102,9 @@ const Support = () => {
                                 }
                             </ul>
                         </div>
-                        <Separator className={"ml-auto mr-40"} orientation={"vertical"} />
+                        <Separator className={"ml-auto hidden lg:block lg:mr-40"} orientation={"vertical"} />
                     </div>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <div>
                             <Typography
                                 variant={"h5"}
