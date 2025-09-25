@@ -14,7 +14,6 @@ const fadeInUp: Variants = {
         transition: { duration: 0.8, ease: 'easeOut' },
     },
 }
-
 const Advertising = () => {
     const t = useTranslations("Pages.products.transfer.advertising");
     const imgAry = [
