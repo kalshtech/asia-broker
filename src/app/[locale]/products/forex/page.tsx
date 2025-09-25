@@ -5,7 +5,7 @@ import Markets from "@/components/common/products/Markets";
 import Commission from "@/components/common/products/Commission";
 import MoreMarkets from "@/components/common/products/MoreMarkets";
 import Guide from "@/components/common/Guide";
-import Profession from "./Profession";
+import Profession from "../../../../components/common/products/Profession";
 import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 

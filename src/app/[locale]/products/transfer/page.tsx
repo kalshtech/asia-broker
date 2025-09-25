@@ -4,9 +4,9 @@ import Banner from "@/components/common/products/Banner";
 import Row from "@/components/common/products/Row";
 import Advertising from "./Advertising";
 import Cards from "./Cards";
-import Process from "@/components/common/accounts/Process";
+import Process from "@/components/common/Process";
 import AssetsSafe from "./AssetsSafe";
-import Start from "../../../../components/common/Start";
+import Start from "@/components/common/Start";
 import FAQSection from "@/components/common/QuestionAnswer";
 import Tools from "@/components/common/Tools";
 
@@ -110,10 +110,16 @@ export default async function Page() {
                 midst={t("banner.midst")}
                 transfer
             />
-            <Row ary={rowAry} title={t("professional.title")} />
+            <Row
+                ary={rowAry}
+                title={t("professional.title")}
+            />
             <Advertising/>
             <Cards/>
-            <Process  ary={processAry} title={t("process.title")} />
+            <Process
+                ary={processAry}
+                title={t("process.title")}
+            />
             <AssetsSafe/>
             <Start/>
             <FAQSection data={QA_DATA} />

@@ -155,7 +155,7 @@ const Navigation = () => {
                             ul: [
                                 { label: t("menu.products.row.col-2.ul.li1"), path: "/" },
                                 { label: t("menu.products.row.col-2.ul.li2"), path: "/" },
-                                { label: t("menu.products.row.col-2.ul.li3"), path: "/" },
+                                { label: t("menu.products.row.col-2.ul.li3"), path: "/products/rates" },
                                 { label: t("menu.products.row.col-2.ul.li4"), path: "/" },
                             ]
                         },

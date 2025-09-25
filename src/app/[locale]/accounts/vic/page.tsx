@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import Banner from "./Banner";
 import Permission from "./Permission";
 import Route from "./Route";
-import Stream from "./Stream";
+import Stream from "@/components/common/Stream";
 import Custom from "./Custom";
 import BankCards from "./BankCards";
 import Experience from "./Experience";
@@ -22,6 +22,14 @@ export default async function Page() {
         { title: t("process.step.2.title"), desc: t("process.step.2.desc"), bottom: t("process.step.2.bottom") },
         { title: t("process.step.3.title"), desc: t("process.step.3.desc"), bottom: t("process.step.3.bottom") },
         { title: t("process.step.4.title"), desc: t("process.step.4.desc"), bottom: t("process.step.4.bottom") },
+    ];
+
+    const StreamUlAry = [
+        { text: t("stream.row.col1.ul.li1") },
+        { text: t("stream.row.col1.ul.li2") },
+        { text: t("stream.row.col1.ul.li3") },
+        { text: t("stream.row.col1.ul.li4") },
+        { text: t("stream.row.col1.ul.li5") },
     ];
 
     const QA_DATA = [
@@ -59,13 +67,22 @@ export default async function Page() {
             <Banner/>
             <Permission/>
             <Route/>
-            <Stream/>
+            <Stream
+                title={t("stream.title")}
+                desc={t("stream.desc")}
+                col1={{ title: t("stream.row.col1.title"), ulAry: StreamUlAry }}
+                col2={{ backgroundUrl: "bg-[url(/images/accounts/stream-bg.png)]", isShowMore: true }}
+            />
             <Custom/>
-            <Credit number={"50,000"} className={"bg-gradient-to-b from-[#FFFFFF] to-[#ABC2DC]"} typeText={t("credit.account")} />
+            <Credit
+                number={"50,000"}
+                className={"bg-gradient-to-b from-[#FFFFFF] to-[#ABC2DC]"}
+                typeText={t("credit.account")}
+            />
             <BankCards/>
             <Support/>
             <Experience/>
-            <TableComponent></TableComponent>
+            <TableComponent/>
             <Process title={t("process.title")} ary={processAry} />
             <QuestionAnswer data={QA_DATA} />
             <Tools/>

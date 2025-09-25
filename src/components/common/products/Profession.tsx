@@ -16,7 +16,7 @@ const fadeInUp: Variants = {
 }
 
 const Profession = () => {
-    const t = useTranslations("Pages.products.forex.profession");
+    const t = useTranslations("Common.profession");
     const [ tabActive, setTabActive ] = React.useState("forex");
 
     const cols = [

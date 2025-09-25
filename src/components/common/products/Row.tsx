@@ -1,9 +1,8 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import classnames from "classnames";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -14,7 +13,7 @@ const fadeInUp: Variants = {
     },
 }
 
-const Row = ({ ary, title }: any) => {
+const Row = ({ ary, title, title1 }: any) => {
     return (
         <section className={"p-4 lg:p-30"}>
             <motion.div
@@ -29,12 +28,22 @@ const Row = ({ ary, title }: any) => {
                 >
                     { title }
                 </Typography>
+                {
+                    title1 && (
+                        <Typography
+                            variant={"h1"}
+                            className={"font-medium text-center mt-4"}
+                        >
+                            { title1 }
+                        </Typography>
+                    )
+                }
             </motion.div>
             <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
                     {
                         ary.map((item: any, index: number) => (
-                            <div className={"bg-theme-light-bg rounded-2xl py-10 px-8 col-span-12 lg:col-span-3"} key={index}>
+                            <div className={classnames(["bg-theme-light-bg rounded-2xl py-10 px-8 col-span-12", `lg:col-span-${12 / ary.length}`])} key={index}>
                                 <img src={item.imageUrl} className={"w-10 h-10 object-cover"} alt=""/>
                                 <Typography
                                     variant={"h4"}
@@ -60,6 +69,17 @@ const Row = ({ ary, title }: any) => {
                                 >
                                     {item.desc}
                                 </Typography>
+
+                                {
+                                    item.prompt && (
+                                        <Typography
+                                            variant={"muted"}
+                                            className={"!text-xs mt-6"}
+                                        >
+                                            {item.prompt}
+                                        </Typography>
+                                    )
+                                }
                             </div>
                         ))
                     }
