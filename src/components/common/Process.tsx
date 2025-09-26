@@ -17,16 +17,19 @@ const fadeInUp: Variants = {
 interface AryItemProps {
     title: string;
     desc: string;
-    bottom: string;
+    bottom?: string;
 }
 
 type Props = {
     ary: AryItemProps[],
     title: string;
+    theme?: "light" | "dark";
 }
 
 const Process = (props: Props) => {
-    const { ary, title } = props;
+    const { ary, title, theme = "light" } = props;
+    const isLight = theme === "light";
+
     return (
         <section className={"p-4 lg:p-30"}>
             <motion.div
@@ -37,7 +40,9 @@ const Process = (props: Props) => {
             >
                 <Typography
                     variant={"h1"}
-                    className={"font-medium text-center"}
+                    className={classnames(["font-medium text-center", {
+                        "!text-white": !isLight
+                    }])}
                 >
                     {title}
                 </Typography>
@@ -49,28 +54,42 @@ const Process = (props: Props) => {
                             <div className={classnames(["col-span-12", `lg:col-span-${12 / ary.length}`])}
                                  key={index}
                             >
-                                <div className={"py-10 px-8 bg-theme-light-bg rounded-lg"}>
+                                <div className={classnames(["py-10 px-8 rounded-lg", {
+                                    "bg-theme-light-bg": isLight,
+                                    "bg-[#1F2538]": !isLight
+                                }])}>
                                     <header>
                                         <div className={"border-[2px] w-[32px] h-[32px] border-black bg-white rounded-full flex justify-center items-center"}>
                                             { index + 1 }
                                         </div>
                                     </header>
                                     <div className={""}>
-                                        <Typography variant={"h4"}
-                                                    className={"my-6"}
+                                        <Typography
+                                            variant={"h4"}
+                                            className={classnames(["my-6", {
+                                                "!text-white": !isLight
+                                            }])}
                                         >
                                             { item.title }
                                         </Typography>
-                                        <Typography>
+                                        <Typography
+                                            className={classnames([{
+                                                "!text-[#999]": !isLight
+                                            }])}
+                                        >
                                             { item.desc }
                                         </Typography>
                                     </div>
-                                    <div className={"mt-16 flex items-center cursor-pointer"}>
-                                        <Typography>
-                                            { item.bottom }
-                                        </Typography>
-                                        <ArrowRight className={"ml-2"} />
-                                    </div>
+                                    {
+                                        item.bottom && (
+                                            <div className={"mt-16 flex items-center cursor-pointer"}>
+                                                <Typography>
+                                                    {item.bottom}
+                                                </Typography>
+                                                <ArrowRight className={"ml-2"}/>
+                                            </div>
+                                        )
+                                    }
                                 </div>
                             </div>
                         ))

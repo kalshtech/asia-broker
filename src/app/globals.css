@@ -174,3 +174,9 @@ h1,h2,h3,h4,h5,h6,p {
 .specially-reward-card {
   background: linear-gradient( 161deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%), linear-gradient( 6deg, rgba(0,0,0,0) 0%, #000000 100%), rgba(65,76,113,0.4);
 }
+
+.specially-swiper-card {
+  background: linear-gradient(161deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%), linear-gradient( 6deg, rgba(0,0,0,0) 0%, #000000 100%), rgba(65,76,113,0.4);
+  border-radius: 16px 16px 16px 16px;
+  border: 1px solid #4F5670;
+}

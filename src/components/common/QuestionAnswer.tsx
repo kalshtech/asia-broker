@@ -5,6 +5,7 @@ import { ChevronUp, ChevronDown } from "lucide-react";
 import {motion, Variants} from "framer-motion";
 import {Typography} from "@/components/ui/typography";
 import {useTranslations} from "next-intl";
+import { Button } from "@/components/ui/button";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -36,7 +37,7 @@ export function QAItemRow({ item }: any) {
     );
 }
 
-export default function QuestionAnswer({ data } : any) {
+export default function QuestionAnswer({ data, isShowBtn, btn1Text, btn2Text } : any) {
     const t = useTranslations("Common");
     return (
         <section className="p-4 lg:p-30 bg-theme-light-bg">
@@ -60,6 +61,19 @@ export default function QuestionAnswer({ data } : any) {
                     ))}
                 </div>
             </div>
+            {
+                isShowBtn && (
+                    <div className={"mt-10 flex justify-center"}>
+                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                            { btn1Text }
+                        </Button>
+                        <Button
+                            className={"px-8 h-10 ml-4 rounded-full text-theme-active border border-theme-active bg-transparent hover:bg-transparent"}>
+                            { btn2Text }
+                        </Button>
+                    </div>
+                )
+            }
         </section>
     );
 }

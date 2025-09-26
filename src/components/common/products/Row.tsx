@@ -3,6 +3,8 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { Typography } from "@/components/ui/typography";
 import classnames from "classnames";
+import Register from "@/components/RegisterBtn";
+import { Button } from "@/components/ui/button";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -13,9 +15,12 @@ const fadeInUp: Variants = {
     },
 }
 
-const Row = ({ ary, title, title1 }: any) => {
+const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn }: any) => {
+    const isLight = theme === "light";
     return (
-        <section className={"p-4 lg:p-30"}>
+        <section className={classnames(["p-4 lg:p-30", {
+            "bg-[#000515]": !isLight
+        }])}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -24,7 +29,9 @@ const Row = ({ ary, title, title1 }: any) => {
             >
                 <Typography
                     variant={"h1"}
-                    className={"font-medium text-center"}
+                    className={classnames(["font-medium text-center", {
+                        "!text-white": !isLight
+                    }])}
                 >
                     { title }
                 </Typography>
@@ -43,11 +50,16 @@ const Row = ({ ary, title, title1 }: any) => {
                 <div className={"grid grid-cols-12 gap-8"}>
                     {
                         ary.map((item: any, index: number) => (
-                            <div className={classnames(["bg-theme-light-bg rounded-2xl py-10 px-8 col-span-12", `lg:col-span-${12 / ary.length}`])} key={index}>
+                            <div className={classnames(["rounded-2xl py-10 px-8 col-span-12", `lg:col-span-${12 / ary.length}`, {
+                                "bg-theme-light-bg": isLight,
+                                "bg-[#1F2538] border border-[#4F5670]": !isLight
+                            }])} key={index}>
                                 <img src={item.imageUrl} className={"w-10 h-10 object-cover"} alt=""/>
                                 <Typography
                                     variant={"h4"}
-                                    className={"font-medium mt-4"}
+                                    className={classnames(["font-medium mt-4", {
+                                        "!text-white": !isLight
+                                    }])}
                                 >
                                     {item.title}
                                 </Typography>
@@ -56,7 +68,9 @@ const Row = ({ ary, title, title1 }: any) => {
                                     item.midst && (
                                         <Typography
                                             variant={"h5"}
-                                            className={"font-medium mt-4"}
+                                            className={classnames(["font-medium mt-4", {
+                                                "!text-white": !isLight
+                                            }])}
                                         >
                                             {item.midst}
                                         </Typography>
@@ -65,7 +79,9 @@ const Row = ({ ary, title, title1 }: any) => {
 
                                 <Typography
                                     variant={"muted"}
-                                    className={"mt-4"}
+                                    className={classnames(["mt-4", {
+                                        "!text-white": !isLight
+                                    }])}
                                 >
                                     {item.desc}
                                 </Typography>
@@ -74,7 +90,9 @@ const Row = ({ ary, title, title1 }: any) => {
                                     item.prompt && (
                                         <Typography
                                             variant={"muted"}
-                                            className={"!text-xs mt-6"}
+                                            className={classnames(["!text-xs mt-6", {
+                                                "!text-white": !isLight
+                                            }])}
                                         >
                                             {item.prompt}
                                         </Typography>
@@ -84,6 +102,17 @@ const Row = ({ ary, title, title1 }: any) => {
                         ))
                     }
                 </div>
+                {
+                    isShowBtn && (
+                        <div className={"mt-16 flex justify-center"}>
+                            <Register/>
+                            <Button
+                                className={"px-8 h-10 ml-4 rounded-full border border-white bg-transparent hover:bg-transparent"}>
+                                {challengeText}
+                            </Button>
+                        </div>
+                    )
+                }
             </div>
         </section>
     )
