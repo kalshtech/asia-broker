@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const Advance = () => {
     const t = useTranslations("Pages.accounts.profit.advance");
     return (
-        <section className={"p-30 bg-[url(/images/accounts/profit-advance-bg.png)] bg-center bg-cover"}>
+        <section className={"bg-[url(/images/accounts/profit-advance-bg.png)] bg-center bg-cover p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -32,7 +32,7 @@ const Advance = () => {
                 </Typography>
                 <Typography
                     variant={"lead"}
-                    className={"mt-16 text-center !text-white"}
+                    className={"text-center !text-white mt-4 lg:mt-16"}
                 >
                     {t("desc1")}
                 </Typography>
@@ -51,9 +51,9 @@ const Advance = () => {
                 </Typography>
             </motion.div>
 
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"bg-white rounded-xl p-16"}>
                             <Typography
                                 variant={"h3"}
@@ -77,7 +77,7 @@ const Advance = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"bg-white rounded-xl p-16"}>
                             <Typography
                                 variant={"h3"}

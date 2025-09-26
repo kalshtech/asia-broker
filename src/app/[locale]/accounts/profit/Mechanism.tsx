@@ -22,7 +22,7 @@ const Mechanism = () => {
         { imgUrl: "/images/accounts/profit-mechanism3.png", title: t("row.col3.title"), desc: t("row.col3.desc") },
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -37,10 +37,10 @@ const Mechanism = () => {
                 </Typography>
             </motion.div>
             <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-8"}>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
                     {
                         ary.map((item, index) => (
-                            <div className={"col-span-4 flex-col flex items-center justify-center"} key={index}>
+                            <div className={"flex-col flex items-center justify-center col-span-12 lg:col-span-4"} key={index}>
                                 <img src={item.imgUrl} className={"w-10 h-10 object-cover"} alt=""/>
                                 <Typography
                                     variant={"large"}

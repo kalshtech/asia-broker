@@ -16,95 +16,107 @@ import {
 import { Typography } from "@/components/ui/typography";
 import { Separator } from "@/components/ui/separator";
 import { MoveRight, Globe } from 'lucide-react';
-import {useState, useEffect, useRef} from "react";
+import { useState } from "react";
 
 const { locales } = routing;
 
 const PackageMenuItem = (props: any) => {
+    const [open, setOpen] = useState(false)
     return props.ary.map((item: any, index: number) => (
         <NavigationMenuItem key={index}>
-            <NavigationMenuTrigger className={"hover:!bg-transparent data-[state=open]:!bg-transparent hover:!text-theme-active data-[state=open]:!text-theme-active"}>
+            <NavigationMenuTrigger
+                onClick={(e) => {
+                    e.preventDefault()
+                    setOpen((prev) => !prev)
+                }}
+                className={"hover:!bg-transparent data-[state=open]:!bg-transparent hover:!text-theme-active data-[state=open]:!text-theme-active"}
+            >
                 { item.title }
             </NavigationMenuTrigger>
-            <NavigationMenuContent className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-26"}>
-                <main className={"grid grid-cols-12 gap-4"}>
-                    <div className={"col-span-10 grid grid-cols-12 gap-12"}>
-                        {
-                            item.children.map((c_d: any, c_i: number) => (
-                                <div className={item.colSpan} key={c_i}>
-                                    <div>
-                                        <Typography
-                                            variant={"h6"}
-                                            className={"mx-4"}
-                                        >
-                                            { c_d.title }
-                                        </Typography>
-                                        { c_d.desc && (
-                                            <Typography
-                                                variant={"muted"}
-                                                className={"mt-2 mx-4"}
-                                            >
-                                                {c_d.desc}
-                                            </Typography>
-                                        ) }
-                                        <Separator className={"my-4 mx-4 bg-theme-light-bg"}/>
-                                    </div>
-                                    <div>
-                                        <ul>
-                                            {
-                                                c_d.ul.map((ul_d: any, ul_i: any) => (
-                                                    <li key={ul_i} className={"group/menu-active my-2 p-4 hover:rounded-md hover:bg-[#EEF2FF]"}>
-                                                        <Link
-                                                            href={ul_d.path}
-                                                            className={"text-theme-active hover:text-theme-active-hover"}
-                                                        >
-                                                            <div className={"flex items-center"}>
-                                                                <Typography variant={"large"}>
-                                                                    {ul_d.label}
-                                                                </Typography>
-                                                                { ul_d.icon && ul_d.icon }
-                                                                <MoveRight className={"ml-auto hidden group-hover/menu-active:block"} />
-                                                            </div>
+            {
+                open && (
+                    <NavigationMenuContent className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-26"}>
+                        <main className={"grid grid-cols-12 gap-4"}>
+                            <div className={"col-span-10 grid grid-cols-12 gap-12"}>
+                                {
+                                    item.children.map((c_d: any, c_i: number) => (
+                                        <div className={item.colSpan} key={c_i}>
+                                            <div>
+                                                <Typography
+                                                    variant={"h6"}
+                                                    className={"mx-4"}
+                                                >
+                                                    { c_d.title }
+                                                </Typography>
+                                                { c_d.desc && (
+                                                    <Typography
+                                                        variant={"muted"}
+                                                        className={"mt-2 mx-4"}
+                                                    >
+                                                        {c_d.desc}
+                                                    </Typography>
+                                                ) }
+                                                <Separator className={"my-4 mx-4 bg-theme-light-bg"}/>
+                                            </div>
+                                            <div>
+                                                <ul>
+                                                    {
+                                                        c_d.ul.map((ul_d: any, ul_i: any) => (
+                                                            <li key={ul_i} className={"group/menu-active my-2 p-4 hover:rounded-md hover:bg-[#EEF2FF]"}>
+                                                                <Link
+                                                                    href={ul_d.path}
+                                                                    className={"text-theme-active hover:text-theme-active-hover"}
+                                                                    onClick={() => setOpen(false)}
+                                                                >
+                                                                    <div className={"flex items-center"}>
+                                                                        <Typography variant={"large"}>
+                                                                            {ul_d.label}
+                                                                        </Typography>
+                                                                        { ul_d.icon && ul_d.icon }
+                                                                        <MoveRight className={"ml-auto hidden group-hover/menu-active:block"} />
+                                                                    </div>
 
-                                                            { ul_d.desc && (
-                                                                <Typography variant={"muted"} className={"mt-2"}>
-                                                                    {ul_d.desc}
-                                                                </Typography>
-                                                            ) }
-                                                        </Link>
-                                                    </li>
-                                                ))
-                                            }
-                                        </ul>
+                                                                    { ul_d.desc && (
+                                                                        <Typography variant={"muted"} className={"mt-2"}>
+                                                                            {ul_d.desc}
+                                                                        </Typography>
+                                                                    ) }
+                                                                </Link>
+                                                            </li>
+                                                        ))
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                            <div className={"col-span-2"}>
+                                <div className={"w-full p-4 bg-theme-light-bg rounded-lg"}>
+                                    <div className={"relative"}>
+                                        <img className={"w-full h-full"} src={item.btnImg} alt=""/>
+                                        <Button className={"absolute bottom-4 left-4 m-auto right-4 bg-theme-active hover:bg-theme-active-hover"}>
+                                            <Link
+                                                href={item.btnPath}
+                                                className={"w-full h-full"}
+                                            >
+                                                { item.btn }
+                                            </Link>
+                                        </Button>
+                                    </div>
+                                    <div className={"mt-4"}>
+                                        <Typography
+                                            variant={"muted"}
+                                        >
+                                            { item.description }
+                                        </Typography>
                                     </div>
                                 </div>
-                            ))
-                        }
-                    </div>
-                    <div className={"col-span-2"}>
-                        <div className={"w-full p-4 bg-theme-light-bg rounded-lg"}>
-                            <div className={"relative"}>
-                                <img className={"w-full h-full"} src={item.btnImg} alt=""/>
-                                <Button className={"absolute bottom-4 left-4 m-auto right-4 bg-theme-active hover:bg-theme-active-hover"}>
-                                    <Link
-                                        href={item.btnPath}
-                                        className={"w-full h-full"}
-                                    >
-                                        { item.btn }
-                                    </Link>
-                                </Button>
                             </div>
-                            <div className={"mt-4"}>
-                                <Typography
-                                    variant={"muted"}
-                                >
-                                    { item.description }
-                                </Typography>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </NavigationMenuContent>
+                        </main>
+                    </NavigationMenuContent>
+                )
+            }
         </NavigationMenuItem>
     ))
 }

@@ -174,9 +174,9 @@ const Rates = () => {
     }, [])
 
     return (
-        <section className={"p-30 bg-theme-light-bg"}>
-            <div className={"grid grid-cols-12 gap-12"}>
-                <div className={"col-span-6"}>
+        <section className={"bg-theme-light-bg p-4 lg:p-30"}>
+            <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <Typography
                         variant={"h1"}
                         className={"font-medium"}
@@ -185,7 +185,7 @@ const Rates = () => {
                     </Typography>
                     <Typography
                         variant={"lead"}
-                        className={"mt-16"}
+                        className={"mt-4 lg:mt-16"}
                     >
                         { t("desc1") }
                     </Typography>
@@ -202,7 +202,7 @@ const Rates = () => {
                         { t("desc3") }
                     </Typography>
                 </div>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <Typography
                         variant={"large"}
                     >

@@ -9,9 +9,9 @@ import { Slider } from "@/components/ui/slider"
 const MockCalculator = () => {
     const t = useTranslations("Pages.accounts.profit.mockCalculator");
     return (
-        <section className={"p-30 bg-[#262E48]"}>
+        <section className={"bg-[#262E48] p-4 lg:p-30 "}>
             <div className={"grid grid-cols-12 gap-4"}>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <div>
                         <Typography
                             variant={"h1"}
@@ -41,7 +41,7 @@ const MockCalculator = () => {
                         </Typography>
                     </div>
                 </div>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <Typography
                         variant={"h4"}
                         className={"!text-white font-medium"}
@@ -56,7 +56,7 @@ const MockCalculator = () => {
                             <div className={"text-white"}>USD $500</div>
                             <div className={"text-white ml-auto"}>USD $500,000+</div>
                         </div>
-                        <div className={"mt-16"}>
+                        <div className={"mt-4 lg:mt-16"}>
                             <Typography
                                 variant={"h5"}
                                 className={"!text-white font-medium"}

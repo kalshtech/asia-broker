@@ -23,7 +23,7 @@ const Profit = () => {
         { text: t("row.col1.ul.li4") },
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"py-30 px-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -43,9 +43,9 @@ const Profit = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16 mx-30"}>
+            <div className={"mt-4 mx-4 lg:mt-16 lg:mx-30"}>
                 <div className={"grid grid-cols-12 gap-4"}>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <ul className={"mt-8"}>
                             {
                                 ulAry.map((item, index) => (
@@ -76,7 +76,7 @@ const Profit = () => {
                             </Button>
                         </div>
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <img
                             src="/images/accounts/profit-phone-placeholder.png"
                             className={"max-h-[380px] mx-auto object-cover"}
