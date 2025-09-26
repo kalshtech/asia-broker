@@ -153,18 +153,18 @@ const Navigation = () => {
                         {
                             title: t("menu.products.row.col-2.title"),
                             ul: [
-                                { label: t("menu.products.row.col-2.ul.li1"), path: "/" },
-                                { label: t("menu.products.row.col-2.ul.li2"), path: "/" },
+                                // { label: t("menu.products.row.col-2.ul.li1"), path: "/" },
+                                // { label: t("menu.products.row.col-2.ul.li2"), path: "/" },
                                 { label: t("menu.products.row.col-2.ul.li3"), path: "/products/rates" },
-                                { label: t("menu.products.row.col-2.ul.li4"), path: "/" },
+                                // { label: t("menu.products.row.col-2.ul.li4"), path: "/" },
                             ]
                         },
                         {
                             title: t("menu.products.row.col-3.title"),
                             ul: [
                                 { label: t("menu.products.row.col-3.ul.li1"), path: "/products/transfer" },
-                                { label: t("menu.products.row.col-3.ul.li2"), path: "/" },
-                                { label: t("menu.products.row.col-3.ul.li3"), path: "/" },
+                                // { label: t("menu.products.row.col-3.ul.li2"), path: "/" },
+                                // { label: t("menu.products.row.col-3.ul.li3"), path: "/" },
                             ]
                         }
                     ]
@@ -230,12 +230,12 @@ const Navigation = () => {
                                 }
                             ]
                         },
-                        {
-                            title: t("menu.account.row.col-3.title"),
-                            ul: [
-                                { label: t("menu.account.row.col-3.ul.li1"), desc: t("menu.account.row.col-3.ul.desc1"), path: "/" }
-                            ]
-                        }
+                        // {
+                        //     title: t("menu.account.row.col-3.title"),
+                        //     ul: [
+                        //         { label: t("menu.account.row.col-3.ul.li1"), desc: t("menu.account.row.col-3.ul.desc1"), path: "/" }
+                        //     ]
+                        // }
                     ]
                 },
                 // CFD新手学院
@@ -247,23 +247,23 @@ const Navigation = () => {
                     btnImg: "/images/navigation/beginner.png",
                     colSpan: "col-span-4",
                     children: [
-                        {
-                            title: t("menu.beginner.row.col-1.title"),
-                            ul: [
-                                { label: t("menu.beginner.row.col-1.ul.li1"), desc: t("menu.beginner.row.col-1.ul.desc1"), path: "/" },
-                                { label: t("menu.beginner.row.col-1.ul.li2"), desc: t("menu.beginner.row.col-1.ul.desc2"), path: "/" },
-                                { label: t("menu.beginner.row.col-1.ul.li3"), desc: t("menu.beginner.row.col-1.ul.desc3"), path: "/" },
-                                { label: t("menu.beginner.row.col-1.ul.li4"), desc: t("menu.beginner.row.col-1.ul.desc4"), path: "/" },
-                                { label: t("menu.beginner.row.col-1.ul.li5"), desc: t("menu.beginner.row.col-1.ul.desc5"), path: "/" }
-                            ]
-                        },
-                        {
-                            title: t("menu.beginner.row.col-2.title"),
-                            ul: [
-                                { label: t("menu.beginner.row.col-2.ul.li1"), desc: t("menu.beginner.row.col-2.ul.desc1"), path: "/" },
-                                { label: t("menu.beginner.row.col-2.ul.li2"), desc: t("menu.beginner.row.col-2.ul.desc2"), path: "/" },
-                            ]
-                        },
+                        // {
+                        //     title: t("menu.beginner.row.col-1.title"),
+                        //     ul: [
+                        //         { label: t("menu.beginner.row.col-1.ul.li1"), desc: t("menu.beginner.row.col-1.ul.desc1"), path: "/" },
+                        //         { label: t("menu.beginner.row.col-1.ul.li2"), desc: t("menu.beginner.row.col-1.ul.desc2"), path: "/" },
+                        //         { label: t("menu.beginner.row.col-1.ul.li3"), desc: t("menu.beginner.row.col-1.ul.desc3"), path: "/" },
+                        //         { label: t("menu.beginner.row.col-1.ul.li4"), desc: t("menu.beginner.row.col-1.ul.desc4"), path: "/" },
+                        //         { label: t("menu.beginner.row.col-1.ul.li5"), desc: t("menu.beginner.row.col-1.ul.desc5"), path: "/" }
+                        //     ]
+                        // },
+                        // {
+                        //     title: t("menu.beginner.row.col-2.title"),
+                        //     ul: [
+                        //         { label: t("menu.beginner.row.col-2.ul.li1"), desc: t("menu.beginner.row.col-2.ul.desc1"), path: "/" },
+                        //         { label: t("menu.beginner.row.col-2.ul.li2"), desc: t("menu.beginner.row.col-2.ul.desc2"), path: "/" },
+                        //     ]
+                        // },
                         {
                             title: t("menu.beginner.row.col-3.title"),
                             ul: [
@@ -296,45 +296,45 @@ const Navigation = () => {
                             desc: t("menu.inspiration.row.col-2.desc"),
                             ul: [
                                 { label: t("menu.inspiration.row.col-2.ul.li1"), path: "/ideas/professional" },
-                                { label: t("menu.inspiration.row.col-2.ul.li2"), desc: t("menu.inspiration.row.col-2.ul.desc2"), path: "/" },
+                                // { label: t("menu.inspiration.row.col-2.ul.li2"), desc: t("menu.inspiration.row.col-2.ul.desc2"), path: "/" },
                             ]
                         },
-                        {
-                            title: t("menu.inspiration.row.col-3.title"),
-                            desc: t("menu.inspiration.row.col-3.desc"),
-                            ul: [
-                                { label: t("menu.inspiration.row.col-3.ul.li1"), path: "/" },
-                                { label: t("menu.inspiration.row.col-3.ul.li2"), path: "/" },
-                                { label: t("menu.inspiration.row.col-3.ul.li3"), path: "/" },
-                                { label: t("menu.inspiration.row.col-3.ul.li4"), path: "/" },
-                                { label: t("menu.inspiration.row.col-3.ul.li5"), path: "/" }
-                            ]
-                        }
+                        // {
+                        //     title: t("menu.inspiration.row.col-3.title"),
+                        //     desc: t("menu.inspiration.row.col-3.desc"),
+                        //     ul: [
+                        //         { label: t("menu.inspiration.row.col-3.ul.li1"), path: "/" },
+                        //         { label: t("menu.inspiration.row.col-3.ul.li2"), path: "/" },
+                        //         { label: t("menu.inspiration.row.col-3.ul.li3"), path: "/" },
+                        //         { label: t("menu.inspiration.row.col-3.ul.li4"), path: "/" },
+                        //         { label: t("menu.inspiration.row.col-3.ul.li5"), path: "/" }
+                        //     ]
+                        // }
                     ]
                 },
                 // 客户支持
-                {
-                    title: t("menu.support.title"),
-                    description: t("menu.support.description"),
-                    btn: t("menu.support.btn"),
-                    btnPath: "/",
-                    btnImg: "/images/navigation/support.png",
-                    colSpan: "col-span-6",
-                    children: [
-                        {
-                            title: t("menu.support.row.col-1.title"),
-                            ul: [
-                                { label: t("menu.support.row.col-1.ul.li1"), path: "/" }
-                            ]
-                        },
-                        {
-                            title: t("menu.support.row.col-2.title"),
-                            ul: [
-                                { label: t("menu.support.row.col-2.ul.li1"), path: "/" },
-                            ]
-                        }
-                    ]
-                },
+                // {
+                //     title: t("menu.support.title"),
+                //     description: t("menu.support.description"),
+                //     btn: t("menu.support.btn"),
+                //     btnPath: "/",
+                //     btnImg: "/images/navigation/support.png",
+                //     colSpan: "col-span-6",
+                //     children: [
+                //         {
+                //             title: t("menu.support.row.col-1.title"),
+                //             ul: [
+                //                 { label: t("menu.support.row.col-1.ul.li1"), path: "/" }
+                //             ]
+                //         },
+                //         {
+                //             title: t("menu.support.row.col-2.title"),
+                //             ul: [
+                //                 { label: t("menu.support.row.col-2.ul.li1"), path: "/" },
+                //             ]
+                //         }
+                //     ]
+                // },
                 // 公司
                 {
                     title: t("menu.corporation.title"),
@@ -351,7 +351,7 @@ const Navigation = () => {
                                 { label: t("menu.corporation.row.col-1.ul.li2"), path: "/corporation/careers" },
                                 // { label: t("menu.corporation.row.col-1.ul.li3"), path: "/" },
                                 { label: t("menu.corporation.row.col-1.ul.li4"), path: "/corporation/contact" },
-                                { label: t("menu.corporation.row.col-1.ul.li5"), path: "/" }
+                                // { label: t("menu.corporation.row.col-1.ul.li5"), path: "/" }
                             ]
                         }
                     ]
@@ -373,20 +373,24 @@ const Navigation = () => {
                                     desc: t("menu.doublewin.row.col-1.ul.desc1"),
                                     path: "/mutual/trading-competition"
                                 },
-                                { label: t("menu.doublewin.row.col-1.ul.li2"), desc: t("menu.doublewin.row.col-1.ul.desc2"), path: "/" },
+                                // {
+                                //     label: t("menu.doublewin.row.col-1.ul.li2"),
+                                //     desc: t("menu.doublewin.row.col-1.ul.desc2"),
+                                //     path: "/"
+                                // },
                                 {
                                     label: t("menu.doublewin.row.col-1.ul.li3"),
                                     desc: t("menu.doublewin.row.col-1.ul.desc3"),
                                     path: "/mutual/funding"
                                 },
-                                {
-                                    label: t("menu.doublewin.row.col-1.ul.li4"),
-                                    desc: t("menu.doublewin.row.col-1.ul.desc4"),
-                                    path: "/",
-                                    icon: (
-                                        <img src="/images/navigation/arrow-top-right.svg" className={"w-4 h-4 ml-2"} alt=""/>
-                                    ),
-                                },
+                                // {
+                                //     label: t("menu.doublewin.row.col-1.ul.li4"),
+                                //     desc: t("menu.doublewin.row.col-1.ul.desc4"),
+                                //     path: "/",
+                                //     icon: (
+                                //         <img src="/images/navigation/arrow-top-right.svg" className={"w-4 h-4 ml-2"} alt=""/>
+                                //     ),
+                                // },
                             ]
                         }
                     ]
