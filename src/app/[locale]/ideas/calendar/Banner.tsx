@@ -16,7 +16,7 @@ const fadeInUp: Variants = {
 const Banner = () => {
     const t = useTranslations("Pages.ideas.calendar.banner");
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"

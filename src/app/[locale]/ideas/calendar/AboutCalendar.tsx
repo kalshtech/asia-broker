@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const AboutCalendar = () => {
     const t = useTranslations("Pages.ideas.calendar.aboutCalendar");
     return (
-        <section className={"p-30 bg-[url(/images/ideas/about-calendar-background.png)] bg-cover bg-center"}>
+        <section className={"bg-[url(/images/ideas/about-calendar-background.png)] bg-cover bg-center p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -39,7 +39,7 @@ const AboutCalendar = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-30 max-w-4xl mx-auto"}>
+            <div className={"max-w-4xl mx-auto mt-16 lg:mt-30"}>
                 <div className={"grid grid-cols-12 gap-8"}>
                     <div className={"col-span-4"}>
                         <Input placeholder={t("form.first-placeholder")} className={"text-white rounded-full h-12 bg-theme-light-bg/60 placeholder:text-white"} />

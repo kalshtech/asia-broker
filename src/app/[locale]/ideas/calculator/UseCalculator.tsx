@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const UseCalculator = () => {
     const t = useTranslations("Pages.ideas.calculator.use");
     return (
-        <section className={"py-30"}>
+        <section className={"py-8 lg:py-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -38,10 +38,10 @@ const UseCalculator = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <img src="/images/ideas/calculator-use-bg.png" alt="" className={"relative z-10"}/>
-                <div className={"bg-theme-light-bg grid grid-cols-12 mx-30 -mt-24 relative z-20 rounded-xl"}>
-                    <div className={"col-span-4 py-10 px-8 border-r"}>
+                <div className={"bg-theme-light-bg grid grid-cols-12 -mt-24 relative z-20 rounded-xl mx-4 lg:mx-30"}>
+                    <div className={"border-r col-span-12 lg:col-span-4 p-4 lg:py-10 lg:px-8"}>
                         <div
                             className={"border-[2px] w-[32px] h-[32px] border-black bg-white rounded-full flex justify-center items-center"}>
                             1
@@ -53,7 +53,7 @@ const UseCalculator = () => {
                             {t("ul.li1")}
                         </Typography>
                     </div>
-                    <div className={"col-span-4 py-10 px-8 border-r"}>
+                    <div className={"border-r col-span-12 lg:col-span-4 p-4 lg:py-10 lg:px-8"}>
                         <div
                             className={"border-[2px] w-[32px] h-[32px] border-black bg-white rounded-full flex justify-center items-center"}>
                             2
@@ -65,7 +65,7 @@ const UseCalculator = () => {
                             {t("ul.li2")}
                         </Typography>
                     </div>
-                    <div className={"col-span-4 py-10 px-8 "}>
+                    <div className={"col-span-12 lg:col-span-4 p-4 lg:py-10 lg:px-8"}>
                         <div
                             className={"border-[2px] w-[32px] h-[32px] border-black bg-white rounded-full flex justify-center items-center"}>
                            3

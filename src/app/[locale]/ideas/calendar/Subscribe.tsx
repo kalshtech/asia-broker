@@ -49,9 +49,9 @@ const Subscribe = () => {
 
     return (
         <section ref={sectionRef} className={"bg-theme-light-bg"}>
-            <div className={"flex-1 grid grid-cols-2"}>
+            <div className={"flex-1 grid grid-cols-1 lg:grid-cols-2"}>
                 <div className={"col-span-1"} ref={leftRef}>
-                    <div className={"flex-1 px-30 py-12"}>
+                    <div className={"flex-1 px-4 py-4 lg:py-12 lg:px-30"}>
                         <ul>
                             {
                                 ulAry.map((item, index) => (
@@ -65,7 +65,7 @@ const Subscribe = () => {
                             }
                         </ul>
                     </div>
-                    <div className={"px-30"}>
+                    <div className={"flex justify-center lg:justify-start px-4 lg:px-30"}>
                         <Button className={"h-10 px-8 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                             {t("watch")}
                         </Button>
@@ -74,7 +74,7 @@ const Subscribe = () => {
                         </Button>
                     </div>
                 </div>
-                <div className={"col-span-1"}>
+                <div className={"col-span-1 mt-4 lg:mt-0"}>
                     <img src="/images/ideas/calendar-subscribe.png" className={"w-full h-full object-cover"} alt=""/>
                 </div>
             </div>

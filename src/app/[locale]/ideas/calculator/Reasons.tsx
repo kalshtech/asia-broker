@@ -22,7 +22,7 @@ const Reasons = () => {
         { text: t("row.col1.ul.li3") },
     ];
     return (
-        <section className={"m-30"}>
+        <section className={"m-4 lg:m-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -36,8 +36,8 @@ const Reasons = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"grid grid-cols-12 mt-16"}>
-                <div className={"col-span-6 bg-theme-deep-bg p-12 rounded-l-2xl"}>
+            <div className={"grid grid-cols-12 mt-4 lg:mt-16"}>
+                <div className={"bg-theme-deep-bg p-6 lg:p-12 lg:rounded-l-2xl col-span-12 lg:col-span-6"}>
                     <Typography
                         variant={"h3"}
                         className={"font-medium !text-white"}
@@ -80,7 +80,7 @@ const Reasons = () => {
                         </Button>
                     </div>
                 </div>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <img src="/images/ideas/calculate-reasons.png" alt=""/>
                 </div>
             </div>

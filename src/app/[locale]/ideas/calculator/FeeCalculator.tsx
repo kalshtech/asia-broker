@@ -37,7 +37,7 @@ const FeeCalculator = () => {
     }
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -63,13 +63,13 @@ const FeeCalculator = () => {
                       className={"flex justify-center items-center"}
                       onValueChange={handleToggleTabActive}
                 >
-                    <TabsList className={"h-10"}>
+                    <TabsList className={"h-10 grid grid-cols-3 lg:block"}>
                         {
                             tabList.map((item, index) => (
                                 <TabsTrigger
                                     key={index}
                                     value={item.value}
-                                    className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                    className={"px-8 cursor-pointer rounded-full bg-theme-light-bg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
                                 >
                                     {item.label}
                                 </TabsTrigger>
@@ -85,7 +85,7 @@ const FeeCalculator = () => {
                 </Typography>
             </div>
             <div className={"mt-10 p-12 bg-theme-light-bg rounded-xs"}>
-                <div className={"grid grid-cols-3 gap-8"}>
+                <div className={"grid gap-4 lg:gap-8 grid-cols-2 lg:grid-cols-3"}>
                     <div className={""}>
                         <Label htmlFor="date" className={"px-1 mb-2"}>
                             {t("form.type")}
@@ -174,7 +174,7 @@ const FeeCalculator = () => {
                     </span>
                     <Separator className="flex-1"/>
                 </div>
-                <div className={"grid grid-cols-2 gap-12"}>
+                <div className={"grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12"}>
                     <div className={""}>
                         <div className={"flex mb-2"}>
                             <Typography>
