@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const MarketBanner = () => {
     const t = useTranslations("Pages.ideas.marketsmap.marketBanner");
     return (
-        <section className={"py-16 bg-theme-light-bg"}>
+        <section className={"bg-theme-light-bg py-4 lg:py-16 "}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -32,7 +32,7 @@ const MarketBanner = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"flex justify-center"}>
                     <img src="/images/logo/en/logo.png" className={"h-[30px]"} alt=""/>
                     <img src="/images/tradingview.png" className={"h-[27px] ml-10"} alt=""/>

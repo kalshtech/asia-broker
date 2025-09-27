@@ -70,7 +70,7 @@ const HeatCharts = () => {
     }, [tabActive])
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -95,7 +95,7 @@ const HeatCharts = () => {
                     </Button>
                 </div>
             </motion.div>
-            <div className={"mt-16 flex items-center"}>
+            <div className={"mt-16 items-center hidden lg:flex"}>
                 <Tabs value={tabActive}
                       className={"flex"}
                       onValueChange={handleToggleTabActive}
@@ -137,7 +137,7 @@ const HeatCharts = () => {
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
-                className={"mt-30"}
+                className={"mt-8 lg:mt-30"}
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
@@ -148,7 +148,7 @@ const HeatCharts = () => {
                 </Typography>
                 <Typography
                     variant={"large"}
-                    className={"font-medium text-center mx-auto mt-10"}
+                    className={"font-medium text-center mx-auto mt-4 lg:mt-10"}
                 >
                     {t("stock-desc")}
                 </Typography>
@@ -166,7 +166,7 @@ const HeatCharts = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once: true, amount: 0.5}}
-                className={"mt-30"}
+                className={"mt-4 lg:mt-30"}
             >
                 <Typography
                     variant={"h1"}
@@ -176,7 +176,7 @@ const HeatCharts = () => {
                 </Typography>
                 <Typography
                     variant={"large"}
-                    className={"font-medium text-center mx-auto mt-10"}
+                    className={"font-medium text-center mx-auto mt-4 lg:mt-10"}
                 >
                     {t("crypto-desc")}
                 </Typography>

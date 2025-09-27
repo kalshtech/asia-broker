@@ -22,10 +22,10 @@ const Interpretation = () => {
         { text: t("row.col1.ul.li3") },
     ];
     return (
-        <section className={"m-30"}>
+        <section className={"m-4 lg:m-30"}>
             <div className={"grid grid-cols-12"}>
-                <div className={"col-span-6"}>
-                    <div className={"px-12 py-20 bg-theme-deep-bg h-full rounded-l-lg"}>
+                <div className={"col-span-12 lg:col-span-6"}>
+                    <div className={"px-12 py-20 bg-theme-deep-bg h-full lg:rounded-l-lg"}>
                         <Typography variant={"h4"} className={"!text-white"}>
                             { t("row.col1.title") }
                         </Typography>
@@ -66,7 +66,7 @@ const Interpretation = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <img src="/images/ideas/marketsmap-interpretation.png" className={"h-full object-cover"} alt=""/>
                 </div>
             </div>
