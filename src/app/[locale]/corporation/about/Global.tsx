@@ -24,7 +24,7 @@ const Global =  () => {
         { title: t("row.col4.title"), desc: t("row.col4.desc")  },
     ];
     return (
-        <section className={"p-30 bg-[url(/images/corporation/about-global-bg.png)] bg-cover bg-center"}>
+        <section className={"bg-[url(/images/corporation/about-global-bg.png)] bg-cover bg-center p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -42,7 +42,7 @@ const Global =  () => {
                 <div className={"grid grid-cols-12 gap-4"}>
                     {
                         ulAry.map((item, index) => (
-                            <div className={"col-span-3 relative"} key={index}>
+                            <div className={"col-span-12 lg:col-span-3 relative"} key={index}>
                                 <Typography
                                     variant={"h4"}
                                     className={"font-medium !text-white text-center"}
@@ -58,7 +58,7 @@ const Global =  () => {
 
                                 {
                                     index !== (ulAry.length - 1) && (
-                                        <Separator className={"absolute right-0 top-0"} orientation={"vertical"} />
+                                        <Separator className={"absolute right-0 top-0 hidden lg:block"} orientation={"vertical"} />
                                     )
                                 }
                             </div>

@@ -23,7 +23,7 @@ const Articles = () => {
         { imageUrl: "bg-[url(/images/corporation/about-article3.png)] bg-center bg-cover", title: t("row.col3.title"), desc: t("row.col3.desc") }
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -32,7 +32,7 @@ const Articles = () => {
             >
                 <Typography
                     variant={"h1"}
-                    className={"font-medium max-w-[1200px] !text-[40px] mx-auto text-center"}
+                    className={"font-medium max-w-[1200px] lg:!text-[40px] mx-auto text-center"}
                 >
                     {t("title")}
                 </Typography>
@@ -48,7 +48,7 @@ const Articles = () => {
                 <div className={"grid grid-cols-12 gap-4"}>
                     {
                         ary.map((item, index) => (
-                            <div className={"col-span-4"} key={index}>
+                            <div className={"col-span-12 lg:col-span-4"} key={index}>
                                 <div className={classnames([item.imageUrl, "p-12 rounded-lg h-[420px]"])}>
                                     <Typography
                                         variant={"h4"}

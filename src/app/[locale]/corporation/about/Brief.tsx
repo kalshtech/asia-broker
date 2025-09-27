@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const Brief = () => {
     const t = useTranslations("Pages.corporation.about.brief");
     return (
-        <section className={"p-30 bg-[url(/images/corporation/about-brief-background.png)] bg-cover bg-center"}>
+        <section className={"bg-[url(/images/corporation/about-brief-background.png)] bg-cover bg-center p-4 lg:p-30"}>
             <div className={""}>
                 <div className={"flex"}>
                     <Typography variant={"muted"}>

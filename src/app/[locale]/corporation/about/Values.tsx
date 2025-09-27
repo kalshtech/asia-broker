@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Values = () => {
     const t = useTranslations("Pages.corporation.about.values");
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -91,7 +91,7 @@ const Values = () => {
                         </div>
                     </div>
                     <div className={"col-span-6 h-full"}>
-                        <div className={"py-10 px-8 border-r"}>
+                        <div className={"py-10 px-8"}>
                             <Typography
                                 variant={"h4"}
                                 className={"font-medium"}

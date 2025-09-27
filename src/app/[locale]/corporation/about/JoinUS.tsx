@@ -38,7 +38,7 @@ const JoinUS = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <Introduction/>
             </div>
         </section>

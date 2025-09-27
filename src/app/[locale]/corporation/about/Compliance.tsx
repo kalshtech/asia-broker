@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const Compliance = () => {
     const t = useTranslations("Pages.corporation.about.compliance");
     return (
-        <section className={"p-30 bg-[url(/images/corporation/about-compliance.png)] bg-center bg-cover h-[624px]"}>
+        <section className={"bg-[url(/images/corporation/about-compliance.png)] bg-center bg-cover h-136 lg:h-[624px] p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -31,9 +31,9 @@ const Compliance = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-12"}>
-                    <div className={"col-span-6 h-full flex"}>
+            <div className={"mt-4 lg:mt-16"}>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
+                    <div className={"col-span-12 lg:col-span-6 h-full flex"}>
                         <div className={"px-10 py-6 bg-white/60 rounded-lg mt-auto flex-1"}>
                             <img src="/images/corporation/about-sgx-logo.png" className={"h-[26px]"} alt=""/>
                             <Typography
@@ -50,7 +50,7 @@ const Compliance = () => {
                             </Typography>
                         </div>
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <div>
                             <div>
                                 <Typography
@@ -66,7 +66,7 @@ const Compliance = () => {
                                     {t("row.col2.desc1")}
                                 </Typography>
                             </div>
-                            <div className={"mt-10"}>
+                            <div className={"mt-4 lg:mt-10"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium !text-white"}
@@ -80,7 +80,7 @@ const Compliance = () => {
                                     {t("row.col2.desc2")}
                                 </Typography>
                             </div>
-                            <div className={"mt-10"}>
+                            <div className={"mt-4 lg:mt-10"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium !text-white"}

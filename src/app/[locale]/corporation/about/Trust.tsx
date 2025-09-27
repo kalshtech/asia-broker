@@ -1,6 +1,5 @@
 "use client";
 import * as React from 'react'
-import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
@@ -8,9 +7,9 @@ import { Button } from "@/components/ui/button";
 const Trust = () => {
     const t = useTranslations("Pages.corporation.about.trust");
     return (
-        <section className={"p-30"}>
-            <div className={"flex items-center"}>
-                <div>
+        <section className={"p-4 lg:p-30"}>
+            <div className={"grid grid-cols-12"}>
+                <div className={"col-span-12 lg:col-span-10"}>
                     <Typography
                         variant={"h3"}
                         className={"font-medium"}
@@ -24,7 +23,7 @@ const Trust = () => {
                         {t("desc")}
                     </Typography>
                 </div>
-                <div className={"ml-auto"}>
+                <div className={"col-span-12 lg:col-span-2 mt-4 lg:mt-0"}>
                     <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                         {t("start")}
                     </Button>

@@ -19,8 +19,8 @@ const Introduction = () => {
     const t = useTranslations("Pages.corporation.about.join");
     return (
         <div className={"grid grid-cols-12"}>
-            <div className={"col-span-6"}>
-                <div className={"bg-theme-active p-30 h-full"}>
+            <div className={"col-span-12 lg:col-span-6"}>
+                <div className={"bg-theme-active p-4 lg:p-30 h-full"}>
                     <Typography
                         variant={"h2"}
                         className={"font-medium !text-white"}
@@ -30,7 +30,7 @@ const Introduction = () => {
 
                     <Typography
                         variant={"lead"}
-                        className={"font-medium !text-white mt-16"}
+                        className={"font-medium !text-white mt-8 lg:mt-16"}
                     >
                         {t("col1.desc1")}
                     </Typography>
@@ -40,7 +40,7 @@ const Introduction = () => {
                     >
                         {t("col1.desc2")}
                     </Typography>
-                    <div className={"mt-16"}>
+                    <div className={"mt-8 lg:mt-16"}>
                         <Button
                             className={"bg-white text-black px-8 h-10 rounded-full text-theme-active hover:bg-white"}>
                             {t("col1.view")}
@@ -48,7 +48,7 @@ const Introduction = () => {
                     </div>
                 </div>
             </div>
-            <div className={"col-span-6"}>
+            <div className={"col-span-12 lg:col-span-6"}>
                 <img src="/images/corporation/portrait.png" alt="" className={"object-cover"}/>
             </div>
         </div>
