@@ -56,7 +56,7 @@ const Articles = () => {
         { imageUrl: "/images/academy/learning-article1.png", title: ArticlesT("common-mistakes.title"), disc: "宏观", time: "2025/9/3", href: "/articles/beginner/common-mistakes" },
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -79,7 +79,7 @@ const Articles = () => {
                         {
                             stageAry.map((item, index) => (
                                 <div
-                                    className={"bg-theme-light-bg px-6 py-3 rounded-full cursor-pointer text-[#666666] text-sm"}
+                                    className={"bg-theme-light-bg rounded-full cursor-pointer text-[#666666] text-sm px-3 py-1 lg:px-6 lg:py-3"}
                                     key={index}>
                                     {item.label}
                                 </div>
@@ -95,7 +95,7 @@ const Articles = () => {
                         {
                             themeAry.map((item, index) => (
                                 <div
-                                    className={"bg-theme-light-bg px-6 py-3 rounded-full cursor-pointer text-[#666666] text-sm"}
+                                    className={"bg-theme-light-bg rounded-full cursor-pointer text-[#666666] text-sm px-3 py-1 lg:px-6 lg:py-3"}
                                     key={index}>
                                     {item.label}
                                 </div>
@@ -103,7 +103,7 @@ const Articles = () => {
                         }
                     </div>
                 </div>
-                <div className={"grid grid-cols-3 gap-8 mt-6"}>
+                <div className={"grid mt-6 gap-4 lg:gap-8 grid-cols-2 lg:grid-cols-3"}>
                     {
                         articlesAry.map((item, index) => (
                             <BaseArticle key={index} {...item} />

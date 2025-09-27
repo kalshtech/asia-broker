@@ -63,8 +63,8 @@ const Banner =  () => {
                 </motion.div>
             </section>
             <div className={"bg-white px-10 py-12 -mt-30 rounded-xl shadow-[0_4px_8px_0_rgba(0,0,0,0.1)] mx-8 lg:mx-30"}>
-                <div className={"flex"}>
-                    <div className={"flex items-center"}>
+                <div className={"grid grid-cols-12 gap-4"}>
+                    <div className={"col-span-12 lg:col-span-6 flex items-center"}>
                         <Typography
                             variant={"muted"}
                             className={"font-medium text-center"}
@@ -78,7 +78,7 @@ const Banner =  () => {
                             5.30%
                         </Typography>
                     </div>
-                    <div className={"ml-auto flex items-center"}>
+                    <div className={"col-span-12 lg:col-span-6 flex items-center justify-end"}>
                         <img src="/images/accounts/profit-banner-logo.png" className={"h-[30px] w-[30px] object-cover"} alt="logo"/>
                         <Typography
                             variant={"muted"}

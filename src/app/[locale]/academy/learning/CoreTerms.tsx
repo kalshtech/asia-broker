@@ -112,7 +112,7 @@ const CoreTerms = () => {
     }
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -162,7 +162,7 @@ const CoreTerms = () => {
                 </header>
                 <div className={"mt-10 relative"}>
                     <Input
-                        className={"py-7 px-8 !text-lg bg-theme-light-bg"}
+                        className={"bg-theme-light-bg py-4 px-4 !text-base lg:!text-lg lg:py-7 lg:px-8"}
                         placeholder={t("placeholder")}
                         value={q}
                         onChange={(e) => setQ(e.target.value)}
@@ -180,7 +180,7 @@ const CoreTerms = () => {
                             <Button
                                 key={L}
                                 variant={isActive ? "default" : "ghost"}
-                                className={`h-10 w-10 p-0 text-lg ${!enabled ? "text-muted-foreground/50 cursor-not-allowed" : ""}`}
+                                className={`h-6 w-6 lg:h-10 lg:w-10 p-0 text-lg ${!enabled ? "text-muted-foreground/50 cursor-not-allowed" : ""}`}
                                 disabled={!enabled}
                                 onClick={() => {
                                     if (!enabled) return;

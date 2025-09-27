@@ -8,10 +8,10 @@ import { Button } from "@/components/ui/button";
 const Explore = () => {
     const t = useTranslations("Pages.academy.learning.explore");
     return (
-        <section className={"m-30"}>
+        <section className={"m-4 lg:m-30"}>
             <div className={"grid grid-cols-12"}>
-                <div className={"col-span-6"}>
-                    <div className={"bg-theme-deep-bg h-full rounded-l-lg py-20 px-12"}>
+                <div className={"col-span-12 lg:col-span-6"}>
+                    <div className={"bg-theme-deep-bg h-full py-8 px-8 lg:py-20 lg:px-12 lg:rounded-l-lg"}>
                         <Typography
                             variant={"h4"}
                             className={"!text-white"}
@@ -40,7 +40,7 @@ const Explore = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <img src="/images/academy/learning-explore.png" alt="explore" className={"object-cover"} />
                 </div>
             </div>

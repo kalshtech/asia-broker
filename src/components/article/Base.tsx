@@ -19,7 +19,7 @@ const BaseArticle = (props: Props) => {
                 <img src={imageUrl} alt="article-placeholder"
                      title={"article-placeholder"}/>
                 <div className={"mt-4"}>
-                    <button className={"h-10 px-5 text-xs bg-theme-light-bg rounded-full cursor-pointer font-medium text-[#666666] border"}>
+                    <button className={"text-xs bg-theme-light-bg rounded-full cursor-pointer font-medium text-[#666666] border px-2 h-6 lg:h-10 lg:px-5"}>
                         { disc }
                     </button>
                 </div>

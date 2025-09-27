@@ -23,7 +23,7 @@ const Compass = () => {
         { imageUrl:"/images/academy/learning-compass-swiper3.png", title: t("row.span3.title"), desc: t("row.span3.desc"), prompt: t("row.span3.prompt") },
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -47,7 +47,7 @@ const Compass = () => {
                 <div className={"grid grid-cols-12 gap-8"}>
                     {
                         ary.map((item, index) => (
-                            <div className={"col-span-4"} key={index}>
+                            <div className={"col-span-12 lg:col-span-4"} key={index}>
                                 <img src={item.imageUrl} className={"object-cover"} alt="" />
                                 <Typography
                                     variant={"h4"}
