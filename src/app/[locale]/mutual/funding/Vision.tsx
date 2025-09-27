@@ -28,7 +28,7 @@ export default function Vision() {
         { imageUrl: "/images/mutual/funding-vision1.png", amount: "$7,453.21", name: "Mike Thompson", country: "United States", countryImageUrl: "/images/mutual/funding-country1.png" },
     ];
     return (
-        <section className={"p-30 bg-[#000515]"}>
+        <section className={"p-4 lg:p-30 bg-[#000515]"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -55,13 +55,13 @@ export default function Vision() {
                 >
                     {t("desc")}
                 </Typography>
-                <div className={"mt-16 flex justify-center"}>
+                <div className={"mt-8 lg:mt-16 flex justify-center"}>
                     <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                         { t("join") }
                     </Button>
                 </div>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-8 lg:mt-16"}>
                 <Swiper
                     slidesPerView={3.5}
                     spaceBetween={32}
@@ -74,12 +74,17 @@ export default function Vision() {
                     pagination={{
                         clickable: true,
                     }}
+                    breakpoints={{
+                        320: {slidesPerView: 1.2, spaceBetween: 16,},
+                        600: {slidesPerView: 1.2, spaceBetween: 24,},
+                        900: {slidesPerView: 3.5, spaceBetween: 36,},
+                    }}
                     modules={[Autoplay]}
                     className="my-swiper h-full"
                 >
                     {
                         swiperAry.map((item, index) => (
-                            <SwiperSlide key={index} className={"specially-swiper-card"}>
+                            <SwiperSlide key={index} className={"specially-swiper-card h-full"}>
                                 <div className={"p-6"}>
                                     <div className={"grid grid-cols-12 gap-4"}>
                                         <div className={"col-span-6"}>
@@ -93,7 +98,7 @@ export default function Vision() {
                                            </div>
                                             <div className={"mt-10"}>
                                                 <Typography
-                                                    variant={"large"}
+                                                    variant={"muted"}
                                                     className={"font-medium !text-white"}
                                                 >
                                                     { item.name }

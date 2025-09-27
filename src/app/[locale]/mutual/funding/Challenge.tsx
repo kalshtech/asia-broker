@@ -119,7 +119,7 @@ export default function Challenge() {
     ];
 
     return (
-        <section className={"px-30 pb-30 bg-[#000515]"}>
+        <section className={"px-4 lg:px-30 pt-8 pb-8 lg:pt-0 lg:pb-30 bg-[#000515]"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -141,8 +141,8 @@ export default function Challenge() {
             </motion.div>
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12"}>
-                    <div className={"col-span-8"}>
-                        <div className={"bg-gradient-to-l from-[#1F3A93] to-[#09122D] py-12 px-8 rounded-l-3xl h-full border border-[#4F5670] border-r-0"}>
+                    <div className={"col-span-12 lg:col-span-8"}>
+                        <div className={"bg-gradient-to-l from-[#1F3A93] to-[#09122D] py-12 px-8 lg:rounded-l-3xl h-full lg:border border-[#4F5670] border-r-0"}>
                             <div className={""}>
                                 <Typography
                                     variant={"h4"}
@@ -164,9 +164,9 @@ export default function Challenge() {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <div
-                            className={"bg-[#0E1941] py-12 px-8 rounded-r-3xl h-full border border-[#4F5670] border-l-0"}>
+                            className={"bg-[#0E1941] py-12 px-8 lg:rounded-r-3xl h-full lg:border border-[#4F5670] border-l-0"}>
                             <div className={""}>
                                 <Typography
                                     variant={"h4"}
