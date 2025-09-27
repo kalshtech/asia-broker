@@ -39,9 +39,9 @@ const LocalServer = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className={"bg-theme-deep-bg p-30"}>
-            <div className={"grid grid-cols-12 gap-8"}>
-                <div className={"col-span-6"}>
+        <section ref={sectionRef} className={"bg-theme-deep-bg p-4 lg:p-30"}>
+            <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <div ref={leftRef}
                          className={"flex flex-1 justify-center"}
                     >
@@ -54,7 +54,7 @@ const LocalServer = () => {
                         />
                     </div>
                 </div>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <div className={"flex flex-col"} ref={rightRef}>
                         <Typography
                             variant={"h1"}

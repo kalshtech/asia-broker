@@ -57,7 +57,7 @@ const Subscribe = () => {
     }
 
     return (
-        <section className={"max-w-4xl p-30 mx-auto"}>
+        <section className={"max-w-4xl p-4 lg:p-30 mx-auto"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -71,7 +71,7 @@ const Subscribe = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"mt-10"}>
+            <div className={"mt-4 lg:mt-10"}>
                 <Typography
                     variant={"lead"}
                     className={"font-medium text-center"}

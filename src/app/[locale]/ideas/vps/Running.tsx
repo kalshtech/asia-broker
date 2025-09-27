@@ -41,9 +41,9 @@ const AutoTrade = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className={"p-30"}>
-            <div className={"grid grid-cols-12 gap-8"}>
-                <div className={"col-span-6"} >
+        <section ref={sectionRef} className={"p-4 lg:p-30"}>
+            <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
+                <div className={"col-span-12 lg:col-span-6"} >
                     <div className={"flex flex-col"} ref={leftRef}>
                         <Typography
                             variant={"h1"}
@@ -54,12 +54,12 @@ const AutoTrade = () => {
 
                         <Typography
                             variant={"lead"}
-                            className={"font-medium mt-10"}
+                            className={"font-medium mt-4 lg:mt-10"}
                         >
                             { t("midst") }
                         </Typography>
 
-                        <div className={"mt-10 flex"}>
+                        <div className={"flex mt-4 lg:mt-10"}>
                             <div className={"w-0.5 h-4 bg-theme-active"}></div>
                             <Typography
                                 variant={"small"}
@@ -70,7 +70,7 @@ const AutoTrade = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <div className={"flex-1 flex justify-center"} ref={rightRef}>
                         <Image
                             src={"/images/ideas/vps-running.png"}

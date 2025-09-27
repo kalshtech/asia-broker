@@ -19,7 +19,7 @@ const fadeInUp: Variants = {
 const GlobalPoints = () => {
     const t = useTranslations("Pages.ideas.vps.globalPoints");
     return (
-        <section className={"bg-theme-deep-bg p-30"}>
+        <section className={"bg-theme-deep-bg p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -35,12 +35,12 @@ const GlobalPoints = () => {
 
                 <Typography
                     variant={"h4"}
-                    className={"font-medium text-center mx-auto mt-10 !text-white max-w-3xl"}
+                    className={"font-medium text-center mx-auto mt-4 lg:mt-10 !text-white max-w-3xl"}
                 >
                     {t("midst")}
                 </Typography>
             </motion.div>
-            <div className={"flex justify-center flex-col mt-20"}>
+            <div className={"flex justify-center flex-col mt-6 lg:mt-20"}>
                 <div className={"flex justify-center"}>
                     <Button className={"bg-theme-active px-8 h-10 rounded-full hover:bg-theme-active-hover"}>
                         {t("btnText")}
@@ -49,13 +49,13 @@ const GlobalPoints = () => {
 
                 <Typography
                     variant={"muted"}
-                    className={"font-medium text-center mx-auto mt-10 !text-white max-w-3xl"}
+                    className={"font-medium text-center mx-auto mt-4 lg:mt-10 !text-white max-w-3xl"}
                 >
                     {t("muted")}
                 </Typography>
             </div>
 
-            <div className={"grid grid-cols-12 gap-8 my-18 mx-auto max-w-3xl"}>
+            <div className={"grid grid-cols-12 gap-8 my-10 lg:my-18 mx-auto max-w-3xl"}>
                 <div className={"col-span-3"}>
                     <Image
                         width={40}
