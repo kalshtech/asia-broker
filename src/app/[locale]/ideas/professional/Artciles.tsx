@@ -50,7 +50,7 @@ function MultiSelectTabs() {
     const isActive = (v: string) => selected.has(v);
 
     return (
-        <section className="mx-auto max-w-6xl px-4 py-8">
+        <section className="mx-auto lg:max-w-6xl px-4 py-8">
             <div role="group" className="flex flex-wrap items-start justify-center gap-4">
                 {ALL_TABS.map(tab => {
                     const active = isActive(tab.value);
@@ -92,7 +92,7 @@ const Articles = () => {
         { imageUrl: "/images/ideas/article-6.png", title: "盛宴未散 见招拆招", disc: "宏观", time: "2025/9/3" },
     ];
     return (
-        <section className={"px-30 pb-30"}>
+        <section className={"px-4 pb-4 lg:px-30 lg:pb-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -109,7 +109,7 @@ const Articles = () => {
             <div className={""}>
                 <MultiSelectTabs/>
                 <div>
-                    <div className={"grid grid-cols-3 gap-8"}>
+                    <div className={"grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"}>
                         {
                             articlesAry.map((item, index) => (
                                 <BaseArticle key={index} {...item} />

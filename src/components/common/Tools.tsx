@@ -39,7 +39,7 @@ const Tools = () => {
         { image: "/images/common/ideas.png", title: t("row.ideas.title"), desc: t("row.ideas.desc") },
     ];
     return (
-        <section className={"bg-theme-deep-bg p-4 lg:p-30"}>
+        <section className={"bg-theme-deep-bg py-8 px-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -53,7 +53,7 @@ const Tools = () => {
                     { t("title") }
                 </Typography>
             </motion.div>
-            <div className={"mt-4 lg:mt-20"}>
+            <div className={"mt-8 lg:mt-20"}>
                 <div className={"grid grid-cols-12 gap-8"}>
                     {
                         ary1.map((item, index) => (

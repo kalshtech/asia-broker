@@ -39,15 +39,15 @@ const AboutCalendar = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"max-w-4xl mx-auto mt-16 lg:mt-30"}>
+            <div className={"max-w-4xl mx-auto mt-8 lg:mt-30"}>
                 <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <Input placeholder={t("form.first-placeholder")} className={"text-white rounded-full h-12 bg-theme-light-bg/60 placeholder:text-white"} />
                     </div>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-"}>
                         <Input placeholder={t("form.last-placeholder")} className={"text-white rounded-full h-12 bg-theme-light-bg/60 placeholder:text-white"} />
                     </div>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-"}>
                         <Input placeholder={t("form.country-placeholder")} className={"text-white rounded-full h-12 bg-theme-light-bg/60 placeholder:text-white"} />
                     </div>
                 </div>

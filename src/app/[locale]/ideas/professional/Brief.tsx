@@ -7,9 +7,9 @@ import { getTranslations } from "next-intl/server";
 export default async function Brief() {
     const t = await getTranslations("Pages.ideas.professional.brief");
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <div className={"grid grid-cols-12 gap-4"}>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <div>
                         <Typography variant={"h3"}>
                             {t("row.left.title")}
@@ -42,7 +42,7 @@ export default async function Brief() {
                         </div>
                     </div>
                 </div>
-                <div className={"col-span-6"}>
+                <div className={"col-span-12 lg:col-span-6"}>
                     <div>
                         <Typography variant={"h3"}>
                             { t("row.right.title") }

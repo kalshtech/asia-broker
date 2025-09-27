@@ -59,8 +59,25 @@ const FeeCalculator = () => {
                 </Typography>
             </motion.div>
             <div className={"mt-10"}>
+                <div className={"flex lg:hidden"}>
+                    <Select value={tabActive} onValueChange={handleToggleTabActive}>
+                        <SelectTrigger className={"w-full"}>
+                            <SelectValue placeholder="Theme" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            {
+                                tabList.map((item, index) => (
+                                    <SelectItem value={item.value} key={index}>
+                                        { item.label }
+                                    </SelectItem>
+                                ))
+                            }
+                        </SelectContent>
+                    </Select>
+                </div>
+
                 <Tabs value={tabActive}
-                      className={"flex justify-center items-center"}
+                      className={"justify-center items-center hidden lg:flex"}
                       onValueChange={handleToggleTabActive}
                 >
                     <TabsList className={"h-10 grid grid-cols-3 lg:block"}>
@@ -84,7 +101,7 @@ const FeeCalculator = () => {
                     { TablePrompt }
                 </Typography>
             </div>
-            <div className={"mt-10 p-12 bg-theme-light-bg rounded-xs"}>
+            <div className={"mt-10 bg-theme-light-bg rounded-xs p-4 lg:p-12"}>
                 <div className={"grid gap-4 lg:gap-8 grid-cols-2 lg:grid-cols-3"}>
                     <div className={""}>
                         <Label htmlFor="date" className={"px-1 mb-2"}>
