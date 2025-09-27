@@ -34,7 +34,7 @@ const Enhance = () => {
 
             <div className={"mt-4 lg:mt-16"}>
                 <div
-                    className={"h-120 bg-[url(/images/products/rates-enhance.png)] bg-cover bg-center flex justify-center items-center"}>
+                    className={"bg-[url(/images/products/rates-enhance.png)] bg-cover bg-center flex justify-center items-center h-100 lg:h-120"}>
                     <motion.div
                         variants={fadeInUp}
                         initial="hidden"
@@ -50,12 +50,12 @@ const Enhance = () => {
 
                         <Typography
                             variant={"large"}
-                            className={"font-normal text-center !text-white mt-12"}
+                            className={"font-normal text-center !text-white mt-4 lg:mt-12"}
                         >
                             {t("box.desc")}
                         </Typography>
 
-                        <div className={"mt-12 flex justify-center"}>
+                        <div className={"flex justify-center mt-12"}>
                             <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                                 { t("box.more") }
                             </Button>

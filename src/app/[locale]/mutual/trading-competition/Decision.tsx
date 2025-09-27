@@ -18,12 +18,12 @@ const Decision = () => {
     const t = useTranslations("Pages.mutual.trading-competition.decision");
 
     return (
-        <section className={"py-30"}>
+        <section className={"py-8 lg:py-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
-                className={"px-30"}
+                className={"px-4 lg:px-30"}
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
@@ -47,8 +47,8 @@ const Decision = () => {
             </motion.div>
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12"}>
-                    <div className={"col-span-6"}>
-                        <div className={"bg-theme-active px-30 py-20 h-full"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
+                        <div className={"bg-theme-active h-full py-6 px-8 lg:px-30 lg:py-20"}>
                             <div>
                                 <Typography
                                     variant={"h4"}
@@ -73,9 +73,9 @@ const Decision = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"bg-[url(/images/mutual/competition-decision-portrait.png)] bg-cover bg-center overflow h-full"}>
-                            <div className={"px-30 pt-60 pb-20"}>
+                            <div className={"px-8 lg:px-30 pt-20 lg:pt-60 pb-8 lg:pb-20"}>
                                <div>
                                    <Typography
                                        variant={"h4"}

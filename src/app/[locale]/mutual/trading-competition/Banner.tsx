@@ -16,7 +16,7 @@ const fadeInUp: Variants = {
 const Banner = () => {
     const t = useTranslations("Pages.mutual.trading-competition.banner");
     return (
-        <section className={"p-30 bg-[url(/images/mutual/competition-banner.png)] bg-center bg-cover relative h-[632px]"}>
+        <section className={"bg-[url(/images/mutual/competition-banner.png)] bg-center bg-cover relative h-120 lg:h-[632px] py-8 px-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -31,7 +31,7 @@ const Banner = () => {
                 </Typography>
                 <Typography
                     variant={"large"}
-                    className={"font-medium text-center mx-auto mt-16 !text-white"}
+                    className={"font-medium text-center mx-auto !text-white mt-4 lg:mt-16"}
                 >
                     {t("desc1")}
                 </Typography>

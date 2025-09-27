@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn }: any) => {
     const isLight = theme === "light";
     return (
-        <section className={classnames(["p-4 lg:p-30", {
+        <section className={classnames(["py-8 px-4 lg:p-30", {
             "bg-[#000515]": !isLight
         }])}>
             <motion.div
@@ -46,7 +46,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn }: 
                     )
                 }
             </motion.div>
-            <div className={"mt-4 lg:mt-16"}>
+            <div className={"mt-8 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
                     {
                         ary.map((item: any, index: number) => (

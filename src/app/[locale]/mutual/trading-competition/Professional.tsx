@@ -25,7 +25,7 @@ const Professional = () => {
         { imageUrl: "/images/mutual/competition-professional-col6.png", title: t("row.col6.title"), desc: t("row.col6.desc") },
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"py-8 px-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -54,7 +54,7 @@ const Professional = () => {
                 </div>
             </motion.div>
             <div className={"mt-16"}>
-                <div className={"grid grid-cols-3 gap-8 space-y-4"}>
+                <div className={"grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 space-y-4"}>
                     {
                         ary.map((item, index) => (
                             <div className={"flex flex-col items-center justify-center"} key={index}>

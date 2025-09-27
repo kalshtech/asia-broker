@@ -73,7 +73,7 @@ const Rank = () => {
     }, [tabActive])
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -93,7 +93,7 @@ const Rank = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16 flex justify-center"}>
+            <div className={"mt-4 lg:mt-16 flex justify-center"}>
                 <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
                     <TabsList className={"bg-[#3B4259] h-10"}>
                         <TabsTrigger
@@ -117,7 +117,7 @@ const Rank = () => {
                     </TabsList>
                 </Tabs>
             </div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <Typography
                     variant={"large"}
                     className={"font-normal !text-white"}

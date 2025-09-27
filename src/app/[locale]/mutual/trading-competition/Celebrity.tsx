@@ -59,7 +59,7 @@ const Celebrity = () => {
     }
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -79,7 +79,7 @@ const Celebrity = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={36}
@@ -90,6 +90,11 @@ const Celebrity = () => {
                     navigation={{
                         prevEl: ".celebrity-custom-prev",
                         nextEl: ".celebrity-custom-next",
+                    }}
+                    breakpoints={{
+                        320: {slidesPerView: 1.1, spaceBetween: 16,},
+                        600: {slidesPerView: 1.1, spaceBetween: 24,},
+                        900: {slidesPerView: 3, spaceBetween: 36,},
                     }}
                     modules={[Navigation]}
                     className="mySwiper"
@@ -155,13 +160,13 @@ const Celebrity = () => {
                     }
                 </Swiper>
             </div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"flex justify-center"}>
                     <CircleChevronLeft className={"celebrity-custom-prev mr-2 text-white cursor-pointer"}/>
                     <CircleChevronRight className={"celebrity-custom-next ml-2 text-white cursor-pointer"}/>
                 </div>
             </div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <Typography
                     variant={"muted"}
                     className={"!text-white max-w-2xl"}

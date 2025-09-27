@@ -81,7 +81,7 @@ const Slide = () => {
     ];
     return (
         <section className={"py-10"}>
-            <div className={"px-30"}>
+            <div className={"px-4 lg:px-30"}>
                 <Typography
                     variant={"large"}
                     className={"font-medium text-center mx-auto mt-16 !text-white"}
@@ -116,9 +116,9 @@ const Slide = () => {
                     $100,000,000
                 </Typography>
             </div>
-            <div className={"mt-16 pl-30"}>
-                <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-3"}>
+            <div className={"mt-8 lg:mt-16 px-4 lg:pr-0 lg:pl-30"}>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
+                    <div className={"col-span-12 lg:col-span-3"}>
                         <div
                             className={`bg-[url('/images/mutual/competition-swiper1.png')] bg-center bg-cover w-auto h-70 rounded-lg`}>
                             <div className={"flex flex-col h-full p-6"}>
@@ -145,7 +145,7 @@ const Slide = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-9"}>
+                    <div className={"col-span-12 mt-12 lg:mt-0 lg:col-span-9"}>
                     <Swiper
                             slidesPerView={3.2}
                             spaceBetween={36}
@@ -156,6 +156,11 @@ const Slide = () => {
                             navigation={{
                                 prevEl: ".slide-custom-prev",
                                 nextEl: ".slide-custom-next",
+                            }}
+                            breakpoints={{
+                                320: {slidesPerView: 1.2, spaceBetween: 16,},
+                                600: {slidesPerView: 1.2, spaceBetween: 24,},
+                                900: {slidesPerView: 3.2, spaceBetween: 36,},
                             }}
                             modules={[Navigation]}
                             className="mySwiper"
@@ -170,11 +175,11 @@ const Slide = () => {
                         </Swiper>
                     </div>
                 </div>
-                <div className={"mt-4 px-30"}>
+                <div className={"mt-4 px-4 lg:px-30"}>
                     <div className={"flex justify-end"}>
                         <Typography
                             variant={"large"}
-                            className={"!text-white mr-80 font-medium"}
+                            className={"!text-white mr-4 lg:mr-80 font-medium"}
                         >
                             {t("past")}
                         </Typography>

@@ -37,12 +37,12 @@ const Statement = () => {
 
                 <Typography
                     variant={"muted"}
-                    className={"text-center mt-10"}
+                    className={"text-center mt-4 lg:mt-10"}
                 >
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
                     {
                         colAry.map((item, index) => (

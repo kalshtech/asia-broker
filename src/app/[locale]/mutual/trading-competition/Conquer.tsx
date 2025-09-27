@@ -18,7 +18,7 @@ const Conquer = () => {
     const t = useTranslations("Pages.mutual.trading-competition.conquer");
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -48,15 +48,15 @@ const Conquer = () => {
             </div>
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12 gap-4"}>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <img src="/images/mutual/competition-conquer1.png" className={"max-h-[560px] mx-auto object-cover"}
                              alt=""/>
                     </div>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <img src="/images/mutual/competition-conquer2.png" className={"max-h-[560px] mx-auto object-cover"}
                              alt=""/>
                     </div>
-                    <div className={"col-span-4"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <img src="/images/mutual/competition-conquer3.png" className={"max-h-[560px] mx-auto object-cover"}
                              alt=""/>
                     </div>

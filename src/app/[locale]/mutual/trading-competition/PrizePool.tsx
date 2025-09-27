@@ -24,7 +24,7 @@ const PrizePool = () => {
     ];
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -45,10 +45,10 @@ const PrizePool = () => {
                 </Typography>
             </motion.div>
             <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-8"}>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
                     {
                         ary.map((item, index) => (
-                            <div className={"col-span-3"} key={index}>
+                            <div className={"col-span-12 lg:col-span-3"} key={index}>
                                 <div className={"rounded-2xl pb-10 flex flex-col items-center justify-center specially-card"}>
                                     <img src={item.imageUrl} className={"w-[140px] h-[140px]"} alt=""/>
                                     <Typography

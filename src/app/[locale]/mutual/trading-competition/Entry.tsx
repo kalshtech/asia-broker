@@ -41,11 +41,11 @@ const AccountProvince = (props: Props) => {
                 {desc}
             </Typography>
 
-            <div className={"mt-10 justify-center flex"}>
+            <div className={"mt-10 grid grid-cols-1 lg:grid-cols-3 gap-8"}>
                 {
                     btnAry.map((item, index) => (
                         <Button key={index}
-                                className={"px-8 h-10 ml-4 first:ml-0 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                             {item.label}
                         </Button>
                     ))
@@ -121,7 +121,7 @@ const Entry = () => {
         { label: t("card.btns.stocks"), value: "stocks" }
     ]
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -141,7 +141,7 @@ const Entry = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div>
                     <AccountProvince
                         title={t("card.col1.title")}

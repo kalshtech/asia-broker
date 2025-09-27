@@ -40,7 +40,7 @@ const RowTable = (props: Props) => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{once: true, amount: 0.5}}
-                        className={overview ? "mt-19" : ""}
+                        className={overview ? "mt-8 lg:mt-19" : ""}
                     >
 
                         <Typography
@@ -76,7 +76,7 @@ const RowTable = (props: Props) => {
                             )
                         }
 
-                        <Table className={overview ? "mt-10" : ""}>
+                        <Table className={overview ? "mt-4 lg:mt-10" : ""}>
                             <TableHeader>
                                 <TableRow>
                                     {

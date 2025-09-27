@@ -64,7 +64,7 @@ const Stream = (props: Props) => {
                     )
                 }
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-8 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
                     <div className={"col-span-12 lg:col-span-6"}>
                         <Typography
@@ -78,14 +78,14 @@ const Stream = (props: Props) => {
                             col1.desc && (
                                 <Typography
                                     variant={"large"}
-                                    className={"font-normal mt-10"}
+                                    className={"font-normal mt-4 lg:mt-10"}
                                 >
                                     { col1.desc }
                                 </Typography>
                             )
                         }
 
-                        <ul className={"mt-10"}>
+                        <ul className={"mt-4 lg:mt-10"}>
                             {
                                 col1.ulAry && col1.ulAry.map((item, index) => (
                                     <li key={index} className={"flex items-center my-4"}>

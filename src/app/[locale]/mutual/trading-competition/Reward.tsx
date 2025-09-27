@@ -18,7 +18,7 @@ const Reward = () => {
     const t = useTranslations("Pages.mutual.trading-competition.reward");
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
