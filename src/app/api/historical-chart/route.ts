@@ -7,8 +7,8 @@ export async function GET(request: any) {
     const from = requestUrl.searchParams.get('from');
     const to = requestUrl.searchParams.get('to');
 
-    if(!timeframe) return ResponseInstance({status: -1, title: "timeframe not found", description: ""});
-    if(!symbol) return ResponseInstance({status: -1, title: "symbol not found", description: ""});
+    if(!timeframe) return ResponseInstance({status: -1, message: "timeframe not found" });
+    if(!symbol) return ResponseInstance({status: -1, message: "symbol not found" });
 
     let url = `${process.env.FMP_SERVER_V3}/historical-chart/${timeframe}/${symbol}?apikey=${process.env.FMP_APIKEY}`;
 
@@ -18,18 +18,18 @@ export async function GET(request: any) {
     try {
         const response = await serverFetch(url);
         if(!response.ok) {
-            return ResponseInstance({ status: 500, title: "Error Message", description: "" });
+            return ResponseInstance({ status: 500, message: response.statusText });
         }
 
         const data = await response.json();
 
-        return ResponseInstance({status: 0, data, title: "success", description: ""});
+        return ResponseInstance({status: 0, data, message: "success" });
     } catch (err: any) {
-        return ResponseInstance({ status: 500, title: err.message, description: "" });
+        return ResponseInstance({ status: 500, message: err.message });
     }
 }
 
 export async function POST(req: Request) {
     const requestData = await req.json();
-    return ResponseInstance({status: 0, title: "success", description: ""});
+    return ResponseInstance({status: 0, message: "success" });
 }

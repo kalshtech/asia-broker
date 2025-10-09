@@ -2,9 +2,8 @@ import axios from "axios";
 
 type ResponseProps = {
     status: number;
-    description: string;
     data?: any;
-    title?: string
+    message: string;
 }
 
 export const http = axios.create({
@@ -14,8 +13,8 @@ export const http = axios.create({
     },
 });
 
-export const ResponseInstance = ({ status, data, description, title }: ResponseProps) =>
-    new Response(JSON.stringify({ status, data: data ?? undefined, description, title }));
+export const ResponseInstance = ({ status, data, message }: ResponseProps) =>
+    new Response(JSON.stringify({ status, data: data ?? undefined, message }));
 
 export async function serverFetch(
     url: string,

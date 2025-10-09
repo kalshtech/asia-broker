@@ -7,7 +7,7 @@ export async function GET(req: NextRequest) {
         const response = await serverFetch(url);
 
         if(!response.ok) {
-            return ResponseInstance({ status: 500, title: "Error Message", description: "" });
+            return ResponseInstance({ status: 500, message: response.statusText });
         }
 
         const result = await response.json();
@@ -16,7 +16,7 @@ export async function GET(req: NextRequest) {
             return item;
         })
 
-        return ResponseInstance({ status: 0, data, title: "success", description: "" });
+        return ResponseInstance({ status: 0, data, message: "success" });
     } catch (e: any) {
         return NextResponse.json({ error: e.message || String(e) }, { status: 500 });
     }
