@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const Colleague = () => {
     const t = useTranslations("Pages.corporation.contact.colleague");
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -31,7 +31,7 @@ const Colleague = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-8 lg:mt-16"}>
                 <img src="/images/corporation/contact-colleague.png" className={"object-cover"} alt=""/>
             </div>
         </section>

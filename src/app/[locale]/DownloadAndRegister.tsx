@@ -12,14 +12,14 @@ const DownloadAndRegister = () => {
                 <div className={"col-span-12 lg:col-span-4"}>
                     <div className={"flex flex-col flex-1 h-full"}>
                         <div className={"flex-1 flex flex-col"}>
-                            <Typography variant={"h2"}>
+                            <Typography variant={"h2"} className={"!text-[40px]"}>
                                 {t("title")}
                             </Typography>
                             <Typography variant={"p"}>
                                 {t("description")}
                             </Typography>
                             <div className={"mt-8"}>
-                                <RegisterBtn/>
+                                <RegisterBtn text={t("open")} />
                             </div>
                         </div>
                         <div className={"flex flex-1 bg-gradient-to-b from-[#000C35] to-[#1F3A93] mt-4 lg:mt-0"}>
@@ -85,7 +85,7 @@ const DownloadAndRegister = () => {
                                         variant={"muted"}
                                         className={"!text-white font-medium mt-4"}
                                     >
-                                        {t("row.3.description")}
+                                        {t("row.3.description1")}
                                     </Typography>
                                 </div>
                                 <img
@@ -105,6 +105,12 @@ const DownloadAndRegister = () => {
                                             className={"!text-white font-medium"}
                                         >
                                             {t("row.3.title2")}
+                                        </Typography>
+                                        <Typography
+                                            variant={"muted"}
+                                            className={"!text-white font-medium mt-4"}
+                                        >
+                                            {t("row.3.description2")}
                                         </Typography>
                                     </div>
                                     <img

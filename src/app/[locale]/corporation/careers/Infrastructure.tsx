@@ -43,11 +43,11 @@ const Infrastructure =  () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16 bg-[url(/images/corporation/careers-infrastructure-bg.png)] bg-cover bg-center h-[600px]"}/>
-            <div className={"grid grid-cols-12 gap-8 mx-30 -mt-32"}>
+            <div className={"mt-16 bg-[url(/images/corporation/careers-infrastructure-bg.png)] bg-cover bg-center h-120 lg:h-[600px]"}/>
+            <div className={"grid grid-cols-12 gap-4 lg:gap-8 mx-4 lg:mx-30 -mt-64 lg:-mt-32"}>
                 {
                     colAry.map((item, index) => (
-                        <div className={"col-span-4 bg-theme-light-bg px-10 pt-10 pb-24 rounded-lg"} key={index}>
+                        <div className={"col-span-12 lg:col-span-4 bg-theme-light-bg px-10 pt-10 pb-24 rounded-lg"} key={index}>
                             <img src={item.imgUrl} className={"w-10 h-10 object-cover"} alt=""/>
                             <Typography
                                 variant={"h5"}

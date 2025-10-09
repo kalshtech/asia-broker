@@ -113,7 +113,7 @@ const Pricing = () => {
                             whileInView="visible"
                             viewport={{once: true, amount: 0.5}}
                         >
-                            <Typography variant={"h1"} className={"font-medium !text-white max-w-[482px]"}>
+                            <Typography variant={"h1"} className={"font-medium !text-white max-w-3xl"}>
                                 {t("left.title1")}
                             </Typography>
                             <Typography variant={"muted"} className={"!text-white text-lg mt-3"}>

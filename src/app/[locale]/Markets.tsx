@@ -184,9 +184,6 @@ const Markets = () => {
                         <Table>
                             <TableCaption>
                                 <div className={"flex flex-col"}>
-                                    <Typography>
-                                        { t("data-from") }
-                                    </Typography>
                                     <div>
                                         <Button className={"mt-8 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                                             { t("more") }

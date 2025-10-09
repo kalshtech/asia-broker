@@ -12,7 +12,6 @@ type ItemProps = {
     ImageNumber: string | number;
     title: string;
     description: string;
-    details: string,
     url: string
 }
 
@@ -60,7 +59,7 @@ const SwiperSlideItem = (props: ItemProps) => {
                             variant={"muted"}
                             className={"!text-white"}
                         >
-                            {props.details}
+                            {props.description}
                         </Typography>
                     </div>
                     <div className={"mt-4"}>
@@ -78,11 +77,11 @@ const Advertisement = () => {
     const t = useTranslations("Pages.home.advertisement");
     const CommonT = useTranslations("Common");
     const ary = [
-        { ImageNumber: "2", title: t("1.title"), description: t("1.description"), details: t("1.details"), url: "bg-[url('/images/home/advertisement-2.png')]" },
-        { ImageNumber: "3", title: t("1.title"), description: t("1.description"), details: t("1.details"), url: "bg-[url('/images/home/advertisement-3.png')]" },
-        { ImageNumber: "4", title: t("1.title"), description: t("1.description"), details: t("1.details"), url: "bg-[url('/images/home/advertisement-4.png')]" },
-        { ImageNumber: "5", title: t("1.title"), description: t("1.description"), details: t("1.details"), url: "bg-[url('/images/home/advertisement-5.png')]" },
-        { ImageNumber: "6", title: t("1.title"), description: t("1.description"), details: t("1.details"), url: "bg-[url('/images/home/advertisement-6.png')]" },
+        { ImageNumber: "2", title: t("2.title"), description: t("2.description"), url: "bg-[url('/images/home/advertisement-2.png')]" },
+        { ImageNumber: "3", title: t("3.title"), description: t("3.description"), url: "bg-[url('/images/home/advertisement-3.png')]" },
+        { ImageNumber: "4", title: t("4.title"), description: t("4.description"), url: "bg-[url('/images/home/advertisement-4.png')]" },
+        { ImageNumber: "5", title: t("5.title"), description: t("5.description"), url: "bg-[url('/images/home/advertisement-5.png')]" },
+        { ImageNumber: "6", title: t("6.title"), description: t("6.description"), url: "bg-[url('/images/home/advertisement-6.png')]" },
     ];
 
     return (
@@ -121,13 +120,13 @@ const Advertisement = () => {
                                             variant={"muted"}
                                             className={"!text-white"}
                                         >
-                                            { t("1.details") }
+                                            { t("1.description") }
                                         </Typography>
                                     </div>
                                     <div className={"mt-4"}>
                                         <Button
                                             className={"bg-theme-active hover:bg-theme-active-hover cursor-pointer"}>
-                                            { CommonT("view") }
+                                            { t("1.btn") }
                                         </Button>
                                     </div>
                                 </div>

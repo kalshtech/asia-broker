@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const ContactType = () => {
     const t = useTranslations("Pages.corporation.contact.type");
     return (
-        <section className={"p-30 bg-theme-light-bg"}>
+        <section className={"p-4 lg:p-30 bg-theme-light-bg"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -38,9 +38,9 @@ const ContactType = () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-8 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-6 bg-white p-10 rounded-2xl"}>
+                    <div className={"col-span-12 lg:col-span-6 bg-white p-10 rounded-2xl"}>
                         <div>
                             <img src="/images/corporation/contact-type1.png" className={"w-10 h-10 object-cover"}
                                  alt="icon"/>
@@ -62,7 +62,7 @@ const ContactType = () => {
                             </a>
                         </div>
                     </div>
-                    <div className={"col-span-6 bg-white p-10 rounded-2xl"}>
+                    <div className={"col-span-12 lg:col-span-6 bg-white p-10 rounded-2xl"}>
                         <div className={"flex"}>
                             <img src="/images/corporation/contact-type2.png" className={"w-10 h-10 object-cover"}
                                  alt="icon"/>

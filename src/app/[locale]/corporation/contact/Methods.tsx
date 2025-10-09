@@ -23,7 +23,7 @@ const Methods = () => {
     ];
 
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -37,11 +37,11 @@ const Methods = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-8 lg:mt-16"}>
                 <div className={"grid grid-cols-12 gap-8"}>
                     {
                         ary.map((item, index) => (
-                            <div className={"col-span-4 p-10 bg-theme-light-bg rounded-2xl"} key={index}>
+                            <div className={"col-span-12 lg:col-span-4 p-4 lg:p-10 bg-theme-light-bg rounded-2xl"} key={index}>
                                 <img
                                     src={item.imageUrl}
                                     alt="icon"

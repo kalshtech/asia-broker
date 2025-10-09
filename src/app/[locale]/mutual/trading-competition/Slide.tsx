@@ -84,7 +84,7 @@ const Slide = () => {
             <div className={"px-4 lg:px-30"}>
                 <Typography
                     variant={"large"}
-                    className={"font-medium text-center mx-auto mt-16 !text-white"}
+                    className={"font-medium text-center mx-auto mt-8 lg:mt-16 !text-white"}
                 >
                     {t("desc1")}
                 </Typography>
@@ -97,21 +97,21 @@ const Slide = () => {
 
                 <Typography
                     variant={"h1"}
-                    className={"font-medium text-center mx-auto mt-16 !text-white"}
+                    className={"font-medium text-center mx-auto mt-8 lg:mt-16 !text-white"}
                 >
                     {t("review")}
                 </Typography>
 
                 <Typography
                     variant={"h2"}
-                    className={"font-medium text-center mx-auto mt-16 !text-white"}
+                    className={"font-medium text-center mx-auto mt-8 lg:mt-16 !text-white"}
                 >
                     {t("total")}
                 </Typography>
 
                 <Typography
                     variant={"h1"}
-                    className={"font-bold !text-7xl mt-16 text-center !bg-gradient-to-b !from-[#FFFFFF] !to-[#FFC871] !bg-clip-text !text-transparent"}
+                    className={"font-bold !text-5xl lg:!text-7xl mt-8 lg:mt-16 text-center !bg-gradient-to-b !from-[#FFFFFF] !to-[#FFC871] !bg-clip-text !text-transparent"}
                 >
                     $100,000,000
                 </Typography>

@@ -24,7 +24,7 @@ const Principle = () => {
         { imgUrl: "/images/corporation/careers-principle4.png", title: t("row.col4.title"), desc: t("row.col4.desc") },
     ];
     return (
-        <section className={"p-30"}>
+        <section className={"p-4 lg:p-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -39,7 +39,7 @@ const Principle = () => {
                 </Typography>
                 <Typography
                     variant={"h6"}
-                    className={"font-medium mt-10 max-w-3xl mx-auto text-center leading-[24px]"}
+                    className={"font-medium mt-4 lg:mt-10 max-w-3xl mx-auto text-center leading-[24px]"}
                 >
                     {t("desc")}
                 </Typography>
@@ -49,7 +49,7 @@ const Principle = () => {
                     {
                         colAry.map((item, index) => (
                             <div
-                                className={"col-span-3"}
+                                className={"col-span-12 lg:col-span-3"}
                                 key={index}
                             >
                                 <Typography

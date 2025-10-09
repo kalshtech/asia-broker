@@ -98,6 +98,14 @@ const HomeSwiper = () => {
                                             {t("2.title2")}
                                         </Typography>
                                     </div>
+                                    <div className={"mt-8"}>
+                                        <Typography
+                                            variant={"muted"}
+                                            className={"font-medium"}
+                                        >
+                                            {t("2.description1")}
+                                        </Typography>
+                                    </div>
                                     <div className={"mt-40"}>
                                         <RegisterBtn/>
                                     </div>
@@ -123,6 +131,14 @@ const HomeSwiper = () => {
                                             className={"font-medium"}
                                         >
                                             {t("3.title2")}
+                                        </Typography>
+                                    </div>
+                                    <div className={"mt-8"}>
+                                        <Typography
+                                            variant={"muted"}
+                                            className={"font-medium"}
+                                        >
+                                            {t("3.description1")}
                                         </Typography>
                                     </div>
                                     <div className={"mt-40"}>
@@ -152,6 +168,14 @@ const HomeSwiper = () => {
                                             {t("4.title2")}
                                         </Typography>
                                     </div>
+                                    <div className={"mt-8"}>
+                                        <Typography
+                                            variant={"muted"}
+                                            className={"font-medium"}
+                                        >
+                                            {t("4.description1")}
+                                        </Typography>
+                                    </div>
                                     <div className={"mt-40"}>
                                         <RegisterBtn/>
                                     </div>
@@ -177,6 +201,14 @@ const HomeSwiper = () => {
                                             className={"font-medium"}
                                         >
                                             {t("5.title2")}
+                                        </Typography>
+                                    </div>
+                                    <div className={"mt-8"}>
+                                        <Typography
+                                            variant={"muted"}
+                                            className={"font-medium"}
+                                        >
+                                            {t("5.description1")}
                                         </Typography>
                                     </div>
                                     <div className={"mt-40"}>
@@ -206,6 +238,14 @@ const HomeSwiper = () => {
                                             {t("6.title2")}
                                         </Typography>
                                     </div>
+                                    <div className={"mt-8"}>
+                                        <Typography
+                                            variant={"muted"}
+                                            className={"font-medium"}
+                                        >
+                                            {t("6.description1")}
+                                        </Typography>
+                                    </div>
                                     <div className={"mt-40"}>
                                         <RegisterBtn/>
                                     </div>
@@ -217,7 +257,7 @@ const HomeSwiper = () => {
                         <div className={"h-full bg-[url('/images/home/swiper-7.png')] bg-cover bg-center"}>
                             <div className={"flex flex-1 px-4 lg:px-30 h-full"}>
                                 <div className={"flex-1 flex justify-center flex-col"}>
-                                    <div>
+                                <div>
                                         <Typography
                                             variant={"h1"}
                                             className={"font-medium !text-white"}
@@ -238,7 +278,7 @@ const HomeSwiper = () => {
                                             variant={"muted"}
                                             className={"font-medium !text-white"}
                                         >
-                                            {t("7.description")}
+                                            {t("7.description1")}
                                         </Typography>
                                     </div>
                                     <div className={"mt-24"}>

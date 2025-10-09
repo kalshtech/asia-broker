@@ -18,7 +18,7 @@ const Banner = () => {
     const t = useTranslations("Pages.corporation.contact.banner");
     return (
         <div>
-            <section className={"p-30 bg-[url(/images/corporation/contact-banner.png)] bg-center bg-cover h-[632px]"}>
+            <section className={"bg-[url(/images/corporation/contact-banner.png)] bg-center bg-cover h-[632px] p-4 lg:p-30"}>
                 <motion.div
                     variants={fadeInUp}
                     initial="hidden"
@@ -46,7 +46,7 @@ const Banner = () => {
                     </Typography>
                 </motion.div>
             </section>
-            <div className={"mx-30 bg-theme-active py-10 px-16 rounded-lg -mt-16"}>
+            <div className={"bg-theme-active rounded-lg p-4 lg:py-10 lg:px-16 -mt-16 mx-4 lg:mx-30"}>
                 <div className={"flex items-center"}>
                     <Typography
                         variant={"h4"}
@@ -58,7 +58,7 @@ const Banner = () => {
                         <Button className={"px-8 h-10 rounded-full text-theme-active bg-white hover:bg-white"}>
                             {t("view")}
                         </Button>
-                        <Button className={"px-8 h-10 ml-4 rounded-full text-theme-active bg-transparent text-white border hover:bg-transparent"}>
+                        <Button className={"px-8 h-10 mt-4 lg:mt-0 lg:ml-4 rounded-full text-theme-active bg-transparent text-white border hover:bg-transparent"}>
                             {t("join")}
                         </Button>
                     </div>

@@ -40,7 +40,7 @@ const Speed = () => {
 
                 <Typography
                     variant={"muted"}
-                    className={"text-center mt-6 mx-auto max-w-[738px]"}
+                    className={"text-center mt-6 mx-auto max-w-3xl"}
                 >
                     {t("description")}
                 </Typography>

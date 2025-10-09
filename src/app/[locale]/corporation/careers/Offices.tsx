@@ -90,7 +90,7 @@ const Offices = () => {
     ];
 
     return (
-        <section className={"p-30 bg-theme-light-bg"}>
+        <section className={"p-4 lg:p-30 bg-theme-light-bg"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -104,7 +104,7 @@ const Offices = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
+            <div className={"mt-4 lg:mt-16"}>
                 <div>
                     {
                         DATA.map((item, index) => (
