@@ -143,6 +143,12 @@ const Assets = () => {
                                                         {t("text.type.ul-title3")}
                                                     </Typography>
                                                 </header>
+                                                <Typography
+                                                    variant={"muted"}
+                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                >
+                                                    {t("text.type.ul-desc3")}
+                                                </Typography>
                                             </li>
 
                                             <li className={"mt-3 lg:mt-6"}>
@@ -224,7 +230,7 @@ const Assets = () => {
                                                     variant={"muted"}
                                                     className={"!text-white ml-3 mt-1 lg:mt-3"}
                                                 >
-                                                    {t("text.type.ul-desc2")}
+                                                    {t("text.safe.ul-desc2")}
                                                 </Typography>
                                             </li>
 
@@ -274,17 +280,12 @@ const Assets = () => {
                                             {t("text.card.description")}
                                         </Typography>
 
-                                        <Typography
-                                            variant={"h5"}
-                                            className={"!text-white mt-6"}
-                                        >
-                                            {t("text.card.ul-title")}
-                                        </Typography>
 
                                         <ul className={"mt-3 lg:mt-6"}>
                                             <li>
                                                 <header className={"flex items-center"}>
-                                                    <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                    <div
+                                                        className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
                                                     <Typography
                                                         variant={"h6"}
                                                         className={"!text-white font-medium"}
@@ -292,11 +293,37 @@ const Assets = () => {
                                                         {t("text.card.ul-title1")}
                                                     </Typography>
                                                 </header>
+                                                <Typography
+                                                    variant={"muted"}
+                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                >
+                                                    {t("text.card.ul-desc1")}
+                                                </Typography>
                                             </li>
 
                                             <li className={"mt-3 lg:mt-6"}>
                                                 <header className={"flex items-center"}>
-                                                    <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                    <div
+                                                        className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                    <Typography
+                                                        variant={"h6"}
+                                                        className={"!text-white font-medium"}
+                                                    >
+                                                        {t("text.card.ul-title1")}
+                                                    </Typography>
+                                                </header>
+                                                <Typography
+                                                    variant={"muted"}
+                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                >
+                                                    {t("text.card.ul-desc2")}
+                                                </Typography>
+                                            </li>
+
+                                            <li className={"mt-3 lg:mt-6"}>
+                                                <header className={"flex items-center"}>
+                                                    <div
+                                                        className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
                                                     <Typography
                                                         variant={"h6"}
                                                         className={"!text-white font-medium"}
@@ -304,11 +331,18 @@ const Assets = () => {
                                                         {t("text.card.ul-title2")}
                                                     </Typography>
                                                 </header>
+                                                <Typography
+                                                    variant={"muted"}
+                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                >
+                                                    {t("text.card.ul-desc3")}
+                                                </Typography>
                                             </li>
 
                                             <li className={"mt-3 lg:mt-6"}>
                                                 <header className={"flex items-center"}>
-                                                    <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                    <div
+                                                        className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
                                                     <Typography
                                                         variant={"h6"}
                                                         className={"!text-white font-medium"}
@@ -316,6 +350,12 @@ const Assets = () => {
                                                         {t("text.card.ul-title3")}
                                                     </Typography>
                                                 </header>
+                                                <Typography
+                                                    variant={"muted"}
+                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                >
+                                                    {t("text.card.ul-desc4")}
+                                                </Typography>
                                             </li>
                                         </ul>
 

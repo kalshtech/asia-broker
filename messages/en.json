@@ -1,6 +1,6 @@
 {
   "Common": {
-    "register": "Start Trading",
+    "register": "Open Account",
     "trade": "开始交易",
     "usStock": "Stocks & ETFs",
     "forex": "Forex",
@@ -309,145 +309,170 @@
         },
         "text": {
           "type": {
-            "title": "灵活便捷的出入金服务",
-            "description": "支持全球主流支付渠道，确保资金流转快速安全",
-            "ul-title1": "多币种本地支付接入",
-            "ul-desc1": "覆盖东南亚（泰国、马来西亚、印尼、越南）、韩国、日本及欧洲，支持区域用户通过熟悉的支付方式进行充值与提现",
-            "ul-title2": "USDT 稳定币极速到账",
-            "ul-desc2": "链上直连，入金最快 1 分钟到账；出金平均 10 分钟内处理完成，不超过 30 分钟",
-            "ul-title3": "法币与数字资产自由结算",
-            "ul-title4": "内置合规风控",
-            "ul-desc4": "自动排查异常资金流，确保安全",
-            "more": "了解更多"
+            "title": "Global Transfers. Built for Speed. Backed by Trust.",
+            "description": "Support for major payment channels worldwide, ensuring fast and secure fund flows.",
+            "ul-title1": "Local rails across Asia and Europe",
+            "ul-desc1": "Support for trusted methods in Thailand, Malaysia, Indonesia, Vietnam, Korea, Japan, and the EU.",
+            "ul-title2": "USDT on-chain: under 1 min",
+            "ul-desc2": "Instant blockchain deposits. Withdrawals cleared in ~10 mins.",
+            "ul-title3": "Fiat or crypto. Your choice.",
+            "ul-desc3": "Flexible settlement in local currencies or digital assets.",
+            "ul-title4": "Fully compliant by design",
+            "ul-desc4": "Real-time risk controls and AML monitoring ensure safe transfers.",
+            "more": "View All Methods"
           },
           "safe": {
-            "title": "费用与安全",
-            "description": "0 成本，安全透明",
-            "ul-title1": "0 手续费",
-            "ul-desc1": "所有入金和出金方式均免费",
-            "ul-title2": "快速处理",
-            "ul-desc2": "即时入金，提款 24/5 快速到账",
-            "ul-title3": "资金隔离",
-            "ul-desc3": "您的资金安全存放于独立账户，符合银行级托管标准",
-            "more": "了解更多"
+            "title": "Zero Fees. Instant Transfers. Fully Protected.",
+            "description": "Transparent pricing & real-time security.",
+            "ul-title1": "0 Fees",
+            "ul-desc1": "No charges on deposits or withdrawals across supported methods.",
+            "ul-title2": "Fast Processing",
+            "ul-desc2": "On-chain deposits arrive in as fast as 1 minute. Withdrawals processed within 10 minutes on average, never exceeding 30.",
+            "ul-title3": "Fund Protection",
+            "ul-desc3": "Abnormal transaction flows are automatically flagged and held for review.",
+            "more": "View All Methods"
           },
           "card": {
-            "title": "AFT 专属 USDT 银行卡",
-            "description": "即将到来",
-            "ul-title": "开通 AFT 专属 USDT 银行卡，体验更快、更稳、更自由的资金出入。",
-            "ul-title1": "可在 Visa / Mastercard 场景消费",
-            "ul-title2": "出金秒到，畅通无阻",
-            "ul-title3": "同步支持 USDT 存取与法币消费",
-            "more": "了解VIC账户"
+            "title": "AFT Card. Spend Smarter. Live Freer — Anywhere.",
+            "description": "Now live. Instantly spend your AFT balance worldwide — in-store or online — with Visa or Mastercard options, tailored for lifestyle, investing, and daily use.",
+            "ul-title1": "Free for VIC users",
+            "ul-desc1": "No $20 monthly fee. Enjoy premium access with your VIC Account.",
+            "ul-title2": "Global spending, no limits",
+            "ul-desc2": "Use your balance for lifestyle, trading, or everyday purchases — online and offline.",
+            "ul-title3": "Visa & Mastercard options",
+            "ul-desc3": "Choose the network that fits your needs and region.",
+            "ul-title4": "Use it anywhere, for anything",
+            "ul-desc4": "From trading desks to dinner bills — your capital, your call.",
+            "more": "Get AFT Card"
           }
         }
       },
       "properly": {
-        "title": "选择最适合你的帐户",
-        "description": "找到你的优势——用与你的策略相匹配的定价、杠杆和执行进行交易。",
+        "title": "Choose the Right Account for Your Edge",
+        "description": "Trade with pricing, leverage, and execution tailored to your strategy.",
         "tabs": {
-          "classic": "经典帐户",
-          "gold": "铂金帐户",
-          "vic": "VIC账户"
+          "classic": "Classic",
+          "platinum": "Platinum",
+          "vic": "VIC"
         },
         "left": {
-          "title": "Classic 经典账户",
-          "desc": "Classic 经典账户，适合所有人支持美元和美分账户双模式轻松起步，$100入金即可"
+          "classic": {
+            "name": "Classic Account",
+            "title": "Your all-access starting point. Built for everyone.",
+            "desc": "Dual-mode in USD & Cent Account, with just a $100 minimum deposit."
+          },
+          "platinum": {
+            "name": "Platinum Account",
+            "title": "Step into the world of professional trading.",
+            "desc": "Unlock lower spreads, faster execution, and exclusive benefits — all starting from just $5,000."
+          },
+          "vic": {
+            "name": "VIC Account",
+            "title": "Join the AFT VIC Club.",
+            "desc": "Unlock elite trading privileges with institutional-grade infrastructure. Starting from $100,000."
+          }
         },
         "right": {
           "swiper1": {
             "1": {
-              "title": "低门槛 · 快速上手· 支持模拟账户申请",
-              "description": "美分账户加持，小资金也能体验真实市场，最低 $100 入金即可开启全球交易之旅"
+              "title": "Low Barrier · Quick Start · Demo Account Ready",
+              "description": "Get started in global markets with just $100. Cent Accounts let you explore real trading environments using small capital, with demo accounts available for easy onboarding."
             },
             "2": {
-              "title": "零佣金 · 透明成本",
-              "description": "0 佣金，只需承担点差成本，浮动点差低至 1.2–1.8 pip，涵盖外汇、黄金、指数等主流品种"
+              "title": "Zero Commission · Transparent Costs",
+              "description": "Trade with no commission fees. Only pay the spread — floating as low as 1.2 to 1.8 pips across major assets like FX, gold, and indices."
             },
             "3": {
-              "title": "学习与成长 · 社群支持",
-              "description": "自动加入 Sail & Blocks 帆船积木社区，获取 新手训练营、策略问答、交易挑战赛 等丰富资源"
+              "title": "Learn & Grow · Community Support",
+              "description": "Join the Sail & Blocks community to access beginner bootcamps, strategy Q&A, trading challenges, and ongoing education resources."
             },
             "4": {
-              "title": "美分账户专属大赛",
-              "description": "每周 美分账户交易大赛，赢取现金奖励与积分，让新手与老手都能享受交易乐趣"
+              "title": "Cent Account Exclusive Competitions",
+              "description": "Enter weekly trading contests tailored for Cent Account users. Earn real cash prizes and rewards — perfect for both new and experienced traders."
             }
           },
           "swiper2": {
             "1": {
-              "title": "机构级报价 · 更优的价格",
-              "description": "美分账户加持，小资金也能体验真实市场，最低 $100 入金即可开启全球交易之旅",
+              "title": "Institutional Pricing · Better Fills",
               "ul": {
-                "1": "接入全球顶级流动性提供商",
-                "2": "支持大宗交易、EA 高频策略",
-                "3": "毫秒级撮合，减少滑点"
+                "1": "Access global Tier-1 liquidity providers",
+                "2": "Supports block trades, EAs, and high-frequency strategies",
+                "3": "Millisecond-level matching to reduce slippage"
               }
             },
             "2": {
-              "title": "铂金专线 · 极速执行",
-              "description": "0 佣金，只需承担点差成本，浮动点差低至 1.2–1.8 pip，涵盖外汇、黄金、指数等主流品种",
+              "title": "Platinum Routing · Execution at Speed",
               "ul": {
-                "1": "专属高速服务器直连 Equinix 金融中心",
-                "2": "毫秒级订单传输，优先排队执行",
-                "3": "大额订单也能稳定成交"
+                "1": "Direct connectivity to Equinix financial data centers",
+                "2": "Millisecond order routing with priority queuing",
+                "3": "Reliable fills even for high-volume orders"
               }
             },
             "3": {
-              "title": "原始点差 · 成本更低",
-              "description": "自动加入 Sail & Blocks 帆船积木社区，获取 新手训练营、策略问答、交易挑战赛 等丰富资源",
+              "title": "Raw Spreads · Lower Costs",
               "ul": {
-                "1": "点差最低 0.0 pip",
-                "2": "搭配低佣金（$3–$3.5/手/边），长期执行成本更优",
-                "3": "专为高频与剥头皮交易者打造"
+                "1": "Spreads from as low as 0.0 pips",
+                "2": "Paired with ultra-low commissions ($3–$3.5/lot/side)",
+                "3": "Optimized for scalping and high-frequency strategies"
               }
             },
             "4": {
-              "title": "专属功能 · 专业支持",
-              "description": "每周 美分账户交易大赛，赢取现金奖励与积分，让新手与老手都能享受交易乐趣",
+              "title": "Dedicated Tools · Expert Support",
               "ul": {
-                "1": "免费 VPS 加速，保障自动化交易稳定运行",
-                "2": "多账户 / 多终端无缝切换",
-                "3": "专属客户经理与技术支持，交易全程护航"
+                "1": "Free VPS hosting for uninterrupted automated trading",
+                "2": "Seamless multi-account, multi-terminal access",
+                "3": "Dedicated relationship manager and technical support — every step of the way"
               }
             }
           },
           "swiper3": {
             "1": {
-              "title": "创造可定制交易产品",
+              "title": "Custom Products & Pricing, Your Way",
               "ul": {
-                "1": "专属你的交易品种，无论是货币兑还是加密货币"
+                "1": "Create your own tradable instruments — FX pairs, crypto assets, and more",
+                "2": "Define your liquidity and pricing structure from as low as $1 per million traded"
               }
             },
             "2": {
-              "title": "独立技术与服务器支持",
+              "title": "Independent Tech & Infrastructure",
               "ul": {
-                "1": "专属 VPS / 低延迟专线接入",
-                "2": "定制化 API / FIX 接口，适配机构与量化需求"
+                "1": "Dedicated VPS & ultra-low-latency lines",
+                "2": "Custom API & FIX solutions for institutional and quantitative setups"
               }
             },
             "3": {
-              "title": "专属资金与结算方案",
+              "title": "Exclusive Funding & Settlement",
               "ul": {
-                "1": "多币种大额出入金优先处理，专属Asia Future Trading USDT 银行卡（全球 Mastercard 消费）"
+                "1": "Priority processing for large, multi-currency deposits and withdrawals",
+                "2": "Complimentary AFT USDT Card — spend globally with Mastercard"
               }
             },
             "4": {
-              "title": "私享俱乐部福利",
+              "title": "Private Club Access & Strategic Perks",
               "ul": {
-                "1": "专属 VIC 俱乐部邀请（封闭式社区），定期闭门研讨会 / 私享投研简报，礼遇升级（（从 比特币红包 到 劳力士腕表））战略合作优先权"
+                "1": "Invitation-only VIC Club with gated access",
+                "2": "Closed-door roundtables, private research briefings",
+                "3": "VIP rewards from Bitcoin bonuses to luxury timepieces",
+                "4": "Priority access to AFT’s strategic initiatives & partnerships"
               }
             }
           }
         }
       },
       "cooperator": {
-        "title": "交易员与合作伙伴的首选之选",
+        "title": "The Premier Platform for Global Traders & Partners",
         "tabs": {
-          "trader": "对于交易员",
-          "partners": "对于合作伙伴"
+          "trader": "For Strategy Traders",
+          "partners": "For Partners & Affiliates"
         },
-        "trader-title": "专属合作伙伴门户",
-        "trader-desc": "我们为您专门开发了一个用于客户管理活动或业绩追踪的专属平台。"
+        "trader": {
+          "title": "Maximize Your Returns with the Industry’s Leading Profit Split",
+          "desc": "Unlock high-performance infrastructure, raw pricing, and customized payout schemes. Whether you’re trading independently or managing a following — we reduce your cost so you keep more of your alpha."
+        },
+        "partners": {
+          "title": "Your All-in-One Partner Portal",
+          "desc": "We built a dedicated portal to support your client management and performance tracking needs. From marketing kits to multi-language creatives, you’ll have every tool to grow your business globally — backed by AFT."
+        }
       },
       "reward": {
         "title1": "新客奖励",
@@ -481,16 +506,16 @@
         "climate": "每季"
       },
       "calendar": {
-        "title": "无需开户，掌握关键时刻，把握交易节奏",
-        "description": "无需开户 ，免费订阅AFT Highlight 财经日历与专家技术分析",
-        "explore": "探索更多交易巡航工具",
+        "title": "Trade Smarter. No Account Required. Built for Every Trader.",
+        "description": "Access the AFT Highlight calendar, expert insights, and technical analysis — all free, no login required.\nStay in sync with global markets, data events, and trading opportunities.",
+        "explore": "Explore Calendar",
         "prospect": {
-          "title": "2025年衍生品展望",
+          "title": "2025 Industry Outlook",
           "description": "Tracks outstanding notional and gross market value of OTC ..."
         },
         "buttons": {
-          "past": "探索往期",
-          "download": "立即下载"
+          "past": "Explore Learn Starts Insight",
+          "download": "Download Report"
         },
         "stars": {
           "high": "高-3星",

@@ -118,8 +118,12 @@ const Properly = () => {
             ul: (
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
-                        <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
+                        <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography>{t("right.swiper3.1.ul.1")}</Typography>
+                    </li>
+                    <li className={"flex items-center"}>
+                        <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography>{t("right.swiper3.1.ul.2")}</Typography>
                     </li>
                 </ul>
             )
@@ -146,8 +150,12 @@ const Properly = () => {
             ul: (
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
-                        <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"} />
+                        <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography>{t("right.swiper3.3.ul.1")}</Typography>
+                    </li>
+                    <li className={"flex items-center"}>
+                        <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography>{t("right.swiper3.3.ul.2")}</Typography>
                     </li>
                 </ul>
             )
@@ -158,8 +166,20 @@ const Properly = () => {
             ul: (
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
-                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
+                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography>{t("right.swiper3.4.ul.1")}</Typography>
+                    </li>
+                    <li className={"flex items-center"}>
+                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography>{t("right.swiper3.4.ul.2")}</Typography>
+                    </li>
+                    <li className={"flex items-center"}>
+                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography>{t("right.swiper3.4.ul.3")}</Typography>
+                    </li>
+                    <li className={"flex items-center"}>
+                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography>{t("right.swiper3.4.ul.4")}</Typography>
                     </li>
                 </ul>
             )
@@ -196,11 +216,14 @@ const Properly = () => {
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
                     <div className={"col-span-12 lg:col-span-2"}>
-                        <Typography variant={"h4"} className={"font-medium"}>
-                            {t("left.title")}
+                        <Typography variant={"h2"} className={"font-medium"}>
+                            {t(`left.${tabActive}.name`)}
+                        </Typography>
+                        <Typography variant={"large"} className={"font-medium mt-2"}>
+                            {t(`left.${tabActive}.title`)}
                         </Typography>
                         <Typography variant={"p"} className={"mt-2"}>
-                            {t("left.desc")}
+                            {t(`left.${tabActive}.desc`)}
                         </Typography>
 
                         <div className={"mt-12"}>
@@ -210,7 +233,7 @@ const Properly = () => {
                     <div className={"col-span-12 lg:col-span-10"}>
                         <div className={"w-full"}>
                             {tabActive === "classic" && <SimpleSwiper prevEl={".test-custom-prev"} nextEl={".test-custom-next"} ary={oneAry}/>}
-                            {tabActive === "gold" && <SimpleSwiper prevEl={".test-custom-prev"} nextEl={".test-custom-next"} ary={twoAry}/>}
+                            {tabActive === "platinum" && <SimpleSwiper prevEl={".test-custom-prev"} nextEl={".test-custom-next"} ary={twoAry}/>}
                             {tabActive === "vic" && <SimpleSwiper prevEl={".test-custom-prev"} nextEl={".test-custom-next"} ary={threeAry}/>}
                         </div>
                     </div>
@@ -229,17 +252,17 @@ const Properly = () => {
                     <TabsList>
                         <TabsTrigger
                             value="classic"
-                            className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                            className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
                         >
                             { t("tabs.classic") }
                         </TabsTrigger>
                         <TabsTrigger
-                            value="gold"
-                            className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                            value="platinum"
+                            className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
                         >
-                            { t("tabs.gold") }
+                            { t("tabs.platinum") }
                         </TabsTrigger>
-                        <TabsTrigger value="vic" className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
+                        <TabsTrigger value="vic" className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}>
                             { t("tabs.vic") }
                         </TabsTrigger>
                     </TabsList>

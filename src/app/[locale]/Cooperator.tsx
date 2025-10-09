@@ -17,6 +17,7 @@ const fadeInUp: Variants = {
 
 const Cooperator = () => {
     const t = useTranslations("Pages.home.cooperator");
+    const [ tabActive, setTabActive ] = React.useState("trader");
     return (
         <section className={"p-4 lg:p-30"}>
             <motion.div
@@ -34,16 +35,18 @@ const Cooperator = () => {
             </motion.div>
             <div className={"mt-16"}>
                 <div className={"flex flex-col items-center"}>
-                    <Tabs defaultValue="account">
+                    <Tabs defaultValue="trader"
+                          onValueChange={(value) => setTabActive(value)}
+                    >
                         <TabsList>
                             <TabsTrigger
-                                value="account"
+                                value="trader"
                                 className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
                             >
                                 { t("tabs.trader") }
                             </TabsTrigger>
                             <TabsTrigger
-                                value="password"
+                                value="partners"
                                 className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
                             >
                                 { t("tabs.partners") }
@@ -52,13 +55,13 @@ const Cooperator = () => {
                     </Tabs>
                     <div className={"mt-10 text-center"}>
                         <Typography variant={"h4"}>
-                            { t("trader-title") }
+                            { t(`${tabActive}.title`) }
                         </Typography>
                         <Typography
                             variant={"muted"}
-                            className={"max-w-[380px] mt-6"}
+                            className={"max-w-3xl mx-auto mt-6"}
                         >
-                            { t("trader-desc") }
+                            { t(`${tabActive}.desc`) }
                         </Typography>
                     </div>
                     <div className={"mt-16"}>
