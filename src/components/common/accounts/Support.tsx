@@ -79,7 +79,7 @@ const Support = () => {
                                 }
                             </ul>
                         </div>
-                        <Separator className={"ml-auto hidden lg:block lg:mr-40"} orientation={"vertical"} />
+                        <Separator className={"ml-auto hidden lg:block lg:mr-20"} orientation={"vertical"} />
                     </div>
                     <div className={"flex col-span-12 lg:col-span-4"}>
                         <div>
@@ -102,7 +102,7 @@ const Support = () => {
                                 }
                             </ul>
                         </div>
-                        <Separator className={"ml-auto hidden lg:block lg:mr-40"} orientation={"vertical"} />
+                        <Separator className={"ml-auto hidden lg:block lg:mr-20"} orientation={"vertical"} />
                     </div>
                     <div className={"col-span-12 lg:col-span-4"}>
                         <div>

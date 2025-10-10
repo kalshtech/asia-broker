@@ -23,13 +23,13 @@ const TableComponent = () => {
                 <Table>
                     <TableHeader>
                         <TableRow className={"bg-white hover:bg-white"}>
-                            <TableHead className={"w-1/3 py-6 text-center"}>
+                            <TableHead className={"w-1/3 py-6 text-center text-white bg-[#35404F] border-r"}>
                                 { t("row.head1") }
                             </TableHead>
-                            <TableHead className={"w-1/3 py-6 text-center"}>
+                            <TableHead className={"w-1/3 py-6 text-center text-white bg-[#35404F] border-r"}>
                                 { t("row.head2") }
                             </TableHead>
-                            <TableHead className={"w-1/3 py-6 text-center"}>
+                            <TableHead className={"w-1/3 py-6 text-center text-white bg-[#35404F]"}>
                                 { t("row.head3") }
                             </TableHead>
                         </TableRow>
@@ -37,11 +37,11 @@ const TableComponent = () => {
                     <TableBody>
                         {
                             colsAry.map((item, index) => (
-                                <TableRow key={index} className={"bg-white hover:bg-white"}>
-                                    <TableCell className={"text-center py-4"}>
+                                <TableRow key={index} className={"bg-white hover:bg-white even:bg-[#F2F4F7] even:hover:bg-[#F2F4F7]"}>
+                                    <TableCell className={"text-center py-4 border-r"}>
                                         { item.one }
                                     </TableCell>
-                                    <TableCell className={"text-center py-4"}>
+                                    <TableCell className={"text-center py-4 border-r"}>
                                         { item.two }
                                     </TableCell>
                                     <TableCell className={"text-center py-4"}>

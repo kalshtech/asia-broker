@@ -25,70 +25,72 @@ const BankCards = () => {
     ];
     return (
         <section className={"bg-theme-deep-bg p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h1"}
-                    className={"font-medium !text-white text-center"}
+            <div className={"max-w-[1400px] mx-auto"}>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title1")}
-                </Typography>
+                    <Typography
+                        variant={"h1"}
+                        className={"font-medium !text-white text-center"}
+                    >
+                        {t("title1")}
+                    </Typography>
 
-                <Typography
-                    variant={"h1"}
-                    className={"font-medium !text-white text-center mt-2"}
-                >
-                    {t("title2")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-4 lg:mt-16"}>
-                <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <Typography
-                            variant={"h3"}
-                            className={"font-medium max-w-lg !text-white"}
-                        >
-                            {t("row.col1.title")}
-                        </Typography>
-                        <ul className={"mt-4 lg:mt-12"}>
-                            {
-                                ulAry.map((item, index) => (
-                                    <li key={index} className={"flex items-center my-4"}>
+                    <Typography
+                        variant={"h1"}
+                        className={"font-medium !text-white text-center mt-2"}
+                    >
+                        {t("title2")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-4 lg:mt-16"}>
+                    <div className={"grid grid-cols-12 gap-8"}>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <Typography
+                                variant={"h3"}
+                                className={"font-medium max-w-lg !text-white"}
+                            >
+                                {t("row.col1.title")}
+                            </Typography>
+                            <ul className={"mt-4 lg:mt-12"}>
+                                {
+                                    ulAry.map((item, index) => (
+                                        <li key={index} className={"flex items-center my-4"}>
                                         <span
                                             className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-white block rounded-full"}/>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"font-medium !text-white ml-2"}
-                                        >
-                                            {item.text}
-                                        </Typography>
-                                    </li>
-                                ))
-                            }
-                        </ul>
-                        <div className={"mt-4 lg:mt-16"}>
-                            <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
-                                {t("row.col1.understand")}
-                            </Button>
+                                            <Typography
+                                                variant={"muted"}
+                                                className={"font-medium !text-white ml-2"}
+                                            >
+                                                {item.text}
+                                            </Typography>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                            <div className={"mt-4 lg:mt-16"}>
+                                <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
+                                    {t("row.col1.understand")}
+                                </Button>
+                            </div>
                         </div>
-                    </div>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <img
-                            className={"max-h-90 object-cover mx-auto"}
-                            src="/images/accounts/vic-card.png"
-                            alt="card"
-                            title={"card"}
-                        />
-                        <Typography
-                            variant={"muted"}
-                            className={"font-medium !text-white text-center mt-4"}
-                        >
-                            {t("row.col2.desc")}
-                        </Typography>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <img
+                                className={"max-h-90 object-cover mx-auto"}
+                                src="/images/accounts/vic-card.png"
+                                alt="card"
+                                title={"card"}
+                            />
+                            <Typography
+                                variant={"muted"}
+                                className={"font-medium !text-white text-center mt-4"}
+                            >
+                                {t("row.col2.desc")}
+                            </Typography>
+                        </div>
                     </div>
                 </div>
             </div>

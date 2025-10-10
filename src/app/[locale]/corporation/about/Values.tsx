@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Values = () => {
     const t = useTranslations("Pages.corporation.about.values");
     return (
-        <section className={"p-4 lg:p-30"}>
+        <section className={"p-4 lg:p-30 max-w-[1400px] mx-auto"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"

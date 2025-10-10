@@ -28,7 +28,7 @@ const SwiperSlideItem = (props: ItemProps) => {
     const CommonT = useTranslations("Common");
     return (
         <div className={`${props.url} bg-center bg-cover w-auto h-100 rounded-lg`} >
-            <div className={"flex flex-col h-full cursor-pointer group relative px-3 py-8 lg:px-6 lg:py-16"}>
+            <div className={"flex flex-col h-full cursor-pointer group relative px-3 py-4 lg:px-6 lg:py-8"}>
                 <div className={"mt-auto group-hover:hidden"}>
                     <Typography
                         variant={"h6"}
@@ -101,12 +101,12 @@ const Advertisement = () => {
             </motion.div>
 
             <div className={"mt-4 lg:mt-16"}>
-                <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-6 lg:col-span-3"}>
+                <div className={"grid grid-cols-10 gap-4 lg:gap-9"}>
+                    <div className={"col-span-5 lg:col-span-2"}>
                         <div className={`bg-[url('/images/home/advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
                             <div className={"flex flex-col h-full cursor-pointer relative px-3 py-8 lg:px-6 lg:py-16"}>
                                 <div
-                                    className={"bg-[rgba(0,0,0,0.42)] justify-center rounded-lg flex flex-col w-full h-full top-0 left-0 transition absolute px-6 py-16"}>
+                                    className={"bg-[rgba(0,0,0,0.42)] justify-center rounded-lg flex flex-col w-full h-full top-0 left-0 transition absolute px-2 lg:px-6 py-8 lg:py-16"}>
                                     <div>
                                         <Typography
                                             variant={"h6"}
@@ -133,7 +133,7 @@ const Advertisement = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-6 lg:col-span-9"}>
+                    <div className={"col-span-5 lg:col-span-8"}>
                         <Swiper
                             slidesPerView={3.5}
                             spaceBetween={36}
@@ -147,10 +147,10 @@ const Advertisement = () => {
                             }}
                             modules={[Navigation]}
                             breakpoints={{
-                                320: {slidesPerView: 1.2, spaceBetween: 16,},
-                                600: {slidesPerView: 1.2, spaceBetween: 24,},
-                                900: {slidesPerView: 3.2, spaceBetween: 36,},
-                                1200: {slidesPerView: 4.2, spaceBetween: 36,},
+                                320: {slidesPerView: 1.1, spaceBetween: 16,},
+                                600: {slidesPerView: 1.1, spaceBetween: 24,},
+                                900: {slidesPerView: 3.5, spaceBetween: 36,},
+                                1200: {slidesPerView: 4.5, spaceBetween: 36,},
                             }}
                             className="mySwiper"
                         >

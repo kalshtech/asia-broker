@@ -18,7 +18,7 @@ const Brief = () => {
     const t = useTranslations("Pages.corporation.about.brief");
     return (
         <section className={"bg-[url(/images/corporation/about-brief-background.png)] bg-cover bg-center p-4 lg:p-30"}>
-            <div className={""}>
+            <div className={"max-w-[1400px] mx-auto"}>
                 <div className={"flex"}>
                     <Typography variant={"muted"}>
                         { t("text") }

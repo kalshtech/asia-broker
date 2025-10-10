@@ -44,7 +44,7 @@ const Explore = () => {
                 </Typography>
             </motion.div>
             <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-8"}>
+                <div className={"grid grid-cols-12 gap-10"}>
                     <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"grid-cols-12 grid"}>
                             <div className={"col-span-12 lg:col-span-7"}>
@@ -67,8 +67,8 @@ const Explore = () => {
                                                     <span
                                                         className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
                                                     <Typography
-                                                        variant={"lead"}
-                                                        className={"ml-4 font-medium"}
+                                                        variant={"muted"}
+                                                        className={"ml-4 font-medium !text-base"}
                                                     >
                                                         {item.label}
                                                     </Typography>
@@ -115,8 +115,8 @@ const Explore = () => {
                                                     <span
                                                         className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
                                                     <Typography
-                                                        variant={"lead"}
-                                                        className={"ml-4 font-medium"}
+                                                        variant={"muted"}
+                                                        className={"ml-4 font-medium !text-base"}
                                                     >
                                                         {item.label}
                                                     </Typography>

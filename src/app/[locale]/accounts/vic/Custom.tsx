@@ -23,76 +23,79 @@ const Custom = () => {
     ];
     return (
         <section className={"bg-gradient-to-b from-[#0C1724] from-[10%] to-[#163252] to-[100%] p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h1"}
-                    className={"font-medium !text-white text-center"}
+            <div className={"max-w-[1400px] mx-auto"}>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
+                    <Typography
+                        variant={"h1"}
+                        className={"font-medium !text-white text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
 
-                <Typography
-                    variant={"muted"}
-                    className={"text-center !text-white mt-6"}
-                >
-                    {t("desc")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-4"}>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <img
-                            src="/images/accounts/custom-img.png"
-                            alt="custom"
-                            title={"custom"}
-                            className={"lg:max-h-[380px] object-cover mx-auto"}
-                        />
-                    </div>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={"flex flex-col flex-1"}>
-                            <Typography
-                                variant={"h3"}
-                                className={"font-medium !text-white"}
-                            >
-                                {t("row.col2.title")}
-                            </Typography>
-                            <ul className={"mt-4 lg:mt-10"}>
-                                {
-                                    ulAry.map((item, index) => (
-                                        <li key={index} className={"flex items-center my-4"}>
-                                            <span className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-white block rounded-full"}/>
-                                            <Typography
-                                                variant={"muted"}
-                                                className={"font-medium !text-white ml-2"}
-                                            >
-                                                {item.text}
-                                            </Typography>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                            <Typography
-                                variant={"muted"}
-                                className={"font-medium !text-white mt-4 lg:mt-10"}
-                            >
-                                {t("row.col2.desc")}
-                            </Typography>
-
-                            <div className={"mt-4 lg:mt-10"}>
-                                <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
-                                    {t("row.col2.apply")}
-                                </Button>
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center !text-white mt-6"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-16"}>
+                    <div className={"grid grid-cols-12 gap-4"}>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <img
+                                src="/images/accounts/custom-img.png"
+                                alt="custom"
+                                title={"custom"}
+                                className={"lg:max-h-[380px] object-cover mx-auto"}
+                            />
+                        </div>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <div className={"flex flex-col flex-1"}>
+                                <Typography
+                                    variant={"h3"}
+                                    className={"font-medium !text-white"}
+                                >
+                                    {t("row.col2.title")}
+                                </Typography>
+                                <ul className={"mt-4 lg:mt-10"}>
+                                    {
+                                        ulAry.map((item, index) => (
+                                            <li key={index} className={"flex items-center my-4"}>
+                                                <span
+                                                    className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-white block rounded-full"}/>
+                                                <Typography
+                                                    variant={"muted"}
+                                                    className={"!text-white ml-2"}
+                                                >
+                                                    {item.text}
+                                                </Typography>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
                                 <Typography
                                     variant={"muted"}
-                                    className={"font-medium !text-white mt-2"}
+                                    className={"!text-white max-w-md mt-4 lg:mt-10"}
                                 >
-                                    {t("row.col2.prompt")}
+                                    {t("row.col2.desc")}
                                 </Typography>
+
+                                <div className={"mt-4 lg:mt-10"}>
+                                    <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
+                                        {t("row.col2.apply")}
+                                    </Button>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"!text-white mt-5"}
+                                    >
+                                        {t("row.col2.prompt")}
+                                    </Typography>
+                                </div>
                             </div>
                         </div>
                     </div>

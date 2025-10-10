@@ -8,7 +8,7 @@ const Trust = () => {
     const t = useTranslations("Pages.corporation.about.trust");
     return (
         <section className={"p-4 lg:p-30"}>
-            <div className={"grid grid-cols-12"}>
+            <div className={"grid grid-cols-12 max-w-[1400px] mx-auto"}>
                 <div className={"col-span-12 lg:col-span-10"}>
                     <Typography
                         variant={"h3"}
@@ -18,7 +18,7 @@ const Trust = () => {
                     </Typography>
                     <Typography
                         variant={"large"}
-                        className={"font-medium mt-2"}
+                        className={"font-medium max-w-3xl mt-2"}
                     >
                         {t("desc")}
                     </Typography>

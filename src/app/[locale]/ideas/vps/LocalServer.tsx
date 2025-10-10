@@ -40,7 +40,7 @@ const LocalServer = () => {
 
     return (
         <section ref={sectionRef} className={"bg-theme-deep-bg p-4 lg:p-30"}>
-            <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
+            <div className={"grid grid-cols-12 gap-4 lg:gap-8 max-w-[1400px] mx-auto"}>
                 <div className={"col-span-12 lg:col-span-6"}>
                     <div ref={leftRef}
                          className={"flex flex-1 justify-center"}

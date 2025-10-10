@@ -15,8 +15,8 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Typography } from "@/components/ui/typography";
 import { Separator } from "@/components/ui/separator";
-import { MoveRight, Globe } from 'lucide-react';
-import { useState } from "react";
+import { MoveRight, Globe, AlignJustify, X, ChevronRight } from 'lucide-react';
+import { useState, useEffect } from "react";
 
 const { locales } = routing;
 
@@ -126,7 +126,9 @@ const Navigation = () => {
     const router = useRouter();
     const pathname = usePathname();
     const t = useTranslations("Navigation");
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+    const [drawerOpen, setDrawerOpen] = useState(false);
+    const [langOpen, setLangOpen] = useState(false);
     const localAry = [
         { value: "en", label: "English", country: t("countries.en") },
         { value: "zh-cn", label: "中文简体", country: t("countries.zh-cn") },
@@ -457,6 +459,14 @@ const Navigation = () => {
         router.push({ pathname, query }, { locale: key });
     }
 
+    useEffect(() => {
+        function onKey(e: KeyboardEvent) {
+            if (e.key === "Escape") setDrawerOpen(false);
+        }
+        window.addEventListener("keydown", onKey);
+        return () => window.removeEventListener("keydown", onKey);
+    }, []);
+
     return (
         <div id={"navigation"} className={"h-[64px] flex z-1000 fixed bg-white w-full px-4 lg:px-8 xl:lg:px-30"}>
             <NavigationMenu viewport={false}>
@@ -472,7 +482,7 @@ const Navigation = () => {
                 <NavigationMenuList className={"ml-8 hidden lg:flex"}>
                     {
                         ary.map((item, index) => (
-                            <PackageMenuItem ary={item.children} key={index} />
+                            <PackageMenuItem ary={item.children} key={index}/>
                         ))
                     }
                 </NavigationMenuList>
@@ -491,33 +501,36 @@ const Navigation = () => {
                                     <div className={"flex items-center"}>
                                         <Globe/>
                                         <Typography className={"ml-1"}>
-                                            { getLangText(locale) }
+                                            {getLangText(locale)}
                                         </Typography>
                                     </div>
                                 </NavigationMenuTrigger>
                                 {
                                     open && (
-                                        <NavigationMenuContent className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}>
+                                        <NavigationMenuContent
+                                            className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}>
                                             <div>
                                                 <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-8 cursor-pointer">
                                                     {
                                                         localAry.map((item, index) => (
                                                             <li className="flex items-start gap-4"
                                                                 key={index}
-                                                                onClick={() => handleToggleLang({ key: item.value })}
+                                                                onClick={() => handleToggleLang({key: item.value})}
                                                             >
-                                                                <div className="h-[30px] w-[30px] overflow-hidden grid place-items-center">
-                                                                    <img src={`/images/countries/${item.value}.png`} alt={item.value} title={item.value}/>
+                                                                <div
+                                                                    className="h-[30px] w-[30px] overflow-hidden grid place-items-center">
+                                                                    <img src={`/images/countries/${item.value}.png`}
+                                                                         alt={item.value} title={item.value}/>
                                                                 </div>
                                                                 <div className="leading-[18px] flex flex-col">
                                                                     <Typography>
-                                                                        { item.label }
+                                                                        {item.label}
                                                                     </Typography>
                                                                     <Typography
                                                                         variant={"muted"}
                                                                         className={"mt-1"}
                                                                     >
-                                                                        { item.country }
+                                                                        {item.country}
                                                                     </Typography>
                                                                 </div>
                                                             </li>
@@ -538,8 +551,105 @@ const Navigation = () => {
                     <Button className={"bg-theme-active rounded-full cursor-pointer hover:bg-theme-active-hover"}>
                         开设账户
                     </Button>
+                    {
+                        !drawerOpen ?
+                            <AlignJustify className={"block lg:hidden ml-4"} onClick={() => setDrawerOpen(true)}/>
+                            : <X className={"block lg:hidden ml-4"} onClick={() => setDrawerOpen(false)}/>
+                    }
                 </div>
             </div>
+
+            <div
+                aria-hidden
+                onClick={() => setDrawerOpen(false)}
+                className={[
+                    "fixed inset-0 bg-black/50 transition-opacity duration-300",
+                    drawerOpen ? "opacity-100" : "opacity-0 pointer-events-none",
+                ].join(" ")}
+            />
+
+
+            <aside
+                role="dialog"
+                aria-modal="true"
+                aria-label="drawer"
+                className={[
+                    "fixed right-0 top-0 z-50 h-full w-full",
+                    "bg-white border-l shadow-xl",
+                    "transition-transform duration-300 ease-out will-change-transform",
+                    drawerOpen ? "translate-x-0" : "translate-x-full",
+                ].join(" ")}
+            >
+                <div className="flex items-center justify-between px-4 py-3 border-b">
+                    <div className={"flex"} onClick={() => setLangOpen(true)}>
+                        <Globe/>
+                        <h2 className="text-base font-semibold ml-2">
+                            {getLangText(locale)}
+                        </h2>
+                    </div>
+                    <button
+                        onClick={() => setDrawerOpen(false)}
+                        className="rounded-md p-2 text-slate-600 hover:bg-slate-100"
+                        aria-label="close"
+                    >
+                        <X/>
+                    </button>
+
+                </div>
+
+                <div className="p-4 space-y-3 text-sm">
+                    <ul>
+                        {ary[0].children.map((item, index) => (
+                            <li key={index} className={"border-b py-4 flex text-theme-active"}>
+                                <Typography variant={"muted"} className={"!text-theme-active"}>{item.title}</Typography>
+                                <ChevronRight className={"ml-auto"}/>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </aside>
+
+            {/* 语言Drawer */}
+            <aside
+                role="dialog"
+                aria-modal="true"
+                aria-label="drawer"
+                className={[
+                    "fixed right-0 top-0 z-50 h-full w-full",
+                    "bg-white border-l shadow-xl",
+                    "transition-transform duration-300 ease-out will-change-transform",
+                    langOpen ? "translate-x-0" : "translate-x-full",
+                ].join(" ")}
+            >
+                <div className="flex items-center justify-between px-4 py-3 border-b">
+                    <div className={"flex items-center"}>
+                        <Globe/>
+                        <h2 className="text-base font-semibold ml-2">
+                            {getLangText(locale)}
+                            <span>(当前语言)</span>
+                        </h2>
+                    </div>
+                    <button
+                        onClick={() => setLangOpen(false)}
+                        className="rounded-md p-2 text-slate-600 hover:bg-slate-100"
+                        aria-label="close"
+                    >
+                        <X/>
+                    </button>
+
+                </div>
+
+                <div className="p-4 space-y-3 text-sm">
+                    <ul>
+                        {ary[0].children.map((item, index) => (
+                            <li key={index} className={"border-b py-4 flex text-theme-active"}>
+                                <Typography variant={"muted"} className={"!text-theme-active"}>{item.title}</Typography>
+                                <ChevronRight className={"ml-auto"}/>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </aside>
         </div>
     )
 }

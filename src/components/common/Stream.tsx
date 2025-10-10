@@ -39,7 +39,7 @@ const Stream = (props: Props) => {
     const t = useTranslations("Pages.accounts.vic.stream");
     const { title, desc, col1, col2 = { isShowMore: true, backgroundUrl: "" } } = props;
     return (
-        <section className={"p-4 lg:p-30"}>
+        <section className={"p-4 lg:p-30 max-w-[1400px] mx-auto"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -69,7 +69,7 @@ const Stream = (props: Props) => {
                     <div className={"col-span-12 lg:col-span-6"}>
                         <Typography
                             variant={"h3"}
-                            className={"font-medium"}
+                            className={"font-medium max-w-md"}
                         >
                             { col1.title }
                         </Typography>

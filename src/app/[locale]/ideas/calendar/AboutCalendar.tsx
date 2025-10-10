@@ -44,10 +44,10 @@ const AboutCalendar = () => {
                     <div className={"col-span-12 lg:col-span-4"}>
                         <Input placeholder={t("form.first-placeholder")} className={"text-white rounded-full h-12 bg-theme-light-bg/60 placeholder:text-white"} />
                     </div>
-                    <div className={"col-span-12 lg:col-span-"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <Input placeholder={t("form.last-placeholder")} className={"text-white rounded-full h-12 bg-theme-light-bg/60 placeholder:text-white"} />
                     </div>
-                    <div className={"col-span-12 lg:col-span-"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
                         <Input placeholder={t("form.country-placeholder")} className={"text-white rounded-full h-12 bg-theme-light-bg/60 placeholder:text-white"} />
                     </div>
                 </div>
