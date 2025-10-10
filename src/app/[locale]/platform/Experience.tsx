@@ -58,23 +58,23 @@ const Experience = () => {
                     {t("title2")}
                 </Typography>
                 <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto max-w-3xl mt-10"}
+                    variant={"muted"}
+                    className={"text-center mx-auto max-w-3xl mt-8"}
                 >
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-10 mx-auto max-w-4xl"}>
-                <Table>
+            <div className={"mt-10 mx-auto max-w-7xl"}>
+                <Table className={"border"}>
                     <TableHeader>
-                        <TableRow>
-                            <TableHead className={"w-1/3 text-center"}>
+                        <TableRow className={"bg-[#333] hover:bg-[#333]"}>
+                            <TableHead className={"w-1/3 text-center text-white !py-4"}>
                                 { t("table.row.head1") }
                             </TableHead>
-                            <TableHead className={"w-1/3 text-center"}>
+                            <TableHead className={"w-1/3 text-center text-white !py-4"}>
                                 { t("table.row.head2") }
                             </TableHead>
-                            <TableHead className={"w-1/3 text-center"}>
+                            <TableHead className={"w-1/3 text-center text-white !py-4"}>
                                 { t("table.row.head3") }
                             </TableHead>
                         </TableRow>
@@ -82,14 +82,14 @@ const Experience = () => {
                     <TableBody>
                         {
                             colsAry.map((item, index) => (
-                                <TableRow key={index}>
-                                    <TableCell className={"text-center"}>
+                                <TableRow key={index} className={"even:bg-[#EBEBEB] even:hover:bg-[#EBEBEB]"}>
+                                    <TableCell className={"text-center !py-3"}>
                                         { item.one }
                                     </TableCell>
-                                    <TableCell className={"text-center"}>
+                                    <TableCell className={"text-center !py-3"}>
                                         { item.two }
                                     </TableCell>
-                                    <TableCell className={"text-center"}>
+                                    <TableCell className={"text-center !py-3"}>
                                         { item.three }
                                     </TableCell>
                                 </TableRow>

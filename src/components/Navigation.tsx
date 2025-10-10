@@ -279,7 +279,8 @@ const Navigation = () => {
                         {
                             title: t("menu.beginner.row.col-3.title"),
                             ul: [
-                                { label: t("menu.beginner.row.col-3.ul.li1"), desc: t("menu.beginner.row.col-3.ul.desc1"), path: "/academy/learning" }
+                                { label: t("menu.beginner.row.col-3.ul.li1"), desc: t("menu.beginner.row.col-3.ul.desc1"), path: "/academy/learning" },
+                                { label: t("menu.beginner.row.col-3.ul.li2"), desc: t("menu.beginner.row.col-3.ul.desc2"), path: "/" }
                             ]
                         }
                     ]
@@ -325,28 +326,28 @@ const Navigation = () => {
                     ]
                 },
                 // 客户支持
-                // {
-                //     title: t("menu.support.title"),
-                //     description: t("menu.support.description"),
-                //     btn: t("menu.support.btn"),
-                //     btnPath: "/",
-                //     btnImg: "/images/navigation/support.png",
-                //     colSpan: "col-span-6",
-                //     children: [
-                //         {
-                //             title: t("menu.support.row.col-1.title"),
-                //             ul: [
-                //                 { label: t("menu.support.row.col-1.ul.li1"), path: "/" }
-                //             ]
-                //         },
-                //         {
-                //             title: t("menu.support.row.col-2.title"),
-                //             ul: [
-                //                 { label: t("menu.support.row.col-2.ul.li1"), path: "/" },
-                //             ]
-                //         }
-                //     ]
-                // },
+                {
+                    title: t("menu.support.title"),
+                    description: t("menu.support.description"),
+                    btn: t("menu.support.btn"),
+                    btnPath: "/",
+                    btnImg: "/images/navigation/support.png",
+                    colSpan: "col-span-6",
+                    children: [
+                        {
+                            title: t("menu.support.row.col-1.title"),
+                            ul: [
+                                { label: t("menu.support.row.col-1.ul.li1"), path: "/" }
+                            ]
+                        },
+                        {
+                            title: t("menu.support.row.col-2.title"),
+                            ul: [
+                                { label: t("menu.support.row.col-2.ul.li1"), path: "/" },
+                            ]
+                        }
+                    ]
+                },
                 // 公司
                 {
                     title: t("menu.corporation.title"),

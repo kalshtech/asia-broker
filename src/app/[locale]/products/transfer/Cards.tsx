@@ -37,19 +37,19 @@ const Cards = () => {
                     <div className={"col-span-12 lg:col-span-6"}>
                         <Typography
                             variant={"h4"}
-                            className={"font-medium"}
+                            className={"font-medium mt-10"}
                         >
                             {t("row.col1.title")}
                         </Typography>
                         <Typography
                             variant={"muted"}
-                            className={"mt-10"}
+                            className={"mt-10 max-w-3xl"}
                         >
                             {t("row.col1.desc1")}
                         </Typography>
                         <Typography
                             variant={"muted"}
-                            className={"mt-10"}
+                            className={"mt-10 max-w-3xl"}
                         >
                             {t("row.col1.desc2")}
                         </Typography>

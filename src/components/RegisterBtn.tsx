@@ -2,18 +2,20 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
+import classnames from "classnames";
 
 type Props = {
     text?: string;
+    className?: string;
 };
 
 const RegisterBtn = (props: Props) => {
     const t = useTranslations("Common");
-    const { text } = props;
+    const { text, className } = props;
     return (
-        <div className={"cursor-pointer"}>
+        <div className={classnames(["cursor-pointer"])}>
             <Button
-                className={"rounded-full px-8 h-10 cursor-pointer bg-theme-active hover:bg-theme-active-hover"}
+                className={classnames(["rounded-full px-8 h-10 cursor-pointer bg-theme-active hover:bg-theme-active-hover", className])}
             >
                 { text ? text : t("register") }
             </Button>

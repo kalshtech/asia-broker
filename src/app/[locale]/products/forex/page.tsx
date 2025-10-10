@@ -144,7 +144,7 @@ export default async function Page() {
                 trade={t("markets.trade")}
             />
             <Commission
-                theme={"dark"}
+                theme={"light"}
                 title={t("commission.title")}
                 desc={t("commission.desc")}
                 more={t("commission.more")}

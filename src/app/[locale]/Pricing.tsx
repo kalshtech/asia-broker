@@ -7,7 +7,7 @@ import { motion, Variants } from "framer-motion"
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -21,32 +21,32 @@ const fadeInUp: Variants = {
 function Counter({from = 10, to = 0, duration = 1.2, decimals = 0, trigger}: { from?: number; to?: number; duration?: number; decimals?: number; trigger?: any; }) {
     const el = React.useRef<HTMLSpanElement>(null)
 
-     React.useEffect(() => {
-        const obj = { v: from }
-        const play = () =>
-            gsap.to(obj, {
-                v: to,
-                duration,
-                ease: "power3.out",
-                onUpdate: () => {
-                    if (el.current) el.current.textContent = obj.v.toFixed(decimals)
-                },
-            })
-
-        let st: ScrollTrigger | undefined;
-        if (trigger?.current) {
-            st = ScrollTrigger.create({
-                trigger: trigger.current,
-                start: "top 80%",
-                once: true,
-                onEnter: play,
-            })
-        } else {
-            const tween = play()
-            return () => tween.kill()
-        }
-        return () => st?.kill()
-    }, [from, to, duration, decimals, trigger])
+    //  React.useEffect(() => {
+    //     const obj = { v: from }
+    //     const play = () =>
+    //         gsap.to(obj, {
+    //             v: to,
+    //             duration,
+    //             ease: "power3.out",
+    //             onUpdate: () => {
+    //                 if (el.current) el.current.textContent = obj.v.toFixed(decimals)
+    //             },
+    //         })
+    //
+    //     let st: ScrollTrigger | undefined;
+    //     if (trigger?.current) {
+    //         st = ScrollTrigger.create({
+    //             trigger: trigger.current,
+    //             start: "top 80%",
+    //             once: true,
+    //             onEnter: play,
+    //         })
+    //     } else {
+    //         const tween = play()
+    //         return () => tween.kill()
+    //     }
+    //     return () => st?.kill()
+    // }, [from, to, duration, decimals, trigger])
 
     return <span ref={el} className={"text-2xl text-[#3967FF]"}>{from.toFixed ? from.toFixed(decimals) : from}</span>
 }
@@ -79,28 +79,28 @@ const Pricing = () => {
         { imageNumber: "3", name: "Dow Jones" },
     ];
 
-    React.useEffect(() => {
-        if (!cardsWrapRef.current) return
-        const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches
-        if (reduce) return
-
-        const el = cardsWrapRef.current
-        const fromTop    = el.querySelectorAll<HTMLElement>('[data-anim="from-top"]');
-        const fromBottom = el.querySelectorAll<HTMLElement>('[data-anim="from-bottom"]');
-
-        const tl = gsap.timeline({
-            defaults: { duration: 0.8, ease: "power3.out" },
-            scrollTrigger: { trigger: el, start: "top 70%", once: true },
-        })
-
-        tl.from(fromTop, { y: -28, opacity: 0, stagger: 0.08 }, 0);
-        tl.from(fromBottom, { y: 28, opacity: 0, stagger: 0.08 }, 0);
-
-        return () => {
-            tl.scrollTrigger?.kill()
-            tl.kill()
-        }
-    }, []);
+    // React.useEffect(() => {
+    //     if (!cardsWrapRef.current) return
+    //     const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches
+    //     if (reduce) return
+    //
+    //     const el = cardsWrapRef.current
+    //     const fromTop    = el.querySelectorAll<HTMLElement>('[data-anim="from-top"]');
+    //     const fromBottom = el.querySelectorAll<HTMLElement>('[data-anim="from-bottom"]');
+    //
+    //     const tl = gsap.timeline({
+    //         defaults: { duration: 0.8, ease: "power3.out" },
+    //         scrollTrigger: { trigger: el, start: "top 70%", once: true },
+    //     })
+    //
+    //     tl.from(fromTop, { y: -28, opacity: 0, stagger: 0.08 }, 0);
+    //     tl.from(fromBottom, { y: 28, opacity: 0, stagger: 0.08 }, 0);
+    //
+    //     return () => {
+    //         tl.scrollTrigger?.kill()
+    //         tl.kill()
+    //     }
+    // }, []);
 
     return (
         <section ref={cardsWrapRef}  className={"bg-[linear-gradient(270deg,_#000C35_37%,_#1F3A93_100%)]"}>

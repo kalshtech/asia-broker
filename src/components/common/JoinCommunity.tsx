@@ -6,14 +6,15 @@ import classnames from "classnames";
 
 type Props = {
     theme?: string;
+    isHavePb?: boolean;
 }
 
 const JoinCommunity = (props: Props) => {
     const t  = useTranslations("Common");
-    const { theme = "dark" } = props;
+    const { theme = "dark", isHavePb = true } = props;
     return (
-        <section className={"bg-theme-light-bg"}>
-            <div className={classnames(["lg:mx-30 lg:mb-30", {
+        <section className={classnames(["bg-theme-light-bg lg:px-30", isHavePb ? "lg:pb-30" : ""])}>
+            <div className={classnames(["", {
                 "bg-theme-deep-bg": theme === "dark",
                 "": theme === "light",
             }])}>

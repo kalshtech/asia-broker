@@ -214,7 +214,7 @@
           "title2": "Built for best execution. Powered by precision.",
           "title3": "0.0 Spreads. No minimum commissions. Maximum control.",
           "description2": "AFT’s intelligent routing and best-execution systems deliver ultra-low latency and institutional-grade depth — minimizing slippage at every step.",
-          "btnText": "Explore Platinum Account] [Learn More Fees",
+          "btnText": "Explore Platinum Account",
           "fromText": "Data sourced from Asia Future Trading Platinum account and publicly available benchmarks from major platforms."
         },
         "right": {
@@ -3313,8 +3313,10 @@
           "col-3": {
             "title": "了解更多",
             "ul": {
-              "li1": "学习文档中心",
-              "desc1": "全面汇聚新手必读资料和实用交易指南，助您持续进阶。"
+              "li1": "CFD新手学院",
+              "desc1": "全面汇聚新手必读资料和实用交易指南，助您持续进阶。",
+              "li2": "CFD新手文档中心",
+              "desc2": "全面汇聚新手必读资料和实用交易指南，助您持续进阶。"
             }
           }
         }

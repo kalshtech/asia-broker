@@ -164,7 +164,7 @@ const Markets = () => {
                 <div className={"flex-1 flex flex-col"}>
                     <div className={"flex justify-center"}>
                         <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
-                            <TabsList className={"h-10"}>
+                            <TabsList className={"h-10 rounded-full"}>
                                 <TabsTrigger
                                     value={"stock"}
                                     className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}

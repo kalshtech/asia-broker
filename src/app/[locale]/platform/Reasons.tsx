@@ -70,13 +70,13 @@ const Reasons = () => {
                     {t("title")}
                 </Typography>
                 <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-10"}
+                    variant={"muted"}
+                    className={"text-center mx-auto mt-8"}
                 >
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16"}>
+            <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16 mx-auto max-w-7xl"}>
                 <div className={"col-span-12 lg:col-span-6"} ref={leftRef}>
                     <div className={""}>
                         <Typography variant={"large"}>

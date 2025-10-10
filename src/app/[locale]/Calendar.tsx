@@ -64,13 +64,13 @@ const CalendarComponent = () => {
                             >
                                 {t("prospect.description")}
                             </Typography>
-                            <div className={"mt-16 flex"}>
-                                <div className={"flex-1 flex justify-center"}>
+                            <div className={"mt-16 "}>
+                                <div className={"flex-1 flex"}>
                                     <Button className={"border rounded-full bg-transparent hover:bg-transparent"}>
                                         { t("buttons.past") }
                                     </Button>
                                 </div>
-                                <div className={"flex-1 flex justify-center"}>
+                                <div className={"flex-1 flex mt-4"}>
                                     <Button className={"bg-white rounded-full hover:bg-white text-black"}>
                                         { t("buttons.download") }
                                     </Button>

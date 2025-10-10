@@ -92,7 +92,7 @@ const DownloadAndRegister = () => {
                                     src="/images/home/auto-MQL5.png"
                                     alt="example-kline"
                                     title={"example-kline"}
-                                    className={"mx-auto mt-6 lg:absolute bottom-0 left-0 right-0"}
+                                    className={"mx-auto mt-6 lg:absolute bottom-0 left-0 right-0 max-w-[373px]"}
                                 />
                             </div>
                         </div>
@@ -117,7 +117,7 @@ const DownloadAndRegister = () => {
                                         src="/images/home/auto-EA.png"
                                         alt="example-kline"
                                         title={"example-kline"}
-                                        className={"mx-auto mt-6 lg:absolute bottom-0 left-0 right-0"}
+                                        className={"mx-auto mt-6 lg:absolute bottom-0 left-0 right-0 max-w-[306px]"}
                                     />
                                 </div>
                             </div>

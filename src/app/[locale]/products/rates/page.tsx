@@ -12,7 +12,7 @@ import Statement from "./Statement";
 import Standard from "./Standard";
 import Profession from "@/components/common/products/Profession";
 import { Link } from "@/i18n/navigation";
-import { MoveRight } from 'lucide-react';
+import { ArrowRight  } from 'lucide-react';
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.rates");
@@ -104,7 +104,7 @@ export default async function Page() {
                             <TableCell className={"py-4"}>
                                 <Link href={"/"} className={"flex items-center text-theme-active"}>
                                     { t("table.details") }
-                                    <MoveRight className={"ml-2"} />
+                                    <ArrowRight className={"ml-2"} />
                                 </Link>
                             </TableCell>
                         </TableRow>

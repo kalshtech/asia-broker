@@ -109,7 +109,7 @@ const Tools = () => {
                 </div>
             </div>
             <div className={"mt-16 lg:mt-28"}>
-                <JoinCommunity theme={"light"} />
+                <JoinCommunity theme={"light"} isHavePb={false} />
             </div>
         </section>
     )
