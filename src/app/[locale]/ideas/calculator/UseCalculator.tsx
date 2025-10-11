@@ -25,7 +25,7 @@ const UseCalculator = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -47,7 +47,7 @@ const UseCalculator = () => {
                             1
                         </div>
                         <Typography
-                            variant={"h3"}
+                            variant={"h4"}
                             className={"font-medium mt-4"}
                         >
                             {t("ul.li1")}
@@ -59,7 +59,7 @@ const UseCalculator = () => {
                             2
                         </div>
                         <Typography
-                            variant={"h3"}
+                            variant={"h4"}
                             className={"font-medium mt-4"}
                         >
                             {t("ul.li2")}
@@ -71,7 +71,7 @@ const UseCalculator = () => {
                            3
                         </div>
                         <Typography
-                            variant={"h3"}
+                            variant={"h4"}
                             className={"font-medium mt-4"}
                         >
                             {t("ul.li3")}

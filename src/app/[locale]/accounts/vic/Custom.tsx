@@ -31,7 +31,7 @@ const Custom = () => {
                     viewport={{once: true, amount: 0.5}}
                 >
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"font-medium !text-white text-center"}
                     >
                         {t("title")}
@@ -57,7 +57,7 @@ const Custom = () => {
                         <div className={"col-span-12 lg:col-span-6"}>
                             <div className={"flex flex-col flex-1"}>
                                 <Typography
-                                    variant={"h3"}
+                                    variant={"h4"}
                                     className={"font-medium !text-white"}
                                 >
                                     {t("row.col2.title")}

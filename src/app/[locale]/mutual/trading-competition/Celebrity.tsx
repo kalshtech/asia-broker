@@ -67,14 +67,14 @@ const Celebrity = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-8 !text-white"}
+                    variant={"muted"}
+                    className={"text-center mx-auto mt-8 !text-white"}
                 >
                     {t("desc")}
                 </Typography>
@@ -109,10 +109,7 @@ const Celebrity = () => {
                                             className={"w-10 h-10 object-cover"}
                                             alt=""
                                         />
-                                        <Typography
-                                            variant={"large"}
-                                            className={"font-medium !text-white ml-2"}
-                                        >
+                                        <Typography className={"font-medium !text-white ml-2"}>
                                             {item.name}
                                         </Typography>
                                         <Button className={"ml-auto bg-black/5 hover:bg-black/10"}>

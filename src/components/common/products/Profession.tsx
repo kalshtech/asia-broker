@@ -41,16 +41,13 @@ const Profession = () => {
                 className={"px-4 lg:px-0"}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
                 </Typography>
 
-                <Typography
-                    variant={"lead"}
-                    className={"text-center mt-6"}
-                >
+                <Typography className={"text-center mt-6"}>
                     {t("desc")}
                 </Typography>
             </motion.div>
@@ -77,18 +74,15 @@ const Profession = () => {
                     <div className={"absolute left-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none"}>
                         <div className={"w-full p-8 h-auto"}>
                             <div className={"flex flex-col"}>
-                                <Typography variant={"h2"} className={"font-medium"}>
+                                <Typography variant={"h3"} className={"font-medium"}>
                                     { activeChildren?.title }
                                 </Typography>
-                                <Typography variant={"p"} className={"font-medium max-w-xl mt-2"}>
+                                <Typography className={"font-medium max-w-xl mt-2"}>
                                     { activeChildren?.desc1 }
                                 </Typography>
                                 {
                                     activeChildren?.desc2 && (
-                                        <Typography
-                                            variant={"p"}
-                                            className={"font-medium max-w-xl mt-2"}
-                                        >
+                                        <Typography className={"font-medium max-w-xl mt-2"}>
                                             { activeChildren?.desc2 }
                                         </Typography>
                                     )

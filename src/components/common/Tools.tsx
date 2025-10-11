@@ -47,7 +47,7 @@ const Tools = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium !text-white text-center"}
                 >
                     { t("title") }

@@ -26,15 +26,12 @@ const SetOut = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
                 </Typography>
-                <Typography
-                    variant={"h5"}
-                    className={"font-medium mt-6 text-center"}
-                >
+                <Typography variant={"muted"} className={"mt-6 text-center"}>
                     {t("desc")}
                 </Typography>
                 <div className={"mt-16 flex justify-center items-center"}>

@@ -42,16 +42,13 @@ const Support = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium !text-white text-center"}
                 >
                     {t("title")}
                 </Typography>
 
-                <Typography
-                    variant={"h5"}
-                    className={"font-medium !text-white text-center mt-6"}
-                >
+                <Typography className={"font-medium !text-white text-center mt-6"}>
                     {t("desc")}
                 </Typography>
             </motion.div>
@@ -61,7 +58,7 @@ const Support = () => {
                     <div className={"flex col-span-12 lg:col-span-4"}>
                         <div>
                             <Typography
-                                variant={"h5"}
+                                variant={"h6"}
                                 className={"!text-white"}
                             >
                                 { t("row.col1.title") }
@@ -71,7 +68,7 @@ const Support = () => {
                                     col1Ary.map((item, index) => (
                                         <li key={index} className={"flex items-center my-4"}>
                                             <span className={"w-[5px] block h-[5px] bg-white rounded-full"}></span>
-                                            <Typography className={"!text-white ml-2"}>
+                                            <Typography variant={"muted"} className={"!text-white ml-2"}>
                                                 { item.label }
                                             </Typography>
                                         </li>
@@ -84,7 +81,7 @@ const Support = () => {
                     <div className={"flex col-span-12 lg:col-span-4"}>
                         <div>
                             <Typography
-                                variant={"h5"}
+                                variant={"h6"}
                                 className={"!text-white"}
                             >
                                 {t("row.col2.title")}
@@ -94,7 +91,7 @@ const Support = () => {
                                     col2Ary.map((item, index) => (
                                         <li key={index} className={"flex items-center my-4"}>
                                             <span className={"w-[5px] block h-[5px] bg-white rounded-full"}></span>
-                                            <Typography className={"!text-white ml-2"}>
+                                            <Typography variant={"muted"} className={"!text-white ml-2"}>
                                                 {item.label}
                                             </Typography>
                                         </li>
@@ -107,7 +104,7 @@ const Support = () => {
                     <div className={"col-span-12 lg:col-span-4"}>
                         <div>
                             <Typography
-                                variant={"h5"}
+                                variant={"h6"}
                                 className={"!text-white"}
                             >
                                 {t("row.col3.title")}
@@ -117,7 +114,7 @@ const Support = () => {
                                     col3Ary.map((item, index) => (
                                         <li key={index} className={"flex items-center my-4"}>
                                             <span className={"w-[5px] block h-[5px] bg-white rounded-full"}></span>
-                                            <Typography className={"!text-white ml-2"}>
+                                            <Typography variant={"muted"} className={"!text-white ml-2"}>
                                                 {item.label}
                                             </Typography>
                                         </li>

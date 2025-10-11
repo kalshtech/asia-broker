@@ -22,27 +22,20 @@ const Introduction = () => {
             <div className={"col-span-12 lg:col-span-6"}>
                 <div className={"bg-theme-active p-4 lg:p-30 h-full"}>
                     <Typography
-                        variant={"h2"}
+                        variant={"h3"}
                         className={"font-medium !text-white"}
                     >
                         {t("col1.title")}
                     </Typography>
 
-                    <Typography
-                        variant={"lead"}
-                        className={"font-medium !text-white mt-8 lg:mt-16"}
-                    >
+                    <Typography className={"font-medium !text-white mt-8 lg:mt-16"}>
                         {t("col1.desc1")}
                     </Typography>
-                    <Typography
-                        variant={"lead"}
-                        className={"font-medium !text-white mt-2"}
-                    >
+                    <Typography className={"font-medium !text-white mt-2"}>
                         {t("col1.desc2")}
                     </Typography>
                     <div className={"mt-8 lg:mt-16"}>
-                        <Button
-                            className={"bg-white text-black px-8 h-10 rounded-full text-theme-active hover:bg-white"}>
+                        <Button className={"bg-white text-black px-8 h-10 rounded-full text-theme-active hover:bg-white"}>
                             {t("col1.view")}
                         </Button>
                     </div>

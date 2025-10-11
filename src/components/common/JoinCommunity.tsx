@@ -22,7 +22,7 @@ const JoinCommunity = (props: Props) => {
                     <img src="/images/boat.png" className={"w-[60px] h-30 absolute left-16 -top-8 hidden lg:block"} alt="boat"
                          title={"boat"}/>
                     <Typography className={classnames(["ml-4 lg:ml-20", {
-                        "text-white": theme === "dark"
+                        "!text-white": theme === "dark"
                     }])}>
                         {t("join-community")}
                     </Typography>

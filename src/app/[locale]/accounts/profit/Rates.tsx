@@ -178,34 +178,23 @@ const Rates = () => {
             <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
                 <div className={"col-span-12 lg:col-span-6"}>
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"font-medium"}
                     >
                         { t("title") }
                     </Typography>
-                    <Typography
-                        variant={"lead"}
-                        className={"mt-4 lg:mt-16"}
-                    >
+                    <Typography className={"mt-4 lg:mt-16"}>
                         { t("desc1") }
                     </Typography>
-                    <Typography
-                        variant={"lead"}
-                        className={"mt-6"}
-                    >
+                    <Typography className={"mt-6"}>
                         { t("desc2") }
                     </Typography>
-                    <Typography
-                        variant={"lead"}
-                        className={"mt-6"}
-                    >
+                    <Typography className={"mt-6"}>
                         { t("desc3") }
                     </Typography>
                 </div>
                 <div className={"col-span-12 lg:col-span-6"}>
-                    <Typography
-                        variant={"large"}
-                    >
+                    <Typography>
                         { t("line-title") }
                     </Typography>
                     <div className={"mt-4 h-80"}>

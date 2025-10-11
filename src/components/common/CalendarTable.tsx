@@ -15,6 +15,7 @@ import {useTranslations} from "next-intl";
 import {params_economic_calendar} from "@/params/api";
 import {http} from "@/utils/http";
 import classnames from "classnames";
+import {Input} from "@/components/ui/input";
 
 type Props = {
     theme?: string;
@@ -487,6 +488,33 @@ const CalendarTable = (props: Props) => {
                         }
                     </TableBody>
                 </Table>
+            </div>
+            <div className={"mx-auto max-w-7xl mt-8 lg:mt-30"}>
+                <div className={"grid grid-cols-12 gap-8"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
+                        <Input placeholder={t("form.first-placeholder")}
+                               className={"text-white rounded-full h-12 border-0 bg-black placeholder:text-white"}/>
+                    </div>
+                    <div className={"col-span-12 lg:col-span-4"}>
+                        <Input placeholder={t("form.last-placeholder")}
+                               className={"text-white rounded-full h-12 border-0 bg-black placeholder:text-white"}/>
+                    </div>
+                    <div className={"col-span-12 lg:col-span-4"}>
+                        <Input placeholder={t("form.country-placeholder")}
+                               className={"text-white rounded-full h-12 border-0 bg-black placeholder:text-white"}/>
+                    </div>
+                </div>
+                <div className={"grid grid-cols-12 gap-8 mt-6"}>
+                    <div className={"col-span-8"}>
+                        <Input placeholder={t("form.email-placeholder")}
+                               className={"text-white rounded-full h-12 border-0 bg-black placeholder:text-white"}/>
+                    </div>
+                    <div className={"col-span-4"}>
+                        <Button className={"flex-1 w-full h-full rounded-full bg-theme-active hover:bg-theme-hover"}>
+                            {t("form.subscribe")}
+                        </Button>
+                    </div>
+                </div>
             </div>
         </div>
     )

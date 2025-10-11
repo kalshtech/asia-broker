@@ -136,10 +136,7 @@
     "home": {
       "swiper": {
         "1": {
-          "title1": "Asia Future Trading",
-          "title2": "Born in Asia.",
-          "title3": "Built for the World.",
-          "title4": "Leading the Future of Multi-Asset Trading.",
+          "title1": "ASIA FUTURE TRADING",
           "description1": "Trusted by traders worldwide. Offering better-than-market trading conditions.",
           "description2": "Licensed by the Australian Securities and Investments Commission (ASIC)."
         },
@@ -210,7 +207,6 @@
       "pricing": {
         "left": {
           "title1": "Institutional-Grade Pricing. Deep Liquidity.",
-          "description1": "Built for best execution. It's in our DNA.",
           "title2": "Built for best execution. Powered by precision.",
           "title3": "0.0 Spreads. No minimum commissions. Maximum control.",
           "description2": "AFT’s intelligent routing and best-execution systems deliver ultra-low latency and institutional-grade depth — minimizing slippage at every step.",
@@ -219,7 +215,6 @@
         },
         "right": {
           "title": "Real-Time Trading Costs. Competitive. Fair. Verified.",
-          "description": "Trade fair. Trade fast. Trade smart.",
           "crypto": "Crypto",
           "commission": "commission",
           "more": "more",
@@ -257,6 +252,7 @@
         "title": "Get Started with MT5",
         "description": "Trade faster, automate smarter, and manage everything in one powerful platform. Powered by Asia Future Trading.",
         "open": "Open Account",
+        "download": "Download MT5",
         "row": {
           "1": {
             "title": "Cross-Platform Access，",
@@ -282,21 +278,20 @@
             "desc1": "Global Support, Human Connection",
             "desc2": "Real people. Real support — in your language.",
             "desc3": "From onboarding to strategy, our local managers are always one message away on Discord, WhatsApp, Telegram, and WeChat.",
-            "desc4": "Bootcamps.",
-            "desc5": "Live trading reviews. Strategy Q&A. Learning hubs. Tech insights."
+            "desc4": "Bootcamps. Live trading reviews. Strategy Q&A. Learning hubs. Tech insights",
+            "link": "Contact Us"
           },
           "2": {
             "title": "SailingBrick™ Community",
-            "description": "Where trading feels modular, intuitive, and never alone. Join a community that supports your first trade and scales with your ambition.",
+            "description1": "Where trading feels modular, intuitive, and never alone.",
+            "description2": "Join a community that supports your first trade and scales with your ambition.",
             "btnText": "Join Our Discord",
             "prompt": "Reach out via the 「Fast Onboarding Channel」 or leave your info — we’ll follow up within 1 hour."
           },
           "3": {
             "desc1": "Challenge. Compete. Elevate.",
-            "desc2": "Challenge Incentive",
-            "desc3": "Level up with trading challenges, live rankings, and real rewards.",
-            "desc4": "Active Rewards",
-            "desc5": "From Bitcoin to Rolex — even a real Ferrari. Every point gets you closer to the top."
+            "desc2": "Level up with trading challenges, live rankings, and real rewards.",
+            "explore": "Explore Competitions"
           }
         }
       },
@@ -350,6 +345,7 @@
       "properly": {
         "title": "Choose the Right Account for Your Edge",
         "description": "Trade with pricing, leverage, and execution tailored to your strategy.",
+        "explore": "Explore Classic Benefits",
         "tabs": {
           "classic": "Classic",
           "platinum": "Platinum",
@@ -461,17 +457,20 @@
       },
       "cooperator": {
         "title": "The Premier Platform for Global Traders & Partners",
+        "desc": "Your edge in trading. Your growth in partnership.",
         "tabs": {
           "trader": "For Strategy Traders",
           "partners": "For Partners & Affiliates"
         },
         "trader": {
           "title": "Maximize Your Returns with the Industry’s Leading Profit Split",
-          "desc": "Unlock high-performance infrastructure, raw pricing, and customized payout schemes. Whether you’re trading independently or managing a following — we reduce your cost so you keep more of your alpha."
+          "desc": "Unlock high-performance infrastructure, raw pricing, and customized payout schemes. Whether you’re trading independently or managing a following — we reduce your cost so you keep more of your alpha.",
+          "btn": "Learn More"
         },
         "partners": {
           "title": "Your All-in-One Partner Portal",
-          "desc": "We built a dedicated portal to support your client management and performance tracking needs. From marketing kits to multi-language creatives, you’ll have every tool to grow your business globally — backed by AFT."
+          "desc": "We built a dedicated portal to support your client management and performance tracking needs. From marketing kits to multi-language creatives, you’ll have every tool to grow your business globally — backed by AFT.",
+          "btn": "Explore Partner Program"
         }
       },
       "reward": {
@@ -509,6 +508,7 @@
         "title": "Trade Smarter. No Account Required. Built for Every Trader.",
         "description": "Access the AFT Highlight calendar, expert insights, and technical analysis — all free, no login required.\nStay in sync with global markets, data events, and trading opportunities.",
         "explore": "Explore Calendar",
+        "subscribe": "Free Subscribe",
         "prospect": {
           "title": "2025 Industry Outlook",
           "description": "Tracks outstanding notional and gross market value of OTC ..."
@@ -523,7 +523,14 @@
           "low": "低-1星",
           "none": "无关紧要-0星"
         },
-        "from": "数据来源于："
+        "from": "数据来源于：",
+        "form": {
+          "first-placeholder": "请输入您的姓",
+          "last-placeholder": "请输入您的名",
+          "country-placeholder": "请输入国家",
+          "email-placeholder": "请输入您的邮箱",
+          "subscribe": "立即免费订阅，交易巡航工具"
+        }
       }
     },
     "products": {

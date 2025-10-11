@@ -26,7 +26,7 @@ const Values = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -45,7 +45,7 @@ const Values = () => {
                     <div className={"col-span-6 h-full"}>
                         <div className={"py-10 px-8 border-r border-b"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium"}
                             >
                                 {t("row.col1.title")}
@@ -61,7 +61,7 @@ const Values = () => {
                     <div className={"col-span-6 h-full"}>
                         <div className={"py-10 px-8 border-b"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium"}
                             >
                                 {t("row.col2.title")}
@@ -77,7 +77,7 @@ const Values = () => {
                     <div className={"col-span-6 h-full"}>
                         <div className={"py-10 px-8 border-r"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium"}
                             >
                                 {t("row.col3.title")}
@@ -93,7 +93,7 @@ const Values = () => {
                     <div className={"col-span-6 h-full"}>
                         <div className={"py-10 px-8"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium"}
                             >
                                 {t("row.col4.title")}

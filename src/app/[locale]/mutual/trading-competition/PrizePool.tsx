@@ -32,14 +32,14 @@ const PrizePool = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-8 !text-white"}
+                    variant={"muted"}
+                    className={"text-center mx-auto mt-8 !text-white"}
                 >
                     {t("desc")}
                 </Typography>
@@ -52,7 +52,7 @@ const PrizePool = () => {
                                 <div className={"rounded-2xl pb-10 flex flex-col items-center justify-center specially-card"}>
                                     <img src={item.imageUrl} className={"w-[140px] h-[140px]"} alt=""/>
                                     <Typography
-                                        variant={"h4"}
+                                        variant={"h5"}
                                         className={"font-medium text-center !text-white"}
                                     >
                                         { item.title }
@@ -60,7 +60,7 @@ const PrizePool = () => {
                                     <div className={"flex justify-center items-end mt-2"}>
                                         <span className={"text-[#8A90A4]"}>{ t("total") }</span>
                                         <Typography
-                                            variant={"h4"}
+                                            variant={"h5"}
                                             className={"font-medium !text-white ml-2"}
                                         >
                                             { item.number }

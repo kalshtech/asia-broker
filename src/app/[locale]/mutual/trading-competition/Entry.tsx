@@ -29,7 +29,7 @@ const AccountProvince = (props: Props) => {
     return (
         <section className={"bg-[#1F2538] py-10 px-6 rounded-2xl"}>
             <Typography
-                variant={"h2"}
+                variant={"h3"}
                 className={"font-medium text-center !text-white"}
             >
                 {title}
@@ -102,7 +102,7 @@ const AccountProvince = (props: Props) => {
 
             <div className={"text-right"}>
                 <Typography
-                    variant={"h3"}
+                    variant={"h4"}
                     className={"font-medium mt-4 !text-white"}
                 >
                     {number}
@@ -129,14 +129,14 @@ const Entry = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-8 !text-white"}
+                    variant={"muted"}
+                    className={"text-center mx-auto mt-8 !text-white"}
                 >
                     {t("desc")}
                 </Typography>

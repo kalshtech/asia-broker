@@ -32,14 +32,14 @@ const Principle = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
-                    variant={"h6"}
-                    className={"font-medium mt-4 lg:mt-10 max-w-3xl mx-auto text-center leading-[24px]"}
+                    variant={"muted"}
+                    className={"mt-6 max-w-3xl mx-auto text-center leading-[24px]"}
                 >
                     {t("desc")}
                 </Typography>
@@ -53,7 +53,7 @@ const Principle = () => {
                                 key={index}
                             >
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={"font-medium"}
                                 >
                                     { item.title }

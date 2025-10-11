@@ -27,23 +27,23 @@ const CalendarComponent = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
 
-                <Typography
-                    variant={"lead"}
-                    className={"text-center !text-white mt-6"}
-                >
+                <Typography className={"text-center max-w-7xl mx-auto !text-white mt-6"}>
                     {t("description")}
                 </Typography>
             </motion.div>
 
             <div className={"mt-10 flex justify-center"}>
-                <Button className={"rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                <Button className={"rounded-full px-8 h-10 bg-theme-active hover:bg-theme-active-hover"}>
                     {t("explore")}
+                </Button>
+                <Button className={"rounded-full ml-4 px-8 h-10 border bg-transparent hover:bg-transparent"}>
+                    {t("subscribe")}
                 </Button>
             </div>
 
@@ -53,7 +53,7 @@ const CalendarComponent = () => {
                         <img src="/images/home/calendar-assets.png" alt=""/>
                         <div className={"flex-1 h-full py-10 px-8 flex flex-col absolute bottom-0  left-0"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"!text-white mt-auto"}
                             >
                                 {t("prospect.title")}
@@ -64,7 +64,7 @@ const CalendarComponent = () => {
                             >
                                 {t("prospect.description")}
                             </Typography>
-                            <div className={"mt-16 "}>
+                            <div className={"mt-16"}>
                                 <div className={"flex-1 flex"}>
                                     <Button className={"border rounded-full bg-transparent hover:bg-transparent"}>
                                         { t("buttons.past") }
@@ -74,6 +74,11 @@ const CalendarComponent = () => {
                                     <Button className={"bg-white rounded-full hover:bg-white text-black"}>
                                         { t("buttons.download") }
                                     </Button>
+                                </div>
+                                <div>
+                                    <Typography variant={"muted"} className={"mt-4 !text-[#979797] roboto"}>
+                                        Free download. No account required.
+                                    </Typography>
                                 </div>
                             </div>
                         </div>

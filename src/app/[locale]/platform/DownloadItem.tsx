@@ -56,14 +56,14 @@ const DownloadItem = (props: Props) => {
                     "order-1": direction === "left",
                     "order-2": direction === "right",
                 }])} ref={leftRef}>
-                    <Typography variant={"h1"}>
+                    <Typography variant={"h3"}>
                         { title }
                     </Typography>
-                    <Typography variant={"h5"} className={"mt-10"}>
+                    <Typography variant={"h6"} className={"font-medium mt-10"}>
                         { desc }
                     </Typography>
                     <div className={"mt-10"}>
-                        <Button className={"px-8 h-10 bg-theme-active hover:bg-theme-active-hover"}>
+                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                             { downloadText }
                         </Button>
                     </div>

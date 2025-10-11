@@ -26,22 +26,19 @@ const Speed = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title1")}
                 </Typography>
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title2")}
                 </Typography>
 
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mt-6 mx-auto max-w-3xl"}
-                >
+                <Typography className={"text-center mt-6 mx-auto max-w-7xl"}>
                     {t("description")}
                 </Typography>
             </motion.div>

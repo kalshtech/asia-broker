@@ -37,13 +37,13 @@ export default function Vision() {
             >
                 <div className={"flex justify-center"}>
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"font-medium text-center !text-white"}
                     >
                         {t("title1")}
                     </Typography>
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"font-medium text-center !text-[#1F8BFF] ml-2"}
                     >
                         {t("title2")}
@@ -51,7 +51,7 @@ export default function Vision() {
                 </div>
                 <Typography
                     variant={"muted"}
-                    className={"font-medium text-center mx-auto mt-6 !text-white"}
+                    className={"text-center mx-auto mt-6 !text-white"}
                 >
                     {t("desc")}
                 </Typography>
@@ -90,7 +90,7 @@ export default function Vision() {
                                         <div className={"col-span-6"}>
                                            <div>
                                                <Typography
-                                                   variant={"h2"}
+                                                   variant={"h3"}
                                                    className={"font-medium !text-white"}
                                                >
                                                    { item.amount }

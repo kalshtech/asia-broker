@@ -11,19 +11,19 @@ const Trust = () => {
             <div className={"grid grid-cols-12 max-w-[1400px] mx-auto"}>
                 <div className={"col-span-12 lg:col-span-10"}>
                     <Typography
-                        variant={"h3"}
+                        variant={"h4"}
                         className={"font-medium"}
                     >
                         {t("title")}
                     </Typography>
                     <Typography
                         variant={"large"}
-                        className={"font-medium max-w-3xl mt-2"}
+                        className={"font-medium max-w-3xl mt-4"}
                     >
                         {t("desc")}
                     </Typography>
                 </div>
-                <div className={"col-span-12 lg:col-span-2 mt-4 lg:mt-0"}>
+                <div className={"col-span-12 lg:col-span-2 mt-6 lg:mt-0"}>
                     <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                         {t("start")}
                     </Button>

@@ -26,21 +26,21 @@ const Route = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title1")}
                 </Typography>
 
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center mt-2"}
                 >
                     {t("title2")}
                 </Typography>
 
                 <Typography
-                    variant={"h3"}
+                    variant={"h4"}
                     className={"text-center mt-10"}
                 >
                     {t("midst")}
@@ -58,7 +58,7 @@ const Route = () => {
                 <div className={"grid grid-cols-1 lg:grid-cols-3"}>
                     <div className={"bg-[url(/images/accounts/route-bg1.png)] bg-center bg-cover py-20 px-10 h-80 relative z-10 lg:-mr-16"}>
                         <Typography
-                            variant={"h3"}
+                            variant={"h4"}
                             className={"!text-white mr-16"}
                         >
                             {t("row.col1.title")}
@@ -72,7 +72,7 @@ const Route = () => {
                     </div>
                     <div className={"bg-[url(/images/accounts/route-bg2.png)] bg-center bg-cover py-20 px-10 h-80 relative z-20 lg:mt-16"}>
                         <Typography
-                            variant={"h3"}
+                            variant={"h4"}
                             className={"!text-white"}
                         >
                             {t("row.col2.title")}
@@ -86,7 +86,7 @@ const Route = () => {
                     </div>
                     <div className={"bg-[url(/images/accounts/route-bg3.png)] bg-center bg-cover py-20 px-10 h-80 relative z-10 lg:-ml-16"}>
                         <Typography
-                            variant={"h3"}
+                            variant={"h4"}
                             className={"!text-white ml-16"}
                         >
                             {t("row.col3.title")}

@@ -26,16 +26,13 @@ const AboutCalendar = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
 
-                <Typography
-                    variant={"lead"}
-                    className={"text-center mx-auto !text-white mt-6 max-w-4xl"}
-                >
+                <Typography variant={"muted"} className={"text-center mx-auto !text-white mt-6 max-w-4xl"}>
                     {t("desc")}
                 </Typography>
             </motion.div>

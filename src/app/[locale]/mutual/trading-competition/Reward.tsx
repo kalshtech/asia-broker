@@ -26,15 +26,12 @@ const Reward = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
-                <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-8 !text-white"}
-                >
+                <Typography className={"font-medium text-center mx-auto mt-8 !text-white"}>
                     {t("desc1")}
                 </Typography>
 

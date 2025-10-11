@@ -11,7 +11,7 @@ export default async function Brief() {
             <div className={"grid grid-cols-12 gap-4 "}>
                 <div className={"col-span-12 lg:col-span-6"}>
                     <div>
-                        <Typography variant={"h3"}>
+                        <Typography variant={"h4"}>
                             {t("row.left.title")}
                         </Typography>
                         <Image
@@ -24,7 +24,7 @@ export default async function Brief() {
                         />
                         <div className={"mt-6 flex"}>
                              <div>
-                                 <Typography variant={"h3"}>
+                                 <Typography variant={"h4"}>
                                      {t("row.left.prospect")}
                                  </Typography>
                                  <Typography
@@ -44,7 +44,7 @@ export default async function Brief() {
                 </div>
                 <div className={"col-span-12 lg:col-span-6"}>
                     <div>
-                        <Typography variant={"h3"}>
+                        <Typography variant={"h4"}>
                             { t("row.right.title") }
                         </Typography>
 

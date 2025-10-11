@@ -26,7 +26,7 @@ export function Typography({ variant, className, children, ...props }: Typograph
         case "h1":
             return (
                 <h1
-                    className={cn("scroll-m-20 font-extrabold tracking-tight text-2xl lg:text-5xl", className)}
+                    className={cn("scroll-m-20 font-extrabold tracking-tight text-4xl lg:text-6xl", className)}
                     {...props}
                 >
                     {children}
@@ -37,7 +37,7 @@ export function Typography({ variant, className, children, ...props }: Typograph
             return (
                 <h2
                     className={cn(
-                        "scroll-m-20 pb-2 font-semibold tracking-tight first:mt-0 text-xl lg:text-3xl",
+                        "scroll-m-20 pb-2 font-semibold tracking-tight first:mt-0 text-2xl lg:text-5xl",
                         className
                     )}
                     {...props}
@@ -48,21 +48,21 @@ export function Typography({ variant, className, children, ...props }: Typograph
 
         case "h3":
             return (
-                <h3 className={cn("scroll-m-20 font-semibold tracking-tight text-lg lg:text-2xl", className)} {...props}>
+                <h3 className={cn("scroll-m-20 font-semibold tracking-tight text-2xl lg:text-[40px]", className)} {...props}>
                     {children}
                 </h3>
             )
 
         case "h4":
             return (
-                <h4 className={cn("scroll-m-20 font-semibold tracking-tight text-base lg:text-xl", className)} {...props}>
+                <h4 className={cn("scroll-m-20 font-semibold tracking-tight text-xl lg:text-2xl", className)} {...props}>
                     {children}
                 </h4>
             )
 
         case "h5":
             return (
-                <h4 className={cn("scroll-m-20 text-lg font-semibold tracking-tight", className)} {...props}>
+                <h4 className={cn("scroll-m-20 font-semibold tracking-tight text-base lg:text-[20px] ", className)} {...props}>
                     {children}
                 </h4>
             )
@@ -138,9 +138,9 @@ export function Typography({ variant, className, children, ...props }: Typograph
 
         default:
             return (
-                <span className={className} {...props}>
+                <p className={cn("text-xl",className)} {...props}>
                   {children}
-                </span>
+                </p>
             )
     }
 }

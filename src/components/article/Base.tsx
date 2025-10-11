@@ -25,7 +25,7 @@ const BaseArticle = (props: Props) => {
                 </div>
                 <div className={"mt-4"}>
                     <Typography
-                        variant={"h4"}
+                        variant={"h5"}
                         className={"font-medium"}
                     >
                         { title }

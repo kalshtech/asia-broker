@@ -26,7 +26,7 @@ const ProfessionalTools = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
@@ -36,7 +36,7 @@ const ProfessionalTools = () => {
                 <div className={"grid grid-cols-12"}>
                     <div className={"col-span-6"}>
                         <div className={"border-r border-b border-[#51586F] py-6 px-4"}>
-                            <Typography variant={"h1"} className={"text-center font-medium !text-white"}>
+                            <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
                                 38+
                             </Typography>
                             <Typography
@@ -49,7 +49,7 @@ const ProfessionalTools = () => {
                     </div>
                     <div className={"col-span-6"}>
                         <div className={"py-6 px-4 border-b border-[#51586F]"}>
-                            <Typography variant={"h1"} className={"text-center font-medium !text-white"}>
+                            <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
                                 38+
                             </Typography>
                             <Typography
@@ -65,7 +65,7 @@ const ProfessionalTools = () => {
                     <div className={"col-span-6"}>
                         <div className={"flex justify-center border-r border-[#51586F] py-6 px-4"}>
                             <div>
-                                <Typography variant={"h1"} className={"text-center font-medium !text-white"}>
+                                <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
                                     44
                                 </Typography>
                                 <Typography
@@ -79,7 +79,7 @@ const ProfessionalTools = () => {
                                 &
                             </div>
                             <div>
-                                <Typography variant={"h1"} className={"text-center font-medium !text-white"}>
+                                <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
                                     44
                                 </Typography>
                                 <Typography
@@ -93,7 +93,7 @@ const ProfessionalTools = () => {
                     </div>
                     <div className={"col-span-6"}>
                         <div className={"py-6 px-4"}>
-                            <Typography variant={"h1"} className={"text-center font-medium !text-white"}>
+                            <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
                                 {t("row.col4-title")}
                             </Typography>
                             <Typography

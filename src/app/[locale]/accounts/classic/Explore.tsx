@@ -37,7 +37,7 @@ const Explore = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium !text-white text-center"}
                 >
                     {t("title")}
@@ -50,7 +50,7 @@ const Explore = () => {
                             <div className={"col-span-12 lg:col-span-7"}>
                                 <div className={"bg-white h-full px-8 py-16"}>
                                     <div>
-                                        <Typography variant={"h3"}>
+                                        <Typography variant={"h4"}>
                                             {t("card1.title")}
                                         </Typography>
                                         <Typography
@@ -64,11 +64,10 @@ const Explore = () => {
                                         {
                                             card1Ary.map((item, index) => (
                                                 <li className={"flex items-center my-8"} key={index}>
-                                                    <span
-                                                        className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
+                                                    <span className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
                                                     <Typography
                                                         variant={"muted"}
-                                                        className={"ml-4 font-medium !text-base"}
+                                                        className={"ml-4 font-medium"}
                                                     >
                                                         {item.label}
                                                     </Typography>
@@ -98,7 +97,7 @@ const Explore = () => {
                             <div className={"col-span-12 lg:col-span-7"}>
                                 <div className={"bg-white h-full px-8 py-16"}>
                                     <div>
-                                        <Typography variant={"h3"}>
+                                        <Typography variant={"h4"}>
                                             {t("card2.title")}
                                         </Typography>
                                         <Typography
@@ -116,7 +115,7 @@ const Explore = () => {
                                                         className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
                                                     <Typography
                                                         variant={"muted"}
-                                                        className={"ml-4 font-medium !text-base"}
+                                                        className={"ml-4 font-medium"}
                                                     >
                                                         {item.label}
                                                     </Typography>

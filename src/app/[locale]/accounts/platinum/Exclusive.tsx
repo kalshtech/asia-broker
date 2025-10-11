@@ -26,7 +26,7 @@ const Exclusive = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -47,14 +47,14 @@ const Exclusive = () => {
                     viewport={{once: true, amount: 0.5}}
                 >
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"font-medium !text-white text-center"}
                     >
                         {t("best.title")}
                     </Typography>
 
                     <Typography
-                        variant={"h5"}
+                        variant={"h6"}
                         className={"font-medium text-center !text-white mx-auto mt-4 lg:mt-10 !max-w-3xl"}
                     >
                         {t("best.joint")}
@@ -62,19 +62,19 @@ const Exclusive = () => {
 
                     <div className={"flex justify-center items-center flex-col lg:flex-row mt-4 lg:mt-10"}>
                         <Typography
-                            variant={"h5"}
+                            variant={"h6"}
                             className={"font-medium text-center !text-white"}
                         >
                             {t("best.desc1")}
                         </Typography>
                         <Typography
-                            variant={"h2"}
+                            variant={"h3"}
                             className={"font-medium text-center !text-white mx-4"}
                         >
                           0.1
                         </Typography>
                         <Typography
-                            variant={"h5"}
+                            variant={"h6"}
                             className={"font-medium text-center !text-white"}
                         >
                             {t("best.desc2")}

@@ -47,7 +47,7 @@ const Stream = (props: Props) => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     { title }
@@ -68,7 +68,7 @@ const Stream = (props: Props) => {
                 <div className={"grid grid-cols-12 gap-8"}>
                     <div className={"col-span-12 lg:col-span-6"}>
                         <Typography
-                            variant={"h3"}
+                            variant={"h4"}
                             className={"font-medium max-w-md"}
                         >
                             { col1.title }

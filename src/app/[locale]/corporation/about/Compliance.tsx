@@ -26,7 +26,7 @@ const Compliance = () => {
                     viewport={{once: true, amount: 0.5}}
                 >
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"font-medium !text-white text-center"}
                     >
                         {t("title")}
@@ -38,7 +38,7 @@ const Compliance = () => {
                             <div className={"px-10 py-6 bg-white/60 rounded-lg mt-auto flex-1"}>
                                 <img src="/images/corporation/about-sgx-logo.png" className={"h-[26px]"} alt=""/>
                                 <Typography
-                                    variant={"h5"}
+                                    variant={"h6"}
                                     className={"font-medium mt-4"}
                                 >
                                     {t("row.col1.title")}
@@ -55,7 +55,7 @@ const Compliance = () => {
                             <div>
                                 <div>
                                     <Typography
-                                        variant={"h5"}
+                                        variant={"h6"}
                                         className={"font-medium !text-white"}
                                     >
                                         {t("row.col2.title1")}
@@ -69,7 +69,7 @@ const Compliance = () => {
                                 </div>
                                 <div className={"mt-4 lg:mt-10"}>
                                     <Typography
-                                        variant={"h5"}
+                                        variant={"h6"}
                                         className={"font-medium !text-white"}
                                     >
                                         {t("row.col2.title2")}

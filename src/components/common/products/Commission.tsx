@@ -22,7 +22,7 @@ export default async function Commission({ title, desc, midst, more, imageUrl, t
                         <div className={"h-full flex flex-1 items-center"}>
                             <div className={"flex-1"}>
                                 <Typography
-                                    variant={"h2"}
+                                    variant={"h3"}
                                     className={classnames([{
                                        '!text-white' : theme === 'light',
                                        '' : theme === 'dark',
@@ -32,7 +32,6 @@ export default async function Commission({ title, desc, midst, more, imageUrl, t
                                 </Typography>
                                 { midst && (
                                     <Typography
-                                        variant={"p"}
                                         className={classnames(["my-4", {
                                             '!text-white' : theme === 'light',
                                             '' : theme === 'dark',
@@ -42,8 +41,7 @@ export default async function Commission({ title, desc, midst, more, imageUrl, t
                                     </Typography>
                                 ) }
                                 <Typography
-                                    variant={"p"}
-                                    className={classnames([{
+                                    className={classnames(["mt-2", {
                                         '!text-white' : theme === 'light',
                                         '' : theme === 'dark',
                                     }])}

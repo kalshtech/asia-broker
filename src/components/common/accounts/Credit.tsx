@@ -32,26 +32,26 @@ const Credit = ({ typeText, className, number }: Props) => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     { t("title1") }
                 </Typography>
                 <div className={"flex justify-center items-center mt-4"}>
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"font-medium text-center"}
                     >
                         { t("title2-1") }
                     </Typography>
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"!text-[64px] text-center mx-4"}
                     >
                         5.6
                     </Typography>
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"font-medium text-center"}
                     >
                         { t("title2-2") }
@@ -60,7 +60,7 @@ const Credit = ({ typeText, className, number }: Props) => {
             </motion.div>
             <div className={"mt-4 lg:mt-16"}>
                 <Typography
-                    variant={"h3"}
+                    variant={"h4"}
                     className={"font-medium text-center"}
                 >
                     { t("midst") }
@@ -76,19 +76,19 @@ const Credit = ({ typeText, className, number }: Props) => {
 
             <div className={"flex justify-center items-end mt-4 lg:mt-16"}>
                 <Typography
-                    variant={"h4"}
+                    variant={"h5"}
                     className={"font-medium text-center"}
                 >
                     { t("transfer") }
                 </Typography>
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"!text-[64px] text-center mx-4"}
                 >
                     { number }
                 </Typography>
                 <Typography
-                    variant={"h4"}
+                    variant={"h5"}
                     className={"font-medium text-center"}
                 >
                     { typeText }

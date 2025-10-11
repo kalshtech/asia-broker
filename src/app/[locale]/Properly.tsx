@@ -7,6 +7,7 @@ import RegisterBtn from "@/components/RegisterBtn";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {CircleChevronLeft, CircleChevronRight} from "lucide-react";
 import SimpleSwiper from "@/components/common/products/SimpleSwiper";
+import {Button} from "@/components/ui/button";
 
 
 const fadeInUp: Variants = {
@@ -36,15 +37,15 @@ const Properly = () => {
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
-                        <Typography>{t("right.swiper2.1.ul.1")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.1.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
-                        <Typography>{t("right.swiper2.1.ul.2")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.1.ul.2")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography> {t("right.swiper2.1.ul.3")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.1.ul.3")}</Typography>
                     </li>
                 </ul>
             )
@@ -56,15 +57,15 @@ const Properly = () => {
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
-                        <Typography>{t("right.swiper2.2.ul.1")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.2.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
-                        <Typography>{t("right.swiper2.2.ul.2")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.2.ul.2")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography> {t("right.swiper2.2.ul.3")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.2.ul.3")}</Typography>
                     </li>
                 </ul>
             )
@@ -76,15 +77,15 @@ const Properly = () => {
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
-                        <Typography>{t("right.swiper2.3.ul.1")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.3.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
-                        <Typography>{t("right.swiper2.3.ul.2")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.3.ul.2")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography> {t("right.swiper2.3.ul.3")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.3.ul.3")}</Typography>
                     </li>
                 </ul>
             )
@@ -96,15 +97,15 @@ const Properly = () => {
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
-                        <Typography>{t("right.swiper2.4.ul.1")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.4.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"} />
-                        <Typography>{t("right.swiper2.4.ul.2")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper2.4.ul.2")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography> {t("right.swiper2.4.ul.3")}</Typography>
+                        <Typography variant={"muted"}> {t("right.swiper2.4.ul.3")}</Typography>
                     </li>
                 </ul>
             )
@@ -119,11 +120,11 @@ const Properly = () => {
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.1.ul.1")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.1.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.1.ul.2")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.1.ul.2")}</Typography>
                     </li>
                 </ul>
             )
@@ -135,11 +136,11 @@ const Properly = () => {
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.2.ul.1")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.2.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.2.ul.2")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.2.ul.2")}</Typography>
                     </li>
                 </ul>
             )
@@ -151,11 +152,11 @@ const Properly = () => {
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
                         <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.3.ul.1")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.3.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.3.ul.2")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.3.ul.2")}</Typography>
                     </li>
                 </ul>
             )
@@ -167,19 +168,19 @@ const Properly = () => {
                 <ul className={"mt-2"}>
                     <li className={"flex items-center"}>
                         <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.4.ul.1")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.4.ul.2")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.2")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.4.ul.3")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.3")}</Typography>
                     </li>
-                    <li className={"flex items-center"}>
+                    <li className={"flex items-center mt-1"}>
                         <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography>{t("right.swiper3.4.ul.4")}</Typography>
+                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.4")}</Typography>
                     </li>
                 </ul>
             )
@@ -199,16 +200,13 @@ const Properly = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     { t("title") }
                 </Typography>
 
-                <Typography
-                    variant={"lead"}
-                    className={"text-center mt-6"}
-                >
+                <Typography className={"text-center mt-6"}>
                     {t("description")}
                 </Typography>
             </motion.div>
@@ -216,18 +214,21 @@ const Properly = () => {
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
                     <div className={"col-span-12 lg:col-span-2"}>
-                        <Typography variant={"h2"} className={"font-medium"}>
+                        <Typography variant={"h4"} className={"font-medium"}>
                             {t(`left.${tabActive}.name`)}
                         </Typography>
-                        <Typography variant={"large"} className={"font-medium mt-2"}>
+                        <Typography className={"font-medium mt-2"}>
                             {t(`left.${tabActive}.title`)}
                         </Typography>
-                        <Typography variant={"p"} className={"mt-2"}>
+                        <Typography className={"mt-2"}>
                             {t(`left.${tabActive}.desc`)}
                         </Typography>
 
                         <div className={"mt-12"}>
                             <RegisterBtn/>
+                            <Button className={"rounded-full mt-4 px-8 h-10 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
+                                { t("explore") }
+                            </Button>
                         </div>
                     </div>
                     <div className={"col-span-12 lg:col-span-10"}>

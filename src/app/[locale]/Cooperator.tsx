@@ -27,10 +27,16 @@ const Cooperator = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
+                </Typography>
+                <Typography
+                    variant={"muted"}
+                    className={"text-center mt-6"}
+                >
+                    {t("desc")}
                 </Typography>
             </motion.div>
             <div className={"mt-16"}>
@@ -38,23 +44,23 @@ const Cooperator = () => {
                     <Tabs defaultValue="trader"
                           onValueChange={(value) => setTabActive(value)}
                     >
-                        <TabsList>
+                        <TabsList className={"h-10 rounded-full"}>
                             <TabsTrigger
                                 value="trader"
-                                className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
+                                className={"px-8 h-10 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
                             >
                                 { t("tabs.trader") }
                             </TabsTrigger>
                             <TabsTrigger
                                 value="partners"
-                                className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
+                                className={"px-8 h-10  data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
                             >
                                 { t("tabs.partners") }
                             </TabsTrigger>
                         </TabsList>
                     </Tabs>
                     <div className={"mt-10 text-center"}>
-                        <Typography variant={"h4"}>
+                        <Typography variant={"h6"}>
                             { t(`${tabActive}.title`) }
                         </Typography>
                         <Typography
@@ -65,7 +71,7 @@ const Cooperator = () => {
                         </Typography>
                     </div>
                     <div className={"mt-16"}>
-                        <RegisterBtn/>
+                        <RegisterBtn text={t(`${tabActive}.btn`)}/>
                     </div>
                 </div>
             </div>

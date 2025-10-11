@@ -127,14 +127,14 @@ export default function Challenge() {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
                     variant={"muted"}
-                    className={"font-medium text-center mx-auto mt-4 !text-white"}
+                    className={"text-center mx-auto mt-4 !text-white"}
                 >
                     {t("desc")}
                 </Typography>
@@ -145,7 +145,7 @@ export default function Challenge() {
                         <div className={"bg-gradient-to-l from-[#1F3A93] to-[#09122D] py-12 px-8 lg:rounded-l-3xl h-full lg:border border-[#4F5670] border-r-0"}>
                             <div className={""}>
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={"font-medium !text-white"}
                                 >
                                     {t("row.col1.title")}
@@ -169,7 +169,7 @@ export default function Challenge() {
                             className={"bg-[#0E1941] py-12 px-8 lg:rounded-r-3xl h-full lg:border border-[#4F5670] border-l-0"}>
                             <div className={""}>
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={"font-medium !text-white"}
                                 >
                                     {t("row.col2.title")}
@@ -192,13 +192,13 @@ export default function Challenge() {
                             </div>
                             <div className={"mt-16"}>
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={"font-medium text-center !text-white"}
                                 >
                                     Price
                                 </Typography>
                                 <Typography
-                                    variant={"h1"}
+                                    variant={"h2"}
                                     className={"font-bold text-center mt-4 !text-[#1F8BFF]"}
                                 >
                                     $198
@@ -226,10 +226,7 @@ export default function Challenge() {
                                     { t("row.col2.desc2") }
                                 </Typography>
 
-                                <Typography
-                                    variant={"large"}
-                                    className={"font-medium !text-white mt-6"}
-                                >
+                                <Typography className={"font-medium !text-white mt-6"}>
                                     { t("row.col2.desc3") }
                                 </Typography>
 

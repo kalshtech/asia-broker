@@ -25,7 +25,7 @@ const VIC = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium !text-white text-center"}
                 >
                     {t("title")}
@@ -35,17 +35,14 @@ const VIC = () => {
                 <div className={"grid grid-cols-12"}>
                     <div className={"h-full col-span-12 lg:col-span-6"}>
                         <div className={"bg-white h-full p-4 lg:py-20 lg:px-16"}>
-                            <Typography
-                                variant={"lead"}
-                                className={"font-medium"}
-                            >
+                            <Typography>
                                 {t("left.desc")}
                             </Typography>
 
                             <div className={"mt-4 lg:mt-16"}>
                                 <div className={"flex items-center"}>
                                     <Typography
-                                        variant={"h3"}
+                                        variant={"h4"}
                                         className={"font-medium"}
                                     >
                                         {t("left.title")}

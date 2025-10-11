@@ -27,14 +27,14 @@ const GlobalPoints = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
 
                 <Typography
-                    variant={"h4"}
+                    variant={"h5"}
                     className={"font-medium text-center mx-auto mt-4 lg:mt-10 !text-white max-w-3xl"}
                 >
                     {t("midst")}

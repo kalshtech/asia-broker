@@ -26,14 +26,14 @@ const JoinUS = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
                     variant={"muted"}
-                    className={"font-medium text-center mt-4"}
+                    className={"text-center mt-4"}
                 >
                     {t("desc")}
                 </Typography>

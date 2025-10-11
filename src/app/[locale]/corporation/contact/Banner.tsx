@@ -49,7 +49,7 @@ const Banner = () => {
             <div className={"bg-theme-active rounded-lg p-4 lg:py-10 lg:px-16 -mt-16 mx-4 lg:mx-30"}>
                 <div className={"flex items-center"}>
                     <Typography
-                        variant={"h4"}
+                        variant={"h5"}
                         className={"font-medium !text-white max-w-2xl "}
                     >
                         {t("tips")}

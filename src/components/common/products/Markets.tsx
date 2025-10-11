@@ -133,7 +133,7 @@ const Markets = (props: Props) => {
                 className={"mt-4 lg:mt-16"}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     { title }
@@ -159,7 +159,7 @@ const Markets = (props: Props) => {
                               className={"flex justify-center items-center"}
                               onValueChange={handleToggleTabActive}
                         >
-                            <TabsList className={"h-10"}>
+                            <TabsList className={"h-10 rounded-full"}>
                                 {
                                     tabList.map((item, index) => (
                                         <TabsTrigger

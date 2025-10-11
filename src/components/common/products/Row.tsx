@@ -28,7 +28,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn }: 
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={classnames(["font-medium text-center", {
                         "!text-white": !isLight
                     }])}
@@ -38,7 +38,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn }: 
                 {
                     title1 && (
                         <Typography
-                            variant={"h1"}
+                            variant={"h3"}
                             className={"font-medium text-center mt-4"}
                         >
                             { title1 }
@@ -56,7 +56,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn }: 
                             }])} key={index}>
                                 <img src={item.imageUrl} className={"w-10 h-10 object-cover"} alt=""/>
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={classnames(["font-medium mt-4", {
                                         "!text-white": !isLight
                                     }])}
@@ -67,7 +67,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn }: 
                                 {
                                     item.midst && (
                                         <Typography
-                                            variant={"h5"}
+                                            variant={"h6"}
                                             className={classnames(["font-medium mt-4", {
                                                 "!text-white": !isLight
                                             }])}

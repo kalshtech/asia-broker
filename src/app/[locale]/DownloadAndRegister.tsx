@@ -2,6 +2,7 @@
 import React from "react";
 import { Typography } from "@/components/ui/typography";
 import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
 import RegisterBtn from "@/components/RegisterBtn";
 
 const DownloadAndRegister = () => {
@@ -12,14 +13,17 @@ const DownloadAndRegister = () => {
                 <div className={"col-span-12 lg:col-span-4"}>
                     <div className={"flex flex-col flex-1 h-full"}>
                         <div className={"flex-1 flex flex-col"}>
-                            <Typography variant={"h2"} className={"!text-[40px]"}>
+                            <Typography variant={"h3"}>
                                 {t("title")}
                             </Typography>
-                            <Typography variant={"p"}>
+                            <Typography className={"mt-10"}>
                                 {t("description")}
                             </Typography>
-                            <div className={"mt-8"}>
+                            <div className={"mt-10 flex"}>
                                 <RegisterBtn text={t("open")} />
+                                <Button className={"rounded-full ml-4 px-8 h-10 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
+                                    { t("download") }
+                                </Button>
                             </div>
                         </div>
                         <div className={"flex flex-1 bg-gradient-to-b from-[#000C35] to-[#1F3A93] mt-4 lg:mt-0"}>

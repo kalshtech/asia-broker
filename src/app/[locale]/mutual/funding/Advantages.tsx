@@ -30,7 +30,7 @@ export default function Advantages() {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
@@ -43,7 +43,7 @@ export default function Advantages() {
                             <div className={"col-span-12 lg:col-span-4"} key={index}>
                                 <img src={item.imageUrl} className={"object-cover"} alt=""/>
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={"font-medium !text-white mt-4"}
                                 >
                                     { item.title }
@@ -51,7 +51,7 @@ export default function Advantages() {
 
                                 <Typography
                                     variant={"muted"}
-                                    className={"font-medium !text-white mt-4"}
+                                    className={"!text-white mt-4"}
                                 >
                                     { item.desc }
                                 </Typography>

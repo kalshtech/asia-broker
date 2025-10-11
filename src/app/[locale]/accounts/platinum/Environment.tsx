@@ -37,13 +37,13 @@ const Environment = () => {
                 <div className={"col-span-12 lg:col-span-6"} ref={rightRef}>
                     <div>
                         <Typography
-                            variant={"h1"}
+                            variant={"h3"}
                             className={"!text-white !text-[40px] font-medium max-w-3xl"}
                         >
                             { t("title") }
                         </Typography>
                         <Typography
-                            variant={"h5"}
+                            variant={"h6"}
                             className={"!text-white font-medium max-w-2xl mt-10"}
                         >
                             { t("desc") }

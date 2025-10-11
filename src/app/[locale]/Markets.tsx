@@ -146,16 +146,13 @@ const Markets = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
                 </Typography>
 
-                <Typography
-                    variant={"muted"}
-                    className={"text-center text-base mt-6"}
-                >
+                <Typography className={"text-center text-base mt-6"}>
                     {t("description")}
                 </Typography>
             </motion.div>
@@ -185,7 +182,7 @@ const Markets = () => {
                             <TableCaption>
                                 <div className={"flex flex-col"}>
                                     <div>
-                                        <Button className={"mt-8 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                        <Button className={"mt-8 px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                                             { t("more") }
                                         </Button>
                                     </div>
@@ -238,7 +235,7 @@ const Markets = () => {
                                                 <TableCell className={rangeCls(item.changePercentage)}>{ item.change }</TableCell>
                                                 {
                                                     tabActive === "stock" && <TableCell>
-                                                        <Typography className={"!text-[#111111]"}>
+                                                        <Typography variant={"muted"} className={"!text-[#111111]"}>
                                                             { convert(item.marketCap) }
                                                         </Typography>
                                                     </TableCell>

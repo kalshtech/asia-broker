@@ -96,14 +96,14 @@ const Slide = () => {
                 </Typography>
 
                 <Typography
-                    variant={"h1"}
+                    variant={"h2"}
                     className={"font-medium text-center mx-auto mt-8 lg:mt-16 !text-white"}
                 >
                     {t("review")}
                 </Typography>
 
                 <Typography
-                    variant={"h2"}
+                    variant={"h3"}
                     className={"font-medium text-center mx-auto mt-8 lg:mt-16 !text-white"}
                 >
                     {t("total")}

@@ -78,7 +78,7 @@ const HeatCharts = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("forex-title")}
@@ -141,7 +141,7 @@ const HeatCharts = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("stock-title")}
@@ -169,7 +169,7 @@ const HeatCharts = () => {
                 className={"mt-4 lg:mt-30"}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("crypto-title")}

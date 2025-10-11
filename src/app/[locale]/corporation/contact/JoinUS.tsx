@@ -25,16 +25,13 @@ const JoinUS = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
                 </Typography>
 
-                <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mt-10"}
-                >
+                <Typography variant={"muted"} className={"text-center mt-6"}>
                     {t("desc")}
                 </Typography>
             </motion.div>
@@ -43,7 +40,7 @@ const JoinUS = () => {
                     <div className={"col-span-12 lg:col-span-4 h-full space-y-8"}>
                         <div className={"bg-[url(/images/corporation/contact-join1.png)] py-10 px-8 h-[334px]"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium !text-white"}
                             >
                                 {t("row.col1.1.title")}
@@ -58,7 +55,7 @@ const JoinUS = () => {
                         </div>
                         <div className={"bg-[url(/images/corporation/contact-join2.png)] py-10 px-8 h-[334px]"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium !text-white"}
                             >
                                 {t("row.col1.2.title")}
@@ -75,7 +72,7 @@ const JoinUS = () => {
                     <div className={"col-span-12 lg:col-span-4 h-full bg-gradient-to-b from-[#000824] to-[#585D6C]"}>
                         <div className={"flex flex-col flex-1 py-8 lg:py-0 h-full px-8 justify-center items-center"}>
                             <Typography
-                                variant={"h3"}
+                                variant={"h4"}
                                 className={"font-medium !text-white"}
                             >
                                 {t("row.col2.title")}
@@ -102,7 +99,7 @@ const JoinUS = () => {
                     <div className={"col-span-12 lg:col-span-4 h-full space-y-8"}>
                         <div className={"bg-[url(/images/corporation/contact-join3.png)] py-10 px-8 h-[334px]"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium !text-white"}
                             >
                                 {t("row.col3.1.title")}
@@ -117,7 +114,7 @@ const JoinUS = () => {
                         </div>
                         <div className={"bg-[url(/images/corporation/contact-join4.png)] py-10 px-8 h-[334px]"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium !text-white"}
                             >
                                 {t("row.col3.2.title")}

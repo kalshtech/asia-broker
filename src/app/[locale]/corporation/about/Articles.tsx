@@ -31,14 +31,14 @@ const Articles = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
-                    className={"font-medium max-w-[1200px] lg:!text-[40px] mx-auto text-center"}
+                    variant={"h3"}
+                    className={"font-medium max-w-7xl lg:!text-[40px] mx-auto text-center"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
                     variant={"muted"}
-                    className={"font-medium mt-6 max-w-[1200px] mx-auto text-center leading-[24px]"}
+                    className={"mt-6 max-w-[1200px] mx-auto text-center leading-[24px]"}
                 >
                     {t("desc")}
                 </Typography>
@@ -51,7 +51,7 @@ const Articles = () => {
                             <div className={"col-span-12 lg:col-span-4"} key={index}>
                                 <div className={classnames([item.imageUrl, "p-12 rounded-lg h-[420px]"])}>
                                     <Typography
-                                        variant={"h4"}
+                                        variant={"h5"}
                                         className={"font-medium !text-white"}
                                     >
                                         { item.title }

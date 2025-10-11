@@ -32,7 +32,7 @@ const SwiperSlideItem = (props: ItemProps) => {
                 <div className={"mt-auto group-hover:hidden"}>
                     <Typography
                         variant={"h6"}
-                        className={"!text-white transition"}
+                        className={"font-medium !text-white transition"}
                     >
                         {props.title}
                     </Typography>
@@ -49,7 +49,7 @@ const SwiperSlideItem = (props: ItemProps) => {
                     <div>
                         <Typography
                             variant={"h6"}
-                            className={"!text-white"}
+                            className={"font-medium !text-white"}
                         >
                             {props.title}
                         </Typography>
@@ -93,7 +93,7 @@ const Advertisement = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -110,7 +110,7 @@ const Advertisement = () => {
                                     <div>
                                         <Typography
                                             variant={"h6"}
-                                            className={"!text-white"}
+                                            className={"font-medium !text-white"}
                                         >
                                             { t("1.title") }
                                         </Typography>
@@ -123,9 +123,9 @@ const Advertisement = () => {
                                             { t("1.description") }
                                         </Typography>
                                     </div>
-                                    <div className={"mt-4"}>
+                                    <div className={"mt-4 lg:mt-8"}>
                                         <Button
-                                            className={"bg-theme-active hover:bg-theme-active-hover cursor-pointer"}>
+                                            className={"bg-theme-active px-8 h-10 rounded-full hover:bg-theme-active-hover cursor-pointer"}>
                                             { t("1.btn") }
                                         </Button>
                                     </div>

@@ -32,7 +32,7 @@ const Global =  () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium !text-white text-center"}
                 >
                     {t("title")}
@@ -44,7 +44,7 @@ const Global =  () => {
                         ulAry.map((item, index) => (
                             <div className={"col-span-12 lg:col-span-3 relative"} key={index}>
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={"font-medium !text-white text-center"}
                                 >
                                     {item.title}

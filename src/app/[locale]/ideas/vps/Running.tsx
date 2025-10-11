@@ -46,7 +46,7 @@ const AutoTrade = () => {
                 <div className={"col-span-12 lg:col-span-6"} >
                     <div className={"flex flex-col"} ref={leftRef}>
                         <Typography
-                            variant={"h1"}
+                            variant={"h3"}
                             className={"font-medium"}
                         >
                             { t("title") }

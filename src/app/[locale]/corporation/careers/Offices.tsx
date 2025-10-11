@@ -98,7 +98,7 @@ const Offices = () => {
                 viewport={{once: true, amount: 0.5}}
             >
             <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}

@@ -48,7 +48,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     { title }
@@ -57,7 +57,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
             <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16"}>
                 <div className={"col-span-12 lg:col-span-2"}>
                     <Typography
-                        variant={"h3"}
+                        variant={"h4"}
                         className={"font-medium"}
                     >
                         { left.title }
@@ -65,7 +65,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                     {
                         left.midst && (
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium mt-2 lg:mt-4"}
                             >
                                 { left.midst }
@@ -95,14 +95,8 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                 </div>
                 <div className={"col-span-12 lg:col-span-10"}>
                     <div className={"w-full"}>
-                        <SimpleSwiper ary={ary} prevEl={`.${prevEl}`} nextEl={`.${nextEl}`} />
+                        <SimpleSwiper ary={ary} prevEl={`${prevEl}`} nextEl={`${nextEl}`} />
                     </div>
-                </div>
-            </div>
-            <div className={"mt-4"}>
-                <div className={"flex justify-end"}>
-                    <CircleChevronLeft className={classnames([prevEl, "mr-2 cursor-pointer"])}/>
-                    <CircleChevronRight className={classnames([nextEl, "ml-2 cursor-pointer"])}/>
                 </div>
             </div>
         </section>

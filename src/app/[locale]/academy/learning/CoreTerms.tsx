@@ -120,7 +120,7 @@ const CoreTerms = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -140,7 +140,7 @@ const CoreTerms = () => {
             <div className={"mt-10"}>
                 <header className={"flex"}>
                     <div className={"cursor-pointer"} onClick={() => handleToggleTabActive("term")}>
-                        <Typography className={classnames([{
+                        <Typography variant={"muted"} className={classnames([{
                             "text-theme-active": tabActive === "term"
                         }])}>
                             {t("btn.term")}
@@ -150,7 +150,7 @@ const CoreTerms = () => {
                         }])}/>
                     </div>
                     <div className={"ml-12 cursor-pointer"} onClick={() => handleToggleTabActive("theme")}>
-                        <Typography className={classnames([{
+                        <Typography variant={"muted"} className={classnames([{
                             "text-theme-active": tabActive === "theme"
                         }])}>
                             {t("btn.theme")}
@@ -208,7 +208,7 @@ const CoreTerms = () => {
                         {activeLetter ? (
                             <div>
                                 <div className="flex items-center gap-3 mb-4">
-                                    <Typography variant={"h2"}>{activeLetter}</Typography>
+                                    <Typography variant={"h3"}>{activeLetter}</Typography>
                                     <Badge variant="secondary">{filtered.length} {t("item")}</Badge>
                                 </div>
                                 {filtered.length === 0 ? (
@@ -240,7 +240,7 @@ const CoreTerms = () => {
                                 {groupedEntries.map(([letter, list]) => (
                                     <div key={letter} className="space-y-4">
                                         <div className="flex items-center gap-3">
-                                            <Typography variant={"h2"}>{letter}</Typography>
+                                            <Typography variant={"h3"}>{letter}</Typography>
                                             <Badge variant="secondary">{list.length} {t("item")}</Badge>
                                         </div>
                                         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

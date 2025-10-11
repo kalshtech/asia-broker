@@ -31,14 +31,14 @@ const Infrastructure =  () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
-                    variant={"h6"}
-                    className={"font-medium mx-auto text-center mt-6 max-w-3xl"}
+                    variant={"muted"}
+                    className={"mx-auto text-center mt-6 max-w-3xl"}
                 >
                     {t("desc")}
                 </Typography>

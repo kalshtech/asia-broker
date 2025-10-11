@@ -30,7 +30,7 @@ const Reasons = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -39,14 +39,14 @@ const Reasons = () => {
             <div className={"grid grid-cols-12 mt-4 lg:mt-16"}>
                 <div className={"bg-theme-deep-bg p-6 lg:p-12 lg:rounded-l-2xl col-span-12 lg:col-span-6"}>
                     <Typography
-                        variant={"h3"}
+                        variant={"h4"}
                         className={"font-medium !text-white"}
                     >
                         {t("row.col1.title")}
                     </Typography>
 
                     <Typography
-                        variant={"h5"}
+                        variant={"h6"}
                         className={"font-medium !text-white mt-10"}
                     >
                         {t("row.col1.desc")}
@@ -68,7 +68,7 @@ const Reasons = () => {
                     </ul>
 
                     <Typography
-                        variant={"h5"}
+                        variant={"h6"}
                         className={"font-medium !text-white mt-10"}
                     >
                         {t("row.col1.prompt")}

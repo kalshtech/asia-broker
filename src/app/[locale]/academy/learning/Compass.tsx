@@ -31,7 +31,7 @@ const Compass = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -49,28 +49,17 @@ const Compass = () => {
                         ary.map((item, index) => (
                             <div className={"col-span-12 lg:col-span-4"} key={index}>
                                 <img src={item.imageUrl} className={"object-cover"} alt="" />
-                                <Typography
-                                    variant={"h4"}
-                                    className={"mt-6"}
-                                >
+                                <Typography variant={"h5"} className={"mt-6"}>
                                     { item.title }
                                 </Typography>
-                                <Typography
-                                    variant={"muted"}
-                                    className={"mt-2"}
-                                >
+                                <Typography variant={"muted"} className={"mt-2"}>
                                     { item.desc }
                                 </Typography>
-                                <Typography
-                                    variant={"h6"}
-                                    className={"mt-6 font-normal"}
-                                >
+                                <Typography variant={"muted"} className={"mt-6 font-normal"}>
                                     { item.prompt }
                                 </Typography>
                                 <div className={"flex items-center mt-6 cursor-pointer"}>
-                                    <Typography
-                                        variant={"muted"}
-                                    >
+                                    <Typography variant={"muted"}>
                                         { t("view") }
                                     </Typography>
                                     <MoveRight className={"ml-4"} />

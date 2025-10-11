@@ -39,7 +39,7 @@ export default function Competition() {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -81,7 +81,7 @@ export default function Competition() {
                                     isActive && (
                                     <div className="flex h-full flex-col">
                                         <Typography
-                                            variant={"h3"}
+                                            variant={"h4"}
                                             className={"text-center mt-4"}
                                         >
                                             {it.title}
@@ -89,10 +89,10 @@ export default function Competition() {
                                         {it.prize && (
                                             <>
                                                 <div className="mt-6 flex-1">
-                                                    <Typography className={"block text-center"}>奖池金额</Typography>
-                                                    <Typography variant={"h3"} className={"text-center mt-4"}>{it.prize}</Typography>
-                                                    <Typography variant={"p"} className={"text-center mt-4"}>周期</Typography>
-                                                    <Typography variant={"h3"} className={"text-center mt-4"}>{it.period}</Typography>
+                                                    <Typography variant={"muted"} className={"block text-center"}>奖池金额</Typography>
+                                                    <Typography variant={"h4"} className={"text-center mt-4"}>{it.prize}</Typography>
+                                                    <Typography variant={"muted"} className={"text-center mt-4"}>周期</Typography>
+                                                    <Typography variant={"h4"} className={"text-center mt-4"}>{it.period}</Typography>
                                                     <div className="mt-8 flex justify-center">
                                                         <Button size="lg">{it.cta ?? "立即参加"}</Button>
                                                     </div>

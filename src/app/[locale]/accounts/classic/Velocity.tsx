@@ -24,7 +24,7 @@ const Velocity = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -40,7 +40,7 @@ const Velocity = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/0"></div>
                         <div className="relative p-8 md:p-12 lg:p-14 text-white">
-                            <Typography variant={"h3"} className={"!text-white"}>
+                            <Typography variant={"h4"} className={"!text-white"}>
                                 {t("card1.title")}
                             </Typography>
                             <Typography variant={"muted"} className={"!text-white mt-2"}>
@@ -60,7 +60,7 @@ const Velocity = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/50 to-black/70"></div>
                         <div className="relative p-8 md:p-12 lg:p-14 text-white">
-                            <Typography variant={"h3"} className={"!text-white"}>
+                            <Typography variant={"h4"} className={"!text-white"}>
                                 {t("card1.title")}
                             </Typography>
                             <Typography variant={"muted"} className={"!text-white mt-2"}>

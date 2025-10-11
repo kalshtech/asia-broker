@@ -33,15 +33,12 @@ const Professional = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
-                <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-8 !text-white"}
-                >
+                <Typography variant={"muted"} className={"text-center mx-auto mt-8 !text-white"}>
                     {t("desc")}
                 </Typography>
                 <div className={"mt-10 flex justify-center"}>
@@ -60,7 +57,7 @@ const Professional = () => {
                             <div className={"flex flex-col items-center justify-center"} key={index}>
                                 <img src={item.imageUrl} className={"w-10 h-10 object-cover"} alt=""/>
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={"font-medium my-6 text-center !text-white"}
                                 >
                                     {item.title}

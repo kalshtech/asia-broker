@@ -81,21 +81,18 @@ const Rank = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
-                <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-8 !text-white"}
-                >
+                <Typography variant={"muted"} className={"font-medium text-center mx-auto mt-8 !text-white"}>
                     {t("desc")}
                 </Typography>
             </motion.div>
             <div className={"mt-4 lg:mt-16 flex justify-center"}>
                 <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
-                    <TabsList className={"bg-[#3B4259] h-10"}>
+                    <TabsList className={"bg-[#3B4259] h-10 rounded-full"}>
                         <TabsTrigger
                             value={"1"}
                             className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}

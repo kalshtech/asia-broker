@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Typography } from "@/components/ui/typography";
 import { Separator } from "@/components/ui/separator";
-import { MoveRight, Globe, AlignJustify, X, ChevronRight } from 'lucide-react';
+import { MoveRight, Globe, AlignJustify, X, ChevronRight, ArrowLeft } from 'lucide-react';
 import { useState, useEffect } from "react";
 
 const { locales } = routing;
@@ -129,6 +129,10 @@ const Navigation = () => {
     const [open, setOpen] = useState(false);
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [langOpen, setLangOpen] = useState(false);
+    const [listOpen, setListOpen] = useState(false);
+
+    const [responsiveList, setResponsiveList] = useState<any>([]);
+
     const localAry = [
         { value: "en", label: "English", country: t("countries.en") },
         { value: "zh-cn", label: "中文简体", country: t("countries.zh-cn") },
@@ -600,7 +604,10 @@ const Navigation = () => {
                 <div className="p-4 space-y-3 text-sm">
                     <ul>
                         {ary[0].children.map((item, index) => (
-                            <li key={index} className={"border-b py-4 flex text-theme-active"}>
+                            <li key={index} className={"border-b py-4 flex text-theme-active"} onClick={() => {
+                                setResponsiveList(item.children);
+                                setListOpen(true);
+                            }}>
                                 <Typography variant={"muted"} className={"!text-theme-active"}>{item.title}</Typography>
                                 <ChevronRight className={"ml-auto"}/>
                             </li>
@@ -641,13 +648,84 @@ const Navigation = () => {
 
                 <div className="p-4 space-y-3 text-sm">
                     <ul>
-                        {ary[0].children.map((item, index) => (
-                            <li key={index} className={"border-b py-4 flex text-theme-active"}>
-                                <Typography variant={"muted"} className={"!text-theme-active"}>{item.title}</Typography>
-                                <ChevronRight className={"ml-auto"}/>
+                        {localAry.filter(d => d.value !== locale).map((item, index) => (
+                            <li key={index}
+                                className={"border-b py-4 flex items-center"}
+                                onClick={() => handleToggleLang({key: item.value})}
+                            >
+                                <img
+                                    src={`/images/countries/${item.value}.png`}
+                                    className={"w-[30px] h-[30px]"}
+                                    alt={item.value}
+                                    title={item.value}
+                                />
+                                <Typography variant={"muted"} className={"ml-2"}>{item.label}</Typography>
                             </li>
                         ))}
                     </ul>
+                </div>
+            </aside>
+
+            {/*列表*/}
+            <aside
+                role="dialog"
+                aria-modal="true"
+                aria-label="drawer"
+                className={[
+                    "fixed right-0 top-0 z-50 h-full w-full",
+                    "bg-white border-l shadow-xl",
+                    "transition-transform duration-300 ease-out will-change-transform",
+                    listOpen ? "translate-x-0" : "translate-x-full",
+                ].join(" ")}
+            >
+                <div className="flex items-center justify-between px-4 py-3 border-b">
+                    <div className={"flex items-center"} onClick={() => setListOpen(false)}>
+                        <ArrowLeft/>
+                        <h2 className="text-base ml-2">
+                            Back
+                        </h2>
+                    </div>
+                    <button
+                        onClick={() => setListOpen(false)}
+                        className="rounded-md p-2 text-slate-600 hover:bg-slate-100"
+                        aria-label="close"
+                    >
+                        <X/>
+                    </button>
+
+                </div>
+
+                <div className="p-4 space-y-3 text-sm">
+                    <div>
+                        {
+                            responsiveList.map((item: any, index: number) => (
+                                <div key={index} className={"my-4"}>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"text-[#4b5563] border-b pb-4"}
+                                    >
+                                        { item.title }
+                                    </Typography>
+                                    <div>
+                                        <ul className={"mt-3"}>
+                                            {
+                                                item.ul.map((uItem:any, uIndex: number) => (
+                                                    <li key={uIndex} className={"py-3"}>
+                                                        <Link
+                                                            href={uItem.path}
+                                                            className={"text-theme-active"}
+                                                        >
+                                                            { uItem.label }
+                                                        </Link>
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
             </aside>
         </div>

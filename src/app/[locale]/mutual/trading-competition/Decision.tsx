@@ -27,20 +27,20 @@ const Decision = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
                     variant={"muted"}
-                    className={"font-medium text-center mx-auto mt-8 !text-white"}
+                    className={"text-center mx-auto mt-8 !text-white"}
                 >
                     {t("desc1")}
                 </Typography>
                 <Typography
                     variant={"muted"}
-                    className={"font-medium text-center mx-auto mt-2 !text-white"}
+                    className={"text-center mx-auto mt-2 !text-white"}
                 >
                     {t("desc2")}
                 </Typography>
@@ -51,7 +51,7 @@ const Decision = () => {
                         <div className={"bg-theme-active h-full py-6 px-8 lg:px-30 lg:py-20"}>
                             <div>
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={"font-medium !text-white"}
                                 >
                                     {t("row.col1.title")}
@@ -78,7 +78,7 @@ const Decision = () => {
                             <div className={"px-8 lg:px-30 pt-20 lg:pt-60 pb-8 lg:pb-20"}>
                                <div>
                                    <Typography
-                                       variant={"h4"}
+                                       variant={"h5"}
                                        className={"font-medium !text-white"}
                                    >
                                        {t("row.col2.title")}

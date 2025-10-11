@@ -26,14 +26,14 @@ const Conquer = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
                     variant={"muted"}
-                    className={"font-medium text-center mx-auto mt-8 !text-white"}
+                    className={"text-center mx-auto mt-8 !text-white"}
                 >
                     {t("desc")}
                 </Typography>

@@ -30,7 +30,7 @@ const Experience = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -44,7 +44,7 @@ const Experience = () => {
                 </Typography>
 
                 <Typography
-                    variant={"h3"}
+                    variant={"h4"}
                     className={"text-center mt-12"}
                 >
                     {t("prospect")}
@@ -57,7 +57,7 @@ const Experience = () => {
                             <div className={"col-span-12 lg:col-span-4"} key={i}>
                                 <div className={`p-6 ${item.imageUrl} h-70 bg-center bg-cover`}>
                                     <Typography
-                                        variant={"h4"}
+                                        variant={"h5"}
                                         className={"mt-30 !text-white"}
                                     >
                                         {item.title}

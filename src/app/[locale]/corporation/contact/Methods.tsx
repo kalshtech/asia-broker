@@ -31,7 +31,7 @@ const Methods = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     {t("title")}
@@ -49,7 +49,7 @@ const Methods = () => {
                                     className={"w-10 h-10 object-cover"}
                                 />
                                 <Typography
-                                    variant={"h4"}
+                                    variant={"h5"}
                                     className={"font-medium my-6"}
                                 >
                                     {item.title}

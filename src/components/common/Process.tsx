@@ -39,7 +39,7 @@ const Process = (props: Props) => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={classnames(["font-medium text-center", {
                         "!text-white": !isLight
                     }])}
@@ -65,7 +65,7 @@ const Process = (props: Props) => {
                                     </header>
                                     <div className={""}>
                                         <Typography
-                                            variant={"h4"}
+                                            variant={"h5"}
                                             className={classnames(["my-6", {
                                                 "!text-white": !isLight
                                             }])}
@@ -73,6 +73,7 @@ const Process = (props: Props) => {
                                             { item.title }
                                         </Typography>
                                         <Typography
+                                            variant={"muted"}
                                             className={classnames([{
                                                 "!text-[#999]": !isLight
                                             }])}
@@ -83,7 +84,7 @@ const Process = (props: Props) => {
                                     {
                                         item.bottom && (
                                             <div className={"mt-16 flex items-center cursor-pointer"}>
-                                                <Typography>
+                                                <Typography variant={"muted"}>
                                                     {item.bottom}
                                                 </Typography>
                                                 <ArrowRight className={"ml-2"}/>

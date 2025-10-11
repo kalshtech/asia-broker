@@ -49,7 +49,7 @@ const Assets = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
@@ -84,14 +84,14 @@ const Assets = () => {
                                 tabActive === "type" && (
                                     <div className={"flex flex-col h-full"}>
                                         <Typography
-                                            variant={"h2"}
+                                            variant={"h4"}
                                             className={"!text-white font-medium"}
                                         >
                                             {t("text.type.title")}
                                         </Typography>
                                         <Typography
                                             variant={"muted"}
-                                            className={"!text-white"}
+                                            className={"!text-white mt-2 roboto"}
                                         >
                                             {t("text.type.description")}
                                         </Typography>
@@ -109,7 +109,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.type.ul-desc1")}
                                                 </Typography>
@@ -127,7 +127,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.type.ul-desc2")}
                                                 </Typography>
@@ -145,7 +145,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.type.ul-desc3")}
                                                 </Typography>
@@ -163,7 +163,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.type.ul-desc4")}
                                                 </Typography>
@@ -185,14 +185,14 @@ const Assets = () => {
                                 tabActive === "safe" && (
                                     <div className={"flex flex-col h-full"}>
                                         <Typography
-                                            variant={"h2"}
+                                            variant={"h4"}
                                             className={"!text-white font-medium"}
                                         >
                                             {t("text.safe.title")}
                                         </Typography>
                                         <Typography
                                             variant={"muted"}
-                                            className={"!text-white"}
+                                            className={"!text-white roboto mt-2"}
                                         >
                                             {t("text.safe.description")}
                                         </Typography>
@@ -210,7 +210,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.safe.ul-desc1")}
                                                 </Typography>
@@ -228,7 +228,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.safe.ul-desc2")}
                                                 </Typography>
@@ -247,7 +247,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.type.ul-desc4")}
                                                 </Typography>
@@ -268,14 +268,14 @@ const Assets = () => {
                                 tabActive === "card" && (
                                     <div className={"flex flex-col h-full"}>
                                         <Typography
-                                            variant={"h2"}
+                                            variant={"h4"}
                                             className={"!text-white font-medium"}
                                         >
                                             {t("text.card.title")}
                                         </Typography>
                                         <Typography
                                             variant={"muted"}
-                                            className={"!text-white"}
+                                            className={"!text-white roboto mt-2"}
                                         >
                                             {t("text.card.description")}
                                         </Typography>
@@ -295,7 +295,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.card.ul-desc1")}
                                                 </Typography>
@@ -314,7 +314,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.card.ul-desc2")}
                                                 </Typography>
@@ -333,7 +333,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.card.ul-desc3")}
                                                 </Typography>
@@ -352,7 +352,7 @@ const Assets = () => {
                                                 </header>
                                                 <Typography
                                                     variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 lg:mt-3"}
+                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                 >
                                                     {t("text.card.ul-desc4")}
                                                 </Typography>

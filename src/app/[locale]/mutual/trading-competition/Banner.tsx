@@ -51,27 +51,22 @@ const Banner = () => {
                     viewport={{once: true, amount: 0.5}}
                 >
                     <Typography
-                        variant={"h2"}
+                        variant={"h3"}
                         className={"font-medium text-center !text-white"}
                     >
                         {t("blueprint.title")}
                     </Typography>
                     <div className={"grid grid-cols-12 gap-8 mt-4"}>
                         <div className={"col-span-4 mt-4"}>
-                            <div
-                                className={"border border-solid [border-image:linear-gradient(270deg,rgba(255,255,255,1),rgba(255,255,255,0))_1_1]"}/>
+                            <div className={"border border-solid [border-image:linear-gradient(270deg,rgba(255,255,255,1),rgba(255,255,255,0))_1_1]"}/>
                         </div>
                         <div className={"col-span-4"}>
-                            <Typography
-                                variant={"large"}
-                                className={"font-medium !text-white"}
-                            >
+                            <Typography className={"font-medium !text-white"}>
                                 {t("blueprint.desc")}
                             </Typography>
                         </div>
                         <div className={"col-span-4 mt-4"}>
-                            <div
-                                className={"border border-solid [border-image:linear-gradient(270deg,rgba(255,255,255,0),rgba(255,255,255,1))_1_1]"}/>
+                            <div className={"border border-solid [border-image:linear-gradient(270deg,rgba(255,255,255,0),rgba(255,255,255,1))_1_1]"}/>
                         </div>
                     </div>
                 </motion.div>

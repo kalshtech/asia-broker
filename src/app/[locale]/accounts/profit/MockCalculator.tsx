@@ -14,21 +14,18 @@ const MockCalculator = () => {
                 <div className={"col-span-12 lg:col-span-6"}>
                     <div>
                         <Typography
-                            variant={"h1"}
+                            variant={"h3"}
                             className={"!text-white font-medium"}
                         >
                             {t("row.col1.title1")}
                         </Typography>
-                        <Typography
-                            variant={"lead"}
-                            className={"!text-white max-w-xl mt-4"}
-                        >
+                        <Typography className={"!text-white max-w-xl mt-4"}>
                             {t("row.col1.desc1")}
                         </Typography>
                     </div>
                     <div className={"mt-20"}>
                         <Typography
-                            variant={"h2"}
+                            variant={"h4"}
                             className={"!text-white font-medium"}
                         >
                             {t("row.col1.title2")}
@@ -43,7 +40,7 @@ const MockCalculator = () => {
                 </div>
                 <div className={"col-span-12 lg:col-span-6"}>
                     <Typography
-                        variant={"h4"}
+                        variant={"h5"}
                         className={"!text-white font-medium"}
                     >
                         {t("row.col2.title")}
@@ -58,13 +55,13 @@ const MockCalculator = () => {
                         </div>
                         <div className={"mt-4 lg:mt-16"}>
                             <Typography
-                                variant={"h5"}
+                                variant={"h6"}
                                 className={"!text-white font-medium"}
                             >
                                 {t("row.col2.tips")}
                             </Typography>
                             <Typography
-                                variant={"h2"}
+                                variant={"h3"}
                                 className={"!text-white font-normal mt-4"}
                             >
                                 USD XXXXX

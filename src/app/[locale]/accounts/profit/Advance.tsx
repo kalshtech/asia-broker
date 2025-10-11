@@ -25,19 +25,16 @@ const Advance = () => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center !text-white"}
                 >
                     {t("title")}
                 </Typography>
-                <Typography
-                    variant={"lead"}
-                    className={"text-center !text-white mt-4 lg:mt-16"}
-                >
+                <Typography className={"text-center !text-white mt-4 lg:mt-16"}>
                     {t("desc1")}
                 </Typography>
                 <Typography
-                    variant={"h3"}
+                    variant={"h4"}
                     className={"font-medium mt-6 text-center !text-white"}
                 >
                     {t("desc2")}
@@ -56,7 +53,7 @@ const Advance = () => {
                     <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"bg-white rounded-xl p-16"}>
                             <Typography
-                                variant={"h3"}
+                                variant={"h4"}
                                 className={"font-medium mt-6 text-center"}
                             >
                                 {t("row.col1.title")}
@@ -80,7 +77,7 @@ const Advance = () => {
                     <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"bg-white rounded-xl p-16"}>
                             <Typography
-                                variant={"h3"}
+                                variant={"h4"}
                                 className={"font-medium mt-6 text-center"}
                             >
                                 {t("row.col2.title")}

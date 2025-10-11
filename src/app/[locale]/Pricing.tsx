@@ -112,32 +112,30 @@ const Pricing = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{once: true, amount: 0.5}}
+                            className={"flex flex-col h-full"}
                         >
-                            <Typography variant={"h1"} className={"font-medium !text-white max-w-3xl"}>
+                            <Typography variant={"h3"} className={"font-medium !text-white max-w-3xl"}>
                                 {t("left.title1")}
                             </Typography>
-                            <Typography variant={"muted"} className={"!text-white text-lg mt-3"}>
-                                {t("left.description1")}
-                            </Typography>
 
-                            <Typography variant={"h3"} className={"font-medium !text-white mt-16"}>
+                            <Typography variant={"h4"} className={"font-medium !text-white mt-6"}>
                                 {t("left.title2")}
                             </Typography>
-                            <Typography variant={"h3"} className={"font-medium !text-white"}>
+                            <Typography variant={"h4"} className={"font-medium !text-white"}>
                                 {t("left.title3")}
                             </Typography>
-                            <Typography variant={"muted"} className={"!text-white text-base mt-5 max-w-[482px]"}>
+                            <Typography className={"!text-white text-base max-w-3xl mt-10"}>
                                 {t("left.description2")}
                             </Typography>
 
-                            <div className={"mt-16"}>
+                            <div className={"mt-10 lg:mt-27"}>
                                 <Button
                                     className={"bg-white text-theme-active rounded-full cursor-pointer hover:bg-white"}>
                                     {t("left.btnText")}
                                 </Button>
                             </div>
 
-                            <Typography variant={"muted"} className={"!text-white mt-20"}>
+                            <Typography variant={"muted"} className={"!text-white mt-12 lg:mt-48"}>
                                 {t("left.fromText")}
                             </Typography>
                         </motion.div>
@@ -145,11 +143,8 @@ const Pricing = () => {
                 </div>
                 <div className={"flex-1 col-span-12 lg:col-span-4"}>
                     <header>
-                        <Typography variant={"h6"} className={"font-medium !text-white"}>
+                        <Typography className={"font-normal !text-white"}>
                             { t("right.title") }
-                        </Typography>
-                        <Typography variant={"muted"} className={"!text-white"}>
-                            { t("right.description") }
                         </Typography>
                     </header>
                     <section className={"mt-10 h-[calc(100%-84px)]"}>

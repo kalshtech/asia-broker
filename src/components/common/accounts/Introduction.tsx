@@ -41,7 +41,7 @@ const Introduction = (props: Props) => {
                 viewport={{once: true, amount: 0.5}}
             >
                 <Typography
-                    variant={"h1"}
+                    variant={"h3"}
                     className={"font-medium text-center"}
                 >
                     { title }
@@ -61,14 +61,14 @@ const Introduction = (props: Props) => {
                 <div className={"col-span-12 lg:col-span-3"}>
                     <div className={""}>
                         <div>
-                            <Typography variant={"h4"}>
+                            <Typography variant={"h5"}>
                                 { leftTitle }
                             </Typography>
                             {
                                 leftDesc && (
                                     <Typography
                                         variant={"muted"}
-                                        className={"mt-3"}
+                                        className={"mt-4"}
                                     >
                                         {leftDesc}
                                     </Typography>
@@ -80,7 +80,7 @@ const Introduction = (props: Props) => {
                                 liAry.map((item, index) => (
                                     <li key={index} className={"my-6 flex items-center"}>
                                         <div className={"w-[5px] h-[5px] rounded-full bg-theme-active"}></div>
-                                        <Typography className={"ml-3 font-medium"}>
+                                        <Typography variant={"muted"} className={"ml-3 font-medium"}>
                                             { item.label }
                                         </Typography>
                                     </li>
@@ -98,10 +98,10 @@ const Introduction = (props: Props) => {
                                 alt="icon"
                                 title={"icon"}
                             />
-                            <Typography variant={"h4"} className={"mt-16"}>
+                            <Typography variant={"h5"} className={"mt-16"}>
                                 { rightCol1Title }
                             </Typography>
-                            <Typography className={"block mt-4"}>
+                            <Typography variant={"muted"} className={"block mt-4"}>
                                 { rightCol1Desc }
                             </Typography>
                         </div>
@@ -114,10 +114,10 @@ const Introduction = (props: Props) => {
                                         alt="icon"
                                         title={"icon"}
                                     />
-                                    <Typography variant={"h4"} className={"mt-6"}>
+                                    <Typography variant={"h5"} className={"mt-6"}>
                                         { item.title }
                                     </Typography>
-                                    <Typography className={"block mt-4"}>
+                                    <Typography variant={"muted"} className={"block mt-4"}>
                                         { item.desc }
                                     </Typography>
                                 </div>
