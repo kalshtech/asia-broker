@@ -1,7 +1,7 @@
 {
   "Common": {
     "register": "立即开户",
-    "trade": "开始交易",
+    "startTrade": "开始交易",
     "usStock": "美股",
     "forex": "外汇",
     "code": "商品代码",
@@ -542,6 +542,7 @@
         },
         "markets": {
           "title": "搜索交易品种 + 热门交易对",
+          "desc": "Explore major, minor, and exotic Forex pairs with real-time pricing and competitive spreads.",
           "btn": {
             "main": "主要货币兑",
             "second": "次要货币兑",
