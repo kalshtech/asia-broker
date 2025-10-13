@@ -5,6 +5,7 @@ import {motion, Variants} from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import classnames from "classnames";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -42,335 +43,342 @@ const Assets = () => {
 
     return (
         <section className={"bg-theme-deep-bg p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-10 lg:mt-20 lg:px-50"}>
-                <div className={"grid grid-cols-12 gap-4"}>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <img src={renderImageSrc()} className={"max-w-[320px] mx-auto lg:mx-0"} alt=""/>
-                        <div className={"mt-6"}>
-                            {
-                                BtnAry.map((item, index) => (
-                                    <Button
-                                        key={index}
-                                        className={classnames([
-                                            "bg-transparent border border-white rounded-full mr-4 last:mr-0",
-                                            {
-                                                "bg-white hover:!bg-white text-black" : tabActive === item.value
-                                            }
-                                        ])}
-                                        onClick={() => handleBtnToggle(item.value)}
-                                    >
-                                        { item.label }
-                                    </Button>
-                                ))
-                            }
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center !text-white"}
+                    >
+                        {t("title")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-10 lg:mt-20 lg:px-50"}>
+                    <div className={"grid grid-cols-12 gap-4"}>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <img src={renderImageSrc()} className={"max-w-[320px] mx-auto lg:mx-0"} alt=""/>
+                            <div className={"mt-6"}>
+                                {
+                                    BtnAry.map((item, index) => (
+                                        <Button
+                                            key={index}
+                                            className={classnames([
+                                                "bg-transparent border border-white rounded-full mr-4 last:mr-0",
+                                                {
+                                                    "bg-white hover:!bg-white text-black": tabActive === item.value
+                                                }
+                                            ])}
+                                            onClick={() => handleBtnToggle(item.value)}
+                                        >
+                                            {item.label}
+                                        </Button>
+                                    ))
+                                }
+                            </div>
                         </div>
-                    </div>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={"flex flex-col h-full"}>
-                            {
-                                tabActive === "type" && (
-                                    <div className={"flex flex-col h-full"}>
-                                        <Typography
-                                            variant={"h4"}
-                                            className={"!text-white font-medium"}
-                                        >
-                                            {t("text.type.title")}
-                                        </Typography>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"!text-white mt-2 roboto"}
-                                        >
-                                            {t("text.type.description")}
-                                        </Typography>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <div className={"flex flex-col h-full"}>
+                                {
+                                    tabActive === "type" && (
+                                        <div className={"flex flex-col h-full"}>
+                                            <Typography
+                                                variant={"h4"}
+                                                className={"!text-white font-medium"}
+                                            >
+                                                {t("text.type.title")}
+                                            </Typography>
+                                            <Typography
+                                                variant={"muted"}
+                                                className={"!text-white mt-2 roboto"}
+                                            >
+                                                {t("text.type.description")}
+                                            </Typography>
 
-                                        <ul className={"mt-3 lg:mt-6"}>
-                                            <li>
-                                                <header className={"flex items-center"}>
-                                                    <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                            <ul className={"mt-3 lg:mt-6"}>
+                                                <li>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.type.ul-title1")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.type.ul-title1")}
+                                                        {t("text.type.ul-desc1")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.type.ul-desc1")}
-                                                </Typography>
-                                            </li>
+                                                </li>
 
-                                            <li className={"mt-3 lg:mt-6"}>
-                                                <header className={"flex items-center"}>
-                                                    <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                <li className={"mt-3 lg:mt-6"}>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.type.ul-title2")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.type.ul-title2")}
+                                                        {t("text.type.ul-desc2")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.type.ul-desc2")}
-                                                </Typography>
-                                            </li>
+                                                </li>
 
-                                            <li className={"mt-3 lg:mt-6"}>
-                                                <header className={"flex items-center"}>
-                                                    <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                <li className={"mt-3 lg:mt-6"}>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.type.ul-title3")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.type.ul-title3")}
+                                                        {t("text.type.ul-desc3")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.type.ul-desc3")}
-                                                </Typography>
-                                            </li>
+                                                </li>
 
-                                            <li className={"mt-3 lg:mt-6"}>
-                                                <header className={"flex items-center"}>
-                                                    <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                <li className={"mt-3 lg:mt-6"}>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.type.ul-title4")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.type.ul-title4")}
+                                                        {t("text.type.ul-desc4")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.type.ul-desc4")}
-                                                </Typography>
-                                            </li>
-                                        </ul>
+                                                </li>
+                                            </ul>
 
-                                        <div className={"mt-4"}>
-                                            <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
-                                                {t("text.type.more")}
-                                            </Button>
+                                            <div className={"mt-4"}>
+                                                <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
+                                                    {t("text.type.more")}
+                                                </Button>
+                                            </div>
                                         </div>
-                                    </div>
-                                )
-                            }
+                                    )
+                                }
 
 
+                                {
+                                    tabActive === "safe" && (
+                                        <div className={"flex flex-col h-full"}>
+                                            <Typography
+                                                variant={"h4"}
+                                                className={"!text-white font-medium"}
+                                            >
+                                                {t("text.safe.title")}
+                                            </Typography>
+                                            <Typography
+                                                variant={"muted"}
+                                                className={"!text-white roboto mt-2"}
+                                            >
+                                                {t("text.safe.description")}
+                                            </Typography>
 
-                            {
-                                tabActive === "safe" && (
-                                    <div className={"flex flex-col h-full"}>
-                                        <Typography
-                                            variant={"h4"}
-                                            className={"!text-white font-medium"}
-                                        >
-                                            {t("text.safe.title")}
-                                        </Typography>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"!text-white roboto mt-2"}
-                                        >
-                                            {t("text.safe.description")}
-                                        </Typography>
-
-                                        <ul className={"mt-3 lg:mt-6"}>
-                                            <li>
-                                                <header className={"flex items-center"}>
-                                                    <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                            <ul className={"mt-3 lg:mt-6"}>
+                                                <li>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.safe.ul-title1")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.safe.ul-title1")}
+                                                        {t("text.safe.ul-desc1")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.safe.ul-desc1")}
-                                                </Typography>
-                                            </li>
+                                                </li>
 
-                                            <li className={"mt-3 lg:mt-6"}>
-                                                <header className={"flex items-center"}>
-                                                    <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                <li className={"mt-3 lg:mt-6"}>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.safe.ul-title2")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.safe.ul-title2")}
+                                                        {t("text.safe.ul-desc2")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.safe.ul-desc2")}
-                                                </Typography>
-                                            </li>
+                                                </li>
 
-                                            <li className={"mt-3 lg:mt-6"}>
-                                                <header className={"flex items-center"}>
-                                                    <div
-                                                        className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                <li className={"mt-3 lg:mt-6"}>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.safe.ul-title3")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.safe.ul-title3")}
+                                                        {t("text.type.ul-desc4")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.type.ul-desc4")}
-                                                </Typography>
-                                            </li>
-                                        </ul>
+                                                </li>
+                                            </ul>
 
-                                        <div className={"mt-4 lg:mt-6"}>
-                                            <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
-                                                {t("text.type.more")}
-                                            </Button>
+                                            <div className={"mt-4 lg:mt-6"}>
+                                                <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
+                                                    {t("text.type.more")}
+                                                </Button>
+                                            </div>
                                         </div>
-                                    </div>
-                                )
-                            }
+                                    )
+                                }
 
 
-                            {
-                                tabActive === "card" && (
-                                    <div className={"flex flex-col h-full"}>
-                                        <Typography
-                                            variant={"h4"}
-                                            className={"!text-white font-medium"}
-                                        >
-                                            {t("text.card.title")}
-                                        </Typography>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"!text-white roboto mt-2"}
-                                        >
-                                            {t("text.card.description")}
-                                        </Typography>
+                                {
+                                    tabActive === "card" && (
+                                        <div className={"flex flex-col h-full"}>
+                                            <Typography
+                                                variant={"h4"}
+                                                className={"!text-white font-medium"}
+                                            >
+                                                {t("text.card.title")}
+                                            </Typography>
+                                            <Typography
+                                                variant={"muted"}
+                                                className={"!text-white roboto mt-2"}
+                                            >
+                                                {t("text.card.description")}
+                                            </Typography>
 
 
-                                        <ul className={"mt-3 lg:mt-6"}>
-                                            <li>
-                                                <header className={"flex items-center"}>
-                                                    <div
-                                                        className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                            <ul className={"mt-3 lg:mt-6"}>
+                                                <li>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.card.ul-title1")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.card.ul-title1")}
+                                                        {t("text.card.ul-desc1")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.card.ul-desc1")}
-                                                </Typography>
-                                            </li>
+                                                </li>
 
-                                            <li className={"mt-3 lg:mt-6"}>
-                                                <header className={"flex items-center"}>
-                                                    <div
-                                                        className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                <li className={"mt-3 lg:mt-6"}>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.card.ul-title1")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.card.ul-title1")}
+                                                        {t("text.card.ul-desc2")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.card.ul-desc2")}
-                                                </Typography>
-                                            </li>
+                                                </li>
 
-                                            <li className={"mt-3 lg:mt-6"}>
-                                                <header className={"flex items-center"}>
-                                                    <div
-                                                        className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                <li className={"mt-3 lg:mt-6"}>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.card.ul-title2")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.card.ul-title2")}
+                                                        {t("text.card.ul-desc3")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.card.ul-desc3")}
-                                                </Typography>
-                                            </li>
+                                                </li>
 
-                                            <li className={"mt-3 lg:mt-6"}>
-                                                <header className={"flex items-center"}>
-                                                    <div
-                                                        className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                <li className={"mt-3 lg:mt-6"}>
+                                                    <header className={"flex items-center"}>
+                                                        <div
+                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <Typography
+                                                            variant={"h6"}
+                                                            className={"!text-white font-medium"}
+                                                        >
+                                                            {t("text.card.ul-title3")}
+                                                        </Typography>
+                                                    </header>
                                                     <Typography
-                                                        variant={"h6"}
-                                                        className={"!text-white font-medium"}
+                                                        variant={"muted"}
+                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.card.ul-title3")}
+                                                        {t("text.card.ul-desc4")}
                                                     </Typography>
-                                                </header>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                >
-                                                    {t("text.card.ul-desc4")}
-                                                </Typography>
-                                            </li>
-                                        </ul>
+                                                </li>
+                                            </ul>
 
-                                        <div className={"mt-6"}>
-                                            <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
-                                                {t("text.card.more")}
-                                            </Button>
+                                            <div className={"mt-6"}>
+                                                <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
+                                                    {t("text.card.more")}
+                                                </Button>
+                                            </div>
                                         </div>
-                                    </div>
-                                )
-                            }
+                                    )
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

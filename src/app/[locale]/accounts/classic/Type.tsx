@@ -10,7 +10,8 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
+import Container from "@/components/Container";
 
 const Type = () => {
     const t = useTranslations("Pages.accounts.classic.type");
@@ -45,99 +46,102 @@ const Type = () => {
     ];
     return (
         <section className={"bg-[url(/images/accounts/account-type-background.png)] bg-cover bg-center px-4 py-4 lg:mt-24 lg:px-30 lg:py-16"}>
-            <div>
-                <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={""}>
-                            <header className={"bg-[#373F62] py-6 px-8"}>
-                                <Typography variant={"h5"} className={"!text-white"}>
-                                    { t("card1.title") }
-                                </Typography>
-                                <Typography variant={"muted"} className={"!text-white mt-2"}>
-                                    { t("card1.desc") }
-                                </Typography>
-                            </header>
-                            <ul>
-                                {
-                                    card1Ary.map((d, i) => (
-                                        <li key={i} className={"py-4 px-8 flex odd:bg-white even:bg-theme-light-bg items-center"}>
-                                            <Typography variant={"h6"} className={"w-24"}>
-                                                { d.title }
-                                            </Typography>
-                                            <Typography variant={"muted"}>
-                                                { d.desc }
-                                            </Typography>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
+            <Container>
+                <div>
+                    <div className={"grid grid-cols-12 gap-8"}>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <div className={""}>
+                                <header className={"bg-[#373F62] py-6 px-8"}>
+                                    <Typography variant={"h5"} className={"!text-white"}>
+                                        {t("card1.title")}
+                                    </Typography>
+                                    <Typography variant={"muted"} className={"!text-white mt-2"}>
+                                        {t("card1.desc")}
+                                    </Typography>
+                                </header>
+                                <ul>
+                                    {
+                                        card1Ary.map((d, i) => (
+                                            <li key={i}
+                                                className={"py-4 px-8 flex odd:bg-white even:bg-theme-light-bg items-center"}>
+                                                <Typography variant={"h6"} className={"w-24"}>
+                                                    {d.title}
+                                                </Typography>
+                                                <Typography variant={"muted"}>
+                                                    {d.desc}
+                                                </Typography>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <div className={""}>
+                                <header className={"bg-[#373F62] py-6 px-8"}>
+                                    <Typography variant={"h5"} className={"!text-white"}>
+                                        {t("card1.title")}
+                                    </Typography>
+                                    <Typography variant={"muted"} className={"!text-white mt-2"}>
+                                        {t("card1.desc")}
+                                    </Typography>
+                                </header>
+                                <ul>
+                                    {
+                                        card2Ary.map((d, i) => (
+                                            <li key={i}
+                                                className={"py-4 px-8 flex odd:bg-white even:bg-theme-light-bg items-center"}>
+                                                <Typography variant={"h6"} className={"w-24"}>
+                                                    {d.title}
+                                                </Typography>
+                                                <Typography variant={"muted"}>
+                                                    {d.desc}
+                                                </Typography>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={""}>
-                            <header className={"bg-[#373F62] py-6 px-8"}>
-                                <Typography variant={"h5"} className={"!text-white"}>
-                                    {t("card1.title")}
-                                </Typography>
-                                <Typography variant={"muted"} className={"!text-white mt-2"}>
-                                    {t("card1.desc")}
-                                </Typography>
-                            </header>
-                            <ul>
+
+                    <div className={"mt-4 lg:mt-16"}>
+                        <Table className={"bg-white"}>
+                            <TableHeader className={"bg-[#373F62]"}>
+                                <TableRow className="hover:bg-transparent">
+                                    <TableHead className={"w-1/3 !py-8 text-center text-white"}>
+                                        {t("table.row.head1")}
+                                    </TableHead>
+                                    <TableHead className={"w-1/3 !py-8 text-center text-white"}>
+                                        {t("table.row.head2")}
+                                    </TableHead>
+                                    <TableHead className={"w-1/3 !py-8 text-center text-white"}>
+                                        {t("table.row.head3")}
+                                    </TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
                                 {
-                                    card2Ary.map((d, i) => (
-                                        <li key={i}
-                                            className={"py-4 px-8 flex odd:bg-white even:bg-theme-light-bg items-center"}>
-                                            <Typography variant={"h6"} className={"w-24"}>
-                                                {d.title}
-                                            </Typography>
-                                            <Typography variant={"muted"}>
-                                                {d.desc}
-                                            </Typography>
-                                        </li>
+                                    colsAry.map((item, index) => (
+                                        <TableRow key={index}>
+                                            <TableCell className={"text-center py-5"}>
+                                                {item.one}
+                                            </TableCell>
+                                            <TableCell className={"text-center py-5"}>
+                                                {item.two}
+                                            </TableCell>
+                                            <TableCell className={"text-center py-5"}>
+                                                {item.three}
+                                            </TableCell>
+                                        </TableRow>
                                     ))
+
                                 }
-                            </ul>
-                        </div>
+                            </TableBody>
+                        </Table>
                     </div>
                 </div>
-
-                <div className={"mt-4 lg:mt-16"}>
-                    <Table className={"bg-white"}>
-                        <TableHeader className={"bg-[#373F62]"}>
-                            <TableRow className="hover:bg-transparent">
-                                <TableHead className={"w-1/3 !py-8 text-center text-white"}>
-                                    { t("table.row.head1") }
-                                </TableHead>
-                                <TableHead className={"w-1/3 !py-8 text-center text-white"}>
-                                    { t("table.row.head2") }
-                                </TableHead>
-                                <TableHead className={"w-1/3 !py-8 text-center text-white"}>
-                                    { t("table.row.head3") }
-                                </TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            {
-                                colsAry.map((item, index) => (
-                                    <TableRow key={index}>
-                                        <TableCell className={"text-center py-5"}>
-                                            { item.one }
-                                        </TableCell>
-                                        <TableCell className={"text-center py-5"}>
-                                            { item.two }
-                                        </TableCell>
-                                        <TableCell className={"text-center py-5"}>
-                                            { item.three }
-                                        </TableCell>
-                                    </TableRow>
-                                ))
-
-                            }
-                        </TableBody>
-                    </Table>
-                </div>
-            </div>
+            </Container>
         </section>
     )
 }

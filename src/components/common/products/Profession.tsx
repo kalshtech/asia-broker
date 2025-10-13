@@ -5,6 +5,7 @@ import {motion, Variants} from "framer-motion";
 import { useTranslations } from "next-intl";
 import classnames from "classnames";
 import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -33,74 +34,79 @@ const Profession = () => {
 
     return (
         <section className={"py-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-                className={"px-4 lg:px-0"}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    className={"px-4 lg:px-0"}
                 >
-                    {t("title")}
-                </Typography>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
 
-                <Typography className={"text-center mt-6"}>
-                    {t("desc")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-4 lg:mx-30 lg:mt-16"}>
-                <div className={"w-full relative h-[560px]"}>
-                    <div className={"w-full grid grid-cols-12 h-full border border-[#E6E6E6] relative"}>
-                        {
-                            cols.map((item, index) => (
-                                <div key={index}
-                                     className={classnames(["col-span-2 h-full cursor-pointer border-r border-[#E6E6E6] relative hover:backdrop-blur-[10px] hover:bg-[rgba(0,86,255,.05)] hover:after:top-0 hover:after:left-0 hover:after:w-full hover:after:absolute hover:after:h-1 hover:after:bg-theme-active", {
-                                        "bg-[rgba(0,86,255,.05)] backdrop-blur-[10px] after:top-0 after:left-0 after:w-full after:absolute after:h-1 after:bg-theme-active": tabActive === item.value
-                                     }])}
-                                     onClick={() => setTabActive(item.value)}
-                                >
-                                    <header className={"py-8 flex justify-center"}>
-                                        <Typography className={"text-theme-active font-medium"}>
-                                            { item.label }
-                                        </Typography>
-                                    </header>
+                    <Typography className={"text-center mt-6"}>
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-4 lg:mt-16"}>
+                    <div className={"w-full relative h-[560px]"}>
+                        <div className={"w-full grid grid-cols-12 h-full border border-[#E6E6E6] relative"}>
+                            {
+                                cols.map((item, index) => (
+                                    <div key={index}
+                                         className={classnames(["col-span-2 h-full cursor-pointer border-r border-[#E6E6E6] relative hover:backdrop-blur-[10px] hover:bg-[rgba(0,86,255,.05)] hover:after:top-0 hover:after:left-0 hover:after:w-full hover:after:absolute hover:after:h-1 hover:after:bg-theme-active", {
+                                             "bg-[rgba(0,86,255,.05)] backdrop-blur-[10px] after:top-0 after:left-0 after:w-full after:absolute after:h-1 after:bg-theme-active": tabActive === item.value
+                                         }])}
+                                         onClick={() => setTabActive(item.value)}
+                                    >
+                                        <header className={"py-8 flex justify-center"}>
+                                            <Typography className={"text-theme-active font-medium"}>
+                                                {item.label}
+                                            </Typography>
+                                        </header>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                        <div
+                            className={"absolute left-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none"}>
+                            <div className={"w-full p-8 h-auto"}>
+                                <div className={"flex flex-col"}>
+                                    <Typography variant={"h3"} className={"font-medium"}>
+                                        {activeChildren?.title}
+                                    </Typography>
+                                    <Typography className={"font-medium max-w-xl mt-2"}>
+                                        {activeChildren?.desc1}
+                                    </Typography>
+                                    {
+                                        activeChildren?.desc2 && (
+                                            <Typography className={"font-medium max-w-xl mt-2"}>
+                                                {activeChildren?.desc2}
+                                            </Typography>
+                                        )
+                                    }
+
+                                    <div className={"mt-10"}>
+                                        <Button
+                                            className={"rounded-full h-12 px-8 bg-theme-active hover:bg-theme-active-hover"}>
+                                            {activeChildren?.btnText}
+                                        </Button>
+                                    </div>
                                 </div>
-                            ))
-                        }
-                    </div>
-                    <div className={"absolute left-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none"}>
-                        <div className={"w-full p-8 h-auto"}>
-                            <div className={"flex flex-col"}>
-                                <Typography variant={"h3"} className={"font-medium"}>
-                                    { activeChildren?.title }
-                                </Typography>
-                                <Typography className={"font-medium max-w-xl mt-2"}>
-                                    { activeChildren?.desc1 }
-                                </Typography>
-                                {
-                                    activeChildren?.desc2 && (
-                                        <Typography className={"font-medium max-w-xl mt-2"}>
-                                            { activeChildren?.desc2 }
-                                        </Typography>
-                                    )
-                                }
-
-                               <div className={"mt-10"}>
-                                   <Button className={"rounded-full h-12 px-8 bg-theme-active hover:bg-theme-active-hover"}>
-                                       { activeChildren?.btnText }
-                                   </Button>
-                               </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={"absolute right-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none -z-10"}>
-                        <img src={activeImageUrl} className={"h-120 mt-20"} alt=""/>
+                        <div
+                            className={"absolute right-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none -z-10"}>
+                            <img src={activeImageUrl} className={"h-120 mt-20"} alt=""/>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

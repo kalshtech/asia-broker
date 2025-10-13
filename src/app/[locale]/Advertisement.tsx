@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { motion, Variants } from "framer-motion";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 import { Navigation } from "swiper/modules";
+import Container from "@/components/Container";
 
 type ItemProps = {
     ImageNumber: string | number;
@@ -88,91 +89,95 @@ const Advertisement = () => {
 
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                </motion.div>
 
-            <div className={"mt-4 lg:mt-16"}>
-                <div className={"grid grid-cols-10 gap-4 lg:gap-9"}>
-                    <div className={"col-span-5 lg:col-span-2"}>
-                        <div className={`bg-[url('/images/home/advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
-                            <div className={"flex flex-col h-full cursor-pointer relative px-3 py-8 lg:px-6 lg:py-16"}>
+                <div className={"mt-4 lg:mt-16"}>
+                    <div className={"grid grid-cols-12 gap-4 lg:gap-9"}>
+                        <div className={"col-span-5 lg:col-span-3"}>
+                            <div
+                                className={`bg-[url('/images/home/advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
                                 <div
-                                    className={"bg-[rgba(0,0,0,0.42)] justify-center rounded-lg flex flex-col w-full h-full top-0 left-0 transition absolute px-2 lg:px-6 py-8 lg:py-16"}>
-                                    <div>
-                                        <Typography
-                                            variant={"h6"}
-                                            className={"font-medium !text-white"}
-                                        >
-                                            { t("1.title") }
-                                        </Typography>
-                                    </div>
-                                    <div className={"mt-4"}>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"!text-white"}
-                                        >
-                                            { t("1.description") }
-                                        </Typography>
-                                    </div>
-                                    <div className={"mt-4 lg:mt-8"}>
-                                        <Button
-                                            className={"bg-theme-active px-8 h-10 rounded-full hover:bg-theme-active-hover cursor-pointer"}>
-                                            { t("1.btn") }
-                                        </Button>
+                                    className={"flex flex-col h-full cursor-pointer relative px-3 py-8 lg:px-6 lg:py-16"}>
+                                    <div
+                                        className={"bg-[rgba(0,0,0,0.42)] justify-center rounded-lg flex flex-col w-full h-full top-0 left-0 transition absolute px-2 lg:px-6 py-8 lg:py-16"}>
+                                        <div>
+                                            <Typography
+                                                variant={"h6"}
+                                                className={"font-medium !text-white"}
+                                            >
+                                                {t("1.title")}
+                                            </Typography>
+                                        </div>
+                                        <div className={"mt-4"}>
+                                            <Typography
+                                                variant={"muted"}
+                                                className={"!text-white"}
+                                            >
+                                                {t("1.description")}
+                                            </Typography>
+                                        </div>
+                                        <div className={"mt-4 lg:mt-8"}>
+                                            <Button
+                                                className={"bg-theme-active px-8 h-10 rounded-full hover:bg-theme-active-hover cursor-pointer"}>
+                                                {t("1.btn")}
+                                            </Button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div className={"col-span-5 lg:col-span-9"}>
+                            <Swiper
+                                slidesPerView={3.5}
+                                spaceBetween={36}
+                                loop={true}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                navigation={{
+                                    prevEl: ".advertisement-custom-prev",
+                                    nextEl: ".advertisement-custom-next",
+                                }}
+                                modules={[Navigation]}
+                                breakpoints={{
+                                    320: {slidesPerView: 1.1, spaceBetween: 16,},
+                                    600: {slidesPerView: 1.1, spaceBetween: 24,},
+                                    900: {slidesPerView: 3.2, spaceBetween: 36,},
+                                    1200: {slidesPerView: 3.2, spaceBetween: 36,},
+                                }}
+                                className="mySwiper"
+                            >
+                                {
+                                    ary.map((item, index) => (
+                                        <SwiperSlide key={index}>
+                                            <SwiperSlideItem {...item} />
+                                        </SwiperSlide>
+                                    ))
+                                }
+                            </Swiper>
+                        </div>
                     </div>
-                    <div className={"col-span-5 lg:col-span-8"}>
-                        <Swiper
-                            slidesPerView={3.5}
-                            spaceBetween={36}
-                            loop={true}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            navigation={{
-                                prevEl: ".advertisement-custom-prev",
-                                nextEl: ".advertisement-custom-next",
-                            }}
-                            modules={[Navigation]}
-                            breakpoints={{
-                                320: {slidesPerView: 1.1, spaceBetween: 16,},
-                                600: {slidesPerView: 1.1, spaceBetween: 24,},
-                                900: {slidesPerView: 3.5, spaceBetween: 36,},
-                                1200: {slidesPerView: 4.5, spaceBetween: 36,},
-                            }}
-                            className="mySwiper"
-                        >
-                            {
-                                ary.map((item, index) => (
-                                    <SwiperSlide key={index}>
-                                        <SwiperSlideItem {...item} />
-                                    </SwiperSlide>
-                                ))
-                            }
-                        </Swiper>
+                    <div className={"mt-4"}>
+                        <div className={"flex justify-end"}>
+                            <CircleChevronLeft className={"advertisement-custom-prev mr-2 cursor-pointer"}/>
+                            <CircleChevronRight className={"advertisement-custom-next ml-2 cursor-pointer"}/>
+                        </div>
                     </div>
                 </div>
-                <div className={"mt-4"}>
-                    <div className={"flex justify-end"}>
-                        <CircleChevronLeft className={"advertisement-custom-prev mr-2 cursor-pointer"} />
-                        <CircleChevronRight className={"advertisement-custom-next ml-2 cursor-pointer"} />
-                    </div>
-                </div>
-            </div>
+            </Container>
         </section>
     )
 }

@@ -28,7 +28,7 @@ const Standard = () => {
             >
                 <Typography
                     variant={"h1"}
-                    className={"font-medium text-center"}
+                    className={"text-center"}
                 >
                     {t("title")}
                 </Typography>

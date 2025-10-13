@@ -3,7 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -17,95 +17,96 @@ const fadeInUp: Variants = {
 const ProfessionalTools = () => {
     const t = useTranslations("Pages.platform.professionalTools");
     return (
-        <section
-            className={"bg-[url(/images/platform/professional-tools-background.png)] bg-cover bg-center h-96 lg:h-[532px] p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center !text-white"}
+        <section className={"bg-[url(/images/platform/professional-tools-background.png)] bg-cover bg-center h-96 lg:h-[532px] p-4 lg:p-30"}>
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16"}>
-                <div className={"grid grid-cols-12"}>
-                    <div className={"col-span-6"}>
-                        <div className={"border-r border-b border-[#51586F] py-6 px-4"}>
-                            <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
-                                38+
-                            </Typography>
-                            <Typography
-                                variant={"muted"}
-                                className={"text-center !text-white mt-4"}
-                            >
-                                {t("row.col1-desc")}
-                            </Typography>
-                        </div>
-                    </div>
-                    <div className={"col-span-6"}>
-                        <div className={"py-6 px-4 border-b border-[#51586F]"}>
-                            <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
-                                38+
-                            </Typography>
-                            <Typography
-                                variant={"muted"}
-                                className={"text-center !text-white mt-4"}
-                            >
-                                {t("row.col2-desc")}
-                            </Typography>
-                        </div>
-                    </div>
-                </div>
-                <div className={"grid grid-cols-12"}>
-                    <div className={"col-span-6"}>
-                        <div className={"flex justify-center border-r border-[#51586F] py-6 px-4"}>
-                            <div>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center !text-white"}
+                    >
+                        {t("title")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-16"}>
+                    <div className={"grid grid-cols-12"}>
+                        <div className={"col-span-6"}>
+                            <div className={"border-r border-b border-[#51586F] py-6 px-4"}>
                                 <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
-                                    44
+                                    38+
                                 </Typography>
                                 <Typography
                                     variant={"muted"}
                                     className={"text-center !text-white mt-4"}
                                 >
-                                    {t("row.col3-desc1")}
+                                    {t("row.col1-desc")}
                                 </Typography>
                             </div>
-                            <div className={"text-white mt-4 mx-4"}>
-                                &
-                            </div>
-                            <div>
+                        </div>
+                        <div className={"col-span-6"}>
+                            <div className={"py-6 px-4 border-b border-[#51586F]"}>
                                 <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
-                                    44
+                                    38+
                                 </Typography>
                                 <Typography
                                     variant={"muted"}
                                     className={"text-center !text-white mt-4"}
                                 >
-                                    {t("row.col3-desc2")}
+                                    {t("row.col2-desc")}
                                 </Typography>
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-6"}>
-                        <div className={"py-6 px-4"}>
-                            <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
-                                {t("row.col4-title")}
-                            </Typography>
-                            <Typography
-                                variant={"muted"}
-                                className={"text-center !text-white mt-4"}
-                            >
-                                {t("row.col4-desc")}
-                            </Typography>
+                    <div className={"grid grid-cols-12"}>
+                        <div className={"col-span-6"}>
+                            <div className={"flex justify-center border-r border-[#51586F] py-6 px-4"}>
+                                <div>
+                                    <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
+                                        44
+                                    </Typography>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"text-center !text-white mt-4"}
+                                    >
+                                        {t("row.col3-desc1")}
+                                    </Typography>
+                                </div>
+                                <div className={"text-white mt-4 mx-4"}>
+                                    &
+                                </div>
+                                <div>
+                                    <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
+                                        44
+                                    </Typography>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"text-center !text-white mt-4"}
+                                    >
+                                        {t("row.col3-desc2")}
+                                    </Typography>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={"col-span-6"}>
+                            <div className={"py-6 px-4"}>
+                                <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
+                                    {t("row.col4-title")}
+                                </Typography>
+                                <Typography
+                                    variant={"muted"}
+                                    className={"text-center !text-white mt-4"}
+                                >
+                                    {t("row.col4-desc")}
+                                </Typography>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

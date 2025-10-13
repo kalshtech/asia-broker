@@ -2,6 +2,7 @@
 import React from "react";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination, Autoplay} from 'swiper/modules';
+import Container from "@/components/Container";
 import {useTranslations, useLocale} from "next-intl";
 import {Typography} from "@/components/ui/typography";
 import RegisterBtn from "@/components/RegisterBtn";
@@ -33,75 +34,73 @@ const HomeSwiper = () => {
                             <div className={"flex flex-1 px-4 lg:px-30 h-full"}>
                                 {
                                     isEn ? (
-                                        <div className={"flex-1 flex justify-center flex-col"}>
-                                            <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"font-medium max-w-3xl ibm-plex-sans !text-theme-active"}
-                                                >
-                                                    {t("1.title1")}
-                                                </Typography>
+                                        <Container>
+                                            <div className={"flex-1 flex justify-center flex-col"}>
+                                                <div>
+                                                    <Typography
+                                                        variant={"h1"}
+                                                        className={"max-w-3xl ibm-plex-sans !text-theme-active"}
+                                                    >
+                                                        {t("1.title1")}
+                                                    </Typography>
+                                                </div>
+                                                <div className={"mt-8"}>
+                                                    <Typography className={"!text-[#666666]"}>
+                                                        {t("1.description1")}
+                                                    </Typography>
+                                                    <Typography className={"mt-4 !text-[#666666]"}>
+                                                        {t("1.description2")}
+                                                    </Typography>
+                                                </div>
+                                                <div className={"mt-16 lg:mt-40"}>
+                                                    <RegisterBtn/>
+                                                </div>
                                             </div>
-                                            <div className={"mt-8"}>
-                                                <Typography className={"!text-[#666666]"}>
-                                                    {t("1.description1")}
-                                                </Typography>
-                                                <Typography className={"mt-4 !text-[#666666]"}>
-                                                    {t("1.description2")}
-                                                </Typography>
-                                            </div>
-                                            <div className={"mt-16 lg:mt-40"}>
-                                                <RegisterBtn/>
-                                            </div>
-                                        </div>
+                                        </Container>
                                     ) : (
-                                        <div className={"flex-1 flex justify-center flex-col"}>
-                                            <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"font-medium"}
-                                                >
-                                                    {t("1.title1")}
-                                                </Typography>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"font-medium"}
-                                                >
-                                                    {t("1.title2")}
-                                                </Typography>
+                                        <Container>
+                                            <div className={"flex-1 flex justify-center flex-col"}>
+                                                <div>
+                                                    <Typography variant={"h1"}>
+                                                        {t("1.title1")}
+                                                    </Typography>
+                                                    <Typography variant={"h1"}>
+                                                        {t("1.title2")}
+                                                    </Typography>
+                                                </div>
+                                                <div className={"mt-8"}>
+                                                    <Typography
+                                                        variant={"h3"}
+                                                        className={"font-medium"}
+                                                    >
+                                                        {t("1.title3")}
+                                                    </Typography>
+                                                    <Typography
+                                                        variant={"h3"}
+                                                        className={"font-medium"}
+                                                    >
+                                                        {t("1.title4")}
+                                                    </Typography>
+                                                </div>
+                                                <div className={"mt-8"}>
+                                                    <Typography
+                                                        variant={"muted"}
+                                                        className={"font-medium"}
+                                                    >
+                                                        {t("1.description1")}
+                                                    </Typography>
+                                                    <Typography
+                                                        variant={"muted"}
+                                                        className={"font-medium"}
+                                                    >
+                                                        {t("1.description2")}
+                                                    </Typography>
+                                                </div>
+                                                <div className={"mt-8"}>
+                                                    <RegisterBtn/>
+                                                </div>
                                             </div>
-                                            <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-medium"}
-                                                >
-                                                    {t("1.title3")}
-                                                </Typography>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-medium"}
-                                                >
-                                                    {t("1.title4")}
-                                                </Typography>
-                                            </div>
-                                            <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"font-medium"}
-                                                >
-                                                    {t("1.description1")}
-                                                </Typography>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"font-medium"}
-                                                >
-                                                    {t("1.description2")}
-                                                </Typography>
-                                            </div>
-                                            <div className={"mt-8"}>
-                                                <RegisterBtn/>
-                                            </div>
-                                        </div>
+                                        </Container>
                                     )
                                 }
                             </div>
@@ -116,7 +115,7 @@ const HomeSwiper = () => {
                                             <div>
                                                 <Typography
                                                     variant={"h1"}
-                                                    className={"font-medium max-w-3xl !text-theme-active ibm-plex-sans"}
+                                                    className={"max-w-3xl !text-theme-active ibm-plex-sans"}
                                                 >
                                                     {t("2.title1")}
                                                 </Typography>
@@ -143,10 +142,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h1"}>
                                                     {t("2.title1")}
                                                 </Typography>
                                             </div>
@@ -176,7 +172,7 @@ const HomeSwiper = () => {
                                             <div>
                                                 <Typography
                                                     variant={"h1"}
-                                                    className={"font-medium max-w-4xl ibm-plex-sans !text-theme-active"}
+                                                    className={"max-w-4xl ibm-plex-sans !text-theme-active"}
                                                 >
                                                     {t("3.title1")}
                                                 </Typography>
@@ -202,10 +198,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h1"}>
                                                     {t("3.title1")}
                                                 </Typography>
                                             </div>
@@ -235,7 +228,7 @@ const HomeSwiper = () => {
                                             <div>
                                                 <Typography
                                                     variant={"h1"}
-                                                    className={"font-medium max-w-3xl ibm-plex-sans !text-theme-active"}
+                                                    className={"max-w-3xl ibm-plex-sans !text-theme-active"}
                                                 >
                                                     {t("4.title1")}
                                                 </Typography>
@@ -260,10 +253,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h1"}>
                                                     {t("4.title1")}
                                                 </Typography>
                                             </div>
@@ -293,7 +283,7 @@ const HomeSwiper = () => {
                                             <div>
                                                 <Typography
                                                     variant={"h1"}
-                                                    className={"font-medium max-w-4xl ibm-plex-sans !text-theme-active"}
+                                                    className={"max-w-4xl ibm-plex-sans !text-theme-active"}
                                                 >
                                                     {t("5.title1")}
                                                 </Typography>
@@ -320,10 +310,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h1"}>
                                                     {t("5.title1")}
                                                 </Typography>
                                             </div>
@@ -353,7 +340,7 @@ const HomeSwiper = () => {
                                             <div>
                                                 <Typography
                                                     variant={"h1"}
-                                                    className={"font-medium max-w-4xl ibm-plex-sans !text-theme-active"}
+                                                    className={"max-w-4xl ibm-plex-sans !text-theme-active"}
                                                 >
                                                     {t("6.title1")}
                                                 </Typography>
@@ -378,10 +365,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h1"}>
                                                     {t("6.title1")}
                                                 </Typography>
                                             </div>
@@ -411,7 +395,7 @@ const HomeSwiper = () => {
                                             <div>
                                                 <Typography
                                                     variant={"h1"}
-                                                    className={"font-medium max-w-4xl ibm-plex-sans !text-theme-active"}
+                                                    className={"max-w-4xl ibm-plex-sans !text-theme-active"}
                                                 >
                                                     {t("7.title1")}
                                                 </Typography>
@@ -438,10 +422,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"font-medium "}
-                                                >
+                                                <Typography variant={"h1"}>
                                                     {t("7.title1")}
                                                 </Typography>
                                             </div>

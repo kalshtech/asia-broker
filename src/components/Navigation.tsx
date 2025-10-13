@@ -17,6 +17,7 @@ import { Typography } from "@/components/ui/typography";
 import { Separator } from "@/components/ui/separator";
 import { MoveRight, Globe, AlignJustify, X, ChevronRight, ArrowLeft } from 'lucide-react';
 import { useState, useEffect } from "react";
+import Container from "@/components/Container";
 
 const { locales } = routing;
 
@@ -419,16 +420,18 @@ const Navigation = () => {
     ]
 
     const RenderNavigationLogo = () => {
-        switch (locale) {
-            case "ja":
-                return "/images/logo/jr/logo.png";
-            case "zh-tw":
-                return "/images/logo/zh-hant/logo.png";
-            case "zh-cn":
-                return "/images/logo/zh-hans/logo.png";
-            default:
-                return "/images/logo/en/logo.png";
-        }
+        // switch (locale) {
+        //     case "ja":
+        //         return "/images/logo/jr/logo.png";
+        //     case "zh-tw":
+        //         return "/images/logo/zh-hant/logo.png";
+        //     case "zh-cn":
+        //         return "/images/logo/zh-hans/logo.png";
+        //     default:
+        //         return "/images/logo/en/logo.png";
+        // }
+
+        return "/images/logo/en/logo.png";
     }
 
     const getLangText = (lang: string = "en") => {
@@ -473,94 +476,98 @@ const Navigation = () => {
 
     return (
         <div id={"navigation"} className={"h-[64px] flex z-1000 fixed bg-white w-full px-4 lg:px-8 xl:lg:px-30"}>
-            <NavigationMenu viewport={false}>
-                <Link href={`/`} className={"cursor-pointer"}>
-                    <Image src={RenderNavigationLogo()}
-                           alt={"logo"}
-                           className={"w-auto h-auto"}
-                           width={128}
-                           height={40}
-                           priority={true}
-                    />
-                </Link>
-                <NavigationMenuList className={"ml-8 hidden lg:flex"}>
-                    {
-                        ary.map((item, index) => (
-                            <PackageMenuItem ary={item.children} key={index}/>
-                        ))
-                    }
-                </NavigationMenuList>
-            </NavigationMenu>
-            <div className={"ml-auto flex items-center"}>
-                <div className={"items-center flex"}>
-                    <NavigationMenu viewport={false} className={"hidden lg:flex"}>
-                        <NavigationMenuList>
-                            <NavigationMenuItem value={"local"}>
-                                <NavigationMenuTrigger
-                                    onClick={(e) => {
-                                        e.preventDefault()
-                                        setOpen((prev) => !prev)
-                                    }}
-                                    className={"flex justify-center items-center hover:!bg-transparent data-[state=open]:!bg-transparent hover:!text-theme-active data-[state=open]:!text-theme-active"}>
-                                    <div className={"flex items-center"}>
-                                        <Globe/>
-                                        <Typography variant={"p"} className={"ml-1"}>
-                                            {getLangText(locale)}
-                                        </Typography>
-                                    </div>
-                                </NavigationMenuTrigger>
-                                {
-                                    open && (
-                                        <NavigationMenuContent
-                                            className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}>
-                                            <div>
-                                                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-8 cursor-pointer">
-                                                    {
-                                                        localAry.map((item, index) => (
-                                                            <li className="flex items-start gap-4"
-                                                                key={index}
-                                                                onClick={() => handleToggleLang({key: item.value})}
-                                                            >
-                                                                <div
-                                                                    className="h-[30px] w-[30px] overflow-hidden grid place-items-center">
-                                                                    <img src={`/images/countries/${item.value}.png`}
-                                                                         alt={item.value} title={item.value}/>
-                                                                </div>
-                                                                <div className="leading-[18px] flex flex-col">
-                                                                    <Typography>
-                                                                        {item.label}
-                                                                    </Typography>
-                                                                    <Typography
-                                                                        variant={"muted"}
-                                                                        className={"mt-1"}
-                                                                    >
-                                                                        {item.country}
-                                                                    </Typography>
-                                                                </div>
-                                                            </li>
-                                                        ))
-                                                    }
-                                                </ul>
-                                            </div>
-                                        </NavigationMenuContent>
-                                    )
-                                }
-                            </NavigationMenuItem>
-                        </NavigationMenuList>
-                    </NavigationMenu>
-                    <Button className={"mr-4 px-6 ml-4 lg:px-8 rounded-full bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
-                        登录
-                    </Button>
-                    <Button className={"bg-theme-active rounded-full cursor-pointer hover:bg-theme-active-hover"}>
-                        开设账户
-                    </Button>
-                    {
-                        !drawerOpen ?
-                            <AlignJustify className={"block lg:hidden ml-4"} onClick={() => setDrawerOpen(true)}/>
-                            : <X className={"block lg:hidden ml-4"} onClick={() => setDrawerOpen(false)}/>
-                    }
+            <Container orientation={"horizontal"}>
+                <NavigationMenu viewport={false}>
+                    <Link href={`/`} className={"cursor-pointer"}>
+                        <Image src={RenderNavigationLogo()}
+                               alt={"logo"}
+                               className={"w-auto h-auto"}
+                               width={128}
+                               height={40}
+                               priority={true}
+                        />
+                    </Link>
+                    <NavigationMenuList className={"ml-8 hidden lg:flex"}>
+                        {
+                            ary.map((item, index) => (
+                                <PackageMenuItem ary={item.children} key={index}/>
+                            ))
+                        }
+                    </NavigationMenuList>
+                </NavigationMenu>
+
+                <div className={"ml-auto flex items-center"}>
+                    <div className={"items-center flex"}>
+                        <NavigationMenu viewport={false} className={"hidden lg:flex"}>
+                            <NavigationMenuList>
+                                <NavigationMenuItem value={"local"}>
+                                    <NavigationMenuTrigger
+                                        onClick={(e) => {
+                                            e.preventDefault()
+                                            setOpen((prev) => !prev)
+                                        }}
+                                        className={"flex justify-center items-center hover:!bg-transparent data-[state=open]:!bg-transparent hover:!text-theme-active data-[state=open]:!text-theme-active"}>
+                                        <div className={"flex items-center"}>
+                                            <Globe/>
+                                            <Typography variant={"p"} className={"ml-1"}>
+                                                {getLangText(locale)}
+                                            </Typography>
+                                        </div>
+                                    </NavigationMenuTrigger>
+                                    {
+                                        open && (
+                                            <NavigationMenuContent
+                                                className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}>
+                                                <div>
+                                                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-8 cursor-pointer">
+                                                        {
+                                                            localAry.map((item, index) => (
+                                                                <li className="flex items-start gap-4"
+                                                                    key={index}
+                                                                    onClick={() => handleToggleLang({key: item.value})}
+                                                                >
+                                                                    <div
+                                                                        className="h-[30px] w-[30px] overflow-hidden grid place-items-center">
+                                                                        <img src={`/images/countries/${item.value}.png`}
+                                                                             alt={item.value} title={item.value}/>
+                                                                    </div>
+                                                                    <div className="leading-[18px] flex flex-col">
+                                                                        <Typography>
+                                                                            {item.label}
+                                                                        </Typography>
+                                                                        <Typography
+                                                                            variant={"muted"}
+                                                                            className={"mt-1"}
+                                                                        >
+                                                                            {item.country}
+                                                                        </Typography>
+                                                                    </div>
+                                                                </li>
+                                                            ))
+                                                        }
+                                                    </ul>
+                                                </div>
+                                            </NavigationMenuContent>
+                                        )
+                                    }
+                                </NavigationMenuItem>
+                            </NavigationMenuList>
+                        </NavigationMenu>
+                        <Button
+                            className={"mr-4 px-6 ml-4 lg:px-8 rounded-full bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
+                            登录
+                        </Button>
+                        <Button className={"bg-theme-active rounded-full cursor-pointer hover:bg-theme-active-hover"}>
+                            开设账户
+                        </Button>
+                        {
+                            !drawerOpen ?
+                                <AlignJustify className={"block lg:hidden ml-4"} onClick={() => setDrawerOpen(true)}/>
+                                : <X className={"block lg:hidden ml-4"} onClick={() => setDrawerOpen(false)}/>
+                        }
+                    </div>
                 </div>
-            </div>
+            </Container>
 
             <div
                 aria-hidden

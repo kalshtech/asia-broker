@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import gsap from "gsap";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -57,91 +58,93 @@ const Reasons = () => {
     }, []);
     return  (
         <section ref={sectionRef} className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mx-auto mt-8"}
-                >
-                    {t("desc")}
-                </Typography>
-            </motion.div>
-            <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16 mx-auto max-w-7xl"}>
-                <div className={"col-span-12 lg:col-span-6"} ref={leftRef}>
-                    <div className={""}>
-                        <Typography variant={"large"}>
-                            {t("professional")}
-                        </Typography>
-                        <ul className={"mt-6"}>
-                            {
-                                professionalAry.map((item, index) => (
-                                    <li className={"flex items-start my-4"} key={index}>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center mx-auto mt-8"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+                <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16"}>
+                    <div className={"col-span-12 lg:col-span-6"} ref={leftRef}>
+                        <div className={""}>
+                            <Typography variant={"large"}>
+                                {t("professional")}
+                            </Typography>
+                            <ul className={"mt-6"}>
+                                {
+                                    professionalAry.map((item, index) => (
+                                        <li className={"flex items-start my-4"} key={index}>
                                         <span
                                             className={"mt-2.5 w-[5px] h-[5px] block bg-theme-active rounded-full"}></span>
-                                        <div className={"ml-3"}>
-                                            <Typography variant={"small"}>
-                                                {item.title}
-                                            </Typography>
-                                            <Typography
-                                                className={"mt-2"}
-                                                variant={"muted"}
-                                            >
-                                                {item.desc}
-                                            </Typography>
-                                        </div>
-                                    </li>
-                                ))
-                            }
-                        </ul>
-                    </div>
+                                            <div className={"ml-3"}>
+                                                <Typography variant={"small"}>
+                                                    {item.title}
+                                                </Typography>
+                                                <Typography
+                                                    className={"mt-2"}
+                                                    variant={"muted"}
+                                                >
+                                                    {item.desc}
+                                                </Typography>
+                                            </div>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
 
-                    <div className={"mt-10"}>
-                        <Typography variant={"large"}>
-                            {t("professional")}
-                        </Typography>
-                        <ul className={"mt-6"}>
-                            {
-                                safeAry.map((item, index) => (
-                                    <li className={"flex items-start my-4"} key={index}>
+                        <div className={"mt-10"}>
+                            <Typography variant={"large"}>
+                                {t("professional")}
+                            </Typography>
+                            <ul className={"mt-6"}>
+                                {
+                                    safeAry.map((item, index) => (
+                                        <li className={"flex items-start my-4"} key={index}>
                                         <span
                                             className={"mt-2.5 w-[5px] h-[5px] block bg-theme-active rounded-full"}></span>
-                                        <div className={"ml-3"}>
-                                            <Typography variant={"small"}>
-                                                {item.title}
-                                            </Typography>
-                                            <Typography
-                                                className={"mt-2"}
-                                                variant={"muted"}
-                                            >
-                                                {item.desc}
-                                            </Typography>
-                                        </div>
-                                    </li>
-                                ))
-                            }
-                        </ul>
+                                            <div className={"ml-3"}>
+                                                <Typography variant={"small"}>
+                                                    {item.title}
+                                                </Typography>
+                                                <Typography
+                                                    className={"mt-2"}
+                                                    variant={"muted"}
+                                                >
+                                                    {item.desc}
+                                                </Typography>
+                                            </div>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={"col-span-12 lg:col-span-6"} ref={rightRef}>
+                        <div>
+                            <img src="/images/platform/reasons-cell.png"
+                                 alt="reasons-cell"
+                                 title={"reasons-cell"}
+                                 className={"w-full h-full object-cover"}
+                            />
+                        </div>
                     </div>
                 </div>
-                <div className={"col-span-12 lg:col-span-6"} ref={rightRef}>
-                    <div>
-                        <img src="/images/platform/reasons-cell.png"
-                             alt="reasons-cell"
-                             title={"reasons-cell"}
-                             className={"w-full h-full object-cover"}
-                        />
-                    </div>
-                </div>
-            </div>
+            </Container>
         </section>
     )
 }

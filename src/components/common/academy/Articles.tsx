@@ -183,7 +183,7 @@ const Articles = (props: Props) => {
                             </Breadcrumb>
                             <div className={"ml-auto"}>
                                 <div
-                                    className="flex items-center bg-[#E6E6E6] gap-2 rounded-full pl-8 pr-4 py-2 w-full max-w-md">
+                                    className="flex items-center bg-[#F6F6F6] border border-[#E6E6E6] gap-2 rounded-full pl-8 pr-4 py-2 w-full max-w-md">
                                     <Search className={"text-[#999999]"}/>
                                     <Input
                                         type="text"

@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import classnames from "classnames";
 gsap.registerPlugin(ScrollTrigger);
+import Container from "@/components/Container";
 
 type Props = {
     direction: string;
@@ -51,35 +52,37 @@ const DownloadItem = (props: Props) => {
         <section className={classnames(["p-4 lg:p-30", {
             "bg-theme-light-bg": direction === "right"
         }])} ref={sectionRef}>
-            <div className={'grid grid-cols-12 gap-8'}>
-                <div className={classnames(["col-span-12 lg:col-span-6", {
-                    "order-1": direction === "left",
-                    "order-2": direction === "right",
-                }])} ref={leftRef}>
-                    <Typography variant={"h3"}>
-                        { title }
-                    </Typography>
-                    <Typography variant={"h6"} className={"font-medium mt-10"}>
-                        { desc }
-                    </Typography>
-                    <div className={"mt-10"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                            { downloadText }
-                        </Button>
+            <Container>
+                <div className={'grid grid-cols-12 gap-8'}>
+                    <div className={classnames(["col-span-12 lg:col-span-6", {
+                        "order-1": direction === "left",
+                        "order-2": direction === "right",
+                    }])} ref={leftRef}>
+                        <Typography variant={"h3"}>
+                            {title}
+                        </Typography>
+                        <Typography variant={"h6"} className={"font-medium mt-10"}>
+                            {desc}
+                        </Typography>
+                        <div className={"mt-10"}>
+                            <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                {downloadText}
+                            </Button>
+                        </div>
+                    </div>
+                    <div className={classnames(["col-span-12 lg:col-span-6", {
+                        "order-2": direction === "left",
+                        "order-1": direction === "right",
+                    }])} ref={rightRef}>
+                        <img
+                            src={imageUrl}
+                            className={"w-full h-full object-cover mx-auto"}
+                            alt="exhibition"
+                            title={"exhibition"}
+                        />
                     </div>
                 </div>
-                <div className={classnames(["col-span-12 lg:col-span-6", {
-                    "order-2": direction === "left",
-                    "order-1": direction === "right",
-                }])} ref={rightRef}>
-                    <img
-                        src={imageUrl}
-                        className={"w-full h-full object-cover mx-auto"}
-                        alt="exhibition"
-                        title={"exhibition"}
-                    />
-                </div>
-            </div>
+            </Container>
         </section>
     )
 }

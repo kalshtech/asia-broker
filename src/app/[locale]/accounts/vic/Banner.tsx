@@ -26,7 +26,7 @@ const Banner = () => {
             >
                 <Typography
                     variant={"h1"}
-                    className={"font-medium !text-white !bg-gradient-to-b !from-[#F0F7FF] !to-[#587DAC] !bg-clip-text !text-transparent"}
+                    className={"!text-white !bg-gradient-to-b !from-[#F0F7FF] !to-[#587DAC] !bg-clip-text !text-transparent"}
                 >
                     {t("title")}
                 </Typography>

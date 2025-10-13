@@ -4,8 +4,7 @@ import { Typography } from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
 import { Button } from "@/components/ui/button";
 import SimpleSwiper from "@/components/common/products/SimpleSwiper";
-import {CircleChevronLeft, CircleChevronRight} from "lucide-react";
-import classnames from "classnames";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -41,64 +40,66 @@ type Props = {
 const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    { title }
-                </Typography>
-            </motion.div>
-            <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16"}>
-                <div className={"col-span-12 lg:col-span-2"}>
                     <Typography
-                        variant={"h4"}
-                        className={"font-medium"}
+                        variant={"h3"}
+                        className={"font-medium text-center"}
                     >
-                        { left.title }
+                        {title}
                     </Typography>
-                    {
-                        left.midst && (
-                            <Typography
-                                variant={"h5"}
-                                className={"font-medium mt-2 lg:mt-4"}
-                            >
-                                { left.midst }
-                            </Typography>
-                        )
-                    }
-                    {
-                        left.desc && (
-                            <Typography variant={"muted"} className={"mt-4 lg:mt-8"}>
-                                { left.desc }
-                            </Typography>
-                        )
-                    }
-                    <div className={"mt-10"}>
-                        <Button className={"bg-theme-active h-12 px-8 hover:bg-theme-active-hover rounded-full"}>
-                            { left.more }
-                        </Button>
-                    </div>
+                </motion.div>
+                <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16"}>
+                    <div className={"col-span-12 lg:col-span-2"}>
+                        <Typography
+                            variant={"h4"}
+                            className={"font-medium"}
+                        >
+                            {left.title}
+                        </Typography>
+                        {
+                            left.midst && (
+                                <Typography
+                                    variant={"h5"}
+                                    className={"font-medium mt-2 lg:mt-4"}
+                                >
+                                    {left.midst}
+                                </Typography>
+                            )
+                        }
+                        {
+                            left.desc && (
+                                <Typography variant={"muted"} className={"mt-4 lg:mt-8"}>
+                                    {left.desc}
+                                </Typography>
+                            )
+                        }
+                        <div className={"mt-10"}>
+                            <Button className={"bg-theme-active h-12 px-8 hover:bg-theme-active-hover rounded-full"}>
+                                {left.more}
+                            </Button>
+                        </div>
 
-                    {
-                        left.muted && (
-                            <Typography variant={"muted"} className={"mt-8"}>
-                                { left.muted }
-                            </Typography>
-                        )
-                    }
-                </div>
-                <div className={"col-span-12 lg:col-span-10"}>
-                    <div className={"w-full"}>
-                        <SimpleSwiper ary={ary} prevEl={`${prevEl}`} nextEl={`${nextEl}`} />
+                        {
+                            left.muted && (
+                                <Typography variant={"muted"} className={"mt-8"}>
+                                    {left.muted}
+                                </Typography>
+                            )
+                        }
+                    </div>
+                    <div className={"col-span-12 lg:col-span-10"}>
+                        <div className={"w-full"}>
+                            <SimpleSwiper ary={ary} prevEl={`${prevEl}`} nextEl={`${nextEl}`}/>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

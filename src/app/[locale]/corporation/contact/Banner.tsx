@@ -27,13 +27,13 @@ const Banner = () => {
                 >
                     <Typography
                         variant={"h1"}
-                        className={"font-medium !text-white"}
+                        className={"!text-white"}
                     >
                         {t("title1")}
                     </Typography>
                     <Typography
                         variant={"h1"}
-                        className={"font-medium !text-white"}
+                        className={"!text-white"}
                     >
                         {t("title2")}
                     </Typography>

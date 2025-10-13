@@ -40,6 +40,8 @@
     "search": "搜索",
     "search-placeholder": "搜索你想交易的产品",
     "searching": "搜索中...",
+    "search-articles": "搜索文章",
+    "no-articles": "未找到匹配的文章",
     "error": "错误",
     "tools": {
       "title": "交易工具 · 打造你的专业战斗面板",

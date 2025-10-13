@@ -28,7 +28,7 @@ const Banner = () => {
                 <div className={"max-w-5xl mx-auto flex-col justify-center flex"}>
                     <Typography
                         variant={"h1"}
-                        className={"font-medium text-center !text-white"}
+                        className={"text-center !text-white"}
                     >
                         {t("title")}
                     </Typography>

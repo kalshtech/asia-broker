@@ -148,10 +148,7 @@ export default function ArticleDetails(props: Props) {
 
                 <article className="prose prose-zinc max-w-none dark:prose-invert">
                     <header className="mb-6">
-                        <Typography
-                            variant={"h1"}
-                            className={"font-medium"}
-                        >
+                        <Typography variant={"h1"}>
                             {title}
                         </Typography>
 
@@ -226,7 +223,7 @@ export default function ArticleDetails(props: Props) {
             <div className={"mt-16"}>
                 <Typography
                     variant={"h1"}
-                    className={"font-medium text-center"}
+                    className={"text-center"}
                 >
                     {t("relation")}
                 </Typography>

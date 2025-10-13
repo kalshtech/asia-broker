@@ -111,7 +111,7 @@ const Slide = () => {
 
                 <Typography
                     variant={"h1"}
-                    className={"font-bold !text-5xl lg:!text-7xl mt-8 lg:mt-16 text-center !bg-gradient-to-b !from-[#FFFFFF] !to-[#FFC871] !bg-clip-text !text-transparent"}
+                    className={"!text-5xl lg:!text-7xl mt-8 lg:mt-16 text-center !bg-gradient-to-b !from-[#FFFFFF] !to-[#FFC871] !bg-clip-text !text-transparent"}
                 >
                     $100,000,000
                 </Typography>

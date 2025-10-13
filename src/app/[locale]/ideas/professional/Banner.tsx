@@ -53,14 +53,14 @@ const Banner = () => {
             >
                 <Typography
                     variant={"h1"}
-                    className={"font-medium text-center !text-white"}
+                    className={"text-center !text-white"}
                 >
                     {t("title1")}
                 </Typography>
 
                 <Typography
                     variant={"h1"}
-                    className={"font-medium text-center mt-4 !text-white"}
+                    className={"text-center mt-4 !text-white"}
                 >
                     {t("title2")}
                 </Typography>

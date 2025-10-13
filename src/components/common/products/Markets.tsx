@@ -19,6 +19,7 @@ import {convert, rangeCls, formatMaxFixed, rangeChange} from "@/utils/common";
 import { Skeleton } from "@/components/ui/skeleton";
 import {motion, Variants} from "framer-motion";
 import SimpleSearch from "@/components/common/SimpleSearch";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -125,152 +126,156 @@ const Markets = (props: Props) => {
 
     return (
         <section className={"px-4 py-2 lg:px-30 lg:py-10"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-                className={"mt-4 lg:mt-16"}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    className={"mt-4 lg:mt-16"}
                 >
-                    { title }
-                </Typography>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {title}
+                    </Typography>
+                    {
+                        desc && (
+                            <Typography
+                                variant={"muted"}
+                                className={"text-center mt-6"}
+                            >
+                                {desc}
+                            </Typography>
+                        )
+                    }
+                </motion.div>
+                <div className={"mt-4 lg:mt-16"}>
+                    <SimpleSearch onSelect={(opt) => console.log("picked:", opt)}/>
+                </div>
                 {
-                    desc && (
-                        <Typography
-                            variant={"muted"}
-                            className={"text-center mt-6"}
-                        >
-                            { desc }
-                        </Typography>
+                    tabList && (
+                        <div className={"mt-10"}>
+                            <Tabs value={tabActive}
+                                  className={"flex justify-center items-center"}
+                                  onValueChange={handleToggleTabActive}
+                            >
+                                <TabsList className={"h-10 rounded-full"}>
+                                    {
+                                        tabList.map((item, index) => (
+                                            <TabsTrigger
+                                                key={index}
+                                                value={item.value}
+                                                className={"px-4 lg:px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                            >
+                                                {item.label}
+                                            </TabsTrigger>
+                                        ))
+                                    }
+                                </TabsList>
+                            </Tabs>
+                        </div>
                     )
                 }
-            </motion.div>
-            <div className={"mt-4 lg:mt-16"}>
-                <SimpleSearch onSelect={(opt) => console.log("picked:", opt)}/>
-            </div>
-            {
-                tabList && (
-                    <div className={"mt-10"}>
-                        <Tabs value={tabActive}
-                              className={"flex justify-center items-center"}
-                              onValueChange={handleToggleTabActive}
-                        >
-                            <TabsList className={"h-10 rounded-full"}>
-                                {
-                                    tabList.map((item, index) => (
-                                        <TabsTrigger
-                                            key={index}
-                                            value={item.value}
-                                            className={"px-4 lg:px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
-                                        >
-                                            {item.label}
-                                        </TabsTrigger>
+                <div className={"mt-10"}>
+                    {type === "elementary" && (
+                        <Table>
+                            <TableCaption className={"mt-16"}>
+                                <Button
+                                    className={"bg-theme-active rounded-full px-8 h-10 hover:bg-theme-active-hover"}>
+                                    {trade}
+                                </Button>
+                            </TableCaption>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead className={"w-[120px]"}>{CommonT("code")}</TableHead>
+                                    <TableHead>{CommonT("price")}</TableHead>
+                                    <TableHead>{CommonT("changePercentage")}</TableHead>
+                                    <TableHead>{CommonT("change")}</TableHead>
+                                    <TableHead>{CommonT("open")}</TableHead>
+                                    <TableHead>{CommonT("high")}</TableHead>
+                                    <TableHead>{CommonT("low")}</TableHead>
+                                    <TableHead className={"text-right w-[80px]"}>{CommonT("volume")}</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {loading ? (
+                                    Array.from({length: 6}).map((_, i) => (
+                                        <TableRow key={i}>
+                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                        </TableRow>
                                     ))
-                                }
-                            </TabsList>
-                        </Tabs>
-                    </div>
-                )
-            }
-            <div className={"mt-10"}>
-                { type === "elementary" && (
-                    <Table>
-                        <TableCaption className={"mt-16"}>
-                            <Button className={"bg-theme-active rounded-full px-8 h-10 hover:bg-theme-active-hover"}>
-                                {trade}
-                            </Button>
-                        </TableCaption>
-                        <TableHeader>
-                            <TableRow>
-                                <TableHead className={"w-[120px]"}>{CommonT("code")}</TableHead>
-                                <TableHead>{CommonT("price")}</TableHead>
-                                <TableHead>{CommonT("changePercentage")}</TableHead>
-                                <TableHead>{CommonT("change")}</TableHead>
-                                <TableHead>{CommonT("open")}</TableHead>
-                                <TableHead>{CommonT("high")}</TableHead>
-                                <TableHead>{CommonT("low")}</TableHead>
-                                <TableHead className={"text-right w-[80px]"}>{CommonT("volume")}</TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            {loading ? (
-                                Array.from({length: 6}).map((_, i) => (
-                                    <TableRow key={i}>
-                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                    </TableRow>
-                                ))
-                            ) : rawData.map((item: any, index: number) => (
-                                <TableRow key={index}>
-                                    <TableCell className={"flex"}>
-                                        <Typography variant={"p"} className="font-medium">
-                                            {item.symbol}
-                                        </Typography>
-                                        <Typography variant={"muted"} className={"ml-2"}>
-                                            {item.name}
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>
+                                ) : rawData.map((item: any, index: number) => (
+                                    <TableRow key={index}>
+                                        <TableCell className={"flex"}>
+                                            <Typography variant={"p"} className="font-medium">
+                                                {item.symbol}
+                                            </Typography>
+                                            <Typography variant={"muted"} className={"ml-2"}>
+                                                {item.name}
+                                            </Typography>
+                                        </TableCell>
+                                        <TableCell>
                                     <span className={rangeCls(item.changesPercentage)}>
                                         {formatMaxFixed(item.open)}
                                     </span>
-                                    </TableCell>
-                                    <TableCell>
+                                        </TableCell>
+                                        <TableCell>
                                     <span className={rangeCls(item.changesPercentage)}>
                                         {rangeChange(item.changesPercentage)}
                                     </span>
-                                    </TableCell>
-                                    <TableCell>
+                                        </TableCell>
+                                        <TableCell>
                                      <span className={rangeCls(item.changesPercentage)}>
                                         {formatMaxFixed(item.change)}
                                     </span>
-                                    </TableCell>
-                                    <TableCell>{formatMaxFixed(item.open)}</TableCell>
-                                    <TableCell>{formatMaxFixed(item.dayHigh)}</TableCell>
-                                    <TableCell>{formatMaxFixed(item.dayLow)}</TableCell>
-                                    <TableCell align="right">{convert(item.volume)}</TableCell>
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                ) }
+                                        </TableCell>
+                                        <TableCell>{formatMaxFixed(item.open)}</TableCell>
+                                        <TableCell>{formatMaxFixed(item.dayHigh)}</TableCell>
+                                        <TableCell>{formatMaxFixed(item.dayLow)}</TableCell>
+                                        <TableCell align="right">{convert(item.volume)}</TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    )}
 
-                { type === "future" && (
-                    <Table>
-                        <TableCaption className={"mt-16"}>
-                            <Button className={"bg-theme-active rounded-full px-8 h-10 hover:bg-theme-active-hover"}>
-                                {trade}
-                            </Button>
-                        </TableCaption>
-                        <TableHeader>
-                            <TableRow>
-                                <TableHead>{CommonT("code")}</TableHead>
-                                <TableHead>{CommonT("productName")}</TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            { rawData.map((item: any, index: number) => (
-                                <TableRow key={index}>
-                                    <TableCell className={"flex"}>
-                                        <Typography className="font-medium">
-                                            {item.symbol}
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>{item.name}</TableCell>
+                    {type === "future" && (
+                        <Table>
+                            <TableCaption className={"mt-16"}>
+                                <Button
+                                    className={"bg-theme-active rounded-full px-8 h-10 hover:bg-theme-active-hover"}>
+                                    {trade}
+                                </Button>
+                            </TableCaption>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>{CommonT("code")}</TableHead>
+                                    <TableHead>{CommonT("productName")}</TableHead>
                                 </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                ) }
-            </div>
+                            </TableHeader>
+                            <TableBody>
+                                {rawData.map((item: any, index: number) => (
+                                    <TableRow key={index}>
+                                        <TableCell className={"flex"}>
+                                            <Typography className="font-medium">
+                                                {item.symbol}
+                                            </Typography>
+                                        </TableCell>
+                                        <TableCell>{item.name}</TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    )}
+                </div>
+            </Container>
         </section>
     )
 }

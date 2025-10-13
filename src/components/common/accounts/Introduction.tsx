@@ -2,6 +2,7 @@
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { Typography } from "@/components/ui/typography";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -34,98 +35,100 @@ const Introduction = (props: Props) => {
 
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    { title }
-                </Typography>
-                {
-                    desc && (
-                        <Typography
-                            variant={"muted"}
-                            className={"text-center mt-6"}
-                        >
-                            { desc }
-                        </Typography>
-                    )
-                }
-            </motion.div>
-            <div className={"grid grid-cols-12 gap-8 mt-4 lg:mt-16"}>
-                <div className={"col-span-12 lg:col-span-3"}>
-                    <div className={""}>
-                        <div>
-                            <Typography variant={"h5"}>
-                                { leftTitle }
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {title}
+                    </Typography>
+                    {
+                        desc && (
+                            <Typography
+                                variant={"muted"}
+                                className={"text-center mt-6"}
+                            >
+                                {desc}
                             </Typography>
-                            {
-                                leftDesc && (
-                                    <Typography
-                                        variant={"muted"}
-                                        className={"mt-4"}
-                                    >
-                                        {leftDesc}
-                                    </Typography>
-                                )
-                            }
-                        </div>
-                        <ul className={"mt-6"}>
-                            {
-                                liAry.map((item, index) => (
-                                    <li key={index} className={"my-6 flex items-center"}>
-                                        <div className={"w-[5px] h-[5px] rounded-full bg-theme-active"}></div>
-                                        <Typography variant={"muted"} className={"ml-3 font-medium"}>
-                                            { item.label }
+                        )
+                    }
+                </motion.div>
+                <div className={"grid grid-cols-12 gap-8 mt-4 lg:mt-16"}>
+                    <div className={"col-span-12 lg:col-span-3"}>
+                        <div className={""}>
+                            <div>
+                                <Typography variant={"h5"}>
+                                    {leftTitle}
+                                </Typography>
+                                {
+                                    leftDesc && (
+                                        <Typography
+                                            variant={"muted"}
+                                            className={"mt-4"}
+                                        >
+                                            {leftDesc}
                                         </Typography>
-                                    </li>
+                                    )
+                                }
+                            </div>
+                            <ul className={"mt-6"}>
+                                {
+                                    liAry.map((item, index) => (
+                                        <li key={index} className={"my-6 flex items-center"}>
+                                            <div className={"w-[5px] h-[5px] rounded-full bg-theme-active"}></div>
+                                            <Typography variant={"muted"} className={"ml-3 font-medium"}>
+                                                {item.label}
+                                            </Typography>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={"col-span-12 lg:col-span-9"}>
+                        <div className={"grid gap-4 grid-cols-2 lg:grid-cols-3"}>
+                            <div className={"bg-theme-light-bg p-6 relative rounded-lg"}>
+                                <img
+                                    src="/images/accounts/zero.png"
+                                    className={"object-cover max-w-[180px] max-h-[180px] absolute -top-1/4 right-0"}
+                                    alt="icon"
+                                    title={"icon"}
+                                />
+                                <Typography variant={"h5"} className={"mt-16"}>
+                                    {rightCol1Title}
+                                </Typography>
+                                <Typography variant={"muted"} className={"block mt-4"}>
+                                    {rightCol1Desc}
+                                </Typography>
+                            </div>
+                            {
+                                rightRowAry.map((item, index) => (
+                                    <div className={"bg-theme-light-bg p-6 rounded-lg"} key={index}>
+                                        <img
+                                            src={item.imageUrl}
+                                            className={"w-[30px] h-[30px] object-cover"}
+                                            alt="icon"
+                                            title={"icon"}
+                                        />
+                                        <Typography variant={"h5"} className={"mt-6"}>
+                                            {item.title}
+                                        </Typography>
+                                        <Typography variant={"muted"} className={"block mt-4"}>
+                                            {item.desc}
+                                        </Typography>
+                                    </div>
                                 ))
                             }
-                        </ul>
-                    </div>
-                </div>
-                <div className={"col-span-12 lg:col-span-9"}>
-                    <div className={"grid gap-4 grid-cols-2 lg:grid-cols-3"}>
-                        <div className={"bg-theme-light-bg p-6 relative rounded-lg"}>
-                            <img
-                                src="/images/accounts/zero.png"
-                                className={"object-cover max-w-[180px] max-h-[180px] absolute -top-1/4 right-0"}
-                                alt="icon"
-                                title={"icon"}
-                            />
-                            <Typography variant={"h5"} className={"mt-16"}>
-                                { rightCol1Title }
-                            </Typography>
-                            <Typography variant={"muted"} className={"block mt-4"}>
-                                { rightCol1Desc }
-                            </Typography>
                         </div>
-                        {
-                            rightRowAry.map((item, index) => (
-                                <div className={"bg-theme-light-bg p-6 rounded-lg"} key={index}>
-                                    <img
-                                        src={item.imageUrl}
-                                        className={"w-[30px] h-[30px] object-cover"}
-                                        alt="icon"
-                                        title={"icon"}
-                                    />
-                                    <Typography variant={"h5"} className={"mt-6"}>
-                                        { item.title }
-                                    </Typography>
-                                    <Typography variant={"muted"} className={"block mt-4"}>
-                                        { item.desc }
-                                    </Typography>
-                                </div>
-                            ))
-                        }
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

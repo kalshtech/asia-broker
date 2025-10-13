@@ -20,6 +20,7 @@ import dayjs from "dayjs";
 import MiniChart from "@/components/charts/Mini";
 import { convert, rangeCls, rangeChange } from "@/utils/common";
 import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -139,117 +140,124 @@ const Markets = () => {
 
     return (
         <section className={"p-30 hidden lg:block"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
 
-                <Typography className={"text-center text-base mt-6"}>
-                    {t("description")}
-                </Typography>
-            </motion.div>
+                    <Typography className={"text-center text-base mt-6"}>
+                        {t("description")}
+                    </Typography>
+                </motion.div>
 
-            <div className={"flex justify-center mt-12"}>
-                <div className={"flex-1 flex flex-col"}>
-                    <div className={"flex justify-center"}>
-                        <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
-                            <TabsList className={"h-10 rounded-full"}>
-                                <TabsTrigger
-                                    value={"stock"}
-                                    className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
-                                >
-                                    { commonT("usStock") }
-                                </TabsTrigger>
-                                <TabsTrigger
-                                    value={"forex"}
-                                    className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
-                                >
-                                    { commonT("forex") }
-                                </TabsTrigger>
-                            </TabsList>
-                        </Tabs>
-                    </div>
-                    <div className={"mt-8"}>
-                        <Table>
-                            <TableCaption>
-                                <div className={"flex flex-col"}>
-                                    <div>
-                                        <Button className={"mt-8 px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                                            { t("more") }
-                                        </Button>
+                <div className={"flex justify-center mt-12"}>
+                    <div className={"flex-1 flex flex-col"}>
+                        <div className={"flex justify-center"}>
+                            <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
+                                <TabsList className={"h-10 rounded-full"}>
+                                    <TabsTrigger
+                                        value={"stock"}
+                                        className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                    >
+                                        {commonT("usStock")}
+                                    </TabsTrigger>
+                                    <TabsTrigger
+                                        value={"forex"}
+                                        className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                    >
+                                        {commonT("forex")}
+                                    </TabsTrigger>
+                                </TabsList>
+                            </Tabs>
+                        </div>
+                        <div className={"mt-8"}>
+                            <Table>
+                                <TableCaption>
+                                    <div className={"flex flex-col"}>
+                                        <div>
+                                            <Button
+                                                className={"mt-8 px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                                {t("more")}
+                                            </Button>
+                                        </div>
                                     </div>
-                                </div>
-                            </TableCaption>
-                            <TableHeader>
-                                <TableRow>
-                                    <TableHead className="w-[216px]">{ commonT("code") }</TableHead>
-                                    <TableHead className="w-[248px]">{ commonT("miniChart") }</TableHead>
-                                    <TableHead>{ commonT("close") }</TableHead>
-                                    <TableHead>{ commonT("changePercentage") }</TableHead>
-                                    <TableHead>{ commonT("change") }</TableHead>
+                                </TableCaption>
+                                <TableHeader>
+                                    <TableRow>
+                                        <TableHead className="w-[216px]">{commonT("code")}</TableHead>
+                                        <TableHead className="w-[248px]">{commonT("miniChart")}</TableHead>
+                                        <TableHead>{commonT("close")}</TableHead>
+                                        <TableHead>{commonT("changePercentage")}</TableHead>
+                                        <TableHead>{commonT("change")}</TableHead>
+                                        {
+                                            tabActive === "stock" && <TableHead>
+                                                {commonT("marketCap")}
+                                            </TableHead>
+                                        }
+                                        <TableHead className="text-right w-[100px]">{commonT("volume")}</TableHead>
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
                                     {
-                                        tabActive === "stock" && <TableHead>
-                                            { commonT("marketCap") }
-                                        </TableHead>
-                                    }
-                                    <TableHead className="text-right w-[100px]">{ commonT("volume") }</TableHead>
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                                {
-                                    loading ? (
-                                        Array.from({ length: 6 }).map((_, i) => (
-                                            <TableRow key={i}>
-                                                <TableCell><Skeleton className="h-4 w-32" /></TableCell>
-                                                <TableCell><Skeleton className="h-4 w-32" /></TableCell>
-                                                <TableCell><Skeleton className="h-4 w-32" /></TableCell>
-                                                <TableCell><Skeleton className="h-4 w-32" /></TableCell>
-                                                <TableCell><Skeleton className="h-4 w-32" /></TableCell>
-                                                <TableCell><Skeleton className="h-4 w-32" /></TableCell>
-                                            </TableRow>
-                                        ))
-                                    ) : (
-                                        rows.map((item, index) => (
-                                            <TableRow key={index}>
-                                                <TableCell>
-                                                    <div>
-                                                        <Typography variant={"h6"}>{ item.symbol }</Typography>
-                                                        <Typography variant={"muted"}>{ item.name }</Typography>
-                                                    </div>
-                                                </TableCell>
-                                                <TableCell>
-                                                    <div>
-                                                        <MiniChart data={item.data} />
-                                                    </div>
-                                                </TableCell>
-                                                <TableCell className={rangeCls(item.changePercentage)}>{ item.price }</TableCell>
-                                                <TableCell className={rangeCls(item.changePercentage)}>{ rangeChange(item.changePercentage) }</TableCell>
-                                                <TableCell className={rangeCls(item.changePercentage)}>{ item.change }</TableCell>
-                                                {
-                                                    tabActive === "stock" && <TableCell>
-                                                        <Typography variant={"muted"} className={"!text-[#111111]"}>
-                                                            { convert(item.marketCap) }
-                                                        </Typography>
+                                        loading ? (
+                                            Array.from({length: 6}).map((_, i) => (
+                                                <TableRow key={i}>
+                                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                </TableRow>
+                                            ))
+                                        ) : (
+                                            rows.map((item, index) => (
+                                                <TableRow key={index}>
+                                                    <TableCell>
+                                                        <div>
+                                                            <Typography variant={"h6"}>{item.symbol}</Typography>
+                                                            <Typography variant={"muted"}>{item.name}</Typography>
+                                                        </div>
                                                     </TableCell>
-                                                }
-                                                <TableCell className={"text-right"}>{ convert(item.volume) }</TableCell>
-                                            </TableRow>
-                                        ))
-                                    )
-                                }
-                            </TableBody>
-                        </Table>
+                                                    <TableCell>
+                                                        <div>
+                                                            <MiniChart data={item.data}/>
+                                                        </div>
+                                                    </TableCell>
+                                                    <TableCell
+                                                        className={rangeCls(item.changePercentage)}>{item.price}</TableCell>
+                                                    <TableCell
+                                                        className={rangeCls(item.changePercentage)}>{rangeChange(item.changePercentage)}</TableCell>
+                                                    <TableCell
+                                                        className={rangeCls(item.changePercentage)}>{item.change}</TableCell>
+                                                    {
+                                                        tabActive === "stock" && <TableCell>
+                                                            <Typography variant={"muted"} className={"!text-[#111111]"}>
+                                                                {convert(item.marketCap)}
+                                                            </Typography>
+                                                        </TableCell>
+                                                    }
+                                                    <TableCell
+                                                        className={"text-right"}>{convert(item.volume)}</TableCell>
+                                                </TableRow>
+                                            ))
+                                        )
+                                    }
+                                </TableBody>
+                            </Table>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

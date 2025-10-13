@@ -7,6 +7,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { MoveRight } from 'lucide-react';
 import classnames from "classnames";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -32,80 +33,87 @@ export default function Competition() {
 
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
-            <section className="mt-16 [--panel-h:400px]">
-                <div className="flex h-[var(--panel-h)] gap-6">
-                    {items.map((it, i) => {
-                        const isActive = i === active
-                        return (
-                            <div
-                                key={it.title}
-                                role="button"
-                                tabIndex={0}
-                                aria-expanded={isActive}
-                                onMouseEnter={() => setActive(i)}
-                                onFocus={() => setActive(i)}
-                                onClick={() => setActive(i)}
-                                style={{
-                                    flexBasis: `${(isActive ? ACTIVE : collapsed) * 100}%`,
-                                    transition: "flex-basis 420ms cubic-bezier(.22,1,.36,1)",
-                                }}
-                                className={classnames(["flex h-full flex-col overflow-hidden rounded-md bg-theme-light-bg p-6 motion-reduce:transition-none", {
-                                    "bg-[url('/images/home/competition-background.png')] bg-cover bg-bottom bg-no-repeat": isActive
-                                }])}>
-                                {!isActive && (
-                                    <div className="flex h-full items-center justify-center flex-col gap-4">
-                                        <div className="flex justify-center items-center h-full [writing-mode:vertical-rl] [text-orientation:upright] text-lg font-semibold">
-                                            <Typography>
-                                                {it.title}
-                                            </Typography>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                </motion.div>
+                <div className="mt-16 [--panel-h:400px]">
+                    <div className="flex h-[var(--panel-h)] gap-6">
+                        {items.map((it, i) => {
+                            const isActive = i === active
+                            return (
+                                <div
+                                    key={it.title}
+                                    role="button"
+                                    tabIndex={0}
+                                    aria-expanded={isActive}
+                                    onMouseEnter={() => setActive(i)}
+                                    onFocus={() => setActive(i)}
+                                    onClick={() => setActive(i)}
+                                    style={{
+                                        flexBasis: `${(isActive ? ACTIVE : collapsed) * 100}%`,
+                                        transition: "flex-basis 420ms cubic-bezier(.22,1,.36,1)",
+                                    }}
+                                    className={classnames(["flex h-full flex-col overflow-hidden rounded-md bg-theme-light-bg p-6 motion-reduce:transition-none", {
+                                        "bg-[url('/images/home/competition-background.png')] bg-cover bg-bottom bg-no-repeat": isActive
+                                    }])}>
+                                    {!isActive && (
+                                        <div className="flex h-full items-center justify-center flex-col gap-4">
+                                            <div
+                                                className="flex justify-center items-center h-full [writing-mode:vertical-rl] [text-orientation:upright] text-lg font-semibold">
+                                                <Typography>
+                                                    {it.title}
+                                                </Typography>
+                                            </div>
+                                            <div className={"mt-auto"}>
+                                                <MoveRight className="text-blue-600"/>
+                                            </div>
                                         </div>
-                                        <div className={"mt-auto"}>
-                                            <MoveRight className="text-blue-600"/>
-                                        </div>
-                                    </div>
-                                )}
-                                {
-                                    isActive && (
-                                    <div className="flex h-full flex-col">
-                                        <Typography
-                                            variant={"h4"}
-                                            className={"text-center mt-4"}
-                                        >
-                                            {it.title}
-                                        </Typography>
-                                        {it.prize && (
-                                            <>
-                                                <div className="mt-6 flex-1">
-                                                    <Typography variant={"muted"} className={"block text-center"}>奖池金额</Typography>
-                                                    <Typography variant={"h4"} className={"text-center mt-4"}>{it.prize}</Typography>
-                                                    <Typography variant={"muted"} className={"text-center mt-4"}>周期</Typography>
-                                                    <Typography variant={"h4"} className={"text-center mt-4"}>{it.period}</Typography>
-                                                    <div className="mt-8 flex justify-center">
-                                                        <Button size="lg">{it.cta ?? "立即参加"}</Button>
-                                                    </div>
-                                                </div>
-                                            </>
+                                    )}
+                                    {
+                                        isActive && (
+                                            <div className="flex h-full flex-col">
+                                                <Typography
+                                                    variant={"h4"}
+                                                    className={"text-center mt-4"}
+                                                >
+                                                    {it.title}
+                                                </Typography>
+                                                {it.prize && (
+                                                    <>
+                                                        <div className="mt-6 flex-1">
+                                                            <Typography variant={"muted"}
+                                                                        className={"block text-center"}>奖池金额</Typography>
+                                                            <Typography variant={"h4"}
+                                                                        className={"text-center mt-4"}>{it.prize}</Typography>
+                                                            <Typography variant={"muted"}
+                                                                        className={"text-center mt-4"}>周期</Typography>
+                                                            <Typography variant={"h4"}
+                                                                        className={"text-center mt-4"}>{it.period}</Typography>
+                                                            <div className="mt-8 flex justify-center">
+                                                                <Button size="lg">{it.cta ?? "立即参加"}</Button>
+                                                            </div>
+                                                        </div>
+                                                    </>
+                                                )}
+                                            </div>
                                         )}
-                                    </div>
-                                )}
-                            </div>
-                        )
-                    })}
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
-            </section>
+            </Container>
         </section>
     )
 }

@@ -34,7 +34,7 @@ const Banner =  () => {
                     </Typography>
                     <Typography
                         variant={"h1"}
-                        className={"font-medium !text-white mt-4"}
+                        className={"!text-white mt-4"}
                     >
                         {t("title")}
                     </Typography>

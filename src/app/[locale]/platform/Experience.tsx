@@ -3,7 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 import {
     Table,
@@ -39,66 +39,68 @@ const Experience = () => {
     ];
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title1")}
-                </Typography>
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center mt-2"}
-                >
-                    {t("title2")}
-                </Typography>
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mx-auto max-w-3xl mt-8"}
-                >
-                    {t("desc")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-10 mx-auto max-w-7xl"}>
-                <Table className={"border"}>
-                    <TableHeader>
-                        <TableRow className={"bg-[#333] hover:bg-[#333]"}>
-                            <TableHead className={"w-1/3 text-center text-white !py-4"}>
-                                { t("table.row.head1") }
-                            </TableHead>
-                            <TableHead className={"w-1/3 text-center text-white !py-4"}>
-                                { t("table.row.head2") }
-                            </TableHead>
-                            <TableHead className={"w-1/3 text-center text-white !py-4"}>
-                                { t("table.row.head3") }
-                            </TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {
-                            colsAry.map((item, index) => (
-                                <TableRow key={index} className={"even:bg-[#EBEBEB] even:hover:bg-[#EBEBEB]"}>
-                                    <TableCell className={"text-center !py-3"}>
-                                        { item.one }
-                                    </TableCell>
-                                    <TableCell className={"text-center !py-3"}>
-                                        { item.two }
-                                    </TableCell>
-                                    <TableCell className={"text-center !py-3"}>
-                                        { item.three }
-                                    </TableCell>
-                                </TableRow>
-                            ))
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title1")}
+                    </Typography>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center mt-2"}
+                    >
+                        {t("title2")}
+                    </Typography>
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center mx-auto max-w-3xl mt-8"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-10"}>
+                    <Table className={"border"}>
+                        <TableHeader>
+                            <TableRow className={"bg-[#333] hover:bg-[#333]"}>
+                                <TableHead className={"w-1/3 text-center text-white !py-4"}>
+                                    {t("table.row.head1")}
+                                </TableHead>
+                                <TableHead className={"w-1/3 text-center text-white !py-4"}>
+                                    {t("table.row.head2")}
+                                </TableHead>
+                                <TableHead className={"w-1/3 text-center text-white !py-4"}>
+                                    {t("table.row.head3")}
+                                </TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {
+                                colsAry.map((item, index) => (
+                                    <TableRow key={index} className={"even:bg-[#EBEBEB] even:hover:bg-[#EBEBEB]"}>
+                                        <TableCell className={"text-center !py-3"}>
+                                            {item.one}
+                                        </TableCell>
+                                        <TableCell className={"text-center !py-3"}>
+                                            {item.two}
+                                        </TableCell>
+                                        <TableCell className={"text-center !py-3"}>
+                                            {item.three}
+                                        </TableCell>
+                                    </TableRow>
+                                ))
 
-                        }
-                    </TableBody>
-                </Table>
-            </div>
+                            }
+                        </TableBody>
+                    </Table>
+                </div>
+            </Container>
         </section>
     )
 }

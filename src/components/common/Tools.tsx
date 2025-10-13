@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react"
 import JoinCommunity from "@/components/common/JoinCommunity";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -40,77 +41,79 @@ const Tools = () => {
     ];
     return (
         <section className={"bg-theme-deep-bg py-8 px-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium !text-white text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    { t("title") }
-                </Typography>
-            </motion.div>
-            <div className={"mt-8 lg:mt-20"}>
-                <div className={"grid grid-cols-12 gap-8"}>
-                    {
-                        ary1.map((item, index) => (
-                            <div className={"col-span-12 lg:col-span-4 h-full"} key={index}>
-                                <Card className={"h-full"}>
-                                    <CardHeader>
-                                        <CardTitle>
-                                            <img className={"w-10 h-10"} src={item.image} alt=""/>
-                                        </CardTitle>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <Typography variant={"large"}>
-                                            {item.title}
-                                        </Typography>
-                                        <Typography variant={"muted"} className={"mt-4"}>
-                                            {item.desc}
-                                        </Typography>
-                                    </CardContent>
-                                    <CardFooter className={"flex justify-end cursor-pointer"}>
-                                        <ArrowRight/>
-                                    </CardFooter>
-                                </Card>
-                            </div>
-                        ))
-                    }
-                </div>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium !text-white text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-8 lg:mt-20"}>
+                    <div className={"grid grid-cols-12 gap-8"}>
+                        {
+                            ary1.map((item, index) => (
+                                <div className={"col-span-12 lg:col-span-4 h-full"} key={index}>
+                                    <Card className={"h-full"}>
+                                        <CardHeader>
+                                            <CardTitle>
+                                                <img className={"w-10 h-10"} src={item.image} alt=""/>
+                                            </CardTitle>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <Typography variant={"large"}>
+                                                {item.title}
+                                            </Typography>
+                                            <Typography variant={"muted"} className={"mt-4"}>
+                                                {item.desc}
+                                            </Typography>
+                                        </CardContent>
+                                        <CardFooter className={"flex justify-end cursor-pointer"}>
+                                            <ArrowRight/>
+                                        </CardFooter>
+                                    </Card>
+                                </div>
+                            ))
+                        }
+                    </div>
 
-                <div className={"grid grid-cols-12 gap-8 mt-10"}>
-                    {
-                        ary2.map((item, index) => (
-                            <div className={"col-span-6"} key={index}>
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle>
-                                            <img className={"w-10 h-10"} src={item.image} alt=""/>
-                                        </CardTitle>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <Typography variant={"large"}>
-                                            {item.title}
-                                        </Typography>
-                                        <Typography variant={"muted"} className={"mt-4"}>
-                                            {item.desc}
-                                        </Typography>
-                                    </CardContent>
-                                    <CardFooter className={"flex justify-end cursor-pointer"}>
-                                        <ArrowRight/>
-                                    </CardFooter>
-                                </Card>
-                            </div>
-                        ))
-                    }
+                    <div className={"grid grid-cols-12 gap-8 mt-10"}>
+                        {
+                            ary2.map((item, index) => (
+                                <div className={"col-span-6"} key={index}>
+                                    <Card>
+                                        <CardHeader>
+                                            <CardTitle>
+                                                <img className={"w-10 h-10"} src={item.image} alt=""/>
+                                            </CardTitle>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <Typography variant={"large"}>
+                                                {item.title}
+                                            </Typography>
+                                            <Typography variant={"muted"} className={"mt-4"}>
+                                                {item.desc}
+                                            </Typography>
+                                        </CardContent>
+                                        <CardFooter className={"flex justify-end cursor-pointer"}>
+                                            <ArrowRight/>
+                                        </CardFooter>
+                                    </Card>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
-            <div className={"mt-16 lg:mt-28"}>
-                <JoinCommunity theme={"light"} isHavePb={false} />
-            </div>
+                <div className={"mt-16 lg:mt-28"}>
+                    <JoinCommunity theme={"light"} isHavePb={false}/>
+                </div>
+            </Container>
         </section>
     )
 }

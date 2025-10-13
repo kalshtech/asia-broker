@@ -6,6 +6,7 @@ import {motion, Variants} from "framer-motion";
 import {Typography} from "@/components/ui/typography";
 import {useTranslations} from "next-intl";
 import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -41,39 +42,41 @@ export default function QuestionAnswer({ data, isShowBtn, btn1Text, btn2Text } :
     const t = useTranslations("Common");
     return (
         <section className="p-4 lg:p-30 bg-theme-light-bg">
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("qa-title")}
-                </Typography>
-            </motion.div>
-            <div className="max-w-4xl mx-auto mt-4 lg:mt-16">
-                <div className="divide-y divide-border">
-                    {data.map((item: any, index: number) => (
-                        <QAItemRow key={index} item={item}/>
-                    ))}
-                </div>
-            </div>
-            {
-                isShowBtn && (
-                    <div className={"mt-10 flex justify-center"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                            { btn1Text }
-                        </Button>
-                        <Button
-                            className={"px-8 h-10 ml-4 rounded-full text-theme-active border border-theme-active bg-transparent hover:bg-transparent"}>
-                            { btn2Text }
-                        </Button>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("qa-title")}
+                    </Typography>
+                </motion.div>
+                <div className="mt-4 lg:mt-16">
+                    <div className="divide-y divide-border">
+                        {data.map((item: any, index: number) => (
+                            <QAItemRow key={index} item={item}/>
+                        ))}
                     </div>
-                )
-            }
+                </div>
+                {
+                    isShowBtn && (
+                        <div className={"mt-10 flex justify-center"}>
+                            <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                { btn1Text }
+                            </Button>
+                            <Button
+                                className={"px-8 h-10 ml-4 rounded-full text-theme-active border border-theme-active bg-transparent hover:bg-transparent"}>
+                                { btn2Text }
+                            </Button>
+                        </div>
+                    )
+                }
+            </Container>
         </section>
     );
 }
