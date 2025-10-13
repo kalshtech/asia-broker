@@ -54,7 +54,7 @@ export default async function Banner({ title, description, midst, imageUrl, tran
                     !transfer && (
                         <>
                             <Button className={"rounded-full h-12 px-8 bg-theme-active hover:bg-theme-active-hover"}>
-                                { t("trade") }
+                                { t("startTrade") }
                             </Button>
                             <Button className={classnames(["ml-4 border h-12 px-8 rounded-full bg-transparent hover:bg-transparent", {
                                 "border-white": isLight,

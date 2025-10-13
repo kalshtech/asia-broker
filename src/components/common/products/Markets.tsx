@@ -211,7 +211,7 @@ const Markets = (props: Props) => {
                             ) : rawData.map((item: any, index: number) => (
                                 <TableRow key={index}>
                                     <TableCell className={"flex"}>
-                                        <Typography className="font-medium">
+                                        <Typography variant={"p"} className="font-medium">
                                             {item.symbol}
                                         </Typography>
                                         <Typography variant={"muted"} className={"ml-2"}>

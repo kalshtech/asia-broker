@@ -142,6 +142,7 @@ export default async function Page() {
                 tabList={marketTabList}
                 title={t("markets.title")}
                 trade={t("markets.trade")}
+                desc={t("markets.desc")}
             />
             <Commission
                 theme={"light"}

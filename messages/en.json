@@ -1,7 +1,7 @@
 {
   "Common": {
     "register": "Open Account",
-    "trade": "开始交易",
+    "startTrade": "Start Trading",
     "usStock": "Stocks & ETFs",
     "forex": "Forex",
     "metals": "Precious Metals",
@@ -10,13 +10,13 @@
     "crypto": "Crypto",
     "code": "symbol",
     "miniChart": "迷你走势",
-    "price": "价格",
+    "price": "Price",
     "close": "Price",
     "high": "High",
     "low": "Low",
     "open": "Open",
-    "changePercentage": "涨跌幅",
-    "change": "涨跌额",
+    "changePercentage": "Change(%)",
+    "change": "Change",
     "marketCap": "市值",
     "volume": "Volume",
     "productName": "产品名称",
@@ -536,18 +536,19 @@
     "products": {
       "forex": {
         "banner": {
-          "title": "外汇",
-          "midst": "探索全球最活跃的交易市场",
-          "description": "外汇市场是全球最大、最具流动性的金融市场。我们为您接入全球顶级流动性，提供极速点差、稳定执行与全天候交易支持，让您把握每一次汇率波动的机会。"
+          "title": "Forex",
+          "midst": "Experience the world’s leading Forex markets.",
+          "description": "The Forex market is the world’s largest and most liquid financial market. We provide direct access to top-tier global liquidity with tight spreads, fast execution, and 24/5 support — helping traders across Asia capture every market move."
         },
         "markets": {
-          "title": "搜索交易品种 + 热门交易对",
+          "title": "Discover the Pairs You Want to Trade",
+          "desc": "Explore major, minor, and exotic Forex pairs with real-time pricing and competitive spreads.",
           "btn": {
-            "main": "主要货币兑",
-            "second": "次要货币兑",
-            "other": "其他货币兑"
+            "main": "Majors Forex",
+            "second": "Minors Forex",
+            "other": "Exotics Forex"
           },
-          "trade": "立即交易外汇"
+          "trade": "Start Trading Forex Now"
         },
         "commission": {
           "title": "0佣金",
@@ -981,27 +982,27 @@
           "trade": "立即开户，开始交易期货"
         },
         "professional": {
-          "title": "为交易者设计的专业期货体验",
+          "title": "Institutional-Grade Forex Trading, Accessible to All",
           "row": {
             "col1": {
-              "title": "全品类覆盖",
-              "midst": "股指、外汇、大宗商品、债券与农产品全面支持",
-              "desc": "涵盖 CME、HKEX、EUREX 等全球主流交易所产品，支持多类资产配置与跨市场策略部署。"
+              "title": "Comprehensive Currency Coverage",
+              "midst": "Access all major, minor, and exotic Forex pairs across global trading sessions.",
+              "desc": "Connect to top-tier liquidity pools for deep pricing, tight spreads, and consistent execution across every strategy."
             },
             "col2": {
-              "title": "专业级撮合体验",
-              "midst": "机构级订单撮合引擎，低延迟、高执行效率",
-              "desc": "交易订单毫秒级响应，支持高频、套利、日内与模型化交易方式。"
+              "title": "Institutional-Grade Execution",
+              "midst": "Enjoy millisecond order matching with ultra-low latency and minimal slippage.",
+              "desc": "Engineered for scalping, hedging, and algorithmic trading — built to perform under any market condition."
             },
             "col3": {
-              "title": "极高杠杆支持",
-              "midst": "最高可达 1:2000 杠杆倍数，灵活配置",
-              "desc": "支持做多与做空双向交易，优化资金利用率，应对不同风险与风格偏好。"
+              "title": "Dynamic Leverage Options",
+              "midst": "Leverage up to 1:500, flexibly adjusted per account and instrument.",
+              "desc": "Maximize capital efficiency while maintaining full control of your exposure and risk profile."
             },
             "col4": {
-              "title": "无实物交割 + 支持 T+0 交易",
-              "midst": "无需交割实物，支持日内多次开平仓",
-              "desc": "所有期货产品均为差价合约形式，无持仓限制，进出自由，策略不设限。"
+              "title": "24/5 Trading with Instant Settlement",
+              "midst": "Trade continuously without physical delivery or position limits.",
+              "desc": "Open and close positions freely across Asian and global time zones — real-time balance and margin updates ensure seamless execution."
             }
           }
         },
