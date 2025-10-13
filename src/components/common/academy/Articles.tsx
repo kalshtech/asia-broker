@@ -40,6 +40,7 @@ type Props = {}
 const Articles = () => {
     const ArticlesT = useTranslations("Articles.beginner");
     const t = useTranslations("Pages.academy.learning.articles");
+    const [query, setQuery] = React.useState("");
     const stageAry = [
         {label: t("stage.before"), value: "before"},
         {label: t("stage.order"), value: "order"},
@@ -130,6 +131,15 @@ const Articles = () => {
             href: "/articles/beginner/common-mistakes"
         },
     ];
+
+    const filteredArticles = React.useMemo(() => {
+        const lowerQuery = query.toLowerCase()
+        return articlesAry.filter(article =>
+            article.title.toLowerCase().includes(lowerQuery)
+        )
+    }, [query])
+
+
     return (
         <section className={"p-4 lg:p-30"}>
             <motion.div
@@ -164,6 +174,7 @@ const Articles = () => {
                             <Input
                                 type="text"
                                 placeholder="搜索文章"
+                                onChange={(e) => setQuery(e.target.value)}
                                 className="border-none outline-0 pl-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 text-sm"
                             />
                         </div>
@@ -203,13 +214,21 @@ const Articles = () => {
                         }
                     </div>
                 </div>
-                <div className={"grid mt-6 gap-4 lg:gap-8 grid-cols-2 lg:grid-cols-3"}>
-                    {
-                        articlesAry.map((item, index) => (
-                            <BaseArticle key={index} {...item} />
-                        ))
-                    }
-                </div>
+
+                {
+                    filteredArticles.length > 0 ? (
+                        <div className={"grid mt-6 gap-4 lg:gap-8 grid-cols-2 lg:grid-cols-3"}>
+                            {
+                                filteredArticles.map((item, index) => (
+                                    <BaseArticle key={index} {...item} />
+                                ))
+                            }
+                        </div>
+                    ) : (
+                        <div className={"p-30 text-gray-500 grid-cols-1 text-center text-sm"}>未找到匹配的文章。</div>
+                    )
+                }
+
                 <div className={"mt-16"}>
                     <div className={"flex justify-center items-center text-theme-active cursor-pointer"}>
                         <Pagination>
