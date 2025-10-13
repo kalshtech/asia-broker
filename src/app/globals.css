@@ -135,7 +135,8 @@
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Instrument Sans", sans-serif !important;
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -143,7 +144,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .roboto {
-  font-family: "Roboto", sans-serif !important ;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .ibm-plex-sans {

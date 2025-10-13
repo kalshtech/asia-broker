@@ -19,7 +19,7 @@ const MockCalculator = () => {
                         >
                             {t("row.col1.title1")}
                         </Typography>
-                        <Typography className={"!text-white max-w-xl mt-4"}>
+                        <Typography variant={"p"} className={"!text-white max-w-xl mt-4"}>
                             {t("row.col1.desc1")}
                         </Typography>
                     </div>
@@ -31,8 +31,8 @@ const MockCalculator = () => {
                             {t("row.col1.title2")}
                         </Typography>
                         <Typography
-                            variant={"large"}
-                            className={"!text-white font-medium max-w-xl mt-2"}
+                            variant={"muted"}
+                            className={"!text-white max-w-xl mt-2"}
                         >
                             {t("row.col1.desc2")}
                         </Typography>
@@ -52,6 +52,11 @@ const MockCalculator = () => {
                         <div className={"flex mt-2"}>
                             <div className={"text-white"}>USD $500</div>
                             <div className={"text-white ml-auto"}>USD $500,000+</div>
+                        </div>
+                        <div className={"mt-4"}>
+                            <Typography variant={"muted"} className={"!text-[#9399AC]"}>
+                                {t("row.col2.desc")}
+                            </Typography>
                         </div>
                         <div className={"mt-4 lg:mt-16"}>
                             <Typography

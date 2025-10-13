@@ -7,7 +7,7 @@ import { Typography } from "@/components/ui/typography";
 const Values = () => {
     const t = useTranslations("Pages.accounts.profit.values");
     return (
-        <section className={"py- lg:p-0"}>
+        <section className={"lg:p-0"}>
             <div className={"grid grid-cols-12"}>
                 <div className={"mx-8 flex flex-col justify-center items-center col-span-12 lg:col-span-6"}>
                     <Typography
@@ -16,7 +16,7 @@ const Values = () => {
                     >
                         { t("title") }
                     </Typography>
-                    <Typography className={"text-center mt-4"}>
+                    <Typography variant={"h4"} className={"font-normal max-w-xl text-center mt-16 leading-[40px]"}>
                         { t("desc") }
                     </Typography>
                 </div>

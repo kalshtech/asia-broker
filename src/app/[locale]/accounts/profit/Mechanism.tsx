@@ -48,7 +48,7 @@ const Mechanism = () => {
                                 >
                                     { item.title }
                                 </Typography>
-                                <Typography variant={"muted"}>
+                                <Typography variant={"p"}>
                                     { item.desc }
                                 </Typography>
                             </div>

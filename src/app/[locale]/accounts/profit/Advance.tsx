@@ -30,11 +30,11 @@ const Advance = () => {
                 >
                     {t("title")}
                 </Typography>
-                <Typography className={"text-center !text-white mt-4 lg:mt-16"}>
+                <Typography variant={"p"} className={"text-center !text-white mt-4 lg:mt-16"}>
                     {t("desc1")}
                 </Typography>
                 <Typography
-                    variant={"h4"}
+                    variant={"h5"}
                     className={"font-medium mt-6 text-center !text-white"}
                 >
                     {t("desc2")}
@@ -53,15 +53,15 @@ const Advance = () => {
                     <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"bg-white rounded-xl p-16"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium mt-6 text-center"}
                             >
                                 {t("row.col1.title")}
                             </Typography>
 
                             <Typography
-                                variant={"muted"}
-                                className={"font-medium mt-6 text-center"}
+                                variant={"p"}
+                                className={"mt-6 text-center"}
                             >
                                 {t("row.col1.desc")}
                             </Typography>
@@ -77,15 +77,15 @@ const Advance = () => {
                     <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"bg-white rounded-xl p-16"}>
                             <Typography
-                                variant={"h4"}
+                                variant={"h5"}
                                 className={"font-medium mt-6 text-center"}
                             >
                                 {t("row.col2.title")}
                             </Typography>
 
                             <Typography
-                                variant={"muted"}
-                                className={"font-medium mt-6 text-center"}
+                                variant={"p"}
+                                className={"mt-6 text-center"}
                             >
                                 {t("row.col2.desc")}
                             </Typography>
