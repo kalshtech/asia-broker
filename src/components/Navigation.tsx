@@ -286,7 +286,7 @@ const Navigation = () => {
                             title: t("menu.beginner.row.col-3.title"),
                             ul: [
                                 { label: t("menu.beginner.row.col-3.ul.li1"), desc: t("menu.beginner.row.col-3.ul.desc1"), path: "/academy/learning" },
-                                { label: t("menu.beginner.row.col-3.ul.li2"), desc: t("menu.beginner.row.col-3.ul.desc2"), path: "/" }
+                                { label: t("menu.beginner.row.col-3.ul.li2"), desc: t("menu.beginner.row.col-3.ul.desc2"), path: "/academy/document" }
                             ]
                         }
                     ]

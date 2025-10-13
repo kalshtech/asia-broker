@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import Banner from "./Banner";
 import CoreTerms from "./CoreTerms";
 import Compass from "./Compass";
-import Articles from "./Articles";
+import Articles from "@/components/common/academy/Articles";
 import Explore from "./Explore";
 import Tools from "@/components/common/Tools";
 
