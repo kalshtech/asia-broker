@@ -5,7 +5,7 @@ import Tools from "@/components/common/Tools";
 export default async function Page() {
     return (
         <div>
-            <Articles/>
+            <Articles showSearch={true} />
             <Tools/>
         </div>
     )

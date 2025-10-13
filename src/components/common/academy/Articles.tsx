@@ -35,12 +35,18 @@ const fadeInUp: Variants = {
     },
 }
 
-type Props = {}
+type Props = {
+    showSearch?: boolean;
+};
 
-const Articles = () => {
+const Articles = (props: Props) => {
     const ArticlesT = useTranslations("Articles.beginner");
     const t = useTranslations("Pages.academy.learning.articles");
+    const navigationT = useTranslations("Navigation");
+    const commonT = useTranslations("Common");
     const [query, setQuery] = React.useState("");
+    const { showSearch = false } = props;
+
     const stageAry = [
         {label: t("stage.before"), value: "before"},
         {label: t("stage.order"), value: "order"},
@@ -155,32 +161,43 @@ const Articles = () => {
                     {t("title")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16"}>
-                <div className={"flex"}>
-                    <Breadcrumb>
-                        <BreadcrumbList>
-                            <BreadcrumbItem>
-                                <BreadcrumbLink href="/academy/learning">CFD新手学院</BreadcrumbLink>
-                            </BreadcrumbItem>
-                            <BreadcrumbSeparator/>
-                            <BreadcrumbItem>
-                                <BreadcrumbLink href="/academy/document">CFD新手文档中心</BreadcrumbLink>
-                            </BreadcrumbItem>
-                        </BreadcrumbList>
-                    </Breadcrumb>
-                    <div className={"ml-auto"}>
-                        <div className="flex items-center bg-[#E6E6E6] gap-2 rounded-full pl-8 pr-4 py-2 w-full max-w-md">
-                            <Search className={"text-[#999999]"} />
-                            <Input
-                                type="text"
-                                placeholder="搜索文章"
-                                onChange={(e) => setQuery(e.target.value)}
-                                className="border-none outline-0 pl-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 text-sm"
-                            />
+
+            {
+                showSearch && (
+                    <div className={"mt-16"}>
+                        <div className={"flex"}>
+                            <Breadcrumb>
+                                <BreadcrumbList>
+                                    <BreadcrumbItem>
+                                        <BreadcrumbLink href="/academy/learning">
+                                            { navigationT("menu.beginner.row.col-3.ul.li1") }
+                                        </BreadcrumbLink>
+                                    </BreadcrumbItem>
+                                    <BreadcrumbSeparator/>
+                                    <BreadcrumbItem>
+                                        <BreadcrumbLink href="/academy/document">
+                                            { navigationT("menu.beginner.row.col-3.ul.li2") }
+                                        </BreadcrumbLink>
+                                    </BreadcrumbItem>
+                                </BreadcrumbList>
+                            </Breadcrumb>
+                            <div className={"ml-auto"}>
+                                <div
+                                    className="flex items-center bg-[#E6E6E6] gap-2 rounded-full pl-8 pr-4 py-2 w-full max-w-md">
+                                    <Search className={"text-[#999999]"}/>
+                                    <Input
+                                        type="text"
+                                        placeholder={commonT("search-articles")}
+                                        onChange={(e) => setQuery(e.target.value)}
+                                        className="border-none outline-0 pl-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 text-sm"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                )
+            }
+
             <div className={"mt-16"}>
                 <div className={""}>
                     <Typography variant={"muted"}>
@@ -208,7 +225,7 @@ const Articles = () => {
                                 <div
                                     className={"bg-theme-light-bg rounded-full cursor-pointer text-[#666666] text-sm px-3 py-1 lg:px-6 lg:py-3"}
                                     key={index}>
-                                    {item.label}
+                                {item.label}
                                 </div>
                             ))
                         }
@@ -225,7 +242,9 @@ const Articles = () => {
                             }
                         </div>
                     ) : (
-                        <div className={"p-30 text-gray-500 grid-cols-1 text-center text-sm"}>未找到匹配的文章。</div>
+                        <div className={"p-30 text-gray-500 grid-cols-1 text-center text-sm"}>
+                            { commonT("no-articles") }
+                        </div>
                     )
                 }
 
