@@ -1,3 +1,4341 @@
 {
-
+  "Common": {
+    "register": "Open Account",
+    "startTrade": "Start Trading",
+    "usStock": "Stocks & ETFs",
+    "forex": "Forex",
+    "metals": "Precious Metals",
+    "energy": "Energy",
+    "futures": "Futures",
+    "crypto": "Crypto",
+    "code": "symbol",
+    "miniChart": "迷你走势",
+    "price": "Price",
+    "close": "Price",
+    "high": "High",
+    "low": "Low",
+    "open": "Open",
+    "changePercentage": "Change(%)",
+    "change": "Change",
+    "marketCap": "市值",
+    "volume": "Volume",
+    "productName": "产品名称",
+    "mockTrade": "模拟交易",
+    "transfer": "立即入金",
+    "all": "全部",
+    "date": "日期",
+    "star": "星级",
+    "counties": "国家",
+    "time": "时间",
+    "event": "事件",
+    "prev": "前值",
+    "estimate": "预测值",
+    "currency": "币种",
+    "view": "查看",
+    "bid": "Bid",
+    "ask": "Ask",
+    "qa-title": "你可能关心的问题",
+    "join-community": "加入帆船积木社区，专属客户经理为您提供更详细的信息",
+    "join-community-btn": "加入社群",
+    "search": "搜索",
+    "search-placeholder": "搜索你想交易的产品",
+    "searching": "搜索中...",
+    "error": "错误",
+    "tools": {
+      "title": "交易工具 · 打造你的专业战斗面板",
+      "row": {
+        "calendar": {
+          "title": "财经日历",
+          "desc": "追踪全球经济事件，掌握行情先机"
+        },
+        "calculation": {
+          "title": "费用计算器",
+          "desc": "轻松测算点差、佣金与隔夜利息成本"
+        },
+        "servers": {
+          "title": "VPS托管服务",
+          "desc": "接入高性能云服务器，确保低延迟交易"
+        },
+        "hot-charts": {
+          "title": "市场热力图",
+          "desc": "一图掌握最热资产波动与涨跌分布"
+        },
+        "ideas": {
+          "title": "交易灵感洞察",
+          "desc": "精选策略案例与每周实盘观点，激发交易灵感"
+        }
+      }
+    },
+    "start": {
+      "title": "立即开户，开启全球交易之旅",
+      "desc": "Asia Future Trading 提供全球领先的交易基础设施与资金管理体验，从开户、入金到实盘交易，一切尽在掌握。",
+      "register": "立即开户",
+      "download": "下载 MetaTrader 5"
+    },
+    "news": {
+      "category": {
+        "forex": "外汇",
+        "crypto": "加密货币",
+        "metals": "贵金属",
+        "stocks": "股票 & ETF",
+        "futures": "期货",
+        "energy": "能源",
+        "beginner": "新手入门",
+        "guide": "操作指南",
+        "strategy": "交易策略",
+        "data": "数据与指标",
+        "weekly": "每周洞察",
+        "macro": "宏观研究",
+        "market": "市场解读",
+        "allocation": "资产配置"
+      }
+    },
+    "profession": {
+      "title": "像专业人士一样交易！",
+      "desc": "使用多种工具交易差价合约，包括热门外汇、加密货币、贵金属、能源、股票&ETF、期货合约，轻松体验全球市场。",
+      "row": {
+        "col1": {
+          "title": "外汇",
+          "desc1": "交易全球主要货币对，如美元、欧元、英镑、日元等，全天候参与全球最大金融市场。",
+          "desc2": "Asia Future Trading 提供极速撮合与优质流动性，点差具竞争力，支持 G10 及新兴市场货币。",
+          "btnText": "探索外汇市场"
+        },
+        "col2": {
+          "title": "加密货币",
+          "desc1": "支持 BTC、ETH、DOGE、BNB、OKB 等主流币种，7×24 全天候交易。",
+          "desc2": "Asia Future Trading 提供稳定执行与低成本接入，助力用户以极具竞争力的成本参与加密市场。",
+          "btnText": "探索加密货币市场"
+        },
+        "col3": {
+          "title": "贵金属",
+          "desc1": "交易黄金、白银等贵金属差价合约，对冲通胀风险或抓住行情波动机会。",
+          "desc2": "我们为您提供极低点差、高流动性的黄金/白银CFD产品。",
+          "btnText": "探索贵金属市场"
+        },
+        "col4": {
+          "title": "能源",
+          "desc1": "布局原油与天然气市场，捕捉全球能源价格波动中的机会。支持WTI原油、布伦特原油、天然气等热门品种，把握宏观行情波动，适合关注全球地缘与通胀预期的投资者。",
+          "btnText": "探索能源市场"
+        },
+        "col5": {
+          "title": "股票&ETF",
+          "desc1": "无须持股，灵活交易全球热门资产。",
+          "desc2": "提供美股科技股、ETF指数基金等多样化产品，支持T+0、双向交易，是投机与配置的高效工具。",
+          "btnText": "探索股票 & ETF市场"
+        },
+        "col6": {
+          "title": "期货合约",
+          "desc1": "不受交割限制的期货体验。",
+          "desc2": "涵盖股指、商品、货币等多个市场的期货合约CFD，支持弹性杠杆与双向交易，助您快速建仓与对冲风险。",
+          "btnText": "探索期货合约市场"
+        }
+      }
+    }
+  },
+  "Pages": {
+    "home": {
+      "swiper": {
+        "1": {
+          "title1": "ASIA FUTURE TRADING",
+          "description1": "Trusted by traders worldwide. Offering better-than-market trading conditions.",
+          "description2": "Licensed by the Australian Securities and Investments Commission (ASIC)."
+        },
+        "2": {
+          "title1": "0 Commission Fee for All. Trade with Raw Spreads from 0.0 Pips",
+          "title2": "Low Cost. Full Transparency.",
+          "description1": "Say goodbye to inflated markups — we offer institutional-grade pricing for all."
+        },
+        "3": {
+          "title1": "Execute Faster Than You Think",
+          "title2": "Speed You Can Trust – Average Execution < 1ms",
+          "description1": "Smart order routing across global data centers — LD4 (London), NY4 (New York), TY3 (Tokyo), and SG1 (Singapore)."
+        },
+        "4": {
+          "title1": "One Powerful Account. 60,000+ CFD Products.",
+          "title2": "One Account. Global Markets.",
+          "description1": "Trade FX, Commodities, Indices, Stocks & Crypto."
+        },
+        "5": {
+          "title1": "Trust Is Our Strongest Leverage",
+          "title2": "Regulated. Transparent. Secure.",
+          "description1": "ASIC license, global compliance, and Tier-1 liquidity connections."
+        },
+        "6": {
+          "title1": "Built for Pros, Open to All",
+          "title2": "From Quant to Arbitrage — No Bias, Just Power.",
+          "description1": "Institutional execution infrastructure, ready for individuals, teams, and trading firms."
+        },
+        "7": {
+          "title1": "Your First Global Trading Community",
+          "title2": "Where traders grow together.",
+          "description1": "Join our Discord — a multilingual hub to learn, share, and scale alongside fellow traders."
+        }
+      },
+      "advertisement": {
+        "title": "Upgrade Your Trading with a Global Leading Broker",
+        "1": {
+          "title": "Command the Markets. Elevate Your Capital.",
+          "description": "Flagship CFD access meets real yield — trade 60,000+ products with up to 5.6% APY. Trusted by traders across the world.",
+          "btn": "Open Account Now"
+        },
+        "2": {
+          "title": "Trade with MetaTrader 5. Powered by AFT.",
+          "description": "Tier-1 liquidity. Institutional routing. Global access in milliseconds.",
+          "btn": "Learn More"
+        },
+        "3": {
+          "title": "Precision. Performance. Platinum.",
+          "description": "0.0 pip spreads, 5.6% APY, and premium support — all in one Platinum Account.",
+          "btn": "Learn More"
+        },
+        "4": {
+          "title": "VIC: Institutional Access With Distinction.",
+          "description": "Built for high-volume traders seeking full control, customization, and priority support.",
+          "btn": "Learn More"
+        },
+        "5": {
+          "title": "Low-Latency VPS for Professional Traders.",
+          "description": "Run your strategy on ultra-fast, globally optimized nodes — where latency is edge.",
+          "btn": "Learn More"
+        },
+        "6": {
+          "title": "Earn While You Wait. Up to 5.6% APY.",
+          "description": "Institutional-grade yield, credited daily. No lock-ups. Always accessible.",
+          "btn": "Learn More"
+        }
+      },
+      "pricing": {
+        "left": {
+          "title1": "Institutional-Grade Pricing. Deep Liquidity.",
+          "title2": "Built for best execution. Powered by precision.",
+          "title3": "0.0 Spreads. No minimum commissions. Maximum control.",
+          "description2": "AFT’s intelligent routing and best-execution systems deliver ultra-low latency and institutional-grade depth — minimizing slippage at every step.",
+          "btnText": "Explore Platinum Account",
+          "fromText": "Data sourced from Asia Future Trading Platinum account and publicly available benchmarks from major platforms."
+        },
+        "right": {
+          "title": "Real-Time Trading Costs. Competitive. Fair. Verified.",
+          "crypto": "Crypto",
+          "commission": "commission",
+          "more": "more",
+          "commodity": "Commodities",
+          "forex": "Forex",
+          "index": "Indices",
+          "prompt": "The industry average cost is USD 100."
+        }
+      },
+      "markets": {
+        "title": "One Account. Trade the World.",
+        "description": "A single 6-digit ID. 65,000+ instruments. Zero borders. No limits.",
+        "more": "Explore Markets"
+      },
+      "speed": {
+        "title1": "Lightning-Fast Infrastructure. Built for the Speed of Institutions.",
+        "title2": "Direct access to Tier-1 liquidity. Internal Matching as Low as 0.1ms.",
+        "description": "Asia Future Trading deploys ultra-low latency infrastructure across global financial hubs, directly connecting to Tier-1 liquidity providers. With Equinix data centers in London, New York, Tokyo, and Singapore, we ensure institutional-grade execution — lightning-fast, reliable, and secure.",
+        "row": {
+          "1": {
+            "title": "Global Market Access",
+            "description": "Direct links to London, New York, Tokyo, and Singapore."
+          },
+          "2": {
+            "title": "Always-On Liquidity",
+            "description": "Live pricing. Instant quotes. No downtime."
+          },
+          "3": {
+            "title": "Execution You Can Trust",
+            "description": "Consistent fills — even in volatile markets."
+          }
+        }
+      },
+      "downloadAndRegister": {
+        "title": "Get Started with MT5",
+        "description": "Trade faster, automate smarter, and manage everything in one powerful platform. Powered by Asia Future Trading.",
+        "open": "Open Account",
+        "download": "Download MT5",
+        "row": {
+          "1": {
+            "title": "Cross-Platform Access，",
+            "description": "Seamless trading across desktop, web, and mobile — anytime, anywhere."
+          },
+          "2": {
+            "title": "Pro Tools & Custom Charts",
+            "description": "Draw, analyze, and customize with powerful charting tools and 38+ indicators."
+          },
+          "3": {
+            "title1": "Strategy Automation with MQL5",
+            "title2": "Secure & Professional",
+            "description1": "Run EAs and backtests with ease, and fine-tune strategies through MQL5 scripting.",
+            "description2": "ASIC-regulated and globally trusted — trade on a platform built for pros."
+          }
+        }
+      },
+      "community": {
+        "title": "A Global Platform. Powered by Local Communities.",
+        "description": "Multilingual support. Multi-currency accounts. Global access with local precision.",
+        "row": {
+          "1": {
+            "desc1": "Global Support, Human Connection",
+            "desc2": "Real people. Real support — in your language.",
+            "desc3": "From onboarding to strategy, our local managers are always one message away on Discord, WhatsApp, Telegram, and WeChat.",
+            "desc4": "Bootcamps. Live trading reviews. Strategy Q&A. Learning hubs. Tech insights",
+            "link": "Contact Us"
+          },
+          "2": {
+            "title": "SailingBrick™ Community",
+            "description1": "Where trading feels modular, intuitive, and never alone.",
+            "description2": "Join a community that supports your first trade and scales with your ambition.",
+            "btnText": "Join Our Discord",
+            "prompt": "Reach out via the 「Fast Onboarding Channel」 or leave your info — we’ll follow up within 1 hour."
+          },
+          "3": {
+            "desc1": "Challenge. Compete. Elevate.",
+            "desc2": "Level up with trading challenges, live rankings, and real rewards.",
+            "explore": "Explore Competitions"
+          }
+        }
+      },
+      "assets": {
+        "title": "Fast Deposits. Free Withdrawals. Global Payment Support.",
+        "button": {
+          "type": "Deposit Methods",
+          "safe": "Fees & Security",
+          "card": "AFT Card"
+        },
+        "text": {
+          "type": {
+            "title": "Global Transfers. Built for Speed. Backed by Trust.",
+            "description": "Support for major payment channels worldwide, ensuring fast and secure fund flows.",
+            "ul-title1": "Local rails across Asia and Europe",
+            "ul-desc1": "Support for trusted methods in Thailand, Malaysia, Indonesia, Vietnam, Korea, Japan, and the EU.",
+            "ul-title2": "USDT on-chain: under 1 min",
+            "ul-desc2": "Instant blockchain deposits. Withdrawals cleared in ~10 mins.",
+            "ul-title3": "Fiat or crypto. Your choice.",
+            "ul-desc3": "Flexible settlement in local currencies or digital assets.",
+            "ul-title4": "Fully compliant by design",
+            "ul-desc4": "Real-time risk controls and AML monitoring ensure safe transfers.",
+            "more": "View All Methods"
+          },
+          "safe": {
+            "title": "Zero Fees. Instant Transfers. Fully Protected.",
+            "description": "Transparent pricing & real-time security.",
+            "ul-title1": "0 Fees",
+            "ul-desc1": "No charges on deposits or withdrawals across supported methods.",
+            "ul-title2": "Fast Processing",
+            "ul-desc2": "On-chain deposits arrive in as fast as 1 minute. Withdrawals processed within 10 minutes on average, never exceeding 30.",
+            "ul-title3": "Fund Protection",
+            "ul-desc3": "Abnormal transaction flows are automatically flagged and held for review.",
+            "more": "View All Methods"
+          },
+          "card": {
+            "title": "AFT Card. Spend Smarter. Live Freer — Anywhere.",
+            "description": "Now live. Instantly spend your AFT balance worldwide — in-store or online — with Visa or Mastercard options, tailored for lifestyle, investing, and daily use.",
+            "ul-title1": "Free for VIC users",
+            "ul-desc1": "No $20 monthly fee. Enjoy premium access with your VIC Account.",
+            "ul-title2": "Global spending, no limits",
+            "ul-desc2": "Use your balance for lifestyle, trading, or everyday purchases — online and offline.",
+            "ul-title3": "Visa & Mastercard options",
+            "ul-desc3": "Choose the network that fits your needs and region.",
+            "ul-title4": "Use it anywhere, for anything",
+            "ul-desc4": "From trading desks to dinner bills — your capital, your call.",
+            "more": "Get AFT Card"
+          }
+        }
+      },
+      "properly": {
+        "title": "Choose the Right Account for Your Edge",
+        "description": "Trade with pricing, leverage, and execution tailored to your strategy.",
+        "explore": "Explore Classic Benefits",
+        "tabs": {
+          "classic": "Classic",
+          "platinum": "Platinum",
+          "vic": "VIC"
+        },
+        "left": {
+          "classic": {
+            "name": "Classic Account",
+            "title": "Your all-access starting point. Built for everyone.",
+            "desc": "Dual-mode in USD & Cent Account, with just a $100 minimum deposit."
+          },
+          "platinum": {
+            "name": "Platinum Account",
+            "title": "Step into the world of professional trading.",
+            "desc": "Unlock lower spreads, faster execution, and exclusive benefits — all starting from just $5,000."
+          },
+          "vic": {
+            "name": "VIC Account",
+            "title": "Join the AFT VIC Club.",
+            "desc": "Unlock elite trading privileges with institutional-grade infrastructure. Starting from $100,000."
+          }
+        },
+        "right": {
+          "swiper1": {
+            "1": {
+              "title": "Low Barrier · Quick Start · Demo Account Ready",
+              "description": "Get started in global markets with just $100. Cent Accounts let you explore real trading environments using small capital, with demo accounts available for easy onboarding."
+            },
+            "2": {
+              "title": "Zero Commission · Transparent Costs",
+              "description": "Trade with no commission fees. Only pay the spread — floating as low as 1.2 to 1.8 pips across major assets like FX, gold, and indices."
+            },
+            "3": {
+              "title": "Learn & Grow · Community Support",
+              "description": "Join the Sail & Blocks community to access beginner bootcamps, strategy Q&A, trading challenges, and ongoing education resources."
+            },
+            "4": {
+              "title": "Cent Account Exclusive Competitions",
+              "description": "Enter weekly trading contests tailored for Cent Account users. Earn real cash prizes and rewards — perfect for both new and experienced traders."
+            }
+          },
+          "swiper2": {
+            "1": {
+              "title": "Institutional Pricing · Better Fills",
+              "ul": {
+                "1": "Access global Tier-1 liquidity providers",
+                "2": "Supports block trades, EAs, and high-frequency strategies",
+                "3": "Millisecond-level matching to reduce slippage"
+              }
+            },
+            "2": {
+              "title": "Platinum Routing · Execution at Speed",
+              "ul": {
+                "1": "Direct connectivity to Equinix financial data centers",
+                "2": "Millisecond order routing with priority queuing",
+                "3": "Reliable fills even for high-volume orders"
+              }
+            },
+            "3": {
+              "title": "Raw Spreads · Lower Costs",
+              "ul": {
+                "1": "Spreads from as low as 0.0 pips",
+                "2": "Paired with ultra-low commissions ($3–$3.5/lot/side)",
+                "3": "Optimized for scalping and high-frequency strategies"
+              }
+            },
+            "4": {
+              "title": "Dedicated Tools · Expert Support",
+              "ul": {
+                "1": "Free VPS hosting for uninterrupted automated trading",
+                "2": "Seamless multi-account, multi-terminal access",
+                "3": "Dedicated relationship manager and technical support — every step of the way"
+              }
+            }
+          },
+          "swiper3": {
+            "1": {
+              "title": "Custom Products & Pricing, Your Way",
+              "ul": {
+                "1": "Create your own tradable instruments — FX pairs, crypto assets, and more",
+                "2": "Define your liquidity and pricing structure from as low as $1 per million traded"
+              }
+            },
+            "2": {
+              "title": "Independent Tech & Infrastructure",
+              "ul": {
+                "1": "Dedicated VPS & ultra-low-latency lines",
+                "2": "Custom API & FIX solutions for institutional and quantitative setups"
+              }
+            },
+            "3": {
+              "title": "Exclusive Funding & Settlement",
+              "ul": {
+                "1": "Priority processing for large, multi-currency deposits and withdrawals",
+                "2": "Complimentary AFT USDT Card — spend globally with Mastercard"
+              }
+            },
+            "4": {
+              "title": "Private Club Access & Strategic Perks",
+              "ul": {
+                "1": "Invitation-only VIC Club with gated access",
+                "2": "Closed-door roundtables, private research briefings",
+                "3": "VIP rewards from Bitcoin bonuses to luxury timepieces",
+                "4": "Priority access to AFT’s strategic initiatives & partnerships"
+              }
+            }
+          }
+        }
+      },
+      "cooperator": {
+        "title": "The Premier Platform for Global Traders & Partners",
+        "desc": "Your edge in trading. Your growth in partnership.",
+        "tabs": {
+          "trader": "For Strategy Traders",
+          "partners": "For Partners & Affiliates"
+        },
+        "trader": {
+          "title": "Maximize Your Returns with the Industry’s Leading Profit Split",
+          "desc": "Unlock high-performance infrastructure, raw pricing, and customized payout schemes. Whether you’re trading independently or managing a following — we reduce your cost so you keep more of your alpha.",
+          "btn": "Learn More"
+        },
+        "partners": {
+          "title": "Your All-in-One Partner Portal",
+          "desc": "We built a dedicated portal to support your client management and performance tracking needs. From marketing kits to multi-language creatives, you’ll have every tool to grow your business globally — backed by AFT.",
+          "btn": "Explore Partner Program"
+        }
+      },
+      "reward": {
+        "title1": "新客奖励",
+        "title2": "限时翻倍",
+        "best": "最高拎走",
+        "transfer": "股赠股",
+        "get": "立即领取"
+      },
+      "competition": {
+        "title": "加入属于你的交易比赛",
+        "rows": {
+          "1": {
+            "title": "Classic美分账户周赛",
+            "join": "加入美分周赛"
+          },
+          "2": {
+            "title": "经典账户月赛",
+            "join": "立即报名经典月赛"
+          },
+          "3": {
+            "title": "铂金账户月赛",
+            "join": "解锁铂金挑战"
+          },
+          "4": {
+            "title": "VIC 账户尊享大赛",
+            "join": "申请加入 VIC Club"
+          }
+        },
+        "week": "每周",
+        "month": "每月",
+        "climate": "每季"
+      },
+      "calendar": {
+        "title": "Trade Smarter. No Account Required. Built for Every Trader.",
+        "description": "Access the AFT Highlight calendar, expert insights, and technical analysis — all free, no login required.\nStay in sync with global markets, data events, and trading opportunities.",
+        "explore": "Explore Calendar",
+        "subscribe": "Free Subscribe",
+        "prospect": {
+          "title": "2025 Industry Outlook",
+          "description": "Tracks outstanding notional and gross market value of OTC ..."
+        },
+        "buttons": {
+          "past": "Explore Learn Starts Insight",
+          "download": "Download Report"
+        },
+        "stars": {
+          "high": "高-3星",
+          "medium": "中-2星",
+          "low": "低-1星",
+          "none": "无关紧要-0星"
+        },
+        "from": "数据来源于：",
+        "form": {
+          "first-placeholder": "请输入您的姓",
+          "last-placeholder": "请输入您的名",
+          "country-placeholder": "请输入国家",
+          "email-placeholder": "请输入您的邮箱",
+          "subscribe": "立即免费订阅，交易巡航工具"
+        }
+      }
+    },
+    "products": {
+      "forex": {
+        "banner": {
+          "title": "Forex",
+          "midst": "Experience the world’s leading Forex markets.",
+          "description": "The Forex market is the world’s largest and most liquid financial market. We provide direct access to top-tier global liquidity with tight spreads, fast execution, and 24/5 support — helping traders across Asia capture every market move."
+        },
+        "markets": {
+          "title": "Discover the Pairs You Want to Trade",
+          "desc": "Explore major, minor, and exotic Forex pairs with real-time pricing and competitive spreads.",
+          "btn": {
+            "main": "Majors Forex",
+            "second": "Minors Forex",
+            "other": "Exotics Forex"
+          },
+          "trade": "Start Trading Forex Now"
+        },
+        "commission": {
+          "title": "0佣金",
+          "desc": "把握外汇货币对的价格波动，享受超小点差和灵活杠杆，交易所有外汇",
+          "more": "了解更多"
+        },
+        "moreMarket": {
+          "title": "立即交易外汇市场",
+          "desc": "无论你是日内交易者、趋势追随者，还是套利策略执行者，我们都为你提供稳定透明的交易环境。",
+          "btnText": "立即交易汇率波动机会"
+        },
+        "guide": {
+          "title": "掌握外汇入门指南",
+          "row": {
+            "col1": {
+              "title": "学习如何在全球最大金融市场中致胜",
+              "desc": "外汇差价合约（CFD）让你无需实际持有外币资产，也能参与全球货币对的价格波动。灵活杠杆、低交易门槛、24小时市场，让策略型交易更高效。",
+              "more": "阅读更多外汇CFD指南"
+            },
+            "col2": {
+              "span1": {
+                "title": "什么是外汇CFD？",
+                "desc": "快速了解货币对的交易机制，以及为什么差价合约可以让你双向交易而无需持币。"
+              },
+              "span2": {
+                "title": "学会使用杠杆，控制风险与收益",
+                "desc": "解什么是1:10杠杆，如何计算保证金，掌握风险控制与收益放大的平衡策略。"
+              },
+              "span3": {
+                "title": "如何看懂交易信号？",
+                "desc": "从图表走势、新闻驱动到智能提示，教你判断真实信号与噪音，避免常见误区。"
+              }
+            }
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "什么是最受欢迎的货币对？",
+              "desc": "最热门的货币对通常是市场流动性最高的外汇直盘，包括 AUDUSD、EURUSD、GBPUSD、NZDUSD、USDCAD、USDCHF 和 USDJPY。由于交易活跃，这些货币对通常拥有较低的点差，并能实现快速成交。在我们Asia Future Trading，这些主要货币对支持免隔夜利息交易，适合长期持仓。"
+            },
+            "li2": {
+              "title": "除了主流货币对，还有哪些热门交易对？",
+              "desc": "交易者也倾向于将部分外汇交叉盘纳入其投资组合，例如 AUDCAD、CADCHF、EURAUD、GBPCHF 等。平台上大多数交叉盘也支持免隔夜利息交易。您可通过交易品种表格查阅支持免息的具体货币对列表。"
+            },
+            "li3": {
+              "title": "杠杆交易的优势与风险有哪些？",
+              "desc": "杠杆允许您使用较小的自有资金控制更大的交易仓位，从而放大盈利潜力。然而，杠杆同时也会放大亏损风险。使用杠杆前，请确保具备成熟的风险控制策略，并合理设置风险敞口，以防止账户资产大幅波动。"
+            },
+            "li4": {
+              "title": "如何理解保证金及其在交易中的作用？",
+              "desc": "保证金是您开仓时需预留的资金，作为价格波动的抵押。其具体金额取决于所选杠杆和交易规模。保证金水平的设置应与您的整体风险管理策略保持一致，以帮助您更好地控制账户风险。"
+            },
+            "li5": {
+              "title": "杠杆水平是否会根据账户净值调整？",
+              "desc": "是的，平台会根据账户净值自动调整可用最大杠杆。具体如下：",
+              "text-1": "0 – 4,999 USD：1:无限",
+              "text-2": "5,000 – 29,999 USD：1:2000",
+              "text-3": "30,000 – 99,999 USD：1:1000",
+              "text-4": "100,000 USD 及以上：1:500",
+              "prompt": "请注意，高杠杆虽可提升交易效率，但也需谨慎使用，以防止剧烈波动带来重大风险。"
+            },
+            "li6": {
+              "title": "新闻发布及周末期间的杠杆调整机制是怎样的？",
+              "desc": "重大新闻事件或周末期间，市场波动显著加剧，为控制风险，平台将自动降低相关品种的最大可用杠杆至 1:200。具体时间如下：",
+              "text-1": "周末调整时间：每周五 GMT 18:00（北京时间周六 02:00）至周日 GMT 22:00（北京时间周一 06:00）",
+              "text-2": "新闻事件影响：如多个重要新闻发布时间间隔小于15分钟，相关交易品种将被合并计算，统一上调保证金要求，在调整期间开立的头寸将使用上调后的保证金标准，开市后1小时内重新计算为正常保证金水平。"
+            }
+          }
+        }
+      },
+      "crypto": {
+        "banner": {
+          "title": "加密货币",
+          "midst": "更高效、更公平，重新定义加密交易体验",
+          "description": "以接近万分之一的极致成本，开启 BTCUSD 等主流加密资产的全新交易时代。以低至 0.1 毫秒的执行速度，高效接入全球数字货币市场。"
+        },
+        "markets": {
+          "title": "搜索你想交易的加密货币",
+          "desc": "输入如 BTCUSD、ETHUSD，即可查看实时买入/卖出价格。",
+          "btn": {
+            "main": "主流币",
+            "second": "平台币与热门项目",
+            "other": "山寨币"
+          },
+          "trade": "立即开户，开始交易加密货币"
+        },
+        "commission": {
+          "title": "0 佣金 · 超小点差 · 灵活杠杆",
+          "midst": "捕捉加密货币市场波动，享受极具竞争力的交易成本。",
+          "desc": "Asia Future Trading 为加密资产提供高流动性报价与稳定撮合，支持灵活杠杆，真正实现透明、高效的交易环境。",
+          "more": "了解更多"
+        },
+        "moreMarket": {
+          "title": "立即交易全球加密资产",
+          "midst": "通过差价合约，交易 BTC、ETH、DOGE、BNB、OKB 等主流加密货币。Asia Future Trading 提供机构级报价、高频撮合引擎和稳定执行速度，让你无惧浮动保证金和资金费率，专注把握行情机会。",
+          "desc": "支持 USDT 保证金结算，轻松接入全球数字货币市场。",
+          "btnText": "交易加密货币"
+        },
+        "guide": {
+          "title": "掌握加密CFD交易指南",
+          "row": {
+            "col1": {
+              "title": "开启你的加密货币交易进阶之路",
+              "midst": "为什么在2025年越来越多专业交易者转向加密CFD？",
+              "desc": "更高效、更公平、更透明的加密资产交易方式。",
+              "more": "阅读更多加密资产CFD指南"
+            },
+            "col2": {
+              "span1": {
+                "title": "高流动性，极速成交？",
+                "desc": "通过我们接入的深度流动性池，随时进出市场，快速响应行情。"
+              },
+              "span2": {
+                "title": "零资金费率，BTC单边手续费低至万分之一",
+                "desc": "与永续合约不同，Crypto CFD 不收取隔夜资金费。手续费最低仅万分之一。"
+              },
+              "span3": {
+                "title": "一站式账户 · 覆盖多资产交易",
+                "desc": "在一个账户中同时管理你的加密与全球资产投资组合。资金更集中，策略更灵活，提升整体交易效率。"
+              }
+            }
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "平台提供哪些主流加密货币交易？",
+              "desc": "目前我们支持BTC/USD、ETH/USD、SOL/USD、XRP/USD、DOGE/USD等超20种热门加密货币对的差价合约交易，全部支持做多/做空与灵活杠杆。"
+            },
+            "li2": {
+              "title": "加密CFD交易的优势是什么？",
+              "desc": "相比传统链上交易，CFD免去钱包与托管风险，执行速度更快，适合投机策略。无需真实持币也可参与上涨/下跌行情，适合短线与中期交易者。"
+            },
+            "li3": {
+              "title": "加密货币支持哪些杠杆？",
+              "desc": "我们提供以下动态杠杆设置（可能随市况与监管政策调整）：",
+              "text-1": "BTC、ETH：最高 1: 2000",
+              "text-2": "主流币（SOL、XRP 等）：最高 1:2000",
+              "text-3": "新兴币与高波动币种：最高 1:2000",
+              "prompt": "注意：高杠杆伴随高风险，请合理配置仓位。"
+            },
+            "li4": {
+              "title": "加密CFD是否收取隔夜资金费或强平费用？",
+              "desc": "我们的Crypto CFD产品不收取隔夜资金费（Funding Fee），您可持仓过夜或长期持有而无额外成本。同时平台采用强平前预警机制（止损提前触发），并启用负余额保护，确保您的账户不会因极端行情而出现亏损穿仓。"
+            },
+            "li5": {
+              "title": "加密交易中如何设置止盈止损？支持哪些订单类型？",
+              "desc": "您可在开仓前设置止盈（TP）与止损（SL），也可在持仓过程中随时修改。平台支持市价单、限价单、止损单等常见订单类型，并在服务器侧精确执行，有效规避滑点和报价跳空导致的策略失效风险。"
+            },
+            "li6": {
+              "title": "什么是区块链技术？",
+              "desc": "区块链是一种分布式账本技术，所有交易数据按时间顺序加密存储于“区块”中，并通过网络节点共同维护。其核心特征包括去中心化、防篡改与可追溯性。区块链广泛应用于比特币等加密货币的发行与转账，也成为DeFi、NFT等创新金融应用的技术基础。",
+              "prompt": "平台提供的加密货币CFD产品，虽不依赖链上交易机制，但其价格走势依然会受链上市场影响。"
+            }
+          }
+        }
+      },
+      "pm": {
+        "banner": {
+          "title": "现货贵金属",
+          "midst": "黄金 · 白银，专业交易者的避险之选",
+          "desc": "在全球不确定性加剧的时代，Asia Future Trading 为您提供低延迟撮合、稳定流动性的黄金/白银CFD交易平台。以低至 0.1 毫秒的执行速度，把握贵金属市场的每一次关键波动。"
+        },
+        "markets": {
+          "title": "搜索你想交易的贵金属合约",
+          "desc": "输入如 XAUUSD、XAGUSD，可查看实时买入/卖出价格。",
+          "btn": {
+            "main": "贵金属",
+            "second": "基础金属"
+          },
+          "trade": "立即开户，开始交易贵金属"
+        },
+        "commission": {
+          "title": "0 佣金 · 极低点差 · 灵活杠杆",
+          "desc": "Asia Future Trading为贵金属差价合约提供机构级报价源、稳定撮合引擎与弹性杠杆。",
+          "more": "了解更多"
+        },
+        "moreMarket": {
+          "title": "立即参与贵金属市场，捕捉宏观脉动",
+          "midst": "现在开始你的贵金属投资之旅",
+          "desc": "通过差价合约，交易黄金、白银、铂金等全球金属市场资产。支持做多/做空与持仓过夜，无需实物交割，也无额外仓储与交割成本。",
+          "btnText": "立即交易贵金属"
+        },
+        "guide": {
+          "title": "贵金属CFD 投资指南",
+          "row": {
+            "col1": {
+              "title": "为什么专业投资者选择贵金属 CFD？",
+              "desc": "避险价值 · 多空灵活 · 成本更优",
+              "more": "了解更多关于贵金属CFD"
+            },
+            "col2": {
+              "span1": {
+                "title": "无交割负担，纯粹价格交易",
+                "desc": "无实物交割，零仓储与保险成本。"
+              },
+              "span2": {
+                "title": "适合避险与多空双向策略",
+                "desc": "在经济不确定或通胀压力下，黄金往往表现坚挺。"
+              },
+              "span3": {
+                "title": "全天候交易，波动中见机会",
+                "desc": "贵金属市场交易活跃，撮合效率高，适合高频与短线策略。"
+              }
+            }
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "贵金属差价合约（CFD）是什么？",
+              "desc": "差价合约是一种金融衍生品，允许您通过预测贵金属（如黄金、白银）的价格涨跌进行交易，而无需持有实物资产。"
+            },
+            "li2": {
+              "title": "我可以交易哪些贵金属品种？",
+              "desc": "目前平台支持黄金（XAU/USD）、白银（XAG/USD）、铂金（XPT/USD）、钯金（XPD/USD）等主流贵金属。"
+            },
+            "li3": {
+              "title": "贵金属CFD交易时间是怎样的？",
+              "desc": "贵金属市场几乎 24 小时开放（周一至周五），但可能会因节假日或系统维护有短暂停盘，建议以交易平台时间为准。"
+            },
+            "li4": {
+              "title": "贵金属CFD的主要交易成本有哪些？",
+              "desc": "主要包括：",
+              "text-1": "点差（买卖价差）",
+              "text-2": "隔夜利息（Swap）",
+              "text-3": "杠杆带来的保证金要求",
+              "prompt": "平台不收取额外佣金，交易成本透明。"
+            },
+            "li5": {
+              "title": "贵金属点差是多少？是否固定？",
+              "desc": "贵金属点差为浮动点差，会根据市场流动性与波动性变化。正常行情下，黄金点差可低至 0.2，白银点差低至 0.3。"
+            },
+            "li6": {
+              "title": "隔夜利息是如何收取的？",
+              "desc": "隔夜利息适用于持仓过夜的订单。由于周末市场休市，周三的隔夜利息会按三倍计收，以覆盖周末持仓成本。"
+            }
+          }
+        }
+      },
+      "energy": {
+        "banner": {
+          "title": "能源",
+          "midst": "以极具竞争力的成本与高频执行速度，交易全球能源心跳",
+          "desc": "以极具竞争力的成本与高频执行速度，交易WTI原油、布伦特原油、天然气等热门能源差价合约（CFD），应对通胀、战争、供需紧张等全球风险，灵活做多或做空，捕捉能源资产价格波动机会。"
+        },
+        "markets": {
+          "title": "搜索你想交易的能源品种",
+          "desc": "输入如 WTIUSD、NGASUSD，即可查看实时买入/卖出价格。",
+          "btn": {
+            "main": "原油类",
+            "second": "天然气类"
+          },
+          "trade": "立即开户，开始交易能源"
+        },
+        "commission": {
+          "title": "0 佣金 · 极低点差 · 灵活杠杆",
+          "desc": "日内交易、套期保值、宏观趋势跟踪，我们都为你准备好了稳定流畅的交易环境。",
+          "more": "了解更多"
+        },
+        "moreMarket": {
+          "title": "快速接入全球能源市场",
+          "desc": "Asia Future Trading 提供稳定执行、高频撮合与低延迟系统，让您以USD等主流保证金快速交易原油、天然气等热门能源资产。无需等待实物交割周期，即可日内建仓平仓，满足高频与趋势策略的交易需求。",
+          "btnText": "立即交易能源产品"
+        },
+        "guide": {
+          "title": "能源CFD 投资指南",
+          "row": {
+            "col1": {
+              "title": "为什么越来越多交易者选择能源 CFD？",
+              "desc": "高波动性 · 双向交易 · 无交割负担",
+              "more": "阅读更多能源CFD交易指南"
+            },
+            "col2": {
+              "span1": {
+                "title": "无需交割，轻松参与能源市场",
+                "desc": "无需持有实物原油或天然气，无运输、仓储与结算周期，可专注价格波动本身的交易机会。"
+              },
+              "span2": {
+                "title": "对新闻高度敏感，策略更有预判性",
+                "desc": "能源是市场对政策、战争、制裁等信息最先反应的资产之一，适合新闻事件+突破组合策略。"
+              },
+              "span3": {
+                "title": "行情波动大，交易机会频繁",
+                "desc": "受全球供需、突发事件等影响，油气价格日内波动剧烈，是短线和日内交易者的热门标的。"
+              }
+            }
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "我可以交易哪些能源类差价合约？",
+              "desc": "我们目前支持WTI原油（USOIL）、布伦特原油（UKOIL）与天然气（NATGAS/USD）等主流能源CFD品种，均支持做多与做空，适合捕捉行情波动机会。"
+            },
+            "li2": {
+              "title": "能源产品的交易时间是怎样的？",
+              "desc": "能源市场支持几乎全天候交易。例如：",
+              "text-1": "WTI原油和布伦特原油：周一至周五 24小时（除短暂结算时间）",
+              "text-2": "天然气：主要集中在美盘时段活跃",
+              "text-3": "具体时间请参考您的交易平台。"
+            },
+            "li3": {
+              "title": "原油和天然气的点差是多少？",
+              "desc": "点差为浮动机制，依据市场流动性动态变化。在正常波动环境下，WTI点差可低至 0.03，天然气点差低至 0.02。高波动或低流动性时点差可能扩大。"
+            },
+            "li4": {
+              "title": "能源交易对新闻是否敏感？",
+              "desc": "非常敏感。能源品种尤其受以下因素影响显著："
+            },
+            "li5": {
+              "title": "贵金属点差是多少？是否固定？",
+              "desc": "贵金属点差为浮动点差，会根据市场流动性与波动性变化。正常行情下，黄金点差可低至 0.2，白银点差低至 0.3。",
+              "text-1": "OPEC会议/减产声明",
+              "text-2": "地缘政治冲突（如中东局势）",
+              "text-3": "美国原油库存数据（EIA/API）",
+              "text-4": "天气变化（如寒潮影响天然气）",
+              "text-5": "建议结合财经日历与新闻头条制定交易策略。"
+            },
+            "li6": {
+              "title": "如何控制能源CFD交易风险？",
+              "desc": "平台提供完整的风险管理工具：",
+              "text-1": "设置止盈止损（TP/SL）",
+              "text-2": "支持追踪止损",
+              "text-3": "开启负余额保护，防止穿仓",
+              "text-4": "同时建议合理设置杠杆，并避免高波动时段重仓交易。"
+            }
+          }
+        }
+      },
+      "stocks": {
+        "banner": {
+          "title": "全球股票 & ETF",
+          "midst": "低至 1 美元，交易全球明星股票与指数 ETF，享受极速执行与机构级流动性",
+          "desc": "通过差价合约（CFD），以低门槛、高灵活性的方式参与全球股票与ETF指数基金市场。支持双向交易与杠杆设置，让个人投资者以专业工具布局全球市场趋势。"
+        },
+        "markets": {
+          "title": "搜索你想交易的股票 & ETF",
+          "desc": "输入如 TSLA、AAPL、SPY、QQQ 等代码，快速查看实时买入/卖出价格，捕捉全球市场脉动。",
+          "btn": {
+            "main": "热门美股科技股",
+            "second": "全球核心指数ETF",
+            "other": "主题 & 板块ETF"
+          },
+          "trade": "立即开户，开始交易股票与ETF"
+        },
+        "commission": {
+          "title": "多空灵活 · 无需持股 · 快速成交",
+          "desc": "无需实际持有股票，也可先卖后买，把握财报发布等波动机会",
+          "more": "了解更多"
+        },
+        "moreMarket": {
+          "title": "快速接入全球股票与ETF市场",
+          "desc": "Asia Future Trading 提供涵盖全球核心股票与ETF的差价合约产品，您只需一个账户，便可交易苹果、特斯拉、英伟达等热门股票，或通过SPY、QQQ等ETF轻松布局整个行业与市场指数。",
+          "btnText": "交易全球股票与ETF"
+        },
+        "guide": {
+          "title": "股票 & ETF CFD 投资指南",
+          "row": {
+            "col1": {
+              "title": "一美元也可以交易全球ETF的理想解决方案",
+              "desc": "交易不止于持股，股票 & ETF CFD 打开更多可能性。",
+              "more": "了解更多关于股票与ETF"
+            },
+            "col2": {
+              "span1": {
+                "title": "多样化投资组合配置",
+                "desc": "仅通过一笔交易，即可投资多个行业或资产类型，如科技、商品、债券与房地产等。"
+              },
+              "span2": {
+                "title": "打破地域与资金限制，让每个人都能交易全球市场",
+                "desc": "CFD提供了更低门槛、更高自由度的方式参与美股、ETF行情。"
+              },
+              "span3": {
+                "title": "精准聚焦主题投资",
+                "desc": "通过CFD交易特定行业ETF（如AI、清洁能源、芯片等），快速响应全球趋势。"
+              }
+            }
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "股票 & ETF CFD 和普通买股票有什么区别？",
+              "desc": "CFD 是差价合约交易，不涉及股票实物交割。您通过价格波动进行交易，无需持有真实股票，也可灵活选择买入或卖出方向。"
+            },
+            "li2": {
+              "title": "可以交易哪些股票和ETF？",
+              "desc": "平台支持多种热门股票（如特斯拉 TSLA、苹果 AAPL、英伟达 NVDA）与指数ETF（如 SPY、QQQ、XLF 等），持续拓展中。具体产品请在交易平台中查询。"
+            },
+            "li3": {
+              "title": "股票CFD是否支持T+0交易？",
+              "desc": "是的，股票 & ETF CFD 支持当天买入、当天卖出（T+0），不受传统券商T+2交割限制，适合日内交易与高频策略。"
+            },
+            "li4": {
+              "title": "可以做空股票和ETF吗？",
+              "desc": "可以。CFD支持双向交易，您可以在判断市场下跌时先卖出（做空），待价格下跌后再平仓获利。"
+            },
+            "li5": {
+              "title": "ETF 是什么？我为什么应该关注它？",
+              "desc": "ETF（交易所交易基金）是一种跟踪特定指数、行业板块、商品或资产组合的金融产品。通过购买单一ETF，您就可以获得对整个市场或板块的敞口，达到分散投资与降低风险的目的。"
+            },
+            "li6": {
+              "title": "可以用ETF CFD投资哪些资产类型？",
+              "desc": "我们平台提供的ETF差价合约涵盖多种市场板块，包括：",
+              "text-1": "美股指数（如SPY、QQQ）",
+              "text-2": "行业板块（如XLF金融、XLE能源、XLV医疗）",
+              "text-3": "债券ETF（如TLT）",
+              "text-4": "商品ETF（如GLD黄金）",
+              "text-5": "新兴主题（如ICLN清洁能源、ARKK创新科技）"
+            }
+          }
+        }
+      },
+      "future": {
+        "banner": {
+          "title": "全球期货差价合约交易",
+          "midst": "追踪黄金、原油、美债等核心大宗商品与利率资产的市场波动，灵活布局全球期货市场",
+          "desc": "通过差价合约（CFD）参与全球期货品种交易，无需实物交割、支持杠杆与双向操作，让你在关键行情中快速进出、精准执行。"
+        },
+        "markets": {
+          "title": "搜索你想要的期货品种",
+          "desc": "输入如 ES、CL、GC、6E 等期货代码，可查看实时买入/卖出价格。",
+          "btn": {
+            "main": "外汇类",
+            "second": "股指类",
+            "other": "能源与金属类",
+            "other-meta": "农产品与债券类"
+          },
+          "trade": "立即开户，开始交易期货"
+        },
+        "professional": {
+          "title": "Institutional-Grade Forex Trading, Accessible to All",
+          "row": {
+            "col1": {
+              "title": "Comprehensive Currency Coverage",
+              "midst": "Access all major, minor, and exotic Forex pairs across global trading sessions.",
+              "desc": "Connect to top-tier liquidity pools for deep pricing, tight spreads, and consistent execution across every strategy."
+            },
+            "col2": {
+              "title": "Institutional-Grade Execution",
+              "midst": "Enjoy millisecond order matching with ultra-low latency and minimal slippage.",
+              "desc": "Engineered for scalping, hedging, and algorithmic trading — built to perform under any market condition."
+            },
+            "col3": {
+              "title": "Dynamic Leverage Options",
+              "midst": "Leverage up to 1:500, flexibly adjusted per account and instrument.",
+              "desc": "Maximize capital efficiency while maintaining full control of your exposure and risk profile."
+            },
+            "col4": {
+              "title": "24/5 Trading with Instant Settlement",
+              "midst": "Trade continuously without physical delivery or position limits.",
+              "desc": "Open and close positions freely across Asian and global time zones — real-time balance and margin updates ensure seamless execution."
+            }
+          }
+        },
+        "moreMarket": {
+          "title": "快速接入全球期货市场",
+          "desc": "Asia Future Trading 提供涵盖全球主流市场的期货差价合约（CFD）产品，覆盖外汇、股指、大宗商品、国债与农产品等核心资产类别。 无论你是短线交易者、策略研究者还是套期保值者，只需一个账户，即可参与全球主流期货行情，捕捉涨跌双向机会。",
+          "btnText": "立即交易期货CFD"
+        },
+        "guide": {
+          "title": "期货 CFD 投资指南",
+          "row": {
+            "col1": {
+              "title": "低门槛 · 高自由度 · 打开全球期货市场的理想之门",
+              "desc": "差价合约（CFD）让个人投资者也能参与全球主流期货市场，实现多空灵活交易、T+0 快速操作，适配多种交易策略与目标。",
+              "more": "了解更多关于期货"
+            },
+            "col2": {
+              "span1": {
+                "title": "多样化资产参与",
+                "desc": "涵盖股指、原油、黄金、外汇、国债、农产品等多个核心类别"
+              },
+              "span2": {
+                "title": "放大灵活性与效率",
+                "desc": "无需大额保证金即可参与主流期货合约。"
+              },
+              "span3": {
+                "title": "利用波动性与短期机会",
+                "desc": "通过 T+0 当日买卖机制与无实物交割限制"
+              }
+            }
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "期货 CFD 和传统期货有什么区别？",
+              "desc": "期货 CFD（差价合约）允许你基于标的期货合约的价格波动进行交易，而无需交割实物或履约到期。\n它更灵活，支持小额交易、灵活杠杆，适合日内与策略型交易者。"
+            },
+            "li2": {
+              "title": "支持哪些主流期货品种？",
+              "desc": "我们平台通过 MT5 交易账户支持多个交易所的期货 CFD 产品，包括但不限于：",
+              "text-1": "CME：黄金、原油、标普500、纳指、欧元、日元等",
+              "text-2": "HKEX：恒生指数、小型恒生、恒科指数等",
+              "text-3": "EUREX：德国 DAX、Stoxx 50、德国国债等",
+              "text-4": "具体产品列表可在交易平台内搜索相关代码，如 ES、NQ、CL、GC、HSI 等。"
+            },
+            "li3": {
+              "title": "为什么官网上无法查看期货报价？只能在 MT5 上操作？",
+              "desc": "为了保障用户体验与合规运营，期货类差价合约产品的实时报价与交易信息将通过 MetaTrader 5（MT5）专业平台提供。出于合规与信息透明的考量，我们未在官网直接展示此类产品报价，敬请理解。如需查看，请立即开立账户并下载 MT5 客户端。"
+            },
+            "li4": {
+              "title": "期货 CFD 支持 T+0 吗？",
+              "desc": "是的，我们几乎所有期货差价合约产品支持 T+0 当日买入卖出，无需等待结算，适合日内交易者。"
+            },
+            "li5": {
+              "title": "能做空吗？有没有杠杆？",
+              "desc": "完全可以。期货 CFD 支持双向交易（做多/做空）及最高 1:2000 杠杆，适配不同风险偏好与策略风格。"
+            }
+          }
+        }
+      },
+      "transfer": {
+        "banner": {
+          "title": "全方位掌控你的资金流动",
+          "midst": "Asia Future Trading 不收取任何出入金手续费，24/7 随时取用",
+          "desc": "使用安全、高效的本地与国际支付方式，您的交易请求将自动快速处理。不收取任何出入金手续费，助您资金流转无忧。"
+        },
+        "professional": {
+          "title": "一切为您的资金流动而优化",
+          "row": {
+            "col1": {
+              "title": "快速入金",
+              "desc": "支持多种本地与国际支付方式，入金申请 24 小时实时处理，一周 5 天无间断服务。"
+            },
+            "col2": {
+              "title": "0 手续费",
+              "desc": "所有支付方式均免手续费，100% 净额到账，出入金体验更丝滑。"
+            },
+            "col3": {
+              "title": "账户安全保障",
+              "desc": "客户资金与平台运营资金 完全隔离存放于受监管的独立账户，符合国际监管标准。"
+            },
+            "col4": {
+              "title": "加密货币极速到账",
+              "desc": "全面支持 USDT、USDC、BTC、ETH 等主流加密资产，链上确认后即可秒级入账。"
+            }
+          }
+        },
+        "advertising": {
+          "title": "快速、安全、触手可及",
+          "row": {
+            "title": "覆盖全球的支付网络，让资金进出更轻松",
+            "desc": "Asia Future Trading 支持多样化本地与国际支付方式，满足不同地区用户的资金需求。无论您身在何处，入金都可快速到账，出金亦可随时发起、自动审批。"
+          },
+          "prompt": "所有方式0 手续费，无隐藏成本。平台仅使用官方对接渠道，保障每一笔入金安全稳定。"
+        },
+        "card": {
+          "title": "Asia Future Trading Mastercard  & Visa 卡",
+          "row": {
+            "col1": {
+              "title": "一张卡，连接你的交易账户与生活。",
+              "desc1": "无论你身在何处，AFT 实体卡与虚拟卡皆可用于日常消费、全球提现与商旅场景。资金灵活调度，自由掌控，全球畅行无阻。",
+              "desc2": "所有交易账户用户皆可申请，VIC 账户专属客户可免费领取，尊享更多权益。",
+              "vic": "了解VIC 账户",
+              "apply": "立即申请银行卡"
+            }
+          }
+        },
+        "process": {
+          "title": "只需三个简单步骤，资金即刻到账",
+          "row": {
+            "col1": {
+              "title": "注册和登录交易账户",
+              "desc": "前往 Asia Future Trading 客户中心，使用已注册账户信息登录。",
+              "bottom": "立即开户"
+            },
+            "col2": {
+              "title": "选择您的入金方式",
+              "desc": "选择适合您的支付方式（银行转账 / 加密货币 / 本地支付等），填写入金金额并提交申请。",
+              "bottom": "了解出入金方式"
+            },
+            "col3": {
+              "title": "完成转账并确认",
+              "desc": "根据页面指引完成转账，提交凭证后系统将自动处理，资金将在到账后即时入账您的交易账户。",
+              "bottom": "立即体验交易"
+            }
+          }
+        },
+        "assets-safe": {
+          "title": "我们将资金安全作为最高优先级",
+          "row": {
+            "col1": {
+              "title": "客户资金独立存放",
+              "desc": "客户资金严格存放于受监管的独立账户，与平台自有资金完全隔离，杜绝挪用风险。"
+            },
+            "col2": {
+              "title": "银行级通道加密",
+              "desc": "所有支付方式均支持多重加密协议，并通过银行级 KYC/AML 审核机制，保障资金流转安全。"
+            },
+            "col3": {
+              "title": "实时风险监控",
+              "desc": "平台构建 7×24 小时自动化风险监控系统，覆盖异常行为识别与资金动向预警。"
+            },
+            "col4": {
+              "title": "国际合规标准",
+              "desc": "全面遵循 AML / CFT（反洗钱与反恐融资）标准，确保资金来源合规、交易安全可溯。"
+            }
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "入金多久到账？",
+              "text-1": "加密货币 / 稳定币（USDT / USDC）：1–15 分钟到账，具体时间取决于链上确认速度",
+              "text-2": "加密货币 / 稳定币（USDT / USDC）：1–15 分钟到账，具体时间取决于链上确认速度",
+              "text-3": "国际电汇（SWIFT）：处理时间约为 3–5 个工作日，具体视银行及国家地区而定"
+            },
+            "li2": {
+              "title": "Asia Future Trading 是否收取入金或出金手续费？",
+              "desc": "平台本身不收取任何入金或出金手续费。",
+              "text-1": "您只需承担支付通道（如银行、电汇、区块链网络）本身可能产生的少量服务费。"
+            },
+            "li3": {
+              "title": "支持哪些入金方式？",
+              "desc": "我们支持以下多种支付方式，满足不同地区客户需求：",
+              "text-1": "国际电汇（SWIFT）",
+              "text-2": "本地银行转账",
+              "text-3": "稳定币：USDT / USDC",
+              "text-4": "加密货币：BTC / ETH 等主流币种",
+              "text-5": "各类本地快捷支付方式（视国家/地区而定）"
+            },
+            "li4": {
+              "title": "出入金是否支持 24/7 处理？",
+              "desc": "是的，您可在任意时间提交出入金请求，系统将自动处理。我们承诺在24 小时内受理与完成资金操作。",
+              "text-1": "注意：部分银行或第三方支付服务的处理时间可能会导致延迟。平台不对因支付通道本身引起的处理滞后承担责任。"
+            },
+            "li5": {
+              "title": "可以从模拟账户中出金吗？",
+              "desc": "不可以。模拟账户中的资金为虚拟资产，仅用于模拟交易与策略测试，不可用于出金或转账操作。"
+            },
+            "li6": {
+              "title": "如何申请 Asia Future Trading Mastercard / Visa 卡？",
+              "desc": "所有真实账户用户均可申请 AFT 实体或虚拟银行卡。",
+              "text-1": "VIC 用户可享受免费申领权益",
+              "text-2": "请联系您的客户经理或前往卡片服务页面提交申请"
+            }
+          }
+        }
+      },
+      "rates": {
+        "banner": {
+          "title": "0 交易佣金",
+          "midst": "全账户支持，一切只为降低你的交易成本",
+          "desc": "Asia Future Trading 为全球交易者打造机构级低成本交易环境，费用结构透明、公平、简明，不隐藏、不复杂，专注为你降低每一笔交易成本。"
+        },
+        "mechanism": {
+          "title": "三大核心减负机制，让你交易更轻松",
+          "title1": "0 交易佣金 · 0 出入金手续费 · 0 隔夜利息（部分产品）",
+          "row": {
+            "col1": {
+              "title": "所有账户 0 交易佣金 / 0 手续费",
+              "desc": "无论是 Classic、Platinum 还是 VIC 账户，我们对所有产品交易 一律不收取佣金。"
+            },
+            "col2": {
+              "title": "出入金 0 手续费",
+              "desc": "支持多种入金方式（本地银行、电汇、USDT 等），我们不收取任何平台手续费。"
+            },
+            "col3": {
+              "title": "大部分产品 0 隔夜利息（Swap）",
+              "desc": "大部分热门产品（如比特币、以太坊）及铂金 / VIC 账户支持免除隔夜利息，长期持仓无负担。",
+              "prompt": "免隔夜利息适用范围可能因市场条件及账户类型而异，请查看每种产品的详情说明。"
+            }
+          }
+        },
+        "stream": {
+          "title": "我们将机构级流动性带给每一位用户，机构级产品，不再遥不可及",
+          "row": {
+            "col1": {
+              "title": "连接全球顶级流动性提供者 XTX Markets｜LMAX｜Finalto",
+              "desc": "我们采用与专业机构一致的撮合引擎与订单执行机制，确保每一位交易者都能享有：",
+              "prompt1": "无论你是日内交易者，策略套利者，还是长期持仓者，你都将体验到真正对标华尔街水准的流动性质量。",
+              "prompt2": "这就是我们能做到 0 佣金 + 高速成交的底层保障。",
+              "ul": {
+                "li1": "更紧的点差",
+                "li2": "更深的市场深度",
+                "li3": "更快的成交速度"
+              }
+            }
+          }
+        },
+        "table": {
+          "title": "想了解每个交易品种的具体成本？",
+          "overview": "以下为您概览",
+          "head": {
+            "type": "资产类别",
+            "introduction": "简介"
+          },
+          "prompt1": "点差低至 0 点，交易全球最大市场货币对",
+          "prompt2": "黄金、白银、铂金等多品类支持，适合构建抗通胀组合",
+          "prompt3": "把握原油、天然气等热门大宗商品波动机会",
+          "prompt4": "交易特斯拉、苹果、英伟达等热门股票，低成本高灵活",
+          "prompt5": "涵盖股指、利率、能源、农产品等全球期货品种",
+          "prompt6": "BTC、ETH 等热门币种，0 隔夜利息，支持高杠杆与双向交易",
+          "details": "了解详情"
+        },
+        "enhance": {
+          "title": "闲置收益增强账户，进一步降低您的持仓成本",
+          "box": {
+            "title": "Future Earn Account｜铂金 / VIC 账户专属利息机制",
+            "desc": "Asia Future Trading 提供差异化账户福利，长期持仓不再“闲置”，让每一笔资金都在为你创造回报。",
+            "more": "了解 Future Earn 功能"
+          }
+        },
+        "statement": {
+          "title": "隔夜费用 & 产品交易时间",
+          "desc": "想了解更多？我们为每位用户提供清晰的参考指引",
+          "row": {
+            "col1": {
+              "title": "隔夜利息说明",
+              "desc": "不同账户类型、不同资产类别的隔夜利息规则",
+              "more": "了解隔夜利息详情"
+            },
+            "col2": {
+              "title": "产品交易时间表",
+              "desc": "涵盖全球市场主要品种的开收盘时间，帮助你规划交易节奏",
+              "more": "查看产品交易时间表"
+            }
+          }
+        },
+        "standard": {
+          "title": "重塑全球交易成本新标准",
+          "desc": "Asia Future Trading 以机构级别的定价与流动性，为全球交易者提供透明、公平的市场接入。从专业到细节，每一步都为你的长期交易成功而设计。"
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "Asia Future Trading 是否真的所有账户都 0 佣金？",
+              "desc": "是的，无论 Classic、Platinum 还是 VIC 账户，所有产品均不收取平台佣金。"
+            },
+            "li2": {
+              "title": "隔夜利息是否所有产品都免？",
+              "desc": "并非全部免除。热门品种（如 BTC、ETH）以及铂金 / VIC 账户部分产品可享免隔夜利息，详情请参考隔夜利息说明页面。"
+            },
+            "li3": {
+              "title": "出入金是否支持 24/7？",
+              "desc": "是的，出入金申请可随时提交，平台将在 24 小时内完成处理。但部分银行 / 支付系统可能有自身延迟。详情请参考出入金页面。"
+            },
+            "li4": {
+              "title": "在哪里可以查阅产品的点差和交易时间？",
+              "desc": "你可以在【费率表】和【产品交易时间表】页面查看实时更新的详细说明。"
+            }
+          }
+        }
+      }
+    },
+    "ideas": {
+      "vps": {
+        "banner": {
+          "title1": "Asia Future Trading",
+          "title2": "专用低延迟 VPS 为 MT5 和 MQL 专业策略打造",
+          "desc": "为铂金账户的极速交易环境，限时免费申请",
+          "btnText": "立即注册铂金账户",
+          "muted": "我们希望你能赢。我们将协助为你选择最优的 VPS 节点位置，以实现与交易服务器间最低延迟的连接。"
+        },
+        "autoTrade": {
+          "title": "全天候自动化交易，无需值守",
+          "midst": "通过 VPS，你的 EA 策略可以 24 小时不间断运行，即使你关闭电脑、断网或离开办公桌，交易依然照常进行。",
+          "desc": "完美兼容 MT5 与 MQL 环境，支持各类智能交易脚本与复制交易系统。"
+        },
+        "localServers": {
+          "title": "专线直连，极速下单不卡顿",
+          "midst": "VPS 服务器搭载企业级网络架构，连接 Asia Future Trading 平台的最低延迟节点，让每一笔订单执行更迅速、更精准，避免因延迟错过行情。",
+          "desc": "我们会根据你的地理位置，智能推荐最优机房（香港、新加坡、伦敦、纽约等）。"
+        },
+        "running": {
+          "title": "稳定运行，不占用本地资源",
+          "midst": "VPS 拥有独立操作系统，运行于云端，不影响你本地电脑性能。你可以随时远程连接，跨设备管理你的策略、监控交易动态，自由又高效。",
+          "desc": "随时随地，与专业机构一样操作你的交易系统。"
+        },
+        "globalPoints": {
+          "title": "全球低延迟节点，连接更快、下单更稳",
+          "midst": "我们与顶级云服务商合作，在全球多地部署高性能 VPS 节点。系统将智能匹配您所在地与交易服务器之间的最优路径，实现毫秒级连接，为高频和自动化策略提供坚实网络基础。",
+          "btnText": "立即注册铂金账户",
+          "muted": "完成注册流程后，我们的客户经理通常会在 1 小时内 与您取得联系。您也可以通过加入我们的 Discord 社区 直接联系客户经理获取详细信息，我们将在 15 分钟内为您完成 VPS 配置。"
+        },
+        "subscribe": {
+          "title": "订阅 Asia Trading View VPS",
+          "form-name": "请填写以下注册表",
+          "form": {
+            "first": "名字",
+            "first-placeholder": "请输入你的名字",
+            "last": "姓氏",
+            "last-placeholder": "请输入你的姓氏",
+            "email": "后台注册邮箱",
+            "email-placeholder": "请输入你的邮箱",
+            "phone": "手机",
+            "phone-placeholder": "请输入你的手机",
+            "submit": "申请"
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "我需要具备什么条件才能申请 VPS？",
+              "desc": "只需开通铂金账户，即可限时免费申请 VPS 服务。无额外费用，系统审核账户类型后由客户经理协助配置。"
+            },
+            "li2": {
+              "title": "VPS 是否兼容我的自动交易策略或 EA？",
+              "desc": "是的。AFT 的 VPS 完全支持 MT5 平台，适配所有 MQL 编写的 EA、复制交易程序与自定义脚本。"
+            },
+            "li3": {
+              "title": "VPS 配置需要多久？是否复杂？",
+              "desc": "通常在 15 分钟内完成。您只需提交申请，客户经理将远程协助配置完成，无需技术经验，零学习成本。"
+            }
+          }
+        }
+      },
+      "professional": {
+        "banner": {
+          "title1": "Asia Future Trading",
+          "title2": "交易灵感学院",
+          "desc": "新手必读、操作指南、进阶策略、每周专家洞察尽在Asia Future Trading灵感学院。 你不是来观望市场的。你是来掌控它的。",
+          "placeholder": "搜索你关心的策略、市场、工具…"
+        },
+        "brief": {
+          "row": {
+            "left": {
+              "title": "精选 · 每周专家洞察 · The Asia Trading View",
+              "prospect": "2025年衍生品展望",
+              "prospect-desc": "Tracks outstanding notional and gross market value of OTC ...",
+              "download": "立即下载"
+            },
+            "right": {
+              "title": "往期精选文章列表"
+            }
+          }
+        },
+        "articles": {
+          "title": "文章分类浏览导航",
+          "more": "查看更多"
+        }
+      },
+      "calendar": {
+        "banner": {
+          "title": "Asia Trading View 财经日历",
+          "desc": "根据即将发布的全球财经事件和历史数据，制定你的交易计划，洞察波动背后的市场逻辑。"
+        },
+        "subscribe": {
+          "ul": {
+            "li1": "我们相信，优质的市场信息，应该对所有交易者开放。",
+            "li2": "无需开户，只需留下邮箱，即可免费订阅 AFT 财经日历。",
+            "li3": "我们的团队会每周为你精选全球重要事件，如利率决议、就业数据、通胀指标等，并配套技术分析与交易策略建议，让你的邮箱变身 7×24 小时的市场情报站。"
+          },
+          "watch": "免费订阅洞察",
+          "register": "开通账户"
+        },
+        "financialCalendar": {
+          "title": "财经日历"
+        },
+        "aboutCalendar": {
+          "title": "如何使用我们的财经与交易日历",
+          "desc": "您可以通过财经日历，浏览或搜索即将发生的宏观经济事件、财报与股息公告、IPO 上市、拆股时间等关键信息。同时欢迎订阅我们的专家洞察，每周更新涵盖利率决议、就业数据、通胀发布等重点事件，并附带技术分析与策略建议，助您更从容应对市场波动。",
+          "form": {
+            "first-placeholder": "请输入您的姓",
+            "last-placeholder": "请输入您的名",
+            "country-placeholder": "请输入国家",
+            "email-placeholder": "请输入您的邮箱",
+            "subscribe": "立即订阅"
+          }
+        }
+      },
+      "calculator": {
+        "fee": {
+          "title": "费用计算器",
+          "desc": "使用Asia Future Trading 投资计算器计算点、保证金、点差和手续费等数值。 我们便捷的工具可以帮助您简化复杂的交易头寸计算。",
+          "tabs": {
+            "forex": "外汇",
+            "commodity": "大宗商品",
+            "indices": "指数",
+            "stock": "股票&ETF",
+            "crypto": "加密货币"
+          },
+          "forex-prompt": "精准规划您的外汇交易。 这个投资计算器可帮助您管理风险，以及确定所需保证金和潜在交易成本等所有费用。",
+          "commodity-prompt": "使用功能强大的投资计算器，确定保证金、点值和预期交易成本，助您规划金属和能源交易。",
+          "stock-prompt": "使用这一实用的投资计算器，规划苹果和特斯拉等热门股票的交易。 使用此选项卡来确定所需保证金和交易成本等费用。",
+          "indices-prompt": "针对全球热门的美国、欧盟和亚洲指数，规划您的交易。 此投资计算器可助您轻松计算保证金和点值等数值。",
+          "crypto-prompt": "规划加密货币交易，比如BTCUSD和ETHUSD等热门数字货币对。 此投资计算器可助您确定保证金、点值和预期交易成本。",
+          "form": {
+            "type": "账户类型",
+            "currency": "帐户货币",
+            "species": "品种",
+            "level": "杠杆",
+            "volume": "手数",
+            "calculate": "计算",
+            "result": "计算结果",
+            "margin": "保证金",
+            "shortCredit": "空头隔夜利息",
+            "longCredit": "多头隔夜利息",
+            "cost": "点差成本",
+            "fee": "手续费",
+            "pointValue": "点值"
+          },
+          "disclaimer": "免责声明：投资计算器仅供参考。 计算器所提供的结果仅供教育和估算之用，不应将其视为完整结果或用于投资决策。 实时结果只能在执行订单时确定。 点差或因市场波动、新闻发布、经济事件、市场的开市和休市时间以及正在交易的品种等因素而波动或扩大。"
+        },
+        "use": {
+          "title": "如何使用外汇费用交易计算器",
+          "desc": "使用我们的计算器，让交易前的准备更高效。节省计算时间，专注于真正重要的交易决策",
+          "ul": {
+            "li1": "选择您的账户类型和基础货币（如 USD、EUR 等）",
+            "li2": "选择您希望交易的品种，例如EURUSD、XAUUSD 等",
+            "li3": "输入交易手数与杠杆，点击“计算”，即可获得所需保证金、每点价值、交易成本等关键参数"
+          },
+          "prompt": "*该计算器适用于所有标准、铂金等账户类型，支持主要外汇品种、黄金、原油等差价合约交易产品。"
+        },
+        "reasons": {
+          "title": "为什么每个交易者都需要一个外汇计算器",
+          "row": {
+            "col1": {
+              "title": "交易计划，从精确计算开始",
+              "desc": "外汇交易费用计算器是每位交易者制定交易计划的重要工具。它可以在建仓前帮助您提前评估：",
+              "ul": {
+                "li1": "所需保证金",
+                "li2": "每点价值",
+                "li3": "预估交易成本"
+              },
+              "prompt": "这类信息对任何短线、日内或波段策略都至关重要。由于外汇市场波动剧烈，微小的价格变动就可能带来显著盈亏结果，精确的成本预判是风险控制的第一步。借助该计算器，您可以更好地评估杠杆对风险敞口的影响，制定更稳健的建仓/平仓策略。尤其在多品种、多仓位组合下，提前量化每一笔交易的成本与边际收益，将成为您在剧烈行情中立于不败之地的关键。",
+              "explore": "探索外汇"
+            }
+          }
+        }
+      },
+      "marketsmap": {
+        "charts": {
+          "stock-title": "股票热力图",
+          "stock-desc": "快速了解全球主要股票的涨跌分布与行业表现。通过热力图，您可以直观查看哪些板块领涨、哪些个股回调，为日内操作与板块轮动策略提供参考依据。",
+          "stock-explore": "探索股票",
+          "forex-title": "外汇热力图",
+          "forex-desc": "快速洞察不同货币对的强弱变化，识别市场趋势动能。通过热力图，您可以一目了然地查看哪些货币走强，哪些正在回调，为日内交易与趋势策略提供直观支持",
+          "forex-explore": "探索外汇",
+          "crypto-title": "数字货币热力图",
+          "crypto-desc": "跟踪主流与热门币种在不同时间维度的涨跌变化。无论是 BTC、ETH 还是 SOL、DOGE，加密热力图帮助您迅速把握板块轮动与资金聚焦点，为短线交易或板块轮动提供图形化支持。",
+          "crypto-explore": "探索数字货币"
+        },
+        "marketBanner": {
+          "title": "市场热力图"
+        },
+        "interpretation": {
+          "row": {
+            "col1": {
+              "title": "什么是热力图？",
+              "desc": "热力图是一种用于可视化市场走势强弱对比的图表工具。它通过颜色深浅变化，直观展示多个交易产品在不同时间段内的涨跌幅，帮助交易者识别波动机会与交易节奏。",
+              "ul-title": "它广泛应用于多个差价合约市场：",
+              "ul": {
+                "li1": "外汇：识别货币对强弱变化，把握趋势动能",
+                "li2": "加密货币：对比多个币种涨跌，捕捉短线机会",
+                "li3": "股票CFD：观察行业轮动与代表性股票的相对强弱"
+              },
+              "prompt": "无论是日内交易还是多品种比较，热力图都能帮助你迅速形成全局判断，提升交易效率。",
+              "enter": "进入交易灵感洞察",
+              "enter-prompt": "获取更多市场解读与策略灵感"
+            }
+          }
+        }
+      }
+    },
+    "academy": {
+      "learning": {
+        "banner": {
+          "title": "Asia Future Trading 新手学院学习中心",
+          "midst": "开启你的交易之旅，从这里开始。你不是来观望市场的。你是来掌控它的。",
+          "desc": "从认识市场、了解术语到在Asia Future Trading下出第一笔订单，Asia Future Trading 新手学院为你准备了系统清晰的学习路径，帮助你真正理解并掌握交易的本质。"
+        },
+        "core": {
+          "title": "快速掌握核心交易术语",
+          "desc": "从点差、杠杆到套利机制，我们为新手整理了最常用的交易术语与简明定义，助你快速理解金融语言。",
+          "explore": "探索更多交易术语",
+          "btn": {
+            "term": "通过术语浏览",
+            "theme": "通过主题浏览"
+          },
+          "placeholder": "尝试找出您的答案",
+          "searchNodata": "未找到匹配结果，请尝试更换关键词。",
+          "item": "项",
+          "nodata": "没有数据"
+        },
+        "compass": {
+          "title": "新手交易指南 · 三大关键起点",
+          "desc": "掌握交易的原理、选择合适的券商与账户类型，是每一位新手走向成熟的第一步。",
+          "row": {
+            "span1": {
+              "title": "如何选择合适的CFD账户？",
+              "desc": "从产品种类到账户功能全面了解",
+              "prompt": "了解什么是CFD账户，不同账户类型的区别，以及如何根据你的交易目标选择最合适的平台与账户结构。"
+            },
+            "span2": {
+              "title": "如何选择合适的券商？",
+              "desc": "判断平台是否值得信赖",
+              "prompt": "从监管信息、费用结构到用户体验，教你如何评估一个券商是否安全可靠、适合你的交易偏好。"
+            },
+            "span3": {
+              "title": "如何选择合适的CFD账户？",
+              "desc": "从产品种类到账户功能全面了解",
+              "prompt": "了解什么是CFD账户，不同账户类型的区别，以及如何根据你的交易目标选择最合适的平台与账户结构。"
+            }
+          },
+          "view": "阅读文章"
+        },
+        "articles": {
+          "title": "系统学习，从你最关心的问题开始",
+          "stage": {
+            "title": "阶段分类",
+            "before": "开户前",
+            "order": "下单前",
+            "operating": "操作中",
+            "control": "风险控制",
+            "functions": "平台功能"
+          },
+          "theme": {
+            "title": "主题分类",
+            "forex": "外汇",
+            "crypto": "加密货币",
+            "metal": "贵金属",
+            "stock": "股票&ETF",
+            "future": "期货",
+            "energy": "能源",
+            "beginner": "新手入门",
+            "operationalGuide": "操作指南",
+            "trade": "交易策略",
+            "indices": "操作与指标",
+            "weekView": "每周洞察",
+            "study": "宏观研究",
+            "interpretation": "市场解读",
+            "configuration": "资产配置"
+          },
+          "more": "查看更多"
+        },
+        "explore": {
+          "row": {
+            "col1": {
+              "title": "探索更高一层的交易智慧",
+              "desc": "当你迈出入门的第一步，我们也为你的下一步做好了准备。在交易灵感洞察学院，你将收获更深入的市场解读与策略启发——涵盖每周观点、宏观趋势、进阶策略和多元资产的深度分析。助你持续成长，交易不止步于执行，更走向认知与洞察。",
+              "btnText": "进入交易灵感洞察",
+              "prompt": "获取宏观策略、产品洞察与实战灵感"
+            }
+          }
+        }
+      }
+    },
+    "corporation": {
+      "about": {
+        "banner": {
+          "title": "关于 Asia Future Trading",
+          "prompt": "Born in Asia.  Built for the World.  Refine the Future of Trading.",
+          "desc": "一家以科技与全球流动性高效协作为核心的多资产差价合约经纪商，致力于通过算法驱动的系统、深度流动性与产品创新，为全球交易者持续优化交易体验。"
+        },
+        "step": {
+          "row": {
+            "col1": {
+              "title": "正式启动机构业务",
+              "year": "2019"
+            },
+            "col2": {
+              "title": "布局加密资产管理",
+              "year": "2020"
+            },
+            "col3": {
+              "title": "推出外汇&商品定价服务",
+              "year": "2021"
+            },
+            "col4": {
+              "title": "合规框架与全球接入",
+              "year": "2023"
+            },
+            "col5": {
+              "title": "全球化运营",
+              "year": "2024-Now"
+            }
+          }
+        },
+        "trust": {
+          "title": "使命，科技驱动信任",
+          "desc": "以“科技驱动信任”为使命，致力于成为全球交易者最值得依赖的合作伙伴。所有账户 0 佣金，0.0点差起。卓越的交易体验，不止于成本与速度，更关乎信任与掌控。",
+          "start": "开始交易"
+        },
+        "global": {
+          "title": "全球视野，技术驱动，我们在行动",
+          "row": {
+            "col1": {
+              "title": "来自 10+ 国家",
+              "desc": "全球策略员与工程师组成核心团队"
+            },
+            "col2": {
+              "title": "7个地区运营中心",
+              "desc": "悉尼、香港、新加坡、吉隆坡等战略节点"
+            },
+            "col3": {
+              "title": "覆盖全球 37+ 市场",
+              "desc": "多地区合规接入，产品矩阵持续扩展"
+            },
+            "col4": {
+              "title": "$100 亿+ 月执行交易量",
+              "desc": "外汇、加密货币、指数与商品等CFD产品"
+            }
+          }
+        },
+        "values": {
+          "title": "我们的价值观，引领我们每一次技术迭代与服务进化",
+          "desc": "从平台设计、交易执行到客户服务，每一次改进背后，我们始终遵循以下核心信念。",
+          "row": {
+            "col1": {
+              "title": "科技驱动",
+              "desc": "我们坚信交易体验的优化来自持续的系统升级。无论是订单撮合还是风控建模，我们都以科技作为底层驱动力。"
+            },
+            "col2": {
+              "title": "全球透明",
+              "desc": "从点差到执行数据，从成本结构到撮合逻辑，Asia Future Trading 重视每一位用户对“清晰可见”的信任期待。"
+            },
+            "col3": {
+              "title": "专业制胜",
+              "desc": "我们将机构级产品设计带入每一位交易者的账户体验。从报价深度到延迟控制，每一个细节皆对标专业市场。"
+            },
+            "col4": {
+              "title": "本地信赖，全球链接",
+              "desc": "我们从亚洲出发，连接世界流动性并服务全球交易者。通过本地化服务与全球化平台融合，打造用户熟悉而强大的交易合作体验。"
+            }
+          }
+        },
+        "compliance": {
+          "title": "全球信任，从合规开始",
+          "row": {
+            "col1": {
+              "title": "即将成为新加坡交易所（SGX）成员",
+              "desc": "我们致力于提高市场透明度，推动亚洲资本市场健康发展。"
+            },
+            "col2": {
+              "title1": "澳大利亚 ASIC",
+              "desc1": "作为澳洲本地运营核心之一，Asia Future Trading 目前为 ASIC 授权代表（AR）：编号 001313916",
+              "title2": "英国 FCA",
+              "desc2": "牌照申请稳步推进，合规接入流程已全部完成",
+              "title3": "支持全球业务拓展",
+              "desc3": "针对东南亚、日本、韩国及欧洲等主要市场，已完成支付合规、数据合规与用户接入机制建设",
+              "view": "查看合规资质"
+            }
+          }
+        },
+        "articles": {
+          "title": "我们最重视的，不只是交易，还有人与人之间的连接。我们相信，负责任的交易环境，是金融体系可持续演进的基础。",
+          "desc": "Asia Future Trading 相信，值得信赖的金融平台，不仅要提供专业的交易服务，更要成为用户背后的长期伙伴。我们持续投入于 社区运营、教育共建与内容共创，通过连接真实的交易者群体，推动一场有温度、有价值的金融革新。交易之外，我们更关心你是否被理解、是否在成长。",
+          "row": {
+            "col1": {
+              "title": "全球交易者的陪伴式社区，用长期主义打造",
+              "desc": "帆船积木 · Discord 全球社群、线下见面沙龙、策略分享会、交易挑战赛、KOL 内容共创"
+            },
+            "col2": {
+              "title": "教育计划 ，交易从理解开始",
+              "desc": "新手学院学习中心、交易灵感洞察、模拟账户训练营、直播课程体系"
+            },
+            "col3": {
+              "title": "责任与 ESG 愿景，为了更长远的信任",
+              "desc": "Asia Future Trading 将 ESG（环境、社会与公司治理）理念纳入我们的长期发展路线图中"
+            }
+          }
+        },
+        "brief": {
+          "text": "资料概要· 宣传手册",
+          "document": "下载PDF文档"
+        },
+        "join": {
+          "title": "加入我们，让金融变得更好",
+          "desc": "Asia Future Trading 正在寻找来自运营、设计、技术、市场等领域的优秀人才与机构合作伙伴，共同推动全球交易体验的下一次跃迁。",
+          "col1": {
+            "title": "我们团队的目标，是重构一个技术驱动、可信任、属于全球交易者的金融系统。",
+            "desc1": "Leo W.｜Asia Future Trading 量化基础设施工程师",
+            "desc2": "现负责 Asia Future Trading 的数据流处理与风控引擎开发。",
+            "view": "查看开放职位"
+          }
+        },
+        "ready": {
+          "title": "准备好开启你的全球交易之旅了吗？",
+          "desc": "Asia Future Trading 已为你接通全球市场的流动性与交易基础设施，现在，是你掌握节奏的时候。",
+          "joint": "连接全球市场 · 机构级基础设施 · 透明可信的交易环境",
+          "trade": "立即交易",
+          "support": "联系支持"
+        }
+      },
+      "contact": {
+        "banner": {
+          "title1": "我们在，",
+          "title2": "真正回应你的每一个需要",
+          "desc": "Asia Future Trading 不只是一个交易平台，我们是你的伙伴、后盾与策略支持团队。",
+          "tips": "开户问题、交易技术、账户咨询，我们始终第一时间响应，为你在市场中提供稳定的信任感与支持力。",
+          "view": "立即联系",
+          "join": "加入社群"
+        },
+        "methods": {
+          "title": "三种方式，全方位支持你的交易之旅",
+          "row": {
+            "col1": {
+              "title": "客户支持中心",
+              "desc": "常见问题快速解答，包括账户、平台、交易规则等",
+              "btnText": "前往支持中心"
+            },
+            "col2": {
+              "title": "帆船积木社区",
+              "desc": "10,000+ 全球真实用户共建的交易社群，从开户到实盘，全流程陪伴",
+              "btnText": "加入 Discord 社群"
+            },
+            "col3": {
+              "title": "专属客户经理",
+              "desc": "每位账户用户配有一对一客户经理，提供定制化支持服务",
+              "btnText": "联系客户经理"
+            }
+          }
+        },
+        "joinus": {
+          "title": "加入帆船积木社区，认识更多交易者",
+          "desc": "10,000+ 全球真实用户，与你一起启航交易之旅",
+          "row": {
+            "col1": {
+              "1": {
+                "title": "专属服务支持",
+                "desc": "一对一客户服务与策略对接"
+              },
+              "2": {
+                "title": "内容栏目丰富",
+                "desc": "训练营 · 策略栏目 · 问答互动"
+              }
+            },
+            "col2": {
+              "title": "我们不止是一个平台，更是你的交易伙伴",
+              "desc1": "在 Asia Future Trading，我们希望你在“交易”之外，也能被理解、被帮助、被支持",
+              "desc2": "这正是我们创建帆船积木社区的初衷",
+              "join": "立即加入"
+            },
+            "col3": {
+              "1": {
+                "title": "社群互动与激励",
+                "desc": "挑战赛 · 积分系统 · 抽奖活动"
+              },
+              "2": {
+                "title": "Discord 群组全球互联",
+                "desc": "多语言社群覆盖全球"
+              }
+            }
+          }
+        },
+        "type": {
+          "title": "你还可以通过这种方式联系我们",
+          "desc": "我们欢迎你的来信，无论是业务合作、意见反馈，还是希望加入我们。",
+          "prompt1": "我们通常会在 3–5 个工作日 内回复所有邮件。",
+          "prompt2": "若你尚未收到回信，可能是由于信息量较大，请耐心等待，我们一定会认真处理每一封来信。",
+          "join": "加入我们",
+          "row": {
+            "col1": {
+              "title": "一般咨询",
+              "desc": "适用于商务合作、产品反馈、媒体采访等一般性联络。"
+            },
+            "col2": {
+              "title": "一般咨询",
+              "desc": "适用于商务合作、产品反馈、媒体采访等一般性联络。"
+            }
+          }
+        },
+        "language": {
+          "title": "我们支持多语言沟通",
+          "desc": "无论你来自哪里，我们都有语言支持团队为你服务。",
+          "online": "在线",
+          "ready": "准备上线",
+          "prompt1": "全球客服标准语言，24小时支持",
+          "prompt2": "客户支持时间为每天中午12点至晚10点",
+          "prompt3": "每日支持时间为早上10点至晚上8点",
+          "table": {
+            "head": {
+              "status": "当前状态",
+              "support": "支持语音",
+              "statement": "说明"
+            }
+          }
+        },
+        "colleague": {
+          "title": "我们不只是交易系统，我们更是陪你拼出第一块交易积木的伙伴"
+        }
+      },
+      "careers": {
+        "banner": {
+          "title": "让金融变得更好，从你加入 Asia Future Trading 开始",
+          "desc": "让我们一起构建一个真正服务全球交易者的金融系统",
+          "tips": "我们在搭建一套透明、可信、可持续的交易基础设施，以机构级标准，为全球用户提供可验证的市场体验",
+          "view": "查看开放职位"
+        },
+        "infrastructure": {
+          "title": "我们为现代交易者构建交易基础设施",
+          "desc": "Asia Future Trading 是一家面向全球交易者的多资产差价合约经纪商。我们不仅连接市场，更在设计一套面向未来的交易基础设施，让快速执行、透明成本与机构级服务成为每位用户的日常体验。",
+          "row": {
+            "col1": {
+              "title": "全球覆盖",
+              "desc": "服务覆盖亚洲、欧洲与中东等全球 37+ 市场。"
+            },
+            "col2": {
+              "title": "核心团队",
+              "desc": "核心成员来自金融、工程与品牌设计行业，具有复合型背景。"
+            },
+            "col3": {
+              "title": "每月执行交易量",
+              "desc": "月度执行交易量超 100 亿美元，涵盖外汇、加密货币、指数等多个市场。"
+            }
+          }
+        },
+        "principle": {
+          "title": "引领我们构建的核心原则",
+          "desc": "无论是产品设计、系统搭建，还是服务交付，我们始终坚持一套核心原则。它们是我们建立信任、提供性能、实现可持续发展的基础。",
+          "row": {
+            "col1": {
+              "title": "全球覆盖",
+              "desc": "服务覆盖亚洲、欧洲与中东等全球 37+ 市场。"
+            },
+            "col2": {
+              "title": "全球透明，重塑信任标准",
+              "desc": "我们对成本结构与执行机制保持设计级别的透明。因为信任的前提，是“可见”。"
+            },
+            "col3": {
+              "title": "专业制胜，对标机构级标准",
+              "desc": "专业不该只属于机构。从深度流动性到订单延迟，我们为每位交易者提供机构级性能。"
+            },
+            "col4": {
+              "title": "本地信赖，全球链接",
+              "desc": "我们连接全球市场，同时提供本地化服务支持。技术可以扩展，但信任，来自一对一的陪伴。"
+            }
+          }
+        },
+        "offices": {
+          "title": "全球办公节点",
+          "list": {
+            "item1": {
+              "title": "大洋洲",
+              "text1": "悉尼｜全球运营总部"
+            },
+            "item2": {
+              "title": "亚洲",
+              "text1": "香港｜全球产品管理中心",
+              "text2": "新加坡｜创新实验室基地",
+              "text3": "吉隆坡｜多语种客服中心",
+              "text4": "东京｜服务日本本地市场",
+              "text5": "阿布扎比｜中东市场布局与合规接入"
+            },
+            "item3": {
+              "title": "远程",
+              "text1": "我们正在全球范围持续招募优秀人才与合作伙伴，共同拓展交易边界涵盖英国、德国、加拿大等地团队与机构合作伙伴支持内容策略、市场拓展与法规准备工作"
+            }
+          }
+        },
+        "hire": {
+          "title": "招聘岗位",
+          "apply": "立即申请",
+          "list": {
+            "development": {
+              "title": "系统研发 Engineering",
+              "1": {
+                "name": "后端开发工程师（Python / FastAPI）",
+                "location": "远程 / 悉尼",
+                "desc": "构建与维护订单路由、风控模型与数据服务模块，确保系统高可用性与低延迟执行。"
+              },
+              "2": {
+                "name": "交易系统测试工程师",
+                "location": "远程",
+                "desc": "设计与实施高质量自动化测试，覆盖账户、交易、结算与行情系统模块。"
+              }
+            },
+            "operation": {
+              "title": "交易运营 Trading Operations",
+              "1": {
+                "name": "交易运营实习生",
+                "location": "香港 / 新加坡 / 远程",
+                "desc": "支持交易数据整理、用户行为分析与交易指标追踪，参与策略迭代支持"
+              },
+              "2": {
+                "name": "客户支持专员（多语言）",
+                "location": "香港 / 吉隆坡 / 远程",
+                "desc": "负责面向东南亚或欧洲客户的日常支持工作，涵盖开户、订单问题与账户协助。"
+              }
+            },
+            "growth": {
+              "title": "品牌与增长 Marketing & Growth",
+              "1": {
+                "name": "增长策略分析师",
+                "location": "远程 / 悉尼",
+                "desc": "结合用户数据、渠道分析与转化漏斗建模，制定与优化增长策略。"
+              },
+              "2": {
+                "name": "品牌内容编辑 / 撰稿人",
+                "location": "远程 / 弹性办公",
+                "desc": "产出市场教育内容、品牌博客与产品解读文案，协助构建可信的内容体系。"
+              }
+            },
+            "analysis": {
+              "title": "分析师 / 实习岗位 Analyst & Internship",
+              "1": {
+                "name": "市场分析实习生",
+                "location": "远程",
+                "desc": "研究宏观经济、加密市场或外汇流动性趋势，撰写支持产品或用户策略的分析报告。"
+              },
+              "2": {
+                "name": "视觉 / UI 设计实习生",
+                "location": "远程 / 弹性办公",
+                "desc": "参与品牌设计体系迭代，协助设计营销资产、UI 模块与社交媒体内容。"
+              }
+            },
+            "desc1": "找不到适合你的岗位？欢迎主动联系我们。",
+            "desc2": "如果你对 Asia Future Trading 的使命有强烈共鸣，具备系统能力、学习能力或独特视角，请将简历和动机信发送至",
+            "desc3": "我们更看重动机与契合度，而不仅是简历上的段落。"
+          }
+        },
+        "setOut": {
+          "title": "现在，轮到你出发",
+          "desc": "我们正在构建面向未来的金融系统，从交易基础设施到用户体验，每一环节都值得被重新定义。Asia Future Trading 欢迎敢于挑战旧范式的你，一起把全球交易者真正放在中心。",
+          "view": "查看空缺职位"
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "我所在的国家可以申请吗？",
+              "desc": "是的，Asia Future Trading 接受来自全球各地的申请人。除远程岗位外，我们在悉尼、香港、新加坡等地亦设有实体办公室。"
+            },
+            "li2": {
+              "title": "是否接受实习生或应届毕业生？",
+              "desc": "我们欢迎具备潜力的年轻候选人加入 Analyst 或 Internship 方向，只要你具备强烈动机与自我驱动能力。"
+            },
+            "li3": {
+              "title": "我不是金融背景出身，也能申请吗？",
+              "desc": "当然。我们关注系统性思维、技术能力与学习力。欢迎来自工程、数据、设计等多领域的人才加入我们。"
+            }
+          }
+        }
+      }
+    },
+    "platform": {
+      "banner": {
+        "title1": "Asia Future Trading MetaTrader 5",
+        "title2": "借助先进技术，高效精准交易",
+        "desc": "全球领先的多终端交易平台，畅享 65,000+ 市场产品",
+        "download": "下载",
+        "ul": {
+          "windows": "windows 版",
+          "macos": "macOS 版",
+          "ios": "iOS 版",
+          "android": "Android 版",
+          "webtrader": "WebTrader 版"
+        }
+      },
+      "reasons": {
+        "title": "为什么选择在 Asia Future Trading 使用 MT5？",
+        "desc": "MT5 已成为全球最受欢迎的交易平台之一。在 Asia Future Trading，我们为它注入极速执行、合规保障与多市场接入，让您体验前所未有的交易自由。",
+        "professional": "专业体验",
+        "ul": {
+          "li-title1": "多终端接入",
+          "li-desc1": "Windows、macOS、iOS、Android、WebTrader，随时随地无缝切换",
+          "li-title2": "极速成交",
+          "li-desc2": "直连顶级流动性，毫秒级撮合，捕捉市场瞬息机会",
+          "li-title3": "丰富工具",
+          "li-desc3": "38+ 技术指标，EA 智能交易与策略回测一应俱全"
+        },
+        "safe": "合规保障",
+        "risk": {
+          "li-title1": "智能风控",
+          "li-desc1": "ECN/STP 架构，确保每一笔交易透明、公正",
+          "li-title2": "资金安全",
+          "li-desc2": "受 ASIC 监管，客户资金分级托管，安心无忧"
+        }
+      },
+      "experience": {
+        "title1": "体验增强版的MetaTrader",
+        "title2": "MetaTrader5 Vs MetaTrader4",
+        "desc": "为什么升级是更明智的选择？选择 Asia Future Trading 的 MT5，您将获得 65,000+ 全球市场接入，更快的执行和更智能的交易体验，从此掌握更大可能。",
+        "table": {
+          "row": {
+            "head1": "功能/特性",
+            "head2": "MetaTrader 4",
+            "head3": "MetaTrader 5",
+            "col1-1-1": "发布年份",
+            "col1-1-2": "2005",
+            "col1-1-3": "2010+ 优化迭代",
+            "col1-2-1": "市场覆盖",
+            "col1-2-2": "外汇为主",
+            "col1-2-3": "外汇、CFD、股票、期货、加密货币",
+            "col1-3-1": "挂单类型",
+            "col1-3-2": "4 种",
+            "col1-3-3": "6 种（含 Buy Stop Limit & Sell Stop Limit）",
+            "col1-4-1": "时间周期",
+            "col1-4-2": "9 种",
+            "col1-4-3": "21 种",
+            "col1-5-1": "技术指标",
+            "col1-5-2": "30 个预装",
+            "col1-5-3": "38+ 个预装",
+            "col1-6-1": "编程语言",
+            "col1-6-2": "MQL4",
+            "col1-6-3": "MQL5（多线程）",
+            "col1-7-1": "策略回测",
+            "col1-7-2": "单线程",
+            "col1-7-3": "多线程 + 云加速",
+            "col1-8-1": "多币种账户支持",
+            "col1-8-2": "无",
+            "col1-8-3": "支持",
+            "col1-9-1": "经济日历",
+            "col1-9-2": "无",
+            "col1-9-3": "内置"
+          }
+        }
+      },
+      "professionalTools": {
+        "title": "专业交易者的全能工具箱",
+        "row": {
+          "col1-desc": "预安装技术指标",
+          "col2-desc": "高级分析图表工具",
+          "col3-desc1": "图表类型",
+          "col3-desc2": "时间框架",
+          "col4-title": "单击",
+          "col4-desc": "即可直接在图表上下单"
+        }
+      },
+      "download": {
+        "windows": {
+          "title": "下载 MetaTrader5 Windows版",
+          "desc": "MetaTrader 5 Windows 版，适合专业桌面交易环境，稳定运行、极速执行，支持外汇、贵金属、指数、能源与加密货币 CFD 交易。",
+          "downloadText": "下载 Windows 版"
+        },
+        "macos": {
+          "title": "下载 MetaTrader5 macOS版",
+          "desc": "MetaTrader 5 macOS 版，专为 Mac 用户打造，兼容性强、界面流畅，支持多屏幕、多图表，轻松管理外汇与 CFD 投资组合。",
+          "downloadText": "下载 macOS 版"
+        },
+        "ios": {
+          "title": "下载 MetaTrader5 iOS版",
+          "desc": "随时随地交易全球市场。MetaTrader 5 iOS 版让您在 iPhone 与 iPad 上轻松进行外汇、指数、黄金和加密货币交易，掌控市场从未如此便捷。",
+          "downloadText": "下载 Android 版"
+        },
+        "android": {
+          "title": "下载 MetaTrader 5 Android 版",
+          "desc": "MetaTrader 5 Android 版提供全面移动交易功能，支持外汇、CFD、贵金属与加密货币市场，让您随时随地管理投资与下单。",
+          "downloadText": "下载 Windows 版"
+        },
+        "webtrader": {
+          "title": "使用 MetaTrader 5 WebTrader",
+          "desc": "无需安装软件，MetaTrader 5 WebTrader 让您通过浏览器直接访问全球市场。随时登录 Asia Future Trading 账户，快速下单，享受流畅交易体验。",
+          "downloadText": "进入 WebTrader"
+        }
+      },
+      "step": {
+        "title": "三步轻松开始交易",
+        "join": "加入我们",
+        "row": {
+          "col1-title": "下载并安装 MT5",
+          "col1-desc": "选择您的设备，完成安装",
+          "col2-title": "开立账户",
+          "col2-desc": "注册 Classic、Platinum 或 VIC 账户，解锁不同交易体验",
+          "col3-title": "存入资金并开始交易",
+          "col3-desc": "即刻进入全球外汇、贵金属、指数与加密市场"
+        }
+      }
+    },
+    "accounts": {
+      "classic": {
+        "banner": {
+          "title": "Classic 经典账户",
+          "midst1": "美元账户与美分账户双选择",
+          "midst2": "现在仅需入金 $100，即可开启 0 佣金交易之旅",
+          "desc": "最受欢迎的标准账户，适合从新手到专业交易者的所有阶段。0 佣金，极速执行，透明报价—— 从这里开始，走向专业交易世界",
+          "support": "联系支持"
+        },
+        "standard": {
+          "title": "你真正需要的标准账户",
+          "row": {
+            "left": {
+              "title": "0 佣金账户，不止是“免费”",
+              "desc": "更快、更清晰、更值得信任",
+              "ul": {
+                "li1": "每笔交易零手续费",
+                "li2": "真实市场价格直达",
+                "li3": "极速执行，毫秒成交",
+                "li4": "无隐藏费用",
+                "li5": "支持 65,000+ 全球交易产品",
+                "li6": "接入 Equinix 全球网络"
+              }
+            },
+            "right": {
+              "row": {
+                "col-1-title": "0 佣金",
+                "col-1-desc": "无交易手续费，真正意义上的免佣金交易账户。",
+                "col-2-title": "极速市价执行",
+                "col-2-desc": "无重复报价，精准进入真实市场，避免滑点干扰。",
+                "col-3-title": "浮动点差机制",
+                "col-3-desc": "稳定浮动点差，反映流动性与真实报价环境。",
+                "col-4-title": "机构级流动性",
+                "col-4-desc": "接入暗池与顶级LP，市场深度直连，无中间人。",
+                "col-5-title": "Equinix 光纤网络",
+                "col-5-desc": "毫秒级交易路径连接，实现全球低延迟执行。",
+                "col-6-title": "价格透明度",
+                "col-6-desc": "透明订单簿结构，公平市场进入点，无隐藏费用。"
+              }
+            }
+          }
+        },
+        "velocity": {
+          "title": "MT5撮合引擎与极速执行",
+          "card1": {
+            "title": "机构级执行桥接系统— 基于 MT5 的稳定撮合系统",
+            "desc": "连接真实市场，无中间商干扰",
+            "prompt": "采用 MT5 引擎和高性能撮合桥，订单毫秒级传输，稳定直达全球流动性池。"
+          }
+        },
+        "type": {
+          "card1": {
+            "title": "Classic 美元账户",
+            "desc": "行业标准的专业账户，适合所有交易者",
+            "ul": {
+              "li-1-title": "最低入金",
+              "li-1-desc": "$100 USD",
+              "li-2-title": "点差¹",
+              "li-2-desc": "点差¹0.2 点起（浮动）",
+              "li-3-title": "手续费",
+              "li-3-desc": "0 佣金",
+              "li-4-title": "最大杠杆",
+              "li-4-desc": "无限*",
+              "li-5-title": "平台支持",
+              "li-5-desc": "MetaTrader 5（Web / App / Desktop）",
+              "li-6-title": "订单类型",
+              "li-6-desc": "市价、挂单、止损止盈等",
+              "li-7-title": "交易品种",
+              "li-7-desc": "外汇、金属、能源、指数、股票、加密货币，共 65,000+"
+            }
+          },
+          "card2": {
+            "title": "美元账户",
+            "desc": "专为入门交易者与轻量级策略测试设计",
+            "ul": {
+              "li-1-title": "最低入金金额",
+              "li-1-desc": "$100（转为10,000美分展示）",
+              "li-2-title": "显示方式",
+              "li-2-desc": "所有交易金额以美分形式展示，更精细控制交易金额",
+              "li-3-title": "最小交易单位",
+              "li-3-desc": "0.01 手起，低风险试单",
+              "li-4-title": "点差¹",
+              "li-4-desc": "0.3 点起（主流品种）",
+              "li-5-title": "手续费",
+              "li-5-desc": "0 手续费",
+              "li-6-title": "杠杆",
+              "li-6-desc": "最高 1: 无限",
+              "li-7-title": "交易品种",
+              "li-7-desc": "外汇、贵金属、加密货币（部分品种限制）"
+            }
+          },
+          "table": {
+            "row": {
+              "head1": "特性",
+              "head2": "美元账户 Classic",
+              "head3": "美分账户 Classic",
+              "col1-1-1": "最低入金",
+              "col1-1-2": "$100 USD",
+              "col1-1-3": "$100（转为10,000美分展示）",
+              "col1-2-1": "点差¹",
+              "col1-2-2": "点差¹0.2 点起（浮动）",
+              "col1-2-3": "所有交易金额以美分形式展示，更精细控制交易金额",
+              "col1-3-1": "手续费",
+              "col1-3-2": "0 佣金",
+              "col1-3-3": "0.01 手起，低风险试单",
+              "col1-4-1": "最大杠杆",
+              "col1-4-2": "1: 无限*",
+              "col1-4-3": "0.3 点起（主流品种）",
+              "col1-5-1": "平台支持",
+              "col1-5-2": "MetaTrader 5（Web / App / Desktop）",
+              "col1-5-3": "0 手续费",
+              "col1-6-1": "订单类型",
+              "col1-6-2": "市价、挂单、止损止盈等",
+              "col1-6-3": "最高 1: 无限",
+              "col1-7-1": "交易品种",
+              "col1-7-2": "外汇、金属、能源、指数、股票、加密货币，共 65,000+",
+              "col1-7-3": "外汇、贵金属、加密货币（部分品种限制）"
+            }
+          }
+        },
+        "process": {
+          "title": "开户流程",
+          "step": {
+            "1": {
+              "title": "开设账户",
+              "desc": "只需填写基础信息，1分钟完成注册",
+              "bottom": "立即开户"
+            },
+            "2": {
+              "title": "下载 MetaTrader5",
+              "desc": "支持桌面端、移动端与网页版",
+              "bottom": "探索下载MetaTrader5"
+            },
+            "3": {
+              "title": "入金",
+              "desc": "多种方式支持，包括银行卡、电汇、USDT",
+              "bottom": "了解出入金方式"
+            },
+            "4": {
+              "title": "开始交易",
+              "desc": "立即进入全球市场，体验 0 佣金快速执行",
+              "bottom": "立即体验交易"
+            }
+          }
+        },
+        "explore": {
+          "title": "探索更高阶账户",
+          "card1": {
+            "title": "探索铂金账户",
+            "desc": "适合有所有专业交易员，全面升级体验，一切都是顶级机构级别的执行",
+            "ul": {
+              "li1": "解锁高达5%年化利息账户",
+              "li2": "佣金，极低点差 + 机构级执行，最优的价格和最快的速度",
+              "li3": "探索更多专业功能如VPS云服务器"
+            },
+            "btn": "探索铂金账户"
+          },
+          "card2": {
+            "title": "探索VIC机构账户",
+            "desc": "数字时代的专业人士和机构交易账户",
+            "ul": {
+              "li1": "专为专业人士与量化机构打造",
+              "li2": "配备专属客户经理 + 技术团队",
+              "li3": "解锁更多VIP私人服务，加入Asia Future Trading 百万俱乐部"
+            },
+            "btn": "探索VIC机构账户"
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "Classic账户适合什么类型的用户？",
+              "desc": "几乎所有用户！无论你是新手、进阶交易者还是轻量级策略测试者，Classic账户提供足够稳定与灵活的交易环境。"
+            },
+            "li2": {
+              "title": "我可以从美分账户升级到美元账户吗？",
+              "desc": "当然可以，您可以在后台提交账户升级请求，或联系客服协助。"
+            },
+            "li3": {
+              "title": "为什么选择0佣金账户？",
+              "desc": "相较于收取手续费的平台，我们将盈利模式集中在点差优化，通过更高效的流动性连接和成本控制，降低交易者总成本。"
+            },
+            "li4": {
+              "title": "Classic账户支持哪些订单类型与执行方式？",
+              "desc": "支持市价、限价、止盈止损等所有常见订单类型。订单通过 Equinix 网络市价撮合，享受毫秒级执行速度，降低滑点和重报概率。"
+            }
+          }
+        }
+      },
+      "platinum": {
+        "banner": {
+          "title": "Platinum 铂金账户",
+          "midst": "入金5,000美金免费申请",
+          "desc": "为进阶交易者提供更低点差、更快执行和更多收益可能超越常规交易账户，进入真正专业的交易世界",
+          "ul": {
+            "li1": "解锁高达 5.6 % 年化利息账户",
+            "li2": "行业最低点差 + 0 佣金",
+            "li3": "支持VPS 高速通道"
+          },
+          "register": "立即开设铂金账户",
+          "support": "联系支持"
+        },
+        "standard": {
+          "title": "你为什么需要铂金账户？",
+          "desc": "相较于 Classic 账户，铂金账户面向更高交易频率与更高资金效率的专业交易者，解锁 更低点差、专属功能 与 额外收益机会。",
+          "row": {
+            "left": {
+              "title": "不止是“0 佣金”，点差低至 0.0，更多特权",
+              "ul": {
+                "li1": "每笔交易依旧 0 手续费",
+                "li2": "点差低至 0.0 起，主流品种直接接入核心报价",
+                "li3": "专属撮合优先级，执行更快、更稳定",
+                "li4": "可接入 VPS 云服务器，策略不中断，延迟更低",
+                "li5": "解锁“简单赚取利息”账户功能（年化收益高达 5.6 %）",
+                "li6": "支持全品类 65,000+ 全球资产交易，不受产品限制"
+              }
+            },
+            "right": {
+              "row": {
+                "col-1-title": "0 佣金",
+                "col-1-desc": "每笔交易免除手续费，真正意义上的零成本交易体验。",
+                "col-2-title": "点差低至 0.0",
+                "col-2-desc": "专属报价通道，享受主流品种行业最低点差。",
+                "col-3-title": "极速市价执行",
+                "col-3-desc": "实时成交，精准入场，规避滑点与延迟。",
+                "col-4-title": "铂金专线",
+                "col-4-desc": "铂金账户优先撮合调度，连接全球 Equinix 金融节点。",
+                "col-5-title": "接入 VPS 云服务器",
+                "col-5-desc": "稳定云主机支持，保障自动化与高频策略持续运行。",
+                "col-6-title": "赚利息账户功能",
+                "col-6-desc": "闲置资金可享日结利息，年化高达 5%。"
+              }
+            }
+          }
+        },
+        "exclusive": {
+          "title": "铂金专属交易通道与撮合优先权",
+          "desc": "铂金账户接入独立的 Equinix 光纤专线，订单进入高级撮合队列，享有与专业机构客户同等级别的优先排队与成交处理权。无论行情多剧烈，铂金用户的订单始终抢先一步成交。",
+          "best": {
+            "title": "更快的执行 · 更优的价格",
+            "joint": "借助全球 Equinix 节点（LD4 · NY4 · TY3）",
+            "desc1": "铂金账户订单在撮合系统中平均延迟低于",
+            "desc2": "毫秒"
+          }
+        },
+        "environment": {
+          "title": "铂金账户 MetaTrader 5 的极速 VPS 交易环境",
+          "desc": "Asia Future Trading 提供全球低延迟 VPS 服务器，专为高频与EA交易优化。无论您身处亚洲、欧洲还是美洲，都可通过 VPS 直连 MT5 服务器，实现毫秒级下单与稳定交易。",
+          "more": "了解更多 VPS 服务",
+          "download": "立即下载 MetaTrader 5"
+        },
+        "credit": {
+          "title1": "解锁“简单赚取利息”账户功能",
+          "title2-1": "年化收益最高达",
+          "title2-2": "%AER",
+          "midst": "日复一日自动获得利息，每一天都可以在你的MetaTrader 5账户中看到！",
+          "desc": "每天获得高达5.6%的AER（可变）利息。没有提款费用。随时即时访问。",
+          "transfer": "入金",
+          "account": "美金免费申请解锁铂金账户。",
+          "immediately": "立即入金",
+          "understand": "了解收益计划"
+        },
+        "support": {
+          "title": "24/7 专属团队支持",
+          "desc": "多对一专属客户团队支持 · 全天候交易协助",
+          "row": {
+            "col1": {
+              "title": "实时响应 · 真正 24/7",
+              "ul": {
+                "li1": "全天候在线支持，白天黑夜都有人在",
+                "li2": "紧急问题平均响应时间 < 30 分钟"
+              }
+            },
+            "col2": {
+              "title": "多语言服务 · 沟通无障碍",
+              "ul": {
+                "li1": "提供 普通话、粤语、英语、日语 服务",
+                "li2": "根据语言偏好分配专属客户经理",
+                "li3": "支持微信、Telegram、WhatsApp、邮件等多种沟通渠道"
+              }
+            },
+            "col3": {
+              "title": "专属通知提醒",
+              "ul": {
+                "li1": "开启个性化推送：价格触发、仓位风险、宏观日历",
+                "li2": "所有通知均由你的专属客户经理人工发送，更可靠"
+              }
+            }
+          }
+        },
+        "guide": {
+          "title": "掌握外汇入门指南",
+          "row": {
+            "col1": {
+              "title": "更多精彩在等待你的交易旅程中被解锁。",
+              "more": "了解 AFT 积分计划",
+              "muted": "*积分计划、俱乐部权益和赛事活动可通过客户经理获取详细规则。"
+            },
+            "col2": {
+              "span1": {
+                "title": "AFT 积分计划",
+                "desc": "多重豪礼等你领取，从专属 NFT 到 BTC、劳力士，再到法拉利等高端奖品。"
+              },
+              "span2": {
+                "title": "交易量挑战赛",
+                "desc": "每月开启百万奖池交易量大赛，公平透明，按品类和等级划分赛道。"
+              },
+              "span3": {
+                "title": "加入铂金账户俱乐部",
+                "desc": "和来自全球的专业交易者同行，参与闭门策略会、交易训练营与专属社群共建知识网络，拓展你的交易边界。"
+              }
+            }
+          }
+        },
+        "table": {
+          "row": {
+            "head1": "功能对比",
+            "head2": "Classic 账户",
+            "head3": "Platinum 铂金账户",
+            "col1-1-1": "最低入金",
+            "col1-1-2": "$100",
+            "col1-1-3": "$5,000",
+            "col1-2-1": "点差水平",
+            "col1-2-2": "起始 0.2 点",
+            "col1-2-3": "低至 0.0 点起",
+            "col1-3-1": "手续费",
+            "col1-3-2": "0",
+            "col1-3-3": "0",
+            "col1-4-1": "撮合优先权",
+            "col1-4-2": "无",
+            "col1-4-3": "有",
+            "col1-5-1": "VPS 云服务支持",
+            "col1-5-2": "无",
+            "col1-5-3": "专属通道",
+            "col1-6-1": "赚利息账户",
+            "col1-6-2": "无",
+            "col1-6-3": "年化高达 5.6%",
+            "col1-7-1": "全产品访问",
+            "col1-7-2": "限部分交易品种",
+            "col1-7-3": "全部开放",
+            "col1-8-1": "多账户管理/隔离",
+            "col1-8-2": "无",
+            "col1-8-3": "全部开放",
+            "col1-9-1": "客户服务",
+            "col1-9-2": "标准支持",
+            "col1-9-3": "一对一客户经理"
+          }
+        },
+        "process": {
+          "title": "开户流程",
+          "step": {
+            "1": {
+              "title": "开设账户",
+              "desc": "只需填写基础信息，1分钟完成注册",
+              "bottom": "立即开户"
+            },
+            "2": {
+              "title": "下载 MetaTrader5",
+              "desc": "支持桌面端、移动端与网页版",
+              "bottom": "探索下载MetaTrader5"
+            },
+            "3": {
+              "title": "入金 ≥ $5,000",
+              "desc": "多种方式支持，包括银行卡、电汇、USDT",
+              "bottom": "了解出入金方式"
+            },
+            "4": {
+              "title": "开始交易",
+              "desc": "立即进入全球市场，体验 0 佣金快速执行",
+              "bottom": "立即体验交易"
+            }
+          }
+        },
+        "VIC": {
+          "title": "探索更高维度的交易账户：VIC 机构账户",
+          "left": {
+            "desc": "如果你需要更高的交易额度、更强大的策略对接能力和更复杂的账户结构管理—— VIC 是你下一步的选择。我们可以与全球顶级LP 为你量身定制交易产品，比如 ETH/XAU ，解锁更多想象力。",
+            "title": "VIC 机构账户",
+            "for": "将为你量身定制交易体验。",
+            "understand": "了解 VIC 账户"
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "我完成了 $5,000 美金入金后，会自动变成铂金账户吗？",
+              "text-1": "A：不会自动升级。",
+              "text-2": "请在完成入金后，通过账户后台或联系客户经理主动申请开通铂金账户，系统将在 1 个工作日内审核并激活相关权限。"
+            },
+            "li2": {
+              "title": "铂金账户的“点差低至 0.0”是否真的没有其他费用？",
+              "text-1": "A：是的。",
+              "text-2": "铂金账户在核心品种上可享受 0 点起始点差，同时维持0 佣金结构。我们不会加收隐藏手续费或平台附加成本，真实成交、透明报价。"
+            },
+            "li3": {
+              "title": "赚利息账户功能是否存在资金锁定？",
+              "text-1": "A：无锁定期，随存随取。",
+              "text-2": "USD 余额自动计息，按日结算。您可在任何时间提取资金，利息同步结算到账，无需等待赎回周期。"
+            },
+            "li4": {
+              "title": "VPS 云服务器服务是否免费？如何申请？",
+              "text-1": "A：目前为限时免费。",
+              "text-2": "铂金用户可申请接入我们推荐的高速 VPS 云服务，专为 EA 与程序化策略优化。配置方式将在申请后由客户经理一对一指导。"
+            },
+            "li5": {
+              "title": "铂金账户适合哪些类型的交易者？",
+              "text-1": "A：推荐以下类型用户申请：",
+              "text-2": "高频或日内交易为主的个人交易者",
+              "text-3": "使用 EA / API 策略的程序化交易者",
+              "text-4": "对延迟、滑点和成交速度有高要求的进阶用户",
+              "text-5": "希望通过账户余额产生稳定被动收益的资金管理者"
+            },
+            "li6": {
+              "title": "我想保留 Classic 账户的同时申请一个铂金账户可以吗？",
+              "text-1": "A：可以。",
+              "text-2": "您可保留 Classic 账户，同时新开一个铂金账户，系统将为两个账户分别设定权限与风控参数。适用于策略隔离与资金分舱管理需求。"
+            }
+          }
+        }
+      },
+      "vic": {
+        "banner": {
+          "title": "Asia Future Trading VIC",
+          "midst1": "赋能数字时代的机构和专业交易员",
+          "midst2": "更强交易权限 · 更高定制自由 · 为专业交易员和机构而生",
+          "desc1": "入金门槛：",
+          "desc2": "美金起",
+          "register": "申请成为 VIC 客户",
+          "transfer": "立即入金50,000USD"
+        },
+        "permission": {
+          "title": "机构级账户权限，专为策略驱动而设",
+          "desc": "VIC账户为机构级交易者提供更强控制、更深流动性与更高自由度，六大核心权益，全面重塑你的交易架构。",
+          "swiper": {
+            "span1": {
+              "title": "0佣金 + 0.0 点差起的原生点差",
+              "desc": "主流产品接入原生报价通道，真正低成本执行，无佣金、无加点。"
+            },
+            "span2": {
+              "title": "产品定制 + OTC报价",
+              "desc": "支持 ETH/XAU 等组合合约、非标产品与大宗交易柜台报价通道。"
+            },
+            "span3": {
+              "title": "VIC 专属撮合队列优先权与最优报价",
+              "desc": "订单进入独立高优先级队列，享受最优流动性与更快成交速度。"
+            },
+            "span4": {
+              "title": "Asia Future Trading 银行卡",
+              "desc": "提供全球支付、消费返现与资金清算功能，连接交易账户与日常生活。"
+            },
+            "span5": {
+              "title": "技术顾问 + 客户经理双支持",
+              "desc": "一对一策略顾问与专属客户经理，覆盖技术部署与账户运营支持。"
+            },
+            "span6": {
+              "title": "全球 VIC 俱乐部活动",
+              "desc": "专属帆船 & F1赛席位、策略大师课、线下闭门交流会，仅限邀请参与。"
+            }
+          },
+          "prompt1": "VIC 账户默认继承所有铂金账户权益（包括利息账户、VPS服务等）。",
+          "prompt2": "俱乐部活动与节假日礼品视平台运营策略动态调整，最终解释权归 Asia Future Trading 所有。"
+        },
+        "route": {
+          "title1": "Asia Future Trading VIC 机构专线",
+          "title2": "重构你的交易路径，掌控执行背后的每一步",
+          "midst": "不只更快、更优，还更精准",
+          "desc": "连接全球核心金融节点，接入专属订单通道，VIC 账户掌握从撮合队列、流动性源头、系统接口到最终成交路径的完整控制权。",
+          "row": {
+            "col1": {
+              "title": "专属撮合引擎与定向路由",
+              "desc": "订单不再与零散订单混排，而是进入机构级独立撮合系统，根据策略类型、品种波动性、挂单规模等自动分配报价与执行路径。不止更快，而是更精准。"
+            },
+            "col2": {
+              "title": "直连核心撮合系统",
+              "desc": "构建真正可控的交易执行底座。特别适用于高频、量化、网格与跨品类策略执行系统对接。"
+            },
+            "col3": {
+              "title": "全球 Equinix 节点 + 流动性池支持",
+              "desc": "Equinix LD4（伦敦）/ NY4（纽约）/ TY3（东京）直连，VIC 用户可直通流动性池挂单通道，保障隐私、降低冲击。"
+            }
+          }
+        },
+        "stream": {
+          "title": "定制你的流动性与成本结构",
+          "desc": "可以 1 USD / Million USD（每百万美元交易量）起为单位定制，VIC 账户从报价源到费用结构，给予你前所未有的掌控权。",
+          "row": {
+            "col1": {
+              "title": "连接全球顶级流动性提供者，从点差、佣金到执行路径，你不再只是接受系统设定，而是与我们共同定义你的交易条件。",
+              "ul": {
+                "li1": "连接 Finalto、LMAX、XTX 等全球一线流动性提供者",
+                "li2": "按百万美金起交易量申请定制佣金与点差",
+                "li3": "支持浮动/固定点差配置，佣金阶梯返还与团队共享返点",
+                "li4": "大宗订单可接入 OTC 通道，执行更隐蔽、滑点更低",
+                "li5": "可基于策略类型申请定制流动性来源（Custom Routing）"
+              }
+            },
+            "col2": {
+              "apply": "申请 VIC 定制报价方案",
+              "desc": "仅限已开户的 VIC 用户，需完成策略说明与交易量评估。"
+            }
+          }
+        },
+        "custom": {
+          "title": "定制你的交易产品结构",
+          "desc": "标准产品不一定适配你的所有策略。VIC 账户为合格用户提供组合交易标的的申请与结构定制通道，由流动性团队进行评估与配置。",
+          "row": {
+            "col2": {
+              "title": "组合标的合约（Cross-Symbol Product）",
+              "ul": {
+                "li1": "支持如 ETH/XAU、BTC/ XAU、GOLD/USDT 等跨品类组合交易品种",
+                "li2": "产品结构将由 AFT 内部产品与流动性团队评估后决定是否上线",
+                "li3": "仅限 VIC 用户申请"
+              },
+              "desc": "VIC 并不对所有策略开放自动创建权限，所有产品结构均需经由 AFT 合规与流动性评估后上线。我们致力于在合规、安全的前提下，为策略逻辑提供最大自由度。",
+              "apply": "申请组合产品定制权限",
+              "prompt": "*请提交策略逻辑说明，我们将在 5 个工作日内完成初步评估反馈。"
+            }
+          }
+        },
+        "credit": {
+          "account": "美金免费申请解锁VIC账户。"
+        },
+        "bankCards": {
+          "title1": "Asia Future Trading USDT 银行卡",
+          "title2": "免费申请·连接全球交易与支付网络",
+          "row": {
+            "col1": {
+              "title": "解决你的大额出入金烦恼，打通从账户资金到日常消费的全流程。不只是出入金，更是你交易生活的一部分。",
+              "ul": {
+                "li1": "VIC 用户专属申请权限，支持虚拟卡或实体实体卡开通",
+                "li2": "USDT 账户一键提现至联名银行卡，快速到账、稳定通道",
+                "li3": "支持绑定 Apple Pay / Google Pay，全球消费通行无阻",
+                "li4": "VIC 用户免费申请，免除 $20 USD / 月银行卡订阅费用"
+              },
+              "understand": "了解USDT 联名卡"
+            },
+            "col2": {
+              "desc": "*VIC 用户登录后台或联系专属客服经理即可申请，审批周期预计 2–3 个工作日"
+            }
+          }
+        },
+        "experience": {
+          "title": "VIC 私享服务俱乐部，交易之外的尊享体验，只为极少数人开放",
+          "desc": "加入全球顶尖交易者的专属社群，拓展你的圈层、策略视野与生活方式。",
+          "prospect": "交易是你通往世界的方式，我们帮你把世界带到你面前。",
+          "row": {
+            "col1": {
+              "title": "私享活动 · 高净值社交圈层",
+              "desc": "帆船赛事、方程式赛事、投资闭门会、策略圆桌每年定期举行「VIC Global Gathering」峰会AFT VIC 客户团队全程协助安排接待与行程"
+            },
+            "col2": {
+              "title": "交易者社交网络 · 高质量连接",
+              "desc": "仅限 VIC 用户进入的私享社群定期发布宏观策略、流动性洞察、结构化产品示范连接真正懂交易的人，与全球策略玩家并肩前行"
+            },
+            "col3": {
+              "title": "高端礼遇 · 奖励计划优先级",
+              "desc": "VIC 用户积分加权，优先进入高级奖池奖励从限量 NFT、BTC、劳力士、香奈儿到法拉利试驾体验、私人航班、战略配对服务"
+            }
+          }
+        },
+        "table": {
+          "row": {
+            "head1": "账户维度",
+            "head2": "Platinum 铂金账户",
+            "head3": "VIC 机构账户",
+            "col1-1-1": "入金门槛",
+            "col1-1-2": "$5,000 USD",
+            "col1-1-3": "$50,000 USD",
+            "col1-2-1": "撮合优先级",
+            "col1-2-2": "高优先级队列",
+            "col1-2-3": "独立队列 + 可定向撮合路由",
+            "col1-3-1": "点差结构",
+            "col1-3-2": "低至 0.0 点",
+            "col1-3-3": "低至 0.0 点；可定制，单位：USD / Million，按交易量评估",
+            "col1-4-1": "产品定制权限",
+            "col1-4-2": "否",
+            "col1-4-3": "可申请 ETH/XAU 等组合品种，策略逻辑接入",
+            "col1-5-1": "利息账户",
+            "col1-5-2": "可申请（5.6% AER 浮动）",
+            "col1-5-3": "同享权益",
+            "col1-6-1": "银行卡支持",
+            "col1-6-2": "可申请",
+            "col1-6-3": "免订阅费，优先开通",
+            "col1-7-1": "服务支持",
+            "col1-7-2": "客户经理 + 通用客服",
+            "col1-7-3": "多对一客户团队 + 技术对接支持",
+            "col1-8-1": "交易积分与奖励",
+            "col1-8-2": "进阶积分比率",
+            "col1-8-3": "高阶加权积分 + 高级奖池自动参与",
+            "col1-9-1": "社群与活动",
+            "col1-9-2": "铂金俱乐部（基础权益）",
+            "col1-9-3": "VIC 专属私享俱乐部，定向邀请 + 圈层连接"
+          }
+        },
+        "process": {
+          "title": "开户流程",
+          "step": {
+            "1": {
+              "title": "开设账户",
+              "desc": "只需填写基础信息，1分钟完成注册",
+              "bottom": "立即开户"
+            },
+            "2": {
+              "title": "下载 MetaTrader5",
+              "desc": "支持桌面端、移动端与网页版",
+              "bottom": "探索下载MetaTrader5"
+            },
+            "3": {
+              "title": "入金",
+              "desc": "多种方式支持，包括银行卡、电汇、USDT",
+              "bottom": "了解出入金方式"
+            },
+            "4": {
+              "title": "开始交易",
+              "desc": "立即进入全球市场，体验 0 佣金快速执行",
+              "bottom": "立即体验交易"
+            }
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "成为 VIC 用户需要什么条件？",
+              "desc": "需要满足最低入金 50,000 美元，具备一定交易经验，并能提供清晰的策略逻辑或资金用途说明。所有申请将由 AFT 客户经理与风控团队进行评估。"
+            },
+            "li2": {
+              "title": "我可以随时从铂金账户升级为 VIC 吗？",
+              "desc": "可以。请联系您的客户经理或通过后台提交 VIC 升级申请，我们将为您进行资格审核与配置调整。"
+            },
+            "li3": {
+              "title": "VIC 用户有哪些定制权限？",
+              "desc": "VIC 用户可申请组合标的（如 ETH/XAU）、定制报价通道（Custom Routing）、专属佣金与点差结构（以百万美元为单位评估），也可接入 FIX 协议或使用 API 交易。"
+            },
+            "li4": {
+              "title": "USDT 银行卡是否对 VIC 用户免费？",
+              "desc": "是的，VIC 用户可免费申请 AFT 联名银行卡，免除 $20/月订阅费用，并享受优先审批与高额度出入金支持。"
+            },
+            "li5": {
+              "title": "利息账户是否稳定？可以随时取出吗？",
+              "desc": "是的。AFT 利息账户每日结算，利息实时到账，用户可随时提取，不影响交易资金流动性。年化收益浮动，当前最高为 5.6%。"
+            },
+            "li6": {
+              "title": "如何参与 VIC 的积分计划与实物奖励？",
+              "desc": "所有 VIC 用户自动参与 AFT 积分计划，交易越多、奖励越高。积分可兑换专属 NFT、BTC、品牌腕表、汽车体验等。详情请联系客户经理获取兑换手册。"
+            },
+            "li7": {
+              "title": "VIC Club 的活动信息如何获取？",
+              "desc": "所有 VIC Club 活动均由客户经理定向邀请，不一定对外公开。请确保联系方式更新，并开启通知权限，我们将第一时间同步相关活动安排。"
+            }
+          }
+        }
+      },
+      "profit": {
+        "banner": {
+          "top": "Future Earn Account",
+          "title": "闲置收益增强账户",
+          "desc": "铂金/VIC 账户专享利息无需锁仓、无资金费率、挂钩真实市场利率（SOFR），利息 T+1 自动入账。为长期信任用户打造的可视化利息回报账户。",
+          "register": "立即开通铂金账户",
+          "vic": "立即开通 VIC 账户",
+          "prompt": "Future Earn 是 Asia Future Trading 推出的闲置资金收益解决方案。所有利息每日结算，直接计入交易账户，可随时提取、不影响交易。通过挂钩 SOFR，帮助长期交易者将账户余额转化为稳定的日常回报。",
+          "board": {
+            "rates": "今日市场参考利率（SOFR）：",
+            "from": "数据来源 ：美国纽约联邦储备银行（Federal Reserve Bank of New York）",
+            "desc": "Future Earn Account 的利息计算挂钩公开市场利率（SOFR），用于提供收益估算与透明度锚点。实际利息由 Asia Future Trading 平台发放，并非源自资金再投资或市场操作。用户资金不会被投入任何金融市场或进行资产管理，相关利率仅为市场参考指标，不构成任何投资建议或收益承诺。",
+            "tag": "纽约联储官方（FRED: SOFR）｜利息发放与平台机制详见用户协议"
+          }
+        },
+        "mechanism": {
+          "title": "利息机制，简明清晰，为长期持有而生",
+          "row": {
+            "col1": {
+              "title": "每日结息",
+              "desc": "每天计算、次日到账，系统自动累积，无需手动领取。"
+            },
+            "col2": {
+              "title": "挂钩 SOFR",
+              "desc": "锚定纽约联储 SOFR 利率，数据透明公开、每日更新。"
+            },
+            "col3": {
+              "title": "无锁仓",
+              "desc": "资金随时进出，不影响过往利息，灵活应对市场策略。"
+            }
+          }
+        },
+        "rates": {
+          "title": "我们将你的闲置资金，锚定真实的市场利率",
+          "desc1": "我们每日引用 SOFR（Secured Overnight Financing Rate） 作为利率锚点，由 美国纽约联邦储备银行 发布，广泛应用于全球银行、对冲基金与金融市场。",
+          "desc2": "与旧有的 LIBOR 相比，SOFR 更透明、基于实际市场成交，已成为全球主流的美元短期利率参考。",
+          "desc3": "在 Asia Future Trading，每一笔 Future Earn 利息 都锚定 SOFR ——无营销利率、无隐藏算法，所有逻辑公开、可验证。",
+          "line-title": "SOFR 历史折线图"
+        },
+        "profit": {
+          "title": "在你的 MetaTrader 5 交易账户里！利息每日结算，T+1 自动入账，闲置生息，无感收息",
+          "desc": "Future Earn Account 致力于为策略型交易者和长期账户用户，提供透明、高效、不打扰交易节奏的收益型机制。所有利息每日自动结算、T+1 入账，资金全程自由流动。",
+          "row": {
+            "col1": {
+              "ul": {
+                "li1": "每日系统自动计算利息",
+                "li2": "次日（T+1）自动计入您的 MT5 账户余额（Balance）",
+                "li3": "无需申领，无额外手续费",
+                "li4": "所有利息 可提现、复投、或用于交易"
+              },
+              "gold": "探索铂金账户",
+              "vic": "探索 VIC 账户",
+              "download": "下载 MetaTrader 5"
+            }
+          }
+        },
+        "mockCalculator": {
+          "row": {
+            "col1": {
+              "title1": "模拟收益试算器",
+              "desc1": "输入你账户中的可用余额，系统将自动根据SOFR市场利率为你计算每日预估收益。无需锁仓、利息每日到账。",
+              "title2": "单日参考年化利率(SOFR)：5.30%",
+              "desc2": "来源: New York Fed — SOFR reference"
+            },
+            "col2": {
+              "title": "年目标利息收益",
+              "desc": "滑动选择你想获得的年收益，系统将基于当日 SOFR 年化利率帮你计算需要投入多少资金。",
+              "tips": "所需闲置资金（实时变动）：",
+              "prompt": "本计算器仅用于参考与模拟，不构成投资建议或收益承诺。所需资金为根据用户设定的年收益目标及当前市场参考利率（如 SOFR）反向估算，实际利息将按每日市场利率动态计算并结算到账。最终收益受市场行情、账户状态及平台机制等因素影响，平台不保证未来收益表现，请以实际到账金额为准。"
+            }
+          }
+        },
+        "values": {
+          "title": "你的余额，在持续产生价值，每天",
+          "desc": "Future Earn 让你的账户，每天都在创造回报无需操作，无需干预，收益自然发生"
+        },
+        "advance": {
+          "title": "我们提供的不只是利率而是机制的进化",
+          "desc1": "Future Earn 是 Asia Future Trading 为策略型与长期用户打造的日息账户机制",
+          "desc2": "无需申购理财产品｜不锁仓、不干扰交易｜每日结息，T+1 入账 MT5 余额",
+          "desc3": "市面虽有不同收益方式，但像这样无感操作、每日到账、机制透明的设计仍属少见。我们提供的不是年化承诺，而是一套 可验证、可持续、尊重用户自由的收益机制",
+          "row": {
+            "col1": {
+              "title": "适合专业交易者｜解锁日息账户 + VPS云服务器支持",
+              "desc": "极低点差，最快成交速度，最大化交易效率",
+              "btn": "开通铂金账户"
+            },
+            "col2": {
+              "title": "面向机构与高净值交易者｜享专属客户经理与技术对接",
+              "desc": "加入 Asia Future Trading 百万美元俱乐部，尊享定制服务",
+              "btn": "开通 VIC 账户"
+            }
+          }
+        },
+        "qa": {
+          "ul": {
+            "li1": {
+              "title": "成为 VIC 用户需要什么条件？",
+              "desc": "需要满足最低入金 50,000 美元，具备一定交易经验，并能提供清晰的策略逻辑或资金用途说明。所有申请将由 AFT 客户经理与风控团队进行评估。"
+            },
+            "li2": {
+              "title": "利息是如何计算和发放的？",
+              "desc": "系统每天根据账户可用余额 × 当日 SOFR 利率进行利息计算，并在 T+1 自动计入您的 MT5 账户余额（Balance）。"
+            },
+            "li3": {
+              "title": "利息是否需要锁仓或特定操作？",
+              "desc": "无需锁仓、无需手动领取。利息不影响正常交易、出金或其他账户操作，真正做到“无感收息”。"
+            },
+            "li4": {
+              "title": "利率是多少？是否浮动？",
+              "desc": "利息每日锚定由美国纽约联储发布的 SOFR（无担保隔夜融资利率），会随市场变动同步调整，无平台人为设定。"
+            },
+            "li5": {
+              "title": "我的资金是否会被再投资或托管？",
+              "desc": "不会。Future Earn 利息由 Asia Future Trading 平台发放，用户资金不会进入任何投资或资产管理流程，仅作为交易账户余额存在。"
+            },
+            "li6": {
+              "title": "利息是否会显示在我的账户记录中？",
+              "desc": "是的。每日到账利息将以交易记录形式显示在您的 MT5 历史中（备注为“Interest”），可随时查看与提取。"
+            }
+          }
+        }
+      }
+    },
+    "mutual": {
+      "trading-competition": {
+        "banner": {
+          "title": "全球千万美金交易大赛 · Asia Future Trading",
+          "desc1": "与全球顶尖交易者同场竞技，赢取荣耀与丰厚奖励",
+          "desc2": "无论你是新手、高手还是量化团队，都能找到属于你的舞台",
+          "blueprint": {
+            "title": "免费复制冠军策略，开启实战之旅",
+            "desc": "共赴悉尼颁奖盛典，见证交易传奇诞生"
+          }
+        },
+        "slide": {
+          "desc1": "通过一家值得信赖的全球经纪商，向市场证明你的实力",
+          "desc2": "参赛规则很简单：创建账户，开始交易，并努力获胜！",
+          "review": "赛事精选回顾",
+          "total": "总奖池",
+          "progressing": "进行中",
+          "end": "已结束",
+          "current": "当前热门比赛",
+          "past": "往期比赛",
+          "swiper": {
+            "item1": {
+              "title": "AFT 铂金账户速赢挑战赛"
+            },
+            "item2": {
+              "title": "AFT 铂金账户速赢挑战赛",
+              "desc": "冠军收益率达125%，已发奖 $ 100,0000"
+            },
+            "item3": {
+              "title": "VIC 专属私享赛",
+              "desc": "私人定制奖金计划"
+            },
+            "item4": {
+              "title": "AFT 新年争霸赛",
+              "desc": "2025新年活动，送福袋"
+            },
+            "item5": {
+              "title": "AFT 夏季交易之王",
+              "desc": "高手对决，美股冲榜争霸"
+            }
+          },
+          "prompt": "AFT全球千万美金交易大赛，汇聚全球顶级交易者。我们将帆船哲学融入金融赛场，传承悉尼卓越，热爱的力量。当然，您是操作巨星，还是交易新秀，都可以免费复制冠军收益。大赛优胜者将受邀前去悉尼参加颁奖典礼，见证交易赛场与航海的传奇。"
+        },
+        "professional": {
+          "title": "专业赛场，需要专业平台",
+          "desc": "从全球流动性到专业工具，从策略支持到联盟奖励，Asia Future Trading 为交易者打造全面的竞赛环境与长期支持",
+          "understand": "了解平台",
+          "trade": "立即开始交易",
+          "row": {
+            "col1": {
+              "title": "全球直连流动性",
+              "desc": "与 XTX Markets、Finato 等全球顶级流动性提供商深度合作，报价稳定，订单快速执行"
+            },
+            "col2": {
+              "title": "Metatrader 5 交易工具",
+              "desc": "支持 MT5 桌面端 / 移动端 / 网页端，覆盖全球 90% 专业交易员的首选工具"
+            },
+            "col3": {
+              "title": "支持一键复制跟单",
+              "desc": "支持一键复制功能，每个人都可以复制传奇"
+            },
+            "col4": {
+              "title": "联盟计划返佣高达 70%",
+              "desc": "业内领先返佣计划，多种联盟合作机制助力你的长期收益"
+            },
+            "col5": {
+              "title": "策略自由和透明",
+              "desc": "不限制交易策略类型，比赛规则公开透明"
+            },
+            "col6": {
+              "title": "杠杆高达1:2000",
+              "desc": "满足多种交易风格和资金管理需求"
+            }
+          }
+        },
+        "prize-pool": {
+          "title": "Asia Future Trading 全球交易大赛全年奖金池，激励全球交易者突破自我",
+          "desc": "月度、季度均有排行榜与终极对决，多资产、多市场，多重挑战，总有一场属于你",
+          "total": "总奖金：",
+          "row": {
+            "col1": {
+              "title": "贵金属市场奖池",
+              "number": "$50,000,000",
+              "desc": "覆盖核心资产：黄金（XAU/USD）"
+            },
+            "col2": {
+              "title": "加密货币市场奖池",
+              "number": "$10,000,000",
+              "desc": "涵盖 BTC、ETH、SOL、XRP 等热门加密资产"
+            },
+            "col3": {
+              "title": "外汇市场奖池",
+              "number": "$30,000,000",
+              "desc": "涵盖主流货币对与交叉盘（EUR/USD、GBP/JPY 等）"
+            },
+            "col4": {
+              "title": "股票市场奖池",
+              "number": "$5,000,000",
+              "desc": "涵盖美股热门 CFD：特斯拉、英伟达、苹果等"
+            }
+          }
+        },
+        "reward": {
+          "title": "全球奖金池，赢取最终荣誉与丰厚奖励",
+          "desc1": "全球交易者逐鹿赛场，最终前 10 名将载入交易名人榜，赢得至高荣耀与奖励",
+          "desc2": "交易名人榜头号荣耀，受邀出席悉尼盛典"
+        },
+        "celebrity": {
+          "title": "全球交易名人榜",
+          "desc": "当前排名领先选手将进入“交易名人榜”，接受全球交易者复制！",
+          "growth": "累积增长率：",
+          "copy": "复制人数：",
+          "type": "帐户类型：",
+          "quickly": "一键复制交易",
+          "prompt": "复制交易功能需使用与被复制交易者相同账户类型（如 Classic / Platinum / VIC）。如需了解复制机制详情，请联系您的客户经理或咨询 Asia Future Trading 客户支持中心。"
+        },
+        "rank": {
+          "title": "不同赛道，同样荣耀",
+          "desc": "新锐、专家与明星交易者组别，谁将登顶荣耀巅峰？",
+          "tabs": {
+            "1": "新锐组",
+            "2": "专家组",
+            "3": "明星组"
+          },
+          "prompt": {
+            "1": "适用于入金 ≤ $5,000 的经典账户参赛者",
+            "2": "适用于入金 $5,000–$50,000 的铂金账户参赛者",
+            "3": "适用于入金 ≥ $50,000 的VIC账户参赛者"
+          },
+          "table": {
+            "rank": "排名",
+            "name": "昵称",
+            "credit": "累计收益率",
+            "type": "账户类型",
+            "operator": "操作",
+            "copy": "复制交易"
+          }
+        },
+        "entry": {
+          "title": "交易赛季进度条与账户赛道入口",
+          "desc": "每个账户，都有属于你的竞技赛道",
+          "card": {
+            "btns": {
+              "crypto": "加入加密货币比赛",
+              "forex": "加入外汇市场比赛",
+              "metals": "加入贵金属市场比赛",
+              "stocks": "加入股票市场比赛"
+            },
+            "weeklyPool": "每周奖金池",
+            "monthlyPool": "每月奖金池",
+            "col1": {
+              "title": "美分账户周赛",
+              "desc": "比赛周期：本周一至周五（UTC 时间）"
+            },
+            "col2": {
+              "title": "经典账户月赛",
+              "desc": "比赛周期：为期 12 个月（UTC 时间）"
+            },
+            "col3": {
+              "title": "铂金账户月赛",
+              "desc": "比赛周期：为期 12 个月（UTC 时间）"
+            },
+            "col4": {
+              "title": "VIC 账户尊享赛",
+              "desc": "比赛周期：为期 12 个月（UTC 时间）"
+            }
+          }
+        },
+        "decision": {
+          "title": "赋能每一次交易决策",
+          "desc1": "无论你是新手交易者还是资深操盘手，我们为你提供全方位的学习与策略支持。",
+          "desc2": "从实战经验的专家团队，到每日更新的交易灵感，再到实时互动的网络研讨会，我们致力于帮助你在市场中做出更明智的决策。",
+          "row": {
+            "col1": {
+              "title": "你将获得",
+              "desc": "CTA策略信号支持：由量化分析团队每日发布核心交易提示交易灵感洞察学院：涵盖趋势解析、资产专题、策略构建等模块每周网络研讨会（Webinar）：与分析师实时互动，掌握最新行情社交媒体跟进：每日市场观点、平台资讯不间断更新",
+              "register": "立即开户",
+              "jump": "进入洞察学院"
+            },
+            "col2": {
+              "title": "成功的交易并非来自直觉，而是来自系统性思维与信息优势。",
+              "desc": "——— 每周网络研讨会 ｜AFT 策略顾问 Jerry Zhang"
+            }
+          }
+        },
+        "conquer": {
+          "title": "征服市场，主宰赛场",
+          "desc": "AFT 全球千万美金交易大赛，等待真正的操盘者登场。下一位站上领奖台的，也许就是你。",
+          "register": "开启账户",
+          "trade": "立即交易"
+        }
+      },
+      "funding": {
+        "banner": {
+          "title": "Asia Future Trading Funding Program",
+          "desc": "—— 为卓越交易员提供成长计划",
+          "midst": "开启自营交易之路，助力全球交易者放大实力 覆盖外汇、期货与加密资产，多资产支持，实时利润分成",
+          "ticker": "购买门票",
+          "prompt": "购买门票后将赠送三个月的个人铂金账户，个人铂金账户与参与项目的账户为独立账户。"
+        },
+        "vision": {
+          "title1": "Our Vision:",
+          "title2": "1 Million Funded Traders",
+          "desc": "通过 Asia Future Trading Funding Program，全球优秀交易者已获得资金支持与利润分成。无论你是新锐交易员还是资深策略师，都能在这里找到属于你的舞台。",
+          "join": "立即加入 Funding Program",
+          "prompt": "示例金额与用户仅作演示用途，实际分成情况以 Funding Program 实际规则为准。"
+        },
+        "plan": {
+          "title": "什么是 Funding Program 自营交易员成长计划？",
+          "midst": "Asia Future Trading Funding Program 不只是一次交易挑战，而是一条 完整的职业成长路径",
+          "desc": "挑战→验证→获得资金→利润分成→成为机构级认证交易员",
+          "row": {
+            "title": "成长路径四步",
+            "col1": {
+              "title": "选择挑战计划",
+              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+            },
+            "col2": {
+              "title": "选择挑战计划",
+              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+            },
+            "col3": {
+              "title": "选择挑战计划",
+              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+            },
+            "col4": {
+              "title": "选择挑战计划",
+              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+            }
+          }
+        },
+        "challenge": {
+          "title": "选择你的挑战 —— Become an Asia Future Trading Trader",
+          "desc": "Asia Future Trading Funding Program 不只是一次交易挑战，而是一条 完整的职业成长路径",
+          "row": {
+            "col1": {
+              "title": "配置你的挑战"
+            },
+            "col2": {
+              "title": "账户摘要",
+              "buy": "立即购买挑战",
+              "more": "了解更多规则",
+              "desc1": "从 $198 开始你的百万美金交易席位？",
+              "desc2": "购买任何挑战计划，即可获赠：",
+              "desc3": "个人交易账户铂金账户权限 3 个月",
+              "desc4": "（铂金账户专属：更低点差、Future Earn 增强利息机制、更多特权）"
+            }
+          }
+        },
+        "withdrawal": {
+          "title": "即时提现，真实收益",
+          "challenge": "开始你的挑战",
+          "row": {
+            "col1": {
+              "title": "利润随时分成",
+              "desc": "无锁定周期，你一旦盈利即可立即申请分成。"
+            },
+            "col2": {
+              "title": "快速处理",
+              "desc": "出金请求 24 小时内受理，加密货币与本地支付最快可在 1–15 分钟到账。"
+            },
+            "col3": {
+              "title": "全球支持",
+              "desc": "支持 USDT / USDC / BTC / ETH 及国际电汇，多种渠道安全合规。"
+            }
+          }
+        },
+        "advantages": {
+          "title": "三大核心优势",
+          "prompt": "想进一步了解 Asia Future Trading 的交易技术与流动性优势？",
+          "more": "了解平台",
+          "row": {
+            "col1": {
+              "title": "杠杆最高 1:100",
+              "desc": "资金管理灵活，适配不同风格与策略需求。"
+            },
+            "col2": {
+              "title": "xPrimeX 报价桥驱动",
+              "desc": "提供机构级订单执行速度与稳定性，毫秒级撮合。"
+            },
+            "col3": {
+              "title": "全球流动性支持",
+              "desc": "深度连接 XTX、LMAX、Finalto 等一线流动性提供商，报价透明，市场深度真实可见。"
+            }
+          }
+        },
+        "qa": {
+          "join": "立即加入 Funding Program",
+          "view": "查看挑战规则",
+          "ul": {
+            "li1": {
+              "title": "这是真实资金账户还是模拟账户？",
+              "desc": "挑战阶段使用的是模拟账户，但所有价格数据与执行逻辑均来自真实流动性环境（xPrimeX 报价桥）。通过挑战后，你将获得 资金分成账户 并成为认证跟单交易员，利润结算真实有效，且支持提现。"
+            },
+            "li2": {
+              "title": "分成什么时候到账？",
+              "desc": "Funding Program 采用 15 天利润分成周期。账户一旦有盈利，即可在每个结算周期内申请分成，收益将按 15 天为单位发放。"
+            },
+            "li3": {
+              "title": "挑战费用能退吗？",
+              "desc": "挑战费用不可退。但 只要加入 Funding Program，即可额外获赠个人铂金账户 3 个月使用权（独立于挑战账户）。"
+            },
+            "li4": {
+              "title": "最大杠杆是多少？",
+              "desc": "Funding Program 资金账户杠杆最高 1:100；个人独立交易账户杠杆最高可达 1:2000。"
+            },
+            "li5": {
+              "title": "我可以同时参加多个挑战吗？",
+              "desc": "可以。你可同时购买多个挑战，用于分散不同策略的测试与执行。"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "menu": {
+      "products": {
+        "title": "产品",
+        "description": "专业定价 ，更低交易成本，低点差、低佣金、低借贷利率。",
+        "btn": "探索加密货币",
+        "row": {
+          "col-1": {
+            "title": "CFD 产品",
+            "ul": {
+              "li1": "外汇",
+              "li2": "贵金属",
+              "li3": "能源",
+              "li4": "股票 & ETF",
+              "li5": "期货合约",
+              "li6": "加密资产"
+            }
+          },
+          "col-2": {
+            "title": "定价",
+            "ul": {
+              "li1": "定价概览",
+              "li2": "点差",
+              "li3": "一般费用",
+              "li4": "调期利率"
+            }
+          },
+          "col-3": {
+            "title": "条件",
+            "ul": {
+              "li1": "入金与出金",
+              "li2": "客户保护",
+              "li3": "交易条款与合规KYC"
+            }
+          }
+        }
+      },
+      "platforms": {
+        "title": "交易平台",
+        "description": "为专业而生，覆盖所有交易员，从个人到机构",
+        "btn": "立即下载",
+        "row": {
+          "col-1": {
+            "title": "桌面端",
+            "ul": {
+              "li1": "MetaTrader 5 (Windows)",
+              "li2": "MetaTrader 5 (macOS)"
+            }
+          },
+          "col-2": {
+            "title": "移动端",
+            "ul": {
+              "li1": "MetaTrader 5 (iOS)",
+              "li2": "MetaTrader 5 (Android)"
+            }
+          },
+          "col-3": {
+            "title": "网页端",
+            "ul": {
+              "li1": "MetaTrader 5 WebTrader"
+            }
+          }
+        }
+      },
+      "account": {
+        "title": "交易账户",
+        "description": "来自亚洲交易旗舰平台提供的账户，访问全球所有资产列别，六位账户 ID，畅达六万市场产品，还能参与收益增强计划，最大化投资效率。",
+        "btn": "开设铂金账户",
+        "row": {
+          "col-1": {
+            "title": "账户类型",
+            "ul": {
+              "li1": "Classic 经典账户",
+              "desc1": "最受欢迎、行业领先的标准账户",
+              "li2": "Platinum 铂金账户",
+              "desc2": "享受低至0-行业最低佣金，访问每一个交易品种",
+              "li3": "机构 VIC 级账户",
+              "desc3": "赋能数字资产时代的机构交易"
+            }
+          },
+          "col-2": {
+            "title": "简单赚",
+            "ul": {
+              "li1": "简单赚取利息*账户",
+              "desc1": "Asia Future Trading 账户利息新模式，安全无忧稳定赚"
+            }
+          },
+          "col-3": {
+            "title": "福利中心",
+            "ul": {
+              "li1": "AFT 积分激励计划",
+              "desc1": "您的每一次交易，都可以获得额外的积分奖励"
+            }
+          }
+        }
+      },
+      "beginner": {
+        "title": "CFD 新手学院",
+        "description": "新手必读、操作指南、尽在新手学院，帮助你从新手成为CFD交易大师，轻松交易CFD。立即尝试美分账户，1美金交易英伟达 Share - CFD。",
+        "btn": "前往学习中心",
+        "row": {
+          "col-1": {
+            "title": "基础文章",
+            "ul": {
+              "li1": "1. 什么是交易",
+              "desc1": "发现交易的世界：可进行投机的各类金融工具，以及市场中所有买卖资产的参与者。",
+              "li2": "2.如何为自己选择合适的券商",
+              "desc2": "针对您偏好的市场选择最佳券商。了解如何调研其业绩记录与公司概况，以及如何评估佣金和其他费用。",
+              "li3": "3.如何为自己选择合适的CFD 账户",
+              "desc3": "了解选择最佳投资平台时应关注的要素，从可投资的证券种类到客服支持与费用结构。",
+              "li4": "4.如何入门交易CFD",
+              "desc4": "为初次投资者详解投资基础，教您如何在平台上购买各种市场的股票。",
+              "li5": "5.如何挑选理想的投资平台",
+              "desc5": "了解选择最佳投资平台时应关注的要素，从可投资的证券种类到客服支持与费用结构。"
+            }
+          },
+          "col-2": {
+            "title": "学习资源",
+            "ul": {
+              "li1": "在线课程",
+              "desc1": "系统化视频教学，涵盖基础知识与实战技巧，帮助快速掌握CFD交易。",
+              "li2": "交易术语词汇表",
+              "desc2": "详解常用交易术语，帮助您快速理解行业语言，轻松跟上市场节奏。"
+            }
+          },
+          "col-3": {
+            "title": "了解更多",
+            "ul": {
+              "li1": "CFD新手学院",
+              "desc1": "全面汇聚新手必读资料和实用交易指南，助您持续进阶。",
+              "li2": "CFD新手文档中心",
+              "desc2": "全面汇聚新手必读资料和实用交易指南，助您持续进阶。"
+            }
+          }
+        }
+      },
+      "inspiration": {
+        "title": "交易灵感",
+        "description": "我们将全球重要经济事件、利率决议、就业数据、通胀发布等宏观信号编入The Asia Future Trading View 财经日历中。专家团队洞察精选撰写技术分析和交易策略建议，帮助投资者更从容应对市场波动并把握每一次的交易机会。",
+        "btn": "参与比赛",
+        "row": {
+          "col-1": {
+            "title": "雷达-数据与工具",
+            "desc": "精准工具，锁定交易方向",
+            "ul": {
+              "li1": "Asia Future Trading 财经日历",
+              "li2": "费用计算器",
+              "li3": "VPS托管服务",
+              "li4": "市场热力图"
+            }
+          },
+          "col-2": {
+            "title": "巡航-交易启迪",
+            "desc": "我们专家组的旗舰策略，助力您稳健巡航",
+            "ul": {
+              "li1": "AFT Strats专家团队洞察",
+              "li2": "大师现场课程",
+              "desc2": "了解您所在地区的线下课程与我们和合作伙伴交易学院"
+            }
+          },
+          "col-3": {
+            "title": "引航-全球视野分析- The Asia Future Trading View",
+            "desc": "全球实时资讯与Asia Future Trading 专家分析，把握市场先机",
+            "ul": {
+              "li1": "全部",
+              "li2": "股票",
+              "li3": "债券",
+              "li4": "商品",
+              "li5": "宏观"
+            }
+          }
+        }
+      },
+      "support": {
+        "title": "客户支持",
+        "description": "我们致力于成为亚洲第一的专注社群驱动的交易伙伴，六语种服务、多币种交易，真正为亚洲交易者量身打造的差价合约平台",
+        "btn": "加入社区",
+        "row": {
+          "col-1": {
+            "title": "客户支持中心",
+            "ul": {
+              "li1": "点击获取帮助-寻找您的问题答案"
+            }
+          },
+          "col-2": {
+            "title": "帆船积木社区｜超10, 000人加入，从开户开始，让交易像搭积木一样简单的全球社区",
+            "ul": {
+              "li1": "Discord社区 -即刻加入"
+            }
+          }
+        }
+      },
+      "corporation": {
+        "title": "公司",
+        "description": "信任，是我们提供给客户最大的杠杆。从全球流动性直连、透明撮合到合规风控，每一步都为信任而构建。",
+        "btn": "加入我们",
+        "row": {
+          "col-1": {
+            "title": "关于我们",
+            "ul": {
+              "li1": "关于Asia Future Trading",
+              "li2": "招贤纳士",
+              "li3": "ESG",
+              "li4": "联系我们",
+              "li5": "法律文件"
+            }
+          }
+        }
+      },
+      "doublewin": {
+        "title": "共赢+",
+        "description": "亚洲精英交易者与合作伙伴的首选平台，在全球可信的平台上交易、竞技、共同成长，让您的洞见创造更多成功，助力您成为交易传奇。",
+        "btn": "成为我们的伙伴",
+        "row": {
+          "col-1": {
+            "title": "共赢+",
+            "ul": {
+              "li1": "交易大赛",
+              "desc1": "每周交易竞技，用 100 美金起步，开启专属美分账户的精彩对决。瓜分百万美金奖池，缔造属于你的交易传奇。",
+              "li2": "跟单社区",
+              "desc2": "关注全球顶尖交易员，一键复制他们的交易策略。成为带单交易员，最高可享 30% 跟单分润 + 10% 手续费返佣。",
+              "li3": "Funding Program",
+              "desc3": "通过认证成为 Asia Future Trading 旗下自营交易员，我们为你提供所有交易资金。",
+              "li4": "全球合作伙伴 Affiliate Program",
+              "desc4": "赋能行业意见领袖，将专业认知变现。我们的全球合作伙伴计划，助您多年来的积累实现持续收益。"
+            }
+          }
+        }
+      }
+    },
+    "countries": {
+      "en": "全球的",
+      "zh-cn": "中国",
+      "zh-tw": "中国",
+      "ja": "日本",
+      "ko": "韩国",
+      "th": "泰国",
+      "ms": "马拉西亚",
+      "id": "印度尼西亚",
+      "vi": "越南"
+    }
+  },
+  "Footer": {
+    "contact": {
+      "title": "联系我们",
+      "phone": "(客服在线支持的联络时间, 周一 至 周五)"
+    },
+    "future": {
+      "title": "ASIA FUTURE TRADING HEADQUARTERS",
+      "australia": "L 1 256 RUNDLE St ADELAIDE SA 5000 Australia",
+      "vin": " Registered address: Suite 305, Griffith Corporate Centre, Kingstown,St.Vincent and the Grenadines;",
+      "hk": "Office Adddress: A68,3F,Manning Industrial Building,116-118 How Ming St, KwunTong, Hong Kong SAR"
+    },
+    "login": {
+      "title": "登录",
+      "mt5": "客户门户登陆",
+      "partner": "伙伴门户登录"
+    },
+    "join-us": {
+      "title": "加入我们的社群"
+    },
+    "risks": {
+      "title": "交易类投资有风险",
+      "list": {
+        "1-title": "风险披露声明",
+        "1-content": "差价合约（CFD）及其他场外交易（OTC）杠杆产品属于复杂的金融工具，因杠杆效应可能导致资金迅速亏损，存在较高的投资风险。此类产品并不适合所有投资者。根据行业数据，约有 70% 的零售投资者账户在交易差价合约时发生亏损。请您务必确保充分理解差价合约及其他杠杆类产品的运作机制，并在能够承受亏损的前提下进行交易。如有需要，请寻求独立的财务建议。",
+        "2-title": "公司信息与业务范围",
+        "2-content": "本网站由 Asia Future Trading Corporation Limited 运营（注册编号：25606 BC 2019），并已在圣文森特和格林纳丁斯金融服务局（FSA）注册。Asia Future Trading Pty Ltd 在部分市场以以下名称开展业务与品牌推广：“亚洲商市”、“AsiaFutureTrading”及“AFT”。上述名称仅为商号或品牌名称，与注册主体名称无异。Asia Future Trading Corporation Limited 作为场外衍生品（OTC Derivatives）交易服务的执行方，通过本平台为零售客户提供交易指令的执行与市场准入服务。公司不构成金融产品的发行人，亦不为客户提供投资建议或资产管理服务。本公司通过与多个市场流动性提供方及清算渠道对接，为客户交易提供技术及执行支持。所有交易均基于客户自愿指令执行，并可能涉及市场对手方风险。",
+        "3-title": "办公室地址",
+        "3-content": "Suite 305, Griffith Corporate Centre, Kingstown, St Vincent and the Grenadines",
+        "4-title": "司法辖区信息",
+        "4-content": "我们不会向部分司法辖区的个人或公司提供任何产品或服务。受限制地区包括但不限于：阿富汗、加拿大、刚果（金）、古巴、塞浦路斯、香港、印度尼西亚、伊朗、马来西亚、朝鲜、新加坡、苏丹、叙利亚、阿拉伯联合酋长国、美国和也门。来自上述地区的访问者应自行确保其在本网站上的行为符合其所属国家或地区的适用法律法规，特别是在进行任何投资决定前务必审慎评估合规性。我们保留随时变更、修改或终止本公司产品与服务的权利，不另行通知。"
+      }
+    }
+  },
+  "Articles": {
+    "content": "内容",
+    "disclaimer": "免责声明",
+    "prompt": "本内容不构成投资建议。过往表现并不代表未来表现。差价合约属于杠杆产品，存在高风险。请根据自身风险承受能力谨慎交易。",
+    "share": "分享到",
+    "relation": "相关文章",
+    "beginner": {
+      "common-currency": {
+        "title": "常见货币对与其特性",
+        "desc": "好的，下面我专门针对 美元系货币对（USD 作为一方），整理了一篇完整内容。引用了国际清算银行（BIS）、美国联邦储备（Federal Reserve）、IMF 等高权威机构的信息，帮助解释每个主要美元货币对的特性。",
+        "section1": {
+          "title": "一、背景",
+          "desc": "美元（USD）是全球最重要的储备货币。国际清算银行 2022 年调查显示，美元参与了全球 88% 的外汇交易【BIS, Triennial Survey 2022】。因此，所有以美元为一方的货币对（即 “美元系”）都是市场的流动性核心。"
+        },
+        "section2": {
+          "title": "二、主要美元货币对",
+          "eur": "EUR/USD —— 全球交易量第一",
+          "jpy": "USD/JPY —— 亚洲交易核心",
+          "gbp": "GBP/USD —— “Cable”",
+          "cad": "USD/CAD —— “Loonie”",
+          "adu": "AUD/USD —— “Aussie”",
+          "chf": "USD/CHF —— 避险货币对",
+          "nzd": "NZD/USD —— “Kiwi”",
+          "eur-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "全球外汇交易的 22% 以上【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "欧央行（ECB）与美联储（Fed）的利率差。",
+            "li2-text2": "欧元区与美国的通胀与增长差异。",
+            "li3-strong": "特点：",
+            "li3-text": "点差最小，流动性最高，常被用作外汇市场基准。"
+          },
+          "jpy-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 13% 全球成交量【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "日本央行超宽松政策 vs 美联储利率政策。",
+            "li2-text2": "日元作为全球避险货币，在地缘风险或金融危机时常快速升值。",
+            "li3-strong": "特点：",
+            "li3-text": "在亚洲交易时段波动活跃，对美国债券收益率高度敏感"
+          },
+          "gbp-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "全球交易量约 9%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "英格兰银行（BoE）的政策路径。",
+            "li2-text2": "英国宏观数据，如 GDP、通胀、就业。",
+            "li2-text3": "脱欧后政治经济不确定性。",
+            "li3-strong": "特点：",
+            "li3-text": "波动大于 EUR/USD，趋势性更强，点差略高。"
+          },
+          "chf-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 5%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "瑞士央行（SNB）的干预政策。",
+            "li2-text2": "全球金融市场避险情绪。",
+            "li3-strong": "特点：",
+            "li3-text": "CHF 被视为“避险天堂”，当市场动荡时，USD/CHF 常下跌（法郎升值）。"
+          },
+          "cad-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 5%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "加拿大出口依赖原油，油价波动直接影响加元。",
+            "li2-text2": "美加利率差。",
+            "li3-strong": "特点：",
+            "li3-text": "常被称为“石油货币”，适合关注能源市场的交易者。"
+          },
+          "adu-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 5%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "澳大利亚铁矿石、煤炭等大宗商品出口价格。",
+            "li2-text2": "与中国经济关系密切，中国需求直接影响澳元。",
+            "li3-strong": "特点：",
+            "li3-text": "与商品周期同步，波动性中等。"
+          },
+          "nzd-ul": {
+            "li1-strong": "占比：",
+            "li1-text": "约 2%【BIS】",
+            "li2-strong": "驱动因素：",
+            "li2-text1": "新西兰农业和乳制品出口价格。",
+            "li2-text2": "新西兰储备银行（RBNZ）利率决策。",
+            "li3-strong": "特点：",
+            "li3-text": "流动性低于 AUD/USD，但受商品价格和亚洲需求影响大。"
+          }
+        },
+        "section3": {
+          "title": "三、美元系货币对的共性",
+          "ul": {
+            "li1-strong": "美元的主导地位",
+            "li1-text1": "美元在 IMF 外汇储备中占比 59%【IMF COFER 2023】。",
+            "li1-text2": "美元利率、美国经济数据对所有美元系货币对有“一票否决”效应。",
+            "li2-strong": "避险与风险周期",
+            "li2-text1": "市场动荡时：USD/JPY 和 USD/CHF 常大幅波动。",
+            "li2-text2": "风险偏好上升时：AUD/USD、NZD/USD、USD/CAD 走势更活跃。",
+            "li3-strong": "交易时间特征",
+            "li3-text1": "亚洲盘：USD/JPY 活跃。",
+            "li3-text2": "欧洲盘：EUR/USD、GBP/USD 主导。",
+            "li3-text3": "美洲盘：USD/CAD、USD/CHF、AUD/USD 成交集中。"
+          }
+        },
+        "summary": {
+          "title": "四、总结",
+          "ul": {
+            "li1-strong": "EUR/USD：",
+            "li1-text": "全球最重要基准，点差最低。",
+            "li2-strong": "USD/JPY：",
+            "li2-text": "与美国利率和避险情绪高度挂钩。",
+            "li3-strong": "GBP/USD：",
+            "li3-text": "波动性强，受英国政治经济影响显著。",
+            "li4-strong": "USD/CHF：",
+            "li4-text": "避险货币组合，波动相对温和。",
+            "li5-strong": "USD/CAD：",
+            "li5-text": "石油货币对，关注油价。",
+            "li6-strong": "AUD/USD：",
+            "li6-text": "大宗商品驱动，与中国经济联动。",
+            "li7-strong": "NZD/USD：",
+            "li7-text": "农业出口相关，波动性高于 AUD/USD。"
+          }
+        }
+      },
+      "common-mistakes": {
+        "title": "新手常犯的五个错误",
+        "section1": {
+          "title": "新手常犯的五个错误：外汇交易的第一堂必修课",
+          "desc": "外汇交易看似门槛不高，但正因其高流动性与杠杆特性，许多新手很快就在市场中“交学费”。世界银行在一份关于零售外汇行为的研究中指出：“缺乏系统性学习与风险控制，是零售投资者高淘汰率的根本原因”【World Bank, Financial Inclusion Report】。以下五个错误，是外汇新手最容易掉入的陷阱。"
+        },
+        "section2": {
+          "title": "一、过度依赖高杠杆",
+          "desc": "外汇市场允许使用高杠杆，这对新手来说往往意味着“放大收益”的诱惑。",
+          "ul": {
+            "li1-strong": "错误点：",
+            "li1-text": "新手常用最大杠杆开仓，结果轻微波动就导致爆仓。",
+            "li2-strong": "案例：",
+            "li2-text": "欧洲证券及市场管理局（ESMA）在 2018 年的零售外汇审查中发现，高杠杆账户平均 12 周内就会爆仓【ESMA, Retail FX Review】",
+            "li3-strong": "建议：",
+            "li3-text": "新手应将杠杆控制在可承受的水平（例如 1:10–1:20），逐步熟悉波动。"
+          }
+        },
+        "section3": {
+          "title": "二、没有设置止损",
+          "desc": "我只要撑一撑，行情就会反转”是很多新手的自我安慰。",
+          "ul": {
+            "li1-strong": "错误点：",
+            "li1-text": "不设止损，导致小亏变大亏，最终无法回补。",
+            "li2-strong": "案例：",
+            "li2-text": "CNBC 在一篇投资者教育文章中指出，止损纪律的缺失，是散户亏损率居高不下的重要原因【CNBC, Trading Psychology Report】。",
+            "li3-strong": "建议：",
+            "li3-text": "每笔交易前必须设定止损，把损失控制在账户资金的 1–2% 以内。"
+          }
+        },
+        "section4": {
+          "title": "三、追逐消息与市场噪音",
+          "desc": "非农、利率决议、突发新闻往往伴随剧烈波动。新手看到行情急涨急跌，往往跟风进场。",
+          "ul": {
+            "li1-strong": "错误点：",
+            "li1-text": "盲目跟随新闻，不理解数据与汇率之间的传导逻辑。",
+            "li2-strong": "案例：",
+            "li2-text": "路透社（Reuters） 指出，大部分非农数据公布后的 5 分钟内，零售交易者方向性错误的比例高达 70%【Reuters, FX Market Behaviour】。",
+            "li3-strong": "建议：",
+            "li3-text": "对宏观事件要提前制定策略，避免临时跟风。"
+          }
+        },
+        "section5": {
+          "title": "四、情绪化与过度交易",
+          "desc": "贪婪、恐惧、急于翻本，是外汇新手最大的敌人。",
+          "ul": {
+            "li1-strong": "错误点：",
+            "li1-text": "亏损后加倍下单，盈利后立刻平仓，缺乏一致的策略。",
+            "li2-strong": "案例：",
+            "li2-text": "芝加哥商品交易所（CME）在行为金融学研究中发现，散户在连续亏损后的平均仓位规模会增加 30%，风险反而放大【CME Group, Behavioural Finance Study】。",
+            "li3-strong": "建议：",
+            "li3-text": "交易应遵循既定计划，而不是依赖情绪。"
+          }
+        },
+        "section6": {
+          "title": "五、忽视平台选择与合规性",
+          "desc": "新手往往只看“点差低”“赠金多”，却忽略了经纪商的监管背景与交易机制。",
+          "ul": {
+            "li1-strong": "错误点：",
+            "li1-text": "在不透明的平台交易，遭遇滑点、拒单或资金安全风险。",
+            "li2-strong": "案例：",
+            "li2-text": "国际货币基金组织（IMF）在一份关于新兴市场的资本报告中提到，零售交易平台的透明度差异，会直接影响投资者资金安全【IMF, Capital Markets Transparency Report】。",
+            "li3-strong": "建议：",
+            "li3-text": "选择具备合规监管与透明报价的平台。"
+          },
+          "advance": "在这方面，Asia Future Trading 的优势在于：",
+          "aul": {
+            "li1": "提供透明的订单执行与成本披露，避免隐藏费用。",
+            "li2": "通过直连全球流动性池降低滑点，保障交易公平性。 这意味着新手交易者可以更专注于学习和策略，而不是担心平台风险。"
+          }
+        },
+        "summary": {
+          "title": "结语",
+          "desc": "正如 Financial Times 评论所言：“外汇市场淘汰的并不是资金最少的人，而是风险意识最弱的人。”【Financial Times, Retail FX Column】",
+          "prompt": "新手若能避免上述五个错误：",
+          "ul": {
+            "li1": "杠杆合理",
+            "li2": "严格止损",
+            "li3": "不追消息",
+            "li4": "控制情绪",
+            "li5": "选择合规平台"
+          },
+          "end": "就已经迈出了在外汇市场长期生存的第一步。"
+        }
+      },
+      "forex-basic-analysis": {
+        "title": "外汇交易中的基本面分析",
+        "section1": {
+          "title": "外汇交易中的基本面分析：透过宏观看货币",
+          "desc": "外汇市场的波动，从来不是孤立事件，而是国家经济、政策博弈与资本流向的结果。交易者要想读懂汇率，就必须理解所谓的 基本面分析（Fundamental Analysis）——从利率、通胀、就业到地缘政治，把宏观变量转化为交易逻辑。"
+        },
+        "section2": {
+          "title": "一、利率与货币价值",
+          "desc1": "利率是外汇市场最强大的驱动力。美国联邦储备（Federal Reserve）在加息周期时，美元往往走强，因为高利率吸引全球资本流入美国债券与货币市场工具。相反，当进入降息周期，美元则常常承压。",
+          "desc2": "世界银行（World Bank）在其《Global Economic Prospects》报告中指出，高利率环境正在重新塑造全球资本流动模式，新兴市场的货币对美元的敏感度显著提升【World Bank, Global Economic Prospects】。",
+          "demo": "案例：",
+          "ul": {
+            "li1": "美联储在 2022–2023 年的快速加息，推动了美元指数（DXY）上行，EUR/USD 一度跌破平价。",
+            "li2": "欧洲央行则在政策滞后时段，欧元对美元持续走弱。"
+          }
+        },
+        "section3": {
+          "title": "二、通胀与购买力",
+          "desc1": "通胀直接削弱货币的实际购买力。如果一个国家长期高通胀，其货币贬值压力几乎是必然的。",
+          "desc2": "OECD 的研究表明，通胀与货币价值之间呈现长期负相关关系，尤其在小型开放经济体中更加明显【OECD Economic Outlook】。",
+          "demo": "案例：",
+          "ul": {
+            "li1": "土耳其在过去十年多次爆发高通胀，土耳其里拉（TRY）持续贬值。",
+            "li2": "相比之下，瑞士长期保持低通胀与稳定政策，使瑞士法郎（CHF）具备避险属性。"
+          }
+        },
+        "section4": {
+          "title": "三、就业与增长数据",
+          "desc1": "就业与 GDP 增长是基本面分析的另一个支柱。强劲的就业市场意味着消费与投资能力增强，从而支持货币走强。",
+          "desc2": "路透社（Reuters）在 2023 年的宏观专题中强调，美国非农就业（NFP）数据发布已成为“全球交易员最关注的高频事件”，单次数据波动足以推动美元对主要货币的短期行情【Reuters, Macro Focus】。",
+          "demo": "案例：",
+          "ul": {
+            "li1": "美国非农就业数据强于预期时，美元短期快速升值。",
+            "li2": "反之，若就业疲软，市场会提前押注美联储可能放缓加息。"
+          }
+        },
+        "section5": {
+          "title": "四、地缘政治与避险情绪",
+          "desc1": "战争、制裁与政治不确定性往往迅速提升避险货币（如美元、日元、瑞郎）的价值。",
+          "desc2": "联合国贸发会议（UNCTAD）在一份关于全球资本流动的研究中指出，地缘风险已成为影响货币短期波动的关键变量，而避险资金在危机时刻倾向于集中流向美元和瑞郎【UNCTAD, Trade and Development Report】。",
+          "demo": "案例：",
+          "ul": {
+            "li1": "俄乌冲突期间，资金涌向美元与瑞郎。",
+            "li2": "亚洲地区政治紧张时，日元因避险需求而升值，即便日本本身经济数据不佳。"
+          }
+        },
+        "section6": {
+          "title": "五、Asia Future Trading 的优势：把宏观转化为可执行的策略",
+          "desc": "在 Asia Future Trading，基本面分析并不是停留在“宏观解读”，而是通过研究与产品覆盖转化为可执行的策略：",
+          "ul": {
+            "li1-strong": "多市场同步接入：",
+            "li1-text": "交易者可以同时交易外汇、指数与大宗商品差价合约，把宏观逻辑落实为跨资产操作。例如，美联储加息引发美元走强，同时压低黄金与新兴市场货币，交易者可在一个平台内进行多头美元、空头黄金的组合。",
+            "li2-strong": "数据与研究支持：",
+            "li2-text": "Asia Future Trading 提供实时宏观数据与市场简报，让客户更快捕捉事件驱动行情，而不是事后追踪。"
+          },
+          "advance": "这种将 宏观研究 → 产品覆盖 → 风控执行 结合的模式，使得交易者不仅能读懂数据，还能把数据转化为头寸。"
+        },
+        "summary": {
+          "title": "结语",
+          "desc": "外汇市场的本质，是全球经济的投射。基本面分析要求交易者既能解读宏观变量，也要理解它们在市场中的传导路径。",
+          "ul": {
+            "li1": "利率决定资本流动",
+            "li2": "通胀塑造购买力",
+            "li3": "就业与增长决定经济韧性",
+            "li4": "地缘政治放大风险偏好循环"
+          },
+          "end1": "正如 路透社 总结的那样：“汇率不只是价格，它是全球资本流动的体温计。”【Reuters, FX Special Report】",
+          "end2": "对于 Asia Future Trading 的客户而言，这意味着他们并非仅仅观察市场，而是拥有工具和机制，把宏观变化直接转化为策略优势。"
+        }
+      },
+      "forex-vs-stock": {
+        "title": "外汇 vs 股票：有什么不同？",
+        "section1": {
+          "title": "外汇 vs 股票：两种市场的分野与互补",
+          "desc": "在金融市场的宏大舞台上，外汇（Forex）与股票（Equities）是最广为人知的两类资产。二者经常被放在一起比较，但在交易逻辑、市场结构和风险属性上却有显著差异。正如《Bloomberg Markets》在一篇专题中提到的：“外汇是全球资金的血液，而股票是企业成长的映射”【Bloomberg Markets, FX vs Equities】。"
+        },
+        "section2": {
+          "title": "一、市场规模与流动性",
+          "ul": {
+            "li1-strong": "外汇：",
+            "li1-text": "根据国际清算银行（BIS）2022 年调查，外汇市场日均成交量超过 7.5 万亿美元，是股票市场的数倍【BIS Triennial FX Survey】。",
+            "li2-strong": "股票：",
+            "li2-text": "尽管美国股市市值总量庞大，但单一股票的流动性相对有限",
+            "li3-strong": "对交易者的意义：",
+            "li3-text": "外汇点差更低、交易更顺畅；股票虽然规模小于外汇，但个股机会更具差异化。"
+          }
+        },
+        "section3": {
+          "title": "二、交易时间与参与方式",
+          "ul": {
+            "li1-strong": "外汇市场：",
+            "li1-text": "24 小时运转，横跨悉尼、东京、伦敦与纽约。交易者可在任何时段寻找波动。",
+            "li2-strong": "股票市场：",
+            "li2-text": "依赖交易所开市时间，并受制于公告、财报与停牌等规则。"
+          },
+          "prompt": "《Financial Times》曾评论道：“外汇的连贯性让全球投资者拥有统一的定价框架，而股票市场的碎片化更依赖本地制度”【Financial Times, Global Markets Commentary】。"
+        },
+        "section4": {
+          "title": "三、驱动因素的不同",
+          "ul": {
+            "li1-strong": "外汇：",
+            "li1-text": "核心驱动在于宏观经济——利率、通胀、地缘政治。美联储和欧洲央行的货币政策一度左右全球资本流动。",
+            "li2-strong": "股票：",
+            "li2-text": "更依赖于公司层面的业绩表现、行业前景和企业治理。"
+          },
+          "prompt": "IMF 的报告指出，外汇更像是“国家信用的价格”，而股票是“公司前景的估值”【IMF Global Financial Stability Report】。"
+        },
+        "section5": {
+          "title": "四、双向交易机制与风险管理",
+          "desc": "外汇的一个天然优势在于 双向交易机制：上涨可做多，下跌可做空。股票在传统市场中往往以做多为主，做空受限于融券制度或监管规则。",
+          "ul": {
+            "li1": "在波动剧烈的市场中，外汇交易者拥有更高的灵活性。",
+            "li2": "股票市场则在牛市中更具吸引力，但在熊市时流动性风险放大。"
+          }
+        },
+        "section6": {
+          "title": "五、Asia Future Trading 的定位与优势",
+          "desc": "外汇与股票的差异不仅体现在市场结构上，也体现在交易体验与基础设施的建设方式上。Asia Future Trading 在这里扮演的角色，是通过 执行效率与多元化产品设计，把外汇市场的优势放大。",
+          "ul": {
+            "li1-strong": "执行速度与流动性连接",
+            "li1-text": "AFTT 构建了直连国际主流流动性池的架构，让客户在高波动时段也能获得稳定的点差与快速的订单执行。相比股票市场的集中撮合机制，这种直连模式在波动行情中提供了更少的滑点与延迟。正如《Bloomberg FX Report》所提及，执行速度已成为区分平台竞争力的核心【Bloomberg FX Report】。",
+            "li2-strong": "多元化产品覆盖",
+            "li2-text": "除了传统的外汇货币对，AFTT 还提供与指数、大宗商品相关的差价合约（CFD）。这意味着客户无需在不同平台切换，就能同时管理货币和跨资产敞口。这一点与股票市场的局限性形成鲜明对比。",
+            "li3-strong": "专业支持与合规透明",
+            "li3-text": "AFTT 强调合规披露与透明报价，确保客户清楚了解交易成本。与部分股票市场“隐藏费用”的情况不同，这种透明性正契合《Financial Times》在合规专题中所指出的行业趋势：“合规与透明度正在成为金融服务提供商的主要竞争力”【Financial Times, Compliance in Trading】。",
+            "li4-strong": "总结：",
+            "li4-text": "对于希望获得全天候交易机会和高效执行的交易者来说，AFTT 提供了一个整合的框架：不仅让外汇市场的流动性优势得以释放，也让跨品种配置更加顺畅。这是股票市场无法在同一框架下轻易实现的。"
+          }
+        },
+        "summary": {
+          "title": "结语",
+          "desc": "外汇与股票的不同，并不是孰优孰劣，而是两种逻辑：",
+          "ul": {
+            "li1": "外汇，关注全球宏观，流动性无与伦比。",
+            "li2": "股票，聚焦公司基本面，机会更具差异性。"
+          },
+          "end1": "正如《Wall Street Journal》总结的那样：“Forex is about nations, equities are about companies”【WSJ, Market Perspectives】。",
+          "end2": "对于 Asia Future Trading 的客户而言，这种理解并不只是一种认知上的分野，而是策略上的实际选择：在一个平台内，既能借助外汇的流动性，也能通过风险提示体系规避极端行情，为投资组合提供真正的多元化支撑。"
+        }
+      },
+      "forex-fundamental-knowledge": {
+        "title": "外汇交易基础知识",
+        "section1": {
+          "title": "一、引言",
+          "desc": "外汇（Forex, Foreign Exchange）是全球交易量最大的金融市场。对于刚入门的投资者来说，理解外汇交易的基础知识至关重要。它不仅关系到能否正确操作，更决定了风险控制和盈利能力。本文将从货币对、点值、杠杆、订单类型等方面，全面介绍外汇交易的基本概念，帮助新手建立清晰的知识框架。"
+        },
+        "section2": {
+          "title": "二、外汇货币对与报价方式",
+          "desc": "外汇市场的核心就是 货币对。任何一笔交易都涉及两种货币的兑换。",
+          "ul": {
+            "li1-strong": "主要货币对（Majors）",
+            "li1-text": "包含美元的货币对，如 EUR/USD、GBP/USD、USD/JPY。这些货币对流动性最高、点差最低。",
+            "li2-strong": "交叉货币对（Crosses）",
+            "li2-text": " 不含美元的货币对，如 EUR/GBP、AUD/JPY。波动性相对较高。",
+            "li3-strong": "报价方式",
+            "li3-text": " 不含美元的货币对，如 EUR/GBP、AUD/JPY。波动性相对较高。",
+            "li3-li1-strong": "买入价（Bid）:",
+            "li3-li1-text": "交易者卖出基础货币时可得到的价格。",
+            "li3-li2-strong": "卖出价（Ask）:",
+            "li3-li2-text": "交易者买入基础货币时需支付的价格。",
+            "li3-li3-strong": "点差（Spread）:",
+            "li3-li3-text": "买入价与卖出价的差额，是交易成本之一。",
+            "li3-demo": "示例：EUR/USD = 1.1050 / 1.1052",
+            "li3-demo1": "买入价 = 1.1052",
+            "li3-demo2": "卖出价 = 1.1050",
+            "li3-demo3": "点差 = 0.0002（即 2 个点）"
+          }
+        },
+        "section3": {
+          "title": "三、交易单位与点值（Lot & Pip）",
+          "desc": "外汇交易量的计算单位主要有 手（Lot） 和 点（Pip）。",
+          "ul": {
+            "li1-strong": "手数（Lot Size）",
+            "li1-text1": "标准手：100,000 单位基础货币",
+            "li1-text2": "迷你手：10,000 单位",
+            "li1-text3": "微型手：1,000 单位",
+            "li2-strong": "点值（Pip Value）",
+            "li2-text1": "大多数货币对的最小变动单位是 0.0001。",
+            "li2-text2": "例：EUR/USD 从 1.1050 变到 1.1051，波动 1 个点。",
+            "li3-strong": "点值与仓位的关系",
+            "li3-text1": "标准手中，EUR/USD 每波动 1 个点 ≈ 10 美元。",
+            "li3-text2": "迷你手中，每点 ≈ 1 美元。"
+          }
+        },
+        "section4": {
+          "title": "四、杠杆与保证金（Leverage & Margin）",
+          "desc": "杠杆是外汇交易的核心特征之一。",
+          "ul": {
+            "li1-strong": "杠杆原理",
+            "li1-text1": "使用小额资金控制大额交易头寸。",
+            "li1-text2": "例如：1:100 杠杆下，1,000 美元可控制 100,000 美元头寸。",
+            "li2-strong": "保证金（Margin）",
+            "li2-text1": "维持头寸所需的资金。",
+            "li2-text2": "保证金不足时，可能触发 Margin Call（追加保证金通知）。",
+            "li3-strong": "强制平仓机制",
+            "li3-text1": "当账户净值低于维持保证金要求时，经纪商会自动平仓，以避免账户出现负数。"
+          },
+          "prompt": "杠杆既是机会，也是风险的放大器。"
+        },
+        "section5": {
+          "title": "五、订单类型与执行方式",
+          "desc": "不同的订单类型，决定了交易的执行方式和风险控制。",
+          "ul": {
+            "li1-strong": "市价单（Market Order）",
+            "li1-text1": "以当前市场价格立即成交。适合追求即时交易的投资者。",
+            "li2-strong": "挂单（Pending Order）",
+            "li2-text1": "限价单（Limit Order）：设定更优价格买入/卖出。。",
+            "li2-text2": "止损单（Stop Order）：当价格突破某一水平时才触发。",
+            "li3-strong": "止损单与止盈单",
+            "li3-text1": "止损（Stop Loss）：限制最大亏损。",
+            "li3-text2": "止盈（Take Profit）：在目标利润时自动平仓。"
+          },
+          "prompt": "止损止盈是初学者必须掌握的风险管理工具。"
+        },
+        "section6": {
+          "title": "六、交易时间与市场特征",
+          "desc": "外汇市场的独特优势之一是 24 小时交易。",
+          "ul": {
+            "li1-strong": "市场结构",
+            "li1-text1": "亚洲盘（东京、悉尼）：波动相对较小。",
+            "li1-text2": "欧洲盘（伦敦）：流动性最强，波动最大。",
+            "li1-text3": "美洲盘（纽约）：与伦敦盘叠加，行情活跃。",
+            "li2-strong": "不同交易时段特点",
+            "li2-text1": "亚洲盘适合稳健型策略。",
+            "li2-text2": " 欧洲盘和美洲盘适合追求波动的交易者。",
+            "li3-strong": "节假日与事件影响",
+            "li3-text1": "节假日流动性下降，点差可能扩大。",
+            "li3-text2": "重大经济数据（非农、利率决议）会引发剧烈波动。"
+          }
+        },
+        "section7": {
+          "title": "七、基础交易成本",
+          "ul": {
+            "li1-strong": "点差（Spread）",
+            "li1-text1": "主要成本之一，通常以点为单位计算。",
+            "li2-strong": "佣金（Commission）",
+            "li2-text1": "部分 ECN 经纪商会收取固定佣金。",
+            "li3-strong": "隔夜利息（Swap/Overnight Financing）",
+            "li3-text1": "持仓过夜时，根据货币对利率差支付或获得利息。",
+            "li3-text2": "例：做多高利率货币/做空低利率货币，可能获得正向利息。"
+          }
+        },
+        "section8": {
+          "title": "八、风险控制入门",
+          "desc": "新手往往忽略风险控制，这是导致亏损的主要原因。",
+          "ul": {
+            "li1-strong": "仓位管理",
+            "li1-text1": "单笔交易风险不超过账户资金的 1–2%。",
+            "li1-text2": "使用固定比例法计算持仓。",
+            "li2-strong": "止损设置",
+            "li2-text1": "止损不是失败，而是保护资本。",
+            "li2-text2": "建议结合技术面（支撑位、阻力位）设定。",
+            "li3-strong": "避免过度交易",
+            "li3-text1": "频繁进出场容易增加心理压力和交易成本。",
+            "li3-text2": "应坚持交易计划。"
+          }
+        },
+        "section9": {
+          "title": "九、常见问题（FAQ）",
+          "ul": {
+            "li1-strong": "Q1: 外汇交易最低需要多少钱？",
+            "li1-text1": "答：部分经纪商最低入金仅需 100 美元，但为了合理控制风险，建议准备至少 500–1,000 美元。",
+            "li2-strong": "Q2: 新手应该从哪个货币对开始？",
+            "li2-text1": "答：EUR/USD 是最佳选择，点差低、流动性高。",
+            "li3-strong": "Q3: 外汇交易能否长期稳定盈利？",
+            "li3-text1": "答：理论上可以，但需要系统的交易计划、风险控制和长期经验积累。",
+            "li4-strong": "Q4: 外汇交易需要哪些工具？",
+            "li4-text1": "答：交易平台（MT4/MT5）、技术指标、经济日历、风险管理计算器等。"
+          }
+        },
+        "summary": {
+          "title": "十、结论",
+          "desc1": "外汇交易的基础知识决定了一个交易者能否在市场中长期生存。理解货币对、点值、杠杆、订单类型和交易成本，是进入更高阶策略的前提。",
+          "desc2": "对于新手来说，学习这些知识不仅能避免常见错误，还能为后续的交易技巧和策略打下坚实基础。下一篇推荐阅读：《外汇交易技巧与策略：如何提升胜率》。"
+        }
+      },
+      "what-is-forex": {
+        "title": "什么是外汇？",
+        "section1": {
+          "title": "一、引言",
+          "desc1": "外汇（Forex, Foreign Exchange）是全球最大、最活跃的金融市场之一。根据国际清算银行（BIS）的统计，全球外汇市场的日均成交量已超过 7 万亿美元，远远超过股票和债券市场的交易规模。外汇交易覆盖全球 24 小时，从悉尼、东京、伦敦到纽约，不间断地进行。",
+          "desc2": "那么，什么是外汇？为什么外汇市场如此重要？ 本文将从基础到深入，全面解析外汇市场的运作机制、存在原因以及交易方式，帮助你建立系统认知。"
+        },
+        "section2": {
+          "title": "二、什么是外汇（Forex）",
+          "desc": "外汇的定义：外汇是不同国家货币之间的兑换与交易。例如，EUR/USD 代表用美元兑换欧元。",
+          "prompt": "在外汇市场中，货币以 货币对（Currency Pair） 的形式出现：",
+          "ul": {
+            "li1-strong": "基础货币（Base Currency）：",
+            "li1-text": "货币对中的第一个货币，如 EUR/USD 中的 EUR。",
+            "li2-strong": "报价货币（Quote Currency）：",
+            "li2-text": "货币对中的第二个货币，用来表示价格，如 EUR/USD 中的 USD。"
+          },
+          "tips": "外汇市场属于 OTC（场外市场），没有集中交易所，交易通过银行和经纪商的电子网络完成。这也是外汇市场可以实现 24 小时不间断交易的原因。"
+        },
+        "section3": {
+          "title": "三、外汇市场的运作机制",
+          "desc": "外汇市场的参与者非常广泛，构成了全球化金融体系的重要环节。",
+          "ul": {
+            "li1-strong": "参与者",
+            "li1-text1-strong": "央行与政府：",
+            "li1-text1": "通过干预外汇市场来稳定货币价值或执行货币政策。",
+            "li1-text2-strong": "商业银行与金融机构：",
+            "li1-text2": "为客户提供外汇交易和结算服务。",
+            "li1-text3-strong": "跨国公司：",
+            "li1-text3": "在进行进出口或海外投资时需要兑换货币。",
+            "li1-text4-strong": "对冲基金与投资机构：",
+            "li1-text4": "通过投机或套利在外汇市场获利。",
+            "li1-text5-strong": "个人投资者：",
+            "li1-text5": "利用外汇波动进行交易和投资。",
+            "li2-strong": "市场功能",
+            "li2-text1-strong": "支付与结算：",
+            "li2-text1": "满足国际贸易和跨境投资的结算需求。",
+            "li2-text2-strong": "价格发现：",
+            "li2-text2": "汇率作为经济与货币政策的综合反映。",
+            "li2-text3-strong": "风险管理：",
+            "li2-text3": "提供对冲工具，减少汇率波动带来的风险。",
+            "li2-text4-strong": "投资投机：",
+            "li2-text4": "为投资者提供流动性和获利机会。",
+            "li3-strong": "市场特征",
+            "li3-text1-strong": "24 小时交易：",
+            "li3-text1": "覆盖全球时区。",
+            "li3-text2-strong": "高流动性：",
+            "li3-text2": "保证了交易执行的连续性。",
+            "li3-text3-strong": "无单一交易所：",
+            "li3-text3": "通过电子化 OTC 进行。"
+          }
+        },
+        "section4": {
+          "title": "四、为什么存在外汇市场（Why Forex）",
+          "desc": "外汇市场的存在并非偶然，而是全球经济发展必然的产物。",
+          "ul": {
+            "li1-strong": "国际贸易需求",
+            "li1-text1": "进出口商必须兑换货币。例如，中国企业向欧洲出口商品，就需要将欧元兑换成人民币。",
+            "li2-strong": "投资与资本流动",
+            "li2-text1": " 全球投资者在进行跨境投资时，必须先兑换货币。外汇市场为资本流动提供了桥梁。",
+            "li3-strong": "货币政策差异",
+            "li3-text1": "每个国家都有独立的货币与利率政策，不可能使用统一货币。因此，货币兑换成为必需。",
+            "li4-strong": "风险管理工具",
+            "li4-text1": " 外汇市场提供对冲手段。出口商可利用远期合约锁定未来汇率，降低风险。"
+          },
+          "prompt": "外汇市场存在的核心原因：跨境结算 + 风险管理 + 投资需求 + 政策差异。"
+        },
+        "section5": {
+          "title": "五、外汇交易的基本要素",
+          "desc": "外汇交易虽看似复杂，但其核心逻辑可以拆解为几个关键要素。",
+          "ul": {
+            "li1-strong": "点值（Pip）",
+            "li1-text1": "外汇报价通常保留到小数点后四位，例如 EUR/USD = 1.1050。",
+            "li1-text2": "最小变动单位为 0.0001，即 1 个点（pip）。",
+            "li2-strong": "手数（Lot）",
+            "li2-text1": "标准手 = 100,000 单位基础货币",
+            "li2-text2": "迷你手 = 10,000 单位，微型手 = 1,000 单位。",
+            "li3-strong": "杠杆与保证金",
+            "li3-text1": "杠杆允许用较少资金控制更大头寸。",
+            "li3-text2": "例如 1:100 杠杆，用 1,000 美元保证金可交易 100,000 美元头寸。",
+            "li4-strong": "交易成本",
+            "li4-text1": "点差（Spread）：买入价与卖出价的差。",
+            "li4-text2": " 佣金（Commission）：部分经纪商额外收取。",
+            "li5-strong": "交易平台",
+            "li5-text1": "主流平台为 MT4、MT5，支持自动交易与技术指标。"
+          }
+        },
+        "section6": {
+          "title": "六、外汇交易的优势与风险",
+          "ul": {
+            "li1-strong": "优势",
+            "li1-text1": "流动性高：随时可以买卖。",
+            "li1-text2": "交易灵活：24 小时市场，适合不同时间段的投资者。",
+            "li1-text3": "双向交易：可做多也可做空。",
+            "li1-text4": "- 进入门槛低：少量资金即可开始。",
+            "li2-strong": "风险",
+            "li2-text1": "杠杆风险：收益放大，亏损也被放大。",
+            "li2-text2": "市场波动性：突发事件可能引起剧烈行情。",
+            "li2-text3": "心理因素：贪婪和恐惧往往导致亏损。",
+            "li3-strong": "风险管理方法",
+            "li3-text1": "严格设置止损止盈。",
+            "li3-text2": "控制仓位规模。",
+            "li3-text3": "制定并执行交易计划。"
+          }
+        },
+        "section7": {
+          "title": "七、谁适合参与外汇交易",
+          "desc": "外汇市场覆盖不同层级的交易者：",
+          "ul": {
+            "li1-strong": "初学者（Beginner）",
+            "li1-text1": "重点在于理解基础概念和避免常见错误。",
+            "li2-strong": "进阶者（Intermediate）",
+            "li2-text1": "学习技术分析、基本面分析以及资金管理。",
+            "li3-strong": "专业人士（Advanced Trader）",
+            "li3-text1": "研究高频交易、算法交易、跨市场套利等复杂策略。"
+          }
+        },
+        "section8": {
+          "title": "八、常见问题（FAQ）",
+          "ul": {
+            "li1-strong": "Q1: 外汇交易合法吗？",
+            "li1-text1": "答：在大多数国家，外汇交易是合法的，但必须通过受监管的经纪商进行。",
+            "li2-strong": "Q2: 外汇市场和股票市场有什么区别？",
+            "li2-text1": "答：外汇是货币交易，股票是公司股份交易；外汇市场规模更大、流动性更强。",
+            "li3-strong": "Q3: 我需要多少钱才能开始外汇交易？",
+            "li3-text1": "答：部分经纪商最低入金仅需 100 美元，但建议准备充足资金以分散风险。",
+            "li4-strong": "Q4: 外汇交易是否适合兼职？",
+            "li4-text1": "答：由于外汇市场 24 小时运作，兼职投资者可以灵活选择时间段。",
+            "li5-strong": "Q5: 外汇交易能否长期稳定盈利？",
+            "li5-text1": " 答：理论上可以，但需要严格的交易计划、风险管理和持续学习。"
+          }
+        },
+        "summary": {
+          "title": "九、结论",
+          "desc1": "外汇市场不仅仅是一个投资渠道，更是全球经济运转不可或缺的金融基础设施。它为国际贸易、资本流动和风险管理提供了支撑，同时也为投资者提供了多样化的机会。",
+          "desc2": "对于初学者来说，外汇交易是学习金融知识的起点；对于有经验的交易者，外汇是资金管理与策略磨练的场所；而对于专业人士，外汇更是全球金融博弈的核心战场。",
+          "desc3": "如果你想进一步了解，可以阅读下一篇文章：《外汇入门指南：如何开始第一笔交易》。"
+        }
+      },
+      "explain-rates": {
+        "title": "汇率如何形成？全面解析货币价值背后的逻辑",
+        "section1": {
+          "title": "一、引言",
+          "desc1": "在全球化经济体系中，汇率是国际贸易、投资和金融市场的核心变量。一个国家货币相对另一种货币的价值，不仅影响到企业的出口成本和消费者的进口价格，还牵动着全球资本流动和金融稳定。",
+          "desc2": "那么，汇率是如何形成的？为什么货币会升值或贬值？ 本文将从供需关系、经济基本面、政策因素到市场心理，系统解析汇率的形成机制。"
+        },
+        "section2": {
+          "title": "二、汇率的基本定义",
+          "desc": "汇率（Exchange Rate）：指一种货币兑换另一种货币的比率。",
+          "ul": {
+            "li1-strong": "外汇：",
+            "li1-text": "例：EUR/USD = 1.10，意味着 1 欧元可以兑换 1.10 美元。",
+            "li2-text": "汇率波动反映了不同国家之间经济实力、金融政策与市场预期的变化。",
+            "li3-strong": "核心原则：",
+            "li3-text": "汇率的本质是价格，而价格由供需关系决定。"
+          }
+        },
+        "section3": {
+          "title": "三、供需关系是决定汇率的核心",
+          "ul": {
+            "li1-strong": "需求增加 → 货币升值",
+            "li1-text": "例：大量外国投资流入中国股市，对人民币需求增加 → 人民币升值。",
+            "li2-strong": "供给增加 → 货币贬值",
+            "li2-text": "例：美联储大量释放美元流动性 → 市场上美元供应过剩 → 美元贬值。",
+            "li3-strong": "跨境交易中的作用",
+            "li3-text1": "进口商 需要支付外币 → 增加外币需求。",
+            "li3-text2": "出口商 赚到外币后换回本币 → 增加本币需求。"
+          }
+        },
+        "section4": {
+          "title": "四、经济基本面对汇率的影响",
+          "ul": {
+            "li1-strong": "利率水平",
+            "li1-text1": "高利率国家吸引更多投资资金，货币往往升值。",
+            "li1-text2": "低利率国家资金外流，货币面临贬值压力。",
+            "li2-strong": "通货膨胀",
+            "li2-text1": "高通胀会侵蚀货币购买力，导致贬值。",
+            "li2-text2": "通胀稳定的国家货币更受青睐。",
+            "li3-strong": "经济增长",
+            "li3-text1": "强劲的经济增长提升投资吸引力，带动货币升值。",
+            "li3-text2": "经济衰退则可能导致资本外流，货币贬值。",
+            "li4-strong": "国际收支",
+            "li4-text1": "贸易顺差（出口 > 进口） → 外汇流入增加 → 本币升值。",
+            "li4-text2": "贸易逆差（进口 > 出口） → 外汇流出 → 本币贬值。"
+          }
+        },
+        "section5": {
+          "title": "五、政策因素对汇率的决定作用",
+          "ul": {
+            "li1-strong": "央行货币政策",
+            "li1-text1": "加息 → 提高货币收益率 → 吸引资本 → 升值。",
+            "li1-text2": "降息/量化宽松 → 流动性增加 → 贬值压力。",
+            "li2-strong": "汇率制度",
+            "li2-text1": "浮动汇率制：市场供需决定（如美元、欧元）。",
+            "li2-text2": "盯住汇率制：与另一种货币挂钩（如港币挂钩美元）。",
+            "li2-text3": "有管理的浮动：央行在必要时干预（如人民币）。",
+            "li3-strong": "外汇干预",
+            "li3-text1": "央行通过买入/卖出本币或外币，调节汇率。",
+            "li3-text2": "例：日本央行在日元过度升值时出手干预。"
+          }
+        },
+        "section6": {
+          "title": "六、市场心理与投机的作用",
+          "ul": {
+            "li1-strong": "市场预期",
+            "li1-text": "投资者预期某国加息 → 提前买入该国货币 → 推高汇率。",
+            "li2-strong": "避险情绪",
+            "li2-text": "地缘政治或金融危机爆发时，资金流入美元、日元、瑞郎等避险货币。",
+            "li3-strong": "投机交易",
+            "li3-text": "大型对冲基金、银行交易部门的资金流动，可能在短期内放大汇率波动。"
+          }
+        },
+        "section7": {
+          "title": "七、经典理论模型解释汇率形成",
+          "ul": {
+            "li1-strong": "购买力平价（PPP）",
+            "li1-text": "长期来看，汇率应反映两国物价水平差异。",
+            "li2-strong": "利率平价（IRP）",
+            "li2-text": "两国利率差异会通过远期汇率反映。",
+            "li3-strong": "蒙代尔-弗莱明模型",
+            "li3-text": "汇率受利率、资本流动和货币政策共同作用。"
+          }
+        },
+        "section8": {
+          "title": "八、案例分析：美元为什么经常升值？",
+          "ul": {
+            "li1-strong": "美元的储备货币地位：",
+            "li1-text": "全球大多数大宗商品以美元计价。",
+            "li2-strong": "美联储政策影响力：",
+            "li2-text": "加息周期往往推高美元指数。",
+            "li3-strong": "避险需求：",
+            "li3-text": "危机时期，资金流入美元资产。"
+          },
+          "prompt": "因此，美元不仅仅是由供需决定，还受到其“国际货币霸权”地位的支撑。"
+        },
+        "section9": {
+          "title": "九、常见问题（FAQ）",
+          "ul": {
+            "li1-strong": "Q1: 为什么人民币会贬值或升值？",
+            "li1-text1": "答：主要取决于中国的出口贸易情况、央行政策以及美元走势。",
+            "li2-strong": "Q2: 政府能控制汇率吗？",
+            "li2-text1": "答：在固定或有管理的浮动制度下，央行可以通过干预调节，但长期趋势仍由基本面决定。",
+            "li3-strong": "Q3: 为什么短期汇率波动很剧烈？",
+            "li3-text1": " 答：短期波动更多由市场预期、资金流动和投机力量推动。"
+          }
+        },
+        "summary": {
+          "title": "十、结论",
+          "desc": "汇率的形成并非单一因素，而是 供需关系、经济基本面、货币政策、市场心理 共同作用的结果。",
+          "ul": {
+            "li1": "短期：由资金流动、投机和市场预期主导。",
+            "li2": "中长期：由通胀差异、利率水平和经济实力决定。"
+          },
+          "end": "理解汇率形成机制，能帮助交易者更好地判断趋势，避免盲目操作，也是外汇交易走向专业化的必修课。"
+        }
+      },
+      "leverage-and-margin": {
+        "title": "杠杆与保证金机制：一场交易者必经的思考",
+        "section1": {
+          "title": "一、为什么要谈杠杆与保证金",
+          "desc": "在外汇交易里，杠杆（Leverage）与保证金（Margin）是最绕不开的两个概念。它们不是复杂的金融衍生品，而是每个交易者每天必须面对的操作规则。理解它们，不仅关系到盈利空间，也决定了账户的生存概率。"
+        },
+        "section2": {
+          "title": "二、杠杆是什么？",
+          "desc": "杠杆的核心逻辑是：用少量资金，撬动更大交易规模。",
+          "ul": {
+            "li1-strong": "外汇：",
+            "li1-text": "1:100 杠杆 = 你用 1,000 美元，就能控制 100,000 美元的仓位。",
+            "li2-text": "杠杆放大了收益，同时也放大了亏损。",
+            "li3-strong": "思考：",
+            "li3-text": "如果行情顺着走，杠杆是助推器；如果行情逆向走，杠杆就是绞索。"
+          }
+        },
+        "section3": {
+          "title": "三、保证金是什么？",
+          "ul": {
+            "li1-strong": "保证金并不是成本，而是风险缓冲。",
+            "li1-text1": "你开仓时，平台会冻结一部分资金作为履约保证。",
+            "li1-text2": "如果亏损扩大，账户净值低于一定比例，系统会触发 Margin Call（追加保证金通知）。",
+            "li1-text3": "当净值再度下跌，可能触发 强制平仓（Stop Out），保护账户不会跌入负数。",
+            "li2-strong": "举例",
+            "li2-text1": "杠杆 1:100，交易 1 手 EUR/USD（100,000 单位），需要的保证金 ≈ 1,000 美元。",
+            "li2-text2": "如果行情波动 100 点，盈亏约 1,000 美元，等于账户本金全额。"
+          }
+        },
+        "section4": {
+          "title": "四、为什么交易者容易误解？",
+          "desc": "很多新手听到“高杠杆”时，觉得是快速赚钱的机会。但从风险角度看，杠杆越高，可承受的容错率越低。",
+          "ul": {
+            "li1": "低杠杆：走势给你留空间，即使逆向几十点，也有机会调整。",
+            "li2": "高杠杆：轻微波动就可能触发强制平仓。"
+          },
+          "prompt": "这就是为什么监管机构（如美国 CFTC、欧洲 ESMA）往往限制零售投资者使用过高杠杆。"
+        },
+        "section5": {
+          "title": "五、Asia Future Trading 的实践",
+          "ul": {
+            "li1-strong": "在 Asia Future Trading（AFTT），杠杆与保证金机制被视作 风险管理的前线。",
+            "li1-text1": "平台设计了动态保证金机制：当客户账户净值低于 70% 信用控制线时，系统会发出补仓提醒，由风控经理通知客户采取措施。",
+            "li1-text2": "这种机制的目的不是限制交易，而是让客户在风险临界点之前获得提示，避免陷入被动强平。",
+            "li2-strong": "从交易者角度看，这样的制度意味着：",
+            "li2-text1": "有了额外的风险缓冲。",
+            "li2-text2": "风险提示透明化，交易者不会被“突然清仓”打个措手不及。"
+          }
+        },
+        "section6": {
+          "title": "六、从交易者的角度讨论",
+          "desc": "如果你是交易者，如何看待杠杆与保证金？",
+          "ul": {
+            "li1-strong": "低杠杆交易者会说：",
+            "li1-text": "安全第一，仓位要能抗住意外波动。",
+            "li2-strong": "高杠杆交易者会说：",
+            "li2-text": "市场机会稍纵即逝，不用杠杆就没效率。",
+            "li3-strong": "稳健型投资者则会权衡：",
+            "li3-text": "杠杆要匹配策略和资金体量，保证金要预留缓冲区。"
+          },
+          "prompt": "共识是：杠杆本身没有好坏，关键在于风控。"
+        },
+        "summary": {
+          "title": "七、结论",
+          "desc": "杠杆与保证金，是外汇市场的基础设施。",
+          "ul": {
+            "li1": "杠杆放大资金效率，但同时放大风险。",
+            "li2": "保证金是风险缓冲，保证了市场秩序。",
+            "li3": "对交易者而言，真正的核心是如何在杠杆与保证金之间找到平衡。"
+          },
+          "end": "Asia Future Trading 的机制说明了一点：市场不仅关心盈利，更关心风险可控。只有理解了杠杆与保证金，交易者才能在市场中走得更远。"
+        }
+      },
+      "trading-mechanism": {
+        "title": "多空双向交易机制",
+        "section1": {
+          "title": "多空双向交易机制：交易者的另一面选择权",
+          "desc1": "在外汇与差价合约（CFD）的市场上，双向交易机制（Two-way Trading Mechanism）是被频繁提及却常被误解的概念。它指的是交易者既可以通过做多（Long）从价格上涨获利，也可以通过做空（Short）在价格下跌中寻找机会。",
+          "desc2": "《Financial Times》曾指出，外汇市场的独特之处在于“它本身就是相对博弈——买入一个货币对等于卖出另一个货币对”【Financial Times, Markets Analysis】。换言之，外汇市场天然具备双向性，而不像传统股票那样受限于单边上涨行情。"
+        },
+        "section2": {
+          "title": "一、做多与做空：镜像逻辑",
+          "desc": "杠杆的核心逻辑是：用少量资金，撬动更大交易规模。",
+          "ul": {
+            "li1-strong": "做多（Long）：",
+            "li1-text": "预期欧元上涨，买入 EUR/USD，欧元升值即可盈利。",
+            "li2-strong": "做空（Short）：",
+            "li2-text": "预期日元走强，卖出 USD/JPY，当美元贬值时获得收益。"
+          },
+          "prompt": "正如《Bloomberg》在汇率波动专题报道中所强调的，空头操作并不是“赌市场崩盘”，而是“与资本流向保持一致的另一种路径”【Bloomberg, FX Trading Commentary】。"
+        },
+        "section3": {
+          "title": "二、机制如何影响风险管理",
+          "desc": "双向交易机制不仅是盈利的可能性扩展，也是风险对冲的工具：",
+          "ul": {
+            "li1": "企业可利用做空锁定未来外汇支付成本。",
+            "li2": "投资者可在多头持仓之外，通过空头仓位平衡组合波动。"
+          },
+          "prompt": "IMF 的研究报告曾提到，外汇市场的稳定部分源于“交易者可以在多空之间灵活转换，从而缓冲单边挤兑式风险”【IMF Working Paper on FX Market Dynamics】。"
+        },
+        "section4": {
+          "title": "三、Asia Future Trading 的实践",
+          "desc": "在 Asia Future Trading，这一机制不仅是产品属性，更被纳入风控框架。平台在交易规则中强调：",
+          "ul": {
+            "li1": "所有客户均可使用双向交易策略，无论市场上涨还是下跌，均能寻找配置机会。",
+            "li2": "同时结合 “信用低于 70% 触发补仓提醒” 的风险控制机制，确保客户不会因为逆向行情而陷入不可控的强平。"
+          },
+          "prompt": "这种组合方式，意味着交易者可以在双向操作的灵活性中，获得额外的风险缓冲。这也是 AFTT 作为区域性 CFD 与外汇平台的一大优势：既提供国际市场的流动性，又结合本地化的风控提示。"
+        },
+        "section5": {
+          "title": "四、优势与局限",
+          "ul": {
+            "li1-strong": "优势",
+            "li1-text1": "不依赖单边市场，即使市场下跌也可参与。",
+            "li1-text2": "为企业与个人提供风险管理工具。",
+            "li1-text3": "增强市场流动性，降低波动集中度。",
+            "li2-strong": "局限",
+            "li2-text1": "双向机会也意味着双倍诱惑，可能导致过度交易。",
+            "li2-text2": "新手若不理解资金管理，做空的速度往往比做多更快。"
+          }
+        },
+        "summary": {
+          "title": "五、结语",
+          "desc": "在全球化金融环境中，双向交易不是奢侈品，而是必需品。它让市场的价格发现更有效，也让交易者拥有更多维度的风险控制手段。",
+          "end1": "正如《Wall Street Journal》所总结的：“The essence of forex trading lies not in predicting a single direction, but in mastering the duality of markets.”【WSJ, Forex Special Report】",
+          "end2": "在 Asia Future Trading，这种机制被进一步结合风险提示制度，为交易者提供了一个更加平衡的舞台：既能捕捉波动机会，又能在极端行情下获得保护。"
+        }
+      }
+    }
+  }
 }

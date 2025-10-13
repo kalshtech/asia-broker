@@ -158,7 +158,7 @@ export default async function Page() {
                 nextEl={"crypto-custom-next"}
                 ary={GuideAry}
             />
-            <Profession/>   
+            <Profession/>
             <FAQSection data={QA_DATA}/>
             <JoinCommunity/>
         </div>
