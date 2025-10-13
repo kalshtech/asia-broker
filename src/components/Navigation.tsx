@@ -504,7 +504,7 @@ const Navigation = () => {
                                     className={"flex justify-center items-center hover:!bg-transparent data-[state=open]:!bg-transparent hover:!text-theme-active data-[state=open]:!text-theme-active"}>
                                     <div className={"flex items-center"}>
                                         <Globe/>
-                                        <Typography className={"ml-1"}>
+                                        <Typography variant={"p"} className={"ml-1"}>
                                             {getLangText(locale)}
                                         </Typography>
                                     </div>
@@ -548,8 +548,7 @@ const Navigation = () => {
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
-                    <Button
-                        className={"mr-4 px-6 ml-4 lg:px-8 rounded-full bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
+                    <Button className={"mr-4 px-6 ml-4 lg:px-8 rounded-full bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
                         登录
                     </Button>
                     <Button className={"bg-theme-active rounded-full cursor-pointer hover:bg-theme-active-hover"}>

@@ -7,6 +7,7 @@ import JoinCommunity from "@/components/common/JoinCommunity";
 import Guide from "@/components/common/Guide";
 import Row from "@/components/common/products/Row";
 import MoreMarkets from "@/components/common/products/MoreMarkets";
+import Profession from "@/components/common/products/Profession";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.future");
@@ -151,6 +152,7 @@ export default async function Page() {
                 nextEl={"crypto-custom-next"}
                 ary={GuideAry}
             />
+            <Profession/>
             <QuestionAnswer data={QA_DATA} />
             <JoinCommunity/>
         </div>
