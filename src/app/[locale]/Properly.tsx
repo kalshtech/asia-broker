@@ -239,12 +239,6 @@ const Properly = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"mt-4"}>
-                    <div className={"flex justify-end"}>
-                        <CircleChevronLeft className={"test-custom-prev mr-2 cursor-pointer"}/>
-                        <CircleChevronRight className={"test-custom-next ml-2 cursor-pointer"}/>
-                    </div>
-                </div>
             </div>
 
 

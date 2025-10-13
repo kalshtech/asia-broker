@@ -54,7 +54,7 @@ const CalendarComponent = () => {
                         <div className={"flex-1 h-full py-10 px-8 flex flex-col absolute bottom-0  left-0"}>
                             <Typography
                                 variant={"h5"}
-                                className={"!text-white mt-auto"}
+                                className={"!text-white mt-80"}
                             >
                                 {t("prospect.title")}
                             </Typography>
@@ -64,7 +64,7 @@ const CalendarComponent = () => {
                             >
                                 {t("prospect.description")}
                             </Typography>
-                            <div className={"mt-16"}>
+                            <div className={"mt-8"}>
                                 <div className={"flex-1 flex"}>
                                     <Button className={"border rounded-full bg-transparent hover:bg-transparent"}>
                                         { t("buttons.past") }
