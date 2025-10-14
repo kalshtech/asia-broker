@@ -176,7 +176,7 @@ const Assets = () => {
                                                 </li>
                                             </ul>
 
-                                            <div className={"mt-4"}>
+                                            <div className={"mt-10"}>
                                                 <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
                                                     {t("text.type.more")}
                                                 </Button>
@@ -261,7 +261,7 @@ const Assets = () => {
                                                 </li>
                                             </ul>
 
-                                            <div className={"mt-4 lg:mt-6"}>
+                                            <div className={"mt-10"}>
                                                 <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
                                                     {t("text.type.more")}
                                                 </Button>
@@ -366,7 +366,7 @@ const Assets = () => {
                                                 </li>
                                             </ul>
 
-                                            <div className={"mt-6"}>
+                                            <div className={"mt-10"}>
                                                 <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
                                                     {t("text.card.more")}
                                                 </Button>

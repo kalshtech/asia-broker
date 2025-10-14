@@ -1,14 +1,11 @@
 "use client";
 import * as React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import { motion, Variants } from "framer-motion";
 import Container from "@/components/Container";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-// gsap.registerPlugin(ScrollTrigger);
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -21,40 +18,14 @@ const fadeInUp: Variants = {
 
 function Counter({from = 10, to = 0, duration = 1.2, decimals = 0, trigger}: { from?: number; to?: number; duration?: number; decimals?: number; trigger?: any; }) {
     const el = React.useRef<HTMLSpanElement>(null)
-
-    //  React.useEffect(() => {
-    //     const obj = { v: from }
-    //     const play = () =>
-    //         gsap.to(obj, {
-    //             v: to,
-    //             duration,
-    //             ease: "power3.out",
-    //             onUpdate: () => {
-    //                 if (el.current) el.current.textContent = obj.v.toFixed(decimals)
-    //             },
-    //         })
-    //
-    //     let st: ScrollTrigger | undefined;
-    //     if (trigger?.current) {
-    //         st = ScrollTrigger.create({
-    //             trigger: trigger.current,
-    //             start: "top 80%",
-    //             once: true,
-    //             onEnter: play,
-    //         })
-    //     } else {
-    //         const tween = play()
-    //         return () => tween.kill()
-    //     }
-    //     return () => st?.kill()
-    // }, [from, to, duration, decimals, trigger])
-
     return <span ref={el} className={"text-2xl text-[#3967FF]"}>{from.toFixed ? from.toFixed(decimals) : from}</span>
 }
 
 const Pricing = () => {
     const t = useTranslations("Pages.home.pricing");
+    const locale = useLocale();
     const cardsWrapRef = React.useRef<HTMLDivElement | null>(null);
+    const isEn = locale === "en";
 
     const CryptoAry = [
         { imageNumber: "1", name: "Bitcoin" },
@@ -135,6 +106,15 @@ const Pricing = () => {
                                         className={"bg-white px-8 h-10 text-theme-active rounded-full cursor-pointer hover:bg-white"}>
                                         {t("left.btnText")}
                                     </Button>
+
+                                    {
+                                        isEn && (
+                                            <Button
+                                                className={"bg-transparent ml-4 px-8 h-10 text-white border rounded-full cursor-pointer hover:bg-transparent"}>
+                                                {t("left.more")}
+                                            </Button>
+                                        )
+                                    }
                                 </div>
 
                                 <Typography variant={"muted"} className={"!text-white mt-12 lg:mt-48"}>

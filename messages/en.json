@@ -213,7 +213,8 @@
           "title3": "0.0 Spreads. No minimum commissions. Maximum control.",
           "description2": "AFT’s intelligent routing and best-execution systems deliver ultra-low latency and institutional-grade depth — minimizing slippage at every step.",
           "btnText": "Explore Platinum Account",
-          "fromText": "Data sourced from Asia Future Trading Platinum account and publicly available benchmarks from major platforms."
+          "fromText": "Data sourced from Asia Future Trading Platinum account and publicly available benchmarks from major platforms.",
+          "more": "Learn More Fees"
         },
         "right": {
           "title": "Real-Time Trading Costs. Competitive. Fair. Verified.",
@@ -257,7 +258,7 @@
         "download": "Download MT5",
         "row": {
           "1": {
-            "title": "Cross-Platform Access，",
+            "title": "Cross-Platform Access",
             "description": "Seamless trading across desktop, web, and mobile — anytime, anywhere."
           },
           "2": {

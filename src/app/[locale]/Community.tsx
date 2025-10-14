@@ -50,9 +50,9 @@ const Community = () => {
                             {
                                 isEn ? (
                                     <div className={"flex h-full flex-1 flex-col"}>
-                                        <div className={"flex flex-col pb-20 pt-20 h-full lg:pt-[280px]"}>
+                                        <div className={"flex flex-col pb-20 pt-20 h-full lg:pt-[310px]"}>
                                             <div className={"flex flex-col"}>
-                                                <Typography className={"!text-white"}>
+                                                <Typography variant={"muted"} className={"!text-white font-medium"}>
                                                     {t("row.1.desc1")}
                                                 </Typography>
                                                 <Typography variant={"muted"} className={"mt-8 !text-white"}>
@@ -71,11 +71,11 @@ const Community = () => {
                                                 </Typography>
                                             </div>
                                             <div className={"text-center mt-10"}>
-                                                <Link href={"/"}
-                                                      className={"text-white mx-auto justify-center flex underline"}>
-                                                    {t("row.1.link")}
-                                                    <CircleChevronRight className={"ml-4"}/>
-                                                </Link>
+                                                <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                                    <Link href={"/"} className={"text-white mx-auto justify-center flex"}>
+                                                        {t("row.1.link")}
+                                                    </Link>
+                                                </Button>
                                             </div>
                                         </div>
                                     </div>
@@ -123,7 +123,7 @@ const Community = () => {
                                             >
                                                 {t("row.2.title")}
                                             </Typography>
-                                            <Typography className={"!text-white text-center max-w-3xl mt-4"}>
+                                            <Typography variant={"p"} className={"!text-white text-center max-w-3xl mt-4"}>
                                                 {t("row.2.description1")}
                                             </Typography>
                                             <Typography variant={"muted"}
@@ -185,7 +185,7 @@ const Community = () => {
                                     isEn ? (
                                         <div className={"flex flex-col pb-20 pt-20 lg:pt-120"}>
                                             <div className={"flex flex-col"}>
-                                                <Typography className={"!text-white"}>
+                                                <Typography variant={"p"} className={"!text-white font-medium"}>
                                                     {t("row.3.desc1")}
                                                 </Typography>
                                                 <Typography variant={"muted"} className={"!text-white mt-4"}>
@@ -193,11 +193,11 @@ const Community = () => {
                                                 </Typography>
                                             </div>
                                             <div className={"text-center mt-10"}>
-                                                <Link href={"/"}
-                                                      className={"text-white mx-auto justify-center flex underline"}>
-                                                    {t("row.3.explore")}
-                                                    <CircleChevronRight className={"ml-4"}/>
-                                                </Link>
+                                                <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                                    <Link href={"/"} className={"text-white mx-auto justify-center flex"}>
+                                                        {t("row.3.explore")}
+                                                    </Link>
+                                                </Button>
                                             </div>
                                         </div>
                                     ) : (

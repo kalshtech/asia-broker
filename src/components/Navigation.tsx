@@ -532,7 +532,7 @@ const Navigation = () => {
                                                                              alt={item.value} title={item.value}/>
                                                                     </div>
                                                                     <div className="leading-[18px] flex flex-col">
-                                                                        <Typography>
+                                                                        <Typography variant={"p"}>
                                                                             {item.label}
                                                                         </Typography>
                                                                         <Typography

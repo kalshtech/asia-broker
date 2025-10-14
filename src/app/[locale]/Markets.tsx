@@ -50,6 +50,15 @@ const Markets = () => {
     const [ rows, setRows ] = useState(usStockRows);
     const [ loading, setLoading ] = useState(true);
 
+    const tabsList = [
+        { label: commonT("usStock"), value: "stock" },
+        { label: commonT("forex"), value: "forex" },
+        { label: commonT("metals"), value: "metals" },
+        { label: commonT("energy"), value: "energy" },
+        { label: commonT("futures"), value: "futures" },
+        { label: commonT("crypto"), value: "crypto" },
+    ];
+
     const handleChangeTabActive = (value: string) => {
         setTabActive(value);
 
@@ -164,18 +173,17 @@ const Markets = () => {
                         <div className={"flex justify-center"}>
                             <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
                                 <TabsList className={"h-10 rounded-full"}>
-                                    <TabsTrigger
-                                        value={"stock"}
-                                        className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
-                                    >
-                                        {commonT("usStock")}
-                                    </TabsTrigger>
-                                    <TabsTrigger
-                                        value={"forex"}
-                                        className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
-                                    >
-                                        {commonT("forex")}
-                                    </TabsTrigger>
+                                    {
+                                        tabsList.map((d, i) => (
+                                            <TabsTrigger
+                                                key={i}
+                                                value={d.value}
+                                                className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                            >
+                                                {d.label}
+                                            </TabsTrigger>
+                                        ))
+                                    }
                                 </TabsList>
                             </Tabs>
                         </div>

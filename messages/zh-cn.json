@@ -1,10 +1,14 @@
 {
   "Common": {
-    "register": "立即开户",
-    "startTrade": "开始交易",
-    "usStock": "美股",
-    "forex": "外汇",
-    "code": "商品代码",
+    "register": "Open Account",
+    "startTrade": "Start Trading",
+    "usStock": "Stocks & ETFs",
+    "forex": "Forex",
+    "metals": "Precious Metals",
+    "energy": "Energy",
+    "futures": "Futures",
+    "crypto": "Crypto",
+    "code": "symbol",
     "miniChart": "迷你走势",
     "price": "价格",
     "close": "最新价",
@@ -208,7 +212,8 @@
           "title3": "无额外点差，无账户最低佣金",
           "description2": "Asia Future Trading Market 智能路由 + 最佳执行系统解决方案，为您带来超低延迟的撮合和深度流动性，帮助你的交易过程最大程度减少滑点。",
           "btnText": "探索 Platinum帐户",
-          "fromText": "数据源来自Asia Future Trading  Platinum 帐户与IC Market、TMGM等平台公开信息"
+          "fromText": "数据源来自Asia Future Trading  Platinum 帐户与IC Market、TMGM等平台公开信息",
+          "more": "Learn More Fees"
         },
         "right": {
           "title": "极具竞争性的实时交易成本",
