@@ -9,6 +9,7 @@ import Markets from "@/components/common/products/Markets";
 import Profession from "@/components/common/products/Profession";
 import MetaProfession from "@/components/common/products/MetaProfession";
 import MetaCommission from "./MetaCommission";
+import MetaMoreMarkets from "./MetaMoreMarkets";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.energy");
@@ -118,13 +119,7 @@ export default async function Page() {
             />
             <MetaProfession rowAry={rowAry} title={t("professional.title")} />
             <MetaCommission/>
-            <MoreMarkets
-                title={t("moreMarket.title")}
-                desc={t("moreMarket.desc")}
-                btnText={t("moreMarket.btnText")}
-                imageUrl={"bg-[url(/images/products/energy-market-background.png)]"}
-            />
-
+            <MetaMoreMarkets/>
             <Guide
                 title={t("guide.title")}
                 left={{ title: t("guide.row.col1.title"), desc: t("guide.row.col1.desc"), more: t("guide.row.col1.more") }}
