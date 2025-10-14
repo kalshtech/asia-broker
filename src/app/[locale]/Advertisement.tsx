@@ -80,11 +80,11 @@ const Advertisement = () => {
     const isEn = local === "en";
 
     const ary = [
-        { ImageNumber: "2", title: t("2.title"), description: t("2.description"), url: `bg-[url('/images/home/${isEn ? "en-" : ""}advertisement-2.png')]` },
-        { ImageNumber: "3", title: t("3.title"), description: t("3.description"), url: `bg-[url('/images/home/${isEn ? "en-" : ""}advertisement-3.png')]` },
-        { ImageNumber: "4", title: t("4.title"), description: t("4.description"), url: `bg-[url('/images/home/${isEn ? "en-" : ""}advertisement-4.png')]` },
-        { ImageNumber: "5", title: t("5.title"), description: t("5.description"), url: `bg-[url('/images/home/${isEn ? "en-" : ""}advertisement-5.png')]` },
-        { ImageNumber: "6", title: t("6.title"), description: t("6.description"), url: `bg-[url('/images/home/${isEn ? "en-" : ""}advertisement-6.png')]` },
+        { ImageNumber: "2", title: t("2.title"), description: t("2.description"), url: isEn ? `bg-[url('/images/home/en-advertisement-2.png')]` : `bg-[url('/images/home/advertisement-2.png')]` },
+        { ImageNumber: "3", title: t("3.title"), description: t("3.description"), url: isEn ? `bg-[url('/images/home/en-advertisement-3.png')]` : `bg-[url('/images/home/advertisement-3.png')]` },
+        { ImageNumber: "4", title: t("4.title"), description: t("4.description"), url: isEn ? `bg-[url('/images/home/en-advertisement-4.png')]` : `bg-[url('/images/home/advertisement-4.png')]` },
+        { ImageNumber: "5", title: t("5.title"), description: t("5.description"), url: isEn ? `bg-[url('/images/home/en-advertisement-5.png')]` : `bg-[url('/images/home/advertisement-5.png')]` },
+        { ImageNumber: "6", title: t("6.title"), description: t("6.description"), url: isEn ? `bg-[url('/images/home/en-advertisement-6.png')]` : `bg-[url('/images/home/advertisement-6.png')]` },
     ];
 
     return (
