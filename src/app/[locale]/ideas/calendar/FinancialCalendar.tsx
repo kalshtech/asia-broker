@@ -1,10 +1,9 @@
 "use client";
 import * as React from 'react'
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import {Typography} from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
-import {Button} from "@/components/ui/button";
+import Container from "@/components/Container";
 import {
     Card,
     CardAction,
@@ -29,27 +28,29 @@ const FinancialCalendar = () => {
     const t = useTranslations("Pages.ideas.calendar.financialCalendar");
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16"}>
-                <Card>
-                    <CardContent>
-                        <CalendarTable/>
-                    </CardContent>
-                    <CardFooter></CardFooter>
-                </Card>
-            </div>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-16"}>
+                    <Card>
+                        <CardContent>
+                            <CalendarTable/>
+                        </CardContent>
+                        <CardFooter></CardFooter>
+                    </Card>
+                </div>
+            </Container>
         </section>
     )
 }

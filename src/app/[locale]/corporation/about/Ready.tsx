@@ -4,7 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button }  from "@/components/ui/button";
-
+import Container from "@/components/Container";
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -40,22 +40,27 @@ const Ready = () => {
             <div className={"mt-4 lg:mt-16"}>
                 <div className={"relative"}>
                     <img src="/images/corporation/about-ready.png" className={"relative z-10"} alt=""/>
-                    <div className={"mx-4 lg:mx-30 p-4 lg:p-12 bg-theme-deep-bg rounded-lg -mt-20 flex relative z-20"}>
-                        <Typography
-                            variant={"lead"}
-                            className={"!text-white"}
-                        >
-                            { t("joint") }
-                        </Typography>
-                        <div className={"ml-auto"}>
-                            <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                                { t("trade") }
-                            </Button>
-                            <Button className={"px-8 h-10 rounded-full mt-4 lg:mt-0 lg:ml-4 border bg-transparent hover:bg-transparent"}>
-                                { t("support") }
-                            </Button>
+                    <Container>
+                        <div
+                            className={"p-4 lg:p-12 bg-theme-deep-bg rounded-lg -mt-20 flex relative z-20"}>
+                            <Typography
+                                variant={"lead"}
+                                className={"!text-white"}
+                            >
+                                {t("joint")}
+                            </Typography>
+                            <div className={"ml-auto"}>
+                                <Button
+                                    className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                    {t("trade")}
+                                </Button>
+                                <Button
+                                    className={"px-8 h-10 rounded-full mt-4 lg:mt-0 lg:ml-4 border bg-transparent hover:bg-transparent"}>
+                                    {t("support")}
+                                </Button>
+                            </div>
                         </div>
-                    </div>
+                    </Container>
                 </div>
             </div>
         </section>

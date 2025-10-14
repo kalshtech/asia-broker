@@ -3,7 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 import { Separator } from "@/components/ui/separator";
 
 const fadeInUp: Variants = {
@@ -25,47 +25,50 @@ const Global =  () => {
     ];
     return (
         <section className={"bg-[url(/images/corporation/about-global-bg.png)] bg-cover bg-center p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium !text-white text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-4"}>
-                    {
-                        ulAry.map((item, index) => (
-                            <div className={"col-span-12 lg:col-span-3 relative"} key={index}>
-                                <Typography
-                                    variant={"h5"}
-                                    className={"font-medium !text-white text-center"}
-                                >
-                                    {item.title}
-                                </Typography>
-                                <Typography
-                                    variant={"muted"}
-                                    className={"!text-white text-center mt-8"}
-                                >
-                                    {item.desc}
-                                </Typography>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium !text-white text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-16"}>
+                    <div className={"grid grid-cols-12 gap-4"}>
+                        {
+                            ulAry.map((item, index) => (
+                                <div className={"col-span-12 lg:col-span-3 relative"} key={index}>
+                                    <Typography
+                                        variant={"h5"}
+                                        className={"font-medium !text-white text-center"}
+                                    >
+                                        {item.title}
+                                    </Typography>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"!text-white text-center mt-8"}
+                                    >
+                                        {item.desc}
+                                    </Typography>
 
-                                {
-                                    index !== (ulAry.length - 1) && (
-                                        <Separator className={"absolute right-0 top-0 hidden lg:block"} orientation={"vertical"} />
-                                    )
-                                }
-                            </div>
-                        ))
-                    }
+                                    {
+                                        index !== (ulAry.length - 1) && (
+                                            <Separator className={"absolute right-0 top-0 hidden lg:block"}
+                                                       orientation={"vertical"}/>
+                                        )
+                                    }
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

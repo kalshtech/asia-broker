@@ -3,7 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -44,28 +44,31 @@ const Infrastructure =  () => {
                 </Typography>
             </motion.div>
             <div className={"mt-16 bg-[url(/images/corporation/careers-infrastructure-bg.png)] bg-cover bg-center h-120 lg:h-[600px]"}/>
-            <div className={"grid grid-cols-12 gap-4 lg:gap-8 mx-4 lg:mx-30 -mt-64 lg:-mt-32"}>
-                {
-                    colAry.map((item, index) => (
-                        <div className={"col-span-12 lg:col-span-4 bg-theme-light-bg px-10 pt-10 pb-24 rounded-lg"} key={index}>
-                            <img src={item.imgUrl} className={"w-10 h-10 object-cover"} alt=""/>
-                            <Typography
-                                variant={"h5"}
-                                className={"mt-6 font-medium"}
-                            >
-                                { item.title }
-                            </Typography>
+            <Container>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-8 mx-4 lg:mx-30 -mt-64 lg:-mt-32"}>
+                    {
+                        colAry.map((item, index) => (
+                            <div className={"col-span-12 lg:col-span-4 bg-theme-light-bg px-10 pt-10 pb-24 rounded-lg"}
+                                 key={index}>
+                                <img src={item.imgUrl} className={"w-10 h-10 object-cover"} alt=""/>
+                                <Typography
+                                    variant={"h5"}
+                                    className={"mt-6 font-medium"}
+                                >
+                                    {item.title}
+                                </Typography>
 
-                            <Typography
-                                variant={"muted"}
-                                className={"mt-6 font-medium"}
-                            >
-                                { item.desc }
-                            </Typography>
-                        </div>
-                    ))
-                }
-            </div>
+                                <Typography
+                                    variant={"muted"}
+                                    className={"mt-6 font-medium"}
+                                >
+                                    {item.desc}
+                                </Typography>
+                            </div>
+                        ))
+                    }
+                </div>
+            </Container>
         </section>
     )
 }

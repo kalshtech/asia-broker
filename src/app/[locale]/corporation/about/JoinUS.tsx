@@ -3,7 +3,6 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button }  from "@/components/ui/button";
 import Introduction from "@/components/common/corporation/Introduction";
 
 const fadeInUp: Variants = {

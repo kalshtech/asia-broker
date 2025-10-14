@@ -3,7 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -25,61 +25,64 @@ const PrizePool = () => {
 
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mx-auto mt-8 !text-white"}
-                >
-                    {t("desc")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
-                    {
-                        ary.map((item, index) => (
-                            <div className={"col-span-12 lg:col-span-3"} key={index}>
-                                <div className={"rounded-2xl pb-10 flex flex-col items-center justify-center specially-card"}>
-                                    <img src={item.imageUrl} className={"w-[140px] h-[140px]"} alt=""/>
-                                    <Typography
-                                        variant={"h5"}
-                                        className={"font-medium text-center !text-white"}
-                                    >
-                                        { item.title }
-                                    </Typography>
-                                    <div className={"flex justify-center items-end mt-2"}>
-                                        <span className={"text-[#8A90A4]"}>{ t("total") }</span>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center !text-white"}
+                    >
+                        {t("title")}
+                    </Typography>
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center mx-auto mt-8 !text-white"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-16"}>
+                    <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
+                        {
+                            ary.map((item, index) => (
+                                <div className={"col-span-12 lg:col-span-3"} key={index}>
+                                    <div
+                                        className={"rounded-2xl pb-10 flex flex-col items-center justify-center specially-card"}>
+                                        <img src={item.imageUrl} className={"w-[140px] h-[140px]"} alt=""/>
                                         <Typography
                                             variant={"h5"}
-                                            className={"font-medium !text-white ml-2"}
+                                            className={"font-medium text-center !text-white"}
                                         >
-                                            { item.number }
+                                            {item.title}
                                         </Typography>
-                                    </div>
-                                    <div className={"mt-6"}>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"font-medium text-center !text-[#8A90A4]"}
-                                        >
-                                            { item.desc }
-                                        </Typography>
+                                        <div className={"flex justify-center items-end mt-2"}>
+                                            <span className={"text-[#8A90A4]"}>{t("total")}</span>
+                                            <Typography
+                                                variant={"h5"}
+                                                className={"font-medium !text-white ml-2"}
+                                            >
+                                                {item.number}
+                                            </Typography>
+                                        </div>
+                                        <div className={"mt-6"}>
+                                            <Typography
+                                                variant={"muted"}
+                                                className={"font-medium text-center !text-[#8A90A4]"}
+                                            >
+                                                {item.desc}
+                                            </Typography>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))
-                    }
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -18,88 +19,90 @@ const Advance = () => {
     const t = useTranslations("Pages.accounts.profit.advance");
     return (
         <section className={"bg-[url(/images/accounts/profit-advance-bg.png)] bg-center bg-cover p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-                <Typography variant={"p"} className={"text-center !text-white mt-4 lg:mt-16"}>
-                    {t("desc1")}
-                </Typography>
-                <Typography
-                    variant={"h5"}
-                    className={"font-medium mt-6 text-center !text-white"}
-                >
-                    {t("desc2")}
-                </Typography>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center !text-white"}
+                    >
+                        {t("title")}
+                    </Typography>
+                    <Typography variant={"p"} className={"text-center !text-white mt-4 lg:mt-16"}>
+                        {t("desc1")}
+                    </Typography>
+                    <Typography
+                        variant={"h5"}
+                        className={"font-medium mt-6 text-center !text-white"}
+                    >
+                        {t("desc2")}
+                    </Typography>
 
-                <Typography
-                    variant={"muted"}
-                    className={"mt-12 text-center !text-white"}
-                >
-                    {t("desc3")}
-                </Typography>
-            </motion.div>
+                    <Typography
+                        variant={"muted"}
+                        className={"mt-12 text-center !text-white"}
+                    >
+                        {t("desc3")}
+                    </Typography>
+                </motion.div>
 
-            <div className={"mt-4 lg:mt-16"}>
-                <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={"bg-white rounded-xl p-16"}>
-                            <Typography
-                                variant={"h5"}
-                                className={"font-medium mt-6 text-center"}
-                            >
-                                {t("row.col1.title")}
-                            </Typography>
+                <div className={"mt-4 lg:mt-16"}>
+                    <div className={"grid grid-cols-12 gap-8"}>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <div className={"bg-white rounded-xl p-16"}>
+                                <Typography
+                                    variant={"h5"}
+                                    className={"font-medium mt-6 text-center"}
+                                >
+                                    {t("row.col1.title")}
+                                </Typography>
 
-                            <Typography
-                                variant={"p"}
-                                className={"mt-6 text-center"}
-                            >
-                                {t("row.col1.desc")}
-                            </Typography>
+                                <Typography
+                                    variant={"p"}
+                                    className={"mt-6 text-center"}
+                                >
+                                    {t("row.col1.desc")}
+                                </Typography>
 
-                            <div className={"mt-16 flex justify-center"}>
-                                <Button
-                                    className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                                    {t("row.col1.btn")}
-                                </Button>
+                                <div className={"mt-16 flex justify-center"}>
+                                    <Button
+                                        className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                        {t("row.col1.btn")}
+                                    </Button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={"bg-white rounded-xl p-16"}>
-                            <Typography
-                                variant={"h5"}
-                                className={"font-medium mt-6 text-center"}
-                            >
-                                {t("row.col2.title")}
-                            </Typography>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <div className={"bg-white rounded-xl p-16"}>
+                                <Typography
+                                    variant={"h5"}
+                                    className={"font-medium mt-6 text-center"}
+                                >
+                                    {t("row.col2.title")}
+                                </Typography>
 
-                            <Typography
-                                variant={"p"}
-                                className={"mt-6 text-center"}
-                            >
-                                {t("row.col2.desc")}
-                            </Typography>
+                                <Typography
+                                    variant={"p"}
+                                    className={"mt-6 text-center"}
+                                >
+                                    {t("row.col2.desc")}
+                                </Typography>
 
-                            <div className={"mt-16 flex justify-center"}>
-                                <Button
-                                    className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                                    {t("row.col2.btn")}
-                                </Button>
+                                <div className={"mt-16 flex justify-center"}>
+                                    <Button
+                                        className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                        {t("row.col2.btn")}
+                                    </Button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

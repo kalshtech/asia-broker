@@ -1,6 +1,6 @@
 "use client";
 import * as React from 'react'
-import Image from "next/image";
+import Container from "@/components/Container";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import gsap from "gsap";
@@ -49,35 +49,39 @@ const Subscribe = () => {
 
     return (
         <section ref={sectionRef} className={"bg-theme-light-bg"}>
-            <div className={"flex-1 grid grid-cols-1 lg:grid-cols-2"}>
-                <div className={"col-span-1"} ref={leftRef}>
-                    <div className={"flex-1 px-4 py-4 lg:py-12 lg:px-30"}>
-                        <ul>
-                            {
-                                ulAry.map((item, index) => (
-                                    <li key={index} className={"my-6 flex items-start"}>
-                                        <CircleCheck className={"min-w-5 min-h-5 w-5 h-5 mt-1"}/>
-                                        <Typography className={"ml-2"}>
-                                            { item.text }
-                                        </Typography>
-                                    </li>
-                                ))
-                            }
-                        </ul>
+            <Container>
+                <div className={"flex-1 grid grid-cols-1 lg:grid-cols-2"}>
+                    <div className={"col-span-1"} ref={leftRef}>
+                        <div className={"flex-1 px-4 py-4 lg:py-12 lg:px-30"}>
+                            <ul>
+                                {
+                                    ulAry.map((item, index) => (
+                                        <li key={index} className={"my-6 flex items-start"}>
+                                            <CircleCheck className={"min-w-5 min-h-5 w-5 h-5 mt-1"}/>
+                                            <Typography variant={"p"} className={"ml-2"}>
+                                                {item.text}
+                                            </Typography>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                        <div className={"flex justify-center lg:justify-start px-4 lg:px-30"}>
+                            <Button className={"h-10 px-8 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                {t("watch")}
+                            </Button>
+                            <Button
+                                className={"ml-4 border text-theme-active border-theme-active bg-white rounded-full h-10 px-8 hover:bg-transparent"}>
+                                {t("register")}
+                            </Button>
+                        </div>
                     </div>
-                    <div className={"flex justify-center lg:justify-start px-4 lg:px-30"}>
-                        <Button className={"h-10 px-8 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                            {t("watch")}
-                        </Button>
-                        <Button className={"ml-4 border text-theme-active border-theme-active bg-white rounded-full h-10 px-8 hover:bg-transparent"}>
-                            {t("register")}
-                        </Button>
+                    <div className={"col-span-1 mt-4 lg:mt-0"}>
+                        <img src="/images/ideas/calendar-subscribe.png" className={"w-full h-full object-cover"}
+                             alt=""/>
                     </div>
                 </div>
-                <div className={"col-span-1 mt-4 lg:mt-0"}>
-                    <img src="/images/ideas/calendar-subscribe.png" className={"w-full h-full object-cover"} alt=""/>
-                </div>
-            </div>
+            </Container>
         </section>
     )
 }

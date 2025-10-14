@@ -10,6 +10,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 import {ReactNode} from "react";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -33,71 +34,73 @@ const RowTable = (props: Props) => {
     const { title, desc, rowHeadAry, children, overview, overviewText } = props;
     return (
         <section className={"p-4 lg:p-30"}>
-            <div className={"grid grid-cols-12 gap-8"}>
-                <div className={"col-span-12 lg:col-span-4"}>
-                    <motion.div
-                        variants={fadeInUp}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{once: true, amount: 0.5}}
-                        className={overview ? "mt-8 lg:mt-19" : ""}
-                    >
-
-                        <Typography
-                            variant={"h3"}
-                            className={"font-medium"}
+            <Container>
+                <div className={"grid grid-cols-12 gap-8"}>
+                    <div className={"col-span-12 lg:col-span-4"}>
+                        <motion.div
+                            variants={fadeInUp}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{once: true, amount: 0.5}}
+                            className={overview ? "mt-8 lg:mt-19" : ""}
                         >
-                            { title }
-                        </Typography>
 
-                        {
-                            desc && (
-                                <Typography
-                                    variant={"muted"}
-                                    className={"mt-6"}
-                                >
-                                    { desc }
-                                </Typography>
-                            )
-                        }
+                            <Typography
+                                variant={"h3"}
+                                className={"font-medium"}
+                            >
+                                {title}
+                            </Typography>
 
-                    </motion.div>
-                </div>
-                <div className={"col-span-12 lg:col-span-8"}>
-                    <div>
-                        {
-                            overview && (
-                                <Typography
-                                    variant={"large"}
-                                    className={"font-normal text-[#999]"}
-                                >
-                                    { overviewText }
-                                </Typography>
-                            )
-                        }
+                            {
+                                desc && (
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"mt-6"}
+                                    >
+                                        {desc}
+                                    </Typography>
+                                )
+                            }
 
-                        <Table className={overview ? "mt-4 lg:mt-10" : ""}>
-                            <TableHeader>
-                                <TableRow>
-                                    {
-                                        rowHeadAry.map((item, index) => (
-                                            <TableHead
-                                                className={"text-[#999]"}
-                                                key={index}
-                                            >
-                                                { item.text }
-                                            </TableHead>
-                                        ))
-                                    }
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                                { children }
-                            </TableBody>
-                        </Table>
+                        </motion.div>
+                    </div>
+                    <div className={"col-span-12 lg:col-span-8"}>
+                        <div>
+                            {
+                                overview && (
+                                    <Typography
+                                        variant={"large"}
+                                        className={"font-normal text-[#999]"}
+                                    >
+                                        {overviewText}
+                                    </Typography>
+                                )
+                            }
+
+                            <Table className={overview ? "mt-4 lg:mt-10" : ""}>
+                                <TableHeader>
+                                    <TableRow>
+                                        {
+                                            rowHeadAry.map((item, index) => (
+                                                <TableHead
+                                                    className={"text-[#999]"}
+                                                    key={index}
+                                                >
+                                                    {item.text}
+                                                </TableHead>
+                                            ))
+                                        }
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
+                                    {children}
+                                </TableBody>
+                            </Table>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

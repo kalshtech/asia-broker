@@ -1,7 +1,7 @@
 "use client";
 import * as React from 'react'
-import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Container from "@/components/Container";
 
 const Step = () => {
     const t = useTranslations("Pages.corporation.about.step");
@@ -14,27 +14,30 @@ const Step = () => {
     ];
     return (
         <section className={"bg-theme-light-bg p-30"}>
-            <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10"}>
-                {
-                    ary.map((item, index) => (
-                        <div key={index} className={"flex flex-col items-center"}>
-                            <div className={"h-44 sm:h-52 lg:h-56 w-full flex items-center justify-center"}>
-                                <img
-                                    src={item.imageUrl}
-                                    className="max-h-full max-w-full object-contain"
-                                    alt="step"
-                                    title={"step1"}
-                                />
+            <Container>
+                <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10"}>
+                    {
+                        ary.map((item, index) => (
+                            <div key={index} className={"flex flex-col items-center"}>
+                                <div className={"h-44 sm:h-52 lg:h-56 w-full flex items-center justify-center"}>
+                                    <img
+                                        src={item.imageUrl}
+                                        className="max-h-full max-w-full object-contain"
+                                        alt="step"
+                                        title={"step1"}
+                                    />
+                                </div>
+                                <div
+                                    className="mt-6 h-px w-full bg-gradient-to-r from-transparent via-slate-300 to-transparent"/>
+                                <div className="mt-4 text-center w-full">
+                                    <p className="text-sm text-muted-foreground line-clamp-2 min-h-[40px]">{item.title}</p>
+                                    <p className="text-2xl font-semibold tracking-wide">{item.year}</p>
+                                </div>
                             </div>
-                            <div className="mt-6 h-px w-full bg-gradient-to-r from-transparent via-slate-300 to-transparent"/>
-                            <div className="mt-4 text-center w-full">
-                                <p className="text-sm text-muted-foreground line-clamp-2 min-h-[40px]">{item.title}</p>
-                                <p className="text-2xl font-semibold tracking-wide">{item.year}</p>
-                            </div>
-                        </div>
-                    ))
-                }
-            </div>
+                        ))
+                    }
+                </div>
+            </Container>
         </section>
     )
 }

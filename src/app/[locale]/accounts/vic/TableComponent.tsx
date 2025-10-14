@@ -1,7 +1,7 @@
 "use client";
 import * as React from 'react'
 import { useTranslations } from "next-intl";
-import { Typography } from "@/components/ui/typography";
+import Container from "@/components/Container";
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow} from "@/components/ui/table";
 
 const TableComponent = () => {
@@ -19,7 +19,7 @@ const TableComponent = () => {
     ];
     return (
         <section className={"bg-[url(/images/accounts/vic-table-bg.png)] bg-center bg-cover p-4 lg:p-30"}>
-            <div>
+            <Container>
                 <Table>
                     <TableHeader>
                         <TableRow className={"bg-white hover:bg-white"}>
@@ -52,7 +52,7 @@ const TableComponent = () => {
                         }
                     </TableBody>
                 </Table>
-            </div>
+            </Container>
         </section>
     )
 }

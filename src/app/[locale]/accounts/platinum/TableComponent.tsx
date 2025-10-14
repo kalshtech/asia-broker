@@ -1,7 +1,7 @@
 "use client";
 import * as React from 'react'
 import { useTranslations } from "next-intl";
-import { Typography } from "@/components/ui/typography";
+import Container from "@/components/Container";
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow} from "@/components/ui/table";
 
 const TableComponent = () => {
@@ -19,40 +19,43 @@ const TableComponent = () => {
     ];
     return (
         <section className={"bg-[url(/images/accounts/platinum-table-bg.png)] bg-center bg-cover p-4 lg:p-30"}>
-            <div>
-                <Table>
-                    <TableHeader>
-                        <TableRow className={"bg-white hover:bg-white"}>
-                            <TableHead className={"w-1/3 py-6 text-center text-white bg-[#544D46] border-r"}>
-                                { t("row.head1") }
-                            </TableHead>
-                            <TableHead className={"w-1/3 py-6 text-center text-white bg-[#544D46] border-r"}>
-                                { t("row.head2") }
-                            </TableHead>
-                            <TableHead className={"w-1/3 py-6 text-center text-white bg-[#544D46]"}>
-                                { t("row.head3") }
-                            </TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {
-                            colsAry.map((item, index) => (
-                                <TableRow key={index} className={"bg-white hover:bg-white even:bg-[#F6F2EF] even:hover:bg-[#F6F2EF]"}>
-                                    <TableCell className={"text-center py-4 border-r"}>
-                                        { item.one }
-                                    </TableCell>
-                                    <TableCell className={"text-center py-4 border-r"}>
-                                        { item.two }
-                                    </TableCell>
-                                    <TableCell className={"text-center py-4"}>
-                                        { item.three }
-                                    </TableCell>
-                                </TableRow>
-                            ))
-                        }
-                    </TableBody>
-                </Table>
-            </div>
+            <Container>
+                <div>
+                    <Table>
+                        <TableHeader>
+                            <TableRow className={"bg-white hover:bg-white"}>
+                                <TableHead className={"w-1/3 py-6 text-center text-white bg-[#544D46] border-r"}>
+                                    {t("row.head1")}
+                                </TableHead>
+                                <TableHead className={"w-1/3 py-6 text-center text-white bg-[#544D46] border-r"}>
+                                    {t("row.head2")}
+                                </TableHead>
+                                <TableHead className={"w-1/3 py-6 text-center text-white bg-[#544D46]"}>
+                                    {t("row.head3")}
+                                </TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {
+                                colsAry.map((item, index) => (
+                                    <TableRow key={index}
+                                              className={"bg-white hover:bg-white even:bg-[#F6F2EF] even:hover:bg-[#F6F2EF]"}>
+                                        <TableCell className={"text-center py-4 border-r"}>
+                                            {item.one}
+                                        </TableCell>
+                                        <TableCell className={"text-center py-4 border-r"}>
+                                            {item.two}
+                                        </TableCell>
+                                        <TableCell className={"text-center py-4"}>
+                                            {item.three}
+                                        </TableCell>
+                                    </TableRow>
+                                ))
+                            }
+                        </TableBody>
+                    </Table>
+                </div>
+            </Container>
         </section>
     )
 }

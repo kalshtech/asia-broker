@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import RegisterBtn from "@/components/RegisterBtn"
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -19,49 +20,52 @@ const Banner = () => {
     const t = useTranslations("Pages.mutual.funding.banner");
     return (
         <section className={"bg-[url(/images/mutual/funding-banner.png)] bg-center bg-cover relative h-96 lg:h-[632px] py-8 px-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <div className={"max-w-5xl mx-auto flex-col justify-center flex"}>
-                    <Typography
-                        variant={"h1"}
-                        className={"text-center !text-white"}
-                    >
-                        {t("title")}
-                    </Typography>
-                    <Typography
-                        variant={"muted"}
-                        className={"font-medium text-right mt-4 lg:mt-10 !text-white"}
-                    >
-                        {t("desc")}
-                    </Typography>
-
-                    <Typography
-                        variant={"h4"}
-                        className={"font-medium text-center mt-4 lg:mt-10 !text-white"}
-                    >
-                        {t("midst")}
-                    </Typography>
-
-                    <div className={"mt-8 lg:mt-16 flex justify-center"}>
-                        <RegisterBtn/>
-                        <Button className={"px-8 h-10 ml-8 rounded-full border bg-transparent hover:bg-transparent"}>
-                            { t("ticker") }
-                        </Button>
-                    </div>
-                    <div>
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                >
+                    <div className={"max-w-5xl mx-auto flex-col justify-center flex"}>
+                        <Typography
+                            variant={"h1"}
+                            className={"text-center !text-white"}
+                        >
+                            {t("title")}
+                        </Typography>
                         <Typography
                             variant={"muted"}
-                            className={"font-medium text-center !text-xs mt-6 !text-[#999999]"}
+                            className={"font-medium text-right mt-4 lg:mt-10 !text-white"}
                         >
-                            {t("prompt")}
+                            {t("desc")}
                         </Typography>
+
+                        <Typography
+                            variant={"h4"}
+                            className={"font-medium text-center mt-4 lg:mt-10 !text-white"}
+                        >
+                            {t("midst")}
+                        </Typography>
+
+                        <div className={"mt-8 lg:mt-16 flex justify-center"}>
+                            <RegisterBtn/>
+                            <Button
+                                className={"px-8 h-10 ml-8 rounded-full border bg-transparent hover:bg-transparent"}>
+                                {t("ticker")}
+                            </Button>
+                        </div>
+                        <div>
+                            <Typography
+                                variant={"muted"}
+                                className={"font-medium text-center !text-xs mt-6 !text-[#999999]"}
+                            >
+                                {t("prompt")}
+                            </Typography>
+                        </div>
                     </div>
-                </div>
-            </motion.div>
+                </motion.div>
+            </Container>
         </section>
     )
 }

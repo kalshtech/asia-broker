@@ -4,7 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -30,67 +30,70 @@ const Advertising = () => {
     ];
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h1"}
-                    className={"text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16 bg-theme-light-bg py-16"}>
-                <div className={"grid grid-cols-12 gap-4 lg:gap-16 px-4 lg:px-12"}>
-                    <div className={"border-r-2 border-black col-span-12 lg:col-span-6 "}>
-                        <Typography
-                            variant={"h3"}
-                            className={"font-medium"}
-                        >
-                            {t("row.title")}
-                        </Typography>
-                    </div>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <Typography
-                            variant={"large"}
-                            className={"font-normal"}
-                        >
-                            {t("row.desc")}
-                        </Typography>
-                    </div>
-                </div>
-                <div className={"mt-16 bg-theme-light-bg"}>
-                    <Swiper
-                        slidesPerView={10}
-                        spaceBetween={12}
-                        loop={true}
-                        className="mySwiper w-full"
-                        breakpoints={{
-                            320: {slidesPerView: 4, spaceBetween: 16,},
-                            600: {slidesPerView: 6, spaceBetween: 24,},
-                            900: {slidesPerView: 10, spaceBetween: 36,},
-                        }}
+                    <Typography
+                        variant={"h3"}
+                        className={"text-center"}
                     >
-                        {
-                            imgAry.map((item, index) => (
-                                <SwiperSlide key={index}>
-                                    <div className={"flex justify-center"}>
-                                        <img className={"w-[100px] h-[100px] object-cover"} src={item.imageUrl} alt="img"/>
-                                    </div>
-                                </SwiperSlide>
-                            ))
-                        }
-                    </Swiper>
-                </div>
-                <div className={"mt-16 px-12"}>
-                    <Typography variant={"muted"}>
-                        { t("prompt") }
+                        {t("title")}
                     </Typography>
+                </motion.div>
+                <div className={"mt-16 bg-theme-light-bg py-16"}>
+                    <div className={"grid grid-cols-12 gap-4 lg:gap-16 px-4 lg:px-12"}>
+                        <div className={"border-r-2 border-black col-span-12 lg:col-span-6 "}>
+                            <Typography
+                                variant={"h4"}
+                                className={"font-medium"}
+                            >
+                                {t("row.title")}
+                            </Typography>
+                        </div>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <Typography
+                                variant={"large"}
+                                className={"font-normal"}
+                            >
+                                {t("row.desc")}
+                            </Typography>
+                        </div>
+                    </div>
+                    <div className={"mt-16 bg-theme-light-bg"}>
+                        <Swiper
+                            slidesPerView={10}
+                            spaceBetween={12}
+                            loop={true}
+                            className="mySwiper w-full"
+                            breakpoints={{
+                                320: {slidesPerView: 4, spaceBetween: 16,},
+                                600: {slidesPerView: 6, spaceBetween: 24,},
+                                900: {slidesPerView: 10, spaceBetween: 36,},
+                            }}
+                        >
+                            {
+                                imgAry.map((item, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className={"flex justify-center"}>
+                                            <img className={"w-[100px] h-[100px] object-cover"} src={item.imageUrl}
+                                                 alt="img"/>
+                                        </div>
+                                    </SwiperSlide>
+                                ))
+                            }
+                        </Swiper>
+                    </div>
+                    <div className={"mt-16 px-12"}>
+                        <Typography variant={"muted"}>
+                            {t("prompt")}
+                        </Typography>
+                    </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

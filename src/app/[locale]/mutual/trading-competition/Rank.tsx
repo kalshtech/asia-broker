@@ -3,7 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {useState} from "react";
 
@@ -74,104 +74,106 @@ const Rank = () => {
 
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-                <Typography variant={"muted"} className={"font-medium text-center mx-auto mt-8 !text-white"}>
-                    {t("desc")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-4 lg:mt-16 flex justify-center"}>
-                <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
-                    <TabsList className={"bg-[#3B4259] h-10 rounded-full"}>
-                        <TabsTrigger
-                            value={"1"}
-                            className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
-                        >
-                            { t("tabs.1") }
-                        </TabsTrigger>
-                        <TabsTrigger
-                            value={"2"}
-                            className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
-                        >
-                            { t("tabs.2") }
-                        </TabsTrigger>
-                        <TabsTrigger
-                            value={"3"}
-                            className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
-                        >
-                            { t("tabs.3") }
-                        </TabsTrigger>
-                    </TabsList>
-                </Tabs>
-            </div>
-            <div className={"mt-4 lg:mt-16"}>
-                <Typography
-                    variant={"large"}
-                    className={"font-normal !text-white"}
-                >
-                    {t(`prompt.${tabActive}`)}
-                </Typography>
-                <Table className={"mt-4"}>
-                    <TableHeader className={"bg-[#323A53]"}>
-                        <TableRow>
-                            <TableHead className={"py-6 !text-white"}>{ t("table.rank") }</TableHead>
-                            <TableHead className={"py-6 !text-white"}>{ t("table.name") }</TableHead>
-                            <TableHead className={"py-6 !text-white"}>{ t("table.credit") }</TableHead>
-                            <TableHead className={"py-6 !text-white"}>{ t("table.type") }</TableHead>
-                            <TableHead className={"py-6 !text-white w-[100px]"}>{ t("table.operator") }</TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {
-                            Ary.map((item: any, index: any) => (
-                                <TableRow key={index} className={"bg-[#3B4259]"}>
-                                    <TableCell className={"py-6 text-white"}>
-                                        {
-                                            index === 0 ?
-                                                <img src={"/images/mutual/competition-1.png"}
-                                                     className={"w-5 h-5"}
-                                                     alt={"rank"}/>
-                                                : index === 1 ?
-                                                    <img src={"/images/mutual/competition-2.png"}
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center !text-white"}
+                    >
+                        {t("title")}
+                    </Typography>
+                    <Typography variant={"muted"} className={"font-medium text-center mx-auto mt-8 !text-white"}>
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-4 lg:mt-16 flex justify-center"}>
+                    <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
+                        <TabsList className={"bg-[#3B4259] h-10 rounded-full"}>
+                            <TabsTrigger
+                                value={"1"}
+                                className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                            >
+                                {t("tabs.1")}
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value={"2"}
+                                className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                            >
+                                {t("tabs.2")}
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value={"3"}
+                                className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                            >
+                                {t("tabs.3")}
+                            </TabsTrigger>
+                        </TabsList>
+                    </Tabs>
+                </div>
+                <div className={"mt-4 lg:mt-16"}>
+                    <Typography
+                        variant={"large"}
+                        className={"font-normal !text-white"}
+                    >
+                        {t(`prompt.${tabActive}`)}
+                    </Typography>
+                    <Table className={"mt-4"}>
+                        <TableHeader className={"bg-[#323A53]"}>
+                            <TableRow>
+                                <TableHead className={"py-6 !text-white"}>{t("table.rank")}</TableHead>
+                                <TableHead className={"py-6 !text-white"}>{t("table.name")}</TableHead>
+                                <TableHead className={"py-6 !text-white"}>{t("table.credit")}</TableHead>
+                                <TableHead className={"py-6 !text-white"}>{t("table.type")}</TableHead>
+                                <TableHead className={"py-6 !text-white w-[100px]"}>{t("table.operator")}</TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {
+                                Ary.map((item: any, index: any) => (
+                                    <TableRow key={index} className={"bg-[#3B4259]"}>
+                                        <TableCell className={"py-6 text-white"}>
+                                            {
+                                                index === 0 ?
+                                                    <img src={"/images/mutual/competition-1.png"}
                                                          className={"w-5 h-5"}
-                                                         alt={"rank"}
-                                                    />
-                                                    : index === 2 ?
-                                                        <img src={"/images/mutual/competition-3.png"}
+                                                         alt={"rank"}/>
+                                                    : index === 1 ?
+                                                        <img src={"/images/mutual/competition-2.png"}
                                                              className={"w-5 h-5"}
                                                              alt={"rank"}
                                                         />
-                                                    : index + 1
-                                        }
-                                    </TableCell>
-                                    <TableCell className={"py-6 text-white"}>
-                                        { item.name }
-                                    </TableCell>
-                                    <TableCell className={"py-6 text-white"}>
-                                        { item.credit }
-                                    </TableCell>
-                                    <TableCell className={"py-6 text-white"}>
-                                        { item.type }
-                                    </TableCell>
-                                    <TableCell className={"py-6 text-white"}>
-                                        { item.operator }
-                                    </TableCell>
-                                </TableRow>
-                            ))
-                        }
-                    </TableBody>
-                </Table>
-            </div>
+                                                        : index === 2 ?
+                                                            <img src={"/images/mutual/competition-3.png"}
+                                                                 className={"w-5 h-5"}
+                                                                 alt={"rank"}
+                                                            />
+                                                            : index + 1
+                                            }
+                                        </TableCell>
+                                        <TableCell className={"py-6 text-white"}>
+                                            {item.name}
+                                        </TableCell>
+                                        <TableCell className={"py-6 text-white"}>
+                                            {item.credit}
+                                        </TableCell>
+                                        <TableCell className={"py-6 text-white"}>
+                                            {item.type}
+                                        </TableCell>
+                                        <TableCell className={"py-6 text-white"}>
+                                            {item.operator}
+                                        </TableCell>
+                                    </TableRow>
+                                ))
+                            }
+                        </TableBody>
+                    </Table>
+                </div>
+            </Container>
         </section>
     )
 }

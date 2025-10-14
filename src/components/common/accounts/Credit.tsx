@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import classnames from "classnames";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -25,84 +26,87 @@ const Credit = ({ typeText, className, number }: Props) => {
     const t = useTranslations("Pages.accounts.platinum.credit");
     return (
         <section className={classnames(["p-4 lg:p-30", className])}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    { t("title1") }
-                </Typography>
-                <div className={"flex justify-center items-center mt-4"}>
                     <Typography
                         variant={"h3"}
                         className={"font-medium text-center"}
                     >
-                        { t("title2-1") }
+                        {t("title1")}
+                    </Typography>
+                    <div className={"flex justify-center items-center mt-4"}>
+                        <Typography
+                            variant={"h3"}
+                            className={"font-medium text-center"}
+                        >
+                            {t("title2-1")}
+                        </Typography>
+                        <Typography
+                            variant={"h3"}
+                            className={"!text-[64px] text-center mx-4"}
+                        >
+                            5.6
+                        </Typography>
+                        <Typography
+                            variant={"h3"}
+                            className={"font-medium text-center"}
+                        >
+                            {t("title2-2")}
+                        </Typography>
+                    </div>
+                </motion.div>
+                <div className={"mt-4 lg:mt-16"}>
+                    <Typography
+                        variant={"h4"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("midst")}
+                    </Typography>
+
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center mt-6"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </div>
+
+                <div className={"flex justify-center items-end mt-4 lg:mt-16"}>
+                    <Typography
+                        variant={"h5"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("transfer")}
                     </Typography>
                     <Typography
                         variant={"h3"}
                         className={"!text-[64px] text-center mx-4"}
                     >
-                        5.6
+                        {number}
                     </Typography>
                     <Typography
-                        variant={"h3"}
+                        variant={"h5"}
                         className={"font-medium text-center"}
                     >
-                        { t("title2-2") }
+                        {typeText}
                     </Typography>
                 </div>
-            </motion.div>
-            <div className={"mt-4 lg:mt-16"}>
-                <Typography
-                    variant={"h4"}
-                    className={"font-medium text-center"}
-                >
-                    { t("midst") }
-                </Typography>
 
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mt-6"}
-                >
-                    { t("desc") }
-                </Typography>
-            </div>
-
-            <div className={"flex justify-center items-end mt-4 lg:mt-16"}>
-                <Typography
-                    variant={"h5"}
-                    className={"font-medium text-center"}
-                >
-                    { t("transfer") }
-                </Typography>
-                <Typography
-                    variant={"h3"}
-                    className={"!text-[64px] text-center mx-4"}
-                >
-                    { number }
-                </Typography>
-                <Typography
-                    variant={"h5"}
-                    className={"font-medium text-center"}
-                >
-                    { typeText }
-                </Typography>
-            </div>
-
-            <div className={"flex justify-center mt-4 lg:mt-16"}>
-                <Button className={"px-8 h-10 rounded-full"}>
-                    { t("immediately") }
-                </Button>
-                <Button className={"px-8 h-10 rounded-full ml-4 bg-transparent border border-black text-black hover:bg-transparent"}>
-                    { t("understand") }
-                </Button>
-            </div>
+                <div className={"flex justify-center mt-4 lg:mt-16"}>
+                    <Button className={"px-8 h-10 rounded-full"}>
+                        {t("immediately")}
+                    </Button>
+                    <Button
+                        className={"px-8 h-10 rounded-full ml-4 bg-transparent border border-black text-black hover:bg-transparent"}>
+                        {t("understand")}
+                    </Button>
+                </div>
+            </Container>
         </section>
     )
 }

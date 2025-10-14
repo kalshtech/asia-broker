@@ -6,7 +6,7 @@ import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import classnames from "classnames";
-import Star from "lucide-react";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -120,127 +120,131 @@ export default function Challenge() {
 
     return (
         <section className={"px-4 lg:px-30 pt-8 pb-8 lg:pt-0 lg:pb-30 bg-[#000515]"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mx-auto mt-4 !text-white"}
-                >
-                    {t("desc")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16"}>
-                <div className={"grid grid-cols-12"}>
-                    <div className={"col-span-12 lg:col-span-8"}>
-                        <div className={"bg-gradient-to-l from-[#1F3A93] to-[#09122D] py-12 px-8 lg:rounded-l-3xl h-full lg:border border-[#4F5670] border-r-0"}>
-                            <div className={""}>
-                                <Typography
-                                    variant={"h5"}
-                                    className={"font-medium !text-white"}
-                                >
-                                    {t("row.col1.title")}
-                                </Typography>
-                            </div>
-                            <div className={"mt-6"}>
-                                {
-                                    challenges.map((item, index) => (
-                                        <TabItemWrap
-                                            title={item.title}
-                                            key={index}
-                                            ary={item.list}
-                                        />
-                                    ))
-                                }
-                            </div>
-                        </div>
-                    </div>
-                    <div className={"col-span-12 lg:col-span-4"}>
-                        <div
-                            className={"bg-[#0E1941] py-12 px-8 lg:rounded-r-3xl h-full lg:border border-[#4F5670] border-l-0"}>
-                            <div className={""}>
-                                <Typography
-                                    variant={"h5"}
-                                    className={"font-medium !text-white"}
-                                >
-                                    {t("row.col2.title")}
-                                </Typography>
-                            </div>
-                            <div className={"mt-6"}>
-                                {
-                                    rowRightColBrief.map((item, index) => (
-                                        <div key={index} className={"flex items-center my-4"}>
-                                            <span className={"text-[#8A90A4] text-sm"}>
-                                                { item.left }
-                                            </span>
-                                            <Separator className={"!w-30 mx-2"} />
-                                            <span className={"text-white text-sm"}>
-                                                { item.right }
-                                            </span>
-                                        </div>
-                                    ))
-                                }
-                            </div>
-                            <div className={"mt-16"}>
-                                <Typography
-                                    variant={"h5"}
-                                    className={"font-medium text-center !text-white"}
-                                >
-                                    Price
-                                </Typography>
-                                <Typography
-                                    variant={"h2"}
-                                    className={"font-bold text-center mt-4 !text-[#1F8BFF]"}
-                                >
-                                    $198
-                                </Typography>
-                                <div className={"mt-10 flex justify-center"}>
-                                    <Button className={"px-8 h-10 rounded-full bg-white text-black hover:bg-white"}>
-                                        { t("row.col2.buy") }
-                                    </Button>
-                                    <Button className={"px-8 h-10 ml-4 rounded-full border bg-transparent text-white hover:bg-transparent"}>
-                                        { t("row.col2.more") }
-                                    </Button>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center !text-white"}
+                    >
+                        {t("title")}
+                    </Typography>
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center mx-auto mt-4 !text-white"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-16"}>
+                    <div className={"grid grid-cols-12"}>
+                        <div className={"col-span-12 lg:col-span-8"}>
+                            <div
+                                className={"bg-gradient-to-l from-[#1F3A93] to-[#09122D] py-12 px-8 lg:rounded-l-3xl h-full lg:border border-[#4F5670] border-r-0"}>
+                                <div className={""}>
+                                    <Typography
+                                        variant={"h5"}
+                                        className={"font-medium !text-white"}
+                                    >
+                                        {t("row.col1.title")}
+                                    </Typography>
+                                </div>
+                                <div className={"mt-6"}>
+                                    {
+                                        challenges.map((item, index) => (
+                                            <TabItemWrap
+                                                title={item.title}
+                                                key={index}
+                                                ary={item.list}
+                                            />
+                                        ))
+                                    }
                                 </div>
                             </div>
-                            <div className={"mt-16"}>
-                                <Typography
-                                    variant={"muted"}
-                                    className={"font-medium !text-white"}
-                                >
-                                    { t("row.col2.desc1") }
-                                </Typography>
-                                <Typography
-                                    variant={"muted"}
-                                    className={"font-medium !text-white mt-6"}
-                                >
-                                    { t("row.col2.desc2") }
-                                </Typography>
+                        </div>
+                        <div className={"col-span-12 lg:col-span-4"}>
+                            <div
+                                className={"bg-[#0E1941] py-12 px-8 lg:rounded-r-3xl h-full lg:border border-[#4F5670] border-l-0"}>
+                                <div className={""}>
+                                    <Typography
+                                        variant={"h5"}
+                                        className={"font-medium !text-white"}
+                                    >
+                                        {t("row.col2.title")}
+                                    </Typography>
+                                </div>
+                                <div className={"mt-6"}>
+                                    {
+                                        rowRightColBrief.map((item, index) => (
+                                            <div key={index} className={"flex items-center my-4"}>
+                                            <span className={"text-[#8A90A4] text-sm"}>
+                                                {item.left}
+                                            </span>
+                                                <Separator className={"!w-30 mx-2"}/>
+                                                <span className={"text-white text-sm"}>
+                                                {item.right}
+                                            </span>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                                <div className={"mt-16"}>
+                                    <Typography
+                                        variant={"h5"}
+                                        className={"font-medium text-center !text-white"}
+                                    >
+                                        Price
+                                    </Typography>
+                                    <Typography
+                                        variant={"h2"}
+                                        className={"font-bold text-center mt-4 !text-[#1F8BFF]"}
+                                    >
+                                        $198
+                                    </Typography>
+                                    <div className={"mt-10 flex justify-center"}>
+                                        <Button className={"px-8 h-10 rounded-full bg-white text-black hover:bg-white"}>
+                                            {t("row.col2.buy")}
+                                        </Button>
+                                        <Button
+                                            className={"px-8 h-10 ml-4 rounded-full border bg-transparent text-white hover:bg-transparent"}>
+                                            {t("row.col2.more")}
+                                        </Button>
+                                    </div>
+                                </div>
+                                <div className={"mt-16"}>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"font-medium !text-white"}
+                                    >
+                                        {t("row.col2.desc1")}
+                                    </Typography>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"font-medium !text-white mt-6"}
+                                    >
+                                        {t("row.col2.desc2")}
+                                    </Typography>
 
-                                <Typography className={"font-medium !text-white mt-6"}>
-                                    { t("row.col2.desc3") }
-                                </Typography>
+                                    <Typography className={"font-medium !text-white mt-6"}>
+                                        {t("row.col2.desc3")}
+                                    </Typography>
 
-                                <Typography
-                                    variant={"muted"}
-                                    className={"font-medium !text-[#999] mt-6"}
-                                >
-                                    { t("row.col2.desc4") }
-                                </Typography>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"font-medium !text-[#999] mt-6"}
+                                    >
+                                        {t("row.col2.desc4")}
+                                    </Typography>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

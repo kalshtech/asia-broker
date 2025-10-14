@@ -6,7 +6,7 @@ import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
-
+import Container from "@/components/Container";
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -29,109 +29,112 @@ export default function Vision() {
     ];
     return (
         <section className={"p-4 lg:p-30 bg-[#000515]"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <div className={"flex justify-center"}>
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center !text-white"}
-                    >
-                        {t("title1")}
-                    </Typography>
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center !text-[#1F8BFF] ml-2"}
-                    >
-                        {t("title2")}
-                    </Typography>
-                </div>
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mx-auto mt-6 !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("desc")}
-                </Typography>
-                <div className={"mt-8 lg:mt-16 flex justify-center"}>
-                    <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                        { t("join") }
-                    </Button>
-                </div>
-            </motion.div>
-            <div className={"mt-8 lg:mt-16"}>
-                <Swiper
-                    slidesPerView={3.5}
-                    spaceBetween={32}
-                    centeredSlides={true}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    loop={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    breakpoints={{
-                        320: {slidesPerView: 1.2, spaceBetween: 16,},
-                        600: {slidesPerView: 1.2, spaceBetween: 24,},
-                        900: {slidesPerView: 3.5, spaceBetween: 36,},
-                    }}
-                    modules={[Autoplay]}
-                    className="my-swiper h-full"
-                >
-                    {
-                        swiperAry.map((item, index) => (
-                            <SwiperSlide key={index} className={"specially-swiper-card h-full"}>
-                                <div className={"p-6"}>
-                                    <div className={"grid grid-cols-12 gap-4"}>
-                                        <div className={"col-span-6"}>
-                                           <div>
-                                               <Typography
-                                                   variant={"h3"}
-                                                   className={"font-medium !text-white"}
-                                               >
-                                                   { item.amount }
-                                               </Typography>
-                                           </div>
-                                            <div className={"mt-10"}>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"font-medium !text-white"}
-                                                >
-                                                    { item.name }
-                                                </Typography>
-                                                <div className={"mt-2 flex items-center"}>
+                    <div className={"flex justify-center"}>
+                        <Typography
+                            variant={"h3"}
+                            className={"font-medium text-center !text-white"}
+                        >
+                            {t("title1")}
+                        </Typography>
+                        <Typography
+                            variant={"h3"}
+                            className={"font-medium text-center !text-[#1F8BFF] ml-2"}
+                        >
+                            {t("title2")}
+                        </Typography>
+                    </div>
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center mx-auto mt-6 !text-white"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                    <div className={"mt-8 lg:mt-16 flex justify-center"}>
+                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                            {t("join")}
+                        </Button>
+                    </div>
+                </motion.div>
+                <div className={"mt-8 lg:mt-16"}>
+                    <Swiper
+                        slidesPerView={3.5}
+                        spaceBetween={32}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        loop={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        breakpoints={{
+                            320: {slidesPerView: 1.2, spaceBetween: 16,},
+                            600: {slidesPerView: 1.2, spaceBetween: 24,},
+                            900: {slidesPerView: 3.5, spaceBetween: 36,},
+                        }}
+                        modules={[Autoplay]}
+                        className="my-swiper h-full"
+                    >
+                        {
+                            swiperAry.map((item, index) => (
+                                <SwiperSlide key={index} className={"specially-swiper-card h-full"}>
+                                    <div className={"p-6"}>
+                                        <div className={"grid grid-cols-12 gap-4"}>
+                                            <div className={"col-span-6"}>
+                                                <div>
+                                                    <Typography
+                                                        variant={"h3"}
+                                                        className={"font-medium !text-white"}
+                                                    >
+                                                        {item.amount}
+                                                    </Typography>
+                                                </div>
+                                                <div className={"mt-10"}>
                                                     <Typography
                                                         variant={"muted"}
                                                         className={"font-medium !text-white"}
                                                     >
-                                                        { item.country }
+                                                        {item.name}
                                                     </Typography>
-                                                    <img src={item.countryImageUrl} className={"w-[30px] h-[30px] object-cover ml-4"} alt=""/>
+                                                    <div className={"mt-2 flex items-center"}>
+                                                        <Typography
+                                                            variant={"muted"}
+                                                            className={"font-medium !text-white"}
+                                                        >
+                                                            {item.country}
+                                                        </Typography>
+                                                        <img src={item.countryImageUrl}
+                                                             className={"w-[30px] h-[30px] object-cover ml-4"} alt=""/>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className={"col-span-6"}>
-                                            <img src={item.imageUrl} alt=""/>
+                                            <div className={"col-span-6"}>
+                                                <img src={item.imageUrl} alt=""/>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </SwiperSlide>
-                        ))
-                    }
-                </Swiper>
-            </div>
-            <div className={"mt-16"}>
-                <Typography
-                    variant={"muted"}
-                    className={"font-medium text-center mx-auto !text-[#999999]"}
-                >
-                    {t("prompt")}
-                </Typography>
-            </div>
+                                </SwiperSlide>
+                            ))
+                        }
+                    </Swiper>
+                </div>
+                <div className={"mt-16"}>
+                    <Typography
+                        variant={"muted"}
+                        className={"font-medium text-center mx-auto !text-[#999999]"}
+                    >
+                        {t("prompt")}
+                    </Typography>
+                </div>
+            </Container>
         </section>
     )
 }

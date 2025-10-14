@@ -13,6 +13,7 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import Container from "@/components/Container";
 
 import {
     Pagination,
@@ -148,124 +149,126 @@ const Articles = (props: Props) => {
 
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
-
-            {
-                showSearch && (
-                    <div className={"mt-16"}>
-                        <div className={"flex"}>
-                            <Breadcrumb>
-                                <BreadcrumbList>
-                                    <BreadcrumbItem>
-                                        <BreadcrumbLink href="/academy/learning">
-                                            { navigationT("menu.beginner.row.col-3.ul.li1") }
-                                        </BreadcrumbLink>
-                                    </BreadcrumbItem>
-                                    <BreadcrumbSeparator/>
-                                    <BreadcrumbItem>
-                                        <BreadcrumbLink href="/academy/document">
-                                            { navigationT("menu.beginner.row.col-3.ul.li2") }
-                                        </BreadcrumbLink>
-                                    </BreadcrumbItem>
-                                </BreadcrumbList>
-                            </Breadcrumb>
-                            <div className={"ml-auto"}>
-                                <div
-                                    className="flex items-center bg-[#F6F6F6] border border-[#E6E6E6] gap-2 rounded-full pl-8 pr-4 py-2 w-full max-w-md">
-                                    <Search className={"text-[#999999]"}/>
-                                    <Input
-                                        type="text"
-                                        placeholder={commonT("search-articles")}
-                                        onChange={(e) => setQuery(e.target.value)}
-                                        className="border-none outline-0 pl-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 text-sm"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )
-            }
-
-            <div className={"mt-16"}>
-                <div className={""}>
-                    <Typography variant={"muted"}>
-                        {t("stage.title")}
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
                     </Typography>
-                    <div className={"flex flex-wrap gap-4 mt-6"}>
-                        {
-                            stageAry.map((item, index) => (
-                                <div
-                                    className={"bg-theme-light-bg rounded-full cursor-pointer text-[#666666] text-sm px-3 py-1 lg:px-6 lg:py-3"}
-                                    key={index}>
-                                    {item.label}
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
-                <div className={"mt-6"}>
-                    <Typography variant={"muted"}>
-                        {t("theme.title")}
-                    </Typography>
-                    <div className={"flex flex-wrap gap-4 mt-6"}>
-                        {
-                            themeAry.map((item, index) => (
-                                <div
-                                    className={"bg-theme-light-bg rounded-full cursor-pointer text-[#666666] text-sm px-3 py-1 lg:px-6 lg:py-3"}
-                                    key={index}>
-                                {item.label}
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
+                </motion.div>
 
                 {
-                    filteredArticles.length > 0 ? (
-                        <div className={"grid mt-6 gap-4 lg:gap-8 grid-cols-2 lg:grid-cols-3"}>
-                            {
-                                filteredArticles.map((item, index) => (
-                                    <BaseArticle key={index} {...item} />
-                                ))
-                            }
-                        </div>
-                    ) : (
-                        <div className={"p-30 text-gray-500 grid-cols-1 text-center text-sm"}>
-                            { commonT("no-articles") }
+                    showSearch && (
+                        <div className={"mt-16"}>
+                            <div className={"flex"}>
+                                <Breadcrumb>
+                                    <BreadcrumbList>
+                                        <BreadcrumbItem>
+                                            <BreadcrumbLink href="/academy/learning">
+                                                {navigationT("menu.beginner.row.col-3.ul.li1")}
+                                            </BreadcrumbLink>
+                                        </BreadcrumbItem>
+                                        <BreadcrumbSeparator/>
+                                        <BreadcrumbItem>
+                                            <BreadcrumbLink href="/academy/document">
+                                                {navigationT("menu.beginner.row.col-3.ul.li2")}
+                                            </BreadcrumbLink>
+                                        </BreadcrumbItem>
+                                    </BreadcrumbList>
+                                </Breadcrumb>
+                                <div className={"ml-auto"}>
+                                    <div
+                                        className="flex items-center bg-[#F6F6F6] border border-[#E6E6E6] gap-2 rounded-full pl-8 pr-4 py-2 w-full max-w-md">
+                                        <Search className={"text-[#999999]"}/>
+                                        <Input
+                                            type="text"
+                                            placeholder={commonT("search-articles")}
+                                            onChange={(e) => setQuery(e.target.value)}
+                                            className="border-none outline-0 pl-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 text-sm"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     )
                 }
 
                 <div className={"mt-16"}>
-                    <div className={"flex justify-center items-center text-theme-active cursor-pointer"}>
-                        <Pagination>
-                            <PaginationContent>
-                                <PaginationItem>
-                                    <PaginationPrevious/>
-                                </PaginationItem>
-                                <PaginationItem>
-                                    <PaginationLink>1</PaginationLink>
-                                </PaginationItem>
-                                <PaginationItem>
-                                    <PaginationNext/>
-                                </PaginationItem>
-                            </PaginationContent>
-                        </Pagination>
+                    <div className={""}>
+                        <Typography variant={"muted"}>
+                            {t("stage.title")}
+                        </Typography>
+                        <div className={"flex flex-wrap gap-4 mt-6"}>
+                            {
+                                stageAry.map((item, index) => (
+                                    <div
+                                        className={"bg-theme-light-bg rounded-full cursor-pointer text-[#666666] text-sm px-3 py-1 lg:px-6 lg:py-3"}
+                                        key={index}>
+                                        {item.label}
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    <div className={"mt-6"}>
+                        <Typography variant={"muted"}>
+                            {t("theme.title")}
+                        </Typography>
+                        <div className={"flex flex-wrap gap-4 mt-6"}>
+                            {
+                                themeAry.map((item, index) => (
+                                    <div
+                                        className={"bg-theme-light-bg rounded-full cursor-pointer text-[#666666] text-sm px-3 py-1 lg:px-6 lg:py-3"}
+                                        key={index}>
+                                        {item.label}
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+
+                    {
+                        filteredArticles.length > 0 ? (
+                            <div className={"grid mt-6 gap-4 lg:gap-8 grid-cols-2 lg:grid-cols-3"}>
+                                {
+                                    filteredArticles.map((item, index) => (
+                                        <BaseArticle key={index} {...item} />
+                                    ))
+                                }
+                            </div>
+                        ) : (
+                            <div className={"p-30 text-gray-500 grid-cols-1 text-center text-sm"}>
+                                {commonT("no-articles")}
+                            </div>
+                        )
+                    }
+
+                    <div className={"mt-16"}>
+                        <div className={"flex justify-center items-center text-theme-active cursor-pointer"}>
+                            <Pagination>
+                                <PaginationContent>
+                                    <PaginationItem>
+                                        <PaginationPrevious/>
+                                    </PaginationItem>
+                                    <PaginationItem>
+                                        <PaginationLink>1</PaginationLink>
+                                    </PaginationItem>
+                                    <PaginationItem>
+                                        <PaginationNext/>
+                                    </PaginationItem>
+                                </PaginationContent>
+                            </Pagination>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

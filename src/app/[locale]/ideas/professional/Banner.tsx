@@ -3,9 +3,9 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import Container from "@/components/Container";
 
 type Props = {
     placeholder?: string;
@@ -45,34 +45,36 @@ const Banner = () => {
     const t = useTranslations("Pages.ideas.professional.banner");
     return (
         <section className={"bg-[url(/images/ideas/professional-banner.png)] bg-cover bg-center p-4 lg:p-30 h-88 lg:h-[632px]"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h1"}
-                    className={"text-center !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title1")}
-                </Typography>
+                    <Typography
+                        variant={"h1"}
+                        className={"text-center !text-white"}
+                    >
+                        {t("title1")}
+                    </Typography>
 
-                <Typography
-                    variant={"h1"}
-                    className={"text-center mt-4 !text-white"}
-                >
-                    {t("title2")}
-                </Typography>
+                    <Typography
+                        variant={"h1"}
+                        className={"text-center mt-4 !text-white"}
+                    >
+                        {t("title2")}
+                    </Typography>
 
-                <Typography
-                    variant={"h4"}
-                    className={"font-medium text-center mx-auto mt-10 max-w-3xl !text-white"}
-                >
-                    {t("desc")}
-                </Typography>
-                <SearchBar placeholder={t("placeholder")} className={"mt-10"} />
-            </motion.div>
+                    <Typography
+                        variant={"h4"}
+                        className={"font-medium text-center mx-auto mt-10 max-w-3xl !text-white"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                    <SearchBar placeholder={t("placeholder")} className={"mt-10"}/>
+                </motion.div>
+            </Container>
         </section>
     );
 }

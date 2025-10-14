@@ -4,7 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
-
+import Container from "@/components/Container";
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -23,56 +23,58 @@ export default function Advantages() {
     ];
     return (
         <section className={"bg-[#000515] p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
-                    {
-                        ary.map((item, index) => (
-                            <div className={"col-span-12 lg:col-span-4"} key={index}>
-                                <img src={item.imageUrl} className={"object-cover"} alt=""/>
-                                <Typography
-                                    variant={"h5"}
-                                    className={"font-medium !text-white mt-4"}
-                                >
-                                    { item.title }
-                                </Typography>
-
-                                <Typography
-                                    variant={"muted"}
-                                    className={"!text-white mt-4"}
-                                >
-                                    { item.desc }
-                                </Typography>
-                            </div>
-                        ))
-                    }
-                </div>
-                <div className={"mt-8 lg:mt-16"}>
                     <Typography
-                        variant={"muted"}
-                        className={"font-medium text-center !text-[#666]"}
+                        variant={"h3"}
+                        className={"font-medium text-center !text-white"}
                     >
-                        { t("prompt") }
+                        {t("title")}
                     </Typography>
-                    <div className={"mt-4 lg:mt-10 flex justify-center"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active"}>
-                            { t("more") }
-                        </Button>
+                </motion.div>
+                <div className={"mt-16"}>
+                    <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
+                        {
+                            ary.map((item, index) => (
+                                <div className={"col-span-12 lg:col-span-4"} key={index}>
+                                    <img src={item.imageUrl} className={"object-cover"} alt=""/>
+                                    <Typography
+                                        variant={"h5"}
+                                        className={"font-medium !text-white mt-4"}
+                                    >
+                                        {item.title}
+                                    </Typography>
+
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"!text-white mt-4"}
+                                    >
+                                        {item.desc}
+                                    </Typography>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div className={"mt-8 lg:mt-16"}>
+                        <Typography
+                            variant={"muted"}
+                            className={"font-medium text-center !text-[#666]"}
+                        >
+                            {t("prompt")}
+                        </Typography>
+                        <div className={"mt-4 lg:mt-10 flex justify-center"}>
+                            <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active"}>
+                                {t("more")}
+                            </Button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

@@ -3,7 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 import { MoveRight } from "lucide-react";
 
 const fadeInUp: Variants = {
@@ -24,51 +24,53 @@ const Compass = () => {
     ];
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mt-8 "}
-                >
-                    {t("desc")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-8"}>
-                    {
-                        ary.map((item, index) => (
-                            <div className={"col-span-12 lg:col-span-4"} key={index}>
-                                <img src={item.imageUrl} className={"object-cover"} alt="" />
-                                <Typography variant={"h5"} className={"mt-6"}>
-                                    { item.title }
-                                </Typography>
-                                <Typography variant={"muted"} className={"mt-2"}>
-                                    { item.desc }
-                                </Typography>
-                                <Typography variant={"muted"} className={"mt-6 font-normal"}>
-                                    { item.prompt }
-                                </Typography>
-                                <div className={"flex items-center mt-6 cursor-pointer"}>
-                                    <Typography variant={"muted"}>
-                                        { t("view") }
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center mt-8 "}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-16"}>
+                    <div className={"grid grid-cols-12 gap-8"}>
+                        {
+                            ary.map((item, index) => (
+                                <div className={"col-span-12 lg:col-span-4"} key={index}>
+                                    <img src={item.imageUrl} className={"object-cover"} alt=""/>
+                                    <Typography variant={"h5"} className={"mt-6"}>
+                                        {item.title}
                                     </Typography>
-                                    <MoveRight className={"ml-4"} />
+                                    <Typography variant={"muted"} className={"mt-2"}>
+                                        {item.desc}
+                                    </Typography>
+                                    <Typography variant={"muted"} className={"mt-6 font-normal"}>
+                                        {item.prompt}
+                                    </Typography>
+                                    <div className={"flex items-center mt-6 cursor-pointer"}>
+                                        <Typography variant={"muted"}>
+                                            {t("view")}
+                                        </Typography>
+                                        <MoveRight className={"ml-4"}/>
+                                    </div>
                                 </div>
-                            </div>
-                        ))
-                    }
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

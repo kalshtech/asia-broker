@@ -3,6 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -17,25 +18,27 @@ const Banner = () => {
     const t = useTranslations("Pages.ideas.calendar.banner");
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h1"}
-                    className={"text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-                <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-10"}
-                >
-                    {t("desc")}
-                </Typography>
-            </motion.div>
+                    <Typography
+                        variant={"h1"}
+                        className={"text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                    <Typography
+                        variant={"large"}
+                        className={"font-medium text-center mx-auto mt-10"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+            </Container>
         </section>
     )
 }

@@ -816,7 +816,7 @@
             },
             "li6": {
               "title": "How are overnight swap fees charged?",
-              "desc": "Overnight swap interest applies to positions held overnight.\nSince the market is closed on weekends, Wednesday swaps are charged at triple rate to account for weekend holding costs."
+              "desc": "Overnight swap interest applies to positions held overnight. Since the market is closed on weekends, Wednesday swaps are charged at triple rate to account for weekend holding costs."
             }
           }
         }

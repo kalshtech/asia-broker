@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -18,48 +19,50 @@ const Banner = () => {
     const t = useTranslations("Pages.ideas.vps.banner");
     return (
         <section className={"bg-[url(/images/ideas/vps-banner.png)] bg-cover bg-center h-120 lg:h-[632px] p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h1"}
-                    className={"text-center !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title1")}
-                </Typography>
+                    <Typography
+                        variant={"h1"}
+                        className={"text-center !text-white"}
+                    >
+                        {t("title1")}
+                    </Typography>
 
-                <Typography
-                    variant={"h1"}
-                    className={"text-center mt-4 !text-white"}
-                >
-                    {t("title2")}
-                </Typography>
+                    <Typography
+                        variant={"h1"}
+                        className={"text-center mt-4 !text-white"}
+                    >
+                        {t("title2")}
+                    </Typography>
 
-                <Typography
-                    variant={"h4"}
-                    className={"font-medium text-center mt-10 !text-white"}
-                >
-                    {t("desc")}
-                </Typography>
-            </motion.div>
+                    <Typography
+                        variant={"h4"}
+                        className={"font-medium text-center mt-10 !text-white"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
 
-            <div className={"flex justify-center flex-col mt-20"}>
-                <div className={"flex justify-center"}>
-                    <Button className={"bg-theme-active px-8 h-10 rounded-full hover:bg-theme-active-hover"}>
-                        { t("btnText") }
-                    </Button>
+                <div className={"flex justify-center flex-col mt-20"}>
+                    <div className={"flex justify-center"}>
+                        <Button className={"bg-theme-active px-8 h-10 rounded-full hover:bg-theme-active-hover"}>
+                            {t("btnText")}
+                        </Button>
+                    </div>
+
+                    <Typography
+                        variant={"muted"}
+                        className={"font-medium text-center mt-10 !text-white"}
+                    >
+                        {t("muted")}
+                    </Typography>
                 </div>
-
-                <Typography
-                    variant={"muted"}
-                    className={"font-medium text-center mt-10 !text-white"}
-                >
-                    {t("muted")}
-                </Typography>
-            </div>
+            </Container>
         </section>
     )
 }

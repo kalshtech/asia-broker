@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import classnames from "classnames";
 import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -39,118 +40,121 @@ const Stream = (props: Props) => {
     const t = useTranslations("Pages.accounts.vic.stream");
     const { title, desc, col1, col2 = { isShowMore: true, backgroundUrl: "" } } = props;
     return (
-        <section className={"p-4 lg:p-30 max-w-[1400px] mx-auto"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+        <section className={"p-4 py-4 lg:py-30"}>
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    { title }
-                </Typography>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {title}
+                    </Typography>
 
-                {
-                    desc && (
-                        <Typography
-                            variant={"muted"}
-                            className={"font-medium text-center mt-6"}
-                        >
-                            { desc }
-                        </Typography>
-                    )
-                }
-            </motion.div>
-            <div className={"mt-8 lg:mt-16"}>
-                <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <Typography
-                            variant={"h4"}
-                            className={"font-medium max-w-md"}
-                        >
-                            { col1.title }
-                        </Typography>
+                    {
+                        desc && (
+                            <Typography
+                                variant={"muted"}
+                                className={"font-medium text-center mt-6"}
+                            >
+                                {desc}
+                            </Typography>
+                        )
+                    }
+                </motion.div>
+                <div className={"mt-8 lg:mt-16"}>
+                    <div className={"grid grid-cols-12 gap-8"}>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <Typography
+                                variant={"h4"}
+                                className={"font-medium max-w-md"}
+                            >
+                                {col1.title}
+                            </Typography>
 
-                        {
-                            col1.desc && (
-                                <Typography
-                                    variant={"large"}
-                                    className={"font-normal mt-4 lg:mt-10"}
-                                >
-                                    { col1.desc }
-                                </Typography>
-                            )
-                        }
-
-                        <ul className={"mt-4 lg:mt-10"}>
                             {
-                                col1.ulAry && col1.ulAry.map((item, index) => (
-                                    <li key={index} className={"flex items-center my-4"}>
-                                        <span className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"font-medium ml-2"}
-                                        >
-                                            {item.text}
-                                        </Typography>
-                                    </li>
-                                ))
-                            }
-                        </ul>
-
-                        {
-                            col1.prompt1 && (
-                                <Typography
-                                    variant={"muted"}
-                                    className={"!text-xs mt-8"}
-                                >
-                                    { col1.prompt1 }
-                                </Typography>
-                            )
-                        }
-
-                        {
-                            col1.prompt2 && (
-                                <Typography
-                                    variant={"muted"}
-                                    className={"font-medium mt-8"}
-                                >
-                                    { col1.prompt2 }
-                                </Typography>
-                            )
-                        }
-
-                    </div>
-                    <div className={"col-span-12 lg:col-span-6"}>
-                        <img
-                            src="/images/accounts/stream-logo.png"
-                            className={"w-full object-cover"}
-                            alt="logo"
-                            title={"logo"}
-                        />
-                        <div className={classnames(["bg-center bg-cover mt-6 h-90", col2.backgroundUrl])}>
-                            {
-                                col2.isShowMore && (
-                                    <div className={"flex justify-center items-center h-full flex-1 flex-col"}>
-                                        <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
-                                            {t("row.col2.apply")}
-                                        </Button>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"font-medium !text-white mt-4"}
-                                        >
-                                            {t("row.col2.desc")}
-                                        </Typography>
-                                    </div>
+                                col1.desc && (
+                                    <Typography
+                                        variant={"large"}
+                                        className={"font-normal mt-4 lg:mt-10"}
+                                    >
+                                        {col1.desc}
+                                    </Typography>
                                 )
                             }
+
+                            <ul className={"mt-4 lg:mt-10"}>
+                                {
+                                    col1.ulAry && col1.ulAry.map((item, index) => (
+                                        <li key={index} className={"flex items-center my-4"}>
+                                            <span
+                                                className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
+                                            <Typography
+                                                variant={"muted"}
+                                                className={"font-medium ml-2"}
+                                            >
+                                                {item.text}
+                                            </Typography>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+
+                            {
+                                col1.prompt1 && (
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"!text-xs mt-8"}
+                                    >
+                                        {col1.prompt1}
+                                    </Typography>
+                                )
+                            }
+
+                            {
+                                col1.prompt2 && (
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"font-medium mt-8"}
+                                    >
+                                        {col1.prompt2}
+                                    </Typography>
+                                )
+                            }
+
+                        </div>
+                        <div className={"col-span-12 lg:col-span-6"}>
+                            <img
+                                src="/images/accounts/stream-logo.png"
+                                className={"w-full object-cover"}
+                                alt="logo"
+                                title={"logo"}
+                            />
+                            <div className={classnames(["bg-center bg-cover mt-6 h-90", col2.backgroundUrl])}>
+                                {
+                                    col2.isShowMore && (
+                                        <div className={"flex justify-center items-center h-full flex-1 flex-col"}>
+                                            <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
+                                                {t("row.col2.apply")}
+                                            </Button>
+                                            <Typography
+                                                variant={"muted"}
+                                                className={"font-medium !text-white mt-4"}
+                                            >
+                                                {t("row.col2.desc")}
+                                            </Typography>
+                                        </div>
+                                    )
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

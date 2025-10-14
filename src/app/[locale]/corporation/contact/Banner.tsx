@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import {Button} from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -47,22 +48,25 @@ const Banner = () => {
                 </motion.div>
             </section>
             <div className={"bg-theme-active rounded-lg p-4 lg:py-10 lg:px-16 -mt-16 mx-4 lg:mx-30"}>
-                <div className={"flex items-center"}>
-                    <Typography
-                        variant={"h5"}
-                        className={"font-medium !text-white max-w-2xl "}
-                    >
-                        {t("tips")}
-                    </Typography>
-                    <div className={"ml-auto"}>
-                        <Button className={"px-8 h-10 rounded-full text-theme-active bg-white hover:bg-white"}>
-                            {t("view")}
-                        </Button>
-                        <Button className={"px-8 h-10 mt-4 lg:mt-0 lg:ml-4 rounded-full text-theme-active bg-transparent text-white border hover:bg-transparent"}>
-                            {t("join")}
-                        </Button>
+                <Container>
+                    <div className={"flex items-center"}>
+                        <Typography
+                            variant={"h5"}
+                            className={"font-medium !text-white max-w-2xl "}
+                        >
+                            {t("tips")}
+                        </Typography>
+                        <div className={"ml-auto"}>
+                            <Button className={"px-8 h-10 rounded-full text-theme-active bg-white hover:bg-white"}>
+                                {t("view")}
+                            </Button>
+                            <Button
+                                className={"px-8 h-10 mt-4 lg:mt-0 lg:ml-4 rounded-full text-theme-active bg-transparent text-white border hover:bg-transparent"}>
+                                {t("join")}
+                            </Button>
+                        </div>
                     </div>
-                </div>
+                </Container>
             </div>
         </div>
     )

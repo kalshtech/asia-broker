@@ -11,7 +11,7 @@ import { useRouter } from "@/i18n/navigation";
 import { useSearchParams } from "next/navigation";
 import {useMemo} from "react";
 import { Button } from "@/components/ui/button";
-
+import Container from "@/components/Container";
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -71,124 +71,126 @@ const HeatCharts = () => {
 
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("forex-title")}
-                </Typography>
-                <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-10"}
-                >
-                    {t("forex-desc")}
-                </Typography>
-                <div className={"mt-6 flex justify-center"}>
-                    <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                        {t("forex-explore")}
-                    </Button>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("forex-title")}
+                    </Typography>
+                    <Typography
+                        variant={"large"}
+                        className={"font-medium text-center mx-auto mt-10"}
+                    >
+                        {t("forex-desc")}
+                    </Typography>
+                    <div className={"mt-6 flex justify-center"}>
+                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                            {t("forex-explore")}
+                        </Button>
+                    </div>
+                </motion.div>
+                <div className={"mt-16 items-center hidden lg:flex"}>
+                    <Tabs value={tabActive}
+                          className={"flex"}
+                          onValueChange={handleToggleTabActive}
+                    >
+                        <TabsList className={"h-10"}>
+                            {
+                                tabList.map((item, index) => (
+                                    <TabsTrigger
+                                        key={index}
+                                        value={item.value}
+                                        className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                    >
+                                        {item.label}
+                                    </TabsTrigger>
+                                ))
+                            }
+                        </TabsList>
+                    </Tabs>
+                    <Tabs value={typeActive}
+                          className={"flex ml-auto"}
+                          onValueChange={handleToggleTypeActive}
+                    >
+                        <TabsList className={"h-10"}>
+                            <TabsTrigger value={"cross"}
+                                         className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
+                                Cross rates
+                            </TabsTrigger>
+                            <TabsTrigger value={"heatmap"}
+                                         className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
+                                Heatmap
+                            </TabsTrigger>
+                        </TabsList>
+                    </Tabs>
                 </div>
-            </motion.div>
-            <div className={"mt-16 items-center hidden lg:flex"}>
-                <Tabs value={tabActive}
-                      className={"flex"}
-                      onValueChange={handleToggleTabActive}
-                >
-                    <TabsList className={"h-10"}>
-                        {
-                            tabList.map((item, index) => (
-                                <TabsTrigger
-                                    key={index}
-                                    value={item.value}
-                                    className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
-                                >
-                                    {item.label}
-                                </TabsTrigger>
-                            ))
-                        }
-                    </TabsList>
-                </Tabs>
-                <Tabs value={typeActive}
-                      className={"flex ml-auto"}
-                      onValueChange={handleToggleTypeActive}
-                >
-                    <TabsList className={"h-10"}>
-                        <TabsTrigger value={"cross"}
-                                     className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
-                            Cross rates
-                        </TabsTrigger>
-                        <TabsTrigger value={"heatmap"}
-                                     className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
-                            Heatmap
-                        </TabsTrigger>
-                    </TabsList>
-                </Tabs>
-            </div>
-            <div className={"mt-4"}>
-                <TvForexHeatmap type={typeActive} currencies={currencies} locale={locale}/>
-            </div>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                className={"mt-8 lg:mt-30"}
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
-                >
-                    {t("stock-title")}
-                </Typography>
-                <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-4 lg:mt-10"}
-                >
-                    {t("stock-desc")}
-                </Typography>
-                <div className={"mt-6 flex justify-center"}>
-                    <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                        {t("stock-explore")}
-                    </Button>
+                <div className={"mt-4"}>
+                    <TvForexHeatmap type={typeActive} currencies={currencies} locale={locale}/>
                 </div>
-            </motion.div>
-            <div className={"mt-10"}>
-                <TvStockHeatmap/>
-            </div>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-                className={"mt-4 lg:mt-30"}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    className={"mt-8 lg:mt-30"}
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("crypto-title")}
-                </Typography>
-                <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mx-auto mt-4 lg:mt-10"}
-                >
-                    {t("crypto-desc")}
-                </Typography>
-                <div className={"mt-6 flex justify-center"}>
-                    <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                        {t("crypto-explore")}
-                    </Button>
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("stock-title")}
+                    </Typography>
+                    <Typography
+                        variant={"large"}
+                        className={"font-medium text-center mx-auto mt-4 lg:mt-10"}
+                    >
+                        {t("stock-desc")}
+                    </Typography>
+                    <div className={"mt-6 flex justify-center"}>
+                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                            {t("stock-explore")}
+                        </Button>
+                    </div>
+                </motion.div>
+                <div className={"mt-10"}>
+                    <TvStockHeatmap/>
                 </div>
-            </motion.div>
-            <div className={"mt-10"}>
-                <TvCryptoHeatmap/>
-            </div>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    className={"mt-4 lg:mt-30"}
+                >
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("crypto-title")}
+                    </Typography>
+                    <Typography
+                        variant={"large"}
+                        className={"font-medium text-center mx-auto mt-4 lg:mt-10"}
+                    >
+                        {t("crypto-desc")}
+                    </Typography>
+                    <div className={"mt-6 flex justify-center"}>
+                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                            {t("crypto-explore")}
+                        </Button>
+                    </div>
+                </motion.div>
+                <div className={"mt-10"}>
+                    <TvCryptoHeatmap/>
+                </div>
+            </Container>
         </section>
     )
 }

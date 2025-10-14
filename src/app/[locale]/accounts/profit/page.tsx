@@ -10,6 +10,7 @@ import Advance from "./Advance"
 import QuestionAnswer from "@/components/common/QuestionAnswer";
 import Tools from "@/components/common/Tools";
 
+
 export default async function Page() {
     const t = await getTranslations("Pages.accounts.profit");
     const QA_DATA = [

@@ -3,7 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -23,39 +23,42 @@ const Mechanism = () => {
     ];
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-16"}>
-                <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
-                    {
-                        ary.map((item, index) => (
-                            <div className={"flex-col flex items-center justify-center col-span-12 lg:col-span-4"} key={index}>
-                                <img src={item.imgUrl} className={"w-10 h-10 object-cover"} alt=""/>
-                                <Typography
-                                    variant={"large"}
-                                    className={"my-6"}
-                                >
-                                    { item.title }
-                                </Typography>
-                                <Typography variant={"p"}>
-                                    { item.desc }
-                                </Typography>
-                            </div>
-                        ))
-                    }
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-16"}>
+                    <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
+                        {
+                            ary.map((item, index) => (
+                                <div className={"flex-col flex items-center justify-center col-span-12 lg:col-span-4"}
+                                     key={index}>
+                                    <img src={item.imgUrl} className={"w-10 h-10 object-cover"} alt=""/>
+                                    <Typography
+                                        variant={"large"}
+                                        className={"my-6"}
+                                    >
+                                        {item.title}
+                                    </Typography>
+                                    <Typography variant={"p"}>
+                                        {item.desc}
+                                    </Typography>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

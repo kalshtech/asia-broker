@@ -8,6 +8,7 @@ import dynamic from "next/dynamic";
 import Highcharts from "highcharts/highstock";
 import { Options, SeriesLineOptions } from "highcharts";
 import classnames  from "classnames";
+import Container from "@/components/Container";
 
 // 动态加载 React 包装，避免 SSR 报错
 const HighchartsReact = dynamic(() => import("highcharts-react-official"), { ssr: false });
@@ -175,33 +176,35 @@ const Rates = () => {
 
     return (
         <section className={"bg-theme-light-bg p-4 lg:p-30"}>
-            <div className={"grid grid-cols-12 gap-4 lg:gap-20"}>
-                <div className={"col-span-12 lg:col-span-6"}>
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium"}
-                    >
-                        { t("title") }
-                    </Typography>
-                    <Typography variant={"p"} className={"mt-4 lg:mt-16"}>
-                        { t("desc1") }
-                    </Typography>
-                    <Typography variant={"p"} className={"mt-6"}>
-                        { t("desc2") }
-                    </Typography>
-                    <Typography variant={"p"} className={"mt-6"}>
-                        { t("desc3") }
-                    </Typography>
-                </div>
-                <div className={"col-span-12 lg:col-span-6"}>
-                    <Typography>
-                        { t("line-title") }
-                    </Typography>
-                    <div className={"mt-4 h-80"}>
-                        <SOFRHighcharts loading={loading} raw={raw} />
+            <Container>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-20"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
+                        <Typography
+                            variant={"h3"}
+                            className={"font-medium"}
+                        >
+                            {t("title")}
+                        </Typography>
+                        <Typography variant={"p"} className={"mt-4 lg:mt-16"}>
+                            {t("desc1")}
+                        </Typography>
+                        <Typography variant={"p"} className={"mt-6"}>
+                            {t("desc2")}
+                        </Typography>
+                        <Typography variant={"p"} className={"mt-6"}>
+                            {t("desc3")}
+                        </Typography>
+                    </div>
+                    <div className={"col-span-12 lg:col-span-6"}>
+                        <Typography>
+                            {t("line-title")}
+                        </Typography>
+                        <div className={"mt-4 h-80"}>
+                            <SOFRHighcharts loading={loading} raw={raw}/>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

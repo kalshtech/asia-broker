@@ -9,6 +9,7 @@ import Colleague from "./Colleague";
 import Tools from "@/components/common/Tools";
 import {TableCell, TableRow} from "@/components/ui/table";
 import classnames from "classnames";
+import Container from "@/components/Container";
 
 export default async function Page() {
     const t = await getTranslations("Pages.corporation.contact");

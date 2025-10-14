@@ -6,6 +6,7 @@ import {motion, Variants} from "framer-motion";
 import classnames from "classnames";
 import BaseArticle from "@/components/article/Base";
 import { CircleArrowRight } from "lucide-react";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -93,39 +94,41 @@ const Articles = () => {
     ];
     return (
         <section className={"px-4 pb-4 lg:px-30 lg:pb-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    { t("title") }
-                </Typography>
-            </motion.div>
-            <div className={""}>
-                <MultiSelectTabs/>
-                <div>
-                    <div className={"grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"}>
-                        {
-                            articlesAry.map((item, index) => (
-                                <BaseArticle key={index} {...item} />
-                            ))
-                        }
-                    </div>
-                    <div className={"mt-16"}>
-                        <div className={"flex justify-center items-center text-theme-active"}>
-                            <Typography>
-                                { t("more") }
-                            </Typography>
-                            <CircleArrowRight className={"ml-2"} />
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
+                </motion.div>
+                <div className={""}>
+                    <MultiSelectTabs/>
+                    <div>
+                        <div className={"grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"}>
+                            {
+                                articlesAry.map((item, index) => (
+                                    <BaseArticle key={index} {...item} />
+                                ))
+                            }
+                        </div>
+                        <div className={"mt-16"}>
+                            <div className={"flex justify-center items-center text-theme-active"}>
+                                <Typography>
+                                    {t("more")}
+                                </Typography>
+                                <CircleArrowRight className={"ml-2"}/>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

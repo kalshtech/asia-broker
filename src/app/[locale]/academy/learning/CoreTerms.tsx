@@ -10,6 +10,7 @@ import classnames from "classnames";
 import { Badge } from "@/components/ui/badge";
 import { X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -113,138 +114,115 @@ const CoreTerms = () => {
 
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mt-8 "}
-                >
-                    {t("desc")}
-                </Typography>
-                <div className={"mt-12 flex justify-center"}>
-                    <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
-                        {t("explore")}
-                    </Button>
-                </div>
-            </motion.div>
-            <div className={"mt-10"}>
-                <header className={"flex"}>
-                    <div className={"cursor-pointer"} onClick={() => handleToggleTabActive("term")}>
-                        <Typography variant={"muted"} className={classnames([{
-                            "text-theme-active": tabActive === "term"
-                        }])}>
-                            {t("btn.term")}
-                        </Typography>
-                        <Separator className={classnames(["mt-2", {
-                            "bg-theme-active": tabActive === "term"
-                        }])}/>
-                    </div>
-                    <div className={"ml-12 cursor-pointer"} onClick={() => handleToggleTabActive("theme")}>
-                        <Typography variant={"muted"} className={classnames([{
-                            "text-theme-active": tabActive === "theme"
-                        }])}>
-                            {t("btn.theme")}
-                        </Typography>
-                        <Separator className={classnames(["mt-2", {
-                            "bg-theme-active": tabActive === "theme"
-                        }])}/>
-                    </div>
-                </header>
-                <div className={"mt-10 relative"}>
-                    <Input
-                        className={"bg-theme-light-bg py-4 px-4 !text-base lg:!text-lg lg:py-7 lg:px-8"}
-                        placeholder={t("placeholder")}
-                        value={q}
-                        onChange={(e) => setQ(e.target.value)}
-                    />
-                    {q && (
-                        <X className={"absolute cursor-pointer right-4 top-4"} onClick={() => setQ("")}/>
-                    )}
-                </div>
-
-                <div className="flex flex-wrap items-center gap-2 border-b pb-4 mt-10">
-                    {ALPHABET.map((L) => {
-                        const enabled = lettersWithData.has(L);
-                        const isActive = activeLetter === L;
-                        return (
-                            <Button
-                                key={L}
-                                variant={isActive ? "default" : "ghost"}
-                                className={`h-6 w-6 lg:h-10 lg:w-10 p-0 text-lg ${!enabled ? "text-muted-foreground/50 cursor-not-allowed" : ""}`}
-                                disabled={!enabled}
-                                onClick={() => {
-                                    if (!enabled) return;
-                                    setActiveLetter((prev) => (prev === L ? null : L));
-                                }}
-                                aria-pressed={isActive}
-                            >
-                                {L}
-                            </Button>
-                        );
-                    })}
-                </div>
-
-                {searched.length === 0 && (
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center"}
+                    >
+                        {t("title")}
+                    </Typography>
                     <Typography
                         variant={"muted"}
-                        className={"py-10 text-center text-sm text-muted-foreground"}
+                        className={"text-center mt-8 "}
                     >
-                        { t("searchNodata") }
+                        {t("desc")}
                     </Typography>
-                )}
+                    <div className={"mt-12 flex justify-center"}>
+                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                            {t("explore")}
+                        </Button>
+                    </div>
+                </motion.div>
+                <div className={"mt-10"}>
+                    <header className={"flex"}>
+                        <div className={"cursor-pointer"} onClick={() => handleToggleTabActive("term")}>
+                            <Typography variant={"muted"} className={classnames([{
+                                "text-theme-active": tabActive === "term"
+                            }])}>
+                                {t("btn.term")}
+                            </Typography>
+                            <Separator className={classnames(["mt-2", {
+                                "bg-theme-active": tabActive === "term"
+                            }])}/>
+                        </div>
+                        <div className={"ml-12 cursor-pointer"} onClick={() => handleToggleTabActive("theme")}>
+                            <Typography variant={"muted"} className={classnames([{
+                                "text-theme-active": tabActive === "theme"
+                            }])}>
+                                {t("btn.theme")}
+                            </Typography>
+                            <Separator className={classnames(["mt-2", {
+                                "bg-theme-active": tabActive === "theme"
+                            }])}/>
+                        </div>
+                    </header>
+                    <div className={"mt-10 relative"}>
+                        <Input
+                            className={"bg-theme-light-bg py-4 px-4 !text-base lg:!text-lg lg:py-7 lg:px-8"}
+                            placeholder={t("placeholder")}
+                            value={q}
+                            onChange={(e) => setQ(e.target.value)}
+                        />
+                        {q && (
+                            <X className={"absolute cursor-pointer right-4 top-4"} onClick={() => setQ("")}/>
+                        )}
+                    </div>
 
-                {searched.length > 0 && (
-                    <section className="space-y-8 mt-10">
-                        {activeLetter ? (
-                            <div>
-                                <div className="flex items-center gap-3 mb-4">
-                                    <Typography variant={"h3"}>{activeLetter}</Typography>
-                                    <Badge variant="secondary">{filtered.length} {t("item")}</Badge>
-                                </div>
-                                {filtered.length === 0 ? (
-                                    <Typography
-                                        variant={"muted"}
-                                        className={"py-10 text-center text-sm text-muted-foreground"}
-                                    >
-                                        { t("nodata") }
-                                    </Typography>
-                                ) : (
-                                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                                        {filtered.map((it, itIndex) => (
-                                            <div key={itIndex}>
-                                                <Link href={"/"}>
-                                                    <Typography
-                                                        variant={"muted"}
-                                                        className={"!text-theme-active font-medium"}
-                                                    >
-                                                        {it.term} {`${it.translation}`}
-                                                    </Typography>
-                                                </Link>
-                                            </div>
-                                        ))}
+                    <div className="flex flex-wrap items-center gap-2 border-b pb-4 mt-10">
+                        {ALPHABET.map((L) => {
+                            const enabled = lettersWithData.has(L);
+                            const isActive = activeLetter === L;
+                            return (
+                                <Button
+                                    key={L}
+                                    variant={isActive ? "default" : "ghost"}
+                                    className={`h-6 w-6 lg:h-10 lg:w-10 p-0 text-lg ${!enabled ? "text-muted-foreground/50 cursor-not-allowed" : ""}`}
+                                    disabled={!enabled}
+                                    onClick={() => {
+                                        if (!enabled) return;
+                                        setActiveLetter((prev) => (prev === L ? null : L));
+                                    }}
+                                    aria-pressed={isActive}
+                                >
+                                    {L}
+                                </Button>
+                            );
+                        })}
+                    </div>
+
+                    {searched.length === 0 && (
+                        <Typography
+                            variant={"muted"}
+                            className={"py-10 text-center text-sm text-muted-foreground"}
+                        >
+                            {t("searchNodata")}
+                        </Typography>
+                    )}
+
+                    {searched.length > 0 && (
+                        <section className="space-y-8 mt-10">
+                            {activeLetter ? (
+                                <div>
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <Typography variant={"h3"}>{activeLetter}</Typography>
+                                        <Badge variant="secondary">{filtered.length} {t("item")}</Badge>
                                     </div>
-                                )}
-                            </div>
-                        ) : (
-                            <div className="space-y-8">
-                                {groupedEntries.map(([letter, list]) => (
-                                    <div key={letter} className="space-y-4">
-                                        <div className="flex items-center gap-3">
-                                            <Typography variant={"h3"}>{letter}</Typography>
-                                            <Badge variant="secondary">{list.length} {t("item")}</Badge>
-                                        </div>
+                                    {filtered.length === 0 ? (
+                                        <Typography
+                                            variant={"muted"}
+                                            className={"py-10 text-center text-sm text-muted-foreground"}
+                                        >
+                                            {t("nodata")}
+                                        </Typography>
+                                    ) : (
                                         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                                            {list.map((it, itIndex) => (
+                                            {filtered.map((it, itIndex) => (
                                                 <div key={itIndex}>
                                                     <Link href={"/"}>
                                                         <Typography
@@ -257,14 +235,39 @@ const CoreTerms = () => {
                                                 </div>
                                             ))}
                                         </div>
-                                        <Separator/>
-                                    </div>
-                                ))}
-                            </div>
-                        )}
-                    </section>
-                )}
-            </div>
+                                    )}
+                                </div>
+                            ) : (
+                                <div className="space-y-8">
+                                    {groupedEntries.map(([letter, list]) => (
+                                        <div key={letter} className="space-y-4">
+                                            <div className="flex items-center gap-3">
+                                                <Typography variant={"h3"}>{letter}</Typography>
+                                                <Badge variant="secondary">{list.length} {t("item")}</Badge>
+                                            </div>
+                                            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                                                {list.map((it, itIndex) => (
+                                                    <div key={itIndex}>
+                                                        <Link href={"/"}>
+                                                            <Typography
+                                                                variant={"muted"}
+                                                                className={"!text-theme-active font-medium"}
+                                                            >
+                                                                {it.term} {`${it.translation}`}
+                                                            </Typography>
+                                                        </Link>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <Separator/>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </section>
+                    )}
+                </div>
+            </Container>
         </section>
     )
 }

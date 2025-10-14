@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -24,7 +25,7 @@ const Profit = () => {
     ];
     return (
         <section className={"py-30 px-4 lg:p-30"}>
-            <div className={"max-w-[1400px] mx-auto"}>
+            <Container>
                 <motion.div
                     variants={fadeInUp}
                     initial="hidden"
@@ -86,7 +87,7 @@ const Profit = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

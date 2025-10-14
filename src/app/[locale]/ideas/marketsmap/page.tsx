@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { getTranslations } from "next-intl/server";
 import HeatCharts from "./HeatCharts";
 import {redirect} from "next/navigation";
 import Interpretation from "./Interpretation";
@@ -10,7 +9,6 @@ type Props = {
     params: { locale: string };
     searchParams: Record<string, string | string[] | undefined>;
 };
-
 
 export default async function Page({ params, searchParams }: Props) {
     const { locale } = await params;

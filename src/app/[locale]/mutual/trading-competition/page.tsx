@@ -1,5 +1,4 @@
 import * as React from 'react';
-import {getTranslations} from "next-intl/server";
 import Banner from "./Banner";
 import Slide from "./Slide";
 import Professional from "./Professional";

@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import dayjs from "dayjs";
+import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -122,68 +123,69 @@ const Entry = () => {
     ]
     return (
         <section className={"p-4 lg:p-30"}>
-            <motion.div
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true, amount: 0.5}}
-            >
-                <Typography
-                    variant={"h3"}
-                    className={"font-medium text-center !text-white"}
+            <Container>
+                <motion.div
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
                 >
-                    {t("title")}
-                </Typography>
-                <Typography
-                    variant={"muted"}
-                    className={"text-center mx-auto mt-8 !text-white"}
-                >
-                    {t("desc")}
-                </Typography>
-            </motion.div>
-            <div className={"mt-4 lg:mt-16"}>
-                <div>
-                    <AccountProvince
-                        title={t("card.col1.title")}
-                        desc={t("card.col1.desc")}
-                        btnAry={btnAry}
-                        poolText={t("card.weeklyPool")}
-                        number={"$5,000"}
-                        type={"weekly"}
-                    />
+                    <Typography
+                        variant={"h3"}
+                        className={"font-medium text-center !text-white"}
+                    >
+                        {t("title")}
+                    </Typography>
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center mx-auto mt-8 !text-white"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                </motion.div>
+                <div className={"mt-4 lg:mt-16"}>
+                    <div>
+                        <AccountProvince
+                            title={t("card.col1.title")}
+                            desc={t("card.col1.desc")}
+                            btnAry={btnAry}
+                            poolText={t("card.weeklyPool")}
+                            number={"$5,000"}
+                            type={"weekly"}
+                        />
+                    </div>
+                    <div className={"mt-10"}>
+                        <AccountProvince
+                            title={t("card.col2.title")}
+                            desc={t("card.col2.desc")}
+                            btnAry={btnAry}
+                            poolText={t("card.monthlyPool")}
+                            number={"$20,000"}
+                            type={"monthly"}
+                        />
+                    </div>
+                    <div className={"mt-10"}>
+                        <AccountProvince
+                            title={t("card.col3.title")}
+                            desc={t("card.col3.desc")}
+                            btnAry={btnAry}
+                            poolText={t("card.monthlyPool")}
+                            number={"$20,000"}
+                            type={"monthly"}
+                        />
+                    </div>
+                    <div className={"mt-10"}>
+                        <AccountProvince
+                            title={t("card.col4.title")}
+                            desc={t("card.col4.desc")}
+                            btnAry={btnAry}
+                            poolText={t("card.monthlyPool")}
+                            number={"$20,000"}
+                            type={"monthly"}
+                        />
+                    </div>
                 </div>
-                <div className={"mt-10"}>
-                    <AccountProvince
-                        title={t("card.col2.title")}
-                        desc={t("card.col2.desc")}
-                        btnAry={btnAry}
-                        poolText={t("card.monthlyPool")}
-                        number={"$20,000"}
-                        type={"monthly"}
-                    />
-                </div>
-                <div className={"mt-10"}>
-                    <AccountProvince
-                        title={t("card.col3.title")}
-                        desc={t("card.col3.desc")}
-                        btnAry={btnAry}
-                        poolText={t("card.monthlyPool")}
-                        number={"$20,000"}
-                        type={"monthly"}
-                    />
-                </div>
-                <div className={"mt-10"}>
-                    <AccountProvince
-                        title={t("card.col4.title")}
-                        desc={t("card.col4.desc")}
-                        btnAry={btnAry}
-                        poolText={t("card.monthlyPool")}
-                        number={"$20,000"}
-                        type={"monthly"}
-                    />
-                </div>
-            </div>
-
+            </Container>
         </section>
     )
 }

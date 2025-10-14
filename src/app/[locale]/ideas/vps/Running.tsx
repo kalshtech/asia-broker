@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import Container from "@/components/Container";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -42,46 +42,48 @@ const AutoTrade = () => {
 
     return (
         <section ref={sectionRef} className={"p-4 lg:p-30"}>
-            <div className={"grid grid-cols-12 gap-4 lg:gap-8 max-w-[1400px] mx-auto"}>
-                <div className={"col-span-12 lg:col-span-6"} >
-                    <div className={"flex flex-col"} ref={leftRef}>
-                        <Typography
-                            variant={"h3"}
-                            className={"font-medium"}
-                        >
-                            { t("title") }
-                        </Typography>
-
-                        <Typography
-                            variant={"lead"}
-                            className={"font-medium mt-4 lg:mt-10"}
-                        >
-                            { t("midst") }
-                        </Typography>
-
-                        <div className={"flex mt-4 lg:mt-10"}>
-                            <div className={"w-0.5 h-4 bg-theme-active"}></div>
+            <Container>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
+                    <div className={"col-span-12 lg:col-span-6"}>
+                        <div className={"flex flex-col"} ref={leftRef}>
                             <Typography
-                                variant={"small"}
-                                className={"font-medium block ml-2"}
+                                variant={"h3"}
+                                className={"font-medium"}
                             >
-                                { t("desc") }
+                                {t("title")}
                             </Typography>
+
+                            <Typography
+                                variant={"lead"}
+                                className={"font-medium mt-4 lg:mt-10"}
+                            >
+                                {t("midst")}
+                            </Typography>
+
+                            <div className={"flex mt-4 lg:mt-10"}>
+                                <div className={"w-0.5 h-4 bg-theme-active"}></div>
+                                <Typography
+                                    variant={"small"}
+                                    className={"font-medium block ml-2"}
+                                >
+                                    {t("desc")}
+                                </Typography>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={"col-span-12 lg:col-span-6"}>
+                        <div className={"flex-1 flex justify-center"} ref={rightRef}>
+                            <Image
+                                src={"/images/ideas/vps-running.png"}
+                                width={380}
+                                height={320}
+                                alt={"globe"}
+                                title={"globe"}
+                            />
                         </div>
                     </div>
                 </div>
-                <div className={"col-span-12 lg:col-span-6"}>
-                    <div className={"flex-1 flex justify-center"} ref={rightRef}>
-                        <Image
-                            src={"/images/ideas/vps-running.png"}
-                            width={380}
-                            height={320}
-                            alt={"globe"}
-                            title={"globe"}
-                        />
-                    </div>
-                </div>
-            </div>
+            </Container>
         </section>
     )
 }
