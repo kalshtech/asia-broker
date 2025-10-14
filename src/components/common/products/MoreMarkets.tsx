@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
@@ -11,7 +12,7 @@ type Props = {
     imageUrl: string;
 };
 
-export default async function MoreMarkets({ title, desc, midst, btnText, imageUrl }: Props) {
+export default function MoreMarkets({ title, desc, midst, btnText, imageUrl }: Props) {
     return (
         <section className={`bg-cover bg-center px-4 mt-10 py-8 lg:py-16 lg:mt-20 lg:px-30 ${imageUrl}`}>
             <Container>

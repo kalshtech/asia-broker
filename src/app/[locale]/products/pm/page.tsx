@@ -1,21 +1,30 @@
 import * as React from 'react';
 import { getTranslations } from "next-intl/server";
 import Banner from "@/components/common/products/Banner";
-import Commission from "@/components/common/products/Commission";
 import MoreMarkets from "@/components/common/products/MoreMarkets";
 import Guide from "@/components/common/Guide";
 import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import Markets from "@/components/common/products/Markets";
 import Profession from "@/components/common/products/Profession";
+import MetaProfession from "@/components/common/products/MetaProfession";
+import MetaCommission from "./MetaCommission";
+import MetaMoreMarkets from "./MetaMoreMarkets";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.pm");
 
     const GuideAry = [
-        { url: "/images/products/crypto-swiper1.png", title: t("guide.row.col2.span1.title"), description: t("guide.row.col2.span1.desc") },
-        { url: "/images/products/crypto-swiper2.png", title: t("guide.row.col2.span2.title"), description: t("guide.row.col2.span2.desc") },
-        { url: "/images/products/crypto-swiper3.png", title: t("guide.row.col2.span3.title"), description: t("guide.row.col2.span3.desc") },
+        { url: "/images/products/pm-swiper1.png", title: t("guide.row.col2.span1.title"), description: t("guide.row.col2.span1.desc") },
+        { url: "/images/products/pm-swiper2.png", title: t("guide.row.col2.span2.title"), description: t("guide.row.col2.span2.desc") },
+        { url: "/images/products/pm-swiper3.png", title: t("guide.row.col2.span3.title"), description: t("guide.row.col2.span3.desc") },
+    ];
+
+    const rowAry = [
+        { imageUrl: "/images/products/future-professional1.png", title: t("professional.row.col1.title"), desc: t("professional.row.col1.desc") },
+        { imageUrl: "/images/products/future-professional2.png", title: t("professional.row.col2.title"), desc: t("professional.row.col2.desc") },
+        { imageUrl: "/images/products/future-professional3.png", title: t("professional.row.col3.title"), desc: t("professional.row.col3.desc") },
+        { imageUrl: "/images/products/future-professional4.png", title: t("professional.row.col4.title"), desc: t("professional.row.col4.desc") },
     ];
 
     const mainList = [
@@ -107,24 +116,12 @@ export default async function Page() {
                 desc={t("markets.desc")}
                 trade={t("markets.trade")}
             />
-            <Commission
-                title={t("commission.title")}
-                desc={t("commission.desc")}
-                more={t("commission.more")}
-                theme={"light"}
-                imageUrl={"bg-[url(/images/products/pm-commission-background.png)]"}
-            />
-            <MoreMarkets
-                title={t("moreMarket.title")}
-                desc={t("moreMarket.desc")}
-                midst={t("moreMarket.midst")}
-                btnText={t("moreMarket.btnText")}
-                imageUrl={"bg-[url(/images/products/pm-market-background.png)]"}
-            />
-
+            <MetaProfession rowAry={rowAry} title={t("professional.title")} />
+            <MetaCommission/>
+            <MetaMoreMarkets/>
             <Guide
                 title={t("guide.title")}
-                left={{ title: t("guide.row.col1.title"), desc: t("guide.row.col1.desc"), more: t("guide.row.col1.more") }}
+                left={{ title: t("guide.row.col1.title"), midst: t("guide.row.col1.midst"), desc: t("guide.row.col1.desc"), more: t("guide.row.col1.more") }}
                 prevEl={"crypto-custom-prev"}
                 nextEl={"crypto-custom-next"}
                 ary={GuideAry}

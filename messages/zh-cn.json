@@ -740,6 +740,33 @@
           "desc": "通过差价合约，交易黄金、白银、铂金等全球金属市场资产。支持做多/做空与持仓过夜，无需实物交割，也无额外仓储与交割成本。",
           "btnText": "立即交易贵金属"
         },
+        "professional": {
+          "title": "Professional Precious Metals Trading Experience",
+          "row": {
+            "col1": {
+              "title": "Comprehensive Product Coverage",
+              "desc": "Access gold, silver, platinum, and palladium contracts with full market depth and flexibility."
+            },
+            "col2": {
+              "title": "Stable Execution Under Volatility",
+              "desc": "A low-latency matching engine ensures continuous liquidity and reliable performance even in high-frequency markets."
+            },
+            "col3": {
+              "title": "Real-Time Margin & Risk Monitoring",
+              "desc": "Dynamic margin calculation and live risk alerts provide precise position control and capital protection."
+            },
+            "col4": {
+              "title": "Global Clearing & Security Framework",
+              "desc": "Clearing through trusted international partners guarantees secure settlement and asset safety."
+            }
+          }
+        },
+        "meta": {
+          "title": "Trade Global Precious Metals — Capture Every Market Move",
+          "desc": "Trade gold, silver, and platinum CFDs with Asia Future Trading. Enjoy flexible long and short positions, overnight holding, and zero delivery or storage costs.",
+          "trade": "Trade Precious Metals",
+          "open": "Open Demo Account"
+        },
         "guide": {
           "title": "贵金属CFD 投资指南",
           "row": {

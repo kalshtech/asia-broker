@@ -712,18 +712,18 @@
       },
       "pm": {
         "banner": {
-          "title": "现货贵金属",
-          "midst": "黄金 · 白银，专业交易者的避险之选",
-          "desc": "在全球不确定性加剧的时代，Asia Future Trading 为您提供低延迟撮合、稳定流动性的黄金/白银CFD交易平台。以低至 0.1 毫秒的执行速度，把握贵金属市场的每一次关键波动。"
+          "title": "Precious Metals",
+          "midst": "Gold & Silver — The Preferred Hedge for Professional Traders",
+          "desc": "Asia Future Trading delivers a low-latency, high-liquidity CFD platform for gold and silver — enabling precise execution and real-time access to global markets."
         },
         "markets": {
-          "title": "搜索你想交易的贵金属合约",
-          "desc": "输入如 XAUUSD、XAGUSD，可查看实时买入/卖出价格。",
+          "title": "Search for the Precious Metals Contract You Want to Trade",
+          "desc": "Enter symbols such as XAUUSD or XAGUSD to view real-time bid and ask prices.",
           "btn": {
-            "main": "贵金属",
-            "second": "基础金属"
+            "main": "Precious Metals",
+            "second": "Base Metals"
           },
-          "trade": "立即开户，开始交易贵金属"
+          "trade": "Open Account"
         },
         "commission": {
           "title": "0 佣金 · 极低点差 · 灵活杠杆",
@@ -736,13 +736,41 @@
           "desc": "通过差价合约，交易黄金、白银、铂金等全球金属市场资产。支持做多/做空与持仓过夜，无需实物交割，也无额外仓储与交割成本。",
           "btnText": "立即交易贵金属"
         },
-        "guide": {
-          "title": "贵金属CFD 投资指南",
+        "professional": {
+          "title": "Professional Precious Metals Trading Experience",
           "row": {
             "col1": {
-              "title": "为什么专业投资者选择贵金属 CFD？",
-              "desc": "避险价值 · 多空灵活 · 成本更优",
-              "more": "了解更多关于贵金属CFD"
+              "title": "Comprehensive Product Coverage",
+              "desc": "Access gold, silver, platinum, and palladium contracts with full market depth and flexibility."
+            },
+            "col2": {
+              "title": "Stable Execution Under Volatility",
+              "desc": "A low-latency matching engine ensures continuous liquidity and reliable performance even in high-frequency markets."
+            },
+            "col3": {
+              "title": "Real-Time Margin & Risk Monitoring",
+              "desc": "Dynamic margin calculation and live risk alerts provide precise position control and capital protection."
+            },
+            "col4": {
+              "title": "Global Clearing & Security Framework",
+              "desc": "Clearing through trusted international partners guarantees secure settlement and asset safety."
+            }
+          }
+        },
+        "meta": {
+          "title": "Trade Global Precious Metals — Capture Every Market Move",
+          "desc": "Trade gold, silver, and platinum CFDs with Asia Future Trading.\nEnjoy flexible long and short positions, overnight holding, and zero delivery or storage costs.",
+          "trade": "Trade Precious Metals",
+          "open": "Open Demo Account"
+        },
+        "guide": {
+          "title": "Precious Metals CFD Trade Guide",
+          "row": {
+            "col1": {
+              "title": "Precious Metals CFD Trade Guide",
+              "midst": "Why Professional Investors Choose Precious Metals CFDs",
+              "desc": "Trade gold, silver, and platinum CFDs with flexible leverage and no delivery costs — hedge inflation or capture global price movements.",
+              "more": "Learn More"
             },
             "col2": {
               "span1": {
@@ -763,32 +791,32 @@
         "qa": {
           "ul": {
             "li1": {
-              "title": "贵金属差价合约（CFD）是什么？",
-              "desc": "差价合约是一种金融衍生品，允许您通过预测贵金属（如黄金、白银）的价格涨跌进行交易，而无需持有实物资产。"
+              "title": "What is a Precious Metals CFD?",
+              "desc": "A Contract for Difference (CFD) is a financial derivative that allows you to speculate on the price movements of precious metals — such as gold and silver — without owning the physical asset."
             },
             "li2": {
-              "title": "我可以交易哪些贵金属品种？",
-              "desc": "目前平台支持黄金（XAU/USD）、白银（XAG/USD）、铂金（XPT/USD）、钯金（XPD/USD）等主流贵金属。"
+              "title": "Which precious metals can I trade?",
+              "desc": "Our platform currently supports major precious metals including Gold (XAU/USD), Silver (XAG/USD), Platinum (XPT/USD), and Palladium (XPD/USD)."
             },
             "li3": {
-              "title": "贵金属CFD交易时间是怎样的？",
-              "desc": "贵金属市场几乎 24 小时开放（周一至周五），但可能会因节假日或系统维护有短暂停盘，建议以交易平台时间为准。"
+              "title": "What are the trading hours for Precious Metals CFDs?",
+              "desc": "The precious metals market operates nearly 24 hours a day, Monday to Friday, though trading may pause briefly during holidays or scheduled maintenance. Please refer to the platform’s official time for accuracy."
             },
             "li4": {
-              "title": "贵金属CFD的主要交易成本有哪些？",
-              "desc": "主要包括：",
-              "text-1": "点差（买卖价差）",
-              "text-2": "隔夜利息（Swap）",
-              "text-3": "杠杆带来的保证金要求",
-              "prompt": "平台不收取额外佣金，交易成本透明。"
+              "title": "What are the main trading costs for Precious Metals CFDs?",
+              "desc": "Key costs include:",
+              "text-1": "Spread (the difference between bid and ask price)",
+              "text-2": "Overnight swap interest",
+              "text-3": "Margin requirements based on leverage",
+              "prompt": "Asia Future Trading charges no additional commissions, ensuring full transparency in trading costs."
             },
             "li5": {
-              "title": "贵金属点差是多少？是否固定？",
-              "desc": "贵金属点差为浮动点差，会根据市场流动性与波动性变化。正常行情下，黄金点差可低至 0.2，白银点差低至 0.3。"
+              "title": "How tight are the spreads for precious metals? Are they fixed?",
+              "desc": "Precious metals spreads are variable, depending on market liquidity and volatility. Under normal conditions, gold spreads can be as low as 0.2, and silver spreads as low as 0.3."
             },
             "li6": {
-              "title": "隔夜利息是如何收取的？",
-              "desc": "隔夜利息适用于持仓过夜的订单。由于周末市场休市，周三的隔夜利息会按三倍计收，以覆盖周末持仓成本。"
+              "title": "How are overnight swap fees charged?",
+              "desc": "Overnight swap interest applies to positions held overnight.\nSince the market is closed on weekends, Wednesday swaps are charged at triple rate to account for weekend holding costs."
             }
           }
         }

@@ -65,7 +65,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                         {
                             left.midst && (
                                 <Typography
-                                    variant={"h5"}
+                                    variant={"p"}
                                     className={"font-medium mt-2 lg:mt-4"}
                                 >
                                     {left.midst}
