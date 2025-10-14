@@ -34,11 +34,11 @@
     "view": "查看",
     "bid": "Bid",
     "ask": "Ask",
-    "qa-title": "你可能关心的问题",
+    "qa-title": "Frequently Asked Questions",
     "join-community": "加入帆船积木社区，专属客户经理为您提供更详细的信息",
     "join-community-btn": "加入社群",
-    "search": "搜索",
-    "search-placeholder": "搜索你想交易的产品",
+    "search": "Search",
+    "search-placeholder": "Search the product you want to trade",
     "searching": "搜索中...",
     "search-articles": "搜索文章",
     "no-articles": "未找到匹配的文章",
@@ -93,43 +93,43 @@
       }
     },
     "profession": {
-      "title": "像专业人士一样交易！",
-      "desc": "使用多种工具交易差价合约，包括热门外汇、加密货币、贵金属、能源、股票&ETF、期货合约，轻松体验全球市场。",
+      "title": "Trade Global Markets with AFT. Built for Professionals.",
+      "desc": "Trade global markets with multi-asset CFDs — Forex, Crypto, Metals, Energy, Stocks & Futures, all on one seamless platform.",
       "row": {
         "col1": {
-          "title": "外汇",
-          "desc1": "交易全球主要货币对，如美元、欧元、英镑、日元等，全天候参与全球最大金融市场。",
-          "desc2": "Asia Future Trading 提供极速撮合与优质流动性，点差具竞争力，支持 G10 及新兴市场货币。",
-          "btnText": "探索外汇市场"
+          "title": "Forex",
+          "desc1": "Trade the world’s most liquid market.",
+          "desc2": "Access major and emerging currency pairs with ultra-fast execution, deep liquidity, and competitive spreads across both G10 and EM currencies.",
+          "btnText": "Explore Forex Markets"
         },
         "col2": {
-          "title": "加密货币",
-          "desc1": "支持 BTC、ETH、DOGE、BNB、OKB 等主流币种，7×24 全天候交易。",
-          "desc2": "Asia Future Trading 提供稳定执行与低成本接入，助力用户以极具竞争力的成本参与加密市场。",
-          "btnText": "探索加密货币市场"
+          "title": "Cryptocurrencies",
+          "desc1": "Trade leading crypto CFDs 24/7.",
+          "desc2": "Access BTC, ETH, DOGE, BNB, and other major coins with flexible leverage and institutional-grade liquidity — all with low trading costs.",
+          "btnText": "Explore Forex Markets"
         },
         "col3": {
-          "title": "贵金属",
-          "desc1": "交易黄金、白银等贵金属差价合约，对冲通胀风险或抓住行情波动机会。",
-          "desc2": "我们为您提供极低点差、高流动性的黄金/白银CFD产品。",
-          "btnText": "探索贵金属市场"
+          "title": "Precious Metals",
+          "desc1": "Hedge, diversify, or capture volatility.",
+          "desc2": "Trade gold, silver, and platinum CFDs with tight spreads, high liquidity, and zero storage or delivery costs.",
+          "btnText": "Explore Forex Markets"
         },
         "col4": {
-          "title": "能源",
-          "desc1": "布局原油与天然气市场，捕捉全球能源价格波动中的机会。支持WTI原油、布伦特原油、天然气等热门品种，把握宏观行情波动，适合关注全球地缘与通胀预期的投资者。",
-          "btnText": "探索能源市场"
+          "title": "Energy Markets",
+          "desc1": "Seize opportunities in global energy.",
+          "btnText": "Explore Forex Markets"
         },
         "col5": {
-          "title": "股票&ETF",
-          "desc1": "无须持股，灵活交易全球热门资产。",
-          "desc2": "提供美股科技股、ETF指数基金等多样化产品，支持T+0、双向交易，是投机与配置的高效工具。",
-          "btnText": "探索股票 & ETF市场"
+          "title": "Stocks & ETFs",
+          "desc1": "Access equity and index CFDs worldwide.",
+          "desc2": "Trade global stocks, tech shares, and ETF indices long or short, with flexible leverage and efficient T+0 settlement.",
+          "btnText": "Explore Forex Markets"
         },
         "col6": {
-          "title": "期货合约",
-          "desc1": "不受交割限制的期货体验。",
-          "desc2": "涵盖股指、商品、货币等多个市场的期货合约CFD，支持弹性杠杆与双向交易，助您快速建仓与对冲风险。",
-          "btnText": "探索期货合约市场"
+          "title": "Futures CFDs",
+          "desc1": "Trade futures-style CFDs without restrictions.",
+          "desc2": "Access global indices, commodities, and currency futures — ideal for hedging, diversification, and short-term strategies.",
+          "btnText": "Explore Forex Markets"
         }
       }
     }
@@ -795,18 +795,45 @@
       },
       "energy": {
         "banner": {
-          "title": "能源",
-          "midst": "以极具竞争力的成本与高频执行速度，交易全球能源心跳",
-          "desc": "以极具竞争力的成本与高频执行速度，交易WTI原油、布伦特原油、天然气等热门能源差价合约（CFD），应对通胀、战争、供需紧张等全球风险，灵活做多或做空，捕捉能源资产价格波动机会。"
+          "title": "Energy",
+          "midst": "Trade Global Energy Markets with Competitive Costs and Lightning-Fast Execution",
+          "desc": "With competitive costs and lightning-fast execution, trade WTI, Brent, and Natural Gas CFDs to capture global opportunities driven by volatility, supply, and geopolitics."
         },
         "markets": {
-          "title": "搜索你想交易的能源品种",
-          "desc": "输入如 WTIUSD、NGASUSD，即可查看实时买入/卖出价格。",
+          "title": "Search for the Energy Contract You Want to Trade",
+          "desc": "Enter symbols such as WTIUSD or NGASUSD to view real-time bid and ask prices.",
           "btn": {
-            "main": "原油类",
-            "second": "天然气类"
+            "main": "Crude Oil",
+            "second": "Natural Gas"
           },
-          "trade": "立即开户，开始交易能源"
+          "trade": "Open Account"
+        },
+        "professional": {
+          "title": "Professional Energy CFD Trading Experience",
+          "row": {
+            "col1": {
+              "title": "Comprehensive Market Coverage",
+              "desc": "Access global benchmarks including WTI, Brent, and Natural Gas CFDs, enabling cross-market diversification and flexible portfolio allocation."
+            },
+            "col2": {
+              "title": "Institutional-Grade Matching & Execution",
+              "desc": "Our low-latency order engine ensures stable execution under high volatility, supporting both short-term and trend-based strategies."
+            },
+            "col3": {
+              "title": "High Leverage & Capital Efficiency",
+              "desc": "Trade with leverage up to 1:2000, optimizing capital usage across directional or hedging positions."
+            },
+            "col4": {
+              "title": "No Physical Delivery & T+0 Flexibility",
+              "desc": "All energy products are traded as CFDs — no delivery cycles, no storage costs, and unlimited daily trading opportunities."
+            }
+          }
+        },
+        "meta": {
+          "title": "Trade Global Energy Markets — Fast, Stable, Efficient",
+          "desc": "Asia Future Trading provides ultra-low latency execution and high-frequency matching. Trade WTI, Brent, and Natural Gas CFDs with USD margin — no delivery cycles, full intraday flexibility.",
+          "trade": "Trade Energy Products",
+          "open": "Open Demo Account"
         },
         "commission": {
           "title": "0 佣金 · 极低点差 · 灵活杠杆",
@@ -819,12 +846,12 @@
           "btnText": "立即交易能源产品"
         },
         "guide": {
-          "title": "能源CFD 投资指南",
+          "title": "Energy CFD Trade Guide",
           "row": {
             "col1": {
-              "title": "为什么越来越多交易者选择能源 CFD？",
-              "desc": "高波动性 · 双向交易 · 无交割负担",
-              "more": "阅读更多能源CFD交易指南"
+              "title": "Why More Traders Choose Energy CFDs",
+              "desc": "Trade WTI, Brent, and Natural Gas CFDs with high liquidity and no delivery cycles — seize volatility in global energy markets.",
+              "more": "Learn More"
             },
             "col2": {
               "span1": {
@@ -845,40 +872,36 @@
         "qa": {
           "ul": {
             "li1": {
-              "title": "我可以交易哪些能源类差价合约？",
-              "desc": "我们目前支持WTI原油（USOIL）、布伦特原油（UKOIL）与天然气（NATGAS/USD）等主流能源CFD品种，均支持做多与做空，适合捕捉行情波动机会。"
+              "title": "What energy CFDs can I trade?",
+              "desc": "We currently offer WTI Crude Oil (USOIL), Brent Crude Oil (UKOIL), and Natural Gas (NATGAS/USD) — all supporting long and short positions to capture opportunities in market volatility."
             },
             "li2": {
-              "title": "能源产品的交易时间是怎样的？",
-              "desc": "能源市场支持几乎全天候交易。例如：",
-              "text-1": "WTI原油和布伦特原油：周一至周五 24小时（除短暂结算时间）",
-              "text-2": "天然气：主要集中在美盘时段活跃",
-              "text-3": "具体时间请参考您的交易平台。"
+              "title": "What are the trading hours for energy CFDs?",
+              "desc": "The energy market operates nearly 24 hours from Monday to Friday, with short settlement breaks.",
+              "text-1": "WTI & Brent Crude: 24-hour trading (Mon–Fri)",
+              "text-2": "Natural Gas: Most active during the U.S. session",
+              "text-3": "Please check your trading platform for exact times."
             },
             "li3": {
               "title": "原油和天然气的点差是多少？",
               "desc": "点差为浮动机制，依据市场流动性动态变化。在正常波动环境下，WTI点差可低至 0.03，天然气点差低至 0.02。高波动或低流动性时点差可能扩大。"
             },
             "li4": {
-              "title": "能源交易对新闻是否敏感？",
-              "desc": "非常敏感。能源品种尤其受以下因素影响显著："
+              "title": "Are energy CFDs sensitive to news events?",
+              "desc": "Yes — energy markets are highly reactive to global news such as:",
+              "text-1": "OPEC meetings and production statements",
+              "text-2": "Geopolitical tensions (e.g., Middle East conflicts)",
+              "text-3": "U.S. crude inventory data (EIA/API)",
+              "text-4": "Weather conditions affecting gas demand",
+              "text-5": "Use economic calendars and headline monitoring to plan strategies effectively."
             },
             "li5": {
-              "title": "贵金属点差是多少？是否固定？",
-              "desc": "贵金属点差为浮动点差，会根据市场流动性与波动性变化。正常行情下，黄金点差可低至 0.2，白银点差低至 0.3。",
-              "text-1": "OPEC会议/减产声明",
-              "text-2": "地缘政治冲突（如中东局势）",
-              "text-3": "美国原油库存数据（EIA/API）",
-              "text-4": "天气变化（如寒潮影响天然气）",
-              "text-5": "建议结合财经日历与新闻头条制定交易策略。"
-            },
-            "li6": {
-              "title": "如何控制能源CFD交易风险？",
-              "desc": "平台提供完整的风险管理工具：",
-              "text-1": "设置止盈止损（TP/SL）",
-              "text-2": "支持追踪止损",
-              "text-3": "开启负余额保护，防止穿仓",
-              "text-4": "同时建议合理设置杠杆，并避免高波动时段重仓交易。"
+              "title": "How can I manage trading risks?",
+              "desc": "Asia Future Trading provides complete risk management tools, including:",
+              "text-1": "Take Profit / Stop Loss orders",
+              "text-2": "Trailing Stop function",
+              "text-3": "Negative balance protection",
+              "text-4": "Always manage leverage prudently and avoid heavy positions during volatile periods."
             }
           }
         }

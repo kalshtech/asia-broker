@@ -8,6 +8,8 @@ import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import Markets from "@/components/common/products/Markets";
 import Profession from "@/components/common/products/Profession";
+import MetaProfession from "./MetaProfession";
+import MetaCommission from "./MetaCommission";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.energy");
@@ -31,6 +33,13 @@ export default async function Page() {
     const marketTabList = [
         { label: t("markets.btn.main"), value: "main" },
         { label: t("markets.btn.second"), value: "second" }
+    ];
+
+    const rowAry = [
+        { imageUrl: "/images/products/future-professional1.png", title: t("professional.row.col1.title"), desc: t("professional.row.col1.desc") },
+        { imageUrl: "/images/products/future-professional2.png", title: t("professional.row.col2.title"), desc: t("professional.row.col2.desc") },
+        { imageUrl: "/images/products/future-professional3.png", title: t("professional.row.col3.title"), desc: t("professional.row.col3.desc") },
+        { imageUrl: "/images/products/future-professional4.png", title: t("professional.row.col4.title"), desc: t("professional.row.col4.desc") },
     ];
 
     const QA_DATA = [
@@ -59,11 +68,24 @@ export default async function Page() {
         },
         {
             question: t("qa.ul.li4.title"),
-            answer: t("qa.ul.li4.desc")
+            answer: (
+                <div className="text-muted-foreground leading-[28px] space-y-3">
+                    <p>
+                        {t("qa.ul.li4.desc")}
+                    </p>
+                    <ul className="list-disc pl-6 space-y-1">
+                        <li>{t("qa.ul.li4.text-1")}</li>
+                        <li>{t("qa.ul.li4.text-2")}</li>
+                        <li>{t("qa.ul.li4.text-3")}</li>
+                        <li>{t("qa.ul.li4.text-4")}</li>
+                        <li>{t("qa.ul.li4.text-5")}</li>
+                    </ul>
+                </div>
+            ),
         },
         {
             question: t("qa.ul.li5.title"),
-            answer: (
+            answer:  (
                 <div className="text-muted-foreground leading-[28px] space-y-3">
                     <p>
                         {t("qa.ul.li5.desc")}
@@ -73,23 +95,6 @@ export default async function Page() {
                         <li>{t("qa.ul.li5.text-2")}</li>
                         <li>{t("qa.ul.li5.text-3")}</li>
                         <li>{t("qa.ul.li5.text-4")}</li>
-                        <li>{t("qa.ul.li5.text-5")}</li>
-                    </ul>
-                </div>
-            ),
-        },
-        {
-            question: t("qa.ul.li6.title"),
-            answer:  (
-                <div className="text-muted-foreground leading-[28px] space-y-3">
-                    <p>
-                        {t("qa.ul.li6.desc")}
-                    </p>
-                    <ul className="list-disc pl-6 space-y-1">
-                        <li>{t("qa.ul.li6.text-1")}</li>
-                        <li>{t("qa.ul.li6.text-2")}</li>
-                        <li>{t("qa.ul.li6.text-3")}</li>
-                        <li>{t("qa.ul.li6.text-4")}</li>
                     </ul>
                 </div>
             ),
@@ -112,13 +117,8 @@ export default async function Page() {
                 desc={t("markets.desc")}
                 trade={t("markets.trade")}
             />
-            <Commission
-                title={t("commission.title")}
-                desc={t("commission.desc")}
-                more={t("commission.more")}
-                theme={"light"}
-                imageUrl={"bg-[url(/images/products/energy-commission-background.png)]"}
-            />
+            <MetaProfession/>
+            <MetaCommission/>
             <MoreMarkets
                 title={t("moreMarket.title")}
                 desc={t("moreMarket.desc")}

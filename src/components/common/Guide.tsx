@@ -54,7 +54,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                         {title}
                     </Typography>
                 </motion.div>
-                <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16"}>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-8 mt-4 lg:mt-16"}>
                     <div className={"col-span-12 lg:col-span-2"}>
                         <Typography
                             variant={"h4"}

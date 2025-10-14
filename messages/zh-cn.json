@@ -812,6 +812,33 @@
           },
           "trade": "立即开户，开始交易能源"
         },
+        "professional": {
+          "title": "Professional Energy CFD Trading Experience",
+          "row": {
+            "col1": {
+              "title": "Comprehensive Market Coverage",
+              "desc": "Access global benchmarks including WTI, Brent, and Natural Gas CFDs, enabling cross-market diversification and flexible portfolio allocation."
+            },
+            "col2": {
+              "title": "Institutional-Grade Matching & Execution",
+              "desc": "Our low-latency order engine ensures stable execution under high volatility, supporting both short-term and trend-based strategies."
+            },
+            "col3": {
+              "title": "High Leverage & Capital Efficiency",
+              "desc": "Trade with leverage up to 1:2000, optimizing capital usage across directional or hedging positions."
+            },
+            "col4": {
+              "title": "No Physical Delivery & T+0 Flexibility",
+              "desc": "All energy products are traded as CFDs — no delivery cycles, no storage costs, and unlimited daily trading opportunities."
+            }
+          }
+        },
+        "meta": {
+          "title": "Trade Global Energy Markets — Fast, Stable, Efficient",
+          "desc": "Asia Future Trading provides ultra-low latency execution and high-frequency matching. Trade WTI, Brent, and Natural Gas CFDs with USD margin — no delivery cycles, full intraday flexibility.",
+          "trade": "Trade Energy Products",
+          "open": "Open Demo Account"
+        },
         "commission": {
           "title": "0 佣金 · 极低点差 · 灵活杠杆",
           "desc": "日内交易、套期保值、宏观趋势跟踪，我们都为你准备好了稳定流畅的交易环境。",
@@ -849,15 +876,15 @@
         "qa": {
           "ul": {
             "li1": {
-              "title": "我可以交易哪些能源类差价合约？",
-              "desc": "我们目前支持WTI原油（USOIL）、布伦特原油（UKOIL）与天然气（NATGAS/USD）等主流能源CFD品种，均支持做多与做空，适合捕捉行情波动机会。"
+              "title": "What energy CFDs can I trade?",
+              "desc": "We currently offer WTI Crude Oil (USOIL), Brent Crude Oil (UKOIL), and Natural Gas (NATGAS/USD) — all supporting long and short positions to capture opportunities in market volatility."
             },
             "li2": {
-              "title": "能源产品的交易时间是怎样的？",
-              "desc": "能源市场支持几乎全天候交易。例如：",
-              "text-1": "WTI原油和布伦特原油：周一至周五 24小时（除短暂结算时间）",
-              "text-2": "天然气：主要集中在美盘时段活跃",
-              "text-3": "具体时间请参考您的交易平台。"
+              "title": "What are the trading hours for energy CFDs?",
+              "desc": "The energy market operates nearly 24 hours from Monday to Friday, with short settlement breaks.",
+              "text-1": "WTI & Brent Crude: 24-hour trading (Mon–Fri)",
+              "text-2": "Natural Gas: Most active during the U.S. session",
+              "text-3": "Please check your trading platform for exact times."
             },
             "li3": {
               "title": "原油和天然气的点差是多少？",
@@ -865,18 +892,14 @@
             },
             "li4": {
               "title": "能源交易对新闻是否敏感？",
-              "desc": "非常敏感。能源品种尤其受以下因素影响显著："
-            },
-            "li5": {
-              "title": "贵金属点差是多少？是否固定？",
-              "desc": "贵金属点差为浮动点差，会根据市场流动性与波动性变化。正常行情下，黄金点差可低至 0.2，白银点差低至 0.3。",
+              "desc": "是的——能源市场对全球新闻反应强烈，例如：",
               "text-1": "OPEC会议/减产声明",
               "text-2": "地缘政治冲突（如中东局势）",
               "text-3": "美国原油库存数据（EIA/API）",
               "text-4": "天气变化（如寒潮影响天然气）",
               "text-5": "建议结合财经日历与新闻头条制定交易策略。"
             },
-            "li6": {
+            "li5": {
               "title": "如何控制能源CFD交易风险？",
               "desc": "平台提供完整的风险管理工具：",
               "text-1": "设置止盈止损（TP/SL）",

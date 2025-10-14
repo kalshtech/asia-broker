@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
@@ -13,7 +15,7 @@ type Props = {
     theme?: 'dark' | 'light';
 }
 
-export default async function Commission({ title, desc, midst, more, imageUrl, theme = 'light' }: Props) {
+export default function Commission({ title, desc, midst, more, imageUrl, theme = 'light' }: Props) {
     return (
         <section className={"w-full flex px-4 mt-4 lg:mt-30 lg:px-30"}>
             <Container orientation={"horizontal"}>

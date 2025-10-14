@@ -56,7 +56,7 @@ const Process = (props: Props) => {
                                 <div className={classnames(["col-span-12", `lg:col-span-${12 / ary.length}`])}
                                      key={index}
                                 >
-                                    <div className={classnames(["py-10 px-8 rounded-lg", {
+                                    <div className={classnames(["py-10 px-8 rounded-lg h-full", {
                                         "bg-theme-light-bg": isLight,
                                         "bg-[#1F2538]": !isLight
                                     }])}>

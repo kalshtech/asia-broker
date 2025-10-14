@@ -26,7 +26,7 @@ export function Typography({ variant, className, children, ...props }: Typograph
         case "h1":
             return (
                 <h1
-                    className={cn("scroll-m-20 font-semibold font-extrabold tracking-tight text-4xl lg:text-6xl", className)}
+                    className={cn("scroll-m-20 font-semibold tracking-tight text-4xl lg:text-6xl", className)}
                     {...props}
                 >
                     {children}
