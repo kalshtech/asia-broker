@@ -19,7 +19,7 @@
     "change": "Change",
     "marketCap": "市值",
     "volume": "Volume",
-    "productName": "产品名称",
+    "productName": "Product Name",
     "mockTrade": "模拟交易",
     "transfer": "立即入金",
     "all": "全部",
@@ -1046,20 +1046,21 @@
       },
       "future": {
         "banner": {
-          "title": "全球期货差价合约交易",
-          "midst": "追踪黄金、原油、美债等核心大宗商品与利率资产的市场波动，灵活布局全球期货市场",
-          "desc": "通过差价合约（CFD）参与全球期货品种交易，无需实物交割、支持杠杆与双向操作，让你在关键行情中快速进出、精准执行。"
+          "title": "Trade Futures CFDs",
+          "midst": "Capture opportunities across commodities, energy, metals, and interest rate assets.",
+          "desc": "Join the world’s most liquid futures markets with no delivery, no limits, and flexible leverage. Execute instantly. Manage risk efficiently. Trade the trend, not the contract."
         },
         "markets": {
-          "title": "搜索你想要的期货品种",
-          "desc": "输入如 ES、CL、GC、6E 等期货代码，可查看实时买入/卖出价格。",
+          "title": "Search for Futures Contracts You Want to Trade",
+          "desc": "Enter symbols like ES, CL, GC, or 6E to view real-time prices and contract details.",
+          "search": "Browse by category below to explore global futures markets.",
           "btn": {
-            "main": "外汇类",
-            "second": "股指类",
-            "other": "能源与金属类",
-            "other-meta": "农产品与债券类"
+            "main": "Currency Futures",
+            "second": "Index Futures",
+            "other": "Energy & Metal Futures",
+            "other-meta": "Agri & Rate Futures"
           },
-          "trade": "立即开户，开始交易期货"
+          "trade": "Start Trading Futures Now"
         },
         "professional": {
           "title": "Institutional-Grade Forex Trading, Accessible to All",
@@ -1086,31 +1087,37 @@
             }
           }
         },
+        "meta": {
+          "title": "Trade Global Futures Markets — Flexible, Secure, Intelligent",
+          "desc": "Access global futures CFDs across indices, Forex, commodities, and bonds — all settled with no delivery cycles. Enjoy ultra-low latency execution, margin discounts up to 80%, and full intraday flexibility through institutional-grade infrastructure.",
+          "trade": "Trade Energy Products",
+          "open": "Open Demo Account"
+        },
         "moreMarket": {
           "title": "快速接入全球期货市场",
           "desc": "Asia Future Trading 提供涵盖全球主流市场的期货差价合约（CFD）产品，覆盖外汇、股指、大宗商品、国债与农产品等核心资产类别。 无论你是短线交易者、策略研究者还是套期保值者，只需一个账户，即可参与全球主流期货行情，捕捉涨跌双向机会。",
           "btnText": "立即交易期货CFD"
         },
         "guide": {
-          "title": "期货 CFD 投资指南",
+          "title": "Futures CFD Trade Guide",
           "row": {
             "col1": {
-              "title": "低门槛 · 高自由度 · 打开全球期货市场的理想之门",
-              "desc": "差价合约（CFD）让个人投资者也能参与全球主流期货市场，实现多空灵活交易、T+0 快速操作，适配多种交易策略与目标。",
-              "more": "了解更多关于期货"
+              "title": "",
+              "desc": "Trade global indices, commodities, and Forex via futures-style CFDs — no expiry, instant settlement, and flexible long–short access.",
+              "more": "Learn More"
             },
             "col2": {
               "span1": {
-                "title": "多样化资产参与",
-                "desc": "涵盖股指、原油、黄金、外汇、国债、农产品等多个核心类别"
+                "title": "Diverse Asset Participation",
+                "desc": "Trade across indices, crude oil, gold, forex, bonds, and agricultural commodities.Gain exposure to key sectors and markets with a single trading platform."
               },
               "span2": {
-                "title": "放大灵活性与效率",
-                "desc": "无需大额保证金即可参与主流期货合约。"
+                "title": "High Leverage and Capital Efficiency",
+                "desc": "Access major global futures markets without large margin requirements.\nEnhance your capital utilization while maintaining control over your exposure.。"
               },
               "span3": {
-                "title": "利用波动性与短期机会",
-                "desc": "通过 T+0 当日买卖机制与无实物交割限制"
+                "title": "Capture Volatility and Short-Term Opportunities",
+                "desc": "Leverage T+0 execution and CFD-based trading for intra-day flexibility.\nReact quickly to price movements and short-term macro shifts."
               }
             }
           }
@@ -1118,28 +1125,28 @@
         "qa": {
           "ul": {
             "li1": {
-              "title": "期货 CFD 和传统期货有什么区别？",
-              "desc": "期货 CFD（差价合约）允许你基于标的期货合约的价格波动进行交易，而无需交割实物或履约到期。\n它更灵活，支持小额交易、灵活杠杆，适合日内与策略型交易者。"
+              "title": "What’s the difference between Futures CFDs and traditional futures?",
+              "desc": "Futures CFDs (Contracts for Difference) let you trade on the price movements of futures without taking physical delivery or holding the contract until expiry.\n They offer more flexibility, smaller trade sizes, and dynamic leverage — ideal for intraday and strategy-based traders."
             },
             "li2": {
-              "title": "支持哪些主流期货品种？",
-              "desc": "我们平台通过 MT5 交易账户支持多个交易所的期货 CFD 产品，包括但不限于：",
-              "text-1": "CME：黄金、原油、标普500、纳指、欧元、日元等",
-              "text-2": "HKEX：恒生指数、小型恒生、恒科指数等",
-              "text-3": "EUREX：德国 DAX、Stoxx 50、德国国债等",
-              "text-4": "具体产品列表可在交易平台内搜索相关代码，如 ES、NQ、CL、GC、HSI 等。"
+              "title": "Which major futures products are supported?",
+              "desc": "Our MT5 platform supports a wide range of exchange-traded Futures CFDs, including but not limited to:",
+              "text-1": "CME: Gold, Crude Oil, S&P 500, NASDAQ, EUR/USD, JPY/USD",
+              "text-2": "HKEX: Hang Seng Index, Mini Hang Seng, H-Shares Index",
+              "text-3": "EUREX: DAX, Stoxx 50, German Bund",
+              "prompt": "You can check detailed product codes directly within the MT5 platform — e.g., ES, NQ, CL, GC, HSI."
             },
             "li3": {
-              "title": "为什么官网上无法查看期货报价？只能在 MT5 上操作？",
-              "desc": "为了保障用户体验与合规运营，期货类差价合约产品的实时报价与交易信息将通过 MetaTrader 5（MT5）专业平台提供。出于合规与信息透明的考量，我们未在官网直接展示此类产品报价，敬请理解。如需查看，请立即开立账户并下载 MT5 客户端。"
+              "title": "Why can’t I view futures quotes directly on the official website?",
+              "desc": "To ensure a professional-grade user experience and comply with exchange data regulations, all real-time quotes and executions for Futures CFDs are provided through MetaTrader 5 (MT5). Due to licensing and transparency requirements, some contract data cannot be displayed publicly on our website. For live access, please open an account and log in to your MT5 terminal."
             },
             "li4": {
-              "title": "期货 CFD 支持 T+0 吗？",
-              "desc": "是的，我们几乎所有期货差价合约产品支持 T+0 当日买入卖出，无需等待结算，适合日内交易者。"
+              "title": "Do Futures CFDs support T+0 trading?",
+              "desc": "Yes. All our listed Futures CFD products support T+0 intraday trading, allowing you to buy and sell within the same day — no delivery or overnight settlement required. Perfect for short-term and active traders."
             },
             "li5": {
-              "title": "能做空吗？有没有杠杆？",
-              "desc": "完全可以。期货 CFD 支持双向交易（做多/做空）及最高 1:2000 杠杆，适配不同风险偏好与策略风格。"
+              "title": "Can I short Futures CFDs? Is leverage available?",
+              "desc": "Absolutely. Futures CFDs support both long and short positions, with leverage up to 1:2000, depending on product type and account category. You can flexibly manage your exposure to match your risk appetite and strategy."
             }
           }
         }

@@ -1058,6 +1058,7 @@
         "markets": {
           "title": "搜索你想要的期货品种",
           "desc": "输入如 ES、CL、GC、6E 等期货代码，可查看实时买入/卖出价格。",
+          "search": "按以下类别浏览以探索全球期货市场",
           "btn": {
             "main": "外汇类",
             "second": "股指类",
@@ -1090,6 +1091,12 @@
               "desc": "所有期货产品均为差价合约形式，无持仓限制，进出自由，策略不设限。"
             }
           }
+        },
+        "meta": {
+          "title": "Trade Global Futures Markets — Flexible, Secure, Intelligent",
+          "desc": "Access global futures CFDs across indices, Forex, commodities, and bonds — all settled with no delivery cycles. Enjoy ultra-low latency execution, margin discounts up to 80%, and full intraday flexibility through institutional-grade infrastructure.",
+          "trade": "Trade Energy Products",
+          "open": "Open Demo Account"
         },
         "moreMarket": {
           "title": "快速接入全球期货市场",
@@ -1132,7 +1139,7 @@
               "text-1": "CME：黄金、原油、标普500、纳指、欧元、日元等",
               "text-2": "HKEX：恒生指数、小型恒生、恒科指数等",
               "text-3": "EUREX：德国 DAX、Stoxx 50、德国国债等",
-              "text-4": "具体产品列表可在交易平台内搜索相关代码，如 ES、NQ、CL、GC、HSI 等。"
+              "prompt": "具体产品列表可在交易平台内搜索相关代码，如 ES、NQ、CL、GC、HSI 等。"
             },
             "li3": {
               "title": "为什么官网上无法查看期货报价？只能在 MT5 上操作？",

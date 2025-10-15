@@ -8,6 +8,8 @@ import Guide from "@/components/common/Guide";
 import Row from "@/components/common/products/Row";
 import MoreMarkets from "@/components/common/products/MoreMarkets";
 import Profession from "@/components/common/products/Profession";
+import MetaProfession from "@/components/common/products/MetaProfession";
+import MetaCommission from "@/components/common/products/MetaCommission";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.future");
@@ -99,8 +101,10 @@ export default async function Page() {
                         <li>{t("qa.ul.li2.text-1")}</li>
                         <li>{t("qa.ul.li2.text-2")}</li>
                         <li>{t("qa.ul.li2.text-3")}</li>
-                        <li>{t("qa.ul.li2.text-4")}</li>
                     </ul>
+                    <p>
+                        {t("qa.ul.li2.prompt")}
+                    </p>
                 </div>
             ),
         },
@@ -137,13 +141,14 @@ export default async function Page() {
                 desc={t("markets.desc")}
                 trade={t("markets.trade")}
                 type={"future"}
+                placeholder={t("markets.search")}
             />
-            <Row ary={rowAry} title={t("professional.title")} />
-            <MoreMarkets
-                title={t("moreMarket.title")}
-                desc={t("moreMarket.desc")}
-                btnText={t("moreMarket.btnText")}
-                imageUrl={"bg-[url(/images/products/future-market-background.png)]"}
+            <MetaProfession rowAry={rowAry}
+                            title={t("professional.title")}
+            />
+            <MetaCommission
+                languageLocal={"Pages.products.future"}
+                backgroundImage={"bg-[url(/images/products/future-market-background.png)]"}
             />
             <Guide
                 title={t("guide.title")}

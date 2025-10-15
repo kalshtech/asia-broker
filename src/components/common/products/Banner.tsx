@@ -32,8 +32,8 @@ export default async function Banner({ title, description, midst, imageUrl, tran
                     </Typography>
 
                     <Typography
-                        variant={"h3"}
-                        className={classnames(["!font-medium !mt-8", {
+                        variant={"h4"}
+                        className={classnames(["!font-medium !mt-8 max-w-xl", {
                             "!text-white": isLight,
                             "!text-black": !isLight,
                         }])}
@@ -43,7 +43,7 @@ export default async function Banner({ title, description, midst, imageUrl, tran
 
                     <Typography
                         variant={"muted"}
-                        className={classnames(["!mt-8 max-w-[560px]", {
+                        className={classnames(["!mt-8 max-w-xl", {
                             "!text-white": isLight,
                             "!text-black": !isLight,
                         }])}

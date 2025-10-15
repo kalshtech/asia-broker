@@ -5,6 +5,7 @@ import {motion, Variants} from "framer-motion";
 import { Button } from "@/components/ui/button";
 import SimpleSwiper from "@/components/common/products/SimpleSwiper";
 import Container from "@/components/Container";
+import classnames from "classnames";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -38,6 +39,7 @@ type Props = {
 };
 
 const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
+    console.log(left, 111222)
     return (
         <section className={"p-4 lg:p-30"}>
             <Container>
@@ -74,7 +76,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                         }
                         {
                             left.desc && (
-                                <Typography variant={"muted"} className={"mt-4 lg:mt-8"}>
+                                <Typography variant={"muted"} className={classnames([left.title ?? "mt-4 lg:mt-8"])}>
                                     {left.desc}
                                 </Typography>
                             )

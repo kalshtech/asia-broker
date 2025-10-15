@@ -51,11 +51,12 @@ type Props = {
     tabList?: TabItem[];
     trade: string;
     type?: string;
+    placeholder?: string;
 };
 
 const Markets = (props: Props) => {
     const CommonT = useTranslations("Common");
-    const { mainRaw, secondRaw, otherRaw, title, desc, tabList, trade, other4Raw, type = "elementary" } = props;
+    const { mainRaw, secondRaw, otherRaw, title, desc, tabList, trade, other4Raw, type = "elementary", placeholder } = props;
 
     const [ tabActive, setTabActive ] = React.useState<string>("main");
     const [ rawData, setRawData ] = React.useState<RawItem[]>(mainRaw);
@@ -152,7 +153,7 @@ const Markets = (props: Props) => {
                     }
                 </motion.div>
                 <div className={"mt-4 lg:mt-16"}>
-                    <SimpleSearch onSelect={(opt) => console.log("picked:", opt)}/>
+                    <SimpleSearch placeholder={placeholder} onSelect={(opt) => console.log("picked:", opt)}/>
                 </div>
                 {
                     tabList && (

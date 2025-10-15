@@ -18,11 +18,12 @@ type Props = {
     emptyText?: string;
     className?: string;
     onSelect?: (opt: Option) => void;
+    placeholder?: string;
 };
 
 export default function SimpleRemoteSearch(props: Props) {
-    const { minChars = 1, debounceMs = 300, emptyText = "No Data", className, onSelect } = props;
     const t = useTranslations("Common");
+    const { minChars = 1, debounceMs = 300, emptyText = "No Data", className, onSelect, placeholder = t("search-placeholder") } = props;
     const [query, setQuery] = useState("");
     const [display, setDisplay] = useState(""); // 选中后回填
     const [options, setOptions] = useState<Option[]>([]);
@@ -95,7 +96,7 @@ export default function SimpleRemoteSearch(props: Props) {
         <div ref={wrapRef} className={`relative max-w-3xl mx-auto ${className ?? ""}`}>
             <Input
                 value={display || query}
-                placeholder={t("search-placeholder")}
+                placeholder={placeholder}
                 onFocus={() => setFocused(true)}
                 onBlur={() => setFocused(false)}
                 onChange={(e) => {
