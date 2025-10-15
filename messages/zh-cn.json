@@ -1,14 +1,14 @@
 {
   "Common": {
-    "register": "Open Account",
-    "startTrade": "Start Trading",
-    "usStock": "Stocks & ETFs",
-    "forex": "Forex",
-    "metals": "Precious Metals",
-    "energy": "Energy",
-    "futures": "Futures",
-    "crypto": "Crypto",
-    "code": "symbol",
+    "register": "立即开户",
+    "startTrade": "立即交易",
+    "usStock": "股票 & ETFs",
+    "forex": "外汇",
+    "metals": "贵金属",
+    "energy": "能源",
+    "futures": "期货合约",
+    "crypto": "数字货币",
+    "code": "代码",
     "miniChart": "迷你走势",
     "price": "价格",
     "close": "最新价",
@@ -361,102 +361,102 @@
         "left": {
           "classic": {
             "name": "Classic 经典账户",
-            "title": "Your all-access starting point. Built for everyone.",
-            "desc": "Classic 经典账户，适合所有人支持美元和美分账户双模式轻松起步，$100入金即可"
+            "title": "Classic 经典账户，适合所有人 ",
+            "desc": "支持美元和美分账户双模式轻松起步，$100 入金即可"
           },
           "platinum": {
-            "name": "Platinum Account",
-            "title": "Step into the world of professional trading.",
-            "desc": "Unlock lower spreads, faster execution, and exclusive benefits — all starting from just $5,000."
+            "name": "Platinum 铂金账户",
+            "title": "Platinum 铂金账户 — 专业交易者的战场 ",
+            "desc": "入金 $2,500 起步，极致执行成本 + 专属支持"
           },
           "vic": {
-            "name": "VIC Account",
-            "title": "Join the AFT VIC Club.",
-            "desc": "Unlock elite trading privileges with institutional-grade infrastructure. Starting from $100,000."
+            "name": "VIC 账户",
+            "title": "加入 Asia Future Trading VIC Club，尊享特权",
+            "desc": "入金 $100,000 即可解锁顶级服务与个性化解决方案"
           }
         },
         "right": {
           "swiper1": {
             "1": {
-              "title": "Low Barrier · Quick Start · Demo Account Ready",
-              "description": "Get started in global markets with just $100. Cent Accounts let you explore real trading environments using small capital, with demo accounts available for easy onboarding."
+              "title": "低门槛 · 快速上手· 支持模拟账户申请",
+              "description": "美分账户加持，小资金也能体验真实市场，最低 $100 入金即可开启全球交易之旅"
             },
             "2": {
-              "title": "Zero Commission · Transparent Costs",
-              "description": "Trade with no commission fees. Only pay the spread — floating as low as 1.2 to 1.8 pips across major assets like FX, gold, and indices."
+              "title": "零佣金 · 透明成本",
+              "description": "0 佣金，只需承担点差成本，浮动点差低至 1.2–1.8 pip，涵盖外汇、黄金、指数等主流品种"
             },
             "3": {
-              "title": "Learn & Grow · Community Support",
-              "description": "Join the Sail & Blocks community to access beginner bootcamps, strategy Q&A, trading challenges, and ongoing education resources."
+              "title": "学习与成长 · 社群支持",
+              "description": "自动加入 Sail & Blocks 帆船积木社区，获取 新手训练营、策略问答、交易挑战赛 等丰富资源"
             },
             "4": {
-              "title": "Cent Account Exclusive Competitions",
-              "description": "Enter weekly trading contests tailored for Cent Account users. Earn real cash prizes and rewards — perfect for both new and experienced traders."
+              "title": "美分账户专属大赛",
+              "description": "每周 美分账户交易大赛，赢取现金奖励与积分，让新手与老手都能享受交易乐趣"
             }
           },
           "swiper2": {
             "1": {
-              "title": "Institutional Pricing · Better Fills",
+              "title": "机构级报价 · 更优的价格",
               "ul": {
-                "1": "Access global Tier-1 liquidity providers",
-                "2": "Supports block trades, EAs, and high-frequency strategies",
-                "3": "Millisecond-level matching to reduce slippage"
+                "1": "接入全球顶级流动性提供商",
+                "2": "支持大宗交易、EA 高频策略",
+                "3": "毫秒级撮合，减少滑点"
               }
             },
             "2": {
-              "title": "Platinum Routing · Execution at Speed",
+              "title": "铂金专线 · 极速执行",
               "ul": {
-                "1": "Direct connectivity to Equinix financial data centers",
-                "2": "Millisecond order routing with priority queuing",
-                "3": "Reliable fills even for high-volume orders"
+                "1": "专属高速服务器直连 Equinix 金融中心",
+                "2": "毫秒级订单传输，优先排队执行",
+                "3": "大额订单也能稳定成交"
               }
             },
             "3": {
-              "title": "Raw Spreads · Lower Costs",
+              "title": "原始点差 · 成本更低",
               "ul": {
-                "1": "Spreads from as low as 0.0 pips",
-                "2": "Paired with ultra-low commissions ($3–$3.5/lot/side)",
-                "3": "Optimized for scalping and high-frequency strategies"
+                "1": "点差最低 0.0 pip",
+                "2": "搭配低佣金（$3–$3.5/手/边），长期执行成本更优",
+                "3": "专为高频与剥头皮交易者打造"
               }
             },
             "4": {
-              "title": "Dedicated Tools · Expert Support",
+              "title": "专属功能 · 专业支持",
               "ul": {
-                "1": "Free VPS hosting for uninterrupted automated trading",
-                "2": "Seamless multi-account, multi-terminal access",
-                "3": "Dedicated relationship manager and technical support — every step of the way"
+                "1": "免费 VPS 加速，保障自动化交易稳定运行",
+                "2": "多账户 / 多终端无缝切换",
+                "3": "专属客户经理与技术支持，交易全程护航"
               }
             }
           },
           "swiper3": {
             "1": {
-              "title": "Custom Products & Pricing, Your Way",
+              "title": "创造可定制交易产品",
               "ul": {
-                "1": "Create your own tradable instruments — FX pairs, crypto assets, and more",
-                "2": "Define your liquidity and pricing structure from as low as $1 per million traded"
+                "1": "专属你的交易品种，无论是货币兑还是加密货币",
+                "2": ""
               }
             },
             "2": {
-              "title": "Independent Tech & Infrastructure",
+              "title": "独立技术与服务器支持",
               "ul": {
-                "1": "Dedicated VPS & ultra-low-latency lines",
-                "2": "Custom API & FIX solutions for institutional and quantitative setups"
+                "1": "专属 VPS / 低延迟专线接入",
+                "2": "定制化 API / FIX 接口，适配机构与量化需求"
               }
             },
             "3": {
-              "title": "Exclusive Funding & Settlement",
+              "title": "定制化 API / FIX 接口，适配机构与量化需求",
               "ul": {
-                "1": "Priority processing for large, multi-currency deposits and withdrawals",
-                "2": "Complimentary AFT USDT Card — spend globally with Mastercard"
+                "1": "多币种大额出入金优先处理，专属Asia Future Trading USDT 银行卡（全球 Mastercard 消费）",
+                "2": ""
               }
             },
             "4": {
-              "title": "Private Club Access & Strategic Perks",
+              "title": "私享俱乐部福利",
               "ul": {
-                "1": "Invitation-only VIC Club with gated access",
-                "2": "Closed-door roundtables, private research briefings",
-                "3": "VIP rewards from Bitcoin bonuses to luxury timepieces",
-                "4": "Priority access to AFT’s strategic initiatives & partnerships"
+                "1": "专属 VIC 俱乐部邀请（封闭式社区），定期闭门研讨会 / 私享投研简报，礼遇升级（（从 比特币红包 到 劳力士腕表））战略合作优先权",
+                "2": "",
+                "3": "",
+                "4": ""
               }
             }
           }
@@ -557,6 +557,36 @@
           },
           "trade": "立即交易外汇"
         },
+        "professional": {
+          "title": "Professional Forex Trading Experience",
+          "row": {
+            "col1": {
+              "title": "Comprehensive Currency Coverage",
+              "desc": "Access major, minor, and exotic pairs with full market depth and flexibility. Connect to top-tier liquidity for consistent spreads and stable execution."
+            },
+            "col2": {
+              "title": "Institutional-Grade Execution",
+              "desc": "A low-latency engine ensures ultra-fast fills and minimal slippage. Designed for scalping, hedging, and algorithmic precision."
+            },
+            "col3": {
+              "title": "Dynamic Leverage & Margin Control",
+              "desc": "Trade with leverage up to 1:500 and real-time margin updates. Maintain precise exposure while maximizing capital efficiency."
+            },
+            "col4": {
+              "title": "24/5 Trading & Instant Settlement",
+              "desc": "Execute seamlessly across global sessions with no delivery limits. Experience continuous liquidity and instant settlement anytime."
+            }
+          },
+          "desc": "¹Leverage availability varies by account type and client classification. Higher leverage is offered to eligible professional or experienced traders, while retail clients are assigned default leverage settings to ensure balanced risk exposure.",
+          "link1": "Learn more about our",
+          "link2": "account types and leverage tiers↗.*"
+        },
+        "meta": {
+          "title": "Trade Global Precious Metals — Capture Every Market Move",
+          "desc": "Trade gold, silver, and platinum CFDs with Asia Future Trading.\nEnjoy flexible long and short positions, overnight holding, and zero delivery or storage costs.",
+          "trade": "Trade Precious Metals",
+          "open": "Open Demo Account"
+        },
         "commission": {
           "title": "0佣金",
           "desc": "把握外汇货币对的价格波动，享受超小点差和灵活杠杆，交易所有外汇",
@@ -564,6 +594,7 @@
         },
         "moreMarket": {
           "title": "立即交易外汇市场",
+          "midst": "",
           "desc": "无论你是日内交易者、趋势追随者，还是套利策略执行者，我们都为你提供稳定透明的交易环境。",
           "btnText": "立即交易汇率波动机会"
         },
@@ -611,18 +642,13 @@
             },
             "li5": {
               "title": "杠杆水平是否会根据账户净值调整？",
-              "desc": "是的，平台会根据账户净值自动调整可用最大杠杆。具体如下：",
-              "text-1": "0 – 4,999 USD：1:无限",
-              "text-2": "5,000 – 29,999 USD：1:2000",
-              "text-3": "30,000 – 99,999 USD：1:1000",
-              "text-4": "100,000 USD 及以上：1:500",
-              "prompt": "请注意，高杠杆虽可提升交易效率，但也需谨慎使用，以防止剧烈波动带来重大风险。"
+              "desc": "是的。杠杆可用性因账户类型和客户等级而异。符合条件的专业或经验丰富的交易者可享受更高的杠杆，而零售客户则使用默认杠杆设置，以保持均衡的风险敞口。",
+              "prompt": "详细了解我们的账户类型和杠杆等级"
             },
             "li6": {
               "title": "新闻发布及周末期间的杠杆调整机制是怎样的？",
               "desc": "重大新闻事件或周末期间，市场波动显著加剧，为控制风险，平台将自动降低相关品种的最大可用杠杆至 1:200。具体时间如下：",
-              "text-1": "周末调整时间：每周五 GMT 18:00（北京时间周六 02:00）至周日 GMT 22:00（北京时间周一 06:00）",
-              "text-2": "新闻事件影响：如多个重要新闻发布时间间隔小于15分钟，相关交易品种将被合并计算，统一上调保证金要求，在调整期间开立的头寸将使用上调后的保证金标准，开市后1小时内重新计算为正常保证金水平。"
+              "text-1": "周末调整时间：每周五 GMT 18:00（北京时间周六 02:00）至周日 GMT 22:00（北京时间周一 06:00）"
             }
           }
         }
@@ -772,6 +798,7 @@
           "row": {
             "col1": {
               "title": "为什么专业投资者选择贵金属 CFD？",
+              "midst": "",
               "desc": "避险价值 · 多空灵活 · 成本更优",
               "more": "了解更多关于贵金属CFD"
             },
@@ -873,6 +900,7 @@
         },
         "moreMarket": {
           "title": "快速接入全球能源市场",
+          "midst": "",
           "desc": "Asia Future Trading 提供稳定执行、高频撮合与低延迟系统，让您以USD等主流保证金快速交易原油、天然气等热门能源资产。无需等待实物交割周期，即可日内建仓平仓，满足高频与趋势策略的交易需求。",
           "btnText": "立即交易能源产品"
         },

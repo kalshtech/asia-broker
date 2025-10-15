@@ -6,8 +6,14 @@ import Commission from "@/components/common/products/Commission";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 
-const MetaProfession = () => {
-    const t =  useTranslations("Pages.products.pm");
+type Props = {
+    languageLocal: string;
+    backgroundImage: string;
+};
+
+const MetaProfession = ( props: Props ) => {
+    const { languageLocal, backgroundImage } = props;
+    const t =  useTranslations(languageLocal);
     const local = useLocale();
     const isEn = local === "en";
 
@@ -49,7 +55,7 @@ const MetaProfession = () => {
             desc={t("commission.desc")}
             more={t("commission.more")}
             theme={"light"}
-            imageUrl={"bg-[url(/images/products/energy-commission-background.png)]"}
+            imageUrl={backgroundImage}
         />
     )
 }

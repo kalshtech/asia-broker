@@ -2,12 +2,15 @@ import * as React from 'react';
 import { getTranslations } from "next-intl/server";
 import Banner from "@/components/common/products/Banner";
 import Markets from "@/components/common/products/Markets";
-import Commission from "@/components/common/products/Commission";
-import MoreMarkets from "@/components/common/products/MoreMarkets";
+import MetaProfession from "@/components/common/products/MetaProfession";
 import Guide from "@/components/common/Guide";
 import Profession from "@/components/common/products/Profession";
 import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
+import MetaCommission from "@/components/common/products/MetaCommission";
+import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
+import { Typography } from "@/components/ui/typography"
+
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.forex");
@@ -70,6 +73,14 @@ export default async function Page() {
         { label: t("markets.btn.second"), value: "second" },
         { label: t("markets.btn.other"), value: "other" },
     ];
+
+
+    const rowAry = [
+        { imageUrl: "/images/products/future-professional1.png", title: t("professional.row.col1.title"), desc: t("professional.row.col1.desc") },
+        { imageUrl: "/images/products/future-professional2.png", title: t("professional.row.col2.title"), desc: t("professional.row.col2.desc") },
+        { imageUrl: "/images/products/future-professional3.png", title: t("professional.row.col3.title"), desc: t("professional.row.col3.desc") },
+        { imageUrl: "/images/products/future-professional4.png", title: t("professional.row.col4.title"), desc: t("professional.row.col4.desc") },
+    ];
     
     const QA_DATA = [
         {
@@ -95,14 +106,10 @@ export default async function Page() {
                     <p>
                         {t("qa.ul.li5.desc")}
                     </p>
-                    <ul className="list-disc pl-6 space-y-1">
-                        <li>{t("qa.ul.li5.text-1")}</li>
-                        <li>{t("qa.ul.li5.text-2")}</li>
-                        <li>{t("qa.ul.li5.text-3")}</li>
-                        <li>{t("qa.ul.li5.text-4")}</li>
-                    </ul>
                     <p className="text-sm">
-                        {t("qa.ul.li5.prompt")}
+                        <a href="/" className={"underline"}>
+                            {t("qa.ul.li5.prompt")}
+                        </a>
                     </p>
                 </div>
             ),
@@ -114,7 +121,6 @@ export default async function Page() {
                     <p>{t("qa.ul.li6.desc")}</p>
                     <ul className="list-disc pl-6 space-y-1">
                         <li>{t("qa.ul.li6.text-1")}</li>
-                        <li>{t("qa.ul.li6.text-2")}</li>
                     </ul>
                 </div>
             ),
@@ -144,18 +150,34 @@ export default async function Page() {
                 trade={t("markets.trade")}
                 desc={t("markets.desc")}
             />
-            <Commission
-                theme={"light"}
-                title={t("commission.title")}
-                desc={t("commission.desc")}
-                more={t("commission.more")}
-                imageUrl={"bg-[url(/images/products/forex-kline-background.png)]"}
+            <MetaProfession
+                rowAry={rowAry}
+                title={t("professional.title")}
+            >
+                <div>
+                    <Typography
+                        variant={"muted"}
+                        className={"max-w-2xl text-center mx-auto mt-10"}
+                    >
+                        { t("professional.desc") }
+                    </Typography>
+                    <div className={"mt-4 mx-auto text-center flex justify-center"}>
+                        <Typography variant={"muted"}>
+                            { t("professional.link1") }
+                        </Typography>
+                        <a href="/" className={"text-sm font-medium ml-2"}>
+                            { t("professional.link2") }
+                        </a>
+                    </div>
+                </div>
+            </MetaProfession>
+            <MetaCommission
+                languageLocal={"Pages.products.forex"}
+                backgroundImage={"bg-[url(/images/products/forex-kline-background.png)]"}
             />
-            <MoreMarkets
-                title={t("moreMarket.title")}
-                desc={t("moreMarket.desc")}
-                btnText={t("moreMarket.btnText")}
-                imageUrl={"bg-[url(/images/products/forex-market-background.png)]"}
+            <MetaMoreMarkets
+                languageLocal={"Pages.products.forex"}
+                backgroundImage={"bg-[url(/images/products/forex-market-background.png)]"}
             />
             <Guide
                 title={t("guide.title")}

@@ -544,14 +544,44 @@
           "description": "The Forex market is the world’s largest and most liquid financial market. We provide direct access to top-tier global liquidity with tight spreads, fast execution, and 24/5 support — helping traders across Asia capture every market move."
         },
         "markets": {
-          "title": "Discover the Pairs You Want to Trade",
-          "desc": "Explore major, minor, and exotic Forex pairs with real-time pricing and competitive spreads.",
+          "title": "Search for the Forex Pair You Want to Trade",
+          "desc": "Enter symbols such as EURUSD or USDJPY to view real-time bid and ask prices.",
           "btn": {
             "main": "Majors Forex",
             "second": "Minors Forex",
             "other": "Exotics Forex"
           },
           "trade": "Start Trading Forex Now"
+        },
+        "professional": {
+          "title": "Professional Forex Trading Experience",
+          "row": {
+            "col1": {
+              "title": "Comprehensive Currency Coverage",
+              "desc": "Access major, minor, and exotic pairs with full market depth and flexibility. Connect to top-tier liquidity for consistent spreads and stable execution."
+            },
+            "col2": {
+              "title": "Institutional-Grade Execution",
+              "desc": "A low-latency engine ensures ultra-fast fills and minimal slippage. Designed for scalping, hedging, and algorithmic precision."
+            },
+            "col3": {
+              "title": "Dynamic Leverage & Margin Control",
+              "desc": "Trade with leverage up to 1:500 and real-time margin updates. Maintain precise exposure while maximizing capital efficiency."
+            },
+            "col4": {
+              "title": "24/5 Trading & Instant Settlement",
+              "desc": "Execute seamlessly across global sessions with no delivery limits. Experience continuous liquidity and instant settlement anytime."
+            }
+          },
+          "desc": "¹Leverage availability varies by account type and client classification. Higher leverage is offered to eligible professional or experienced traders, while retail clients are assigned default leverage settings to ensure balanced risk exposure.",
+          "link1": "Learn more about our",
+          "link2": "account types and leverage tiers↗.*"
+        },
+        "meta": {
+          "title": "Trade Global Forex Markets — Fast, Deep, Precise",
+          "desc": "Asia Future Trading connects you directly to Tier-1 liquidity with ultra-tight spreads and lightning-fast execution. Trade major, minor, and exotic pairs 24/5 with real-time pricing and institutional-grade stability.",
+          "trade": "Trade Forex Now",
+          "open": "Open Demo Account"
         },
         "commission": {
           "title": "0佣金",
@@ -560,29 +590,30 @@
         },
         "moreMarket": {
           "title": "立即交易外汇市场",
+          "midst": "",
           "desc": "无论你是日内交易者、趋势追随者，还是套利策略执行者，我们都为你提供稳定透明的交易环境。",
           "btnText": "立即交易汇率波动机会"
         },
         "guide": {
-          "title": "掌握外汇入门指南",
+          "title": "Forex CFD Trade Guide",
           "row": {
             "col1": {
-              "title": "学习如何在全球最大金融市场中致胜",
-              "desc": "外汇差价合约（CFD）让你无需实际持有外币资产，也能参与全球货币对的价格波动。灵活杠杆、低交易门槛、24小时市场，让策略型交易更高效。",
-              "more": "阅读更多外汇CFD指南"
+              "title": "Learn How to Trade in the Global Forex Market",
+              "desc": "Access the world’s largest market through CFDs on major, minor, and exotic pairs — trade 24/5 with tight spreads and flexible leverage.",
+              "more": "Learn More"
             },
             "col2": {
               "span1": {
-                "title": "什么是外汇CFD？",
-                "desc": "快速了解货币对的交易机制，以及为什么差价合约可以让你双向交易而无需持币。"
+                "title": "What Is Forex CFD Trading?",
+                "desc": "Understand how currency pairs are traded, and why CFDs allow you to go long or short without holding physical assets."
               },
               "span2": {
-                "title": "学会使用杠杆，控制风险与收益",
-                "desc": "解什么是1:10杠杆，如何计算保证金，掌握风险控制与收益放大的平衡策略。"
+                "title": "How to Use Leverage Effectively",
+                "desc": "Learn what 1:10 leverage means, how margin is calculated, and how to balance risk and return in your trading plan."
               },
               "span3": {
-                "title": "如何看懂交易信号？",
-                "desc": "从图表走势、新闻驱动到智能提示，教你判断真实信号与噪音，避免常见误区。"
+                "title": "How to Read Forex Trading Signals",
+                "desc": "From chart patterns to news-driven alerts, learn how to identify real signals and avoid common market noise."
               }
             }
           }
@@ -590,35 +621,30 @@
         "qa": {
           "ul": {
             "li1": {
-              "title": "什么是最受欢迎的货币对？",
-              "desc": "最热门的货币对通常是市场流动性最高的外汇直盘，包括 AUDUSD、EURUSD、GBPUSD、NZDUSD、USDCAD、USDCHF 和 USDJPY。由于交易活跃，这些货币对通常拥有较低的点差，并能实现快速成交。在我们Asia Future Trading，这些主要货币对支持免隔夜利息交易，适合长期持仓。"
+              "title": "What are the most popular currency pairs?",
+              "desc": "The most traded and liquid currency pairs include AUD/USD, EUR/USD, GBP/USD, NZD/USD, USD/CAD, USD/CHF, and USD/JPY. At Asia Future Trading, these major pairs support ultra-fast execution and tight spreads, ideal for both scalpers and swing traders."
             },
             "li2": {
-              "title": "除了主流货币对，还有哪些热门交易对？",
-              "desc": "交易者也倾向于将部分外汇交叉盘纳入其投资组合，例如 AUDCAD、CADCHF、EURAUD、GBPCHF 等。平台上大多数交叉盘也支持免隔夜利息交易。您可通过交易品种表格查阅支持免息的具体货币对列表。"
+              "title": "Are there other popular cross pairs beyond the majors?",
+              "desc": "Yes. You can also trade a wide range of cross-currency pairs, such as AUD/CAD, CAD/CHF, EUR/AUD, GBP/CHF, and more. Most cross pairs on our platform also support swap-free options for flexible trading."
             },
             "li3": {
-              "title": "杠杆交易的优势与风险有哪些？",
-              "desc": "杠杆允许您使用较小的自有资金控制更大的交易仓位，从而放大盈利潜力。然而，杠杆同时也会放大亏损风险。使用杠杆前，请确保具备成熟的风险控制策略，并合理设置风险敞口，以防止账户资产大幅波动。"
+              "title": "What are the advantages and risks of leveraged trading?",
+              "desc": "Leverage allows you to control larger positions with a smaller amount of capital, increasing potential profits. However, leverage can also amplify losses. Always ensure you understand your risk exposure and apply proper risk-management strategies before trading."
             },
             "li4": {
-              "title": "如何理解保证金及其在交易中的作用？",
-              "desc": "保证金是您开仓时需预留的资金，作为价格波动的抵押。其具体金额取决于所选杠杆和交易规模。保证金水平的设置应与您的整体风险管理策略保持一致，以帮助您更好地控制账户风险。"
+              "title": "What is margin, and how does it affect trading?",
+              "desc": "Margin is the collateral required to open and maintain a leveraged position. It acts as a risk buffer and determines your maximum available leverage. Proper margin management helps prevent forced liquidation and keeps your portfolio risk under control."
             },
             "li5": {
-              "title": "杠杆水平是否会根据账户净值调整？",
-              "desc": "是的，平台会根据账户净值自动调整可用最大杠杆。具体如下：",
-              "text-1": "0 – 4,999 USD：1:无限",
-              "text-2": "5,000 – 29,999 USD：1:2000",
-              "text-3": "30,000 – 99,999 USD：1:1000",
-              "text-4": "100,000 USD 及以上：1:500",
-              "prompt": "请注意，高杠杆虽可提升交易效率，但也需谨慎使用，以防止剧烈波动带来重大风险。"
+              "title": "Does leverage change based on account equity?",
+              "desc": "Yes. Leverage availability varies by account type and client classification. Higher leverage is offered to eligible professional or experienced traders, while retail clients are assigned default leverage settings to maintain balanced risk exposure.",
+              "prompt": "Learn more about our account types and leverage tiers"
             },
             "li6": {
-              "title": "新闻发布及周末期间的杠杆调整机制是怎样的？",
-              "desc": "重大新闻事件或周末期间，市场波动显著加剧，为控制风险，平台将自动降低相关品种的最大可用杠杆至 1:200。具体时间如下：",
-              "text-1": "周末调整时间：每周五 GMT 18:00（北京时间周六 02:00）至周日 GMT 22:00（北京时间周一 06:00）",
-              "text-2": "新闻事件影响：如多个重要新闻发布时间间隔小于15分钟，相关交易品种将被合并计算，统一上调保证金要求，在调整期间开立的头寸将使用上调后的保证金标准，开市后1小时内重新计算为正常保证金水平。"
+              "title": "How does leverage adjustment work during news events or weekends?",
+              "desc": "To protect against market volatility, leverage on high-risk instruments is temporarily reduced — typically to a maximum of 1:200 — during major news releases or over weekends. Exact timing (GMT):",
+              "text-1": "Fridays 22:00 – Mondays 02:00 (Beijing time: Sat 06:00 – Mon 10:00) All positions will be subject to updated margin requirements during these periods for enhanced safety."
             }
           }
         }

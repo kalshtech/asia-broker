@@ -16,7 +16,7 @@ const fadeInUp: Variants = {
     },
 }
 
-const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn }: any) => {
+const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, children }: any) => {
     const isLight = theme === "light";
     return (
         <section className={classnames(["py-8 px-4 lg:p-30", {
@@ -117,6 +117,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn }: 
                         )
                     }
                 </div>
+                { children }
             </Container>
         </section>
     )

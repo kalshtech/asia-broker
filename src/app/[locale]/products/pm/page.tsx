@@ -1,15 +1,14 @@
 import * as React from 'react';
 import { getTranslations } from "next-intl/server";
 import Banner from "@/components/common/products/Banner";
-import MoreMarkets from "@/components/common/products/MoreMarkets";
 import Guide from "@/components/common/Guide";
 import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import Markets from "@/components/common/products/Markets";
 import Profession from "@/components/common/products/Profession";
 import MetaProfession from "@/components/common/products/MetaProfession";
-import MetaCommission from "./MetaCommission";
-import MetaMoreMarkets from "./MetaMoreMarkets";
+import MetaCommission from "@/components/common/products/MetaCommission";
+import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.pm");
@@ -117,8 +116,14 @@ export default async function Page() {
                 trade={t("markets.trade")}
             />
             <MetaProfession rowAry={rowAry} title={t("professional.title")} />
-            <MetaCommission/>
-            <MetaMoreMarkets/>
+            <MetaCommission
+                languageLocal={"Pages.products.pm"}
+                backgroundImage={"bg-[url(/images/products/energy-commission-background.png)]"}
+            />
+            <MetaMoreMarkets
+                languageLocal={"Pages.products.pm"}
+                backgroundImage={"bg-[url(/images/products/pm-market-background.png)]"}
+            />
             <Guide
                 title={t("guide.title")}
                 left={{ title: t("guide.row.col1.title"), midst: t("guide.row.col1.midst"), desc: t("guide.row.col1.desc"), more: t("guide.row.col1.more") }}

@@ -1,6 +1,6 @@
 "use client";
 import React, {useState} from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
 import RegisterBtn from "@/components/RegisterBtn";
@@ -21,6 +21,9 @@ const fadeInUp: Variants = {
 const Properly = () => {
     const t = useTranslations("Pages.home.properly");
     const [ tabActive, setTabActive ] = useState<string>("classic");
+    const locale = useLocale();
+    const isEn = locale === "en";
+
     const oneAry = [
         { url: "/images/home/properly1.png", title: t("right.swiper1.1.title"), description: t("right.swiper1.1.description") },
         { url: "/images/home/properly2.png", title: t("right.swiper1.2.title"), description: t("right.swiper1.2.description") },
@@ -121,10 +124,14 @@ const Properly = () => {
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography variant={"muted"}>{t("right.swiper3.1.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center mt-1"}>
-                        <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography variant={"muted"}>{t("right.swiper3.1.ul.2")}</Typography>
-                    </li>
+                    {
+                        isEn && (
+                            <li className={"flex items-center mt-1"}>
+                                <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                                <Typography variant={"muted"}>{t("right.swiper3.1.ul.2")}</Typography>
+                            </li>
+                        )
+                    }
                 </ul>
             )
         },
@@ -153,10 +160,14 @@ const Properly = () => {
                         <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography variant={"muted"}>{t("right.swiper3.3.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center mt-1"}>
-                        <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography variant={"muted"}>{t("right.swiper3.3.ul.2")}</Typography>
-                    </li>
+                    {
+                        isEn && (
+                            <li className={"flex items-center mt-1"}>
+                                <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                                <Typography variant={"muted"}>{t("right.swiper3.3.ul.2")}</Typography>
+                            </li>
+                        )
+                    }
                 </ul>
             )
         },
@@ -169,18 +180,24 @@ const Properly = () => {
                         <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography variant={"muted"}>{t("right.swiper3.4.ul.1")}</Typography>
                     </li>
-                    <li className={"flex items-center mt-1"}>
-                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.2")}</Typography>
-                    </li>
-                    <li className={"flex items-center mt-1"}>
-                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.3")}</Typography>
-                    </li>
-                    <li className={"flex items-center mt-1"}>
-                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.4")}</Typography>
-                    </li>
+                    {
+                        isEn && (
+                            <>
+                                <li className={"flex items-center mt-1"}>
+                                    <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                                    <Typography variant={"muted"}>{t("right.swiper3.4.ul.2")}</Typography>
+                                </li>
+                                <li className={"flex items-center mt-1"}>
+                                    <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                                    <Typography variant={"muted"}>{t("right.swiper3.4.ul.3")}</Typography>
+                                </li>
+                                <li className={"flex items-center mt-1"}>
+                                    <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                                    <Typography variant={"muted"}>{t("right.swiper3.4.ul.4")}</Typography>
+                                </li>
+                            </>
+                        )
+                    }
                 </ul>
             )
         },
@@ -226,10 +243,14 @@ const Properly = () => {
 
                             <div className={"mt-12"}>
                                 <RegisterBtn/>
-                                <Button
-                                    className={"rounded-full mt-4 px-8 h-10 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
-                                    {t("explore")}
-                                </Button>
+                                {
+                                    isEn && (
+                                        <Button
+                                            className={"rounded-full mt-4 px-8 h-10 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
+                                            {t("explore")}
+                                        </Button>
+                                    )
+                                }
                             </div>
                         </div>
                         <div className={"col-span-12 lg:col-span-10"}>
