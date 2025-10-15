@@ -39,7 +39,6 @@ type Props = {
 };
 
 const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
-    console.log(left, 111222)
     return (
         <section className={"p-4 lg:p-30"}>
             <Container>

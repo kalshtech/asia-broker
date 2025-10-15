@@ -10,6 +10,7 @@ import MoreMarkets from "@/components/common/products/MoreMarkets";
 import Profession from "@/components/common/products/Profession";
 import MetaProfession from "@/components/common/products/MetaProfession";
 import MetaCommission from "@/components/common/products/MetaCommission";
+import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.future");
@@ -143,10 +144,13 @@ export default async function Page() {
                 type={"future"}
                 placeholder={t("markets.search")}
             />
-            <MetaProfession rowAry={rowAry}
-                            title={t("professional.title")}
-            />
+            <Row ary={rowAry} title={t("professional.title")} />
             <MetaCommission
+                languageLocal={"Pages.products.future"}
+                backgroundImage={"bg-[url(/images/products/forex-kline-background.png)]"}
+                isShowCommission={false}
+            />
+            <MetaMoreMarkets
                 languageLocal={"Pages.products.future"}
                 backgroundImage={"bg-[url(/images/products/future-market-background.png)]"}
             />

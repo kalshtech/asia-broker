@@ -26,7 +26,7 @@ export default function MoreMarkets({ title, desc, midst, btnText, imageUrl }: P
                                 {midst}
                             </Typography>
                         )}
-                        <Typography className={"!text-white mt-4 lg:mt-8"}>
+                        <Typography className={"!text-white text-center mt-4 lg:mt-8"}>
                             {desc}
                         </Typography>
                     </div>

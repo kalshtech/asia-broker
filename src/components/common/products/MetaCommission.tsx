@@ -9,10 +9,11 @@ import { Button } from "@/components/ui/button";
 type Props = {
     languageLocal: string;
     backgroundImage: string;
+    isShowCommission?: boolean;
 };
 
 const MetaProfession = ( props: Props ) => {
-    const { languageLocal, backgroundImage } = props;
+    const { languageLocal, backgroundImage, isShowCommission = true } = props;
     const t =  useTranslations(languageLocal);
     const local = useLocale();
     const isEn = local === "en";
@@ -49,15 +50,7 @@ const MetaProfession = ( props: Props ) => {
         )
     }
 
-    return (
-        <Commission
-            title={t("commission.title")}
-            desc={t("commission.desc")}
-            more={t("commission.more")}
-            theme={"light"}
-            imageUrl={backgroundImage}
-        />
-    )
+    return isShowCommission && <Commission title={t("commission.title")} desc={t("commission.desc")} more={t("commission.more")} theme={"light"} imageUrl={backgroundImage}/>
 }
 
 export default MetaProfession;

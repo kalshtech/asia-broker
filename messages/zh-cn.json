@@ -1098,8 +1098,15 @@
           "trade": "Trade Energy Products",
           "open": "Open Demo Account"
         },
+        "commission": {
+          "title": "快速接入全球期货市场",
+          "midst": "",
+          "desc": "Asia Future Trading 提供涵盖全球主流市场的期货差价合约（CFD）产品，覆盖外汇、股指、大宗商品、国债与农产品等核心资产类别。 无论你是短线交易者、策略研究者还是套期保值者，只需一个账户，即可参与全球主流期货行情，捕捉涨跌双向机会。",
+          "more": "立即交易期货CFD"
+        },
         "moreMarket": {
           "title": "快速接入全球期货市场",
+          "midst": "",
           "desc": "Asia Future Trading 提供涵盖全球主流市场的期货差价合约（CFD）产品，覆盖外汇、股指、大宗商品、国债与农产品等核心资产类别。 无论你是短线交易者、策略研究者还是套期保值者，只需一个账户，即可参与全球主流期货行情，捕捉涨跌双向机会。",
           "btnText": "立即交易期货CFD"
         },
