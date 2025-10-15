@@ -475,7 +475,7 @@ const Navigation = () => {
     }, []);
 
     return (
-        <div id={"navigation"} className={"h-[64px] flex z-1000 fixed bg-white w-full px-4 lg:px-8 xl:lg:px-30"}>
+        <div id={"navigation"} className={"h-[64px] flex z-1000 fixed bg-white w-full"}>
             <Container orientation={"horizontal"}>
                 <NavigationMenu viewport={false}>
                     <Link href={`/`} className={"cursor-pointer"}>

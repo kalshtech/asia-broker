@@ -27,7 +27,7 @@ const fadeInUp: Variants = {
 const FinancialCalendar = () => {
     const t = useTranslations("Pages.ideas.calendar.financialCalendar");
     return (
-        <section className={"p-4 lg:p-30"}>
+        <section className={"py-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

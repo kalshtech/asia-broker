@@ -34,7 +34,7 @@ const Footer = (props: Props) => {
     }
 
     return (
-        <footer className={classNames(["bg-theme-deep-bg px-4 pt-10 lg:px-30", className])}>
+        <footer className={classNames(["bg-theme-deep-bg pt-10", className])}>
             <Container>
                 <div>
                     <Image src={RenderTransparentLogo()} width={208} height={58} alt={"logo"}/>

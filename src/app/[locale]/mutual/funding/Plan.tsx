@@ -24,7 +24,7 @@ export default function Plan() {
         { title: t("row.col4.title"), desc: t("row.col4.desc") },
     ];
     return (
-        <section className={"p-4 lg:p-30 bg-[#000515]"}>
+        <section className={"bg-[#000515]"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

@@ -49,7 +49,7 @@ const DownloadItem = (props: Props) => {
 
 
     return (
-        <section className={classnames(["p-4 lg:p-30", {
+        <section className={classnames(["py-4 lg:py-30", {
             "bg-theme-light-bg": direction === "right"
         }])} ref={sectionRef}>
             <Container>

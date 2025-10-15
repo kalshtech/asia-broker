@@ -93,7 +93,7 @@ const Articles = () => {
         { imageUrl: "/images/ideas/article-6.png", title: "盛宴未散 见招拆招", disc: "宏观", time: "2025/9/3" },
     ];
     return (
-        <section className={"px-4 pb-4 lg:px-30 lg:pb-30"}>
+        <section className={"pb-4 lg:pb-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

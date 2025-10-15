@@ -30,7 +30,7 @@ const Explore = () => {
     ];
 
     return (
-        <section className={"p-4 lg:p-30 bg-theme-deep-bg"}>
+        <section className={"py-4 lg:py-30 bg-theme-deep-bg"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

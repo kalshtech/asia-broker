@@ -25,7 +25,7 @@ const Banner = () => {
         { imageUrl: "/images/platform/webtrade.png", download: t("download"), vision: t("ul.webtrader") },
     ];
     return (
-        <section className={"bg-[url(/images/platform/banner-background.png)] bg-cover bg-center px-4 pt-4 pb-4 lg:px-30 lg:pt-30 lg:pb-12"}>
+        <section className={"bg-[url(/images/platform/banner-background.png)] bg-cover bg-center pt-4 pb-4 lg:pt-30 lg:pb-12"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

@@ -19,7 +19,7 @@ const fadeInUp: Variants = {
 const Step = () => {
     const t = useTranslations("Pages.platform.step");
     return (
-        <section className={"bg-[url(/images/platform/step-background.png)] bg-cover bg-center h-96 lg:h-[532px] p-4 lg:p-30"}>
+        <section className={"bg-[url(/images/platform/step-background.png)] bg-cover bg-center h-96 lg:h-[532px] py-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

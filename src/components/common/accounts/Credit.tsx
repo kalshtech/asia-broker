@@ -25,7 +25,7 @@ type Props = {
 const Credit = ({ typeText, className, number }: Props) => {
     const t = useTranslations("Pages.accounts.platinum.credit");
     return (
-        <section className={classnames(["p-4 lg:p-30", className])}>
+        <section className={classnames(["py-4 lg:py-30", className])}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

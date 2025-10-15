@@ -45,7 +45,7 @@ const Type = () => {
         { one: t("table.row.col1-7-1"), two: t("table.row.col1-7-2"), three: t("table.row.col1-7-3") }
     ];
     return (
-        <section className={"bg-[url(/images/accounts/account-type-background.png)] bg-cover bg-center px-4 py-4 lg:mt-24 lg:px-30 lg:py-16"}>
+        <section className={"bg-[url(/images/accounts/account-type-background.png)] bg-cover bg-center py-4 lg:mt-24 lg:py-16"}>
             <Container>
                 <div>
                     <div className={"grid grid-cols-12 gap-8"}>

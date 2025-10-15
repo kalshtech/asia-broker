@@ -32,7 +32,7 @@ const Velocity = () => {
                         {t("title")}
                     </Typography>
                 </motion.div>
-                <div className="mx-auto max-w-7xl px-4 py-4 lg:py-10 lg:mt-16">
+                <div className="py-4 lg:py-10 lg:mt-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2">
                         <article className="relative overflow-hidden h-80 lg:-mr-12">
                             <img
@@ -40,8 +40,7 @@ const Velocity = () => {
                                 alt="datacenter"
                                 className="absolute inset-0 h-full w-full object-cover"
                             />
-                            <div
-                                className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/0"></div>
+                            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/0"></div>
                             <div className="relative p-8 md:p-12 lg:p-14 text-white">
                                 <Typography variant={"h4"} className={"!text-white"}>
                                     {t("card1.title")}

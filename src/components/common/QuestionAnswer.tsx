@@ -41,7 +41,7 @@ export function QAItemRow({ item }: any) {
 export default function QuestionAnswer({ data, isShowBtn, btn1Text, btn2Text } : any) {
     const t = useTranslations("Common");
     return (
-        <section className="p-4 lg:p-30 bg-theme-light-bg">
+        <section className="py-4 lg:py-30 bg-theme-light-bg">
             <Container>
                 <motion.div
                     variants={fadeInUp}

@@ -57,7 +57,7 @@ const Reasons = () => {
         return () => ctx.revert();
     }, []);
     return  (
-        <section ref={sectionRef} className={"p-4 lg:p-30"}>
+        <section ref={sectionRef} className={"py-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

@@ -82,7 +82,7 @@ const Slide = () => {
     return (
         <section className={"py-10"}>
             <Container>
-                <div className={"px-4 lg:px-30"}>
+                <div>
                     <Typography
                         variant={"large"}
                         className={"font-medium text-center mx-auto mt-8 lg:mt-16 !text-white"}
@@ -117,7 +117,7 @@ const Slide = () => {
                         $100,000,000
                     </Typography>
                 </div>
-                <div className={"mt-8 lg:mt-16 px-4 lg:pr-0 lg:pl-30"}>
+                <div className={"mt-8 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
                         <div className={"col-span-12 lg:col-span-3"}>
                             <div
@@ -176,7 +176,7 @@ const Slide = () => {
                             </Swiper>
                         </div>
                     </div>
-                    <div className={"mt-4 px-4 lg:px-30"}>
+                    <div className={"mt-4"}>
                         <div className={"flex justify-end"}>
                             <Typography
                                 variant={"large"}

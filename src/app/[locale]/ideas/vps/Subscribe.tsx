@@ -58,7 +58,7 @@ const Subscribe = () => {
     }
 
     return (
-        <section className={"max-w-4xl p-4 lg:p-30 mx-auto"}>
+        <section className={"py-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

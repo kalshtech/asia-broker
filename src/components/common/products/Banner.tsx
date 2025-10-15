@@ -18,7 +18,7 @@ export default async function Banner({ title, description, midst, imageUrl, tran
     const t = await getTranslations("Common");
     const isLight = colorTheme === "light";
     return (
-        <section className={`${imageUrl} bg-cover bg-center py-4 px-6 min-h-80 lg:min-h-120 lg:py-20 lg:px-30`}>
+        <section className={`${imageUrl} bg-cover bg-center py-4 min-h-80 lg:min-h-120 lg:py-20`}>
             <Container>
                 <div>
                     <Typography

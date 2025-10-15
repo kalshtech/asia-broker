@@ -19,35 +19,37 @@ const Banner = () => {
     const t = useTranslations("Pages.corporation.contact.banner");
     return (
         <div>
-            <section className={"bg-[url(/images/corporation/contact-banner.png)] bg-center bg-cover h-[632px] p-4 lg:p-30"}>
-                <motion.div
-                    variants={fadeInUp}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{once: true, amount: 0.5}}
-                >
-                    <Typography
-                        variant={"h1"}
-                        className={"!text-white"}
+            <section className={"bg-[url(/images/corporation/contact-banner.png)] bg-center bg-cover h-[632px] py-4 lg:py-30"}>
+                <Container>
+                    <motion.div
+                        variants={fadeInUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{once: true, amount: 0.5}}
                     >
-                        {t("title1")}
-                    </Typography>
-                    <Typography
-                        variant={"h1"}
-                        className={"!text-white"}
-                    >
-                        {t("title2")}
-                    </Typography>
+                        <Typography
+                            variant={"h1"}
+                            className={"!text-white"}
+                        >
+                            {t("title1")}
+                        </Typography>
+                        <Typography
+                            variant={"h1"}
+                            className={"!text-white"}
+                        >
+                            {t("title2")}
+                        </Typography>
 
-                    <Typography
-                        variant={"large"}
-                        className={"font-medium !text-white mt-16"}
-                    >
-                        {t("desc")}
-                    </Typography>
-                </motion.div>
+                        <Typography
+                            variant={"large"}
+                            className={"font-medium !text-white mt-16"}
+                        >
+                            {t("desc")}
+                        </Typography>
+                    </motion.div>
+                </Container>
             </section>
-            <div className={"bg-theme-active rounded-lg p-4 lg:py-10 lg:px-16 -mt-16 mx-4 lg:mx-30"}>
+            <div className={"bg-theme-active rounded-lg py-4 lg:py-10 -mt-16 mx-4 2xl:mx-30"}>
                 <Container>
                     <div className={"flex items-center"}>
                         <Typography

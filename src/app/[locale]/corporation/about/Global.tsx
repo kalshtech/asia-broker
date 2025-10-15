@@ -24,7 +24,7 @@ const Global =  () => {
         { title: t("row.col4.title"), desc: t("row.col4.desc")  },
     ];
     return (
-        <section className={"bg-[url(/images/corporation/about-global-bg.png)] bg-cover bg-center p-4 lg:p-30"}>
+        <section className={"bg-[url(/images/corporation/about-global-bg.png)] bg-cover bg-center py-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

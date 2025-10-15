@@ -28,7 +28,7 @@ export default function Vision() {
         { imageUrl: "/images/mutual/funding-vision1.png", amount: "$7,453.21", name: "Mike Thompson", country: "United States", countryImageUrl: "/images/mutual/funding-country1.png" },
     ];
     return (
-        <section className={"p-4 lg:p-30 bg-[#000515]"}>
+        <section className={"py-4 lg:py-30 bg-[#000515]"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

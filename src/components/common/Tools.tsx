@@ -40,7 +40,7 @@ const Tools = () => {
         { image: "/images/common/ideas.png", title: t("row.ideas.title"), desc: t("row.ideas.desc") },
     ];
     return (
-        <section className={"bg-theme-deep-bg py-8 px-4 lg:p-30"}>
+        <section className={"bg-theme-deep-bg py-8"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

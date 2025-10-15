@@ -126,7 +126,7 @@ const Markets = (props: Props) => {
     }, [ tabActive ]);
 
     return (
-        <section className={"px-4 py-2 lg:px-30 lg:py-10"}>
+        <section className={"py-4 lg:py-10"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

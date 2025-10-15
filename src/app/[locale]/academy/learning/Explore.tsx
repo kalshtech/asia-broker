@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 const Explore = () => {
     const t = useTranslations("Pages.academy.learning.explore");
     return (
-        <section className={"m-4 lg:m-30"}>
+        <section className={"my-4 lg:my-30"}>
             <Container>
                 <div className={"grid grid-cols-12"}>
                     <div className={"col-span-12 lg:col-span-6"}>

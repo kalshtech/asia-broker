@@ -41,7 +41,7 @@ const Introduction = () => {
                 </div>
             </div>
             <div className={"col-span-12 lg:col-span-6"}>
-                <img src="/images/corporation/portrait.png" alt="" className={"object-cover"}/>
+                <img src="/images/corporation/portrait.png" alt="" className={"w-full h-full object-cover"}/>
             </div>
         </div>
     )

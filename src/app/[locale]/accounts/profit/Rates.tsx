@@ -175,7 +175,7 @@ const Rates = () => {
     }, [])
 
     return (
-        <section className={"bg-theme-light-bg p-4 lg:p-30"}>
+        <section className={"bg-theme-light-bg py-4 lg:py-30"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-4 lg:gap-20"}>
                     <div className={"col-span-12 lg:col-span-6"}>

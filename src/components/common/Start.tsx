@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Start = () => {
   const t = useTranslations("Common.start");
   return (
-    <section className={"p-4 lg:p-30"}>
+    <section className={"py-4 lg:py-30"}>
         <Container>
             <motion.div
                 variants={fadeInUp}

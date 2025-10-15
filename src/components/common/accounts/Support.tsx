@@ -34,7 +34,7 @@ const Support = () => {
         { label: t("row.col3.ul.li2") },
     ];
     return (
-        <section className={"bg-[url(/images/accounts/platinum-support-bg.png)] bg-center bg-cover h-180 lg:h-[580px] p-4 lg:p-30"}>
+        <section className={"bg-[url(/images/accounts/platinum-support-bg.png)] bg-center bg-cover h-180 lg:h-[580px] py-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

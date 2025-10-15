@@ -52,7 +52,7 @@ const Subscribe = () => {
             <Container>
                 <div className={"flex-1 grid grid-cols-1 lg:grid-cols-2"}>
                     <div className={"col-span-1"} ref={leftRef}>
-                        <div className={"flex-1 px-4 py-4 lg:py-12 lg:px-30"}>
+                        <div className={"flex-1 py-4 lg:py-12"}>
                             <ul>
                                 {
                                     ulAry.map((item, index) => (
@@ -66,7 +66,7 @@ const Subscribe = () => {
                                 }
                             </ul>
                         </div>
-                        <div className={"flex justify-center lg:justify-start px-4 lg:px-30"}>
+                        <div className={"flex justify-center lg:justify-start"}>
                             <Button className={"h-10 px-8 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                                 {t("watch")}
                             </Button>

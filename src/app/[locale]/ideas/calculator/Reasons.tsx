@@ -23,7 +23,7 @@ const Reasons = () => {
         { text: t("row.col1.ul.li3") },
     ];
     return (
-        <section className={"m-4 lg:m-30"}>
+        <section className={"my-4 lg:my-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

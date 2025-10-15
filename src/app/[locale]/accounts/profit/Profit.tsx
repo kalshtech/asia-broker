@@ -24,7 +24,7 @@ const Profit = () => {
         { text: t("row.col1.ul.li4") },
     ];
     return (
-        <section className={"py-30 px-4 lg:p-30"}>
+        <section className={"py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

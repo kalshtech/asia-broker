@@ -23,7 +23,7 @@ const AssetsSafe = () => {
     { title: t("row.col4.title"), desc: t("row.col4.desc"), imageUrl: "/images/products/transfer-assets-safe4.png" },
   ];
   return (
-    <section className={"p-4 lg:p-30"}>
+    <section className={"py-4 lg:py-30"}>
       <Container>
         <motion.div
             variants={fadeInUp}

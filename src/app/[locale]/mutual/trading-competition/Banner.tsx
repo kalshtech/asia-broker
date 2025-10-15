@@ -16,7 +16,7 @@ const fadeInUp: Variants = {
 const Banner = () => {
     const t = useTranslations("Pages.mutual.trading-competition.banner");
     return (
-        <section className={"bg-[url(/images/mutual/competition-banner.png)] bg-center bg-cover relative h-120 lg:h-[632px] py-8 px-4 lg:p-30"}>
+        <section className={"bg-[url(/images/mutual/competition-banner.png)] bg-center bg-cover relative h-120 lg:h-[632px] py-8 px-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -59,11 +59,10 @@ const Banner = () => {
                         </Typography>
                         <div className={"grid grid-cols-12 gap-8 mt-4"}>
                             <div className={"col-span-4 mt-4"}>
-                                <div
-                                    className={"border border-solid [border-image:linear-gradient(270deg,rgba(255,255,255,1),rgba(255,255,255,0))_1_1]"}/>
+                                <div className={"border border-solid [border-image:linear-gradient(270deg,rgba(255,255,255,1),rgba(255,255,255,0))_1_1]"}/>
                             </div>
                             <div className={"col-span-4"}>
-                                <Typography className={"font-medium !text-white"}>
+                                <Typography className={"font-medium text-center !text-white"}>
                                     {t("blueprint.desc")}
                                 </Typography>
                             </div>

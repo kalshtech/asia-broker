@@ -17,7 +17,7 @@ type Props = {
 
 export default function Commission({ title, desc, midst, more, imageUrl, theme = 'light' }: Props) {
     return (
-        <section className={"w-full flex px-4 mt-4 lg:mt-30 lg:px-30"}>
+        <section className={"w-full flex mt-4 lg:mt-30"}>
             <Container orientation={"horizontal"}>
                 <div className={`flex-1 relative  bg-cover bg-center h-80 lg:h-120 ${imageUrl}`}>
                     <div className={"grid grid-cols-12 w-full lg:absolute lg:mx-auto lg:bottom-0 lg:left-0 lg:top-0"}>
