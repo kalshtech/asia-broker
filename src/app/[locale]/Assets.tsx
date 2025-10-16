@@ -316,7 +316,7 @@ const Assets = () => {
                                                             variant={"h6"}
                                                             className={"!text-white font-medium"}
                                                         >
-                                                            {t("text.card.ul-title1")}
+                                                            {t("text.card.ul-title2")}
                                                         </Typography>
                                                     </header>
                                                     <Typography
@@ -335,7 +335,7 @@ const Assets = () => {
                                                             variant={"h6"}
                                                             className={"!text-white font-medium"}
                                                         >
-                                                            {t("text.card.ul-title2")}
+                                                            {t("text.card.ul-title3")}
                                                         </Typography>
                                                     </header>
                                                     <Typography
@@ -346,24 +346,24 @@ const Assets = () => {
                                                     </Typography>
                                                 </li>
 
-                                                <li className={"mt-3 lg:mt-6"}>
-                                                    <header className={"flex items-center"}>
-                                                        <div
-                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
-                                                        <Typography
-                                                            variant={"h6"}
-                                                            className={"!text-white font-medium"}
-                                                        >
-                                                            {t("text.card.ul-title3")}
-                                                        </Typography>
-                                                    </header>
-                                                    <Typography
-                                                        variant={"muted"}
-                                                        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
-                                                    >
-                                                        {t("text.card.ul-desc4")}
-                                                    </Typography>
-                                                </li>
+                                                {/*<li className={"mt-3 lg:mt-6"}>*/}
+                                                {/*    <header className={"flex items-center"}>*/}
+                                                {/*        <div*/}
+                                                {/*            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>*/}
+                                                {/*        <Typography*/}
+                                                {/*            variant={"h6"}*/}
+                                                {/*            className={"!text-white font-medium"}*/}
+                                                {/*        >*/}
+                                                {/*            {t("text.card.ul-title4")}*/}
+                                                {/*        </Typography>*/}
+                                                {/*    </header>*/}
+                                                {/*    <Typography*/}
+                                                {/*        variant={"muted"}*/}
+                                                {/*        className={"!text-white ml-3 mt-1 roboto lg:mt-3"}*/}
+                                                {/*    >*/}
+                                                {/*        {t("text.card.ul-desc4")}*/}
+                                                {/*    </Typography>*/}
+                                                {/*</li>*/}
                                             </ul>
 
                                             <div className={"mt-10"}>

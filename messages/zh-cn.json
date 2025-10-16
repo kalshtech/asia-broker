@@ -669,6 +669,32 @@
           },
           "trade": "立即开户，开始交易加密货币"
         },
+        "professional": {
+          "title": "Professional Crypto CFD Trading Experience",
+          "row": {
+            "col1": {
+              "title": "24/7 Market Access",
+              "desc": "Trade anytime, anywhere — crypto markets never close, offering continuous global trading opportunities."
+            },
+            "col2": {
+              "title": "Deep Liquidity & Low Latency Execution",
+              "desc": "Connected to top-tier liquidity providers with execution speeds as fast as 0.1 ms, ensuring stability and precision in every trade."
+            },
+            "col3": {
+              "title": "Flexible Leverage & Risk Control",
+              "desc": "Leverage up to 1:2000 with dynamic margin management and built-in negative balance protection."
+            },
+            "col4": {
+              "title": "Ultra-Low Trading Costs",
+              "desc": "Enjoy institutional-grade spreads and fees — as tight as 0.001%, empowering efficient and cost-effective trading strategies."
+            }
+          }
+        },
+        "meta": {
+          "title": "Trade Global Crypto Markets — Transparent, Fast, Flexible",
+          "desc": "Experience 0 commission, ultra-tight spreads, and leverage up to 1:2000 — trade major crypto CFDs with deep liquidity and lightning-fast execution at Asia Future Trading.",
+          "trade": "Trade Crypto CFDs"
+        },
         "commission": {
           "title": "0 佣金 · 超小点差 · 灵活杠杆",
           "midst": "捕捉加密货币市场波动，享受极具竞争力的交易成本。",
@@ -980,6 +1006,33 @@
             "other": "主题 & 板块ETF"
           },
           "trade": "立即开户，开始交易股票与ETF"
+        },
+        "professional": {
+          "title": "Professional Stocks & ETFs Trading Experience",
+          "row": {
+            "col1": {
+              "title": "Broad Market Access",
+              "desc": "Trade major global equities and index ETFs across U.S., Europe, and Asia markets with full market depth and transparent pricing."
+            },
+            "col2": {
+              "title": "Stable Execution Under Volatility",
+              "desc": "Our low-latency infrastructure ensures fast fills, tight spreads, and consistent execution — even in high-volume sessions."
+            },
+            "col3": {
+              "title": "Real-Time Margin & Risk Monitoring",
+              "desc": "Stay in control with live margin updates, dynamic exposure tracking, and automated risk alerts."
+            },
+            "col4": {
+              "title": "Global Clearing & Settlement Framework",
+              "desc": "Clearing through trusted international partners ensures secure transaction flow and asset protection across all markets."
+            }
+          }
+        },
+        "meta": {
+          "title": "Trade Global Stocks & ETFs — Fast, Transparent, Flexible",
+          "desc": "Asia Future Trading connects you to global stock and ETF markets through CFDs. Enjoy flexible long and short positions, zero commissions, and institutional-grade execution.",
+          "trade": "Trade Stocks & ETFs Now",
+          "open": "Open Demo Account"
         },
         "commission": {
           "title": "多空灵活 · 无需持股 · 快速成交",

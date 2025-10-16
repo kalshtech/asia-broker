@@ -334,11 +334,11 @@
             "title": "AFT Card. Spend Smarter. Live Freer — Anywhere.",
             "description": "Now live. Instantly spend your AFT balance worldwide — in-store or online — with Visa or Mastercard options, tailored for lifestyle, investing, and daily use.",
             "ul-title1": "Free for VIC users",
-            "ul-desc1": "No $20 monthly fee. Enjoy premium access with your VIC Account.",
-            "ul-title2": "Global spending, no limits",
-            "ul-desc2": "Use your balance for lifestyle, trading, or everyday purchases — online and offline.",
-            "ul-title3": "Visa & Mastercard options",
-            "ul-desc3": "Choose the network that fits your needs and region.",
+            "ul-desc1": "No $20 monthly fee — enjoy premium access with your VIC Account.",
+            "ul-title2": "Seamless Global Payments",
+            "ul-desc2": "Use your balance for trading, lifestyle, or everyday purchases — anytime, anywhere.",
+            "ul-title3": "Visa & Mastercard Options",
+            "ul-desc3": "From trading desks to dinner bills — your capital, your choice.",
             "ul-title4": "Use it anywhere, for anything",
             "ul-desc4": "From trading desks to dinner bills — your capital, your call.",
             "more": "Get AFT Card"
@@ -651,19 +651,45 @@
       },
       "crypto": {
         "banner": {
-          "title": "加密货币",
-          "midst": "更高效、更公平，重新定义加密交易体验",
-          "description": "以接近万分之一的极致成本，开启 BTCUSD 等主流加密资产的全新交易时代。以低至 0.1 毫秒的执行速度，高效接入全球数字货币市场。"
+          "title": "Crypto",
+          "midst": "Trade Crypto CFDs with Institutional Precision",
+          "description": "Trade crypto CFDs such as BTCUSD, ETHUSD, and SOLUSD with ultra-low costs (as tight as 0.001%), leverage up to 1:2000, and execution speeds as fast as 0.1 ms — all powered by institutional-grade infrastructure."
         },
         "markets": {
-          "title": "搜索你想交易的加密货币",
-          "desc": "输入如 BTCUSD、ETHUSD，即可查看实时买入/卖出价格。",
+          "title": "Search for the Cryptocurrency You Want to Trade",
+          "desc": "Enter symbols such as BTCUSD or ETHUSD to view real-time bid and ask prices.",
           "btn": {
-            "main": "主流币",
-            "second": "平台币与热门项目",
-            "other": "山寨币"
+            "main": "Major Coins",
+            "second": "Trending",
+            "other": "Altcoins"
           },
-          "trade": "立即开户，开始交易加密货币"
+          "trade": "Start Trading Crypto  Now"
+        },
+        "professional": {
+          "title": "Professional Crypto CFD Trading Experience",
+          "row": {
+            "col1": {
+              "title": "24/7 Market Access",
+              "desc": "Trade anytime, anywhere — crypto markets never close, offering continuous global trading opportunities."
+            },
+            "col2": {
+              "title": "Deep Liquidity & Low Latency Execution",
+              "desc": "Connected to top-tier liquidity providers with execution speeds as fast as 0.1 ms, ensuring stability and precision in every trade."
+            },
+            "col3": {
+              "title": "Flexible Leverage & Risk Control",
+              "desc": "Leverage up to 1:2000 with dynamic margin management and built-in negative balance protection."
+            },
+            "col4": {
+              "title": "Ultra-Low Trading Costs",
+              "desc": "Enjoy institutional-grade spreads and fees — as tight as 0.001%, empowering efficient and cost-effective trading strategies."
+            }
+          }
+        },
+        "meta": {
+          "title": "Trade Global Crypto Markets — Transparent, Fast, Flexible",
+          "desc": "Experience 0 commission, ultra-tight spreads, and leverage up to 1:2000 — trade major crypto CFDs with deep liquidity and lightning-fast execution at Asia Future Trading.",
+          "trade": "Trade Crypto CFDs"
         },
         "commission": {
           "title": "0 佣金 · 超小点差 · 灵活杠杆",
@@ -962,19 +988,46 @@
       },
       "stocks": {
         "banner": {
-          "title": "全球股票 & ETF",
-          "midst": "低至 1 美元，交易全球明星股票与指数 ETF，享受极速执行与机构级流动性",
-          "desc": "通过差价合约（CFD），以低门槛、高灵活性的方式参与全球股票与ETF指数基金市场。支持双向交易与杠杆设置，让个人投资者以专业工具布局全球市场趋势。"
+          "title": "Stocks & ETFs",
+          "midst": "Global Equities & Index ETFs — Diversify, Trade, and Capture Market Trends",
+          "desc": "Asia Future Trading offers a low-latency CFD platform for global stocks and ETFs — enabling flexible long–short trading and institutional-grade execution."
         },
         "markets": {
-          "title": "搜索你想交易的股票 & ETF",
-          "desc": "输入如 TSLA、AAPL、SPY、QQQ 等代码，快速查看实时买入/卖出价格，捕捉全球市场脉动。",
+          "title": "Search for the Stock or ETF You Want to Trade",
+          "desc": "Enter symbols such as TSLA, AAPL, SPY, or QQQ to view real-time bid and ask prices.",
           "btn": {
-            "main": "热门美股科技股",
-            "second": "全球核心指数ETF",
-            "other": "主题 & 板块ETF"
+            "main": "U.S. Stocks",
+            "second": "Global Stocks",
+            "other": "Index ETFs"
           },
-          "trade": "立即开户，开始交易股票与ETF"
+          "trade": "Start Trading Stocks & ETFs  Now"
+        },
+        "professional": {
+          "title": "Professional Stocks & ETFs Trading Experience",
+          "row": {
+            "col1": {
+              "title": "Broad Market Access",
+              "desc": "Trade major global equities and index ETFs across U.S., Europe, and Asia markets with full market depth and transparent pricing."
+            },
+            "col2": {
+              "title": "Stable Execution Under Volatility",
+              "desc": "Our low-latency infrastructure ensures fast fills, tight spreads, and consistent execution — even in high-volume sessions."
+            },
+            "col3": {
+              "title": "Real-Time Margin & Risk Monitoring",
+              "desc": "Stay in control with live margin updates, dynamic exposure tracking, and automated risk alerts."
+            },
+            "col4": {
+              "title": "Global Clearing & Settlement Framework",
+              "desc": "Clearing through trusted international partners ensures secure transaction flow and asset protection across all markets."
+            }
+          }
+        },
+        "meta": {
+          "title": "Trade Global Stocks & ETFs — Fast, Transparent, Flexible",
+          "desc": "Asia Future Trading connects you to global stock and ETF markets through CFDs. Enjoy flexible long and short positions, zero commissions, and institutional-grade execution.",
+          "trade": "Trade Stocks & ETFs Now",
+          "open": "Open Demo Account"
         },
         "commission": {
           "title": "多空灵活 · 无需持股 · 快速成交",
@@ -987,12 +1040,12 @@
           "btnText": "交易全球股票与ETF"
         },
         "guide": {
-          "title": "股票 & ETF CFD 投资指南",
+          "title": "Stocks & ETFs CFD Trade Guide",
           "row": {
             "col1": {
-              "title": "一美元也可以交易全球ETF的理想解决方案",
-              "desc": "交易不止于持股，股票 & ETF CFD 打开更多可能性。",
-              "more": "了解更多关于股票与ETF"
+              "title": "Why More Investors Choose Stock & ETF CFDs",
+              "desc": "Trade global equities and index ETFs from as little as $1 — enjoy flexible leverage, zero commissions, and new possibilities beyond traditional share ownership.",
+              "more": "Learn More"
             },
             "col2": {
               "span1": {
@@ -1013,33 +1066,33 @@
         "qa": {
           "ul": {
             "li1": {
-              "title": "股票 & ETF CFD 和普通买股票有什么区别？",
-              "desc": "CFD 是差价合约交易，不涉及股票实物交割。您通过价格波动进行交易，无需持有真实股票，也可灵活选择买入或卖出方向。"
+              "title": "What’s the difference between Stock & ETF CFDs and traditional stock trading?",
+              "desc": "CFDs (Contracts for Difference) are derivative instruments that let you trade price movements without owning the actual shares.\nYou can profit from both rising and falling prices, with no physical delivery or ownership required."
             },
             "li2": {
-              "title": "可以交易哪些股票和ETF？",
-              "desc": "平台支持多种热门股票（如特斯拉 TSLA、苹果 AAPL、英伟达 NVDA）与指数ETF（如 SPY、QQQ、XLF 等），持续拓展中。具体产品请在交易平台中查询。"
+              "title": "Which stocks and ETFs can I trade?",
+              "desc": "Asia Future Trading offers a wide range of global stocks — including Tesla (TSLA), Apple (AAPL), and NVIDIA (NVDA) — as well as popular index ETFs such as SPY, QQQ, and XLF.\nOur product list is continuously expanding. Please check the trading platform for the latest instruments."
             },
             "li3": {
-              "title": "股票CFD是否支持T+0交易？",
-              "desc": "是的，股票 & ETF CFD 支持当天买入、当天卖出（T+0），不受传统券商T+2交割限制，适合日内交易与高频策略。"
+              "title": "Do Stock & ETF CFDs support T+0 trading?",
+              "desc": "Yes. You can open and close positions within the same trading day (T+0), without the T+2 settlement delay of traditional brokers — ideal for day traders and high-frequency strategies."
             },
             "li4": {
-              "title": "可以做空股票和ETF吗？",
-              "desc": "可以。CFD支持双向交易，您可以在判断市场下跌时先卖出（做空），待价格下跌后再平仓获利。"
+              "title": "Can I short stocks and ETFs?",
+              "desc": "Yes. CFDs allow two-way trading, meaning you can go short when expecting a price drop and buy back later to capture profits."
             },
             "li5": {
-              "title": "ETF 是什么？我为什么应该关注它？",
-              "desc": "ETF（交易所交易基金）是一种跟踪特定指数、行业板块、商品或资产组合的金融产品。通过购买单一ETF，您就可以获得对整个市场或板块的敞口，达到分散投资与降低风险的目的。"
+              "title": "What is an ETF, and why should I consider it?",
+              "desc": "An ETF (Exchange-Traded Fund) tracks an index, sector, commodity, or group of assets. By trading a single ETF, you gain diversified exposure to an entire market segment, helping reduce overall risk."
             },
             "li6": {
-              "title": "可以用ETF CFD投资哪些资产类型？",
-              "desc": "我们平台提供的ETF差价合约涵盖多种市场板块，包括：",
-              "text-1": "美股指数（如SPY、QQQ）",
-              "text-2": "行业板块（如XLF金融、XLE能源、XLV医疗）",
-              "text-3": "债券ETF（如TLT）",
-              "text-4": "商品ETF（如GLD黄金）",
-              "text-5": "新兴主题（如ICLN清洁能源、ARKK创新科技）"
+              "title": "What types of ETFs can I trade via CFDs?",
+              "desc": "Our ETF CFD offering includes a variety of global sectors and asset classes:",
+              "text-1": "U.S. index ETFs (e.g., SPY, QQQ)",
+              "text-2": "Sector ETFs (e.g., XLF – Financials, XLE – Energy, XLV – Healthcare)",
+              "text-3": "Bond ETFs (e.g., TLT – U.S. Treasuries)",
+              "text-4": "Commodity ETFs (e.g., GLD – Gold)",
+              "text-5": "Thematic ETFs (e.g., ICLN – Clean Energy, ARKK – Innovation)"
             }
           }
         }

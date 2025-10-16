@@ -75,7 +75,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                         }
                         {
                             left.desc && (
-                                <Typography variant={"muted"} className={classnames([left.title ?? "mt-4 lg:mt-8"])}>
+                                <Typography variant={"muted"} className={classnames([left.title ? "mt-4 lg:mt-8" : ""])}>
                                     {left.desc}
                                 </Typography>
                             )

@@ -10,10 +10,11 @@ type Props = {
     languageLocal: string;
     backgroundImage: string;
     isShowCommission?: boolean;
+    isShowOpenBtn?: boolean;
 };
 
 const MetaProfession = ( props: Props ) => {
-    const { languageLocal, backgroundImage, isShowCommission = true } = props;
+    const { languageLocal, backgroundImage, isShowCommission = true, isShowOpenBtn = true } = props;
     const t =  useTranslations(languageLocal);
     const local = useLocale();
     const isEn = local === "en";
@@ -41,9 +42,13 @@ const MetaProfession = ( props: Props ) => {
                         <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
                             { t("meta.trade") }
                         </Button>
-                        <Button className={"px-8 h-10 ml-4 rounded-full border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
-                            { t("meta.open") }
-                        </Button>
+                        {
+                            isShowOpenBtn && (
+                                <Button className={"px-8 h-10 ml-4 rounded-full border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
+                                    { t("meta.open") }
+                                </Button>
+                            )
+                        }
                     </div>
                 </div>
             </Container>

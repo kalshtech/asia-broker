@@ -1,13 +1,14 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
 import Banner from "@/components/common/products/Banner";
-import Commission from "@/components/common/products/Commission";
-import MoreMarkets from "@/components/common/products/MoreMarkets";
 import Guide from "@/components/common/Guide";
 import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import Markets from "@/components/common/products/Markets";
 import Profession from "@/components/common/products/Profession";
+import MetaProfession from "@/components/common/products/MetaProfession";
+import MetaCommission from "@/components/common/products/MetaCommission";
+import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.stocks");
@@ -59,6 +60,13 @@ export default async function Page() {
         { label: t("markets.btn.main"), value: "main" },
         { label: t("markets.btn.second"), value: "second" },
         { label: t("markets.btn.other"), value: "other" },
+    ];
+
+    const rowAry = [
+        { imageUrl: "/images/products/future-professional1.png", title: t("professional.row.col1.title"), desc: t("professional.row.col1.desc") },
+        { imageUrl: "/images/products/future-professional2.png", title: t("professional.row.col2.title"), desc: t("professional.row.col2.desc") },
+        { imageUrl: "/images/products/future-professional3.png", title: t("professional.row.col3.title"), desc: t("professional.row.col3.desc") },
+        { imageUrl: "/images/products/future-professional4.png", title: t("professional.row.col4.title"), desc: t("professional.row.col4.desc") },
     ];
 
     const QA_DATA = [
@@ -114,21 +122,20 @@ export default async function Page() {
                 title={t("markets.title")}
                 desc={t("markets.desc")}
                 trade={t("markets.trade")}
+                tabList={marketTabList}
             />
-            <Commission
-                title={t("commission.title")}
-                desc={t("commission.desc")}
-                more={t("commission.more")}
-                theme={"light"}
-                imageUrl={"bg-[url(/images/products/stocks-commission-background.png)]"}
+            <MetaProfession
+                rowAry={rowAry}
+                title={t("professional.title")}
             />
-            <MoreMarkets
-                title={t("moreMarket.title")}
-                desc={t("moreMarket.desc")}
-                btnText={t("moreMarket.btnText")}
-                imageUrl={"bg-[url(/images/products/stocks-market-background.png)]"}
+            <MetaCommission
+                languageLocal={"Pages.products.future"}
+                backgroundImage={"bg-[url(/images/products/stocks-commission-background.png)]"}
             />
-
+            <MetaMoreMarkets
+                languageLocal={"Pages.products.future"}
+                backgroundImage={"bg-[url(/images/products/stocks-market-background.png)]"}
+            />
             <Guide
                 title={t("guide.title")}
                 left={{ title: t("guide.row.col1.title"), desc: t("guide.row.col1.desc"), more: t("guide.row.col1.more") }}
