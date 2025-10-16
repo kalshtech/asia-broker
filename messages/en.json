@@ -731,33 +731,33 @@
         "qa": {
           "ul": {
             "li1": {
-              "title": "平台提供哪些主流加密货币交易？",
-              "desc": "目前我们支持BTC/USD、ETH/USD、SOL/USD、XRP/USD、DOGE/USD等超20种热门加密货币对的差价合约交易，全部支持做多/做空与灵活杠杆。"
+              "title": "Which cryptocurrencies can I trade?",
+              "desc": "Asia Future Trading supports over 20 popular crypto CFD pairs including BTC/USD, ETH/USD, SOL/USD, XRP/USD, and DOGE/USD. All instruments support both long and short positions with flexible leverage."
             },
             "li2": {
-              "title": "加密CFD交易的优势是什么？",
-              "desc": "相比传统链上交易，CFD免去钱包与托管风险，执行速度更快，适合投机策略。无需真实持币也可参与上涨/下跌行情，适合短线与中期交易者。"
+              "title": "What are the advantages of trading Crypto CFDs?",
+              "desc": "Unlike on-chain trading, CFDs eliminate wallet and custody risks, offering faster execution and higher flexibility.\nYou can trade price movements in both directions without holding actual coins — ideal for short- and medium-term strategies."
             },
             "li3": {
-              "title": "加密货币支持哪些杠杆？",
-              "desc": "我们提供以下动态杠杆设置（可能随市况与监管政策调整）：",
-              "text-1": "BTC、ETH：最高 1: 2000",
-              "text-2": "主流币（SOL、XRP 等）：最高 1:2000",
-              "text-3": "新兴币与高波动币种：最高 1:2000",
-              "prompt": "注意：高杠杆伴随高风险，请合理配置仓位。"
+              "title": "What leverage is available for crypto trading?",
+              "desc": "We offer dynamic leverage levels (subject to market and regulatory conditions):",
+              "text-1": "BTC, ETH: up to 1:2000",
+              "text-2": "Major Altcoins (e.g., SOL, XRP): up to 1:2000",
+              "text-3": "Emerging or high-volatility tokens: up to 1:2000",
+              "prompt": "High leverage involves high risk — manage your exposure carefully."
             },
             "li4": {
-              "title": "加密CFD是否收取隔夜资金费或强平费用？",
-              "desc": "我们的Crypto CFD产品不收取隔夜资金费（Funding Fee），您可持仓过夜或长期持有而无额外成本。同时平台采用强平前预警机制（止损提前触发），并启用负余额保护，确保您的账户不会因极端行情而出现亏损穿仓。"
+              "title": "Are there overnight or liquidation fees for Crypto CFDs?",
+              "desc": "No overnight funding fees are charged on Crypto CFDs. You can hold positions overnight or longer-term at no extra cost. Our system provides early margin alerts and negative balance protection to prevent over-exposure during extreme volatility."
             },
             "li5": {
-              "title": "加密交易中如何设置止盈止损？支持哪些订单类型？",
-              "desc": "您可在开仓前设置止盈（TP）与止损（SL），也可在持仓过程中随时修改。平台支持市价单、限价单、止损单等常见订单类型，并在服务器侧精确执行，有效规避滑点和报价跳空导致的策略失效风险。"
+              "title": "What order types are supported?",
+              "desc": "You can set Take-Profit (TP) and Stop-Loss (SL) before or after opening a position. Asia Future Trading supports market, limit, and stop orders, executed precisely on the server side to minimize slippage and price gaps."
             },
             "li6": {
-              "title": "什么是区块链技术？",
-              "desc": "区块链是一种分布式账本技术，所有交易数据按时间顺序加密存储于“区块”中，并通过网络节点共同维护。其核心特征包括去中心化、防篡改与可追溯性。区块链广泛应用于比特币等加密货币的发行与转账，也成为DeFi、NFT等创新金融应用的技术基础。",
-              "prompt": "平台提供的加密货币CFD产品，虽不依赖链上交易机制，但其价格走势依然会受链上市场影响。"
+              "title": "What is blockchain technology, and how is it related to crypto CFDs?",
+              "desc": "Blockchain is a decentralized ledger system where all transactions are encrypted, timestamped, and verified by network nodes.",
+              "prompt": "While Crypto CFDs do not rely on on-chain transactions, their prices still reflect on-chain market movements and global demand dynamics."
             }
           }
         }

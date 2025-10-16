@@ -306,7 +306,7 @@ const HomeSwiper = () => {
                                     isEn ? (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <TitleReveal title={t("6.title1")} />
+                                                <TitleReveal isActive title={t("6.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
