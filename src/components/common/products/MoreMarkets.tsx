@@ -31,7 +31,7 @@ export default function MoreMarkets({ title, desc, midst, btnText, imageUrl }: P
                         </Typography>
                     </div>
                     <div className={"flex justify-center"}>
-                        <Button className={"bg-theme-active h-12 px-8 hover:bg-theme-active-hover rounded-full"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {btnText}
                         </Button>
                     </div>

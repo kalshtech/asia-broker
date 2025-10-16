@@ -50,8 +50,7 @@ const Ready = () => {
                                 {t("joint")}
                             </Typography>
                             <div className={"ml-auto"}>
-                                <Button
-                                    className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                     {t("trade")}
                                 </Button>
                                 <Button

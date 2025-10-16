@@ -48,11 +48,10 @@ const Banner =  () => {
                             {t("desc")}
                         </Typography>
                         <div className={"mt-16"}>
-                            <Button className={"px-8 h-10 rounded-full text-black bg-white hover:bg-white"}>
+                            <Button className={"text-black bg-white hover:bg-white"}>
                                 {t("register")}
                             </Button>
-                            <Button
-                                className={"px-8 h-10 rounded-full ml-6 border bg-transparent hover:bg-transparent"}>
+                            <Button className={"ml-6 border bg-transparent hover:bg-transparent"}>
                                 {t("vic")}
                             </Button>
                         </div>

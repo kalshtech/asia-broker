@@ -71,7 +71,7 @@ const Community = () => {
                                                 </Typography>
                                             </div>
                                             <div className={"text-center mt-10"}>
-                                                <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                                     <Link href={"/"} className={"text-white mx-auto justify-center flex"}>
                                                         {t("row.1.link")}
                                                     </Link>
@@ -131,8 +131,7 @@ const Community = () => {
                                                 {t("row.2.description2")}
                                             </Typography>
                                             <div className={"mt-8"}>
-                                                <Button
-                                                    className={"rounded-full px-8 h-10 bg-theme-active hover:bg-theme-active-hover"}>
+                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                                     {t("row.2.btnText")}
                                                 </Button>
                                             </div>
@@ -159,8 +158,7 @@ const Community = () => {
                                                 {t("row.2.description")}
                                             </Typography>
                                             <div className={"mt-8"}>
-                                                <Button
-                                                    className={"rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                                     {t("row.2.btnText")}
                                                 </Button>
                                             </div>
@@ -193,7 +191,7 @@ const Community = () => {
                                                 </Typography>
                                             </div>
                                             <div className={"text-center mt-10"}>
-                                                <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                                     <Link href={"/"} className={"text-white mx-auto justify-center flex"}>
                                                         {t("row.3.explore")}
                                                     </Link>

@@ -39,7 +39,7 @@ const Reasons = () => {
                     </Typography>
                 </motion.div>
                 <div className={"grid grid-cols-12 mt-4 lg:mt-16"}>
-                    <div className={"bg-theme-deep-bg p-6 lg:p-12 lg:rounded-l-2xl col-span-12 lg:col-span-6"}>
+                    <div className={"bg-theme-deep-bg px-6 py-8 lg:py-20 lg:px-12 lg:rounded-l-2xl col-span-12 lg:col-span-6"}>
                         <Typography
                             variant={"h4"}
                             className={"font-medium !text-white"}
@@ -78,13 +78,13 @@ const Reasons = () => {
                         </Typography>
 
                         <div className={"mt-10"}>
-                            <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active"}>
+                            <Button className={"bg-theme-active hover:bg-theme-active"}>
                                 {t("row.col1.explore")}
                             </Button>
                         </div>
                     </div>
                     <div className={"col-span-12 lg:col-span-6"}>
-                        <img src="/images/ideas/calculate-reasons.png" alt=""/>
+                        <img src="/images/ideas/calculate-reasons.png" className={"h-full w-full object-cover max-h-[660px] rounded-r-xl"} alt=""/>
                     </div>
                 </div>
             </Container>

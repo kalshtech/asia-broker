@@ -55,7 +55,7 @@ export default function Commission({ title, desc, midst, more, imageUrl, theme =
                                 </div>
                                 <div className={"ml-auto mr-4 lg:mr-50"}>
                                     <Button
-                                        className={classnames(["rounded-full h-12 px-8 bg-theme-active hover:bg-theme-active-hover", {
+                                        className={classnames(["bg-theme-active hover:bg-theme-active-hover", {
                                             '!bg-white !text-theme-active': theme === 'light',
                                             '': theme === 'dark',
                                         }])}

@@ -28,8 +28,7 @@ const Explore = () => {
                             </Typography>
 
                             <div className={"mt-16"}>
-                                <Button
-                                    className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                     {t("row.col1.btnText")}
                                 </Button>
 

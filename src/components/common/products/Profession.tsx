@@ -49,7 +49,7 @@ const Profession = () => {
                         {t("title")}
                     </Typography>
 
-                    <Typography className={"text-center mt-6"}>
+                    <Typography variant={"p"} className={"text-center mt-6"}>
                         {t("desc")}
                     </Typography>
                 </motion.div>
@@ -65,7 +65,7 @@ const Profession = () => {
                                          onClick={() => setTabActive(item.value)}
                                     >
                                         <header className={"py-8 flex justify-center"}>
-                                            <Typography className={"text-theme-active font-medium"}>
+                                            <Typography variant={"p"} className={"text-theme-active font-medium"}>
                                                 {item.label}
                                             </Typography>
                                         </header>
@@ -80,20 +80,19 @@ const Profession = () => {
                                     <Typography variant={"h3"} className={"font-medium"}>
                                         {activeChildren?.title}
                                     </Typography>
-                                    <Typography className={"font-medium max-w-xl mt-2"}>
+                                    <Typography variant={"p"} className={"font-medium max-w-xl mt-2"}>
                                         {activeChildren?.desc1}
                                     </Typography>
                                     {
                                         activeChildren?.desc2 && (
-                                            <Typography className={"font-medium max-w-xl mt-2"}>
+                                            <Typography variant={"muted"} className={"max-w-xl mt-2"}>
                                                 {activeChildren?.desc2}
                                             </Typography>
                                         )
                                     }
 
                                     <div className={"mt-10"}>
-                                        <Button
-                                            className={"rounded-full h-12 px-8 bg-theme-active hover:bg-theme-active-hover"}>
+                                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                             {activeChildren?.btnText}
                                         </Button>
                                     </div>

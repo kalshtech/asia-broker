@@ -79,7 +79,7 @@ const Explore = () => {
                                             }
                                         </ul>
                                         <div className={"mt-4 lg:mt-20"}>
-                                            <Button className={"rounded-full px-8 h-10"}>
+                                            <Button>
                                                 {t("card1.btn")}
                                             </Button>
                                         </div>
@@ -127,7 +127,7 @@ const Explore = () => {
                                             }
                                         </ul>
                                         <div className={"mt-4 lg:mt-20"}>
-                                            <Button className={"rounded-full px-8 h-10"}>
+                                            <Button>
                                                 {t("card2.btn")}
                                             </Button>
                                         </div>

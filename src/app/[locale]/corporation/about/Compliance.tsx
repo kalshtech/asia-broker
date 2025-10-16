@@ -98,8 +98,7 @@ const Compliance = () => {
                                 </div>
 
                                 <div className={"mt-10"}>
-                                    <Button
-                                        className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                         {t("row.col2.view")}
                                     </Button>
                                 </div>

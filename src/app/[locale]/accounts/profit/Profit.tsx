@@ -62,18 +62,15 @@ const Profit = () => {
                                 }
                             </ul>
                             <div className={"mt-10"}>
-                                <Button
-                                    className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                     {t("row.col1.gold")}
                                 </Button>
-                                <Button
-                                    className={"px-8 h-10 ml-4 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                <Button className={"ml-4 bg-theme-active hover:bg-theme-active-hover"}>
                                     {t("row.col1.vic")}
                                 </Button>
                             </div>
                             <div className={"mt-6"}>
-                                <Button
-                                    className={"px-8 h-10 rounded-full border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
+                                <Button className={"border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
                                     {t("row.col1.download")}
                                 </Button>
                             </div>

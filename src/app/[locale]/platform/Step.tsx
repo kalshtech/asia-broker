@@ -107,7 +107,7 @@ const Step = () => {
                 <div className={"mx-auto mt-8 lg:mt-24"}>
                     <div className={"flex justify-center"}>
                         <RegisterBtn className={"bg-white hover:bg-white text-theme-active"}/>
-                        <Button className={"px-8 h-10 rounded-full ml-12 border bg-transparent hover:bg-transparent"}>
+                        <Button className={"ml-12 border bg-transparent hover:bg-transparent"}>
                             {t("join")}
                         </Button>
                     </div>

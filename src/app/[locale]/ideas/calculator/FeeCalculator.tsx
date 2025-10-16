@@ -54,13 +54,13 @@ const FeeCalculator = () => {
                     </Typography>
 
                     <Typography
-                        variant={"lead"}
-                        className={"font-medium mt-4 text-center"}
+                        variant={"p"}
+                        className={"mt-4 text-center"}
                     >
                         {t("desc")}
                     </Typography>
                 </motion.div>
-                <div className={"mt-10"}>
+                <div className={"mt-16"}>
                     <div className={"flex lg:hidden"}>
                         <Select value={tabActive} onValueChange={handleToggleTabActive}>
                             <SelectTrigger className={"w-full"}>
@@ -88,7 +88,7 @@ const FeeCalculator = () => {
                                     <TabsTrigger
                                         key={index}
                                         value={item.value}
-                                        className={"px-8 cursor-pointer rounded-full bg-theme-light-bg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                        className={"px-8 h-10 text-base cursor-pointer rounded-full bg-theme-light-bg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
                                     >
                                         {item.label}
                                     </TabsTrigger>
@@ -97,20 +97,20 @@ const FeeCalculator = () => {
                         </TabsList>
                     </Tabs>
                     <Typography
-                        variant={"lead"}
-                        className={"font-medium mt-8 text-center"}
+                        variant={"p"}
+                        className={"mt-10 text-center"}
                     >
                         {TablePrompt}
                     </Typography>
                 </div>
-                <div className={"mt-10 bg-theme-light-bg rounded-xs p-4 lg:p-12"}>
+                <div className={"mt-10 bg-theme-light-bg rounded-xs p-4 lg:px-20 lg:py-12"}>
                     <div className={"grid gap-4 lg:gap-8 grid-cols-2 lg:grid-cols-3"}>
                         <div className={""}>
                             <Label htmlFor="date" className={"px-1 mb-2"}>
                                 {t("form.type")}
                             </Label>
                             <Select>
-                                <SelectTrigger className={"bg-white w-full lg:min-w-40"}>
+                                <SelectTrigger className={"bg-white py-6 w-full lg:min-w-40"}>
                                     <SelectValue placeholder={t("form.type")}/>
                                 </SelectTrigger>
                                 <SelectContent>
@@ -125,7 +125,7 @@ const FeeCalculator = () => {
                                 {t("form.currency")}
                             </Label>
                             <Select>
-                                <SelectTrigger className={"bg-white w-full lg:min-w-40"}>
+                                <SelectTrigger className={"bg-white py-6 w-full lg:min-w-40"}>
                                     <SelectValue placeholder={t("form.currency")}/>
                                 </SelectTrigger>
                                 <SelectContent>
@@ -140,7 +140,7 @@ const FeeCalculator = () => {
                                 {t("form.species")}
                             </Label>
                             <Select>
-                                <SelectTrigger className={"bg-white w-full lg:min-w-40"}>
+                                <SelectTrigger className={"bg-white py-6 w-full lg:min-w-40"}>
                                     <SelectValue placeholder={t("form.species")}/>
                                 </SelectTrigger>
                                 <SelectContent>
@@ -155,7 +155,7 @@ const FeeCalculator = () => {
                                 {t("form.level")}
                             </Label>
                             <Select>
-                                <SelectTrigger className={"bg-white w-full lg:min-w-40"}>
+                                <SelectTrigger className={"bg-white py-6 w-full lg:min-w-40"}>
                                     <SelectValue placeholder={t("form.level")}/>
                                 </SelectTrigger>
                                 <SelectContent>
@@ -170,7 +170,7 @@ const FeeCalculator = () => {
                                 {t("form.volume")}
                             </Label>
                             <Select>
-                                <SelectTrigger className={"bg-white w-full lg:min-w-40"}>
+                                <SelectTrigger className={"bg-white w-full py-6 lg:min-w-40"}>
                                     <SelectValue placeholder={t("form.volume")}/>
                                 </SelectTrigger>
                                 <SelectContent>
@@ -181,7 +181,7 @@ const FeeCalculator = () => {
                             </Select>
                         </div>
                         <div className={""}>
-                            <Button className={"w-full mt-[22px]"}>
+                            <Button className={"w-full py-6 rounded-lg bg-theme-active hover:bg-theme-active-hover mt-[22px]"}>
                                 {t("form.calculate")}
                             </Button>
                         </div>
@@ -196,10 +196,10 @@ const FeeCalculator = () => {
                     <div className={"grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12"}>
                         <div className={""}>
                             <div className={"flex mb-2"}>
-                                <Typography>
+                                <Typography variant={"muted"}>
                                     {t("form.margin")}
                                 </Typography>
-                                <Typography className={"ml-auto"}>
+                                <Typography variant={"muted"} className={"ml-auto"}>
                                     {t("form.margin")}
                                 </Typography>
                             </div>
@@ -207,10 +207,10 @@ const FeeCalculator = () => {
                         </div>
                         <div className={""}>
                             <div className={"flex mb-2"}>
-                                <Typography>
+                                <Typography variant={"muted"}>
                                     {t("form.shortCredit")}
                                 </Typography>
-                                <Typography className={"ml-auto"}>
+                                <Typography variant={"muted"} className={"ml-auto"}>
                                     {t("form.shortCredit")}
                                 </Typography>
                             </div>
@@ -218,10 +218,10 @@ const FeeCalculator = () => {
                         </div>
                         <div className={""}>
                             <div className={"flex mb-2"}>
-                                <Typography>
+                                <Typography variant={"muted"}>
                                     {t("form.cost")}
                                 </Typography>
-                                <Typography className={"ml-auto"}>
+                                <Typography variant={"muted"} className={"ml-auto"}>
                                     {t("form.cost")}
                                 </Typography>
                             </div>
@@ -229,10 +229,10 @@ const FeeCalculator = () => {
                         </div>
                         <div className={""}>
                             <div className={"flex mb-2"}>
-                                <Typography>
+                                <Typography variant={"muted"}>
                                     {t("form.longCredit")}
                                 </Typography>
-                                <Typography className={"ml-auto"}>
+                                <Typography variant={"muted"} className={"ml-auto"}>
                                     {t("form.longCredit")}
                                 </Typography>
                             </div>
@@ -240,10 +240,10 @@ const FeeCalculator = () => {
                         </div>
                         <div className={""}>
                             <div className={"flex mb-2"}>
-                                <Typography>
+                                <Typography variant={"muted"}>
                                     {t("form.fee")}
                                 </Typography>
-                                <Typography className={"ml-auto"}>
+                                <Typography variant={"muted"} className={"ml-auto"}>
                                     {t("form.fee")}
                                 </Typography>
                             </div>
@@ -251,10 +251,10 @@ const FeeCalculator = () => {
                         </div>
                         <div className={""}>
                             <div className={"flex mb-2"}>
-                                <Typography>
+                                <Typography variant={"muted"}>
                                     {t("form.pointValue")}
                                 </Typography>
-                                <Typography className={"ml-auto"}>
+                                <Typography variant={"muted"} className={"ml-auto"}>
                                     {t("form.pointValue")}
                                 </Typography>
                             </div>

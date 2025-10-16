@@ -98,11 +98,10 @@ const Credit = ({ typeText, className, number }: Props) => {
                 </div>
 
                 <div className={"flex justify-center mt-4 lg:mt-16"}>
-                    <Button className={"px-8 h-10 rounded-full"}>
+                    <Button>
                         {t("immediately")}
                     </Button>
-                    <Button
-                        className={"px-8 h-10 rounded-full ml-4 bg-transparent border border-black text-black hover:bg-transparent"}>
+                    <Button className={"ml-4 bg-transparent border border-black text-black hover:bg-transparent"}>
                         {t("understand")}
                     </Button>
                 </div>

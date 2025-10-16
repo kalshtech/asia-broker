@@ -43,10 +43,10 @@ const Professional = () => {
                         {t("desc")}
                     </Typography>
                     <div className={"mt-10 flex justify-center"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("understand")}
                         </Button>
-                        <Button className={"px-8 h-10 ml-4 rounded-full border bg-transparent hover:bg-transparent"}>
+                        <Button className={"ml-4 border bg-transparent hover:bg-transparent"}>
                             {t("trade")}
                         </Button>
                     </div>

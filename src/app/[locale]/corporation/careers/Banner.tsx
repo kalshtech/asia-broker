@@ -51,7 +51,7 @@ const Banner =  () => {
                         >
                             {t("tips")}
                         </Typography>
-                        <Button className={"px-8 h-10 ml-auto rounded-full text-theme-active bg-white hover:bg-white"}>
+                        <Button className={"ml-auto text-theme-active bg-white hover:bg-white"}>
                             {t("view")}
                         </Button>
                     </div>

@@ -245,8 +245,7 @@ const Properly = () => {
                                 <RegisterBtn/>
                                 {
                                     isEn && (
-                                        <Button
-                                            className={"rounded-full mt-4 px-8 h-10 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
+                                        <Button className={"mt-4 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
                                             {t("explore")}
                                         </Button>
                                     )

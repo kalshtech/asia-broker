@@ -553,11 +553,10 @@ const Navigation = () => {
                                 </NavigationMenuItem>
                             </NavigationMenuList>
                         </NavigationMenu>
-                        <Button
-                            className={"mr-4 px-6 ml-4 lg:px-8 rounded-full bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
+                        <Button className={"mr-4 px-6 ml-4 lg:px-8 bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
                             登录
                         </Button>
-                        <Button className={"bg-theme-active rounded-full cursor-pointer hover:bg-theme-active-hover"}>
+                        <Button className={"bg-theme-active cursor-pointer hover:bg-theme-active-hover"}>
                             开设账户
                         </Button>
                         {

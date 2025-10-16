@@ -37,8 +37,7 @@ export default async function Brief() {
                                     </Typography>
                                 </div>
                                 <div className={"ml-auto flex justify-center items-center"}>
-                                    <Button
-                                        className={"rounded-full h-10 px-8 bg-theme-active hover:bg-theme-active-hover"}>
+                                    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                         {t("row.left.download")}
                                     </Button>
                                 </div>

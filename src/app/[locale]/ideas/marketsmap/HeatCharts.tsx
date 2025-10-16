@@ -91,7 +91,7 @@ const HeatCharts = () => {
                         {t("forex-desc")}
                     </Typography>
                     <div className={"mt-6 flex justify-center"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("forex-explore")}
                         </Button>
                     </div>
@@ -154,7 +154,7 @@ const HeatCharts = () => {
                         {t("stock-desc")}
                     </Typography>
                     <div className={"mt-6 flex justify-center"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("stock-explore")}
                         </Button>
                     </div>
@@ -182,7 +182,7 @@ const HeatCharts = () => {
                         {t("crypto-desc")}
                     </Typography>
                     <div className={"mt-6 flex justify-center"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("crypto-explore")}
                         </Button>
                     </div>

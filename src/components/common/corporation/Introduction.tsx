@@ -34,7 +34,7 @@ const Introduction = () => {
                         {t("col1.desc2")}
                     </Typography>
                     <div className={"mt-8 lg:mt-16"}>
-                        <Button className={"bg-white text-black px-8 h-10 rounded-full text-theme-active hover:bg-white"}>
+                        <Button className={"bg-white text-black text-theme-active hover:bg-white"}>
                             {t("col1.view")}
                         </Button>
                     </div>

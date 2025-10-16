@@ -68,7 +68,7 @@ function MultiSelectTabs() {
                             }}
                             aria-pressed={active}
                             className={classnames([
-                                "h-10 px-5 rounded-full cursor-pointer text-sm font-medium text-[#666666] border hover:bg-theme-active hover:text-white transition-colors",
+                                "px-5 cursor-pointer text-sm font-medium text-[#666666] border hover:bg-theme-active hover:text-white transition-colors",
                                 active ? "bg-theme-active text-white" : ""
                             ])}
                         >

@@ -50,7 +50,7 @@ const Banner = () => {
 
                 <div className={"flex justify-center flex-col mt-20"}>
                     <div className={"flex justify-center"}>
-                        <Button className={"bg-theme-active px-8 h-10 rounded-full hover:bg-theme-active-hover"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("btnText")}
                         </Button>
                     </div>

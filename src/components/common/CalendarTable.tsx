@@ -19,12 +19,13 @@ import {Input} from "@/components/ui/input";
 
 type Props = {
     theme?: string;
+    isShowForm?: boolean;
 };
 
 const CalendarTable = (props: Props) => {
     const t = useTranslations("Pages.home.calendar");
     const CommonT = useTranslations("Common");
-    const { theme = "light" } = props;
+    const { theme = "light", isShowForm = false } = props;
 
     const [open, setOpen] = React.useState(false);
     const [date, setDate] = React.useState<Date | undefined>(undefined);
@@ -493,7 +494,7 @@ const CalendarTable = (props: Props) => {
                 </Table>
             </div>
             {
-                isEn && (
+                (isEn && isShowForm) && (
                     <div className={"mx-auto max-w-7xl mt-8 lg:mt-30"}>
                         <div className={"grid grid-cols-12 gap-8"}>
                             <div className={"col-span-12 lg:col-span-4"}>
@@ -516,7 +517,7 @@ const CalendarTable = (props: Props) => {
                             </div>
                             <div className={"col-span-4"}>
                                 <Button
-                                    className={"flex-1 w-full h-full rounded-full bg-theme-active hover:bg-theme-hover"}>
+                                    className={"flex-1 w-full h-full bg-theme-active hover:bg-theme-hover"}>
                                     {t("form.subscribe")}
                                 </Button>
                             </div>

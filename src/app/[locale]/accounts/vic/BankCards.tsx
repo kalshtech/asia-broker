@@ -73,7 +73,7 @@ const BankCards = () => {
                                 }
                             </ul>
                             <div className={"mt-4 lg:mt-16"}>
-                                <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
+                                <Button className={"text-black bg-white hover:bg-white"}>
                                     {t("row.col1.understand")}
                                 </Button>
                             </div>

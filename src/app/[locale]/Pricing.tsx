@@ -102,15 +102,13 @@ const Pricing = () => {
                                 </Typography>
 
                                 <div className={"mt-10 lg:mt-27"}>
-                                    <Button
-                                        className={"bg-white px-8 h-10 text-theme-active rounded-full cursor-pointer hover:bg-white"}>
+                                    <Button className={"bg-white text-theme-active cursor-pointer hover:bg-white"}>
                                         {t("left.btnText")}
                                     </Button>
 
                                     {
                                         isEn && (
-                                            <Button
-                                                className={"bg-transparent ml-4 px-8 h-10 text-white border rounded-full cursor-pointer hover:bg-transparent"}>
+                                            <Button className={"bg-transparent ml-4 text-white border cursor-pointer hover:bg-transparent"}>
                                                 {t("left.more")}
                                             </Button>
                                         )

@@ -134,7 +134,7 @@ const CoreTerms = () => {
                         {t("desc")}
                     </Typography>
                     <div className={"mt-12 flex justify-center"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("explore")}
                         </Button>
                     </div>

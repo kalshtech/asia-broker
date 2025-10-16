@@ -59,8 +59,7 @@ const AboutCalendar = () => {
                                    className={"text-white rounded-full h-12 bg-theme-light-bg/60 placeholder:text-white"}/>
                         </div>
                         <div className={"col-span-4"}>
-                            <Button
-                                className={"flex-1 w-full h-full rounded-full bg-theme-active hover:bg-theme-hover"}>
+                            <Button className={"flex-1 w-full h-full bg-theme-active hover:bg-theme-hover"}>
                                 {t("form.subscribe")}
                             </Button>
                         </div>

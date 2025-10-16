@@ -70,11 +70,10 @@ const Banner =  () => {
                     </ul>
                 </motion.div>
                 <div className={"mt-16"}>
-                    <Button className={"bg-white px-8 h-10 rounded-full hover:!bg-white text-black"}>
+                    <Button className={"bg-white hover:!bg-white text-black"}>
                         {t("register")}
                     </Button>
-                    <Button
-                        className={"ml-4 px-8 h-10 bg-transparent hover:bg-transparent rounded-full border border-white"}>
+                    <Button className={"ml-4 bg-transparent hover:bg-transparent border border-white"}>
                         {t("support")}
                     </Button>
                 </div>

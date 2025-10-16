@@ -59,7 +59,7 @@ const VIC = () => {
                                 </div>
 
                                 <div className={"mt-4 lg:mt-16"}>
-                                    <Button className={"px-8 h-10 rounded-full"}>
+                                    <Button>
                                         {t("left.understand")}
                                     </Button>
                                 </div>

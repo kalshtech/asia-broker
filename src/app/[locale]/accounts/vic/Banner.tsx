@@ -68,11 +68,10 @@ const Banner = () => {
                     </div>
 
                     <div className={"mt-4 lg:mt-16"}>
-                        <Button className={"px-8 h-10 rounded-full bg-white text-black hover:bg-white"}>
+                        <Button className={"bg-white text-black hover:bg-white"}>
                             {t("register")}
                         </Button>
-                        <Button
-                            className={"px-8 h-10 border border-white rounded-full bg-transparent text-white ml-4 hover:bg-transparent"}>
+                        <Button className={"border border-white bg-transparent text-white ml-4 hover:bg-transparent"}>
                             {t("transfer")}
                         </Button>
                     </div>

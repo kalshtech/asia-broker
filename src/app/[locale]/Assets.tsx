@@ -67,7 +67,7 @@ const Assets = () => {
                                         <Button
                                             key={index}
                                             className={classnames([
-                                                "bg-transparent border border-white rounded-full mr-4 last:mr-0",
+                                                "bg-transparent border border-white mr-4 last:mr-0",
                                                 {
                                                     "bg-white hover:!bg-white text-black": tabActive === item.value
                                                 }
@@ -177,7 +177,7 @@ const Assets = () => {
                                             </ul>
 
                                             <div className={"mt-10"}>
-                                                <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
+                                                <Button className={"bg-white hover:!bg-white text-black"}>
                                                     {t("text.type.more")}
                                                 </Button>
                                             </div>
@@ -262,7 +262,7 @@ const Assets = () => {
                                             </ul>
 
                                             <div className={"mt-10"}>
-                                                <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
+                                                <Button className={"bg-white hover:!bg-white text-black"}>
                                                     {t("text.type.more")}
                                                 </Button>
                                             </div>
@@ -367,7 +367,7 @@ const Assets = () => {
                                             </ul>
 
                                             <div className={"mt-10"}>
-                                                <Button className={"bg-white rounded-full hover:!bg-white text-black"}>
+                                                <Button className={"bg-white hover:!bg-white text-black"}>
                                                     {t("text.card.more")}
                                                 </Button>
                                             </div>

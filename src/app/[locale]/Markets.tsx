@@ -192,8 +192,7 @@ const Markets = () => {
                                 <TableCaption>
                                     <div className={"flex flex-col"}>
                                         <div>
-                                            <Button
-                                                className={"mt-8 px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                            <Button className={"mt-8 bg-theme-active hover:bg-theme-active-hover"}>
                                                 {t("more")}
                                             </Button>
                                         </div>

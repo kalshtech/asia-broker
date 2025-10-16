@@ -50,7 +50,7 @@ const Subscribe = () => {
     return (
         <section ref={sectionRef} className={"bg-theme-light-bg"}>
             <Container>
-                <div className={"flex-1 grid grid-cols-1 lg:grid-cols-2"}>
+                <div className={"flex-1 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8"}>
                     <div className={"col-span-1"} ref={leftRef}>
                         <div className={"flex-1 py-4 lg:py-12"}>
                             <ul>
@@ -67,11 +67,11 @@ const Subscribe = () => {
                             </ul>
                         </div>
                         <div className={"flex justify-center lg:justify-start"}>
-                            <Button className={"h-10 px-8 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                 {t("watch")}
                             </Button>
                             <Button
-                                className={"ml-4 border text-theme-active border-theme-active bg-white rounded-full h-10 px-8 hover:bg-transparent"}>
+                                className={"ml-4 border text-theme-active border-theme-active bg-white hover:bg-transparent"}>
                                 {t("register")}
                             </Button>
                         </div>

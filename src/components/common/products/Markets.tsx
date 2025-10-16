@@ -183,8 +183,7 @@ const Markets = (props: Props) => {
                     {type === "elementary" && (
                         <Table>
                             <TableCaption className={"mt-16"}>
-                                <Button
-                                    className={"bg-theme-active rounded-full px-8 h-10 hover:bg-theme-active-hover"}>
+                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                     {trade}
                                 </Button>
                             </TableCaption>

@@ -87,7 +87,7 @@ const Custom = () => {
                                 </Typography>
 
                                 <div className={"mt-4 lg:mt-10"}>
-                                    <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
+                                    <Button className={"text-black bg-white hover:bg-white"}>
                                         {t("row.col2.apply")}
                                     </Button>
                                     <Typography

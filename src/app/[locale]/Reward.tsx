@@ -125,9 +125,7 @@ const Reward = () => {
                             </div>
                         </div>
                         <div className={"mt-8 flex justify-center"}>
-                            <Button
-                                className="bg-[linear-gradient(180deg,_#1F3A93_0%,_#0075F8_100%)] w-full max-w-100 rounded-full"
-                            >
+                            <Button className="bg-[linear-gradient(180deg,_#1F3A93_0%,_#0075F8_100%)] w-full max-w-100">
                                 {t("get")}
                             </Button>
                         </div>

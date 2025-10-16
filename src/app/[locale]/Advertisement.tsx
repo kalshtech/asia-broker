@@ -130,8 +130,7 @@ const Advertisement = () => {
                                             </Typography>
                                         </div>
                                         <div className={"mt-4 lg:mt-8"}>
-                                            <Button
-                                                className={"bg-theme-active px-8 h-10 rounded-full hover:bg-theme-active-hover cursor-pointer"}>
+                                            <Button className={"bg-theme-active hover:bg-theme-active-hover cursor-pointer"}>
                                                 {t("1.btn")}
                                             </Button>
                                         </div>

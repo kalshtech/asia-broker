@@ -29,9 +29,12 @@ const JoinCommunity = (props: Props) => {
                         }])}>
                             {t("join-community")}
                         </Typography>
-                        <Button
-                            className={"ml-auto px-8 h-12 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        <Button className={"ml-auto bg-theme-active hover:bg-theme-active-hover"}>
                             {t("join-community-btn")}
+                        </Button>
+                        <Button
+                            className={"ml-4 border bg-transparent hover:bg-transparent"}>
+                            {t("register")}
                         </Button>
                     </div>
                 </div>

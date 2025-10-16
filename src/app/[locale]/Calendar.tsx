@@ -41,10 +41,10 @@ const CalendarComponent = () => {
                 </motion.div>
 
                 <div className={"mt-10 flex justify-center"}>
-                    <Button className={"rounded-full px-8 h-10 bg-theme-active hover:bg-theme-active-hover"}>
+                    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                         {t("explore")}
                     </Button>
-                    <Button className={"rounded-full ml-4 px-8 h-10 border bg-transparent hover:bg-transparent"}>
+                    <Button className={"ml-4 border bg-transparent hover:bg-transparent"}>
                         {t("subscribe")}
                     </Button>
                 </div>
@@ -68,12 +68,12 @@ const CalendarComponent = () => {
                                 </Typography>
                                 <div className={"mt-8"}>
                                     <div className={"flex-1 flex"}>
-                                        <Button className={"border rounded-full bg-transparent hover:bg-transparent"}>
+                                        <Button className={"border bg-transparent hover:bg-transparent"}>
                                             {t("buttons.past")}
                                         </Button>
                                     </div>
                                     <div className={"flex-1 flex mt-4"}>
-                                        <Button className={"bg-white rounded-full hover:bg-white text-black"}>
+                                        <Button className={"bg-white hover:bg-white text-black"}>
                                             {t("buttons.download")}
                                         </Button>
                                     </div>
@@ -87,7 +87,7 @@ const CalendarComponent = () => {
                         </div>
                     </div>
                     <div className={"col-span-12 lg:col-span-9"}>
-                        <CalendarTable theme={"dark"}/>
+                        <CalendarTable isShowForm theme={"dark"}/>
                     </div>
                 </div>
             </Container>

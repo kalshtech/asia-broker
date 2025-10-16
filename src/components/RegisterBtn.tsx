@@ -14,9 +14,7 @@ const RegisterBtn = (props: Props) => {
     const { text, className } = props;
     return (
         <div className={classnames(["cursor-pointer"])}>
-            <Button
-                className={classnames(["rounded-full px-8 h-10 cursor-pointer bg-theme-active hover:bg-theme-active-hover", className])}
-            >
+            <Button className={classnames(["cursor-pointer bg-theme-active hover:bg-theme-active-hover", className])}>
                 { text ? text : t("register") }
             </Button>
         </div>

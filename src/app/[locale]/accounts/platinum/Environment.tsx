@@ -52,11 +52,10 @@ const Environment = () => {
                             </Typography>
                         </div>
                         <div className={"mt-4 lg:mt-16"}>
-                            <Button className={"px-8 h-10 rounded-full bg-white text-black hover:bg-white"}>
+                            <Button className={"bg-white text-black hover:bg-white"}>
                                 {t("more")}
                             </Button>
-                            <Button
-                                className={"px-8 h-10 border ml-1 lg:ml-4 text-white rounded-full bg-transparent hover:bg-transparent"}>
+                            <Button className={"border ml-1 lg:ml-4 text-white bg-transparent hover:bg-transparent"}>
                                 {t("download")}
                             </Button>
                         </div>

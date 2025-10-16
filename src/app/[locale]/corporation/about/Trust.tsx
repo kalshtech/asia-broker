@@ -26,7 +26,7 @@ const Trust = () => {
                         </Typography>
                     </div>
                     <div className={"col-span-12 lg:col-span-2 mt-6 lg:mt-0"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("start")}
                         </Button>
                     </div>

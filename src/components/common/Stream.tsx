@@ -138,7 +138,7 @@ const Stream = (props: Props) => {
                                 {
                                     col2.isShowMore && (
                                         <div className={"flex justify-center items-center h-full flex-1 flex-col"}>
-                                            <Button className={"px-8 h-10 text-black bg-white rounded-full hover:bg-white"}>
+                                            <Button className={"text-black bg-white hover:bg-white"}>
                                                 {t("row.col2.apply")}
                                             </Button>
                                             <Typography

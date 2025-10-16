@@ -81,7 +81,7 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                             )
                         }
                         <div className={"mt-10"}>
-                            <Button className={"bg-theme-active h-12 px-8 hover:bg-theme-active-hover rounded-full"}>
+                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                 {left.more}
                             </Button>
                         </div>

@@ -107,7 +107,7 @@ export default function SimpleRemoteSearch(props: Props) {
                 className={"border rounded-full bg-[#F2F5FF] border-theme-active h-[56px]"}
             />
 
-            <Button className={"absolute h-[52px] w-24 bg-theme-active rounded-full right-1 top-0.5"}>
+            <Button className={"absolute h-[52px] w-24 bg-theme-active right-1 top-0.5"}>
                 { t("search") }
             </Button>
 

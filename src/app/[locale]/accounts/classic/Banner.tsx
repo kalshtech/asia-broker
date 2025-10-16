@@ -56,7 +56,7 @@ const Banner =  () => {
                 </motion.div>
                 <div className={"mt-16 flex"}>
                     <RegisterBtn/>
-                    <Button className={"px-8 h-10 ml-4 rounded-full bg-transparent border hover:bg-transparent"}>
+                    <Button className={"ml-4 bg-transparent border hover:bg-transparent"}>
                         {t("support")}
                     </Button>
                 </div>

@@ -34,8 +34,8 @@ const UseCalculator = () => {
                     </Typography>
 
                     <Typography
-                        variant={"lead"}
-                        className={"font-medium mt-4 text-center"}
+                        variant={"p"}
+                        className={"mt-4 text-center"}
                     >
                         {t("desc")}
                     </Typography>

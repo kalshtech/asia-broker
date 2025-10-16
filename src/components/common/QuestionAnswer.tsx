@@ -66,11 +66,10 @@ export default function QuestionAnswer({ data, isShowBtn, btn1Text, btn2Text } :
                 {
                     isShowBtn && (
                         <div className={"mt-10 flex justify-center"}>
-                            <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                 { btn1Text }
                             </Button>
-                            <Button
-                                className={"px-8 h-10 ml-4 rounded-full text-theme-active border border-theme-active bg-transparent hover:bg-transparent"}>
+                            <Button className={"ml-4 text-theme-active border border-theme-active bg-transparent hover:bg-transparent"}>
                                 { btn2Text }
                             </Button>
                         </div>

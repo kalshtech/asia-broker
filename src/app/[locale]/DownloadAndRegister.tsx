@@ -24,7 +24,7 @@ const DownloadAndRegister = () => {
                                 <div className={"mt-10 flex"}>
                                     <RegisterBtn text={t("open")}/>
                                     <Button
-                                        className={"rounded-full ml-4 px-8 h-10 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
+                                        className={"ml-4 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
                                         {t("download")}
                                     </Button>
                                 </div>
