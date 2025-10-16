@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import classnames from "classnames";
 import Container from "@/components/Container";
+import TitleReveal from "@/components/TitleReveal";
 
 type Props = {
     title: string;
@@ -14,22 +17,20 @@ type Props = {
     colorTheme?: "light" | "dark";
 }
 
-export default async function Banner({ title, description, midst, imageUrl, transfer = false, colorTheme = "light" }: Props) {
-    const t = await getTranslations("Common");
+export default function Banner({ title, description, midst, imageUrl, transfer = false, colorTheme = "light" }: Props) {
+    const t =  useTranslations("Common");
     const isLight = colorTheme === "light";
     return (
         <section className={`${imageUrl} bg-cover bg-center py-4 min-h-80 lg:min-h-120 lg:py-20`}>
             <Container>
                 <div>
-                    <Typography
-                        variant={"h1"}
-                        className={classnames(["max-w-[560px] !leading-[56px]", {
+                    <TitleReveal
+                        title={title}
+                        className={classnames(["!leading-[56px]", {
                             "!text-white": isLight,
                             "!text-black": !isLight,
                         }])}
-                    >
-                        {title}
-                    </Typography>
+                    />
 
                     <Typography
                         variant={"h4"}

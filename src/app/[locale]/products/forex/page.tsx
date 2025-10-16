@@ -9,7 +9,7 @@ import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import MetaCommission from "@/components/common/products/MetaCommission";
 import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
-import { Typography } from "@/components/ui/typography"
+import { Typography } from "@/components/ui/typography";
 
 
 export default async function Page() {

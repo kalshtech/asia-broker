@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import TitleReveal from "@/components/TitleReveal";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -34,12 +35,11 @@ const Banner =  () => {
                         >
                             {t("top")}
                         </Typography>
-                        <Typography
-                            variant={"h1"}
-                            className={"!text-white mt-4"}
-                        >
-                            {t("title")}
-                        </Typography>
+
+                        <TitleReveal
+                            className={"!text-white mt-6"}
+                            title={t("title")}
+                        />
 
                         <Typography
                             variant={"h5"}

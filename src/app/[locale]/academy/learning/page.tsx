@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { getTranslations } from "next-intl/server";
 import Banner from "./Banner";
 import CoreTerms from "./CoreTerms";
 import Compass from "./Compass";

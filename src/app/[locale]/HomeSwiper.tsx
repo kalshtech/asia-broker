@@ -6,6 +6,7 @@ import Container from "@/components/Container";
 import {useTranslations, useLocale} from "next-intl";
 import {Typography} from "@/components/ui/typography";
 import RegisterBtn from "@/components/RegisterBtn";
+import TitleReveal from "@/components/TitleReveal";
 
 const HomeSwiper = () => {
     const t = useTranslations("Pages.home.swiper");
@@ -26,7 +27,7 @@ const HomeSwiper = () => {
                     pagination={{
                         clickable: true,
                     }}
-                    modules={[Pagination]}
+                    modules={[Autoplay, Pagination]}
                     className="my-swiper h-full"
                 >
                     <SwiperSlide>
@@ -37,12 +38,7 @@ const HomeSwiper = () => {
                                         <Container>
                                             <div className={"flex-1 flex justify-center flex-col"}>
                                                 <div>
-                                                    <Typography
-                                                        variant={"h1"}
-                                                        className={"max-w-3xl ibm-plex-sans !text-theme-active"}
-                                                    >
-                                                        {t("1.title1")}
-                                                    </Typography>
+                                                    <TitleReveal isActive title={t("1.title1")} />
                                                 </div>
                                                 <div className={"mt-8"}>
                                                     <Typography className={"!text-[#666666]"}>
@@ -113,12 +109,7 @@ const HomeSwiper = () => {
                                     isEn ? (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"max-w-3xl !text-theme-active ibm-plex-sans"}
-                                                >
-                                                    {t("2.title1")}
-                                                </Typography>
+                                                <TitleReveal isActive title={t("2.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -142,9 +133,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography variant={"h1"}>
-                                                    {t("2.title1")}
-                                                </Typography>
+                                                <TitleReveal title={t("2.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -170,12 +159,7 @@ const HomeSwiper = () => {
                                     isEn ? (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"max-w-4xl ibm-plex-sans !text-theme-active"}
-                                                >
-                                                    {t("3.title1")}
-                                                </Typography>
+                                                <TitleReveal isActive title={t("3.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -198,9 +182,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography variant={"h1"}>
-                                                    {t("3.title1")}
-                                                </Typography>
+                                                <TitleReveal title={t("3.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -226,12 +208,7 @@ const HomeSwiper = () => {
                                     isEn ? (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"max-w-3xl ibm-plex-sans !text-theme-active"}
-                                                >
-                                                    {t("4.title1")}
-                                                </Typography>
+                                                <TitleReveal isActive title={t("4.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -253,9 +230,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography variant={"h1"}>
-                                                    {t("4.title1")}
-                                                </Typography>
+                                                <TitleReveal title={t("4.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -281,12 +256,7 @@ const HomeSwiper = () => {
                                     isEn ? (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"max-w-4xl ibm-plex-sans !text-theme-active"}
-                                                >
-                                                    {t("5.title1")}
-                                                </Typography>
+                                                <TitleReveal isActive title={t("5.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -310,9 +280,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography variant={"h1"}>
-                                                    {t("5.title1")}
-                                                </Typography>
+                                                <TitleReveal title={t("5.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -338,12 +306,7 @@ const HomeSwiper = () => {
                                     isEn ? (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"max-w-4xl ibm-plex-sans !text-theme-active"}
-                                                >
-                                                    {t("6.title1")}
-                                                </Typography>
+                                                <TitleReveal title={t("6.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -365,9 +328,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography variant={"h1"}>
-                                                    {t("6.title1")}
-                                                </Typography>
+                                                <TitleReveal title={t("6.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -393,12 +354,7 @@ const HomeSwiper = () => {
                                     isEn ? (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography
-                                                    variant={"h1"}
-                                                    className={"max-w-4xl ibm-plex-sans !text-theme-active"}
-                                                >
-                                                    {t("7.title1")}
-                                                </Typography>
+                                                <TitleReveal isActive title={t("7.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
@@ -422,9 +378,7 @@ const HomeSwiper = () => {
                                     ) : (
                                         <div className={"flex-1 flex justify-center flex-col"}>
                                             <div>
-                                                <Typography variant={"h1"}>
-                                                    {t("7.title1")}
-                                                </Typography>
+                                                <TitleReveal title={t("7.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
                                                 <Typography
