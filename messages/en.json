@@ -2128,124 +2128,131 @@
     "platform": {
       "banner": {
         "title1": "Asia Future Trading MetaTrader 5",
-        "title2": "借助先进技术，高效精准交易",
-        "desc": "全球领先的多终端交易平台，畅享 65,000+ 市场产品",
-        "download": "下载",
+        "title2": "Trade Smarter with Advanced Technology",
+        "desc": "Access over 65,000+ global instruments on the world’s leading multi-terminal trading platform — fast, precise, and secure.",
+        "download": "Download",
         "ul": {
-          "windows": "windows 版",
-          "macos": "macOS 版",
-          "ios": "iOS 版",
-          "android": "Android 版",
-          "webtrader": "WebTrader 版"
+          "windows": "For Windows",
+          "macos": "For macOS",
+          "ios": "For iOS",
+          "android": "For Android",
+          "webtrader": "WebTrader"
         }
       },
       "reasons": {
-        "title": "为什么选择在 Asia Future Trading 使用 MT5？",
-        "desc": "MT5 已成为全球最受欢迎的交易平台之一。在 Asia Future Trading，我们为它注入极速执行、合规保障与多市场接入，让您体验前所未有的交易自由。",
-        "professional": "专业体验",
+        "title": "Why Trade MT5 at Asia Future Trading",
+        "desc": "Trade with one of the world’s most popular trading platforms at Asia Future Trading. Institutional-grade infrastructure for MT5 — millisecond execution, regulatory security, and seamless multi-market access.",
+        "professional": "Experience",
         "ul": {
-          "li-title1": "多终端接入",
-          "li-desc1": "Windows、macOS、iOS、Android、WebTrader，随时随地无缝切换",
-          "li-title2": "极速成交",
-          "li-desc2": "直连顶级流动性，毫秒级撮合，捕捉市场瞬息机会",
-          "li-title3": "丰富工具",
-          "li-desc3": "38+ 技术指标，EA 智能交易与策略回测一应俱全"
+          "li-title1": "Multi-platform access",
+          "li-desc1": "Windows, macOS, iOS, Android, WebTrader — seamless sync.",
+          "li-title2": "Lightning-fast execution",
+          "li-desc2": "Tier-1 liquidity, low latency & low slippage.",
+          "li-title3": "Pro tools",
+          "li-desc3": "38+ indicators, EAs, backtesting & optimization."
         },
-        "safe": "合规保障",
+        "safe": "Safety & Compliance",
         "risk": {
-          "li-title1": "智能风控",
-          "li-desc1": "ECN/STP 架构，确保每一笔交易透明、公正",
-          "li-title2": "资金安全",
-          "li-desc2": "受 ASIC 监管，客户资金分级托管，安心无忧"
+          "li-title1": "Segregated client funds",
+          "li-desc1": "with custodial safeguards.",
+          "li-title2": "ASIC-regulated",
+          "li-desc2": "with strict KYC/AML and regular audits."
+        },
+        "fairness": "Fairness & Control",
+        "fairnessUl": {
+          "li-title1": "Transparent ECN/STP",
+          "li-desc1": "conflict-free routing, verifiable handling.",
+          "li-title2": "Smart risk controls",
+          "li-desc2": "live margin, trailing stops, proactive alerts."
         }
       },
       "experience": {
-        "title1": "体验增强版的MetaTrader",
+        "title1": "Experience the Enhanced MetaTrader",
         "title2": "MetaTrader5 Vs MetaTrader4",
-        "desc": "为什么升级是更明智的选择？选择 Asia Future Trading 的 MT5，您将获得 65,000+ 全球市场接入，更快的执行和更智能的交易体验，从此掌握更大可能。",
+        "desc": "Why is upgrading the smarter choice? With Asia Future Trading MT5, you gain access to 65,000+ global markets, faster execution, and a more intelligent trading experience — empowering you with greater possibilities.",
         "table": {
           "row": {
-            "head1": "功能/特性",
+            "head1": "Feature / Function",
             "head2": "MetaTrader 4",
             "head3": "MetaTrader 5",
-            "col1-1-1": "发布年份",
+            "col1-1-1": "Release Year",
             "col1-1-2": "2005",
-            "col1-1-3": "2010+ 优化迭代",
-            "col1-2-1": "市场覆盖",
-            "col1-2-2": "外汇为主",
-            "col1-2-3": "外汇、CFD、股票、期货、加密货币",
-            "col1-3-1": "挂单类型",
-            "col1-3-2": "4 种",
-            "col1-3-3": "6 种（含 Buy Stop Limit & Sell Stop Limit）",
-            "col1-4-1": "时间周期",
-            "col1-4-2": "9 种",
-            "col1-4-3": "21 种",
-            "col1-5-1": "技术指标",
-            "col1-5-2": "30 个预装",
-            "col1-5-3": "38+ 个预装",
-            "col1-6-1": "编程语言",
+            "col1-1-3": "2010+ Optimized Generation",
+            "col1-2-1": "Market Coverage",
+            "col1-2-2": "Primarily Forex",
+            "col1-2-3": "Forex, CFDs, Stocks, Futures, Cryptocurrencies",
+            "col1-3-1": "Pending Order Types",
+            "col1-3-2": "4 Types",
+            "col1-3-3": "6 Types (including Buy Stop Limit & Sell Stop Limit)",
+            "col1-4-1": "Time frames",
+            "col1-4-2": "9",
+            "col1-4-3": "21",
+            "col1-5-1": "Technical Indicators",
+            "col1-5-2": "30 Pre-installed",
+            "col1-5-3": "38+ Pre-installed",
+            "col1-6-1": "Programming Language",
             "col1-6-2": "MQL4",
-            "col1-6-3": "MQL5（多线程）",
-            "col1-7-1": "策略回测",
-            "col1-7-2": "单线程",
-            "col1-7-3": "多线程 + 云加速",
-            "col1-8-1": "多币种账户支持",
-            "col1-8-2": "无",
-            "col1-8-3": "支持",
-            "col1-9-1": "经济日历",
-            "col1-9-2": "无",
-            "col1-9-3": "内置"
+            "col1-6-3": "MQL5 (Multi-threaded)",
+            "col1-7-1": "Strategy Backtesting",
+            "col1-7-2": "Single-threaded",
+            "col1-7-3": "Multi-threaded + Cloud Acceleration",
+            "col1-8-1": "Multi-Currency Account Support",
+            "col1-8-2": "Not Supported",
+            "col1-8-3": "Supported",
+            "col1-9-1": "Economic Calendar",
+            "col1-9-2": "Not Available",
+            "col1-9-3": "Built-in"
           }
         }
       },
       "professionalTools": {
-        "title": "专业交易者的全能工具箱",
+        "title": "The All-in-One Toolkit for Professional Traders",
         "row": {
-          "col1-desc": "预安装技术指标",
-          "col2-desc": "高级分析图表工具",
-          "col3-desc1": "图表类型",
-          "col3-desc2": "时间框架",
-          "col4-title": "单击",
-          "col4-desc": "即可直接在图表上下单"
+          "col1-desc": "Pre-installed Technical Indicators",
+          "col2-desc": "Analytical Drawing Tools",
+          "col3-desc1": "Chart Types",
+          "col3-desc2": "Timeframes",
+          "col4-title": "One Click",
+          "col4-desc": "Trade directly from charts"
         }
       },
       "download": {
         "windows": {
-          "title": "下载 MetaTrader5 Windows版",
-          "desc": "MetaTrader 5 Windows 版，适合专业桌面交易环境，稳定运行、极速执行，支持外汇、贵金属、指数、能源与加密货币 CFD 交易。",
-          "downloadText": "下载 Windows 版"
+          "title": "MetaTrader 5 for Windows",
+          "desc": "Experience professional-grade trading on MetaTrader 5 for Windows — built for stability, speed, and precision.\nTrade Forex, Metals, Indices, Energy, and Crypto CFDs seamlessly on one powerful platform.",
+          "downloadText": "Download for Windows"
         },
         "macos": {
-          "title": "下载 MetaTrader5 macOS版",
-          "desc": "MetaTrader 5 macOS 版，专为 Mac 用户打造，兼容性强、界面流畅，支持多屏幕、多图表，轻松管理外汇与 CFD 投资组合。",
-          "downloadText": "下载 macOS 版"
+          "title": "MetaTrader 5 for macOS",
+          "desc": "Optimized for Mac users with smooth performance and intuitive design.\nAccess global markets, manage your Forex and CFD portfolio, and trade across multiple charts effortlessly.",
+          "downloadText": "Download for macOS"
         },
         "ios": {
-          "title": "下载 MetaTrader5 iOS版",
-          "desc": "随时随地交易全球市场。MetaTrader 5 iOS 版让您在 iPhone 与 iPad 上轻松进行外汇、指数、黄金和加密货币交易，掌控市场从未如此便捷。",
-          "downloadText": "下载 Android 版"
+          "title": "MetaTrader 5 for iOS",
+          "desc": "Trade anytime, anywhere. Stay connected to global markets with full access to Forex, Indices, Gold, and Crypto CFDs — right from your iPhone or iPad.",
+          "downloadText": "Download for iOS"
         },
         "android": {
-          "title": "下载 MetaTrader 5 Android 版",
-          "desc": "MetaTrader 5 Android 版提供全面移动交易功能，支持外汇、CFD、贵金属与加密货币市场，让您随时随地管理投资与下单。",
-          "downloadText": "下载 Windows 版"
+          "title": "MetaTrader 5 for Android",
+          "desc": "A complete mobile trading experience for Android users. Monitor markets, manage orders, and trade Forex, Metals, and Crypto CFDs wherever you are.",
+          "downloadText": "Download for Android"
         },
         "webtrader": {
-          "title": "使用 MetaTrader 5 WebTrader",
-          "desc": "无需安装软件，MetaTrader 5 WebTrader 让您通过浏览器直接访问全球市场。随时登录 Asia Future Trading 账户，快速下单，享受流畅交易体验。",
-          "downloadText": "进入 WebTrader"
+          "title": "MetaTrader 5 WebTrader",
+          "desc": "Trade directly from your browser — no downloads required. Access your Asia Future Trading account instantly and enjoy fast, secure, and seamless web-based execution.",
+          "downloadText": "Launch WebTrader"
         }
       },
       "step": {
-        "title": "三步轻松开始交易",
-        "join": "加入我们",
+        "title": "Start Trading in 3 Simple Steps",
+        "join": "Start Trading",
         "row": {
-          "col1-title": "下载并安装 MT5",
-          "col1-desc": "选择您的设备，完成安装",
-          "col2-title": "开立账户",
-          "col2-desc": "注册 Classic、Platinum 或 VIC 账户，解锁不同交易体验",
-          "col3-title": "存入资金并开始交易",
-          "col3-desc": "即刻进入全球外汇、贵金属、指数与加密市场"
+          "col1-title": "Download & Install MT5",
+          "col1-desc": "Choose your preferred device and complete the setup.",
+          "col2-title": "Open an Account",
+          "col2-desc": "Register for a Classic, Platinum, or VIC account to unlock different trading experiences.",
+          "col3-title": "Fund & Start Trading",
+          "col3-desc": "Deposit funds and access global markets — Forex, Metals, Indices, and Crypto — instantly."
         }
       }
     },

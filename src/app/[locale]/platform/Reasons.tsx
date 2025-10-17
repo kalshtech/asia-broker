@@ -27,6 +27,11 @@ const Reasons = () => {
         { title: t("ul.li-title3"), desc: t("ul.li-desc3") },
     ];
 
+    const fairnessAry = [
+        { title: t("fairnessUl.li-title1"), desc: t("fairnessUl.li-desc1") },
+        { title: t("fairnessUl.li-title2"), desc: t("fairnessUl.li-desc2") },
+    ];
+
     const safeAry = [
         { title: t("risk.li-title1"), desc: t("risk.li-desc1") },
         { title: t("risk.li-title2"), desc: t("risk.li-desc2") },
@@ -109,7 +114,34 @@ const Reasons = () => {
 
                         <div className={"mt-10"}>
                             <Typography variant={"large"}>
-                                {t("professional")}
+                                {t("fairness")}
+                            </Typography>
+                            <ul className={"mt-6"}>
+                                {
+                                    fairnessAry.map((item, index) => (
+                                        <li className={"flex items-start my-4"} key={index}>
+                                        <span
+                                            className={"mt-2.5 w-[5px] h-[5px] block bg-theme-active rounded-full"}></span>
+                                            <div className={"ml-3"}>
+                                                <Typography variant={"small"}>
+                                                    {item.title}
+                                                </Typography>
+                                                <Typography
+                                                    className={"mt-2"}
+                                                    variant={"muted"}
+                                                >
+                                                    {item.desc}
+                                                </Typography>
+                                            </div>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+
+                        <div className={"mt-10"}>
+                            <Typography variant={"large"}>
+                                {t("safe")}
                             </Typography>
                             <ul className={"mt-6"}>
                                 {

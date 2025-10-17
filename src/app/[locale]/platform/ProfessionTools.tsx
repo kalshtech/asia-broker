@@ -50,7 +50,7 @@ const ProfessionalTools = () => {
                         <div className={"col-span-6"}>
                             <div className={"py-6 px-4 border-b border-[#51586F]"}>
                                 <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
-                                    38+
+                                    44+
                                 </Typography>
                                 <Typography
                                     variant={"muted"}
@@ -66,7 +66,7 @@ const ProfessionalTools = () => {
                             <div className={"flex justify-center border-r border-[#51586F] py-6 px-4"}>
                                 <div>
                                     <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
-                                        44
+                                        3
                                     </Typography>
                                     <Typography
                                         variant={"muted"}
@@ -80,7 +80,7 @@ const ProfessionalTools = () => {
                                 </div>
                                 <div>
                                     <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
-                                        44
+                                       21
                                     </Typography>
                                     <Typography
                                         variant={"muted"}

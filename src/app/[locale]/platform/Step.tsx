@@ -38,8 +38,7 @@ const Step = () => {
                     <div className={"grid grid-cols-12 gap-4"}>
                         <div className={"col-span-12 lg:col-span-4"}>
                             <div className={"flex items-start"}>
-                                <div
-                                    className={"w-8 h-8 mt-1 flex justify-center items-center bg-white rounded-full text-black"}>
+                                <div className={"w-8 h-8 min-w-8 min-h-8 mt-1 flex justify-center items-center bg-white rounded-full text-black"}>
                                     1
                                 </div>
                                 <div className={"flex flex-col ml-4"}>
@@ -60,8 +59,7 @@ const Step = () => {
                         </div>
                         <div className={"col-span-12 lg:col-span-4"}>
                             <div className={"flex items-start"}>
-                                <div
-                                    className={"w-8 h-8 mt-1 flex justify-center items-center bg-white rounded-full text-black"}>
+                                <div className={"w-8 h-8 min-w-8 min-h-8 mt-1 flex justify-center items-center bg-white rounded-full text-black"}>
                                     2
                                 </div>
                                 <div className={"flex flex-col ml-4"}>
@@ -82,8 +80,7 @@ const Step = () => {
                         </div>
                         <div className={"col-span-12 lg:col-span-4"}>
                             <div className={"flex items-start"}>
-                                <div
-                                    className={"w-8 h-8 mt-1 flex justify-center items-center bg-white rounded-full text-black"}>
+                                <div className={"w-8 h-8 min-w-8 min-h-8 mt-1 flex justify-center items-center bg-white rounded-full text-black"}>
                                     3
                                 </div>
                                 <div className={"flex flex-col ml-4"}>

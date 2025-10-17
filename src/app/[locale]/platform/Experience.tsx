@@ -95,7 +95,6 @@ const Experience = () => {
                                         </TableCell>
                                     </TableRow>
                                 ))
-
                             }
                         </TableBody>
                     </Table>

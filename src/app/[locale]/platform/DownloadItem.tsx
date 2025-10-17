@@ -61,7 +61,7 @@ const DownloadItem = (props: Props) => {
                         <Typography variant={"h3"}>
                             {title}
                         </Typography>
-                        <Typography variant={"h6"} className={"font-medium mt-10"}>
+                        <Typography variant={"p"} className={"mt-10"}>
                             {desc}
                         </Typography>
                         <div className={"mt-10"}>

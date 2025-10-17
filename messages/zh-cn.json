@@ -2162,6 +2162,13 @@
           "li-desc1": "ECN/STP 架构，确保每一笔交易透明、公正",
           "li-title2": "资金安全",
           "li-desc2": "受 ASIC 监管，客户资金分级托管，安心无忧"
+        },
+        "fairness": "Fairness & Control",
+        "fairnessUl": {
+          "li-title1": "Transparent ECN/STP",
+          "li-desc1": "conflict-free routing, verifiable handling.",
+          "li-title2": "Smart risk controls",
+          "li-desc2": "live margin, trailing stops, proactive alerts."
         }
       },
       "experience": {
