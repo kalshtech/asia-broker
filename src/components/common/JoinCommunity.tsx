@@ -33,7 +33,10 @@ const JoinCommunity = (props: Props) => {
                             {t("join-community-btn")}
                         </Button>
                         <Button
-                            className={"ml-4 border bg-transparent hover:bg-transparent"}>
+                            className={classnames(["ml-4 border bg-transparent hover:bg-transparent", {
+                                "border-theme-active": theme === "light",
+                                "text-theme-active": theme === "light",
+                            }])}>
                             {t("register")}
                         </Button>
                     </div>
