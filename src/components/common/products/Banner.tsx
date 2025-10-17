@@ -21,7 +21,7 @@ export default function Banner({ title, description, midst, imageUrl, transfer =
     const t =  useTranslations("Common");
     const isLight = colorTheme === "light";
     return (
-        <section className={`${imageUrl} bg-cover bg-center py-4 min-h-80 lg:min-h-120 lg:py-20`}>
+        <section className={`${imageUrl} bg-cover bg-center min-h-80 lg:min-h-120 lg:py-20`}>
             <Container>
                 <div>
                     <TitleReveal

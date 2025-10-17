@@ -24,7 +24,7 @@ const Community = () => {
     const isEn = locale === "en";
 
     return (
-        <section className={"p-4 lg:p-30 bg-theme-light-bg"}>
+        <section className={"lg:p-30 bg-theme-light-bg"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

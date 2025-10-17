@@ -77,7 +77,7 @@ const Pricing = () => {
     return (
         <section ref={cardsWrapRef}  className={"bg-[linear-gradient(270deg,_#000C35_37%,_#1F3A93_100%)]"}>
             <Container>
-                <div className={"grid gap-4 grid-cols-12 py-4 lg:py-10"}>
+                <div className={"grid gap-4 grid-cols-12 lg:py-10"}>
                     <div className={"flex-1 col-span-12 lg:col-span-7"}>
                         <div className={"flex flex-col mt-8 lg:mt-16"}>
                             <motion.div

@@ -10,7 +10,7 @@ type Props = {
 export default function (props: Props) {
     const { children, orientation = "vertical" } = props;
     return (
-        <div className={classnames(["max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto w-screen flex", {
+        <div className={classnames(["max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto w-screen flex p-4 md:p-0", {
             "flex-col": orientation === "vertical",
             "flex-row": orientation === "horizontal",
         }])}>

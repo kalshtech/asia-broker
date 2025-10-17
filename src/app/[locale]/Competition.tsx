@@ -32,7 +32,7 @@ export default function Competition() {
     const collapsed = (1 - ACTIVE) / (items.length - 1);
 
     return (
-        <section className={"p-4 lg:p-30"}>
+        <section className={"lg:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -47,7 +47,7 @@ export default function Competition() {
                         {t("title")}
                     </Typography>
                 </motion.div>
-                <div className="mt-16 [--panel-h:400px]">
+                <div className="mt-8 lg:mt-16 [--panel-h:400px]">
                     <div className="flex h-[var(--panel-h)] gap-6">
                         {items.map((it, i) => {
                             const isActive = i === active

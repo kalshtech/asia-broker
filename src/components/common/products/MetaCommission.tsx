@@ -44,7 +44,7 @@ const MetaProfession = ( props: Props ) => {
                         </Button>
                         {
                             isShowOpenBtn && (
-                                <Button className={"px-8 h-10 ml-4 rounded-full border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
+                                <Button className={"px-8 h-10 mt-4 lg:mt-0 lg:ml-4 rounded-full border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
                                     { t("meta.open") }
                                 </Button>
                             )

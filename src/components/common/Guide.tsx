@@ -40,7 +40,7 @@ type Props = {
 
 const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
     return (
-        <section className={"py-4 lg:py-30"}>
+        <section className={"lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

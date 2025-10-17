@@ -719,6 +719,10 @@ const Navigation = () => {
                                                         <Link
                                                             href={uItem.path}
                                                             className={"text-theme-active"}
+                                                            onClick={() => {
+                                                                setListOpen(false);
+                                                                setDrawerOpen(false);
+                                                            }}
                                                         >
                                                             { uItem.label }
                                                         </Link>

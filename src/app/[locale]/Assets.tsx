@@ -42,7 +42,7 @@ const Assets = () => {
     }
 
     return (
-        <section className={"bg-theme-deep-bg p-4 lg:p-30"}>
+        <section className={"bg-theme-deep-bg lg:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -67,7 +67,7 @@ const Assets = () => {
                                         <Button
                                             key={index}
                                             className={classnames([
-                                                "bg-transparent border border-white mr-4 last:mr-0",
+                                                "bg-transparent border border-white mr-4 last:mr-0 last:mt-4 lg:last:mt-0",
                                                 {
                                                     "bg-white hover:!bg-white text-black": tabActive === item.value
                                                 }

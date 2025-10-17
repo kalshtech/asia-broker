@@ -20,7 +20,7 @@ const CalendarComponent = () => {
     const t = useTranslations("Pages.home.calendar");
 
     return (
-        <section className={"bg-theme-deep-bg p-4 lg:p-30"}>
+        <section className={"bg-theme-deep-bg lg:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

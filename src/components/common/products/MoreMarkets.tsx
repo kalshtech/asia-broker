@@ -14,7 +14,7 @@ type Props = {
 
 export default function MoreMarkets({ title, desc, midst, btnText, imageUrl }: Props) {
     return (
-        <section className={`bg-cover bg-center mt-10 py-8 lg:py-16 lg:mt-20 ${imageUrl}`}>
+        <section className={`bg-cover bg-center mt-10 lg:py-16 lg:mt-20 ${imageUrl}`}>
             <Container>
                 <div className={"flex flex-col flex-1 h-full"}>
                     <div className={"flex items-center flex-col mb-4 lg:mb-16"}>

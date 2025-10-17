@@ -88,7 +88,7 @@ const Advertisement = () => {
     ];
 
     return (
-        <section className={"p-4 lg:p-30"}>
+        <section className={"lg:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -106,7 +106,7 @@ const Advertisement = () => {
 
                 <div className={"mt-4 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4 lg:gap-9"}>
-                        <div className={"col-span-5 lg:col-span-3"}>
+                        <div className={"col-span-6 lg:col-span-3"}>
                             <div
                                 className={`bg-[url('/images/home/advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
                                 <div
@@ -138,7 +138,7 @@ const Advertisement = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={"col-span-5 lg:col-span-9"}>
+                        <div className={"col-span-6 lg:col-span-9"}>
                             <Swiper
                                 slidesPerView={3.5}
                                 spaceBetween={36}
@@ -169,7 +169,7 @@ const Advertisement = () => {
                             </Swiper>
                         </div>
                     </div>
-                    <div className={"mt-4"}>
+                    <div className={"mt-4 hidden lg:block"}>
                         <div className={"flex justify-end"}>
                             <CircleChevronLeft className={"advertisement-custom-prev mr-2 cursor-pointer"}/>
                             <CircleChevronRight className={"advertisement-custom-next ml-2 cursor-pointer"}/>

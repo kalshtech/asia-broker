@@ -511,11 +511,11 @@ const CalendarTable = (props: Props) => {
                             </div>
                         </div>
                         <div className={"grid grid-cols-12 gap-8 mt-6"}>
-                            <div className={"col-span-8"}>
+                            <div className={"col-span-12 lg:col-span-8"}>
                                 <Input placeholder={t("form.email-placeholder")}
                                        className={"text-white rounded-full h-12 border-0 bg-black placeholder:text-white"}/>
                             </div>
-                            <div className={"col-span-4"}>
+                            <div className={"col-span-12 lg:col-span-4"}>
                                 <Button
                                     className={"flex-1 w-full h-full bg-theme-active hover:bg-theme-hover"}>
                                     {t("form.subscribe")}

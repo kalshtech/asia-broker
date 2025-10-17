@@ -148,7 +148,7 @@ const Markets = () => {
     }, [ tabActive ])
 
     return (
-        <section className={"p-30 hidden lg:block"}>
+        <section className={"lg:p-30 hidden lg:block"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
