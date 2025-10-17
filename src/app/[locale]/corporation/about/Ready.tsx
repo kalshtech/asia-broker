@@ -41,20 +41,19 @@ const Ready = () => {
                 <div className={"relative"}>
                     <img src="/images/corporation/about-ready.png" className={"relative z-10"} alt=""/>
                     <Container>
-                        <div
-                            className={"p-4 lg:p-12 bg-theme-deep-bg rounded-lg -mt-20 flex relative z-20"}>
+                        <div className={"p-4 lg:p-12 bg-theme-deep-bg rounded-lg -mt-20 flex flex-col lg:flex-row relative z-20"}>
                             <Typography
                                 variant={"lead"}
                                 className={"!text-white"}
                             >
                                 {t("joint")}
                             </Typography>
-                            <div className={"ml-auto"}>
+                            <div className={"mx-auto lg:mr-0 lg:ml-auto"}>
                                 <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                     {t("trade")}
                                 </Button>
                                 <Button
-                                    className={"px-8 h-10 rounded-full mt-4 lg:mt-0 lg:ml-4 border bg-transparent hover:bg-transparent"}>
+                                    className={"mt-4 lg:mt-0 ml-4 border bg-transparent hover:bg-transparent"}>
                                     {t("support")}
                                 </Button>
                             </div>

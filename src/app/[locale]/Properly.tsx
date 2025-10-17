@@ -274,19 +274,19 @@ const Properly = () => {
                         <TabsList className={"h-10 rounded-full"}>
                             <TabsTrigger
                                 value="classic"
-                                className={"px-8 h-10 data-[state=active]:rounded-full data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
+                                className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
                             >
                                 {t("tabs.classic")}
                             </TabsTrigger>
                             <TabsTrigger
                                 value="platinum"
-                                className={"px-8 h-10 data-[state=active]:rounded-full data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
+                                className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
                             >
                                 {t("tabs.platinum")}
                             </TabsTrigger>
                             <TabsTrigger
                                 value="vic"
-                                className={"px-8 h-10 data-[state=active]:rounded-full data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
+                                className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
                             >
                                 {t("tabs.vic")}
                             </TabsTrigger>

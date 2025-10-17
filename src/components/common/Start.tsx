@@ -40,10 +40,10 @@ const Start = () => {
                 </Typography>
             </motion.div>
             <div className={"flex justify-center mt-4 lg:mt-16"}>
-                <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active"}>
+                <Button className={"bg-theme-active hover:bg-theme-active"}>
                     {t("register")}
                 </Button>
-                <Button className={"px-8 ml-4 h-10 rounded-full border border-theme-active text-theme-active bg-transparent hover:bg-theme"}>
+                <Button className={"ml-4 border border-theme-active text-theme-active bg-transparent hover:bg-theme"}>
                     {t("download")}
                 </Button>
             </div>

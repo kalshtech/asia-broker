@@ -21,7 +21,7 @@ const Banner =  () => {
 
     return (
         <div>
-            <section className={"bg-[url(/images/accounts/profit-banner.png)] bg-center bg-cover h-160 lg:h-[632px] py-4 lg:py-30"}>
+            <section className={"bg-[url(/images/accounts/profit-banner.png)] bg-center bg-cover h-140 lg:h-[632px] py-4 lg:py-30"}>
                 <Container>
                     <motion.div
                         variants={fadeInUp}

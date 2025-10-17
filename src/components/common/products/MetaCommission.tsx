@@ -22,7 +22,7 @@ const MetaProfession = ( props: Props ) => {
     if(isEn) {
         return (
             <Container>
-                <div className={"flex items-center"}>
+                <div className={"flex items-center flex-col lg:flex-row"}>
                     <div>
                         <Typography
                             variant={"h3"}
@@ -38,13 +38,13 @@ const MetaProfession = ( props: Props ) => {
                             { t("meta.desc") }
                         </Typography>
                     </div>
-                    <div className={"ml-auto"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                    <div className={"mt-4 lg:mt-0 lg:ml-auto"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             { t("meta.trade") }
                         </Button>
                         {
                             isShowOpenBtn && (
-                                <Button className={"px-8 h-10 mt-4 lg:mt-0 lg:ml-4 rounded-full border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
+                                <Button className={"ml-4 border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
                                     { t("meta.open") }
                                 </Button>
                             )

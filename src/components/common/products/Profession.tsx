@@ -40,7 +40,6 @@ const Profession = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
-                    className={"px-4 lg:px-0"}
                 >
                     <Typography
                         variant={"h3"}

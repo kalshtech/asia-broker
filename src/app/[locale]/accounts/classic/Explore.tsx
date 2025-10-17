@@ -46,7 +46,7 @@ const Explore = () => {
                     </Typography>
                 </motion.div>
                 <div className={"mt-16"}>
-                    <div className={"grid grid-cols-12 gap-10"}>
+                    <div className={"grid grid-cols-12 lg:gap-10"}>
                         <div className={"col-span-12 lg:col-span-6"}>
                             <div className={"grid-cols-12 grid"}>
                                 <div className={"col-span-12 lg:col-span-7"}>

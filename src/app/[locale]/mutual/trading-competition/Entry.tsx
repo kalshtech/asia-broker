@@ -46,7 +46,7 @@ const AccountProvince = (props: Props) => {
                 {
                     btnAry.map((item, index) => (
                         <Button key={index}
-                                className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {item.label}
                         </Button>
                     ))

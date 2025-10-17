@@ -20,25 +20,27 @@ const JoinCommunity = (props: Props) => {
                     "bg-theme-deep-bg": theme === "dark",
                     "": theme === "light",
                 }])}>
-                    <div className={"w-full relative flex items-center py-8 px-4 lg:px-16"}>
+                    <div className={"w-full relative flex items-center py-8 px-4 lg:px-16 flex-col lg:flex-row"}>
                         <img src="/images/boat.png" className={"w-[60px] h-30 absolute left-16 -top-8 hidden lg:block"}
                              alt="boat"
                              title={"boat"}/>
-                        <Typography className={classnames(["ml-4 lg:ml-20", {
+                        <Typography variant={"p"} className={classnames(["text-center lg:ml-20", {
                             "!text-white": theme === "dark"
                         }])}>
                             {t("join-community")}
                         </Typography>
-                        <Button className={"ml-auto bg-theme-active hover:bg-theme-active-hover"}>
-                            {t("join-community-btn")}
-                        </Button>
-                        <Button
-                            className={classnames(["ml-4 border bg-transparent hover:bg-transparent", {
-                                "border-theme-active": theme === "light",
-                                "text-theme-active": theme === "light",
-                            }])}>
-                            {t("register")}
-                        </Button>
+                        <div className={"mt-4 lg:mt-0 lg:ml-auto flex"}>
+                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
+                                {t("join-community-btn")}
+                            </Button>
+                            <Button
+                                className={classnames(["ml-4 border bg-transparent hover:bg-transparent", {
+                                    "border-theme-active": theme === "light",
+                                    "text-theme-active": theme === "light",
+                                }])}>
+                                {t("register")}
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </Container>

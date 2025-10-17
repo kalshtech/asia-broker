@@ -34,7 +34,7 @@ const Hire = () => {
                                     {t("list.development.1.name")}
                                 </Typography>
                                 <div className={"ml-auto flex text-theme-active cursor-pointer"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("apply")}
                                     </Typography>
                                     <MoveRight className={"ml-2"}/>
@@ -42,12 +42,12 @@ const Hire = () => {
                             </div>
                             <div className={"grid-cols-12 grid gap-4 mt-4"}>
                                 <div className={"col-span-4"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.development.1.location")}
                                     </Typography>
                                 </div>
                                 <div className={"col-span-8"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.development.1.desc")}
                                     </Typography>
                                 </div>
@@ -62,7 +62,7 @@ const Hire = () => {
                                     {t("list.development.2.name")}
                                 </Typography>
                                 <div className={"ml-auto flex text-theme-active cursor-pointer"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("apply")}
                                     </Typography>
                                     <MoveRight className={"ml-2"}/>
@@ -70,12 +70,12 @@ const Hire = () => {
                             </div>
                             <div className={"grid-cols-12 grid gap-4 mt-4"}>
                                 <div className={"col-span-4"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.development.2.location")}
                                     </Typography>
                                 </div>
                                 <div className={"col-span-8"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.development.2.desc")}
                                     </Typography>
                                 </div>
@@ -100,7 +100,7 @@ const Hire = () => {
                                     {t("list.operation.1.name")}
                                 </Typography>
                                 <div className={"ml-auto flex text-theme-active cursor-pointer"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("apply")}
                                     </Typography>
                                     <MoveRight className={"ml-2"}/>
@@ -108,12 +108,12 @@ const Hire = () => {
                             </div>
                             <div className={"grid-cols-12 grid gap-4 mt-4"}>
                                 <div className={"col-span-4"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.operation.1.location")}
                                     </Typography>
                                 </div>
                                 <div className={"col-span-8"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.operation.1.desc")}
                                     </Typography>
                                 </div>
@@ -128,7 +128,7 @@ const Hire = () => {
                                     {t("list.operation.2.name")}
                                 </Typography>
                                 <div className={"ml-auto flex text-theme-active cursor-pointer"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("apply")}
                                     </Typography>
                                     <MoveRight className={"ml-2"}/>
@@ -136,12 +136,12 @@ const Hire = () => {
                             </div>
                             <div className={"grid-cols-12 grid gap-4 mt-4"}>
                                 <div className={"col-span-4"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.operation.2.location")}
                                     </Typography>
                                 </div>
                                 <div className={"col-span-8"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.operation.2.desc")}
                                     </Typography>
                                 </div>
@@ -166,7 +166,7 @@ const Hire = () => {
                                     {t("list.growth.1.name")}
                                 </Typography>
                                 <div className={"ml-auto flex text-theme-active cursor-pointer"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("apply")}
                                     </Typography>
                                     <MoveRight className={"ml-2"}/>
@@ -174,12 +174,12 @@ const Hire = () => {
                             </div>
                             <div className={"grid-cols-12 grid gap-4 mt-4"}>
                                 <div className={"col-span-4"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.growth.1.location")}
                                     </Typography>
                                 </div>
                                 <div className={"col-span-8"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.growth.1.desc")}
                                     </Typography>
                                 </div>
@@ -194,7 +194,7 @@ const Hire = () => {
                                     {t("list.growth.2.name")}
                                 </Typography>
                                 <div className={"ml-auto flex text-theme-active cursor-pointer"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("apply")}
                                     </Typography>
                                     <MoveRight className={"ml-2"}/>
@@ -202,12 +202,12 @@ const Hire = () => {
                             </div>
                             <div className={"grid-cols-12 grid gap-4 mt-4"}>
                                 <div className={"col-span-4"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.growth.2.location")}
                                     </Typography>
                                 </div>
                                 <div className={"col-span-8"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.growth.2.desc")}
                                     </Typography>
                                 </div>
@@ -232,7 +232,7 @@ const Hire = () => {
                                     {t("list.analysis.1.name")}
                                 </Typography>
                                 <div className={"ml-auto flex text-theme-active cursor-pointer"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("apply")}
                                     </Typography>
                                     <MoveRight className={"ml-2"}/>
@@ -240,12 +240,12 @@ const Hire = () => {
                             </div>
                             <div className={"grid-cols-12 grid gap-4 mt-4"}>
                                 <div className={"col-span-4"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.analysis.1.location")}
                                     </Typography>
                                 </div>
                                 <div className={"col-span-8"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.analysis.1.desc")}
                                     </Typography>
                                 </div>
@@ -260,7 +260,7 @@ const Hire = () => {
                                     {t("list.analysis.2.name")}
                                 </Typography>
                                 <div className={"ml-auto flex text-theme-active cursor-pointer"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("apply")}
                                     </Typography>
                                     <MoveRight className={"ml-2"}/>
@@ -268,12 +268,12 @@ const Hire = () => {
                             </div>
                             <div className={"grid-cols-12 grid gap-4 mt-4"}>
                                 <div className={"col-span-4"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.analysis.2.location")}
                                     </Typography>
                                 </div>
                                 <div className={"col-span-8"}>
-                                    <Typography>
+                                    <Typography variant={"p"}>
                                         {t("list.analysis.2.desc")}
                                     </Typography>
                                 </div>

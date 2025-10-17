@@ -96,19 +96,19 @@ const Rank = () => {
                         <TabsList className={"bg-[#3B4259] h-10 rounded-full"}>
                             <TabsTrigger
                                 value={"1"}
-                                className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                                className={"cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
                             >
                                 {t("tabs.1")}
                             </TabsTrigger>
                             <TabsTrigger
                                 value={"2"}
-                                className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                                className={"cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
                             >
                                 {t("tabs.2")}
                             </TabsTrigger>
                             <TabsTrigger
                                 value={"3"}
-                                className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                                className={"cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
                             >
                                 {t("tabs.3")}
                             </TabsTrigger>

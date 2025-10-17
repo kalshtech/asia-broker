@@ -148,7 +148,7 @@ const Celebrity = () => {
                                         </div>
                                         <div className={"mt-12"}>
                                             <Button
-                                                className={"px-8 h-10 rounded-full !text-white bg-theme-active hover:bg-theme-active"}>
+                                                className={"!text-white bg-theme-active hover:bg-theme-active"}>
                                                 {t("quickly")}
                                             </Button>
                                         </div>

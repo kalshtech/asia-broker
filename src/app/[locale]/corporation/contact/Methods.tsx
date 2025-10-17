@@ -60,9 +60,9 @@ const Methods = () => {
                                     <Typography variant={"muted"}>
                                         {item.desc}
                                     </Typography>
-                                    <div className={"mt-16"}>
+                                    <div className={"mt-8 lg:mt-16"}>
                                         <Button
-                                            className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active"}>
+                                            className={"bg-theme-active hover:bg-theme-active"}>
                                             {item.btnText}
                                         </Button>
                                     </div>

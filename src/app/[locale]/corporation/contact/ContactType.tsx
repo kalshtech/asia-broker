@@ -68,7 +68,7 @@ const ContactType = () => {
                                 <img src="/images/corporation/contact-type2.png" className={"w-10 h-10 object-cover"}
                                      alt="icon"/>
                                 <Button
-                                    className={"px-8 h-10 ml-auto rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                    className={"ml-auto bg-theme-active hover:bg-theme-active-hover"}>
                                     {t("join")}
                                 </Button>
                             </div>

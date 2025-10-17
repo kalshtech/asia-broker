@@ -356,7 +356,7 @@ const CalendarTable = (props: Props) => {
 
     return (
         <div className={classnames(["h-full rounded-2xl", {
-            "bg-[#161B2C] p-6": theme === "dark"
+            "bg-[#161B2C] p-4": theme === "dark"
         }])}>
             <div className={"flex"}>
                 <div className={""}>

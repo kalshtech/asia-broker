@@ -110,7 +110,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, ch
                             <div className={"mt-16 flex justify-center"}>
                                 <Register/>
                                 <Button
-                                    className={"px-8 h-10 ml-4 rounded-full border border-white bg-transparent hover:bg-transparent"}>
+                                    className={"ml-4 border border-white bg-transparent hover:bg-transparent"}>
                                     {challengeText}
                                 </Button>
                             </div>

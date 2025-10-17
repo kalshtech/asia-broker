@@ -206,11 +206,11 @@ export default function Challenge() {
                                         $198
                                     </Typography>
                                     <div className={"mt-10 flex justify-center"}>
-                                        <Button className={"px-8 h-10 rounded-full bg-white text-black hover:bg-white"}>
+                                        <Button className={"bg-white text-black hover:bg-white"}>
                                             {t("row.col2.buy")}
                                         </Button>
                                         <Button
-                                            className={"px-8 h-10 ml-4 rounded-full border bg-transparent text-white hover:bg-transparent"}>
+                                            className={"ml-4 border bg-transparent text-white hover:bg-transparent"}>
                                             {t("row.col2.more")}
                                         </Button>
                                     </div>

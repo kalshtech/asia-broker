@@ -51,7 +51,7 @@ const Banner = () => {
                         <div className={"mt-8 lg:mt-16 flex justify-center"}>
                             <RegisterBtn/>
                             <Button
-                                className={"px-8 h-10 ml-8 rounded-full border bg-transparent hover:bg-transparent"}>
+                                className={"ml-8 border bg-transparent hover:bg-transparent"}>
                                 {t("ticker")}
                             </Button>
                         </div>

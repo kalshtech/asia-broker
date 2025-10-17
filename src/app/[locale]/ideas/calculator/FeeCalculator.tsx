@@ -88,7 +88,7 @@ const FeeCalculator = () => {
                                     <TabsTrigger
                                         key={index}
                                         value={item.value}
-                                        className={"px-8 h-10 text-base cursor-pointer rounded-full bg-theme-light-bg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                        className={"ext-base bg-theme-light-bg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
                                     >
                                         {item.label}
                                     </TabsTrigger>
@@ -181,7 +181,7 @@ const FeeCalculator = () => {
                             </Select>
                         </div>
                         <div className={""}>
-                            <Button className={"w-full py-6 rounded-lg bg-theme-active hover:bg-theme-active-hover mt-[22px]"}>
+                            <Button className={"w-full py-3.5 lg:py-6 rounded-lg bg-theme-active hover:bg-theme-active-hover mt-[22px]"}>
                                 {t("form.calculate")}
                             </Button>
                         </div>

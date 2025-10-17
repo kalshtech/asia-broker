@@ -24,15 +24,19 @@ const Offices = () => {
             question: t("list.item1.title"),
             answer: (
                 <>
-                    <div className={"flex pb-16"}>
-                        <Typography>
-                            {t("list.item1.text1")}
-                        </Typography>
-                        <img
-                            src="/images/corporation/careers-sydney.png"
-                            className={"ml-auto max-h-80 object-cover"}
-                            alt=""
-                        />
+                    <div className={"grid grid-cols-12 gap-4 pb-16"}>
+                        <div className={"col-span-6"}>
+                            <Typography variant={"p"}>
+                                {t("list.item1.text1")}
+                            </Typography>
+                        </div>
+                        <div className={"col-span-6"}>
+                            <img
+                                src="/images/corporation/careers-sydney.png"
+                                className={"ml-auto max-h-80 object-cover"}
+                                alt=""
+                            />
+                        </div>
                     </div>
                     <Separator/>
                 </>
@@ -42,28 +46,30 @@ const Offices = () => {
             question: t("list.item2.title"),
             answer: (
                 <>
-                    <div className={"flex pb-16"}>
-                        <div className={"flex flex-col"}>
-                            <Typography>
+                <div className={"grid grid-cols-12 gap-4 pb-16"}>
+                        <div className={"col-span-6 flex flex-col"}>
+                            <Typography variant={"p"}>
                                 {t("list.item2.text1")}
                             </Typography>
-                            <Typography className={"mt-2"}>
+                            <Typography variant={"p"} className={"mt-2"}>
                                 {t("list.item2.text2")}
                             </Typography>
-                            <Typography className={"mt-2"}>
+                            <Typography variant={"p"} className={"mt-2"}>
                                 {t("list.item2.text3")}
                             </Typography>
-                            <Typography className={"mt-2"}>
+                            <Typography variant={"p"} className={"mt-2"}>
                                 {t("list.item2.text4")}
                             </Typography>
-                            <Typography className={"mt-2"}>
+                            <Typography variant={"p"} className={"mt-2"}>
                                 {t("list.item2.text5")}
                             </Typography>
                         </div>
-                        <img src="/images/corporation/careers-asia.png"
-                             className={"ml-auto max-h-80 object-cover"}
-                             alt=""
-                        />
+                        <div className={"col-span-6"}>
+                            <img src="/images/corporation/careers-asia.png"
+                                 className={"ml-auto max-h-80 object-cover"}
+                                 alt=""
+                            />
+                        </div>
                     </div>
                     <Separator/>
                 </>
@@ -73,15 +79,20 @@ const Offices = () => {
             question: t("list.item3.title"),
             answer: (
                 <>
-                    <div className={"flex pb-16"}>
-                        <Typography>
-                            {t("list.item3.text1")}
-                        </Typography>
-                        <img
-                            src="/images/corporation/careers-online.png"
-                            className={"ml-auto max-h-80 object-cover"}
-                            alt=""
-                        />
+                    <div className={"grid grid-cols-12 pb-16 gap-4"}>
+                        <div className={"col-span-6"}>
+                            <Typography variant={"p"}>
+                                {t("list.item3.text1")}
+                            </Typography>
+                        </div>
+
+                        <div className={"col-span-6"}>
+                            <img
+                                src="/images/corporation/careers-online.png"
+                                className={"ml-auto max-h-80 object-cover"}
+                                alt=""
+                            />
+                        </div>
                     </div>
                     <Separator/>
                 </>

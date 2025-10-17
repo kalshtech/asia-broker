@@ -23,6 +23,11 @@ const DownloadItem = (props: Props) => {
     const rightRef = React.useRef<HTMLDivElement>(null);
 
     React.useEffect(() => {
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+        // 如果是移动端，就直接返回，不执行动画
+        if (isMobile) return;
+
         // 如果用户偏好减少动效，则直接显示
         const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         if (reduce) {
@@ -44,7 +49,9 @@ const DownloadItem = (props: Props) => {
                 .from(rightRef.current, { x:  80, opacity: 0 }, "<+=0.1"); // 与左侧几乎同时
         }, sectionRef);
 
-        return () => ctx.revert();
+        return () => {
+            ctx.revert()
+        };
     }, []);
 
 

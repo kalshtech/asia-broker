@@ -51,19 +51,19 @@ const Banner = () => {
             </section>
             <div className={"bg-theme-active rounded-lg py-4 lg:py-10 -mt-16 mx-4 2xl:mx-30"}>
                 <Container>
-                    <div className={"flex items-center"}>
+                    <div className={"flex items-center flex-col lg:flex-row"}>
                         <Typography
                             variant={"h5"}
                             className={"font-medium !text-white max-w-2xl "}
                         >
                             {t("tips")}
                         </Typography>
-                        <div className={"ml-auto"}>
-                            <Button className={"px-8 h-10 rounded-full text-theme-active bg-white hover:bg-white"}>
+                        <div className={"lg:ml-auto"}>
+                            <Button className={"text-theme-active bg-white hover:bg-white"}>
                                 {t("view")}
                             </Button>
                             <Button
-                                className={"px-8 h-10 mt-4 lg:mt-0 lg:ml-4 rounded-full text-theme-active bg-transparent text-white border hover:bg-transparent"}>
+                                className={"mt-4 lg:mt-0 ml-4 text-theme-active bg-transparent text-white border hover:bg-transparent"}>
                                 {t("join")}
                             </Button>
                         </div>

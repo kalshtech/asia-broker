@@ -95,7 +95,7 @@ const JoinUS = () => {
                                 </Typography>
                                 <div className={"mt-10"}>
                                     <Button
-                                        className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                                        className={"bg-theme-active hover:bg-theme-active-hover"}>
                                         {t("row.col2.join")}
                                     </Button>
                                 </div>

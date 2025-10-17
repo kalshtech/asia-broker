@@ -57,7 +57,7 @@ export default function Vision() {
                         {t("desc")}
                     </Typography>
                     <div className={"mt-8 lg:mt-16 flex justify-center"}>
-                        <Button className={"px-8 h-10 rounded-full bg-theme-active hover:bg-theme-active-hover"}>
+                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("join")}
                         </Button>
                     </div>

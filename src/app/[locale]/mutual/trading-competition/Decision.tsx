@@ -64,10 +64,10 @@ const Decision = () => {
                                 </Typography>
                             </div>
                             <div className={"mt-16"}>
-                                <Button className={"px-8 h-10 rounded-full bg-white text-theme-active hover:bg-white"}>
+                                <Button className={"bg-white text-theme-active hover:bg-white"}>
                                     { t("row.col1.register") }
                                 </Button>
-                                <Button className={"px-8 ml-4 h-10 rounded-full border text-white bg-transparent hover:bg-transparent"}>
+                                <Button className={"ml-4 border text-white bg-transparent hover:bg-transparent"}>
                                     { t("row.col1.jump") }
                                 </Button>
                             </div>

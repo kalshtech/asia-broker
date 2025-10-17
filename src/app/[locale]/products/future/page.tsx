@@ -6,9 +6,7 @@ import QuestionAnswer from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import Guide from "@/components/common/Guide";
 import Row from "@/components/common/products/Row";
-import MoreMarkets from "@/components/common/products/MoreMarkets";
 import Profession from "@/components/common/products/Profession";
-import MetaProfession from "@/components/common/products/MetaProfession";
 import MetaCommission from "@/components/common/products/MetaCommission";
 import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
 

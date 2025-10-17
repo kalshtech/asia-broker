@@ -107,7 +107,7 @@ const HeatCharts = () => {
                                     <TabsTrigger
                                         key={index}
                                         value={item.value}
-                                        className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                        className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
                                     >
                                         {item.label}
                                     </TabsTrigger>
@@ -121,11 +121,11 @@ const HeatCharts = () => {
                     >
                         <TabsList className={"h-10"}>
                             <TabsTrigger value={"cross"}
-                                         className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
+                                         className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
                                 Cross rates
                             </TabsTrigger>
                             <TabsTrigger value={"heatmap"}
-                                         className={"px-8 h-10 cursor-pointer rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
+                                         className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
                                 Heatmap
                             </TabsTrigger>
                         </TabsList>

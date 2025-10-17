@@ -167,25 +167,26 @@ const Articles = (props: Props) => {
                 {
                     showSearch && (
                         <div className={"mt-16"}>
-                            <div className={"flex"}>
-                                <Breadcrumb>
-                                    <BreadcrumbList>
-                                        <BreadcrumbItem>
-                                            <BreadcrumbLink href="/academy/learning">
-                                                {navigationT("menu.beginner.row.col-3.ul.li1")}
-                                            </BreadcrumbLink>
-                                        </BreadcrumbItem>
-                                        <BreadcrumbSeparator/>
-                                        <BreadcrumbItem>
-                                            <BreadcrumbLink href="/academy/document">
-                                                {navigationT("menu.beginner.row.col-3.ul.li2")}
-                                            </BreadcrumbLink>
-                                        </BreadcrumbItem>
-                                    </BreadcrumbList>
-                                </Breadcrumb>
-                                <div className={"ml-auto"}>
-                                    <div
-                                        className="flex items-center bg-[#F6F6F6] border border-[#E6E6E6] gap-2 rounded-full pl-8 pr-4 py-2 w-full max-w-md">
+                            <div className={"grid grid-cols-12 gap-4"}>
+                                <div className={"col-span-12 lg:col-span-6"}>
+                                    <Breadcrumb>
+                                        <BreadcrumbList>
+                                            <BreadcrumbItem>
+                                                <BreadcrumbLink href="/academy/learning">
+                                                    {navigationT("menu.beginner.row.col-3.ul.li1")}
+                                                </BreadcrumbLink>
+                                            </BreadcrumbItem>
+                                            <BreadcrumbSeparator/>
+                                            <BreadcrumbItem>
+                                                <BreadcrumbLink href="/academy/document">
+                                                    {navigationT("menu.beginner.row.col-3.ul.li2")}
+                                                </BreadcrumbLink>
+                                            </BreadcrumbItem>
+                                        </BreadcrumbList>
+                                    </Breadcrumb>
+                                </div>
+                                <div className={"col-span-12 flex justify-end lg:col-span-6"}>
+                                    <div className="flex items-center bg-[#F6F6F6] border border-[#E6E6E6] gap-2 rounded-full pl-8 pr-4 py-2 w-full max-w-md">
                                         <Search className={"text-[#999999]"}/>
                                         <Input
                                             type="text"
@@ -211,7 +212,7 @@ const Articles = (props: Props) => {
                                     <div
                                         className={"bg-theme-light-bg rounded-full cursor-pointer text-[#666666] text-sm px-3 py-1 lg:px-6 lg:py-3"}
                                         key={index}>
-                                        {item.label}
+                                    {item.label}
                                     </div>
                                 ))
                             }

@@ -178,7 +178,7 @@ const Markets = () => {
                                             <TabsTrigger
                                                 key={i}
                                                 value={d.value}
-                                                className={"px-8 h-10 rounded-full cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                                className={"cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
                                             >
                                                 {d.label}
                                             </TabsTrigger>

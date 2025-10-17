@@ -49,13 +49,13 @@ const Cooperator = () => {
                             <TabsList className={"h-10 rounded-full"}>
                                 <TabsTrigger
                                     value="trader"
-                                    className={"px-8 h-10 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
+                                    className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
                                 >
                                     {t("tabs.trader")}
                                 </TabsTrigger>
                                 <TabsTrigger
                                     value="partners"
-                                    className={"px-8 h-10  data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
+                                    className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground cursor-pointer rounded-full"}
                                 >
                                     {t("tabs.partners")}
                                 </TabsTrigger>

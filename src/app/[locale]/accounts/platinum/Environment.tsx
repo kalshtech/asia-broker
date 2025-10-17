@@ -55,7 +55,7 @@ const Environment = () => {
                             <Button className={"bg-white text-black hover:bg-white"}>
                                 {t("more")}
                             </Button>
-                            <Button className={"border ml-1 lg:ml-4 text-white bg-transparent hover:bg-transparent"}>
+                            <Button className={"border ml-4 text-white bg-transparent hover:bg-transparent"}>
                                 {t("download")}
                             </Button>
                         </div>
