@@ -52,7 +52,7 @@ const Introduction = (props: Props) => {
                         desc && (
                             <Typography
                                 variant={"muted"}
-                                className={"text-center mt-6"}
+                                className={"text-center mt-6 mx-auto max-w-3xl"}
                             >
                                 {desc}
                             </Typography>
@@ -63,7 +63,9 @@ const Introduction = (props: Props) => {
                     <div className={"col-span-12 lg:col-span-3"}>
                         <div className={""}>
                             <div>
-                                <Typography variant={"h5"}>
+                                <Typography
+                                    variant={"h5"}
+                                >
                                     {leftTitle}
                                 </Typography>
                                 {

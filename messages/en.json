@@ -2450,231 +2450,232 @@
       },
       "platinum": {
         "banner": {
-          "title": "Platinum 铂金账户",
-          "midst": "入金5,000美金免费申请",
-          "desc": "为进阶交易者提供更低点差、更快执行和更多收益可能超越常规交易账户，进入真正专业的交易世界",
+          "title": "Platinum Account",
+          "midst": "Start with a $5,000 Deposit — Apply for Free or Subscribe for $10/month",
+          "desc": "Designed for advanced traders seeking tighter spreads, faster execution, and greater returns.\nStep beyond standard accounts and experience professional-grade trading powered by institutional infrastructure.",
           "ul": {
-            "li1": "解锁高达 5.6 % 年化利息账户",
-            "li2": "行业最低点差 + 0 佣金",
-            "li3": "支持VPS 高速通道"
+            "li1": "Earn up to 5.6% annual interest with our Future Earn Account",
+            "li2": "Zero commissions and ultra-low spreads across all markets",
+            "li3": "VPS high-speed access for maximum stability and low latency"
           },
-          "register": "立即开设铂金账户",
-          "support": "联系支持"
+          "register": "Open Platinum Account",
+          "support": "Contact Support"
         },
         "standard": {
-          "title": "你为什么需要铂金账户？",
-          "desc": "相较于 Classic 账户，铂金账户面向更高交易频率与更高资金效率的专业交易者，解锁 更低点差、专属功能 与 额外收益机会。",
+          "title": "Why Choose the Platinum Account?",
+          "desc": "Compared with the Classic Account, the Platinum Account is designed for higher-frequency and high-volume traders — unlocking tighter spreads, exclusive features, and additional earning opportunities.",
           "row": {
             "left": {
-              "title": "不止是“0 佣金”，点差低至 0.0，更多特权",
+              "title": "Not Just “Zero Commission” — More Power, More Privilege",
               "ul": {
-                "li1": "每笔交易依旧 0 手续费",
-                "li2": "点差低至 0.0 起，主流品种直接接入核心报价",
-                "li3": "专属撮合优先级，执行更快、更稳定",
-                "li4": "可接入 VPS 云服务器，策略不中断，延迟更低",
-                "li5": "解锁“简单赚取利息”账户功能（年化收益高达 5.6 %）",
-                "li6": "支持全品类 65,000+ 全球资产交易，不受产品限制"
+                "li1": "Zero Commissions",
+                "li2": "Spreads from 0.0 pips",
+                "li3": "Priority Execution",
+                "li4": "VPS Cloud Access",
+                "li5": "Future Earn Account (Up to 5.6% Annual Yield)",
+                "li6": "65,000+ Global Instruments"
               }
             },
             "right": {
               "row": {
-                "col-1-title": "0 佣金",
-                "col-1-desc": "每笔交易免除手续费，真正意义上的零成本交易体验。",
-                "col-2-title": "点差低至 0.0",
-                "col-2-desc": "专属报价通道，享受主流品种行业最低点差。",
-                "col-3-title": "极速市价执行",
-                "col-3-desc": "实时成交，精准入场，规避滑点与延迟。",
-                "col-4-title": "铂金专线",
-                "col-4-desc": "铂金账户优先撮合调度，连接全球 Equinix 金融节点。",
-                "col-5-title": "接入 VPS 云服务器",
-                "col-5-desc": "稳定云主机支持，保障自动化与高频策略持续运行。",
-                "col-6-title": "赚利息账户功能",
-                "col-6-desc": "闲置资金可享日结利息，年化高达 5%。"
+                "col-1-title": "Zero Commission",
+                "col-1-desc": "Enjoy a true zero-cost trading experience — no hidden fees or markups.",
+                "col-2-title": "Spreads from 0.0 pips",
+                "col-2-desc": "Get the lowest industry spreads through dedicated pricing channels.",
+                "col-3-title": "Lightning Execution",
+                "col-3-desc": "Experience millisecond-level precision with real-time execution and minimal slippage.",
+                "col-4-title": "Platinum Priority Line",
+                "col-4-desc": "Benefit from prioritized matching and direct Equinix connectivity to global financial hubs.",
+                "col-5-title": "VPS Cloud Connectivity",
+                "col-5-desc": "Reliable, automated, and fast — perfect for high-frequency or algorithmic trading.",
+                "col-6-title": "Future Earn Account",
+                "col-6-desc": "Turn idle funds into daily yield — earn up to 5.6% annual interest, paid automatically."
               }
             }
           }
         },
         "exclusive": {
-          "title": "铂金专属交易通道与撮合优先权",
-          "desc": "铂金账户接入独立的 Equinix 光纤专线，订单进入高级撮合队列，享有与专业机构客户同等级别的优先排队与成交处理权。无论行情多剧烈，铂金用户的订单始终抢先一步成交。",
+          "title": "Exclusive Platinum Execution & Matching Priority",
+          "desc": "Platinum clients connect through a dedicated Equinix fiber network and institutional-grade liquidity bridge, gaining access to advanced matching queues shared with top-tier financial participants.\nRegardless of market volatility, Platinum orders receive priority routing and execution, ensuring faster fills, minimal slippage, and consistent trade stability.",
           "best": {
-            "title": "更快的执行 · 更优的价格",
-            "joint": "借助全球 Equinix 节点（LD4 · NY4 · TY3）",
-            "desc1": "铂金账户订单在撮合系统中平均延迟低于",
-            "desc2": "毫秒"
+            "title": "Faster Execution · Better Pricing",
+            "joint": "Global Equinix Data Centers: LD4 · NY4 · TY3",
+            "liquidity": "Institutional Liquidity Bridges: PrimeXM · OneZero · FXCubic",
+            "desc1": "Platinum orders achieve an average matching latency of",
+            "desc2": "below 0.1 milliseconds."
           }
         },
         "environment": {
-          "title": "铂金账户 MetaTrader 5 的极速 VPS 交易环境",
-          "desc": "Asia Future Trading 提供全球低延迟 VPS 服务器，专为高频与EA交易优化。无论您身处亚洲、欧洲还是美洲，都可通过 VPS 直连 MT5 服务器，实现毫秒级下单与稳定交易。",
-          "more": "了解更多 VPS 服务",
-          "download": "立即下载 MetaTrader 5"
+          "title": "Lightning-Fast VPS Environment for MetaTrader 5",
+          "desc": "Asia Future Trading provides global low-latency VPS servers, purpose-built for high-frequency and EA trading. Whether you’re in Asia, Europe, or the Americas, connect directly to MT5 via VPS for millisecond-level execution and unmatched trading stability.",
+          "more": "Learn More About VPS Services",
+          "download": "Download MetaTrader 5"
         },
         "credit": {
-          "title1": "解锁“简单赚取利息”账户功能",
-          "title2-1": "年化收益最高达",
-          "title2-2": "%AER",
-          "midst": "日复一日自动获得利息，每一天都可以在你的MetaTrader 5账户中看到！",
+          "title1": "Unlock the Future Earn Account",
+          "title2-1": "Earn up to",
+          "title2-2": "%AER annually ",
+          "midst": "Earn daily interest automatically — visible directly in your MetaTrader 5 account.\nEnjoy compounding returns of up to 5.6% AER (variable), with no withdrawal fees and instant access anytime.",
           "desc": "每天获得高达5.6%的AER（可变）利息。没有提款费用。随时即时访问。",
-          "transfer": "入金",
-          "account": "美金免费申请解锁铂金账户。",
-          "immediately": "立即入金",
-          "understand": "了解收益计划"
+          "transfer": "Minimum Deposit:",
+          "account": "Apply for free and unlock your Platinum Account today.",
+          "immediately": "Deposit Now",
+          "understand": "Learn About Future Earn"
         },
         "support": {
-          "title": "24/7 专属团队支持",
-          "desc": "多对一专属客户团队支持 · 全天候交易协助",
+          "title": "1-on-1 Dedicated Support · Around-the-Clock Assistance",
+          "desc": "Get personalized, real-time assistance from your dedicated client service manager — anytime, anywhere.",
           "row": {
             "col1": {
-              "title": "实时响应 · 真正 24/7",
+              "title": "Real-Time Response · True 24/7",
               "ul": {
-                "li1": "全天候在线支持，白天黑夜都有人在",
-                "li2": "紧急问题平均响应时间 < 30 分钟"
+                "li1": "Always-on client support — day and night, every day.",
+                "li2": "Average response time for urgent issues: under 30 minutes."
               }
             },
             "col2": {
-              "title": "多语言服务 · 沟通无障碍",
+              "title": "Multilingual Service · Seamless Communication",
               "ul": {
-                "li1": "提供 普通话、粤语、英语、日语 服务",
-                "li2": "根据语言偏好分配专属客户经理",
-                "li3": "支持微信、Telegram、WhatsApp、邮件等多种沟通渠道"
+                "li1": "Support available in Mandarin, Cantonese, English, and Japanese.",
+                "li2": "Clients are matched with dedicated managers based on language preference.",
+                "li3": "Multiple contact channels — WeChat, Telegram, WhatsApp, and Email."
               }
             },
             "col3": {
-              "title": "专属通知提醒",
+              "title": "Personalized Notifications",
               "ul": {
-                "li1": "开启个性化推送：价格触发、仓位风险、宏观日历",
-                "li2": "所有通知均由你的专属客户经理人工发送，更可靠"
+                "li1": "Receive customized alerts for price movements, position risks, and macro events.",
+                "li2": "All messages are manually sent by your dedicated account manager, ensuring accuracy and reliability."
               }
             }
           }
         },
         "guide": {
-          "title": "掌握外汇入门指南",
+          "title": "Unlock More Rewards",
           "row": {
             "col1": {
-              "title": "更多精彩在等待你的交易旅程中被解锁。",
-              "more": "了解 AFT 积分计划",
-              "muted": "*积分计划、俱乐部权益和赛事活动可通过客户经理获取详细规则。"
+              "title": "Your AFT trading journey goes beyond performance — every trade unlocks new privileges, rewards, and opportunities.。",
+              "more": "Learn More",
+              "muted": "Note: Details of the Rewards Program, Platinum Club, and Competitions are available from your account manager."
             },
             "col2": {
               "span1": {
-                "title": "AFT 积分计划",
-                "desc": "多重豪礼等你领取，从专属 NFT 到 BTC、劳力士，再到法拉利等高端奖品。"
+                "title": "AFT Rewards Program",
+                "desc": "Join the AFT Rewards Program and earn points with every trade.Redeem exclusive rewards — from NFTs and BTC to luxury timepieces and supercars.Each trade brings you closer to extraordinary rewards."
               },
               "span2": {
-                "title": "交易量挑战赛",
-                "desc": "每月开启百万奖池交易量大赛，公平透明，按品类和等级划分赛道。"
+                "title": "Trading Volume Challenge",
+                "desc": "Join monthly trading challenges with million-dollar prize pools.Fair. Transparent. Ranked by asset class — where top traders rise and win."
               },
               "span3": {
-                "title": "加入铂金账户俱乐部",
-                "desc": "和来自全球的专业交易者同行，参与闭门策略会、交易训练营与专属社群共建知识网络，拓展你的交易边界。"
+                "title": "Platinum Club Membership",
+                "desc": "Join the AFT Platinum Club and connect with elite traders worldwide.Access private briefings, exclusive strategy camps, and members-only events.Share insights, refine your edge, and elevate your trading experience."
               }
             }
           }
         },
         "table": {
           "row": {
-            "head1": "功能对比",
-            "head2": "Classic 账户",
-            "head3": "Platinum 铂金账户",
-            "col1-1-1": "最低入金",
+            "head1": "Feature",
+            "head2": "Classic Account",
+            "head3": "Platinum Account",
+            "col1-1-1": "Minimum Deposit",
             "col1-1-2": "$100",
             "col1-1-3": "$5,000",
-            "col1-2-1": "点差水平",
-            "col1-2-2": "起始 0.2 点",
-            "col1-2-3": "低至 0.0 点起",
-            "col1-3-1": "手续费",
+            "col1-2-1": "Spread Level",
+            "col1-2-2": "From 0.2 pips",
+            "col1-2-3": "As low as 0.0 pips",
+            "col1-3-1": "Commissions",
             "col1-3-2": "0",
             "col1-3-3": "0",
-            "col1-4-1": "撮合优先权",
-            "col1-4-2": "无",
-            "col1-4-3": "有",
-            "col1-5-1": "VPS 云服务支持",
-            "col1-5-2": "无",
-            "col1-5-3": "专属通道",
-            "col1-6-1": "赚利息账户",
-            "col1-6-2": "无",
-            "col1-6-3": "年化高达 5.6%",
-            "col1-7-1": "全产品访问",
-            "col1-7-2": "限部分交易品种",
-            "col1-7-3": "全部开放",
-            "col1-8-1": "多账户管理/隔离",
-            "col1-8-2": "无",
-            "col1-8-3": "全部开放",
-            "col1-9-1": "客户服务",
-            "col1-9-2": "标准支持",
-            "col1-9-3": "一对一客户经理"
+            "col1-4-1": "Execution Priority",
+            "col1-4-2": "-",
+            "col1-4-3": "Priority Access",
+            "col1-5-1": "VPS Cloud Service",
+            "col1-5-2": "-",
+            "col1-5-3": "Dedicated Channel",
+            "col1-6-1": "Future Earn Account",
+            "col1-6-2": "-",
+            "col1-6-3": "Up to 5.6% p.a.",
+            "col1-7-1": "Market Access",
+            "col1-7-2": "Limited Products",
+            "col1-7-3": "Full Access",
+            "col1-8-1": "Multi-Account Management",
+            "col1-8-2": "-",
+            "col1-8-3": "Supported",
+            "col1-9-1": "Client Support",
+            "col1-9-2": "Standard Support",
+            "col1-9-3": "1-on-1 Dedicated Manager"
           }
         },
         "process": {
-          "title": "开户流程",
+          "title": "How to Open an Account in 4 Easy Steps",
           "step": {
             "1": {
-              "title": "开设账户",
-              "desc": "只需填写基础信息，1分钟完成注册",
-              "bottom": "立即开户"
+              "title": "Open an Account",
+              "desc": "Complete your basic information — registration takes less than one minute.",
+              "bottom": "Open Account"
             },
             "2": {
-              "title": "下载 MetaTrader5",
-              "desc": "支持桌面端、移动端与网页版",
-              "bottom": "探索下载MetaTrader5"
+              "title": "Download MetaTrader 5",
+              "desc": "Trade anywhere with desktop, mobile, and web access.",
+              "bottom": "Download MetaTrader 5"
             },
             "3": {
-              "title": "入金 ≥ $5,000",
-              "desc": "多种方式支持，包括银行卡、电汇、USDT",
-              "bottom": "了解出入金方式"
+              "title": "Fund Your Account",
+              "desc": "Deposit ≥ $5,000 or subscribe for $10/month. Choose from multiple funding options — bank card, wire transfer, or USDT.",
+              "bottom": "Learn About Deposits & Withdrawals"
             },
             "4": {
-              "title": "开始交易",
-              "desc": "立即进入全球市场，体验 0 佣金快速执行",
-              "bottom": "立即体验交易"
+              "title": "Start Trading",
+              "desc": "Enter global markets instantly and enjoy zero commissions with lightning-fast execution.",
+              "bottom": "Start Trading"
             }
           }
         },
         "VIC": {
-          "title": "探索更高维度的交易账户：VIC 机构账户",
+          "title": "VIC Institutional Account — The Next Dimension of Trading",
           "left": {
-            "desc": "如果你需要更高的交易额度、更强大的策略对接能力和更复杂的账户结构管理—— VIC 是你下一步的选择。我们可以与全球顶级LP 为你量身定制交易产品，比如 ETH/XAU ，解锁更多想象力。",
-            "title": "VIC 机构账户",
-            "for": "将为你量身定制交易体验。",
-            "understand": "了解 VIC 账户"
+            "desc": "For traders and institutions seeking higher limits, advanced strategy integration, and complex account management — the VIC Institutional Account offers a truly elevated experience.\nPartnering with Tier-1 liquidity providers, AFT delivers customized trading environments and even bespoke instruments such as ETH/XAU, empowering you to trade without boundaries.",
+            "title": "Step into a world of",
+            "for": "institutional precision, flexibility, and scale.",
+            "understand": "Learn About VIC Account"
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "我完成了 $5,000 美金入金后，会自动变成铂金账户吗？",
-              "text-1": "A：不会自动升级。",
-              "text-2": "请在完成入金后，通过账户后台或联系客户经理主动申请开通铂金账户，系统将在 1 个工作日内审核并激活相关权限。"
+              "title": "Will my account automatically upgrade to Platinum after depositing $5,000?",
+              "text-1": "A：No, the upgrade is not automatic.",
+              "text-2": "After completing your deposit, please submit a request via your account dashboard or contact your account manager. The system will review and activate Platinum privileges within one business day."
             },
             "li2": {
-              "title": "铂金账户的“点差低至 0.0”是否真的没有其他费用？",
-              "text-1": "A：是的。",
-              "text-2": "铂金账户在核心品种上可享受 0 点起始点差，同时维持0 佣金结构。我们不会加收隐藏手续费或平台附加成本，真实成交、透明报价。"
+              "title": "Are there any hidden costs behind “spreads from 0.0 pips”?",
+              "text-1": "A：No.",
+              "text-2": "Platinum Accounts enjoy 0.0 starting spreads on core instruments with zero commissions. We do not charge hidden markups or platform fees — all pricing and execution are fully transparent."
             },
             "li3": {
-              "title": "赚利息账户功能是否存在资金锁定？",
-              "text-1": "A：无锁定期，随存随取。",
-              "text-2": "USD 余额自动计息，按日结算。您可在任何时间提取资金，利息同步结算到账，无需等待赎回周期。"
+              "title": "Is there a lock-up period for the Future Earn Account feature?",
+              "text-1": "A：No lock-up period.",
+              "text-2": "USD balances accrue daily interest automatically, and funds can be withdrawn at any time with interest settled instantly — no redemption delays or restrictions."
             },
             "li4": {
-              "title": "VPS 云服务器服务是否免费？如何申请？",
-              "text-1": "A：目前为限时免费。",
-              "text-2": "铂金用户可申请接入我们推荐的高速 VPS 云服务，专为 EA 与程序化策略优化。配置方式将在申请后由客户经理一对一指导。"
+              "title": "Is the VPS cloud service free? How can I apply?",
+              "text-1": "A：Yes, it is currently free for Platinum users.",
+              "text-2": "Eligible clients can apply for access to our recommended high-speed VPS service, optimized for EA and algorithmic trading.Your dedicated account manager will assist with setup and configuration."
             },
             "li5": {
-              "title": "铂金账户适合哪些类型的交易者？",
-              "text-1": "A：推荐以下类型用户申请：",
-              "text-2": "高频或日内交易为主的个人交易者",
-              "text-3": "使用 EA / API 策略的程序化交易者",
-              "text-4": "对延迟、滑点和成交速度有高要求的进阶用户",
-              "text-5": "希望通过账户余额产生稳定被动收益的资金管理者"
+              "title": "Who is the Platinum Account best suited for?",
+              "text-1": "The Platinum Account is ideal for:",
+              "text-2": "High-frequency or intraday traders",
+              "text-3": "EA and API-based algorithmic traders",
+              "text-4": "Professionals demanding ultra-low latency and minimal slippage",
+              "text-5": "Fund managers seeking passive yield on idle balances"
             },
             "li6": {
-              "title": "我想保留 Classic 账户的同时申请一个铂金账户可以吗？",
-              "text-1": "A：可以。",
-              "text-2": "您可保留 Classic 账户，同时新开一个铂金账户，系统将为两个账户分别设定权限与风控参数。适用于策略隔离与资金分舱管理需求。"
+              "title": "Can I keep my Classic Account while opening a Platinum Account?",
+              "text-1": "A：Yes.",
+              "text-2": "You can maintain your existing Classic Account while applying for a new Platinum Account. Each account will operate under separate permissions and risk parameters — ideal for strategy segregation or fund compartmentalization."
             }
           }
         }

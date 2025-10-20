@@ -49,15 +49,15 @@ const Support = () => {
                         {t("title")}
                     </Typography>
 
-                    <Typography className={"font-medium !text-white text-center mt-6"}>
+                    <Typography variant={"h5"} className={"font-normal !text-white text-center mt-6"}>
                         {t("desc")}
                     </Typography>
                 </motion.div>
 
                 <div className={"mt-4 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4"}>
-                        <div className={"flex col-span-12 lg:col-span-4"}>
-                            <div>
+                        <div className={"flex col-span-12 lg:col-span-4 after:border-r after:border-white after:mx-12"}>
+                            <div className={"w-full"}>
                                 <Typography
                                     variant={"h6"}
                                     className={"!text-white"}
@@ -69,7 +69,7 @@ const Support = () => {
                                         col1Ary.map((item, index) => (
                                             <li key={index} className={"flex items-center my-4"}>
                                                 <span className={"w-[5px] block h-[5px] bg-white rounded-full"}></span>
-                                                <Typography variant={"muted"} className={"!text-white ml-2"}>
+                                                <Typography variant={"p"} className={"!text-white ml-2"}>
                                                     {item.label}
                                                 </Typography>
                                             </li>
@@ -77,10 +77,9 @@ const Support = () => {
                                     }
                                 </ul>
                             </div>
-                            <Separator className={"ml-auto hidden lg:block lg:mr-20"} orientation={"vertical"}/>
                         </div>
-                        <div className={"flex col-span-12 lg:col-span-4"}>
-                            <div>
+                        <div className={"flex col-span-12 lg:col-span-4 after:border-r after:border-white after:mx-12"}>
+                            <div className={"w-full"}>
                                 <Typography
                                     variant={"h6"}
                                     className={"!text-white"}
@@ -100,7 +99,6 @@ const Support = () => {
                                     }
                                 </ul>
                             </div>
-                            <Separator className={"ml-auto hidden lg:block lg:mr-20"} orientation={"vertical"}/>
                         </div>
                         <div className={"col-span-12 lg:col-span-4"}>
                             <div>

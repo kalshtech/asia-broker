@@ -35,13 +35,13 @@ const Exclusive = () => {
 
                     <Typography
                         variant={"muted"}
-                        className={"font-medium text-center mx-auto mt-10 !max-w-3xl"}
+                        className={"text-center mx-auto mt-10 max-w-3xl"}
                     >
                         {t("desc")}
                     </Typography>
                 </motion.div>
                 <div
-                    className={"bg-[url(/images/accounts/exclusive-bg.png)] bg-cover bg-center h-80 lg:h-[428px] mt-4 lg:mt-16 py-4 lg:py-30"}>
+                    className={"bg-[url(/images/accounts/exclusive-bg.png)] bg-cover bg-center h-80 lg:h-120 mt-4 lg:mt-16 py-4 lg:py-16"}>
                     <motion.div
                         variants={fadeInUp}
                         initial="hidden"
@@ -56,33 +56,37 @@ const Exclusive = () => {
                         </Typography>
 
                         <Typography
-                            variant={"h6"}
-                            className={"font-medium text-center !text-white mx-auto mt-4 lg:mt-10 !max-w-3xl"}
+                            variant={"p"}
+                            className={"text-center !text-white mx-auto mt-4 lg:mt-10 !max-w-3xl"}
                         >
                             {t("best.joint")}
                         </Typography>
 
+                        <Typography
+                            variant={"p"}
+                            className={"text-center !text-white mx-auto mt-4 lg:mt-6 !max-w-3xl"}
+                        >
+                            {t("best.liquidity")}
+                        </Typography>
+
                         <div className={"flex justify-center items-center flex-col lg:flex-row mt-4 lg:mt-10"}>
                             <Typography
-                                variant={"h6"}
-                                className={"font-medium text-center !text-white"}
+                                variant={"h5"}
+                                className={"font-normal text-center !text-white"}
                             >
                                 {t("best.desc1")}
                             </Typography>
                             <Typography
-                                variant={"h3"}
-                                className={"font-medium text-center !text-white mx-4"}
-                            >
-                                0.1
-                            </Typography>
-                            <Typography
-                                variant={"h6"}
-                                className={"font-medium text-center !text-white"}
+                                variant={"h5"}
+                                className={"font-medium text-center !text-white mx-1"}
                             >
                                 {t("best.desc2")}
                             </Typography>
                         </div>
                     </motion.div>
+                    <div className={"mx-[200px] mt-12"}>
+                        <img src="/images/accounts/exclusive-logo.png" className={"h-16 mx-auto object-cover"} alt=""/>
+                    </div>
                 </div>
             </Container>
         </section>

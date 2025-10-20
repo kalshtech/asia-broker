@@ -2505,8 +2505,9 @@
           "best": {
             "title": "更快的执行 · 更优的价格",
             "joint": "借助全球 Equinix 节点（LD4 · NY4 · TY3）",
+            "liquidity": "Institutional Liquidity Bridges: PrimeXM · OneZero · FXCubic",
             "desc1": "铂金账户订单在撮合系统中平均延迟低于",
-            "desc2": "毫秒"
+            "desc2": "1 毫秒"
           }
         },
         "environment": {

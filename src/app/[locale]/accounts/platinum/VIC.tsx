@@ -37,21 +37,20 @@ const VIC = () => {
                     <div className={"grid grid-cols-12"}>
                         <div className={"h-full col-span-12 lg:col-span-6"}>
                             <div className={"bg-white h-full p-4 lg:py-20 lg:px-16"}>
-                                <Typography>
+                                <Typography variant={"p"}>
                                     {t("left.desc")}
                                 </Typography>
 
                                 <div className={"mt-4 lg:mt-16"}>
-                                    <div className={"flex items-center"}>
+                                    <div className={"flex flex-col lg:flex-row items-center"}>
                                         <Typography
-                                            variant={"h4"}
-                                            className={"font-medium"}
+                                            variant={"p"}
                                         >
                                             {t("left.title")}
                                         </Typography>
                                         <Typography
-                                            variant={"lead"}
-                                            className={"font-medium ml-2"}
+                                            variant={"p"}
+                                            className={"font-medium ml-1"}
                                         >
                                             {t("left.for")}
                                         </Typography>
@@ -67,7 +66,7 @@ const VIC = () => {
                         </div>
                         <div className={"col-span-12 lg:col-span-6"}>
                             <img
-                                className={"object-cover max-h-[450px] w-full"}
+                                className={"object-cover h-full"}
                                 src="/images/accounts/vic-img.png"
                                 alt="vic"
                                 title={"vic"}

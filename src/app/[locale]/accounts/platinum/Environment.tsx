@@ -25,7 +25,7 @@ const Environment = () => {
     const rightRef = React.useRef<HTMLDivElement>(null);
 
     return (
-        <section ref={sectionRef} className={"bg-gradient-to-b from-[#20150A] from-[10%] to-[#5E554C] to-[80%] py-4 lg:py-30"}>
+        <section ref={sectionRef} className={"bg-gradient-to-b from-[#20150A] from-[10%] to-[#5E554C] to-[80%] py-4 lg:py-16"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-4"}>
                     <div className={"col-span-12 lg:col-span-6"} ref={leftRef}>
@@ -33,14 +33,14 @@ const Environment = () => {
                             src="/images/accounts/envrionment-img.png"
                             alt="environment"
                             title={"environment"}
-                            className={"w-full h-full mx-auto object-cover"}
+                            className={"mx-auto h-[600px] object-cover"}
                         />
                     </div>
                     <div className={"col-span-12 lg:col-span-6"} ref={rightRef}>
                         <div>
                             <Typography
                                 variant={"h3"}
-                                className={"!text-white !text-[40px] font-medium max-w-3xl"}
+                                className={"!text-white !text-[40px] font-medium max-w-3xl lg:mt-24"}
                             >
                                 {t("title")}
                             </Typography>

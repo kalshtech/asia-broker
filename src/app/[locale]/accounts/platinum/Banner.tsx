@@ -24,8 +24,9 @@ const Banner =  () => {
         { text: t("ul.li2") },
         { text: t("ul.li3") },
     ];
+
     return (
-        <section className={"bg-[url(/images/accounts/platinum-banner.png)] bg-center bg-cover py-4 lg:py-30 h-108 lg:h-[632px]"}>
+        <section className={"bg-[url(/images/accounts/platinum-banner.png)] bg-center bg-cover py-4 lg:py-24 h-108 lg:h-[632px]"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -47,8 +48,8 @@ const Banner =  () => {
                     </Typography>
 
                     <Typography
-                        variant={"muted"}
-                        className={"font-medium !text-white mt-10 !max-w-xs"}
+                        variant={"p"}
+                        className={"font-medium !text-white mt-10 !max-w-xl"}
                     >
                         {t("desc")}
                     </Typography>
@@ -59,7 +60,7 @@ const Banner =  () => {
                                 <li key={i} className={"flex my-4 items-center"}>
                                     <span className={"block w-[5px] h-[5px] bg-white rounded-full"}></span>
                                     <Typography
-                                        variant={"small"}
+                                        variant={"p"}
                                         className={"!text-white ml-2"}
                                     >
                                         {item.text}

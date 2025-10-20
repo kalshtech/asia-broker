@@ -24,7 +24,7 @@ const SimpleSwiper = ({ ary, prevEl = ".properly-custom-prev", nextEl = ".proper
                 breakpoints={{
                     320: {slidesPerView: 1.2, spaceBetween: 16,},
                     600: {slidesPerView: 1.2, spaceBetween: 24,},
-                    900: {slidesPerView: 3, spaceBetween: 36,},
+                    900: {slidesPerView: 2.4, spaceBetween: 36,},
                 }}
                 className="w-full"
             >
@@ -32,8 +32,12 @@ const SimpleSwiper = ({ ary, prevEl = ".properly-custom-prev", nextEl = ".proper
                     ary.map((item: any, index: any) => (
                         <SwiperSlide key={index}>
                             <div className={""}>
-                                <img src={item.url} alt="properly1" title={"properly1"}
-                                     className={"w-full h-full object-cover"}/>
+                                <img
+                                    src={item.url}
+                                    alt="properly1"
+                                    title={"properly1"}
+                                    className={"w-full h-full object-cover"}
+                                />
                                 <div className={"mt-6"}>
                                     <Typography className={"font-medium"}>
                                         {item.title}
