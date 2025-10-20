@@ -60,7 +60,7 @@ const Assets = () => {
                 <div className={"mt-10 lg:mt-20 lg:px-50"}>
                     <div className={"grid grid-cols-12 gap-4"}>
                         <div className={"col-span-12 lg:col-span-6"}>
-                            <img src={renderImageSrc()} className={"max-w-[320px] mx-auto lg:mx-0"} alt=""/>
+                            <img src={renderImageSrc()} className={"max-w-[320px] mx-auto"} alt=""/>
                             <div className={"mt-6"}>
                                 {
                                     BtnAry.map((item, index) => (
@@ -205,8 +205,7 @@ const Assets = () => {
                                             <ul className={"mt-3 lg:mt-6"}>
                                                 <li>
                                                     <header className={"flex items-center"}>
-                                                        <div
-                                                            className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                                                        <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
                                                         <Typography
                                                             variant={"h6"}
                                                             className={"!text-white font-medium"}
