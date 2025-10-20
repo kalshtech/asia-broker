@@ -11,7 +11,6 @@ import Cooperator from "./Cooperator";
 import Reward from "./Reward";
 import Competition from "./Competition";
 import Calendar from "./Calendar";
-
 export default function Home() {
   return (
     <div>
