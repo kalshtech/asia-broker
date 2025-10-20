@@ -55,32 +55,42 @@ const Speed = () => {
                 <div className={"relative"}>
                     <div
                         className={"bg-[url(/images/home/speed-server-bg.png)] bg-center bg-cover bg-no-repeat min-h-[369px]"}>
-                        <div className={"grid grid-cols-12 gap-2 px-10 py-12 w-full"}>
+                        <div className={"grid grid-cols-12 gap-4 px-10 py-12 w-full"}>
                             <div className="text-white relative col-span-12 lg:col-span-4">
-                                <Typography variant={"h6"} className={"!text-white !font-medium"}>
+                                <Typography
+                                    variant={"h6"}
+                                    className={"!text-white !font-medium"}
+                                >
                                     {t("row.1.title")}
                                 </Typography>
-                                <Typography variant={"muted"} className={"!text-white mt-5"}>
+                                <Typography
+                                    variant={"muted"}
+                                    className={"!text-white mt-5 max-w-xs"}
+                                >
                                     {t("row.1.description")}
                                 </Typography>
-                                <div
-                                    className={"absolute w-[1px] bg-theme-active h-full right-1/6 top-0 hidden lg:block "}></div>
+                                <div className={"absolute w-[1px] bg-theme-active h-full right-1/6 top-0 hidden lg:block"}/>
                             </div>
                             <div className="text-white relative col-span-12 lg:col-span-4">
                                 <Typography variant={"h6"} className={"!text-white !font-medium"}>
                                     {t("row.2.title")}
                                 </Typography>
-                                <Typography variant={"muted"} className={"!text-white mt-5"}>
+                                <Typography
+                                    variant={"muted"}
+                                    className={"!text-white mt-5 max-w-xs"}
+                                >
                                     {t("row.2.description")}
                                 </Typography>
-                                <div
-                                    className={"absolute w-[1px] bg-theme-active h-full right-1/6 top-0 hidden lg:block"}></div>
+                                <div className={"absolute w-[1px] bg-theme-active h-full right-1/6 top-0 hidden lg:block"}/>
                             </div>
                             <div className="text-white relative col-span-12 lg:col-span-4">
-                                <Typography variant={"h6"} className={"!text-white !font-medium"}>
+                            <Typography variant={"h6"} className={"!text-white !font-medium"}>
                                     {t("row.3.title")}
                                 </Typography>
-                                <Typography variant={"muted"} className={"!text-white mt-5"}>
+                                <Typography
+                                    variant={"muted"}
+                                    className={"!text-white mt-5 max-w-xs"}
+                                >
                                     {t("row.3.description")}
                                 </Typography>
                             </div>
