@@ -45,11 +45,8 @@ const Velocity = () => {
                                 <Typography variant={"h4"} className={"!text-white"}>
                                     {t("card1.title")}
                                 </Typography>
-                                <Typography variant={"muted"} className={"!text-white mt-2"}>
+                                <Typography variant={"h5"} className={"!text-white font-medium block mt-16"}>
                                     {t("card1.desc")}
-                                </Typography>
-                                <Typography variant={"small"} className={"!text-white block mt-16"}>
-                                    {t("card1.prompt")}
                                 </Typography>
                             </div>
                         </article>
@@ -64,13 +61,10 @@ const Velocity = () => {
                                 className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/50 to-black/70"></div>
                             <div className="relative p-8 md:p-12 lg:p-14 text-white">
                                 <Typography variant={"h4"} className={"!text-white"}>
-                                    {t("card1.title")}
+                                    {t("card2.title")}
                                 </Typography>
-                                <Typography variant={"muted"} className={"!text-white mt-2"}>
-                                    {t("card1.desc")}
-                                </Typography>
-                                <Typography variant={"small"} className={"!text-white block mt-16"}>
-                                    {t("card1.prompt")}
+                                <Typography variant={"h5"} className={"!text-white font-medium block mt-16"}>
+                                    {t("card2.desc")}
                                 </Typography>
                             </div>
                         </article>

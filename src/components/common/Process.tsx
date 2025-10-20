@@ -61,12 +61,11 @@ const Process = (props: Props) => {
                                         "bg-[#1F2538]": !isLight
                                     }])}>
                                         <header>
-                                            <div
-                                                className={"border-[2px] w-[32px] h-[32px] border-black bg-white rounded-full flex justify-center items-center"}>
+                                            <div className={"border-[2px] w-[32px] h-[32px] border-black bg-white rounded-full flex justify-center items-center"}>
                                                 {index + 1}
                                             </div>
                                         </header>
-                                        <div className={""}>
+                                        <div className={"h-[calc(100%-136px)]"}>
                                             <Typography
                                                 variant={"h5"}
                                                 className={classnames(["my-6", {

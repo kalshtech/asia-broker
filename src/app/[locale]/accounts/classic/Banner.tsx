@@ -55,7 +55,7 @@ const Banner =  () => {
                     </Typography>
                 </motion.div>
                 <div className={"mt-16 flex"}>
-                    <RegisterBtn/>
+                    <RegisterBtn className={"bg-white text-black hover:bg-white"} />
                     <Button className={"ml-4 bg-transparent border hover:bg-transparent"}>
                         {t("support")}
                     </Button>

@@ -2259,188 +2259,191 @@
     "accounts": {
       "classic": {
         "banner": {
-          "title": "Classic 经典账户",
-          "midst1": "美元账户与美分账户双选择",
-          "midst2": "现在仅需入金 $100，即可开启 0 佣金交易之旅",
-          "desc": "最受欢迎的标准账户，适合从新手到专业交易者的所有阶段。0 佣金，极速执行，透明报价—— 从这里开始，走向专业交易世界",
-          "support": "联系支持"
+          "title": "Classic Account",
+          "midst1": "USD or Cent Account — Your Gateway to Commission-Free Trading.",
+          "midst2": "Start trading with just $100 and experience seamless access to global markets.",
+          "desc": "The Classic Account is our most popular choice — built for traders at every level. Enjoy commission-free trading, fast execution, and transparent pricing backed by institutional liquidity.",
+          "support": "Contact Support"
         },
         "standard": {
-          "title": "你真正需要的标准账户",
+          "title": "The Standard Account You Truly Need",
           "row": {
             "left": {
-              "title": "0 佣金账户，不止是“免费”",
-              "desc": "更快、更清晰、更值得信任",
+              "title": "More Than Just “Free” — It’s Transparent, Fast, and Reliable.",
+              "desc": "Experience trading built on trust — zero commissions, real pricing, and institutional-grade execution.",
               "ul": {
-                "li1": "每笔交易零手续费",
-                "li2": "真实市场价格直达",
-                "li3": "极速执行，毫秒成交",
-                "li4": "无隐藏费用",
-                "li5": "支持 65,000+ 全球交易产品",
-                "li6": "接入 Equinix 全球网络"
+                "li1": "No Trading Fees",
+                "li2": "True Market Pricing",
+                "li3": "Lightning Execution",
+                "li4": "No Hidden Costs",
+                "li5": "65,000+ Global Instruments",
+                "li6": "Equinix Global Network"
               }
             },
             "right": {
               "row": {
-                "col-1-title": "0 佣金",
-                "col-1-desc": "无交易手续费，真正意义上的免佣金交易账户。",
-                "col-2-title": "极速市价执行",
-                "col-2-desc": "无重复报价，精准进入真实市场，避免滑点干扰。",
-                "col-3-title": "浮动点差机制",
-                "col-3-desc": "稳定浮动点差，反映流动性与真实报价环境。",
-                "col-4-title": "机构级流动性",
-                "col-4-desc": "接入暗池与顶级LP，市场深度直连，无中间人。",
-                "col-5-title": "Equinix 光纤网络",
-                "col-5-desc": "毫秒级交易路径连接，实现全球低延迟执行。",
-                "col-6-title": "价格透明度",
-                "col-6-desc": "透明订单簿结构，公平市场进入点，无隐藏费用。"
+                "col-1-title": "0 Commission",
+                "col-1-desc": "Trade with zero fees — a truly commission-free standard account.",
+                "col-2-title": "Lightning - Fast Execution",
+                "col-2-desc": "No requotes, no delays — enter real markets with precision and speed.",
+                "col-3-title": "Floating Spread Model",
+                "col-3-desc": "Dynamic spreads that reflect true market liquidity and conditions.",
+                "col-4-title": "Institutional Liquidity Access",
+                "col-4-desc": "Direct connection to top-tier LPs and dark pools — no intermediaries.",
+                "col-5-title": "Equinix Fiber Network",
+                "col-5-desc": "Millisecond connectivity across global hubs, ensuring ultra-low latency.",
+                "col-6-title": "Transparent Pricing",
+                "col-6-desc": "A clear, fair order book with no hidden markups or costs."
               }
             }
           }
         },
         "velocity": {
-          "title": "MT5撮合引擎与极速执行",
+          "title": "MT5 Matching Engine & Ultra-Fast Execution",
           "card1": {
-            "title": "机构级执行桥接系统— 基于 MT5 的稳定撮合系统",
-            "desc": "连接真实市场，无中间商干扰",
-            "prompt": "采用 MT5 引擎和高性能撮合桥，订单毫秒级传输，稳定直达全球流动性池。"
+            "title": "Institutional-Grade Bridge System — Powered by MT5",
+            "desc": "Connect directly to real markets with zero intermediaries."
+          },
+          "card2": {
+            "title": "Equinix Fiber Network — Low-Latency Global Access",
+            "desc": "Experience millisecond-level execution through direct fiber routing across global data centers."
           }
         },
         "type": {
           "card1": {
-            "title": "Classic 美元账户",
-            "desc": "行业标准的专业账户，适合所有交易者",
+            "title": "Classic USD Account",
+            "desc": "The industry-standard account — ideal for traders of all levels.",
             "ul": {
-              "li-1-title": "最低入金",
+              "li-1-title": "Minimum Deposit",
               "li-1-desc": "$100 USD",
-              "li-2-title": "点差¹",
-              "li-2-desc": "点差¹0.2 点起（浮动）",
-              "li-3-title": "手续费",
-              "li-3-desc": "0 佣金",
-              "li-4-title": "最大杠杆",
-              "li-4-desc": "无限*",
-              "li-5-title": "平台支持",
+              "li-2-title": "Spreads¹",
+              "li-2-desc": "From 0.2 pips (floating)",
+              "li-3-title": "Commission",
+              "li-3-desc": "0 commission",
+              "li-4-title": "Maximum Leverage",
+              "li-4-desc": "Up to 1:∞",
+              "li-5-title": "Platforms Supported",
               "li-5-desc": "MetaTrader 5（Web / App / Desktop）",
-              "li-6-title": "订单类型",
-              "li-6-desc": "市价、挂单、止损止盈等",
-              "li-7-title": "交易品种",
-              "li-7-desc": "外汇、金属、能源、指数、股票、加密货币，共 65,000+"
+              "li-6-title": "Order Types",
+              "li-6-desc": "Market, Pending, Stop Loss, Take Profit",
+              "li-7-title": "Instruments",
+              "li-7-desc": "Forex, Metals, Energy, Indices, Stocks, Crypto — 65,000+ instruments"
             }
           },
           "card2": {
-            "title": "美元账户",
-            "desc": "专为入门交易者与轻量级策略测试设计",
+            "title": "Classic Cent Account",
+            "desc": "Built for new traders — lower risk, precise control, and smart strategy testing.",
             "ul": {
-              "li-1-title": "最低入金金额",
-              "li-1-desc": "$100（转为10,000美分展示）",
-              "li-2-title": "显示方式",
-              "li-2-desc": "所有交易金额以美分形式展示，更精细控制交易金额",
-              "li-3-title": "最小交易单位",
-              "li-3-desc": "0.01 手起，低风险试单",
-              "li-4-title": "点差¹",
-              "li-4-desc": "0.3 点起（主流品种）",
-              "li-5-title": "手续费",
-              "li-5-desc": "0 手续费",
-              "li-6-title": "杠杆",
-              "li-6-desc": "最高 1: 无限",
-              "li-7-title": "交易品种",
-              "li-7-desc": "外汇、贵金属、加密货币（部分品种限制）"
+              "li-1-title": "Minimum Deposit",
+              "li-1-desc": "$100 (displayed as 10,000 cents)",
+              "li-2-title": "Display Format",
+              "li-2-desc": "All balances and trades shown in cents for finer control",
+              "li-3-title": "Minimum Trade Size",
+              "li-3-desc": "From 0.01 lots — ideal for testing strategies",
+              "li-4-title": "Spreads¹",
+              "li-4-desc": "From 0.3 pips (major pairs)",
+              "li-5-title": "Commission",
+              "li-5-desc": "0 commission",
+              "li-6-title": "Leverage",
+              "li-6-desc": "Up to 1:∞",
+              "li-7-title": "Instruments",
+              "li-7-desc": "Forex, Precious Metals, Crypto (selected instruments only)"
             }
           },
           "table": {
             "row": {
-              "head1": "特性",
-              "head2": "美元账户 Classic",
-              "head3": "美分账户 Classic",
-              "col1-1-1": "最低入金",
-              "col1-1-2": "$100 USD",
-              "col1-1-3": "$100（转为10,000美分展示）",
-              "col1-2-1": "点差¹",
-              "col1-2-2": "点差¹0.2 点起（浮动）",
-              "col1-2-3": "所有交易金额以美分形式展示，更精细控制交易金额",
-              "col1-3-1": "手续费",
-              "col1-3-2": "0 佣金",
-              "col1-3-3": "0.01 手起，低风险试单",
-              "col1-4-1": "最大杠杆",
-              "col1-4-2": "1: 无限*",
-              "col1-4-3": "0.3 点起（主流品种）",
-              "col1-5-1": "平台支持",
-              "col1-5-2": "MetaTrader 5（Web / App / Desktop）",
-              "col1-5-3": "0 手续费",
-              "col1-6-1": "订单类型",
-              "col1-6-2": "市价、挂单、止损止盈等",
-              "col1-6-3": "最高 1: 无限",
-              "col1-7-1": "交易品种",
-              "col1-7-2": "外汇、金属、能源、指数、股票、加密货币，共 65,000+",
-              "col1-7-3": "外汇、贵金属、加密货币（部分品种限制）"
+              "head1": "Feature",
+              "head2": "Classic USD Account",
+              "head3": "Classic Cent Account",
+              "col1-1-1": "Minimum Deposit",
+              "col1-1-2": "From $100",
+              "col1-1-3": "From $100",
+              "col1-2-1": "Display Currency",
+              "col1-2-2": "USD",
+              "col1-2-3": "Cents",
+              "col1-3-1": "Minimum Trade Size",
+              "col1-3-2": "0.01 lots",
+              "col1-3-3": "0.01 lots",
+              "col1-4-1": "Spreads",
+              "col1-4-2": "From 0.2 pips",
+              "col1-4-3": "From 0.3 pips",
+              "col1-5-1": "Commission",
+              "col1-5-2": "0",
+              "col1-5-3": "0",
+              "col1-6-1": "Leverage",
+              "col1-6-2": "Up to 1:∞",
+              "col1-6-3": "Up to 1:∞",
+              "col1-7-1": "Available Instruments",
+              "col1-7-2": "All 65,000+ instruments",
+              "col1-7-3": "Selected products (lower risk)"
             }
           }
         },
         "process": {
-          "title": "开户流程",
+          "title": "How to Open an Account in 4 Easy Steps",
           "step": {
             "1": {
-              "title": "开设账户",
-              "desc": "只需填写基础信息，1分钟完成注册",
-              "bottom": "立即开户"
+              "title": "Open an Account",
+              "desc": "Complete basic information — registration takes less than one minute.",
+              "bottom": "Open Account"
             },
             "2": {
-              "title": "下载 MetaTrader5",
-              "desc": "支持桌面端、移动端与网页版",
-              "bottom": "探索下载MetaTrader5"
+              "title": "Download MetaTrader 5",
+              "desc": "Available on desktop, mobile, and web.",
+              "bottom": "Download MetaTrader 5"
             },
             "3": {
-              "title": "入金",
-              "desc": "多种方式支持，包括银行卡、电汇、USDT",
-              "bottom": "了解出入金方式"
+              "title": "Fund Your Account",
+              "desc": "Multiple funding options — bank card, wire transfer, or USDT.",
+              "bottom": "Learn About Deposits & Withdrawals"
             },
             "4": {
-              "title": "开始交易",
-              "desc": "立即进入全球市场，体验 0 佣金快速执行",
-              "bottom": "立即体验交易"
+              "title": "Start Trading",
+              "desc": "Enter the global markets instantly and enjoy zero-commission, fast execution.",
+              "bottom": "Start Trading"
             }
           }
         },
         "explore": {
-          "title": "探索更高阶账户",
+          "title": "Explore Advanced Accounts",
           "card1": {
-            "title": "探索铂金账户",
-            "desc": "适合有所有专业交易员，全面升级体验，一切都是顶级机构级别的执行",
+            "title": "Platinum Account",
+            "desc": "For professional traders seeking a complete upgrade — every detail built for institutional-level execution.",
             "ul": {
-              "li1": "解锁高达5%年化利息账户",
-              "li2": "佣金，极低点差 + 机构级执行，最优的价格和最快的速度",
-              "li3": "探索更多专业功能如VPS云服务器"
+              "li1": "Earn up to 5% annual interest with our interest-bearing account",
+              "li2": "Enjoy zero commissions, ultra-low spreads & institutional-grade execution",
+              "li3": "Access advanced features such as VPS cloud hosting for faster, stable trading"
             },
-            "btn": "探索铂金账户"
+            "btn": "Explore Platinum Account"
           },
           "card2": {
-            "title": "探索VIC机构账户",
-            "desc": "数字时代的专业人士和机构交易账户",
+            "title": "VIC Institutional Account",
+            "desc": "For professionals and institutions in the digital trading era.",
             "ul": {
-              "li1": "专为专业人士与量化机构打造",
-              "li2": "配备专属客户经理 + 技术团队",
-              "li3": "解锁更多VIP私人服务，加入Asia Future Trading 百万俱乐部"
+              "li1": "Designed for quant traders and professionals",
+              "li2": "Includes a dedicated account management and technical support team.",
+              "li3": "Unlock VIP privileges and join the Asia Future Trading Million Club"
             },
-            "btn": "探索VIC机构账户"
+            "btn": "Explore VIC Account"
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "Classic账户适合什么类型的用户？",
-              "desc": "几乎所有用户！无论你是新手、进阶交易者还是轻量级策略测试者，Classic账户提供足够稳定与灵活的交易环境。"
+              "title": "Who is the Classic Account designed for?",
+              "desc": "Almost everyone! Whether you’re a beginner, an experienced trader, or testing lightweight strategies, the Classic Account provides a stable and flexible trading environment for all levels."
             },
             "li2": {
-              "title": "我可以从美分账户升级到美元账户吗？",
-              "desc": "当然可以，您可以在后台提交账户升级请求，或联系客服协助。"
+              "title": "Can I upgrade from a Cent Account to a USD Account?",
+              "desc": "Absolutely. You can submit an upgrade request directly through your client portal or contact our support team for assistance."
             },
             "li3": {
-              "title": "为什么选择0佣金账户？",
-              "desc": "相较于收取手续费的平台，我们将盈利模式集中在点差优化，通过更高效的流动性连接和成本控制，降低交易者总成本。"
+              "title": "Why choose a zero-commission account?",
+              "desc": "Unlike platforms that charge additional fees, our model focuses on optimized spreads and institutional-grade liquidity. This structure minimizes your overall trading costs through efficient pricing and execution."
             },
             "li4": {
-              "title": "Classic账户支持哪些订单类型与执行方式？",
-              "desc": "支持市价、限价、止盈止损等所有常见订单类型。订单通过 Equinix 网络市价撮合，享受毫秒级执行速度，降低滑点和重报概率。"
+              "title": "What order types and execution methods does the Classic Account support?",
+              "desc": "The Classic Account supports all major order types — market, limit, stop-loss, and take-profit.\nAll orders are executed through Equinix’s low-latency network, ensuring millisecond-level execution speed with minimal slippage and no requotes."
             }
           }
         }
