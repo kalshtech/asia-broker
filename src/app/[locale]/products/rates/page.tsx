@@ -81,6 +81,7 @@ export default async function Page() {
             <div className={"bg-theme-light-bg"}>
                 <Stream
                     title={t("stream.title")}
+                    desc={t("stream.desc")}
                     col1={{ title: t("stream.row.col1.title"), desc: t("stream.row.col1.desc"), prompt1: t("stream.row.col1.prompt1"), prompt2: t("stream.row.col1.prompt2"), ulAry: StreamUlAry }}
                     col2={{ backgroundUrl: "bg-[url(/images/products/rates-stream.png)]", isShowMore: false }}
                 />

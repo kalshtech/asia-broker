@@ -44,15 +44,15 @@ const Enhance = () => {
                             viewport={{once: true, amount: 0.5}}
                         >
                             <Typography
-                                variant={"h3"}
-                                className={"font-medium text-center !text-white"}
+                                variant={"h4"}
+                                className={"font-medium text-center !text-[30px] !text-white"}
                             >
                                 {t("box.title")}
                             </Typography>
 
                             <Typography
-                                variant={"large"}
-                                className={"font-normal text-center !text-white mt-4 lg:mt-12"}
+                                variant={"p"}
+                                className={"text-center !text-white max-w-3xl mt-4 lg:mt-12"}
                             >
                                 {t("box.desc")}
                             </Typography>

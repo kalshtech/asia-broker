@@ -36,7 +36,7 @@ const Standard = () => {
 
                     <Typography
                         variant={"muted"}
-                        className={"text-center mt-4 lg:mt-10"}
+                        className={"text-center max-w-3xl mx-auto mt-4 lg:mt-6"}
                     >
                         {t("desc")}
                     </Typography>

@@ -58,8 +58,8 @@ const Stream = (props: Props) => {
                     {
                         desc && (
                             <Typography
-                                variant={"muted"}
-                                className={"font-medium text-center mt-6"}
+                                variant={"p"}
+                                className={"text-center mt-6"}
                             >
                                 {desc}
                             </Typography>
@@ -70,8 +70,8 @@ const Stream = (props: Props) => {
                     <div className={"grid grid-cols-12 gap-8"}>
                         <div className={"col-span-12 lg:col-span-6"}>
                             <Typography
-                                variant={"h4"}
-                                className={"font-medium max-w-md"}
+                                variant={"h5"}
+                                className={"font-medium max-w-2xl"}
                             >
                                 {col1.title}
                             </Typography>
@@ -79,15 +79,15 @@ const Stream = (props: Props) => {
                             {
                                 col1.desc && (
                                     <Typography
-                                        variant={"large"}
-                                        className={"font-normal mt-4 lg:mt-10"}
+                                        variant={"p"}
+                                        className={"mt-4 lg:mt-8"}
                                     >
                                         {col1.desc}
                                     </Typography>
                                 )
                             }
 
-                            <ul className={"mt-4 lg:mt-10"}>
+                            <ul className={"mt-4 lg:mt-8"}>
                                 {
                                     col1.ulAry && col1.ulAry.map((item, index) => (
                                         <li key={index} className={"flex items-center my-4"}>
@@ -108,7 +108,7 @@ const Stream = (props: Props) => {
                                 col1.prompt1 && (
                                     <Typography
                                         variant={"muted"}
-                                        className={"!text-xs mt-8"}
+                                        className={"!text-xs mt-10 max-w-2xl"}
                                     >
                                         {col1.prompt1}
                                     </Typography>
@@ -118,8 +118,8 @@ const Stream = (props: Props) => {
                             {
                                 col1.prompt2 && (
                                     <Typography
-                                        variant={"muted"}
-                                        className={"font-medium mt-8"}
+                                        variant={"p"}
+                                        className={"font-medium mt-6 max-w-2xl"}
                                     >
                                         {col1.prompt2}
                                     </Typography>

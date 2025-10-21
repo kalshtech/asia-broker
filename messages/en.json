@@ -1341,105 +1341,106 @@
       },
       "rates": {
         "banner": {
-          "title": "0 交易佣金",
-          "midst": "全账户支持，一切只为降低你的交易成本",
-          "desc": "Asia Future Trading 为全球交易者打造机构级低成本交易环境，费用结构透明、公平、简明，不隐藏、不复杂，专注为你降低每一笔交易成本。"
+          "title": "0 Trading Commissions",
+          "midst": "Trade Like Institutions — For Life. With Zero Fees.",
+          "desc": "At Asia Future Trading, we’ve built an institutional-grade, low-cost trading environment designed for performance and transparency. No hidden fees. No complex pricing. Just pure, efficient trading — where every order is executed faster, cleaner, and at true market cost."
         },
         "mechanism": {
-          "title": "三大核心减负机制，让你交易更轻松",
-          "title1": "0 交易佣金 · 0 出入金手续费 · 0 隔夜利息（部分产品）",
+          "title": "Three Core Cost-Saving Mechanisms",
+          "title1": "0 Trading Commissions · 0 Deposit & Withdrawal Fees · 0 Overnight Interest¹",
           "row": {
             "col1": {
-              "title": "所有账户 0 交易佣金 / 0 手续费",
-              "desc": "无论是 Classic、Platinum 还是 VIC 账户，我们对所有产品交易 一律不收取佣金。"
+              "title": "0 Trading Commissions Across All Accounts",
+              "desc": "Trade commission-free across all account types — Classic, Platinum, or VIC. Enjoy full transparency with no hidden platform charges."
             },
             "col2": {
-              "title": "出入金 0 手续费",
-              "desc": "支持多种入金方式（本地银行、电汇、USDT 等），我们不收取任何平台手续费。"
+              "title": "0 Deposit & Withdrawal Fees",
+              "desc": "Fund and withdraw easily via bank transfer, wire, or USDT — all fee-free. Your funds stay yours, without platform fees."
             },
             "col3": {
-              "title": "大部分产品 0 隔夜利息（Swap）",
-              "desc": "大部分热门产品（如比特币、以太坊）及铂金 / VIC 账户支持免除隔夜利息，长期持仓无负担。",
+              "title": "0 Overnight Interest on Most Instruments",
+              "desc": "Popular markets — including Bitcoin, Ethereum, and key assets under Platinum or VIC accounts — offer swap-free trading for more efficient long-term positions.",
               "prompt": "免隔夜利息适用范围可能因市场条件及账户类型而异，请查看每种产品的详情说明。"
             }
           }
         },
         "stream": {
-          "title": "我们将机构级流动性带给每一位用户，机构级产品，不再遥不可及",
+          "title": "Trade Like Institutions — Without the Barriers",
+          "desc": "Bringing Wall Street–Level Execution to Your Fingertips",
           "row": {
             "col1": {
-              "title": "连接全球顶级流动性提供者 XTX Markets｜LMAX｜Finalto",
-              "desc": "我们采用与专业机构一致的撮合引擎与订单执行机制，确保每一位交易者都能享有：",
-              "prompt1": "无论你是日内交易者，策略套利者，还是长期持仓者，你都将体验到真正对标华尔街水准的流动性质量。",
-              "prompt2": "这就是我们能做到 0 佣金 + 高速成交的底层保障。",
+              "title": "Partner directly with top-tier liquidity providers through institutional-grade execution systems.",
+              "desc": "Experience Institutional Precision",
+              "prompt1": "Whether you’re a day trader, arbitrage strategist, or long-term investor, you’ll experience the same execution quality trusted by global financial institutions.",
+              "prompt2": "This is the foundation behind our 0 Commission + Lightning Execution — where institutional liquidity meets every trader.",
               "ul": {
-                "li1": "更紧的点差",
-                "li2": "更深的市场深度",
-                "li3": "更快的成交速度"
+                "li1": "Tighter Spreads — True market pricing sourced from deep liquidity pools.",
+                "li2": "Deeper Market Depth — Transparent order books, no dealing desk.",
+                "li3": "Faster Execution — Institutional-grade speed with sub-millisecond fills."
               }
             }
           }
         },
         "table": {
-          "title": "想了解每个交易品种的具体成本？",
-          "overview": "以下为您概览",
+          "title": "Want to Know the Exact Cost for Each Asset Class?",
+          "overview": "Here’s a quick overview of what you can trade at Asia Future Trading.",
           "head": {
-            "type": "资产类别",
-            "introduction": "简介"
+            "type": "Asset Class",
+            "introduction": "Description"
           },
-          "prompt1": "点差低至 0 点，交易全球最大市场货币对",
-          "prompt2": "黄金、白银、铂金等多品类支持，适合构建抗通胀组合",
-          "prompt3": "把握原油、天然气等热门大宗商品波动机会",
-          "prompt4": "交易特斯拉、苹果、英伟达等热门股票，低成本高灵活",
-          "prompt5": "涵盖股指、利率、能源、农产品等全球期货品种",
-          "prompt6": "BTC、ETH 等热门币种，0 隔夜利息，支持高杠杆与双向交易",
-          "details": "了解详情"
+          "prompt1": "Spreads from 0.0 pips — trade the world’s most liquid currency pairs with institutional-grade pricing.",
+          "prompt2": "Gold, silver, and platinum — diversify your portfolio and hedge against inflation.",
+          "prompt3": "Capture market opportunities in crude oil, Brent, and natural gas with low-cost CFDs.",
+          "prompt4": "Trade global leaders like Tesla, Apple, and NVIDIA with low costs and flexible leverage.",
+          "prompt5": "Access global futures across indices, rates, energy, and agriculture — all in one platform.",
+          "prompt6": "Trade BTC, ETH, and more — 0 swap fees on selected pairs, full leverage, and bi-directional trading.",
+          "details": "Learn More"
         },
         "enhance": {
-          "title": "闲置收益增强账户，进一步降低您的持仓成本",
+          "title": "Future Earn Account — Turn Idle Funds into Active Returns",
           "box": {
-            "title": "Future Earn Account｜铂金 / VIC 账户专属利息机制",
-            "desc": "Asia Future Trading 提供差异化账户福利，长期持仓不再“闲置”，让每一笔资金都在为你创造回报。",
-            "more": "了解 Future Earn 功能"
+            "title": "Exclusive to Platinum & VIC Accounts",
+            "desc": "At Asia Future Trading, we transform idle balances into earning opportunities.\nYour capital doesn’t just sit — it works for you, reducing holding costs and enhancing long-term returns.",
+            "more": "Learn About Future Earn"
           }
         },
         "statement": {
-          "title": "隔夜费用 & 产品交易时间",
-          "desc": "想了解更多？我们为每位用户提供清晰的参考指引",
+          "title": "Overnight Fees & Trading Hours",
+          "desc": "Want to know more? We’ve made it easy with clear, transparent reference guides for every trader.",
           "row": {
             "col1": {
-              "title": "隔夜利息说明",
-              "desc": "不同账户类型、不同资产类别的隔夜利息规则",
-              "more": "了解隔夜利息详情"
+              "title": "Overnight Swap Guide",
+              "desc": "Learn how overnight interest rates vary by account type and asset class.",
+              "more": "View Swap Details"
             },
             "col2": {
-              "title": "产品交易时间表",
-              "desc": "涵盖全球市场主要品种的开收盘时间，帮助你规划交易节奏",
-              "more": "查看产品交易时间表"
+              "title": "Trading Hours Schedule",
+              "desc": "Check the opening and closing times of major global markets to plan your trading sessions effectively.",
+              "more": "View Trading Hours"
             }
           }
         },
         "standard": {
-          "title": "重塑全球交易成本新标准",
-          "desc": "Asia Future Trading 以机构级别的定价与流动性，为全球交易者提供透明、公平的市场接入。从专业到细节，每一步都为你的长期交易成功而设计。"
+          "title": "Redefining the Global Standard for Trading Costs",
+          "desc": "At Asia Future Trading, we bring institutional-level pricing and liquidity to traders worldwide — making transparency, fairness, and precision accessible to everyone. From execution speed to every detail of cost design, everything is built to support your long-term trading success."
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "Asia Future Trading 是否真的所有账户都 0 佣金？",
-              "desc": "是的，无论 Classic、Platinum 还是 VIC 账户，所有产品均不收取平台佣金。"
+              "title": "Are all Asia Future Trading accounts truly zero-commission?",
+              "desc": "Yes. Whether you’re using a Classic, Platinum, or VIC account, all instruments are commission-free — no platform or execution fees applied."
             },
             "li2": {
-              "title": "隔夜利息是否所有产品都免？",
-              "desc": "并非全部免除。热门品种（如 BTC、ETH）以及铂金 / VIC 账户部分产品可享免隔夜利息，详情请参考隔夜利息说明页面。"
+              "title": "Are overnight swaps waived for all products?",
+              "desc": "Not entirely. Popular products such as BTC and ETH, as well as selected Platinum and VIC account instruments, qualify for swap-free trading. For full details, please refer to the Overnight Swap Guide."
             },
             "li3": {
-              "title": "出入金是否支持 24/7？",
-              "desc": "是的，出入金申请可随时提交，平台将在 24 小时内完成处理。但部分银行 / 支付系统可能有自身延迟。详情请参考出入金页面。"
+              "title": "Is deposit and withdrawal available 24/7?",
+              "desc": "Yes, requests can be submitted anytime and are typically processed within 24 hours.\nHowever, certain banks or payment providers may have their own operational delays.\nFor more information, visit the Deposits & Withdrawals page."
             },
             "li4": {
-              "title": "在哪里可以查阅产品的点差和交易时间？",
-              "desc": "你可以在【费率表】和【产品交易时间表】页面查看实时更新的详细说明。"
+              "title": "Where can I check spreads and trading hours?",
+              "desc": "You can find up-to-date details on the Overnight Swap Guide and Trading Hours Schedule pages."
             }
           }
         }
@@ -3361,12 +3362,12 @@
           "col-1": {
             "title": "CFD 产品",
             "ul": {
-              "li1": "外汇",
-              "li2": "贵金属",
-              "li3": "能源",
-              "li4": "股票 & ETF",
-              "li5": "期货合约",
-              "li6": "加密资产"
+              "li1": "Forex",
+              "li2": "Precious Metals",
+              "li3": "Energy",
+              "li4": "Stocks & ETFs",
+              "li5": "Futures",
+              "li6": "Crypto Assets"
             }
           },
           "col-2": {

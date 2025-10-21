@@ -70,8 +70,8 @@ const RowTable = (props: Props) => {
                             {
                                 overview && (
                                     <Typography
-                                        variant={"large"}
-                                        className={"font-normal text-[#999]"}
+                                        variant={"p"}
+                                        className={"font-normal !text-[#999]"}
                                     >
                                         {overviewText}
                                     </Typography>
