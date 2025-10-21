@@ -34,7 +34,7 @@ const Support = () => {
         { label: t("row.col3.ul.li2") },
     ];
     return (
-        <section className={"bg-[url(/images/accounts/platinum-support-bg.png)] bg-center bg-cover h-180 lg:h-[580px] py-4 lg:py-30"}>
+        <section className={"bg-[url(/images/accounts/platinum-support-bg.png)] bg-center bg-cover h-200 lg:h-[580px] py-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -56,7 +56,7 @@ const Support = () => {
 
                 <div className={"mt-4 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4"}>
-                        <div className={"flex col-span-12 lg:col-span-4 after:border-r after:border-white after:mx-12"}>
+                        <div className={"flex col-span-12 lg:col-span-4 lg:after:border-r after:border-white after:mx-12"}>
                             <div className={"w-full"}>
                                 <Typography
                                     variant={"h6"}
@@ -78,7 +78,7 @@ const Support = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className={"flex col-span-12 lg:col-span-4 after:border-r after:border-white after:mx-12"}>
+                        <div className={"flex col-span-12 lg:col-span-4 lg:after:border-r after:border-white after:mx-12"}>
                             <div className={"w-full"}>
                                 <Typography
                                     variant={"h6"}

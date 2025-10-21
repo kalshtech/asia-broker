@@ -91,13 +91,13 @@ const Route = () => {
                             className={"bg-[url(/images/accounts/route-bg3.png)] bg-center bg-cover py-20 px-10 h-80 relative z-10 lg:-ml-16"}>
                             <Typography
                                 variant={"h4"}
-                                className={"!text-white ml-16"}
+                                className={"!text-white lg:ml-16"}
                             >
                                 {t("row.col3.title")}
                             </Typography>
                             <Typography
                                 variant={"muted"}
-                                className={"!text-white mt-12 ml-16"}
+                                className={"!text-white mt-12 lg:ml-16"}
                             >
                                 {t("row.col3.desc")}
                             </Typography>

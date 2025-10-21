@@ -42,7 +42,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                     >
                         {t("title1")}
                     </Typography>
-                    <div className={"flex justify-center items-center mt-4"}>
+                    <div className={"flex justify-center items-end mt-4"}>
                         <Typography
                             variant={"h3"}
                             className={"font-medium text-center"}
@@ -51,7 +51,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                         </Typography>
                         <Typography
                             variant={"h3"}
-                            className={"!text-[64px] text-center mx-4"}
+                            className={"!text-[36px] lg:!text-[64px] text-center mx-4"}
                         >
                             5.6
                         </Typography>
@@ -95,12 +95,12 @@ const Credit = ({ typeText, className, number }: Props) => {
                                 </Typography>
                                 <Typography
                                     variant={"h3"}
-                                    className={"!text-[64px] text-center mx-4"}
+                                    className={"!text-[36px] lg:!text-[64px] text-center mx-4"}
                                 >
                                     {`$${number} USD`}
                                 </Typography>
                             </div>
-                            <div className={"mt-10"}>
+                            <div className={"mt-4 lg:mt-10"}>
                                 <Typography
                                     variant={"p"}
                                     className={"text-center"}
@@ -119,7 +119,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                             </Typography>
                             <Typography
                                 variant={"h3"}
-                                className={"!text-[64px] text-center mx-4"}
+                                className={"lg:!text-[64px] text-center mx-4"}
                             >
                                 {number}
                             </Typography>
