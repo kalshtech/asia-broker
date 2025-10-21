@@ -3,6 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useTranslations } from "next-intl";
+import {Autoplay} from 'swiper/modules';
 import { Typography } from "@/components/ui/typography";
 import Container from "@/components/Container";
 
@@ -68,7 +69,12 @@ const Advertising = () => {
                             slidesPerView={10}
                             spaceBetween={12}
                             loop={true}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
                             className="mySwiper w-full"
+                            modules={[Autoplay]}
                             breakpoints={{
                                 320: {slidesPerView: 4, spaceBetween: 16,},
                                 600: {slidesPerView: 6, spaceBetween: 24,},
