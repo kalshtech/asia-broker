@@ -6,6 +6,8 @@ import { useTranslations } from "next-intl";
 import classnames from "classnames";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {Navigation} from "swiper/modules";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -52,7 +54,7 @@ const Profession = () => {
                         {t("desc")}
                     </Typography>
                 </motion.div>
-                <div className={"mt-4 lg:mt-16"}>
+                <div className={"mt-4 lg:mt-16 hidden lg:block"}>
                     <div className={"w-full relative h-[560px]"}>
                         <div className={"w-full grid grid-cols-12 h-full border border-[#E6E6E6] relative"}>
                             {
@@ -98,11 +100,57 @@ const Profession = () => {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className={"absolute right-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none -z-10"}>
+                        <div className={"absolute right-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none -z-10"}>
                             <img src={activeImageUrl} className={"h-120 mt-20"} alt=""/>
                         </div>
                     </div>
+                </div>
+                <div className={"my-8 block lg:hidden"}>
+                    <Swiper
+                        slidesPerView={1.2}
+                        spaceBetween={24}
+                        loop={true}
+                    >
+                        {
+                            cols.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <div>
+                                        <div className={"bg-black rounded-2xl"}>
+                                            <img src={item.img} className={"rounded-2xl"} alt=""/>
+                                        </div>
+                                        <div className={"mt-5"}>
+                                            <div className={"h-32"}>
+                                                <Typography
+                                                    variant={"p"}
+                                                    className={"font-medium"}
+                                                >
+                                                    { item.label }
+                                                </Typography>
+                                                <Typography
+                                                    variant={"p"}
+                                                    className={"font-medium mt-2"}
+                                                >
+                                                    { item.children.desc1 }
+                                                </Typography>
+                                                <Typography
+                                                    variant={"muted"}
+                                                    className={"mt-2"}
+                                                >
+                                                    { item.children.desc2 }
+                                                </Typography>
+                                            </div>
+
+                                            <div className={"mt-4"}>
+                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
+                                                    {item.children.btnText}
+                                                </Button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))
+                        }
+                    </Swiper>
                 </div>
             </Container>
         </section>
