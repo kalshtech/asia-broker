@@ -3355,7 +3355,7 @@
   "Navigation": {
     "menu": {
       "products": {
-        "title": "产品",
+        "title": "Products",
         "description": "专业定价 ，更低交易成本，低点差、低佣金、低借贷利率。",
         "btn": "探索加密货币",
         "row": {
@@ -3390,7 +3390,7 @@
         }
       },
       "platforms": {
-        "title": "交易平台",
+        "title": "Platforms",
         "description": "为专业而生，覆盖所有交易员，从个人到机构",
         "btn": "立即下载",
         "row": {
@@ -3417,7 +3417,7 @@
         }
       },
       "account": {
-        "title": "交易账户",
+        "title": "Accounts",
         "description": "来自亚洲交易旗舰平台提供的账户，访问全球所有资产列别，六位账户 ID，畅达六万市场产品，还能参与收益增强计划，最大化投资效率。",
         "btn": "开设铂金账户",
         "row": {
