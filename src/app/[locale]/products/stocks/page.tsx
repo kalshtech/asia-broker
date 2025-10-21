@@ -129,11 +129,11 @@ export default async function Page() {
                 title={t("professional.title")}
             />
             <MetaCommission
-                languageLocal={"Pages.products.future"}
+                languageLocal={"Pages.products.stocks"}
                 backgroundImage={"bg-[url(/images/products/stocks-commission-background.png)]"}
             />
             <MetaMoreMarkets
-                languageLocal={"Pages.products.future"}
+                languageLocal={"Pages.products.stocks"}
                 backgroundImage={"bg-[url(/images/products/stocks-market-background.png)]"}
             />
             <Guide
