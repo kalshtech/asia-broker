@@ -115,7 +115,7 @@ const Pricing = () => {
                                     }
                                 </div>
 
-                                <Typography variant={"muted"} className={"!text-white mt-12 lg:mt-48"}>
+                                <Typography variant={"muted"} className={"!text-white mt-12 lg:mt-40"}>
                                     {t("left.fromText")}
                                 </Typography>
                             </motion.div>
