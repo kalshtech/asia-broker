@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation} from "swiper/modules";
+import { Link } from "@/i18n/navigation";
 import {Typography} from "@/components/ui/typography";
 import {useTranslations} from "next-intl";
 import {motion, Variants} from "framer-motion";
@@ -30,14 +29,14 @@ const fadeInUp: Variants = {
 const Tools = () => {
     const t = useTranslations("Common.tools");
     const ary1 = [
-        { image: "/images/common/calendar.png", title: t("row.calendar.title"), desc: t("row.calendar.desc") },
-        { image: "/images/common/calculation.png", title: t("row.calculation.title"), desc: t("row.calculation.desc") },
-        { image: "/images/common/servers.png", title: t("row.servers.title"), desc: t("row.servers.desc") },
+        { image: "/images/common/calendar.png", title: t("row.calendar.title"), desc: t("row.calendar.desc"), path: "/ideas/calendar" },
+        { image: "/images/common/calculation.png", title: t("row.calculation.title"), desc: t("row.calculation.desc"), path: "/ideas/calculator" },
+        { image: "/images/common/servers.png", title: t("row.servers.title"), desc: t("row.servers.desc"), path: "/ideas/vps" },
     ];
 
     const ary2 = [
-        { image: "/images/common/hot-charts.png", title: t("row.hot-charts.title"), desc: t("row.hot-charts.desc") },
-        { image: "/images/common/ideas.png", title: t("row.ideas.title"), desc: t("row.ideas.desc") },
+        { image: "/images/common/hot-charts.png", title: t("row.hot-charts.title"), desc: t("row.hot-charts.desc"), path: "/ideas/marketsmap?tab=Overview&type=cross" },
+        { image: "/images/common/ideas.png", title: t("row.ideas.title"), desc: t("row.ideas.desc"), path: "/ideas/professional" },
     ];
     return (
         <section className={"bg-theme-deep-bg py-8"}>
@@ -60,24 +59,26 @@ const Tools = () => {
                         {
                             ary1.map((item, index) => (
                                 <div className={"col-span-12 lg:col-span-4 h-full"} key={index}>
-                                    <Card className={"h-full"}>
-                                        <CardHeader>
-                                            <CardTitle>
-                                                <img className={"w-10 h-10"} src={item.image} alt=""/>
-                                            </CardTitle>
-                                        </CardHeader>
-                                        <CardContent>
-                                            <Typography variant={"large"}>
-                                                {item.title}
-                                            </Typography>
-                                            <Typography variant={"muted"} className={"mt-4"}>
-                                                {item.desc}
-                                            </Typography>
-                                        </CardContent>
-                                        <CardFooter className={"flex justify-end cursor-pointer"}>
-                                            <ArrowRight/>
-                                        </CardFooter>
-                                    </Card>
+                                    <Link href={item.path}>
+                                        <Card className={"h-full"}>
+                                            <CardHeader>
+                                                <CardTitle>
+                                                    <img className={"w-10 h-10"} src={item.image} alt=""/>
+                                                </CardTitle>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <Typography variant={"large"}>
+                                                    {item.title}
+                                                </Typography>
+                                                <Typography variant={"muted"} className={"mt-4"}>
+                                                    {item.desc}
+                                                </Typography>
+                                            </CardContent>
+                                            <CardFooter className={"flex justify-end cursor-pointer"}>
+                                                <ArrowRight/>
+                                            </CardFooter>
+                                        </Card>
+                                    </Link>
                                 </div>
                             ))
                         }
@@ -87,24 +88,26 @@ const Tools = () => {
                         {
                             ary2.map((item, index) => (
                                 <div className={"col-span-6"} key={index}>
-                                    <Card>
-                                        <CardHeader>
-                                            <CardTitle>
-                                                <img className={"w-10 h-10"} src={item.image} alt=""/>
-                                            </CardTitle>
-                                        </CardHeader>
-                                        <CardContent>
-                                            <Typography variant={"large"}>
-                                                {item.title}
-                                            </Typography>
-                                            <Typography variant={"muted"} className={"mt-4"}>
-                                                {item.desc}
-                                            </Typography>
-                                        </CardContent>
-                                        <CardFooter className={"flex justify-end cursor-pointer"}>
-                                            <ArrowRight/>
-                                        </CardFooter>
-                                    </Card>
+                                    <Link href={item.path}>
+                                        <Card>
+                                            <CardHeader>
+                                                <CardTitle>
+                                                    <img className={"w-10 h-10"} src={item.image} alt=""/>
+                                                </CardTitle>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <Typography variant={"large"}>
+                                                    {item.title}
+                                                </Typography>
+                                                <Typography variant={"muted"} className={"mt-4"}>
+                                                    {item.desc}
+                                                </Typography>
+                                            </CardContent>
+                                            <CardFooter className={"flex justify-end cursor-pointer"}>
+                                                <ArrowRight/>
+                                            </CardFooter>
+                                        </Card>
+                                    </Link>
                                 </div>
                             ))
                         }
