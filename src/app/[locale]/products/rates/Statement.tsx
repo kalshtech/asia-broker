@@ -62,7 +62,7 @@ const Statement = () => {
 
                                     <Typography
                                         variant={"muted"}
-                                        className={"font-medium mt-6"}
+                                        className={"mt-6"}
                                     >
                                         {item.desc}
                                     </Typography>
