@@ -39,13 +39,13 @@ export default function Vision() {
                     <div className={"flex justify-center"}>
                         <Typography
                             variant={"h3"}
-                            className={"font-medium text-center !text-white"}
+                            className={"text-center !text-white"}
                         >
                             {t("title1")}
                         </Typography>
                         <Typography
                             variant={"h3"}
-                            className={"font-medium text-center !text-[#1F8BFF] ml-2"}
+                            className={"text-center !text-[#1F8BFF] ml-2"}
                         >
                             {t("title2")}
                         </Typography>

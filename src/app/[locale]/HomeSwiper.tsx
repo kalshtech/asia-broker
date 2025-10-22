@@ -65,16 +65,10 @@ const HomeSwiper = () => {
                                                     </Typography>
                                                 </div>
                                                 <div className={"mt-8"}>
-                                                    <Typography
-                                                        variant={"h3"}
-                                                        className={"font-medium"}
-                                                    >
+                                                    <Typography variant={"h3"}>
                                                         {t("1.title3")}
                                                     </Typography>
-                                                    <Typography
-                                                        variant={"h3"}
-                                                        className={"font-medium"}
-                                                    >
+                                                    <Typography variant={"h3"}>
                                                         {t("1.title4")}
                                                     </Typography>
                                                 </div>
@@ -112,10 +106,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal isActive title={t("2.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-normal !text-[#666666]"}
-                                                >
+                                                <Typography variant={"h3"} className={"!text-[#666666]"}>
                                                     {t("2.title2")}
                                                 </Typography>
                                             </div>
@@ -136,10 +127,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal title={t("2.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h3"}>
                                                     {t("2.title2")}
                                                 </Typography>
                                             </div>
@@ -162,10 +150,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal isActive title={t("3.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-normal !text-[#666666]"}
-                                                >
+                                                <Typography variant={"h3"} className={"!text-[#666666]"}>
                                                     {t("3.title2")}
                                                 </Typography>
                                             </div>
@@ -185,10 +170,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal title={t("3.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h3"}>
                                                     {t("3.title2")}
                                                 </Typography>
                                             </div>
@@ -211,10 +193,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal isActive title={t("4.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-normal !text-[#666666]"}
-                                                >
+                                                <Typography variant={"h3"} className={"!text-[#666666]"}>
                                                     {t("4.title2")}
                                                 </Typography>
                                             </div>
@@ -233,10 +212,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal title={t("4.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h3"}>
                                                     {t("4.title2")}
                                                 </Typography>
                                             </div>
@@ -259,10 +235,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal isActive title={t("5.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-normal !text-[#666666]"}
-                                                >
+                                                <Typography variant={"h3"} className={"!text-[#666666]"}>
                                                     {t("5.title2")}
                                                 </Typography>
                                             </div>
@@ -283,10 +256,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal title={t("5.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h3"}>
                                                     {t("5.title2")}
                                                 </Typography>
                                             </div>
@@ -309,10 +279,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal isActive title={t("6.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-normal !text-[#666666]"}
-                                                >
+                                                <Typography variant={"h3"} className={"!text-[#666666]"}>
                                                     {t("6.title2")}
                                                 </Typography>
                                             </div>
@@ -331,10 +298,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal title={t("6.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h3"}>
                                                     {t("6.title2")}
                                                 </Typography>
                                             </div>
@@ -357,10 +321,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal isActive title={t("7.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-normal !text-[#666666]"}
-                                                >
+                                                <Typography variant={"h3"} className={"!text-[#666666]"}>
                                                     {t("7.title2")}
                                                 </Typography>
                                             </div>
@@ -381,10 +342,7 @@ const HomeSwiper = () => {
                                                 <TitleReveal title={t("7.title1")} />
                                             </div>
                                             <div className={"mt-8"}>
-                                                <Typography
-                                                    variant={"h3"}
-                                                    className={"font-medium"}
-                                                >
+                                                <Typography variant={"h3"}>
                                                     {t("7.title2")}
                                                 </Typography>
                                             </div>

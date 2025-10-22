@@ -40,7 +40,7 @@ const Environment = () => {
                         <div>
                             <Typography
                                 variant={"h3"}
-                                className={"!text-white !text-[40px] font-medium max-w-3xl lg:mt-24"}
+                                className={"!text-white !text-[40px] max-w-3xl lg:mt-24"}
                             >
                                 {t("title")}
                             </Typography>

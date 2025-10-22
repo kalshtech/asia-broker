@@ -18,7 +18,7 @@ export default function MoreMarkets({ title, desc, midst, btnText, imageUrl }: P
             <Container>
                 <div className={"flex flex-col flex-1 h-full"}>
                     <div className={"flex items-center flex-col mb-4 lg:mb-16"}>
-                        <Typography variant={"h3"} className={"!text-white font-medium"}>
+                        <Typography variant={"h3"} className={"!text-white"}>
                             {title}
                         </Typography>
                         {midst && (

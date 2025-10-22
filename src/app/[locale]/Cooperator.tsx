@@ -28,16 +28,10 @@ const Cooperator = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {t("title")}
                     </Typography>
-                    <Typography
-                        variant={"muted"}
-                        className={"text-center mt-6"}
-                    >
+                    <Typography variant={"muted"} className={"text-center mt-6"}>
                         {t("desc")}
                     </Typography>
                 </motion.div>

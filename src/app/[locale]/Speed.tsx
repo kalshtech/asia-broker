@@ -26,16 +26,10 @@ const Speed = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {t("title1")}
                     </Typography>
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {t("title2")}
                     </Typography>
 

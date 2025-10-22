@@ -44,7 +44,7 @@ const Introduction = (props: Props) => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"font-medium text-center"}
+                        className={"text-center"}
                     >
                         {title}
                     </Typography>

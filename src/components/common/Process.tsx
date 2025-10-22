@@ -42,7 +42,7 @@ const Process = (props: Props) => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={classnames(["font-medium text-center", {
+                        className={classnames(["text-center", {
                             "!text-white": !isLight
                         }])}
                     >

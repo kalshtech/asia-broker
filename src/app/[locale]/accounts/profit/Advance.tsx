@@ -29,10 +29,7 @@ const Advance = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center !text-white"}
-                    >
+                    <Typography variant={"h3"} className={"text-center !text-white"}>
                         {t("title")}
                     </Typography>
                     <Typography variant={"h4"} className={"font-medium text-center !text-white mt-4 lg:mt-10"}>

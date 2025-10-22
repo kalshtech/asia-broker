@@ -20,10 +20,7 @@ const Introduction = () => {
         <div className={"grid grid-cols-12"}>
             <div className={"col-span-12 lg:col-span-6"}>
                 <div className={"bg-theme-active p-4 lg:p-30 h-full"}>
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium !text-white"}
-                    >
+                    <Typography variant={"h3"} className={"!text-white"}>
                         {t("col1.title")}
                     </Typography>
 

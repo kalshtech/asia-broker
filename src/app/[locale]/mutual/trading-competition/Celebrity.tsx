@@ -69,7 +69,7 @@ const Celebrity = () => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"font-medium text-center !text-white"}
+                        className={"text-center !text-white"}
                     >
                         {t("title")}
                     </Typography>

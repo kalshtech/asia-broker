@@ -35,14 +35,14 @@ const BankCards = () => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"font-medium !text-white text-center"}
+                        className={"!text-white text-center"}
                     >
                         {t("title1")}
                     </Typography>
 
                     <Typography
                         variant={"h3"}
-                        className={"font-medium !text-white text-center mt-2"}
+                        className={"!text-white text-center mt-2"}
                     >
                         {t("title2")}
                     </Typography>

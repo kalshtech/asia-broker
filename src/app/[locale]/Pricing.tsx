@@ -87,7 +87,7 @@ const Pricing = () => {
                                 viewport={{once: true, amount: 0.5}}
                                 className={"flex flex-col h-full"}
                             >
-                                <Typography variant={"h3"} className={"font-medium !text-white max-w-3xl"}>
+                                <Typography variant={"h3"} className={"!text-white max-w-3xl"}>
                                     {t("left.title1")}
                                 </Typography>
 

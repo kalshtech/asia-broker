@@ -38,14 +38,14 @@ const Credit = ({ typeText, className, number }: Props) => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"font-medium text-center"}
+                        className={"text-center"}
                     >
                         {t("title1")}
                     </Typography>
                     <div className={"flex justify-center items-end mt-4"}>
                         <Typography
                             variant={"h3"}
-                            className={"font-medium text-center"}
+                            className={"text-center"}
                         >
                             {t("title2-1")}
                         </Typography>
@@ -57,26 +57,20 @@ const Credit = ({ typeText, className, number }: Props) => {
                         </Typography>
                         <Typography
                             variant={"h3"}
-                            className={"font-medium text-center"}
+                            className={"text-center"}
                         >
                             {t("title2-2")}
                         </Typography>
                     </div>
                 </motion.div>
                 <div className={"mt-4 lg:mt-8"}>
-                    <Typography
-                        variant={"h4"}
-                        className={"font-medium text-center max-w-3xl mx-auto"}
-                    >
+                    <Typography variant={"h4"} className={"text-center max-w-3xl mx-auto"}>
                         {t("midst")}
                     </Typography>
 
                     {
                         !isEn && (
-                            <Typography
-                                variant={"muted"}
-                                className={"text-center mt-6"}
-                            >
+                            <Typography variant={"muted"} className={"text-center mt-6"}>
                                 {t("desc")}
                             </Typography>
                         )

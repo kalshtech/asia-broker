@@ -24,10 +24,7 @@ const MetaProfession = ( props: Props ) => {
             <Container>
                 <div className={"flex items-center flex-col lg:flex-row"}>
                     <div>
-                        <Typography
-                            variant={"h3"}
-                            className={"!text-theme-active max-w-xl"}
-                        >
+                        <Typography variant={"h3"} className={"!text-theme-active max-w-xl"}>
                             { t("meta.title") }
                         </Typography>
 

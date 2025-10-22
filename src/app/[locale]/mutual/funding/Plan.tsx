@@ -34,19 +34,19 @@ export default function Plan() {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"font-medium text-center !text-white"}
+                        className={"text-center !text-white"}
                     >
                         {t("title")}
                     </Typography>
                     <Typography
                         variant={"muted"}
-                        className={"font-medium text-center mx-auto mt-6 !text-[#999]"}
+                        className={"text-center mx-auto mt-6 !text-[#999]"}
                     >
                         {t("midst")}
                     </Typography>
                     <Typography
                         variant={"muted"}
-                        className={"font-medium text-center mx-auto mt-4 !text-white"}
+                        className={"text-center mx-auto mt-4 !text-white"}
                     >
                         {t("desc")}
                     </Typography>

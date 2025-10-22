@@ -11,10 +11,7 @@ const Values = () => {
             <Container>
                 <div className={"grid grid-cols-12"}>
                     <div className={"mx-8 flex flex-col justify-center items-center col-span-12 lg:col-span-6"}>
-                        <Typography
-                            variant={"h3"}
-                            className={"font-medium text-center"}
-                        >
+                        <Typography variant={"h3"} className={"text-center"}>
                             {t("title")}
                         </Typography>
                         <Typography

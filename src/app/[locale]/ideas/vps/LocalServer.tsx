@@ -56,10 +56,7 @@ const LocalServer = () => {
                     </div>
                     <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"flex flex-col"} ref={rightRef}>
-                            <Typography
-                                variant={"h3"}
-                                className={"font-medium !text-white"}
-                            >
+                            <Typography variant={"h3"} className={"!text-white"}>
                                 {t("title")}
                             </Typography>
 

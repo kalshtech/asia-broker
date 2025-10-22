@@ -46,10 +46,7 @@ const AutoTrade = () => {
                 <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
                     <div className={"col-span-12 lg:col-span-6"}>
                         <div className={"flex flex-col"} ref={leftRef}>
-                            <Typography
-                                variant={"h3"}
-                                className={"font-medium"}
-                            >
+                            <Typography variant={"h3"}>
                                 {t("title")}
                             </Typography>
 

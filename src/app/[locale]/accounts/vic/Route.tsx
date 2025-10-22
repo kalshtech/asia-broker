@@ -28,14 +28,14 @@ const Route = () => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"font-medium text-center"}
+                        className={"text-center"}
                     >
                         {t("title1")}
                     </Typography>
 
                     <Typography
                         variant={"h3"}
-                        className={"font-medium text-center mt-2"}
+                        className={"text-center mt-2"}
                     >
                         {t("title2")}
                     </Typography>

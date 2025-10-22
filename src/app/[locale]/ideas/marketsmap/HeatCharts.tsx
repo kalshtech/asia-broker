@@ -78,16 +78,10 @@ const HeatCharts = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {t("forex-title")}
                     </Typography>
-                    <Typography
-                        variant={"large"}
-                        className={"font-medium text-center mx-auto mt-10"}
-                    >
+                    <Typography variant={"p"} className={"text-center mx-auto mt-6"}>
                         {t("forex-desc")}
                     </Typography>
                     <div className={"mt-6 flex justify-center"}>
@@ -141,16 +135,10 @@ const HeatCharts = () => {
                     className={"mt-8 lg:mt-30"}
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {t("stock-title")}
                     </Typography>
-                    <Typography
-                        variant={"large"}
-                        className={"font-medium text-center mx-auto mt-4 lg:mt-10"}
-                    >
+                    <Typography variant={"p"} className={"text-center mx-auto mt-4 lg:mt-6"}>
                         {t("stock-desc")}
                     </Typography>
                     <div className={"mt-6 flex justify-center"}>
@@ -169,16 +157,10 @@ const HeatCharts = () => {
                     viewport={{once: true, amount: 0.5}}
                     className={"mt-4 lg:mt-30"}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {t("crypto-title")}
                     </Typography>
-                    <Typography
-                        variant={"large"}
-                        className={"font-medium text-center mx-auto mt-4 lg:mt-10"}
-                    >
+                    <Typography variant={"p"} className={"text-center mx-auto mt-4 lg:mt-6"}>
                         {t("crypto-desc")}
                     </Typography>
                     <div className={"mt-6 flex justify-center"}>

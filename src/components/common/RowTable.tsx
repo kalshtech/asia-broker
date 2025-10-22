@@ -45,10 +45,7 @@ const RowTable = (props: Props) => {
                             className={overview ? "mt-8 lg:mt-19" : ""}
                         >
 
-                            <Typography
-                                variant={"h3"}
-                                className={"font-medium"}
-                            >
+                            <Typography variant={"h3"}>
                                 {title}
                             </Typography>
 

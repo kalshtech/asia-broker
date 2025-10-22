@@ -136,10 +136,7 @@ const Markets = (props: Props) => {
                     viewport={{once: true, amount: 0.5}}
                     className={"mt-4 lg:mt-16"}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {title}
                     </Typography>
                     {

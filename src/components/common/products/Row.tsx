@@ -34,7 +34,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, ch
                 >
                     <Typography
                         variant={"h3"}
-                        className={classnames(["font-medium text-center", {
+                        className={classnames(["text-center", {
                             "!text-white": !isLight
                         }])}
                     >
@@ -44,7 +44,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, ch
                         title1 && (
                             <Typography
                                 variant={"h4"}
-                                className={"font-medium text-center !text-[32px] mt-4"}
+                                className={"text-center !text-[32px] mt-4"}
                             >
                                 {title1}
                             </Typography>

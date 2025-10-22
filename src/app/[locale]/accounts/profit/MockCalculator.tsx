@@ -15,7 +15,7 @@ const MockCalculator = () => {
                         <div>
                             <Typography
                                 variant={"h3"}
-                                className={"!text-white font-medium"}
+                                className={"!text-white"}
                             >
                                 {t("row.col1.title1")}
                             </Typography>

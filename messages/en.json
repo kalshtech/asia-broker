@@ -76,12 +76,12 @@
     },
     "news": {
       "category": {
-        "forex": "外汇",
-        "crypto": "加密货币",
-        "metals": "贵金属",
-        "stocks": "股票 & ETF",
-        "futures": "期货",
-        "energy": "能源",
+        "forex": "Forex",
+        "crypto": "Crypto Assets",
+        "metals": "Precious Metals",
+        "stocks": "Stocks & ETFs",
+        "futures": "Futures",
+        "energy": "Energy",
         "beginner": "新手入门",
         "guide": "操作指南",
         "strategy": "交易策略",
@@ -186,23 +186,23 @@
           "btn": "Learn More"
         },
         "3": {
-          "title": "Precision. Performance. Platinum.",
-          "description": "0.0 pip spreads, 5.6% APY, and premium support — all in one Platinum Account.",
-          "btn": "Learn More"
-        },
-        "4": {
           "title": "VIC: Institutional Access With Distinction.",
           "description": "Built for high-volume traders seeking full control, customization, and priority support.",
           "btn": "Learn More"
         },
-        "5": {
+        "4": {
           "title": "Low-Latency VPS for Professional Traders.",
           "description": "Run your strategy on ultra-fast, globally optimized nodes — where latency is edge.",
           "btn": "Learn More"
         },
-        "6": {
+        "5": {
           "title": "Earn While You Wait. Up to 5.6% APY.",
           "description": "Institutional-grade yield, credited daily. No lock-ups. Always accessible.",
+          "btn": "Learn More"
+        },
+        "6": {
+          "title": "Precision. Performance. Platinum.",
+          "description": "0.0 pip spreads, 5.6% APY, and premium support — all in one Platinum Account.",
           "btn": "Learn More"
         }
       },

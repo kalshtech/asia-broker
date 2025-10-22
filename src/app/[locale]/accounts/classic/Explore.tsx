@@ -40,7 +40,7 @@ const Explore = () => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"font-medium !text-white text-center"}
+                        className={"!text-white text-center"}
                     >
                         {t("title")}
                     </Typography>

@@ -43,10 +43,7 @@ const Profession = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {t("title")}
                     </Typography>
 
@@ -78,7 +75,7 @@ const Profession = () => {
                             className={"absolute left-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none"}>
                             <div className={"w-full p-8 h-auto"}>
                                 <div className={"flex flex-col"}>
-                                    <Typography variant={"h3"} className={"font-medium"}>
+                                    <Typography variant={"h3"}>
                                         {activeChildren?.title}
                                     </Typography>
                                     <Typography variant={"p"} className={"font-medium max-w-xl mt-2"}>

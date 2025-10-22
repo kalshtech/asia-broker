@@ -31,10 +31,7 @@ const Articles = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"font-medium max-w-7xl lg:!text-[40px] mx-auto text-center"}
-                    >
+                    <Typography variant={"h3"} className={"max-w-7xl lg:!text-[40px] mx-auto text-center"}>
                         {t("title")}
                     </Typography>
                     <Typography

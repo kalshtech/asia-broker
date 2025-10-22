@@ -105,7 +105,7 @@ const Slide = () => {
 
                     <Typography
                         variant={"h3"}
-                        className={"font-medium text-center mx-auto mt-8 lg:mt-16 !text-white"}
+                        className={"text-center mx-auto mt-8 lg:mt-16 !text-white"}
                     >
                         {t("total")}
                     </Typography>
