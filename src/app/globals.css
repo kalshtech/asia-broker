@@ -155,6 +155,22 @@ h1, h2, h3, h4, h5, h6, p {
   box-shadow: 0 2px 4px 0 rgba(113,118,135,0.1);
 }
 
+.en-my-swiper .swiper-pagination-bullet {
+  width: 32px !important;
+  height: 4px !important;
+  border-radius: 9999px;
+  background: rgba(152,152,152,0.6) !important;
+  opacity: .4;            /* 未激活透明度，可按需调 */
+  margin: 0 6px !important;
+  transition: transform .2s ease, opacity .2s ease, background-color .2s ease;
+}
+
+.en-my-swiper .swiper-pagination-bullet-active {
+  background: #ffffff !important;
+  opacity: 1;
+  transform: none;        /* 如不想放大效果就保持 none */
+}
+
 .my-swiper .swiper-pagination-bullet {
   width: 32px !important;
   height: 4px !important;
