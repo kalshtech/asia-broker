@@ -8,7 +8,7 @@ import {Typography} from "@/components/ui/typography";
 import StartTradingBtn from "@/components/StartTradingBtn";
 import RegisterBtn from "@/components/RegisterBtn";
 import TitleReveal from "@/components/TitleReveal";
-import classnames from "classnames"
+import classnames from "classnames";
 
 const EnglishSwiper = () => {
     const t = useTranslations("Pages.home.swiper");
@@ -46,7 +46,7 @@ const EnglishSwiper = () => {
                                         <div>
                                             <Typography
                                                 variant={"h1"}
-                                                className={classnames(["text-center", {
+                                                className={classnames(["text-center max-w-3xl mx-auto", {
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
                                                 }])}
