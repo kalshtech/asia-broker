@@ -42,12 +42,12 @@ const Banner =  () => {
                         />
 
                         <Typography
-                            variant={"h5"}
-                            className={"font-medium !text-white max-w-3xl mt-10"}
+                            variant={"p"}
+                            className={"!text-white max-w-3xl mt-10"}
                         >
                             {t("desc")}
                         </Typography>
-                        <div className={"mt-16"}>
+                        <div className={"mt-10"}>
                             <Button className={"text-black bg-white hover:bg-white"}>
                                 {t("register")}
                             </Button>
@@ -55,13 +55,6 @@ const Banner =  () => {
                                 {t("vic")}
                             </Button>
                         </div>
-
-                        <Typography
-                            variant={"muted"}
-                            className={"max-w-3xl mt-10 !text-[#999999]"}
-                        >
-                            {t("prompt")}
-                        </Typography>
                     </motion.div>
                 </Container>
             </section>
@@ -97,7 +90,7 @@ const Banner =  () => {
                     <div className={"mt-6"}>
                         <Typography
                             variant={"muted"}
-                            className={"text-center !text-[#999999]"}
+                            className={"text-center"}
                         >
                             {t("board.desc")}
                         </Typography>
@@ -105,7 +98,7 @@ const Banner =  () => {
                     <div className={"mt-6"}>
                         <Typography
                             variant={"muted"}
-                            className={"mx-auto text-center max-w-3xl"}
+                            className={"mx-auto text-center max-w-3xl !text-[#999999]"}
                         >
                             {t("board.tag")}
                         </Typography>

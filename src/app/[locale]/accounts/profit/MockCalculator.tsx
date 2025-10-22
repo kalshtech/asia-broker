@@ -19,7 +19,10 @@ const MockCalculator = () => {
                             >
                                 {t("row.col1.title1")}
                             </Typography>
-                            <Typography variant={"p"} className={"!text-white max-w-xl mt-4"}>
+                            <Typography
+                                variant={"p"}
+                                className={"!text-white max-w-xl mt-4"}
+                            >
                                 {t("row.col1.desc1")}
                             </Typography>
                         </div>
@@ -32,7 +35,7 @@ const MockCalculator = () => {
                             </Typography>
                             <Typography
                                 variant={"muted"}
-                                className={"!text-white max-w-xl mt-2"}
+                                className={"!text-white max-w-xl mt-6"}
                             >
                                 {t("row.col1.desc2")}
                             </Typography>
@@ -54,26 +57,29 @@ const MockCalculator = () => {
                                 <div className={"text-white ml-auto"}>USD $500,000+</div>
                             </div>
                             <div className={"mt-4"}>
-                                <Typography variant={"muted"} className={"!text-[#9399AC]"}>
+                                <Typography
+                                    variant={"muted"}
+                                    className={"!text-[#9399AC]"}
+                                >
                                     {t("row.col2.desc")}
                                 </Typography>
                             </div>
-                            <div className={"mt-4 lg:mt-16"}>
+                            <div className={"mt-4 lg:mt-8"}>
                                 <Typography
-                                    variant={"h6"}
-                                    className={"!text-white font-medium"}
+                                    variant={"muted"}
+                                    className={"!text-white"}
                                 >
                                     {t("row.col2.tips")}
                                 </Typography>
                                 <Typography
-                                    variant={"h3"}
+                                    variant={"h5"}
                                     className={"!text-white font-normal mt-4"}
                                 >
-                                    USD XXXXX
+                                    USD $XXXXX
                                 </Typography>
                                 <Typography
                                     variant={"muted"}
-                                    className={"!text-white font-normal mt-4"}
+                                    className={"!text-[#9399AC] font-normal mt-8"}
                                 >
                                     {t("row.col2.prompt")}
                                 </Typography>

@@ -20,6 +20,7 @@ export default async function Page() {
         {question: t("qa.ul.li4.title"), answer: t("qa.ul.li4.desc")},
         {question: t("qa.ul.li5.title"), answer: t("qa.ul.li5.desc")},
         {question: t("qa.ul.li6.title"), answer: t("qa.ul.li6.desc")},
+        {question: t("qa.ul.li7.title"), answer: t("qa.ul.li7.desc")},
     ]
     return (
         <div>

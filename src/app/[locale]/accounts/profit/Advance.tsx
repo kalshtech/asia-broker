@@ -32,12 +32,12 @@ const Advance = () => {
                     >
                         {t("title")}
                     </Typography>
-                    <Typography variant={"p"} className={"text-center !text-white mt-4 lg:mt-16"}>
+                    <Typography variant={"h4"} className={"font-medium text-center !text-white mt-4 lg:mt-10"}>
                         {t("desc1")}
                     </Typography>
                     <Typography
-                        variant={"h5"}
-                        className={"font-medium mt-6 text-center !text-white"}
+                        variant={"h4"}
+                        className={"font-medium text-center !text-white"}
                     >
                         {t("desc2")}
                     </Typography>
@@ -53,20 +53,22 @@ const Advance = () => {
                 <div className={"mt-4 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-8"}>
                         <div className={"col-span-12 lg:col-span-6"}>
-                            <div className={"bg-white rounded-xl p-16"}>
-                                <Typography
-                                    variant={"h5"}
-                                    className={"font-medium mt-6 text-center"}
-                                >
-                                    {t("row.col1.title")}
-                                </Typography>
+                            <div className={"bg-white rounded-xl p-16 h-full"}>
+                                <div className={"h-42"}>
+                                    <Typography
+                                        variant={"h5"}
+                                        className={"font-medium mt-6 text-center"}
+                                    >
+                                        {t("row.col1.title")}
+                                    </Typography>
 
-                                <Typography
-                                    variant={"p"}
-                                    className={"mt-6 text-center"}
-                                >
-                                    {t("row.col1.desc")}
-                                </Typography>
+                                    <Typography
+                                        variant={"p"}
+                                        className={"mt-6 text-center"}
+                                    >
+                                        {t("row.col1.desc")}
+                                    </Typography>
+                                </div>
 
                                 <div className={"mt-16 flex justify-center"}>
                                     <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
@@ -76,20 +78,22 @@ const Advance = () => {
                             </div>
                         </div>
                         <div className={"col-span-12 lg:col-span-6"}>
-                            <div className={"bg-white rounded-xl p-16"}>
-                                <Typography
-                                    variant={"h5"}
-                                    className={"font-medium mt-6 text-center"}
-                                >
-                                    {t("row.col2.title")}
-                                </Typography>
+                            <div className={"bg-white rounded-xl p-16 h-full"}>
+                                <div className={"h-42"}>
+                                    <Typography
+                                        variant={"h5"}
+                                        className={"font-medium mt-6 text-center"}
+                                    >
+                                        {t("row.col2.title")}
+                                    </Typography>
 
-                                <Typography
-                                    variant={"p"}
-                                    className={"mt-6 text-center"}
-                                >
-                                    {t("row.col2.desc")}
-                                </Typography>
+                                    <Typography
+                                        variant={"p"}
+                                        className={"mt-6 text-center"}
+                                    >
+                                        {t("row.col2.desc")}
+                                    </Typography>
+                                </div>
 
                                 <div className={"mt-16 flex justify-center"}>
                                     <Button className={"bg-theme-active hover:bg-theme-active-hover"}>

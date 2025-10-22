@@ -17,7 +17,10 @@ const Values = () => {
                         >
                             {t("title")}
                         </Typography>
-                        <Typography variant={"h4"} className={"font-normal max-w-xl text-center mt-16 leading-[40px]"}>
+                        <Typography
+                            variant={"h4"}
+                            className={"font-normal max-w-xl mt-10 leading-[40px]"}
+                        >
                             {t("desc")}
                         </Typography>
                     </div>

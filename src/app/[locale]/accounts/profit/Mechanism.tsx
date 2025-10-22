@@ -50,7 +50,10 @@ const Mechanism = () => {
                                     >
                                         {item.title}
                                     </Typography>
-                                    <Typography variant={"p"}>
+                                    <Typography
+                                        variant={"p"}
+                                        className={"text-center"}
+                                    >
                                         {item.desc}
                                     </Typography>
                                 </div>

@@ -38,7 +38,10 @@ const Profit = () => {
                     >
                         {t("title")}
                     </Typography>
-                    <Typography variant={"muted"} className={"mt-6 text-center"}>
+                    <Typography
+                        variant={"muted"}
+                        className={"mt-6 text-center mx-auto max-w-5xl"}
+                    >
                         {t("desc")}
                     </Typography>
                 </motion.div>
@@ -53,7 +56,7 @@ const Profit = () => {
                                             className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
                                             <Typography
                                                 variant={"muted"}
-                                                className={"font-medium ml-2"}
+                                                className={"ml-2"}
                                             >
                                                 {item.text}
                                             </Typography>

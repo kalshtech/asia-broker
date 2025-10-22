@@ -2917,122 +2917,125 @@
       "profit": {
         "banner": {
           "top": "Future Earn Account",
-          "title": "闲置收益增强账户",
-          "desc": "铂金/VIC 账户专享利息无需锁仓、无资金费率、挂钩真实市场利率（SOFR），利息 T+1 自动入账。为长期信任用户打造的可视化利息回报账户。",
-          "register": "立即开通铂金账户",
-          "vic": "立即开通 VIC 账户",
-          "prompt": "Future Earn 是 Asia Future Trading 推出的闲置资金收益解决方案。所有利息每日结算，直接计入交易账户，可随时提取、不影响交易。通过挂钩 SOFR，帮助长期交易者将账户余额转化为稳定的日常回报。",
+          "title": "Your Interest-Enhanced Trading Balance Solution.",
+          "desc": "Exclusive to Platinum and VIC clients — earn daily interest with no lock-ups, no funding fees, and rates benchmarked to real-market SOFR. All interest is automatically credited on a T+1 basis, creating a transparent, effortless return system designed for long-term traders.",
+          "register": "Open Platinum Account",
+          "vic": "Open VIC Account",
           "board": {
-            "rates": "今日市场参考利率（SOFR）：",
-            "from": "数据来源 ：美国纽约联邦储备银行（Federal Reserve Bank of New York）",
-            "desc": "Future Earn Account 的利息计算挂钩公开市场利率（SOFR），用于提供收益估算与透明度锚点。实际利息由 Asia Future Trading 平台发放，并非源自资金再投资或市场操作。用户资金不会被投入任何金融市场或进行资产管理，相关利率仅为市场参考指标，不构成任何投资建议或收益承诺。",
-            "tag": "纽约联储官方（FRED: SOFR）｜利息发放与平台机制详见用户协议"
+            "rates": "Today’s Reference Rate (SOFR): ",
+            "from": "Source：Federal Reserve Bank of New York (FRED: SOFR)",
+            "desc": "Future Earn is Asia Future Trading’s yield solution for idle balances. Interest is calculated daily, automatically credited, and withdrawable anytime without affecting trading. Rates are benchmarked to SOFR for transparency and market alignment. All interest is paid directly by Asia Future Trading, not from reinvestment or market activity. Funds are never used for asset management, and reference rates do not constitute investment advice or guaranteed returns.",
+            "tag": "Interest distribution and platform mechanism details are outlined in the User Agreement."
           }
         },
         "mechanism": {
-          "title": "利息机制，简明清晰，为长期持有而生",
+          "title": "A Simple, Transparent Interest Mechanism — Built for Committed Traders",
           "row": {
             "col1": {
-              "title": "每日结息",
-              "desc": "每天计算、次日到账，系统自动累积，无需手动领取。"
+              "title": "Daily Interest",
+              "desc": "Earn automatically — interest is calculated daily and credited on a T+1 basis, with no manual steps required."
             },
             "col2": {
-              "title": "挂钩 SOFR",
-              "desc": "锚定纽约联储 SOFR 利率，数据透明公开、每日更新。"
+              "title": "SOFR-Linked",
+              "desc": "Rates benchmarked to the New York Fed’s SOFR index for transparent, market-aligned performance."
             },
             "col3": {
-              "title": "无锁仓",
-              "desc": "资金随时进出，不影响过往利息，灵活应对市场策略。"
+              "title": "No Lock-Up",
+              "desc": "Access your funds anytime without interrupting accrued interest — total flexibility for active, long-term trading."
             }
           }
         },
         "rates": {
-          "title": "我们将你的闲置资金，锚定真实的市场利率",
-          "desc1": "我们每日引用 SOFR（Secured Overnight Financing Rate） 作为利率锚点，由 美国纽约联邦储备银行 发布，广泛应用于全球银行、对冲基金与金融市场。",
-          "desc2": "与旧有的 LIBOR 相比，SOFR 更透明、基于实际市场成交，已成为全球主流的美元短期利率参考。",
-          "desc3": "在 Asia Future Trading，每一笔 Future Earn 利息 都锚定 SOFR ——无营销利率、无隐藏算法，所有逻辑公开、可验证。",
-          "line-title": "SOFR 历史折线图"
+          "title": "Anchoring Your Idle Funds to Real Market Rates",
+          "desc1": "At Asia Future Trading, every Future Earn interest calculation is benchmarked to the SOFR (Secured Overnight Financing Rate) — a transparent rate published daily by the Federal Reserve Bank of New York, and widely used by global banks, hedge funds, and institutional investors.",
+          "desc2": "Unlike the outdated LIBOR, SOFR is derived from real market transactions, offering full transparency and credibility across financial markets.",
+          "desc3": "Your interest is tied to genuine market performance — no promotional rates, no hidden formulas, and complete visibility into how your returns are calculated.",
+          "line-title": "SOFR Historical Trend"
         },
         "profit": {
-          "title": "在你的 MetaTrader 5 交易账户里！利息每日结算，T+1 自动入账，闲置生息，无感收息",
-          "desc": "Future Earn Account 致力于为策略型交易者和长期账户用户，提供透明、高效、不打扰交易节奏的收益型机制。所有利息每日自动结算、T+1 入账，资金全程自由流动。",
+          "title": "Earn Daily Interest — Right in Your MT5 Account！Trade and grow effortlessly with automatic T+1 interest crediting.",
+          "desc": "The Future Earn Account is built for strategic traders and long-term clients — offering a transparent, automated, and interruption-free yield mechanism. Interest is calculated daily and credited automatically on T+1, while your funds remain fully flexible for deposits, withdrawals, or trading anytime.",
           "row": {
             "col1": {
               "ul": {
-                "li1": "每日系统自动计算利息",
-                "li2": "次日（T+1）自动计入您的 MT5 账户余额（Balance）",
-                "li3": "无需申领，无额外手续费",
-                "li4": "所有利息 可提现、复投、或用于交易"
+                "li1": "Daily interest automatically calculated",
+                "li2": "Credited to your MT5 Balance on T+1",
+                "li3": "No manual claiming or extra fees",
+                "li4": "Withdraw, reinvest, or trade anytime"
               },
-              "gold": "探索铂金账户",
-              "vic": "探索 VIC 账户",
-              "download": "下载 MetaTrader 5"
+              "gold": "Explore Platinum Account",
+              "vic": "Explore VIC Account",
+              "download": "Download MetaTrader 5"
             }
           }
         },
         "mockCalculator": {
           "row": {
             "col1": {
-              "title1": "模拟收益试算器",
-              "desc1": "输入你账户中的可用余额，系统将自动根据SOFR市场利率为你计算每日预估收益。无需锁仓、利息每日到账。",
-              "title2": "单日参考年化利率(SOFR)：5.30%",
-              "desc2": "来源: New York Fed — SOFR reference"
+              "title1": "Future Earn Simulator",
+              "desc1": "Enter your available account balance to estimate your potential daily interest earnings based on the current SOFR market rate.\nNo lock-ups. Interest is credited daily and automatically to your MT5 account.",
+              "title2": "Current Reference Annual Rate (SOFR):  5.30%",
+              "desc2": "Source: Federal Reserve Bank of New York — SOFR Benchmark"
             },
             "col2": {
-              "title": "年目标利息收益",
-              "desc": "滑动选择你想获得的年收益，系统将基于当日 SOFR 年化利率帮你计算需要投入多少资金。",
-              "tips": "所需闲置资金（实时变动）：",
-              "prompt": "本计算器仅用于参考与模拟，不构成投资建议或收益承诺。所需资金为根据用户设定的年收益目标及当前市场参考利率（如 SOFR）反向估算，实际利息将按每日市场利率动态计算并结算到账。最终收益受市场行情、账户状态及平台机制等因素影响，平台不保证未来收益表现，请以实际到账金额为准。"
+              "title": "Set Your Annual Interest Goal",
+              "desc": "Choose your desired annual return — from USD 20 to USD 1,000+ — and see how much idle capital you’d need to achieve it, calculated in real time using the latest SOFR benchmark rate.",
+              "tips": "Required Idle Balance (Live Estimate):",
+              "prompt": "Disclaimer: This calculator is for simulation and reference only. It does not constitute financial advice or a guaranteed return. All figures are reverse-calculated based on user-selected targets and current market reference rates such as SOFR. Actual interest is settled daily and may vary with market conditions, account status, and platform mechanisms. Final credited interest should be considered the only accurate outcome."
             }
           }
         },
         "values": {
-          "title": "你的余额，在持续产生价值，每天",
-          "desc": "Future Earn 让你的账户，每天都在创造回报无需操作，无需干预，收益自然发生"
+          "title": "Your Balance Never Sleeps — Earning Every Day",
+          "desc": "Future Earn transforms your idle funds into daily returns — automatically, transparently, and without disrupting your trading. No extra steps, no hidden rates — your capital keeps working while you trade."
         },
         "advance": {
-          "title": "我们提供的不只是利率而是机制的进化",
-          "desc1": "Future Earn 是 Asia Future Trading 为策略型与长期用户打造的日息账户机制",
-          "desc2": "无需申购理财产品｜不锁仓、不干扰交易｜每日结息，T+1 入账 MT5 余额",
+          "title": "We Offer More Than Interest — A Sustainable, User-Empowering Yield Mechanism",
+          "desc1": "Future Earn is a daily interest system built by Asia Future Trading for strategic and long-term traders.",
+          "desc2": "No subscriptions, no lock-ups, no disruption — interest is settled daily and automatically credited to your MT5 balance on T+1.",
           "desc3": "市面虽有不同收益方式，但像这样无感操作、每日到账、机制透明的设计仍属少见。我们提供的不是年化承诺，而是一套 可验证、可持续、尊重用户自由的收益机制",
           "row": {
             "col1": {
-              "title": "适合专业交易者｜解锁日息账户 + VPS云服务器支持",
-              "desc": "极低点差，最快成交速度，最大化交易效率",
-              "btn": "开通铂金账户"
+              "title": "For Professional Traders. Daily Interest + VPS Cloud Support",
+              "desc": "Unlock institutional-grade trading with ultra-tight spreads, sub-millisecond execution,and seamless access to Future Earn daily interest.Designed for professionals who demand precision, speed, and control.",
+              "btn": "Open Platinum Account"
             },
             "col2": {
-              "title": "面向机构与高净值交易者｜享专属客户经理与技术对接",
-              "desc": "加入 Asia Future Trading 百万美元俱乐部，尊享定制服务",
-              "btn": "开通 VIC 账户"
+              "title": "For Institutions & High-Net-Worth Clients. Private Manager + Technical Integration",
+              "desc": "Experience true premium trading — priority execution, dedicated account management,and direct access to Asia Future Trading’s exclusive Million-Dollar Club.Tailored for elite traders and institutional partners.",
+              "btn": "Open VIC Account"
             }
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "成为 VIC 用户需要什么条件？",
-              "desc": "需要满足最低入金 50,000 美元，具备一定交易经验，并能提供清晰的策略逻辑或资金用途说明。所有申请将由 AFT 客户经理与风控团队进行评估。"
+              "title": "What are the requirements to become a VIC client?",
+              "desc": "A minimum deposit of USD 50,000 is required, along with proven trading experience and a clear strategy or capital utilization plan. All applications are reviewed by AFT’s client management and risk control teams."
             },
             "li2": {
-              "title": "利息是如何计算和发放的？",
-              "desc": "系统每天根据账户可用余额 × 当日 SOFR 利率进行利息计算，并在 T+1 自动计入您的 MT5 账户余额（Balance）。"
+              "title": "What are the requirements for opening a Platinum Account?",
+              "desc": "Start with a minimum deposit of USD 5,000,or activate your Platinum Account with a USD 10/month subscription (free application available through your client manager)."
             },
             "li3": {
-              "title": "利息是否需要锁仓或特定操作？",
-              "desc": "无需锁仓、无需手动领取。利息不影响正常交易、出金或其他账户操作，真正做到“无感收息”。"
+              "title": "How is interest calculated and credited?",
+              "desc": "Interest is calculated daily based on your available account balance × the current SOFR rate, and automatically credited to your MT5 account balance on a T+1 basis."
             },
             "li4": {
-              "title": "利率是多少？是否浮动？",
-              "desc": "利息每日锚定由美国纽约联储发布的 SOFR（无担保隔夜融资利率），会随市场变动同步调整，无平台人为设定。"
+              "title": "Do I need to lock up funds or perform any manual actions to receive interest?",
+              "desc": "No. There are no lock-ups or claim steps. Interest does not affect your trading, withdrawals, or any account operations — it’s completely automatic and seamless."
             },
             "li5": {
-              "title": "我的资金是否会被再投资或托管？",
-              "desc": "不会。Future Earn 利息由 Asia Future Trading 平台发放，用户资金不会进入任何投资或资产管理流程，仅作为交易账户余额存在。"
+              "title": "What determines the interest rate?",
+              "desc": "Interest is benchmarked to the SOFR (Secured Overnight Financing Rate) published by the Federal Reserve Bank of New York. The rate fluctuates with market conditions and is not manually adjusted by the platform."
             },
             "li6": {
-              "title": "利息是否会显示在我的账户记录中？",
-              "desc": "是的。每日到账利息将以交易记录形式显示在您的 MT5 历史中（备注为“Interest”），可随时查看与提取。"
+              "title": "Will my funds be reinvested or managed externally?",
+              "desc": "No. Future Earn interest is fully issued by Asia Future Trading. Client funds remain securely in your trading account and are not invested or used in any asset management activities."
+            },
+            "li7": {
+              "title": "Will my earned interest appear in my account records?",
+              "desc": "Yes. Each credited interest payment is recorded in your MT5 account history under the label “Interest”, visible and withdrawable anytime."
             }
           }
         }

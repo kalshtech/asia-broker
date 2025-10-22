@@ -185,7 +185,7 @@ const Rates = () => {
                         >
                             {t("title")}
                         </Typography>
-                        <Typography variant={"p"} className={"mt-4 lg:mt-16"}>
+                        <Typography variant={"p"} className={"mt-4 lg:mt-8"}>
                             {t("desc1")}
                         </Typography>
                         <Typography variant={"p"} className={"mt-6"}>
@@ -196,7 +196,7 @@ const Rates = () => {
                         </Typography>
                     </div>
                     <div className={"col-span-12 lg:col-span-6"}>
-                        <Typography>
+                        <Typography variant={"p"}>
                             {t("line-title")}
                         </Typography>
                         <div className={"mt-4 h-80"}>
