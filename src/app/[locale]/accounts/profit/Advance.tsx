@@ -1,7 +1,7 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
@@ -17,6 +17,9 @@ const fadeInUp: Variants = {
 
 const Advance = () => {
     const t = useTranslations("Pages.accounts.profit.advance");
+    const locale = useLocale();
+    const isEn = locale === "en";
+
     return (
         <section className={"bg-[url(/images/accounts/profit-advance-bg.png)] bg-center bg-cover py-4 lg:py-30"}>
             <Container>
@@ -42,12 +45,16 @@ const Advance = () => {
                         {t("desc2")}
                     </Typography>
 
-                    <Typography
-                        variant={"muted"}
-                        className={"mt-12 text-center !text-white"}
-                    >
-                        {t("desc3")}
-                    </Typography>
+                    {
+                        !isEn && (
+                            <Typography
+                                variant={"muted"}
+                                className={"mt-12 text-center !text-white"}
+                            >
+                                {t("desc3")}
+                            </Typography>
+                        )
+                    }
                 </motion.div>
 
                 <div className={"mt-4 lg:mt-16"}>
