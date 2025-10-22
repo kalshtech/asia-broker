@@ -1324,7 +1324,8 @@
               "text-2": "本地银行转账",
               "text-3": "稳定币：USDT / USDC",
               "text-4": "加密货币：BTC / ETH 等主流币种",
-              "text-5": "各类本地快捷支付方式（视国家/地区而定）"
+              "text-5": "各类本地快捷支付方式（视国家/地区而定）",
+              "text-6": "Physical collateral such as gold, subject to local regulatory approval — please contact your account manager for specific arrangements."
             },
             "li4": {
               "title": "出入金是否支持 24/7 处理？",

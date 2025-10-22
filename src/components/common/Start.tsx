@@ -33,8 +33,8 @@ const Start = () => {
                     {t("title")}
                 </Typography>
                 <Typography
-                    variant={"large"}
-                    className={"font-medium text-center mt-4 lg:mt-16"}
+                    variant={"h4"}
+                    className={"font-normal text-center mt-4 lg:mt-16 max-w-5xl mx-auto"}
                 >
                     {t("desc")}
                 </Typography>

@@ -21,7 +21,7 @@
     "volume": "Volume",
     "productName": "Product Name",
     "mockTrade": "模拟交易",
-    "transfer": "立即入金",
+    "transfer": "Deposit Now",
     "all": "全部",
     "date": "日期",
     "star": "星级",
@@ -69,10 +69,10 @@
       }
     },
     "start": {
-      "title": "立即开户，开启全球交易之旅",
-      "desc": "Asia Future Trading 提供全球领先的交易基础设施与资金管理体验，从开户、入金到实盘交易，一切尽在掌握。",
-      "register": "立即开户",
-      "download": "下载 MetaTrader 5"
+      "title": "Your Gateway to Global Markets.",
+      "desc": "Experience world-class trading infrastructure and seamless fund management with Asia Future Trading — giving you full control from account setup to live execution.\nTrade globally, manage funds effortlessly, and access institutional-grade liquidity — all in one platform.",
+      "register": "Open Account",
+      "download": "Download MetaTrader 5"
     },
     "news": {
       "category": {
@@ -1213,128 +1213,129 @@
       },
       "transfer": {
         "banner": {
-          "title": "全方位掌控你的资金流动",
-          "midst": "Asia Future Trading 不收取任何出入金手续费，24/7 随时取用",
-          "desc": "使用安全、高效的本地与国际支付方式，您的交易请求将自动快速处理。不收取任何出入金手续费，助您资金流转无忧。"
+          "title": "Full Control of Your Funds",
+          "midst": "0 Fees. 24/7 Access. Total Freedom.",
+          "desc": "At Asia Future Trading, you can move your funds anytime, anywhere — with no deposit or withdrawal fees. We partner with secure and efficient local and international payment providers to ensure every transaction is processed automatically, safely, and fast."
         },
         "professional": {
-          "title": "一切为您的资金流动而优化",
+          "title": "Optimized for Effortless Fund Movement",
           "row": {
             "col1": {
-              "title": "快速入金",
-              "desc": "支持多种本地与国际支付方式，入金申请 24 小时实时处理，一周 5 天无间断服务。"
+              "title": "Fast Deposits",
+              "desc": "Enjoy real-time processing through multiple local and international payment methods — available 24 hours a day, 5 days a week."
             },
             "col2": {
-              "title": "0 手续费",
-              "desc": "所有支付方式均免手续费，100% 净额到账，出入金体验更丝滑。"
+              "title": "0 Fees",
+              "desc": "No platform or transaction fees. Receive your full amount — no deductions, no hidden costs."
             },
             "col3": {
-              "title": "账户安全保障",
-              "desc": "客户资金与平台运营资金 完全隔离存放于受监管的独立账户，符合国际监管标准。"
+              "title": "Secure Account Protection",
+              "desc": "Client funds are fully segregated and held in regulated custodial accounts, ensuring maximum safety and compliance."
             },
             "col4": {
-              "title": "加密货币极速到账",
-              "desc": "全面支持 USDT、USDC、BTC、ETH 等主流加密资产，链上确认后即可秒级入账。"
+              "title": "Instant Crypto Deposits",
+              "desc": "Support for USDT, USDC, BTC, and ETH. Funds are credited within seconds after blockchain confirmation."
             }
           }
         },
         "advertising": {
-          "title": "快速、安全、触手可及",
+          "title": "Fast, Secure, and Within Reach",
           "row": {
-            "title": "覆盖全球的支付网络，让资金进出更轻松",
-            "desc": "Asia Future Trading 支持多样化本地与国际支付方式，满足不同地区用户的资金需求。无论您身在何处，入金都可快速到账，出金亦可随时发起、自动审批。"
+            "title": "Global Payment Network — Simplified Fund Transfers",
+            "desc": "Asia Future Trading supports a wide range of local and international payment options to meet your funding needs wherever you are.\nDeposits are processed instantly, withdrawals can be initiated anytime with automated approval."
           },
-          "prompt": "所有方式0 手续费，无隐藏成本。平台仅使用官方对接渠道，保障每一笔入金安全稳定。"
+          "prompt": "All payment methods come with 0 fees and no hidden costs. We use only official, verified channels to ensure every transaction is safe, stable, and seamless."
         },
         "card": {
-          "title": "Asia Future Trading Mastercard  & Visa 卡",
+          "title": "Asia Future Trading Mastercard & Visa Card",
           "row": {
             "col1": {
-              "title": "一张卡，连接你的交易账户与生活。",
-              "desc1": "无论你身在何处，AFT 实体卡与虚拟卡皆可用于日常消费、全球提现与商旅场景。资金灵活调度，自由掌控，全球畅行无阻。",
-              "desc2": "所有交易账户用户皆可申请，VIC 账户专属客户可免费领取，尊享更多权益。",
-              "vic": "了解VIC 账户",
-              "apply": "立即申请银行卡"
+              "title": "AFT Card. Trade. Spend. Live Freely.",
+              "desc1": "Wherever you are, your AFT physical and virtual cards seamlessly connect your trading account to everyday life. Spend globally, withdraw cash, and travel freely — with instant fund access and complete flexibility.",
+              "desc2": "Available for all AFT account holders. VIC clients enjoy complimentary cards with exclusive privileges.",
+              "vic": "Learn About VIC Account",
+              "apply": "Apply for Card"
             }
           }
         },
         "process": {
-          "title": "只需三个简单步骤，资金即刻到账",
+          "title": "Fund Your Account in 3 Simple Steps",
           "row": {
             "col1": {
-              "title": "注册和登录交易账户",
-              "desc": "前往 Asia Future Trading 客户中心，使用已注册账户信息登录。",
-              "bottom": "立即开户"
+              "title": "Register and Log In",
+              "desc": "Go to the Asia Future Trading Client Center and log in using your registered account details.",
+              "bottom": "Open Account"
             },
             "col2": {
-              "title": "选择您的入金方式",
-              "desc": "选择适合您的支付方式（银行转账 / 加密货币 / 本地支付等），填写入金金额并提交申请。",
-              "bottom": "了解出入金方式"
+              "title": "Choose Your Deposit Method",
+              "desc": "Select your preferred payment option — bank transfer, cryptocurrency, or local payment — enter the amount, and submit your request.",
+              "bottom": "Deposit Now"
             },
             "col3": {
-              "title": "完成转账并确认",
-              "desc": "根据页面指引完成转账，提交凭证后系统将自动处理，资金将在到账后即时入账您的交易账户。",
-              "bottom": "立即体验交易"
+              "title": "Complete and Confirm Your Transfer",
+              "desc": "Follow the on-screen instructions to finalize your transfer.",
+              "bottom": "Start Trading"
             }
           }
         },
         "assets-safe": {
-          "title": "我们将资金安全作为最高优先级",
+          "title": "Where Trusted Infrastructure Powers Every Trade",
           "row": {
             "col1": {
-              "title": "客户资金独立存放",
-              "desc": "客户资金严格存放于受监管的独立账户，与平台自有资金完全隔离，杜绝挪用风险。"
+              "title": "Segregated Client Funds",
+              "desc": "Client funds are securely held in fully segregated, regulated custodial accounts — completely isolated from company operational capital to eliminate any misuse risk."
             },
             "col2": {
-              "title": "银行级通道加密",
-              "desc": "所有支付方式均支持多重加密协议，并通过银行级 KYC/AML 审核机制，保障资金流转安全。"
+              "title": "Bank-Grade Encryption",
+              "desc": "Every transaction is protected by multi-layer encryption and verified through rigorous KYC/AML protocols, ensuring full security and compliance."
             },
             "col3": {
-              "title": "实时风险监控",
-              "desc": "平台构建 7×24 小时自动化风险监控系统，覆盖异常行为识别与资金动向预警。"
+              "title": "24/7 Risk Monitoring",
+              "desc": "Automated monitoring runs continuously to detect anomalies and flag potential risks in real time, safeguarding client assets around the clock."
             },
             "col4": {
-              "title": "国际合规标准",
-              "desc": "全面遵循 AML / CFT（反洗钱与反恐融资）标准，确保资金来源合规、交易安全可溯。"
+              "title": "Global Compliance Standards",
+              "desc": "We adhere to strict international AML and CFT standards, ensuring every fund movement remains transparent, traceable, and compliant."
             }
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "入金多久到账？",
-              "text-1": "加密货币 / 稳定币（USDT / USDC）：1–15 分钟到账，具体时间取决于链上确认速度",
-              "text-2": "加密货币 / 稳定币（USDT / USDC）：1–15 分钟到账，具体时间取决于链上确认速度",
-              "text-3": "国际电汇（SWIFT）：处理时间约为 3–5 个工作日，具体视银行及国家地区而定"
+              "title": "How long does it take for deposits to arrive?",
+              "text-1": "Crypto / Stablecoins (USDT / USDC): Typically within 1–15 minutes, depending on blockchain confirmation speed.",
+              "text-2": "Local Bank Transfers: Usually credited within 1–2 business days.",
+              "text-3": "International Wire (SWIFT): Typically 3–5 business days, depending on the bank and region."
             },
             "li2": {
-              "title": "Asia Future Trading 是否收取入金或出金手续费？",
-              "desc": "平台本身不收取任何入金或出金手续费。",
-              "text-1": "您只需承担支付通道（如银行、电汇、区块链网络）本身可能产生的少量服务费。"
+              "title": "Does Asia Future Trading charge deposit or withdrawal fees?",
+              "desc": "No. The platform does not charge any fees for deposits or withdrawals.",
+              "text-1": "Only third-party providers (banks, payment processors, or blockchain networks) may charge a small service fee."
             },
             "li3": {
-              "title": "支持哪些入金方式？",
-              "desc": "我们支持以下多种支付方式，满足不同地区客户需求：",
-              "text-1": "国际电汇（SWIFT）",
-              "text-2": "本地银行转账",
-              "text-3": "稳定币：USDT / USDC",
-              "text-4": "加密货币：BTC / ETH 等主流币种",
-              "text-5": "各类本地快捷支付方式（视国家/地区而定）"
+              "title": "What funding methods are supported?",
+              "desc": "We offer a wide range of payment methods to meet different regional needs, including:",
+              "text-1": "International Wire Transfer (SWIFT)",
+              "text-2": "Local Bank Transfer",
+              "text-3": "Stablecoins: USDT / USDC",
+              "text-4": "Cryptocurrencies: BTC / ETH and other major assets",
+              "text-5": "Local instant payment channels (availability varies by region)",
+              "text-6": "Physical collateral such as gold, subject to local regulatory approval — please contact your account manager for specific arrangements."
             },
             "li4": {
-              "title": "出入金是否支持 24/7 处理？",
-              "desc": "是的，您可在任意时间提交出入金请求，系统将自动处理。我们承诺在24 小时内受理与完成资金操作。",
-              "text-1": "注意：部分银行或第三方支付服务的处理时间可能会导致延迟。平台不对因支付通道本身引起的处理滞后承担责任。"
+              "title": "Are deposits and withdrawals available 24/7?",
+              "desc": "Yes. You can submit deposit or withdrawal requests anytime. Our system processes all requests automatically within 24 hours.",
+              "text-1": "Note: Some banks or payment processors may experience their own delays. The platform is not responsible for delays caused by third-party channels."
             },
             "li5": {
-              "title": "可以从模拟账户中出金吗？",
-              "desc": "不可以。模拟账户中的资金为虚拟资产，仅用于模拟交易与策略测试，不可用于出金或转账操作。"
+              "title": "Can I withdraw from a demo account?",
+              "desc": "No. Demo account balances are virtual funds used solely for simulated trading and strategy testing — they cannot be withdrawn or transferred."
             },
             "li6": {
-              "title": "如何申请 Asia Future Trading Mastercard / Visa 卡？",
-              "desc": "所有真实账户用户均可申请 AFT 实体或虚拟银行卡。",
-              "text-1": "VIC 用户可享受免费申领权益",
-              "text-2": "请联系您的客户经理或前往卡片服务页面提交申请"
+              "title": "How do I apply for the Asia Future Trading Mastercard / Visa Card?",
+              "desc": "All live account holders are eligible to apply for an AFT physical or virtual card.",
+              "text-1": "VIC clients enjoy complimentary cards and exclusive benefits.",
+              "text-2": "Please contact your account manager or visit the Card Services page to submit your application."
             }
           }
         }
