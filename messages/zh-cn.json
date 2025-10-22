@@ -2693,6 +2693,7 @@
           "midst2": "更强交易权限 · 更高定制自由 · 为专业交易员和机构而生",
           "desc1": "入金门槛：",
           "desc2": "美金起",
+          "prompt": "Step into an exclusive tier of professional-grade trading excellence — with direct liquidity access, personalized service, and institutional-grade execution.",
           "register": "申请成为 VIC 客户",
           "transfer": "立即入金50,000USD"
         },
@@ -2759,7 +2760,8 @@
                 "li2": "按百万美金起交易量申请定制佣金与点差",
                 "li3": "支持浮动/固定点差配置，佣金阶梯返还与团队共享返点",
                 "li4": "大宗订单可接入 OTC 通道，执行更隐蔽、滑点更低",
-                "li5": "可基于策略类型申请定制流动性来源（Custom Routing）"
+                "li5": "可基于策略类型申请定制流动性来源（Custom Routing）",
+                "li6": "Optional custom routing based on strategy type and liquidity preference"
               }
             },
             "col2": {
@@ -2827,6 +2829,7 @@
           }
         },
         "table": {
+          "title": "VIC — Not Just a Higher Tier, But a Complete Redefinition of Trading Architecture.",
           "row": {
             "head1": "账户维度",
             "head2": "Platinum 铂金账户",

@@ -30,6 +30,7 @@ export default async function Page() {
         { text: t("stream.row.col1.ul.li3") },
         { text: t("stream.row.col1.ul.li4") },
         { text: t("stream.row.col1.ul.li5") },
+        { text: t("stream.row.col1.ul.li6") },
     ];
 
     const QA_DATA = [

@@ -140,7 +140,7 @@ const Stream = (props: Props) => {
                                             </Button>
                                             <Typography
                                                 variant={"muted"}
-                                                className={"font-medium !text-white mt-4"}
+                                                className={"!text-white max-w-xl mx-auto text-center mt-4"}
                                             >
                                                 {t("row.col2.desc")}
                                             </Typography>

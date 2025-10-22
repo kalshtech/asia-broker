@@ -45,7 +45,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                     <div className={"flex justify-center items-end mt-4"}>
                         <Typography
                             variant={"h3"}
-                            className={"text-center"}
+                            className={"text-center pb-2"}
                         >
                             {t("title2-1")}
                         </Typography>
@@ -57,7 +57,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                         </Typography>
                         <Typography
                             variant={"h3"}
-                            className={"text-center"}
+                            className={"text-center pb-2"}
                         >
                             {t("title2-2")}
                         </Typography>
@@ -91,7 +91,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                                     variant={"h3"}
                                     className={"!text-[36px] lg:!text-[64px] text-center mx-4"}
                                 >
-                                    {`$${number} USD`}
+                                    {`USD ${number}`}
                                 </Typography>
                             </div>
                             <div className={"mt-4 lg:mt-10"}>

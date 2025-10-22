@@ -35,21 +35,21 @@ const Route = () => {
 
                     <Typography
                         variant={"h3"}
-                        className={"text-center mt-2"}
+                        className={"text-center"}
                     >
                         {t("title2")}
                     </Typography>
 
                     <Typography
                         variant={"h4"}
-                        className={"text-center mt-10"}
+                        className={"text-center mt-6"}
                     >
                         {t("midst")}
                     </Typography>
 
                     <Typography
                         variant={"muted"}
-                        className={"text-center mt-4"}
+                        className={"text-center max-w-3xl mx-auto mt-4"}
                     >
                         {t("desc")}
                     </Typography>

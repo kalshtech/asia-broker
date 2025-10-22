@@ -3,6 +3,7 @@ import * as React from 'react'
 import { useTranslations } from "next-intl";
 import Container from "@/components/Container";
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow} from "@/components/ui/table";
+import {Typography} from "@/components/ui/typography";
 
 const TableComponent = () => {
     const t = useTranslations("Pages.accounts.vic.table");
@@ -20,7 +21,13 @@ const TableComponent = () => {
     return (
         <section className={"bg-[url(/images/accounts/vic-table-bg.png)] bg-center bg-cover py-4 lg:py-30"}>
             <Container>
-                <Table>
+                <Typography
+                    variant={"h3"}
+                    className={"text-center max-w-6xl mx-auto !text-white"}
+                >
+                    {t("title")}
+                </Typography>
+                <Table className={"mt-10"}>
                     <TableHeader>
                         <TableRow className={"bg-white hover:bg-white"}>
                             <TableHead className={"w-1/3 py-6 text-center text-white bg-[#35404F] border-r"}>

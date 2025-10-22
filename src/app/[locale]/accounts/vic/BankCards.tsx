@@ -42,7 +42,7 @@ const BankCards = () => {
 
                     <Typography
                         variant={"h3"}
-                        className={"!text-white text-center mt-2"}
+                        className={"!text-white text-center"}
                     >
                         {t("title2")}
                     </Typography>
@@ -52,7 +52,7 @@ const BankCards = () => {
                         <div className={"col-span-12 lg:col-span-6"}>
                             <Typography
                                 variant={"h4"}
-                                className={"font-medium max-w-lg !text-white"}
+                                className={"font-medium max-w-3xl !text-white"}
                             >
                                 {t("row.col1.title")}
                             </Typography>
@@ -80,14 +80,14 @@ const BankCards = () => {
                         </div>
                         <div className={"col-span-12 lg:col-span-6"}>
                             <img
-                                className={"max-h-90 object-cover mx-auto"}
+                                className={"object-cover mx-auto"}
                                 src="/images/accounts/vic-card.png"
                                 alt="card"
                                 title={"card"}
                             />
                             <Typography
                                 variant={"muted"}
-                                className={"font-medium !text-white text-center mt-4"}
+                                className={"font-medium !text-white mt-4"}
                             >
                                 {t("row.col2.desc")}
                             </Typography>

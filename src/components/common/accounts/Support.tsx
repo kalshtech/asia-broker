@@ -4,7 +4,6 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import Container from "@/components/Container";
-import { Separator } from "@/components/ui/separator"
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },

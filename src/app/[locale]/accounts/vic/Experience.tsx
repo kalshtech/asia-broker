@@ -58,8 +58,8 @@ const Experience = () => {
                                 <div className={"col-span-12 lg:col-span-4"} key={i}>
                                     <div className={`p-6 ${item.imageUrl} h-70 bg-center bg-cover`}>
                                         <Typography
-                                            variant={"h5"}
-                                            className={"mt-30 !text-white"}
+                                            variant={"p"}
+                                            className={"mt-30 font-medium !text-white"}
                                         >
                                             {item.title}
                                         </Typography>

@@ -47,7 +47,7 @@ const Permission = () => {
 
                     <Typography
                         variant={"muted"}
-                        className={"text-center mt-4"}
+                        className={"text-center max-w-3xl mx-auto mt-4"}
                     >
                         {t("desc")}
                     </Typography>
@@ -107,11 +107,11 @@ const Permission = () => {
                         <CircleChevronRight className={"permission-custom-next ml-2 cursor-pointer"}/>
                     </div>
                 </div>
-                <div className={"mt-8 lg:mt-25"}>
-                    <Typography variant={"muted"} className={"text-center"}>
+                <div className={"mt-8 lg:mt-16"}>
+                    <Typography variant={"muted"} className={"text-center max-w-3xl mx-auto"}>
                         {t("prompt1")}
                     </Typography>
-                    <Typography variant={"muted"} className={"text-center mt-4"}>
+                    <Typography variant={"muted"} className={"text-center mt-2 max-w-3xl mx-auto"}>
                         {t("prompt2")}
                     </Typography>
                 </div>

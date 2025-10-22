@@ -2685,231 +2685,234 @@
       "vic": {
         "banner": {
           "title": "Asia Future Trading VIC",
-          "midst1": "赋能数字时代的机构和专业交易员",
-          "midst2": "更强交易权限 · 更高定制自由 · 为专业交易员和机构而生",
-          "desc1": "入金门槛：",
+          "midst1": "Empowering institutions and professional traders in the digital era.",
+          "midst2": "Greater access. Higher flexibility. Designed for those who trade without limits.",
+          "desc1": "Minimum Deposit:",
           "desc2": "美金起",
-          "register": "申请成为 VIC 客户",
-          "transfer": "立即入金50,000USD"
+          "prompt": "Step into an exclusive tier of professional-grade trading excellence — with direct liquidity access, personalized service, and institutional-grade execution.",
+          "register": "Apply for VIC Account",
+          "transfer": "Deposit USD 50,000"
         },
         "permission": {
-          "title": "机构级账户权限，专为策略驱动而设",
-          "desc": "VIC账户为机构级交易者提供更强控制、更深流动性与更高自由度，六大核心权益，全面重塑你的交易架构。",
+          "title": "Institutional Privileges — Engineered for Strategy-Driven Trading",
+          "desc": "The VIC Account empowers institutional and high-net-worth traders with deeper liquidity, greater control, and complete flexibility. 6 exclusive privileges — redefining what professional trading should be.",
           "swiper": {
             "span1": {
-              "title": "0佣金 + 0.0 点差起的原生点差",
-              "desc": "主流产品接入原生报价通道，真正低成本执行，无佣金、无加点。"
+              "title": "0 Commissions · Raw Spreads from 0.0 Pips",
+              "desc": "Access direct institutional pricing channels on major instruments — no markups, no commissions, just pure execution."
             },
             "span2": {
-              "title": "产品定制 + OTC报价",
-              "desc": "支持 ETH/XAU 等组合合约、非标产品与大宗交易柜台报价通道。"
+              "title": "Custom Products & OTC Pricing",
+              "desc": "Trade bespoke pairs such as ETH/XAU or request OTC quotes for large-block and non-standard transactions."
             },
             "span3": {
-              "title": "VIC 专属撮合队列优先权与最优报价",
-              "desc": "订单进入独立高优先级队列，享受最优流动性与更快成交速度。"
+              "title": "Priority Matching & Best Execution",
+              "desc": "VIC orders are routed through an exclusive high-priority queue, ensuring optimal liquidity access and lightning-fast fills."
             },
             "span4": {
-              "title": "Asia Future Trading 银行卡",
-              "desc": "提供全球支付、消费返现与资金清算功能，连接交易账户与日常生活。"
+              "title": "Asia Future Trading Mastercard & Visa",
+              "desc": "Experience seamless fund access with global spending, cashback, and settlement features — connecting your trading and daily life."
             },
             "span5": {
-              "title": "技术顾问 + 客户经理双支持",
-              "desc": "一对一策略顾问与专属客户经理，覆盖技术部署与账户运营支持。"
+              "title": "Dedicated Technical & Account Support",
+              "desc": "Work directly with both a strategy advisor and a relationship manager for integrated technical deployment and operational assistance."
             },
             "span6": {
-              "title": "全球 VIC 俱乐部活动",
-              "desc": "专属帆船 & F1赛席位、策略大师课、线下闭门交流会，仅限邀请参与。"
+              "title": "Global VIC Club Access",
+              "desc": "Enjoy invitation-only experiences — from private sailing and F1 events to elite strategy workshops and networking summits."
             }
           },
-          "prompt1": "VIC 账户默认继承所有铂金账户权益（包括利息账户、VPS服务等）。",
-          "prompt2": "俱乐部活动与节假日礼品视平台运营策略动态调整，最终解释权归 Asia Future Trading 所有。"
+          "prompt1": "All Platinum privileges are automatically included with every VIC Account — including access to the Future Earn interest program, VPS hosting, and other premium features.\nClub events and seasonal rewards are subject to change based on platform operations and marketing strategy.",
+          "prompt2": "Asia Future Trading reserves the right of final interpretation."
         },
         "route": {
-          "title1": "Asia Future Trading VIC 机构专线",
-          "title2": "重构你的交易路径，掌控执行背后的每一步",
-          "midst": "不只更快、更优，还更精准",
-          "desc": "连接全球核心金融节点，接入专属订单通道，VIC 账户掌握从撮合队列、流动性源头、系统接口到最终成交路径的完整控制权。",
+          "title1": "Asia Future Trading VIC — Institutional Direct Line",
+          "title2": "Redefine your execution. Command every step from liquidity to final fill.",
+          "midst": "Not just faster or deeper — but smarter, more precise, and truly institutional.",
+          "desc": "Connect with the world’s core financial hubs through dedicated order channels. Gain full control over every step — from matching queues and liquidity sources to final execution. Every trade, engineered for precision, performance, and trust.",
           "row": {
             "col1": {
-              "title": "专属撮合引擎与定向路由",
-              "desc": "订单不再与零散订单混排，而是进入机构级独立撮合系统，根据策略类型、品种波动性、挂单规模等自动分配报价与执行路径。不止更快，而是更精准。"
+              "title": "Dedicated Matching Engine & Smart Routing",
+              "desc": "Your orders are handled through an institutional-grade matching engine — separated from retail flow and dynamically routed for optimal pricing and execution. Precision built in, not just speed."
             },
             "col2": {
-              "title": "直连核心撮合系统",
-              "desc": "构建真正可控的交易执行底座。特别适用于高频、量化、网格与跨品类策略执行系统对接。"
+              "title": "Direct Connectivity to Core Execution Systems",
+              "desc": "Gain a fully controllable foundation for execution. Built for high-frequency, quantitative, grid, and multi-asset trading architectures requiring low-latency API and FIX connectivity."
             },
             "col3": {
-              "title": "全球 Equinix 节点 + 流动性池支持",
-              "desc": "Equinix LD4（伦敦）/ NY4（纽约）/ TY3（东京）直连，VIC 用户可直通流动性池挂单通道，保障隐私、降低冲击。"
+              "title": "Global Equinix Network & Liquidity Access",
+              "desc": "Connect directly to Equinix LD4 (London), NY4 (New York), and TY3 (Tokyo). VIC clients gain private access to institutional liquidity pools — ensuring confidentiality, stability, and minimal market impact."
             }
           }
         },
         "stream": {
-          "title": "定制你的流动性与成本结构",
-          "desc": "可以 1 USD / Million USD（每百万美元交易量）起为单位定制，VIC 账户从报价源到费用结构，给予你前所未有的掌控权。",
+          "title": "Customize Your Liquidity and Cost Structure",
+          "desc": "With the VIC Account, you gain full flexibility to define your own liquidity and pricing model — starting from as low as USD 1 per million traded.",
           "row": {
             "col1": {
-              "title": "连接全球顶级流动性提供者，从点差、佣金到执行路径，你不再只是接受系统设定，而是与我们共同定义你的交易条件。",
+              "title": "Partner with global liquidity and brokerage networks to define your pricing and execution path. Build a trading environment tailored to your strategy, free from system constraints.",
               "ul": {
-                "li1": "连接 Finalto、LMAX、XTX 等全球一线流动性提供者",
-                "li2": "按百万美金起交易量申请定制佣金与点差",
-                "li3": "支持浮动/固定点差配置，佣金阶梯返还与团队共享返点",
-                "li4": "大宗订单可接入 OTC 通道，执行更隐蔽、滑点更低",
-                "li5": "可基于策略类型申请定制流动性来源（Custom Routing）"
+                "li1": "Direct access to Finalto, LMAX, XTX, and other Tier-1 liquidity providers",
+                "li2": "Integration with prime brokers and institutional venues",
+                "li3": "Fully customizable spreads & commissions (from USD 1 per million traded)",
+                "li4": "Choice of floating or fixed spreads with tiered rebates",
+                "li5": "OTC channels for large orders — deeper liquidity, lower slippage, more privacy",
+                "li6": "Optional custom routing based on strategy type and liquidity preference"
               }
             },
             "col2": {
-              "apply": "申请 VIC 定制报价方案",
-              "desc": "仅限已开户的 VIC 用户，需完成策略说明与交易量评估。"
+              "apply": "Request a Custom VIC Quote",
+              "desc": "Available exclusively to approved VIC members — subject to strategy assessment and trading volume evaluation."
             }
           }
         },
         "custom": {
-          "title": "定制你的交易产品结构",
-          "desc": "标准产品不一定适配你的所有策略。VIC 账户为合格用户提供组合交易标的的申请与结构定制通道，由流动性团队进行评估与配置。",
+          "title": "Customize Your Trading Product Structure",
+          "desc": "Standard products don’t always fit every strategy. The VIC Account gives qualified clients access to bespoke cross-asset instruments, evaluated and structured by our liquidity team.",
           "row": {
             "col2": {
-              "title": "组合标的合约（Cross-Symbol Product）",
+              "title": "Cross-Symbol Products",
               "ul": {
-                "li1": "支持如 ETH/XAU、BTC/ XAU、GOLD/USDT 等跨品类组合交易品种",
-                "li2": "产品结构将由 AFT 内部产品与流动性团队评估后决定是否上线",
-                "li3": "仅限 VIC 用户申请"
+                "li1": "Trade custom instruments such as ETH/XAU, BTC/XAU, or GOLD/USDT, bridging digital and traditional markets.",
+                "li2": "Product structures are subject to AFT’s internal liquidity and product evaluation before being listed.",
+                "li3": "Available exclusively to VIC clients."
               },
-              "desc": "VIC 并不对所有策略开放自动创建权限，所有产品结构均需经由 AFT 合规与流动性评估后上线。我们致力于在合规、安全的前提下，为策略逻辑提供最大自由度。",
-              "apply": "申请组合产品定制权限",
-              "prompt": "*请提交策略逻辑说明，我们将在 5 个工作日内完成初步评估反馈。"
+              "desc": "VIC clients do not have automatic creation privileges. All product structures must pass AFT’s compliance and liquidity assessments prior to activation. Our goal is to maximize strategic flexibility — within a framework of transparency, safety, and regulatory integrity.",
+              "apply": "Request Custom Product Authorization",
+              "prompt": "*Submit your strategy documentation — our team will review and respond within 5 business days."
             }
           }
         },
         "credit": {
-          "account": "美金免费申请解锁VIC账户。"
+          "account": "Apply for free and unlock your VIC Account today."
         },
         "bankCards": {
-          "title1": "Asia Future Trading USDT 银行卡",
-          "title2": "免费申请·连接全球交易与支付网络",
+          "title1": "Asia Future Trading USDT Card",
+          "title2": "Free to Apply · Connect Your Trading and Global Payment Network",
           "row": {
             "col1": {
-              "title": "解决你的大额出入金烦恼，打通从账户资金到日常消费的全流程。不只是出入金，更是你交易生活的一部分。",
+              "title": "Solve your large-scale funding challenges with a seamless bridge between your trading capital and everyday spending.\nMore than a payment solution — it’s an extension of your trading lifestyle.",
               "ul": {
-                "li1": "VIC 用户专属申请权限，支持虚拟卡或实体实体卡开通",
-                "li2": "USDT 账户一键提现至联名银行卡，快速到账、稳定通道",
-                "li3": "支持绑定 Apple Pay / Google Pay，全球消费通行无阻",
-                "li4": "VIC 用户免费申请，免除 $20 USD / 月银行卡订阅费用"
+                "li1": "Exclusive to VIC clients — available as both virtual and physical cards",
+                "li2": "Withdraw USDT directly to your linked AFT Card with instant settlement and secure channels",
+                "li3": "Fully compatible with Apple Pay and Google Pay for effortless global payments",
+                "li4": "VIC members enjoy complimentary application — saving the standard USD 20/month subscription fee"
               },
-              "understand": "了解USDT 联名卡"
+              "understand": "Learn About USDT Card"
             },
             "col2": {
-              "desc": "*VIC 用户登录后台或联系专属客服经理即可申请，审批周期预计 2–3 个工作日"
+              "desc": "*VIC clients can apply via the client portal or through their dedicated account manager. Approval typically takes 2–3 business days."
             }
           }
         },
         "experience": {
-          "title": "VIC 私享服务俱乐部，交易之外的尊享体验，只为极少数人开放",
-          "desc": "加入全球顶尖交易者的专属社群，拓展你的圈层、策略视野与生活方式。",
-          "prospect": "交易是你通往世界的方式，我们帮你把世界带到你面前。",
+          "title": "Asia Future Trading VIC Club, an exclusive experience beyond trading — reserved for the few who truly lead the markets.",
+          "desc": "Join an elite circle of global traders and investors.Expand your network, sharpen your strategy, and elevate your lifestyle.",
+          "prospect": "Trading connects you to the world — we bring the world closer to you.",
           "row": {
             "col1": {
-              "title": "私享活动 · 高净值社交圈层",
-              "desc": "帆船赛事、方程式赛事、投资闭门会、策略圆桌每年定期举行「VIC Global Gathering」峰会AFT VIC 客户团队全程协助安排接待与行程"
+              "title": "Private Events & Networking",
+              "desc": "Exclusive access to sailing regattas, Formula One, and private investment gatherings. VIC clients enjoy priority invitations with full concierge support."
             },
             "col2": {
-              "title": "交易者社交网络 · 高质量连接",
-              "desc": "仅限 VIC 用户进入的私享社群定期发布宏观策略、流动性洞察、结构化产品示范连接真正懂交易的人，与全球策略玩家并肩前行"
+              "title": "Global Trader Network",
+              "desc": "Join a private VIC community to share insights, strategies, and market intelligence with top global traders."
             },
             "col3": {
-              "title": "高端礼遇 · 奖励计划优先级",
-              "desc": "VIC 用户积分加权，优先进入高级奖池奖励从限量 NFT、BTC、劳力士、香奈儿到法拉利试驾体验、私人航班、战略配对服务"
+              "title": "Premium Rewards",
+              "desc": "Unlock weighted rewards and priority access to elite prizes — from NFTs and BTC to Rolex and Ferrari."
             }
           }
         },
         "table": {
+          "title": "VIC — Not Just a Higher Tier, But a Complete Redefinition of Trading Architecture.",
           "row": {
-            "head1": "账户维度",
-            "head2": "Platinum 铂金账户",
-            "head3": "VIC 机构账户",
-            "col1-1-1": "入金门槛",
-            "col1-1-2": "$5,000 USD",
-            "col1-1-3": "$50,000 USD",
-            "col1-2-1": "撮合优先级",
-            "col1-2-2": "高优先级队列",
-            "col1-2-3": "独立队列 + 可定向撮合路由",
-            "col1-3-1": "点差结构",
-            "col1-3-2": "低至 0.0 点",
-            "col1-3-3": "低至 0.0 点；可定制，单位：USD / Million，按交易量评估",
-            "col1-4-1": "产品定制权限",
-            "col1-4-2": "否",
-            "col1-4-3": "可申请 ETH/XAU 等组合品种，策略逻辑接入",
-            "col1-5-1": "利息账户",
-            "col1-5-2": "可申请（5.6% AER 浮动）",
-            "col1-5-3": "同享权益",
-            "col1-6-1": "银行卡支持",
-            "col1-6-2": "可申请",
-            "col1-6-3": "免订阅费，优先开通",
-            "col1-7-1": "服务支持",
-            "col1-7-2": "客户经理 + 通用客服",
-            "col1-7-3": "多对一客户团队 + 技术对接支持",
-            "col1-8-1": "交易积分与奖励",
-            "col1-8-2": "进阶积分比率",
-            "col1-8-3": "高阶加权积分 + 高级奖池自动参与",
-            "col1-9-1": "社群与活动",
-            "col1-9-2": "铂金俱乐部（基础权益）",
-            "col1-9-3": "VIC 专属私享俱乐部，定向邀请 + 圈层连接"
+            "head1": "Account Dimension",
+            "head2": "Platinum Account",
+            "head3": "VIC Institutional Account",
+            "col1-1-1": "Minimum Deposit",
+            "col1-1-2": "USD 5,000",
+            "col1-1-3": "USD 5,000",
+            "col1-2-1": "Matching Priority",
+            "col1-2-2": "High-priority queue",
+            "col1-2-3": "Independent queue + Smart routing options",
+            "col1-3-1": "Spread Structure",
+            "col1-3-2": "As low as 0.0 pips",
+            "col1-3-3": "As low as 0.0 pips · Fully customizable (USD / Million — volume-based pricing)",
+            "col1-4-1": "Product Customization",
+            "col1-4-2": "-",
+            "col1-4-3": "Eligible for cross-symbol instruments (e.g., ETH/XAU), with strategy logic integration",
+            "col1-5-1": "Interest Account",
+            "col1-5-2": "Optional (Up to 5.6% AER variable)",
+            "col1-5-3": "Same entitlement included",
+            "col1-6-1": "AFT Card Support",
+            "col1-6-2": "Available upon request",
+            "col1-6-3": "Subscription fee waived · Priority issuance",
+            "col1-7-1": "Service & Support",
+            "col1-7-2": "Dedicated manager + standard support",
+            "col1-7-3": "Multi-manager team + technical integration support",
+            "col1-8-1": "Trading Points & Rewards",
+            "col1-8-2": "Standard progressive rewards",
+            "col1-8-3": "Weighted points + exclusive premium reward pools",
+            "col1-9-1": "Community & Events",
+            "col1-9-2": "Platinum Club (basic access)",
+            "col1-9-3": "VIC Private Club · Invitation-only network & elite events"
           }
         },
         "process": {
-          "title": "开户流程",
+          "title": "How to Open a VIC Account in 4 Steps",
           "step": {
             "1": {
-              "title": "开设账户",
-              "desc": "只需填写基础信息，1分钟完成注册",
-              "bottom": "立即开户"
+              "title": "Open an Account",
+              "desc": "Start your VIC onboarding with a quick registration.\nOur client services team will assist you through verification and eligibility review.",
+              "bottom": "Open Account"
             },
             "2": {
-              "title": "下载 MetaTrader5",
-              "desc": "支持桌面端、移动端与网页版",
-              "bottom": "探索下载MetaTrader5"
+              "title": "Download MetaTrader 5",
+              "desc": "Access institutional-grade trading infrastructure on desktop, mobile, or web — all synchronized in real time.",
+              "bottom": "Download MetaTrader 5"
             },
             "3": {
-              "title": "入金",
-              "desc": "多种方式支持，包括银行卡、电汇、USDT",
-              "bottom": "了解出入金方式"
+              "title": "Fund Your Account",
+              "desc": "Deposit USD 50,000 or more to unlock full VIC privileges. Choose from secure funding options — bank transfer, wire transfer, or USDT.",
+              "bottom": "Fund Now"
             },
             "4": {
-              "title": "开始交易",
-              "desc": "立即进入全球市场，体验 0 佣金快速执行",
-              "bottom": "立即体验交易"
+              "title": "Activate Institutional Access",
+              "desc": "Once verified, gain direct liquidity access, personalized service, and institutional-grade execution — all within one seamless platform.",
+              "bottom": "Start Trading"
             }
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "成为 VIC 用户需要什么条件？",
-              "desc": "需要满足最低入金 50,000 美元，具备一定交易经验，并能提供清晰的策略逻辑或资金用途说明。所有申请将由 AFT 客户经理与风控团队进行评估。"
+              "title": "What are the requirements to become a VIC member?",
+              "desc": "A: A minimum deposit of USD 50,000 is required. Applicants should demonstrate relevant trading experience and provide a clear strategy rationale or fund usage description. All applications are reviewed by AFT’s client services and risk management teams."
             },
             "li2": {
-              "title": "我可以随时从铂金账户升级为 VIC 吗？",
-              "desc": "可以。请联系您的客户经理或通过后台提交 VIC 升级申请，我们将为您进行资格审核与配置调整。"
+              "title": "Can I upgrade from a Platinum Account to a VIC Account at any time?",
+              "desc": "A: Yes. You can request an upgrade through your account dashboard or by contacting your dedicated account manager. Your eligibility and account configuration will then be reviewed and adjusted accordingly."
             },
             "li3": {
-              "title": "VIC 用户有哪些定制权限？",
-              "desc": "VIC 用户可申请组合标的（如 ETH/XAU）、定制报价通道（Custom Routing）、专属佣金与点差结构（以百万美元为单位评估），也可接入 FIX 协议或使用 API 交易。"
+              "title": "What customization privileges do VIC members have?",
+              "desc": "A: VIC clients can apply for cross-symbol products (e.g., ETH/XAU), custom routing channels, and personalized commission or spread structures (evaluated per USD million traded). Access to API or FIX trading connectivity can also be granted upon request."
             },
             "li4": {
-              "title": "USDT 银行卡是否对 VIC 用户免费？",
-              "desc": "是的，VIC 用户可免费申请 AFT 联名银行卡，免除 $20/月订阅费用，并享受优先审批与高额度出入金支持。"
+              "title": "Is the USDT bank card free for VIC members?",
+              "desc": "A: Yes. VIC members enjoy free access to the AFT co-branded USDT card, with the $20/month subscription fee waived. VIC clients also receive priority approval and enhanced deposit/withdrawal limits."
             },
             "li5": {
-              "title": "利息账户是否稳定？可以随时取出吗？",
-              "desc": "是的。AFT 利息账户每日结算，利息实时到账，用户可随时提取，不影响交易资金流动性。年化收益浮动，当前最高为 5.6%。"
+              "title": "Is the Future Earn Account stable, and can I withdraw anytime?",
+              "desc": "A: Yes. Interest is calculated daily and credited automatically. You can withdraw at any time without affecting trading liquidity. The annualized rate is variable — currently up to 5.6% AER."
             },
             "li6": {
-              "title": "如何参与 VIC 的积分计划与实物奖励？",
-              "desc": "所有 VIC 用户自动参与 AFT 积分计划，交易越多、奖励越高。积分可兑换专属 NFT、BTC、品牌腕表、汽车体验等。详情请联系客户经理获取兑换手册。"
+              "title": "How can I participate in the VIC rewards and loyalty program?",
+              "desc": "A: All VIC members are automatically enrolled in AFT’s points-based reward system. The more you trade, the higher your reward tier. Points can be redeemed for exclusive NFTs, BTC, luxury watches, car experiences, and more. Contact your account manager for the latest redemption catalog."
             },
             "li7": {
-              "title": "VIC Club 的活动信息如何获取？",
-              "desc": "所有 VIC Club 活动均由客户经理定向邀请，不一定对外公开。请确保联系方式更新，并开启通知权限，我们将第一时间同步相关活动安排。"
+              "title": "How can I get notified about VIC Club events?",
+              "desc": "A: VIC Club events are invite-only and often not publicly announced. Make sure your contact details are up to date and notifications enabled — your account manager will personally inform you of any upcoming activities or invitations."
             }
           }
         }

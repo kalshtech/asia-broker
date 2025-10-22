@@ -40,7 +40,7 @@ const Custom = () => {
 
                     <Typography
                         variant={"muted"}
-                        className={"text-center !text-white mt-6"}
+                        className={"text-center max-w-3xl mx-auto !text-white mt-6"}
                     >
                         {t("desc")}
                     </Typography>
@@ -63,7 +63,7 @@ const Custom = () => {
                                 >
                                     {t("row.col2.title")}
                                 </Typography>
-                                <ul className={"mt-4 lg:mt-10"}>
+                                <ul className={"mt-4 lg:mt-6"}>
                                     {
                                         ulAry.map((item, index) => (
                                             <li key={index} className={"flex items-center my-4"}>
@@ -81,7 +81,7 @@ const Custom = () => {
                                 </ul>
                                 <Typography
                                     variant={"muted"}
-                                    className={"!text-white max-w-md mt-4 lg:mt-10"}
+                                    className={"!text-white max-w-2xl mt-4 lg:mt-10"}
                                 >
                                     {t("row.col2.desc")}
                                 </Typography>
