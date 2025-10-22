@@ -16,27 +16,54 @@ import {
 import { Typography } from "@/components/ui/typography";
 import { Separator } from "@/components/ui/separator";
 import { MoveRight, Globe, AlignJustify, X, ChevronRight, ArrowLeft } from 'lucide-react';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Container from "@/components/Container";
 
 const { locales } = routing;
 
 const PackageMenuItem = (props: any) => {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+    const { rootRef } = props;
+
+    useEffect(() => {
+        const onPointerDown = (e: PointerEvent) => {
+            if (rootRef.current && !rootRef.current.contains(e.target as Node)) {
+                setOpen(false)
+            }
+        }
+        const onKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") setOpen(false)
+        }
+        document.addEventListener("pointerdown", onPointerDown)
+        document.addEventListener("keydown", onKeyDown)
+        return () => {
+            document.removeEventListener("pointerdown", onPointerDown)
+            document.removeEventListener("keydown", onKeyDown)
+        }
+    }, [])
+
     return props.ary.map((item: any, index: number) => (
         <NavigationMenuItem key={index}>
             <NavigationMenuTrigger
                 onClick={(e) => {
-                    e.preventDefault()
+                    e.preventDefault();
                     setOpen((prev) => !prev)
                 }}
+                onMouseEnter={(e) => {
+                    // 禁止 hover 自动打开：如果没点击过，不响应 hover
+                    // 什么都不做即可；关键是我们不依赖 radix 的 hover 行为
+                }}
+                aria-expanded={open}
                 className={"hover:!bg-transparent data-[state=open]:!bg-transparent hover:!text-theme-active data-[state=open]:!text-theme-active"}
             >
                 { item.title }
             </NavigationMenuTrigger>
             {
                 open && (
-                    <NavigationMenuContent className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-26"}>
+                    <NavigationMenuContent
+                        onMouseLeave={() => setOpen(false)}
+                        className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-26"}
+                    >
                         <main className={"grid grid-cols-12 gap-4"}>
                             <div className={"col-span-10 grid grid-cols-12 gap-12"}>
                                 {
@@ -133,6 +160,8 @@ const Navigation = () => {
     const [listOpen, setListOpen] = useState(false);
 
     const [responsiveList, setResponsiveList] = useState<any>([]);
+
+    const rootRef = useRef<HTMLDivElement | null>(null);
 
     const localAry = [
         { value: "en", label: "English", country: t("countries.en") },
@@ -477,7 +506,7 @@ const Navigation = () => {
     return (
         <div id={"navigation"} className={"h-[64px] flex z-1000 fixed bg-white w-full"}>
             <Container orientation={"horizontal"}>
-                <NavigationMenu viewport={false}>
+                <NavigationMenu viewport={false} ref={rootRef as any}>
                     <Link href={`/`} className={"cursor-pointer"}>
                         <Image src={RenderNavigationLogo()}
                                alt={"logo"}
@@ -490,7 +519,7 @@ const Navigation = () => {
                     <NavigationMenuList className={"ml-8 hidden lg:flex"}>
                         {
                             ary.map((item, index) => (
-                                <PackageMenuItem ary={item.children} key={index}/>
+                                <PackageMenuItem rootRef={rootRef} ary={item.children} key={index}/>
                             ))
                         }
                     </NavigationMenuList>

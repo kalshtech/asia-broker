@@ -3428,9 +3428,9 @@
           "col-1": {
             "title": "账户类型",
             "ul": {
-              "li1": "Classic 经典账户",
+              "li1": "Classic Account",
               "desc1": "最受欢迎、行业领先的标准账户",
-              "li2": "Platinum 铂金账户",
+              "li2": "Platinum Account",
               "desc2": "享受低至0-行业最低佣金，访问每一个交易品种",
               "li3": "机构 VIC 级账户",
               "desc3": "赋能数字资产时代的机构交易"
