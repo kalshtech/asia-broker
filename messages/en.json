@@ -1565,7 +1565,7 @@
       },
       "calculator": {
         "fee": {
-          "title": "费用计算器",
+          "title": "Margin Calculation",
           "desc": "使用Asia Future Trading 投资计算器计算点、保证金、点差和手续费等数值。 我们便捷的工具可以帮助您简化复杂的交易头寸计算。",
           "tabs": {
             "forex": "外汇",
@@ -1580,14 +1580,15 @@
           "indices-prompt": "针对全球热门的美国、欧盟和亚洲指数，规划您的交易。 此投资计算器可助您轻松计算保证金和点值等数值。",
           "crypto-prompt": "规划加密货币交易，比如BTCUSD和ETHUSD等热门数字货币对。 此投资计算器可助您确定保证金、点值和预期交易成本。",
           "form": {
-            "type": "账户类型",
-            "currency": "帐户货币",
-            "species": "品种",
-            "level": "杠杆",
-            "volume": "手数",
+            "type": "Account Base Currency",
+            "currency": "Currency Pair",
+            "size": "Contract Size/Lot",
+            "level": "Leverage",
+            "volume": "Volume in Lots",
             "calculate": "计算",
             "result": "计算结果",
             "margin": "保证金",
+            "rate": "Exchange Rate",
             "shortCredit": "空头隔夜利息",
             "longCredit": "多头隔夜利息",
             "cost": "点差成本",
@@ -1597,28 +1598,28 @@
           "disclaimer": "免责声明：投资计算器仅供参考。 计算器所提供的结果仅供教育和估算之用，不应将其视为完整结果或用于投资决策。 实时结果只能在执行订单时确定。 点差或因市场波动、新闻发布、经济事件、市场的开市和休市时间以及正在交易的品种等因素而波动或扩大。"
         },
         "use": {
-          "title": "如何使用外汇费用交易计算器",
-          "desc": "使用我们的计算器，让交易前的准备更高效。节省计算时间，专注于真正重要的交易决策",
+          "title": "How to Use the Margin Calculator",
+          "desc": "Make your preparation faster and smarter. Save time on calculations and focus on what truly matters — your trading strategy.",
           "ul": {
-            "li1": "选择您的账户类型和基础货币（如 USD、EUR 等）",
-            "li2": "选择您希望交易的品种，例如EURUSD、XAUUSD 等",
-            "li3": "输入交易手数与杠杆，点击“计算”，即可获得所需保证金、每点价值、交易成本等关键参数"
+            "li1": "Select your account type and base currency (e.g. USD, EUR)",
+            "li2": "Choose a trading instrument, such as EURUSD or XAUUSD",
+            "li3": "Enter trade size and leverage, then click “Calculate” to view your required margin"
           },
-          "prompt": "*该计算器适用于所有标准、铂金等账户类型，支持主要外汇品种、黄金、原油等差价合约交易产品。"
+          "prompt": "This calculator uses indicative market data for educational and reference purposes only. Actual trading conditions may vary depending on liquidity, spreads, volatility, and account type.\nResults do not represent live quotes or investment advice."
         },
         "reasons": {
-          "title": "为什么每个交易者都需要一个外汇计算器",
+          "title": "Why Every Trader Needs a Forex Calculator",
           "row": {
             "col1": {
-              "title": "交易计划，从精确计算开始",
+              "title": "Plan Every Trade with Precision",
               "desc": "外汇交易费用计算器是每位交易者制定交易计划的重要工具。它可以在建仓前帮助您提前评估：",
               "ul": {
                 "li1": "所需保证金",
                 "li2": "每点价值",
                 "li3": "预估交易成本"
               },
-              "prompt": "这类信息对任何短线、日内或波段策略都至关重要。由于外汇市场波动剧烈，微小的价格变动就可能带来显著盈亏结果，精确的成本预判是风险控制的第一步。借助该计算器，您可以更好地评估杠杆对风险敞口的影响，制定更稳健的建仓/平仓策略。尤其在多品种、多仓位组合下，提前量化每一笔交易的成本与边际收益，将成为您在剧烈行情中立于不败之地的关键。",
-              "explore": "探索外汇"
+              "prompt": "The Margin Calculator helps traders estimate margin requirements before opening a position —allowing you to understand leverage impact, manage exposure, and plan every trade with confidence.",
+              "explore": "Explore Forex"
             }
           }
         }
@@ -1733,7 +1734,7 @@
           "row": {
             "col1": {
               "title": "Explore a Higher Level of Trading Intelligence",
-              "desc": "As you take your first steps in trading, we’ve already prepared your next.\u2028At AFT Insights, you’ll go beyond execution — gaining deeper market understanding and strategic inspiration through weekly outlooks, macro trends, advanced strategies, and multi-asset analysis.Grow continuously, trade not just with skill, but with insight.",
+              "desc": "As you take your first steps in trading, we’ve already prepared your next.At AFT Insights, you’ll go beyond execution — gaining deeper market understanding and strategic inspiration through weekly outlooks, macro trends, advanced strategies, and multi-asset analysis.Grow continuously, trade not just with skill, but with insight.",
               "btnText": "Explore AFT Insights",
               "prompt": "Access macro strategies, product insights, and real-world inspiration."
             }
