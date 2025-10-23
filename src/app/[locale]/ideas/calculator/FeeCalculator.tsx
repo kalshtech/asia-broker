@@ -189,7 +189,7 @@ const FeeCalculator = () => {
                 {/*    </Typography>*/}
                 {/*</div>*/}
                 <div className={"mt-10 bg-theme-light-bg rounded-xs p-4 lg:px-20 lg:py-12"}>
-                    <div className={"grid gap-4 lg:gap-8 grid-cols-2"}>
+                    <div className={"grid gap-4 lg:gap-8 grid-cols-1 lg:grid-cols-2"}>
                         <div className={""}>
                             <Label htmlFor="type" className={"px-1 mb-2"}>
                                 {t("form.type")}
