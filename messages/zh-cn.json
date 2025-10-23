@@ -1705,6 +1705,7 @@
         },
         "articles": {
           "title": "系统学习，从你最关心的问题开始",
+          "desc": "Learn Systematically — Start with What Matters Most to You",
           "stage": {
             "title": "阶段分类",
             "before": "开户前",

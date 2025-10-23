@@ -1536,30 +1536,30 @@
       },
       "calendar": {
         "banner": {
-          "title": "Asia Trading View 财经日历",
-          "desc": "根据即将发布的全球财经事件和历史数据，制定你的交易计划，洞察波动背后的市场逻辑。"
+          "title": "Asia Future Trading Global Economic & Trading Calendar",
+          "desc": "Plan your trades with confidence — track upcoming global economic events and historical data to understand the forces driving every market move."
         },
         "subscribe": {
           "ul": {
-            "li1": "我们相信，优质的市场信息，应该对所有交易者开放。",
-            "li2": "无需开户，只需留下邮箱，即可免费订阅 AFT 财经日历。",
-            "li3": "我们的团队会每周为你精选全球重要事件，如利率决议、就业数据、通胀指标等，并配套技术分析与交易策略建议，让你的邮箱变身 7×24 小时的市场情报站。"
+            "li1": "We believe that high-quality market intelligence should be accessible to every trader.",
+            "li2": "No account required — simply subscribe with your email to receive the AFT Weekly Economic Calendar for free.",
+            "li3": "Each week, our research team curates key global events — from rate decisions and employment data to inflation indicators — along with market insights and trading strategies that turn your inbox into a 24/7 intelligence hub."
           },
-          "watch": "免费订阅洞察",
-          "register": "开通账户"
+          "watch": "Free Subscription",
+          "register": "Open Account"
         },
         "financialCalendar": {
-          "title": "财经日历"
+          "title": "Our Global Economic & Trading Calendar"
         },
         "aboutCalendar": {
-          "title": "如何使用我们的财经与交易日历",
-          "desc": "您可以通过财经日历，浏览或搜索即将发生的宏观经济事件、财报与股息公告、IPO 上市、拆股时间等关键信息。同时欢迎订阅我们的专家洞察，每周更新涵盖利率决议、就业数据、通胀发布等重点事件，并附带技术分析与策略建议，助您更从容应对市场波动。",
+          "title": "How to Use Our Economic & Trading Calendar",
+          "desc": "Use the AFT Economic Calendar to browse or search for upcoming macroeconomic events, earnings releases, dividend announcements, IPOs, and corporate actions — all in one place. You can also subscribe to our weekly expert insights, featuring key updates on interest rate decisions, employment data, and inflation reports — along with technical analysis and strategy recommendations to help you stay ahead of market volatility.",
           "form": {
-            "first-placeholder": "请输入您的姓",
-            "last-placeholder": "请输入您的名",
-            "country-placeholder": "请输入国家",
-            "email-placeholder": "请输入您的邮箱",
-            "subscribe": "立即订阅"
+            "first-placeholder": "Enter Your Last Name",
+            "last-placeholder": "Enter Your First Name",
+            "country-placeholder": "Enter Your Country",
+            "email-placeholder": "Enter Your Email",
+            "subscribe": "Free Subscription"
           }
         }
       },
@@ -1660,81 +1660,82 @@
     "academy": {
       "learning": {
         "banner": {
-          "title": "Asia Future Trading 新手学院学习中心",
-          "midst": "开启你的交易之旅，从这里开始。你不是来观望市场的。你是来掌控它的。",
-          "desc": "从认识市场、了解术语到在Asia Future Trading下出第一笔订单，Asia Future Trading 新手学院为你准备了系统清晰的学习路径，帮助你真正理解并掌握交易的本质。"
+          "title": "Asia Future Trading Academy — Learning Center for New Traders",
+          "midst": "Start your trading journey here. You’re not here to watch the markets — you’re here to master them.",
+          "desc": "From understanding market fundamentals and trading terminology to placing your first live order on Asia Future Trading — our Learning Center provides a clear, structured path designed to help you truly grasp the essence of trading and build confidence with every step."
         },
         "core": {
-          "title": "快速掌握核心交易术语",
-          "desc": "从点差、杠杆到套利机制，我们为新手整理了最常用的交易术语与简明定义，助你快速理解金融语言。",
-          "explore": "探索更多交易术语",
+          "title": "Trader’s Glossary — Master Core Trading Terms Fast",
+          "desc": "From spreads and leverage to arbitrage mechanisms, this glossary helps new traders understand the language of global markets — clearly, simply, and effectively.",
+          "explore": "Discover the Glossary",
           "btn": {
-            "term": "通过术语浏览",
-            "theme": "通过主题浏览"
+            "term": "Browse by Term",
+            "theme": "Browse by Topic"
           },
-          "placeholder": "尝试找出您的答案",
-          "searchNodata": "未找到匹配结果，请尝试更换关键词。",
-          "item": "项",
-          "nodata": "没有数据"
+          "placeholder": "Search trading terms or try a keyword…",
+          "searchNodata": "No matching results were found. Please try changing your keywords.",
+          "item": "Item",
+          "nodata": "No Data"
         },
         "compass": {
-          "title": "新手交易指南 · 三大关键起点",
-          "desc": "掌握交易的原理、选择合适的券商与账户类型，是每一位新手走向成熟的第一步。",
+          "title": "Beginner’s Trading Guide — Three Essential Starting Points",
+          "desc": "Understanding how trading works, choosing the right broker, and selecting the right account type — these are the first essential steps every beginner must take to trade with confidence.",
           "row": {
             "span1": {
-              "title": "如何选择合适的CFD账户？",
-              "desc": "从产品种类到账户功能全面了解",
+              "title": "How to Choose the Right CFD Account?",
+              "desc": "Learn the differences between account types and find the setup that best suits your trading goals.",
               "prompt": "了解什么是CFD账户，不同账户类型的区别，以及如何根据你的交易目标选择最合适的平台与账户结构。"
             },
             "span2": {
-              "title": "如何选择合适的券商？",
-              "desc": "判断平台是否值得信赖",
+              "title": "How to Choose a Reliable Broker？",
+              "desc": "Understand key factors like regulation, cost structure, and platform quality to find a trusted trading partner.",
               "prompt": "从监管信息、费用结构到用户体验，教你如何评估一个券商是否安全可靠、适合你的交易偏好。"
             },
             "span3": {
-              "title": "如何选择合适的CFD账户？",
-              "desc": "从产品种类到账户功能全面了解",
+              "title": "How Trading Works?",
+              "desc": "Discover how the CFD market operates — from pricing and margin to leverage and order execution.",
               "prompt": "了解什么是CFD账户，不同账户类型的区别，以及如何根据你的交易目标选择最合适的平台与账户结构。"
             }
           },
-          "view": "阅读文章"
+          "view": "Read Article"
         },
         "articles": {
-          "title": "系统学习，从你最关心的问题开始",
+          "title": "Documentation Hub",
+          "desc": "Learn Systematically — Start with What Matters Most to You",
           "stage": {
-            "title": "阶段分类",
-            "before": "开户前",
-            "order": "下单前",
-            "operating": "操作中",
-            "control": "风险控制",
-            "functions": "平台功能"
+            "title": "By Stage",
+            "before": "Before Opening",
+            "order": "Before Placing Orders",
+            "operating": "During Trading",
+            "control": "Risks Control",
+            "functions": "Platform Functions"
           },
           "theme": {
-            "title": "主题分类",
-            "forex": "外汇",
-            "crypto": "加密货币",
-            "metal": "贵金属",
-            "stock": "股票&ETF",
-            "future": "期货",
-            "energy": "能源",
-            "beginner": "新手入门",
-            "operationalGuide": "操作指南",
-            "trade": "交易策略",
-            "indices": "操作与指标",
-            "weekView": "每周洞察",
-            "study": "宏观研究",
-            "interpretation": "市场解读",
-            "configuration": "资产配置"
+            "title": "By Topic",
+            "forex": "Forex",
+            "crypto": "Cryptocurrency",
+            "metal": "Precious Metals",
+            "stock": "Stocks & ETFs",
+            "future": "Futures",
+            "energy": "Energy",
+            "beginner": "Getting Started",
+            "operationalGuide": "Trading Guide",
+            "trade": "Strategies",
+            "indices": "Indicators",
+            "weekView": "Weekly Insights",
+            "study": "Macro Research",
+            "interpretation": "Market Analysis",
+            "configuration": "Asset Allocation"
           },
-          "more": "查看更多"
+          "more": "Load More"
         },
         "explore": {
           "row": {
             "col1": {
-              "title": "探索更高一层的交易智慧",
-              "desc": "当你迈出入门的第一步，我们也为你的下一步做好了准备。在交易灵感洞察学院，你将收获更深入的市场解读与策略启发——涵盖每周观点、宏观趋势、进阶策略和多元资产的深度分析。助你持续成长，交易不止步于执行，更走向认知与洞察。",
-              "btnText": "进入交易灵感洞察",
-              "prompt": "获取宏观策略、产品洞察与实战灵感"
+              "title": "Explore a Higher Level of Trading Intelligence",
+              "desc": "As you take your first steps in trading, we’ve already prepared your next.\u2028At AFT Insights, you’ll go beyond execution — gaining deeper market understanding and strategic inspiration through weekly outlooks, macro trends, advanced strategies, and multi-asset analysis.Grow continuously, trade not just with skill, but with insight.",
+              "btnText": "Explore AFT Insights",
+              "prompt": "Access macro strategies, product insights, and real-world inspiration."
             }
           }
         }

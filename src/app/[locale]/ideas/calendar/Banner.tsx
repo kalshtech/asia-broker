@@ -26,14 +26,14 @@ const Banner = () => {
                     viewport={{once: true, amount: 0.5}}
                 >
                     <Typography
-                        variant={"h1"}
+                        variant={"h3"}
                         className={"text-center"}
                     >
                         {t("title")}
                     </Typography>
                     <Typography
-                        variant={"large"}
-                        className={"font-medium text-center mx-auto mt-10"}
+                        variant={"p"}
+                        className={"text-center mx-auto mt-6"}
                     >
                         {t("desc")}
                     </Typography>

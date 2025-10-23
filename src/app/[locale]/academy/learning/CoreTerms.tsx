@@ -139,8 +139,8 @@ const CoreTerms = () => {
                 <div className={"mt-10"}>
                     <header className={"flex"}>
                         <div className={"cursor-pointer"} onClick={() => handleToggleTabActive("term")}>
-                            <Typography variant={"muted"} className={classnames([{
-                                "text-theme-active": tabActive === "term"
+                            <Typography variant={"muted"} className={classnames("font-medium",[{
+                                "!text-theme-active": tabActive === "term"
                             }])}>
                                 {t("btn.term")}
                             </Typography>
@@ -149,8 +149,8 @@ const CoreTerms = () => {
                             }])}/>
                         </div>
                         <div className={"ml-12 cursor-pointer"} onClick={() => handleToggleTabActive("theme")}>
-                            <Typography variant={"muted"} className={classnames([{
-                                "text-theme-active": tabActive === "theme"
+                            <Typography variant={"muted"} className={classnames("font-medium",[{
+                                "!text-theme-active": tabActive === "theme"
                             }])}>
                                 {t("btn.theme")}
                             </Typography>

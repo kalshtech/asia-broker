@@ -159,6 +159,9 @@ const Articles = (props: Props) => {
                     <Typography variant={"h3"} className={"text-center"}>
                         {t("title")}
                     </Typography>
+                    <Typography variant={"p"} className={"text-center mt-6"}>
+                        {t("desc")}
+                    </Typography>
                 </motion.div>
 
                 {
