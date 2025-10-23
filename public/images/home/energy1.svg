@@ -1,0 +1,17 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="crude-oil 1">
+<g clip-path="url(#clip0_6620_21176)">
+<path id="Vector" d="M0 0H16V16H0V0Z" fill="url(#paint0_linear_6620_21176)"/>
+<path id="Vector_2" d="M11.1111 8.88885C11.1111 10.8444 9.71114 12.4444 8.00003 12.4444C6.28892 12.4444 4.88892 10.8444 4.88892 8.88885C4.88892 6.93329 8.00003 2.66663 8.00003 2.66663C8.00003 2.66663 11.1111 6.93329 11.1111 8.88885Z" fill="white"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_6620_21176" x1="2.97689" y1="2.77511" x2="19.4702" y2="21.7191" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1A1E21"/>
+<stop offset="1" stop-color="#06060A"/>
+</linearGradient>
+<clipPath id="clip0_6620_21176">
+<rect width="16" height="16" rx="8" fill="white"/>
+</clipPath>
+</defs>
+</svg>
