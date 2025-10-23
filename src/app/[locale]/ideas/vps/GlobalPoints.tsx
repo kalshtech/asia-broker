@@ -33,13 +33,13 @@ const GlobalPoints = () => {
                     </Typography>
 
                     <Typography
-                        variant={"h5"}
+                        variant={"h6"}
                         className={"font-medium text-center mx-auto mt-4 lg:mt-10 !text-white max-w-3xl"}
                     >
                         {t("midst")}
                     </Typography>
                 </motion.div>
-                <div className={"flex justify-center flex-col mt-6 lg:mt-20"}>
+                <div className={"flex justify-center flex-col mt-6 lg:mt-12"}>
                     <div className={"flex justify-center"}>
                         <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("btnText")}
@@ -48,7 +48,7 @@ const GlobalPoints = () => {
 
                     <Typography
                         variant={"muted"}
-                        className={"font-medium text-center mx-auto mt-4 lg:mt-10 !text-white max-w-3xl"}
+                        className={"text-center mx-auto mt-4 lg:mt-10 !text-white max-w-3xl"}
                     >
                         {t("muted")}
                     </Typography>

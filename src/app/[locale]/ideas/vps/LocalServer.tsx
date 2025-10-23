@@ -60,16 +60,13 @@ const LocalServer = () => {
                                 {t("title")}
                             </Typography>
 
-                            <Typography variant={"lead"} className={"font-medium mt-10 !text-white"}>
+                            <Typography variant={"h5"} className={"font-medium mt-10 !text-white"}>
                                 {t("midst")}
                             </Typography>
 
                             <div className={"mt-10 flex"}>
-                                <div className={"w-0.5 h-4 bg-theme-active"}></div>
-                                <Typography
-                                    variant={"small"}
-                                    className={"font-medium ml-2 !text-white"}
-                                >
+                                <div className={"w-0.5 h-4 bg-theme-active mt-1.5"}></div>
+                                <Typography variant={"muted"} className={"ml-2 !text-white"}>
                                     {t("desc")}
                                 </Typography>
                             </div>

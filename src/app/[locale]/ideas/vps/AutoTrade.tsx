@@ -49,16 +49,16 @@ const AutoTrade = () => {
                                 {t("title")}
                             </Typography>
 
-                            <Typography className={"font-medium mt-10"}>
+                            <Typography
+                                variant={"h5"}
+                                className={"font-medium mt-10"}
+                            >
                                 {t("midst")}
                             </Typography>
 
-                            <div className={"mt-10 flex"}>
-                                <div className={"w-0.5 h-4 bg-theme-active"}></div>
-                                <Typography
-                                    variant={"small"}
-                                    className={"font-medium block ml-2"}
-                                >
+                            <div className={"mt-6 flex"}>
+                                <div className={"w-0.5 h-4 bg-theme-active mt-1.5"}></div>
+                                <Typography variant={"muted"} className={"block ml-2"}>
                                     {t("desc")}
                                 </Typography>
                             </div>

@@ -51,18 +51,15 @@ const AutoTrade = () => {
                             </Typography>
 
                             <Typography
-                                variant={"lead"}
+                                variant={"h5"}
                                 className={"font-medium mt-4 lg:mt-10"}
                             >
                                 {t("midst")}
                             </Typography>
 
                             <div className={"flex mt-4 lg:mt-10"}>
-                                <div className={"w-0.5 h-4 bg-theme-active"}></div>
-                                <Typography
-                                    variant={"small"}
-                                    className={"font-medium block ml-2"}
-                                >
+                                <div className={"w-0.5 h-4 bg-theme-active mt-1.5"}></div>
+                                <Typography variant={"muted"} className={"font-medium block ml-2"}>
                                     {t("desc")}
                                 </Typography>
                             </div>

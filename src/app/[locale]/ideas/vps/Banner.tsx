@@ -41,8 +41,8 @@ const Banner = () => {
                     </Typography>
 
                     <Typography
-                        variant={"h4"}
-                        className={"font-medium text-center mt-10 !text-white"}
+                        variant={"h5"}
+                        className={"font-normal text-center mt-10 !text-white"}
                     >
                         {t("desc")}
                     </Typography>
@@ -57,7 +57,7 @@ const Banner = () => {
 
                     <Typography
                         variant={"muted"}
-                        className={"font-medium text-center mt-10 !text-white"}
+                        className={"text-center mt-10 !text-white max-w-3xl mx-auto"}
                     >
                         {t("muted")}
                     </Typography>

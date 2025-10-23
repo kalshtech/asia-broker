@@ -1450,61 +1450,61 @@
     "ideas": {
       "vps": {
         "banner": {
-          "title1": "Asia Future Trading",
-          "title2": "专用低延迟 VPS 为 MT5 和 MQL 专业策略打造",
-          "desc": "为铂金账户的极速交易环境，限时免费申请",
-          "btnText": "立即注册铂金账户",
-          "muted": "我们希望你能赢。我们将协助为你选择最优的 VPS 节点位置，以实现与交易服务器间最低延迟的连接。"
+          "title1": "Asia Future Trading Low-Latency VPS",
+          "title2": "Built for MT5 and MQL Professional Strategies",
+          "desc": "Ultra-fast trading environment — free for Platinum Accounts",
+          "btnText": "Open Platinum Account",
+          "muted": "We want you to win. Our team helps you choose the optimal VPS node location to achieve the lowest latency connection between your setup and our trading servers — ensuring every trade executes faster, smoother, and more precisely."
         },
         "autoTrade": {
-          "title": "全天候自动化交易，无需值守",
-          "midst": "通过 VPS，你的 EA 策略可以 24 小时不间断运行，即使你关闭电脑、断网或离开办公桌，交易依然照常进行。",
-          "desc": "完美兼容 MT5 与 MQL 环境，支持各类智能交易脚本与复制交易系统。"
+          "title": "Trade Automatically, 24/7 — No Supervision Needed",
+          "midst": "With VPS hosting, your EA strategies run continuously — even if your computer is off, internet disconnects, or you’re away from your desk.",
+          "desc": "Fully compatible with MT5 and MQL environments, supporting automated strategies, expert advisors, and copy trading systems seamlessly."
         },
         "localServers": {
-          "title": "专线直连，极速下单不卡顿",
-          "midst": "VPS 服务器搭载企业级网络架构，连接 Asia Future Trading 平台的最低延迟节点，让每一笔订单执行更迅速、更精准，避免因延迟错过行情。",
-          "desc": "我们会根据你的地理位置，智能推荐最优机房（香港、新加坡、伦敦、纽约等）。"
+          "title": "Dedicated Connection — Execute Instantly, Without Lag",
+          "midst": "Our VPS infrastructure is powered by enterprise-grade networks, connecting directly to Asia Future Trading’s lowest-latency nodes for faster, more precise order execution — ensuring you never miss a market move due to delay.",
+          "desc": "Based on your location, we intelligently recommend the optimal data center — including Hong Kong, Singapore, London, and New York — delivering millisecond-level connectivity."
         },
         "running": {
-          "title": "稳定运行，不占用本地资源",
-          "midst": "VPS 拥有独立操作系统，运行于云端，不影响你本地电脑性能。你可以随时远程连接，跨设备管理你的策略、监控交易动态，自由又高效。",
-          "desc": "随时随地，与专业机构一样操作你的交易系统。"
+          "title": "Stable Performance — Zero Local Resource Usage",
+          "midst": "The VPS runs on an independent cloud-based operating system, keeping your local computer free and efficient. Access remotely anytime, manage your strategies across devices, and monitor trades securely with ease.",
+          "desc": "Trade like an institution — anytime, anywhere."
         },
         "globalPoints": {
-          "title": "全球低延迟节点，连接更快、下单更稳",
-          "midst": "我们与顶级云服务商合作，在全球多地部署高性能 VPS 节点。系统将智能匹配您所在地与交易服务器之间的最优路径，实现毫秒级连接，为高频和自动化策略提供坚实网络基础。",
-          "btnText": "立即注册铂金账户",
-          "muted": "完成注册流程后，我们的客户经理通常会在 1 小时内 与您取得联系。您也可以通过加入我们的 Discord 社区 直接联系客户经理获取详细信息，我们将在 15 分钟内为您完成 VPS 配置。"
+          "title": "Global Low-Latency Nodes — Faster, More Stable Execution",
+          "midst": "Partnered with top-tier cloud providers, Asia Future Trading deploys high-performance VPS nodes across major financial hubs. Our system intelligently matches your location with the optimal trading server path, delivering millisecond-level connectivity for high-frequency and automated strategies.",
+          "btnText": "Open Platinum Account",
+          "muted": "Once registered, a client manager will reach out within 1 hour to assist with setup. You can also join our Discord community for instant support — VPS configuration is typically completed within 15 minutes."
         },
         "subscribe": {
-          "title": "订阅 Asia Trading View VPS",
-          "form-name": "请填写以下注册表",
+          "title": "Subscribe to Asia Trading View VPS",
+          "form-name": "Please fill out the form below. Our team will contact you shortly to confirm your account details and configure your VPS node.",
           "form": {
-            "first": "名字",
+            "first": "First Name",
             "first-placeholder": "请输入你的名字",
-            "last": "姓氏",
+            "last": "Last Name",
             "last-placeholder": "请输入你的姓氏",
-            "email": "后台注册邮箱",
+            "email": "Registered Email",
             "email-placeholder": "请输入你的邮箱",
-            "phone": "手机",
+            "phone": "Phone Number",
             "phone-placeholder": "请输入你的手机",
-            "submit": "申请"
+            "submit": "Apply"
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "我需要具备什么条件才能申请 VPS？",
-              "desc": "只需开通铂金账户，即可限时免费申请 VPS 服务。无额外费用，系统审核账户类型后由客户经理协助配置。"
+              "title": "What are the requirements to apply for a VPS?",
+              "desc": "Simply open a Platinum Account to enjoy free VPS access for a limited time.No additional fees — the system will verify your account type, and a client manager will assist with setup."
             },
             "li2": {
-              "title": "VPS 是否兼容我的自动交易策略或 EA？",
-              "desc": "是的。AFT 的 VPS 完全支持 MT5 平台，适配所有 MQL 编写的 EA、复制交易程序与自定义脚本。"
+              "title": "Is the VPS compatible with my automated trading or EA strategies?",
+              "desc": "Yes. The AFT VPS is fully compatible with the MT5 platform, supporting all MQL-based Expert Advisors, copy trading systems, and custom scripts."
             },
             "li3": {
-              "title": "VPS 配置需要多久？是否复杂？",
-              "desc": "通常在 15 分钟内完成。您只需提交申请，客户经理将远程协助配置完成，无需技术经验，零学习成本。"
+              "title": "How long does it take to configure the VPS? Is it complicated?",
+              "desc": "Setup typically takes less than 15 minutes. Once you submit your application, your client manager will guide you through the process remotely — no technical skills required."
             }
           }
         }

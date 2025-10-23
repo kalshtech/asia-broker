@@ -70,10 +70,10 @@ const Subscribe = () => {
                         {t("title")}
                     </Typography>
                 </motion.div>
-                <div className={"mt-4 lg:mt-10"}>
+                <div className={"mt-4 lg:mt-6"}>
                     <Typography
-                        variant={"lead"}
-                        className={"font-medium text-center"}
+                        variant={"h6"}
+                        className={"font-normal text-center"}
                     >
                         {t("form-name")}
                     </Typography>
