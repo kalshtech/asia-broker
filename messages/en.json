@@ -44,27 +44,27 @@
     "no-articles": "未找到匹配的文章",
     "error": "错误",
     "tools": {
-      "title": "交易工具 · 打造你的专业战斗面板",
+      "title": "Trading Tools — Build Your Professional Dashboard",
       "row": {
         "calendar": {
-          "title": "财经日历",
-          "desc": "追踪全球经济事件，掌握行情先机"
+          "title": "Global Economic Calendar",
+          "desc": "Track global economic events and stay ahead of market moves."
         },
         "calculation": {
-          "title": "费用计算器",
-          "desc": "轻松测算点差、佣金与隔夜利息成本"
+          "title": "Trading Calculator",
+          "desc": "Instantly calculate margin and trading costs — plan smarter before every trade."
         },
         "servers": {
-          "title": "VPS托管服务",
-          "desc": "接入高性能云服务器，确保低延迟交易"
+          "title": "VPS Hosting Service",
+          "desc": "Access enterprise-grade cloud servers for seamless, low-latency execution."
         },
         "hot-charts": {
-          "title": "市场热力图",
-          "desc": "一图掌握最热资产波动与涨跌分布"
+          "title": "Market Heatmap",
+          "desc": "Visualize market momentum — see strength and weakness in real time."
         },
         "ideas": {
-          "title": "交易灵感洞察",
-          "desc": "精选策略案例与每周实盘观点，激发交易灵感"
+          "title": "AFT Insights",
+          "desc": "Explore weekly insights, macro trends, and strategy ideas — built to inspire smarter trading."
         }
       }
     },
