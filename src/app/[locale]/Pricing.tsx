@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import { motion, Variants } from "framer-motion";
 import Container from "@/components/Container";
 import Image from "next/image";
-import RealTimeUpdate from "@/components/charts/RealtimeUpdate"
+import RealTimeUpdate from "@/components/charts/RealtimeUpdate";
+import { Link } from "@/i18n/navigation";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -40,6 +41,7 @@ const EnglishPricing = () => {
     const listAry = [
         {
             title: "Crypto",
+            path: "/products/forex",
             children: [
                 { img: "/images/home/crypto-5.svg", label: "Bitcoin" },
                 { img: "/images/home/crypto-6.svg", label: "Ethereum" },
@@ -48,6 +50,7 @@ const EnglishPricing = () => {
         },
         {
             title: "Precious Metals",
+            path: "/products/pm",
             children: [
                 { img: "/images/home/gold.svg", label: "XAU/USD" },
                 { img: "/images/home/gold.svg", label: "XAG/USD" },
@@ -56,6 +59,7 @@ const EnglishPricing = () => {
         },
         {
             title: "Forex",
+            path: "/products/forex",
             children: [
                 { img: "/images/home/forex-4.svg", label: "EUR/USD" },
                 { img: "/images/home/forex-5.svg", label: "GBP/JPY" },
@@ -64,6 +68,7 @@ const EnglishPricing = () => {
         },
         {
             title: "Energy",
+            path: "/products/energy",
             children: [
                 { img: "/images/home/energy1.svg", label: "WTI Crude Oil" },
                 { img: "/images/home/energy1.svg", label: "Brent Crude Oil" },
@@ -72,6 +77,7 @@ const EnglishPricing = () => {
         },
         {
             title: "Stocks & ETFs",
+            path: "/products/stocks",
             children: [
                 { img: "/images/home/stock-2.svg", label: "AAPL" },
                 { img: "/images/home/stock-3.svg", label: "TSLA" },
@@ -80,6 +86,7 @@ const EnglishPricing = () => {
         },
         {
             title: "Futures",
+            path: "/products/future",
             children: [
                 { img: "/images/home/future-1.svg", label: "S&P 500" },
                 { img: "/images/home/future-2.svg", label: "Nasdaq 100" },
@@ -139,29 +146,33 @@ const EnglishPricing = () => {
                                     {
                                         listAry.map((d, i) => (
                                             <div key={i}
-                                                 className={"bg-[#18203B] py-4 px-3 rounded-lg"}
+                                                 className={"bg-[#18203B] py-4 px-3 rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"}
                                             >
-                                                <ul>
-                                                    {
-                                                        d.children.map((c, ci) => (
-                                                            <li key={ci} className={"mt-4 flex items-center rounded-lg first:mt-0"}>
-                                                                <img src={c.img} className={"object-cover"} alt=""/>
-                                                                <Typography variant={"muted"} className={"!text-xs !text-[#B5BAC9] ml-2"}
-                                                                >
-                                                                    { c.label }
-                                                                </Typography>
-                                                            </li>
-                                                        ))
-                                                    }
-                                                </ul>
-                                                <div className={"mt-1"}>
-                                                    <Typography
-                                                        variant={"muted"}
-                                                        className={"!text-white text-center mt-2"}
-                                                    >
-                                                        { d.title }
-                                                    </Typography>
-                                                </div>
+                                                <Link href={d.path}>
+                                                    <ul>
+                                                        {
+                                                            d.children.map((c, ci) => (
+                                                                <li key={ci}
+                                                                    className={"mt-4 flex items-center rounded-lg first:mt-0"}>
+                                                                    <img src={c.img} className={"object-cover"} alt=""/>
+                                                                    <Typography variant={"muted"}
+                                                                                className={"!text-xs !text-[#B5BAC9] ml-2"}
+                                                                    >
+                                                                        {c.label}
+                                                                    </Typography>
+                                                                </li>
+                                                            ))
+                                                        }
+                                                    </ul>
+                                                    <div className={"mt-1"}>
+                                                        <Typography
+                                                            variant={"muted"}
+                                                            className={"!text-white text-center mt-2"}
+                                                        >
+                                                            {d.title}
+                                                        </Typography>
+                                                    </div>
+                                                </Link>
                                             </div>
                                         ))
                                     }
