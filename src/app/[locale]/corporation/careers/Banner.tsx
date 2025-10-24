@@ -35,7 +35,7 @@ const Banner =  () => {
                         />
                         <Typography
                             variant={"h6"}
-                            className={"font-medium !text-white mt-10 max-w-lg leading-[24px]"}
+                            className={"font-medium !text-white mt-10 max-w-2xl leading-[24px]"}
                         >
                             {t("desc")}
                         </Typography>
@@ -47,7 +47,7 @@ const Banner =  () => {
                     <div className={"flex items-center"}>
                         <Typography
                             variant={"h5"}
-                            className={"font-medium !text-white max-w-2xl "}
+                            className={"font-medium !text-white max-w-5xl "}
                         >
                             {t("tips")}
                         </Typography>

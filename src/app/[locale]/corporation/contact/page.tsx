@@ -19,12 +19,12 @@ export default async function Page() {
     ];
 
     const ary = [
-        { status: 1, statusText: t("language.online"), support: "中文 / 粤语", statement: "" },
-        { status: 1, statusText: t("language.online"), support: "日语", statement: "" },
-        { status: 1, statusText: t("language.online"), support: "越南语", statement: "" },
-        { status: 1, statusText: t("language.online"), support: "英文", statement: t("language.prompt1") },
-        { status: 0, statusText: t("language.ready"), support: "韩文", statement: t("language.prompt2") },
-        { status: 0, statusText: t("language.ready"), support: "泰语", statement: t("language.prompt3") },
+        { status: 1, statusText: t("language.online"), support: "Chinese / Cantonese", statement: "Real-time customer service and trading support" },
+        { status: 1, statusText: t("language.online"), support: "Japanese", statement: "Localized support for Japanese clients" },
+        { status: 1, statusText: t("language.online"), support: "Vietnamese", statement: "Localized support for Vietnamese clients" },
+        { status: 1, statusText: t("language.online"), support: "English", statement: t("language.prompt1") },
+        { status: 0, statusText: t("language.ready"), support: "Korean", statement: t("language.prompt2") },
+        { status: 0, statusText: t("language.ready"), support: "Thai", statement: t("language.prompt3") },
     ]
 
 

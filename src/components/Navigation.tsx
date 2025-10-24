@@ -607,10 +607,10 @@ const Navigation = () => {
                             </NavigationMenuList>
                         </NavigationMenu>
                         <Button className={"mr-4 px-6 ml-4 lg:px-8 bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
-                            登录
+                            { t("login") }
                         </Button>
                         <Button className={"bg-theme-active cursor-pointer hover:bg-theme-active-hover"}>
-                            开设账户
+                            { t("register") }
                         </Button>
                         {
                             !drawerOpen ?

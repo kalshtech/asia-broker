@@ -42,7 +42,7 @@ const RowTable = (props: Props) => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{once: true, amount: 0.5}}
-                            className={overview ? "mt-8 lg:mt-19" : ""}
+                            className={overview ? "mt-8 lg:mt-16" : ""}
                         >
 
                             <Typography variant={"h3"}>

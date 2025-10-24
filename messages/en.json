@@ -1870,268 +1870,268 @@
           "document": "Download PDF"
         },
         "join": {
-          "title": "加入我们，让金融变得更好",
-          "desc": "Asia Future Trading 正在寻找来自运营、设计、技术、市场等领域的优秀人才与机构合作伙伴，共同推动全球交易体验的下一次跃迁。",
+          "title": "Join Us — Let’s Build a Better Financial Future Together",
+          "desc": "Asia Future Trading is seeking talented individuals and strategic partners across operations, design, technology, and marketing to help us redefine the global trading experience.",
           "col1": {
-            "title": "我们团队的目标，是重构一个技术驱动、可信任、属于全球交易者的金融系统。",
-            "desc1": "Leo W.｜Asia Future Trading 量化基础设施工程师",
-            "desc2": "现负责 Asia Future Trading 的数据流处理与风控引擎开发。",
-            "view": "查看开放职位"
+            "title": "“Our goal is to redefine what trust and performance mean in modern finance.”",
+            "desc1": "Leo W. — Quant Infrastructure Engineer, Asia Future Trading",
+            "desc2": "Currently leading the development of AFT’s data-stream processing and risk-control engine.",
+            "view": "View Open Positions"
           }
         },
         "ready": {
-          "title": "准备好开启你的全球交易之旅了吗？",
-          "desc": "Asia Future Trading 已为你接通全球市场的流动性与交易基础设施，现在，是你掌握节奏的时候。",
-          "joint": "连接全球市场 · 机构级基础设施 · 透明可信的交易环境",
-          "trade": "立即交易",
-          "support": "联系支持"
+          "title": "Ready to begin your global trading journey?",
+          "desc": "Asia Future Trading has connected you to global liquidity and market infrastructure — now it’s your turn to take the lead and define your trading future.",
+          "joint": "Connect to Global Markets · Institutional-Grade Infrastructure · Transparent & Trusted Trading Environment",
+          "trade": "Start Trading",
+          "support": "Contact Support"
         }
       },
       "contact": {
         "banner": {
-          "title1": "我们在，",
-          "title2": "真正回应你的每一个需要",
-          "desc": "Asia Future Trading 不只是一个交易平台，我们是你的伙伴、后盾与策略支持团队。",
-          "tips": "开户问题、交易技术、账户咨询，我们始终第一时间响应，为你在市场中提供稳定的信任感与支持力。",
-          "view": "立即联系",
-          "join": "加入社群"
+          "title1": "We’re Here,",
+          "title2": "Ready to Support Your Every Need",
+          "desc": "Asia Future Trading is more than just a trading platform — we’re your partner, your foundation, and your strategic support team.",
+          "tips": "From account setup and trading assistance to technical inquiries, our team responds swiftly to provide reliability, trust, and confidence in every trade.",
+          "view": "Contact Us",
+          "join": "Join Community"
         },
         "methods": {
-          "title": "三种方式，全方位支持你的交易之旅",
+          "title": "Three Ways to Support Your Trading Journey — Anytime, Anywhere",
           "row": {
             "col1": {
-              "title": "客户支持中心",
-              "desc": "常见问题快速解答，包括账户、平台、交易规则等",
-              "btnText": "前往支持中心"
+              "title": "Client Support Center",
+              "desc": "Find quick answers to common questions covering accounts, platforms, and trading rules.",
+              "btnText": "Visit Support Center"
             },
             "col2": {
-              "title": "帆船积木社区",
-              "desc": "10,000+ 全球真实用户共建的交易社群，从开户到实盘，全流程陪伴",
-              "btnText": "加入 Discord 社群"
+              "title": "AFT Sailing Blocks Community",
+              "desc": "Join 10,000+ real traders worldwide — a global community guiding you from onboarding to live trading.",
+              "btnText": "Join Discord Community"
             },
             "col3": {
-              "title": "专属客户经理",
-              "desc": "每位账户用户配有一对一客户经理，提供定制化支持服务",
-              "btnText": "联系客户经理"
+              "title": "Dedicated Account Manager",
+              "desc": "Every account holder is assigned a personal manager, providing tailored support and responsive service.",
+              "btnText": "Open Account"
             }
           }
         },
         "joinus": {
-          "title": "加入帆船积木社区，认识更多交易者",
-          "desc": "10,000+ 全球真实用户，与你一起启航交易之旅",
+          "title": "Join the SailingBrick Community — Where Traders Grow Together",
+          "desc": "A global network of 10,000+ real traders, sharing insights, strategies, and the passion for progress.",
           "row": {
             "col1": {
               "1": {
-                "title": "专属服务支持",
-                "desc": "一对一客户服务与策略对接"
+                "title": "Dedicated Support",
+                "desc": "One-on-one client service and strategy consultation."
               },
               "2": {
-                "title": "内容栏目丰富",
-                "desc": "训练营 · 策略栏目 · 问答互动"
+                "title": "Rich Content Hub",
+                "desc": "Bootcamps, strategy columns, and interactive Q&A sessions."
               }
             },
             "col2": {
-              "title": "我们不止是一个平台，更是你的交易伙伴",
-              "desc1": "在 Asia Future Trading，我们希望你在“交易”之外，也能被理解、被帮助、被支持",
-              "desc2": "这正是我们创建帆船积木社区的初衷",
-              "join": "立即加入"
+              "title": "We’re more than a platform — we’re your trading partner.",
+              "desc1": "At Asia Future Trading, we believe trading is just the beginning.",
+              "desc2": "Understanding, support, and growth — that’s why we built the SailingBrick Community.",
+              "join": "Join Now"
             },
             "col3": {
               "1": {
-                "title": "社群互动与激励",
-                "desc": "挑战赛 · 积分系统 · 抽奖活动"
+                "title": "Community Engagement & Rewards",
+                "desc": "Trading challenges, point systems, and giveaway events."
               },
               "2": {
-                "title": "Discord 群组全球互联",
-                "desc": "多语言社群覆盖全球"
+                "title": "Global Connection on Discord",
+                "desc": "Multi-language communities connecting traders worldwide."
               }
             }
           }
         },
         "type": {
-          "title": "你还可以通过这种方式联系我们",
-          "desc": "我们欢迎你的来信，无论是业务合作、意见反馈，还是希望加入我们。",
-          "prompt1": "我们通常会在 3–5 个工作日 内回复所有邮件。",
-          "prompt2": "若你尚未收到回信，可能是由于信息量较大，请耐心等待，我们一定会认真处理每一封来信。",
-          "join": "加入我们",
+          "title": "You Can Also Reach Us Here",
+          "desc": "We welcome your message — whether it’s for partnership, feedback, or career opportunities.",
+          "prompt1": "We usually reply within 3–5 business days.",
+          "prompt2": "If you haven’t received a response yet, please allow some time — every message will be carefully reviewed.",
+          "join": "Join US",
           "row": {
             "col1": {
-              "title": "一般咨询",
-              "desc": "适用于商务合作、产品反馈、媒体采访等一般性联络。"
+              "title": "General Enquiries",
+              "desc": "For business partnerships, product feedback, or media requests."
             },
             "col2": {
-              "title": "一般咨询",
-              "desc": "适用于商务合作、产品反馈、媒体采访等一般性联络。"
+              "title": "Join Our Team",
+              "desc": "For job applications, collaborations, or internship opportunities."
             }
           }
         },
         "language": {
-          "title": "我们支持多语言沟通",
-          "desc": "无论你来自哪里，我们都有语言支持团队为你服务。",
-          "online": "在线",
-          "ready": "准备上线",
-          "prompt1": "全球客服标准语言，24小时支持",
-          "prompt2": "客户支持时间为每天中午12点至晚10点",
-          "prompt3": "每日支持时间为早上10点至晚上8点",
+          "title": "We Support Multi-Language Communication",
+          "desc": "Wherever you are, our language support teams are here to assist you.",
+          "online": "Online",
+          "ready": "Coming Soon",
+          "prompt1": "Global standard language — 24/7 support",
+          "prompt2": "Support hours: 12:00 PM – 10:00 PM (daily)",
+          "prompt3": "Support hours: 10:00 AM – 8:00 PM (daily)",
           "table": {
             "head": {
-              "status": "当前状态",
-              "support": "支持语音",
-              "statement": "说明"
+              "status": "Status",
+              "support": "Supported Language",
+              "statement": "Notes"
             }
           }
         },
         "colleague": {
-          "title": "我们不只是交易系统，我们更是陪你拼出第一块交易积木的伙伴"
+          "title": "From the first block to your trading world — we build it together."
         }
       },
       "careers": {
         "banner": {
-          "title": "让金融变得更好，从你加入 Asia Future Trading 开始",
-          "desc": "让我们一起构建一个真正服务全球交易者的金融系统",
-          "tips": "我们在搭建一套透明、可信、可持续的交易基础设施，以机构级标准，为全球用户提供可验证的市场体验",
-          "view": "查看开放职位"
+          "title": "Make Finance Better — Starting with You at Asia Future Trading",
+          "desc": "Together, we’re building a financial system that truly serves global traders",
+          "tips": "We’re developing a transparent, trusted, and sustainable trading infrastructure — delivering an institutional-grade experience that every trader can verify and trust.",
+          "view": "View Open Roles"
         },
         "infrastructure": {
-          "title": "我们为现代交易者构建交易基础设施",
-          "desc": "Asia Future Trading 是一家面向全球交易者的多资产差价合约经纪商。我们不仅连接市场，更在设计一套面向未来的交易基础设施，让快速执行、透明成本与机构级服务成为每位用户的日常体验。",
+          "title": "Building the Trading Infrastructure for the Modern Trader",
+          "desc": "Asia Future Trading is a multi-asset CFD broker built for global traders. We don’t just connect markets — we’re designing the trading infrastructure of the future, where lightning-fast execution, transparent pricing, and institutional-grade service become everyday standards.",
           "row": {
             "col1": {
-              "title": "全球覆盖",
-              "desc": "服务覆盖亚洲、欧洲与中东等全球 37+ 市场。"
+              "title": "Global Reach",
+              "desc": "Serving clients across 37+ markets in Asia, Europe, and the Middle East — providing localized service, multi-language support, and global access."
             },
             "col2": {
-              "title": "核心团队",
-              "desc": "核心成员来自金融、工程与品牌设计行业，具有复合型背景。"
+              "title": "Core Team",
+              "desc": "Our leadership team brings together experience from finance, engineering, and brand design, combining analytical precision with creative vision to redefine how modern trading feels."
             },
             "col3": {
-              "title": "每月执行交易量",
-              "desc": "月度执行交易量超 100 亿美元，涵盖外汇、加密货币、指数等多个市场。"
+              "title": "Monthly Trading Volume —  10B+",
+              "desc": "Over USD 10 billion in executed volume every month, spanning Forex, Cryptocurrency, Indices, Energy, and Stock CFDs."
             }
           }
         },
         "principle": {
-          "title": "引领我们构建的核心原则",
-          "desc": "无论是产品设计、系统搭建，还是服务交付，我们始终坚持一套核心原则。它们是我们建立信任、提供性能、实现可持续发展的基础。",
+          "title": "The Core Principles That Guide Us",
+          "desc": "Whether in product design, system architecture, or client service, we’re guided by a set of principles that define who we are — the foundation of trust, performance, and long-term sustainability.",
           "row": {
             "col1": {
-              "title": "全球覆盖",
-              "desc": "服务覆盖亚洲、欧洲与中东等全球 37+ 市场。"
+              "title": "Global Presence",
+              "desc": "Serving clients across 37+ markets in Asia, Europe, and the Middle East — combining global scale with local depth to empower every trader’s journey."
             },
             "col2": {
-              "title": "全球透明，重塑信任标准",
-              "desc": "我们对成本结构与执行机制保持设计级别的透明。因为信任的前提，是“可见”。"
+              "title": "Radical Transparency",
+              "desc": "We maintain design-level transparency across our cost structure and execution logic — because trust begins with visibility."
             },
             "col3": {
-              "title": "专业制胜，对标机构级标准",
-              "desc": "专业不该只属于机构。从深度流动性到订单延迟，我们为每位交易者提供机构级性能。"
+              "title": "Professional by Default",
+              "desc": "Professional performance shouldn’t be reserved for institutions. From deep liquidity to low-latency execution, every trader deserves institutional-grade precision."
             },
             "col4": {
-              "title": "本地信赖，全球链接",
-              "desc": "我们连接全球市场，同时提供本地化服务支持。技术可以扩展，但信任，来自一对一的陪伴。"
+              "title": "Local Trust, Global Reach",
+              "desc": "We connect global markets while providing localized, human support. Technology scales — trust is built one relationship at a time."
             }
           }
         },
         "offices": {
-          "title": "全球办公节点",
+          "title": "Global Offices & Operations",
           "list": {
             "item1": {
-              "title": "大洋洲",
-              "text1": "悉尼｜全球运营总部"
+              "title": "Oceania",
+              "text1": "Sydney — Global Operations Headquarters"
             },
             "item2": {
-              "title": "亚洲",
-              "text1": "香港｜全球产品管理中心",
-              "text2": "新加坡｜创新实验室基地",
-              "text3": "吉隆坡｜多语种客服中心",
-              "text4": "东京｜服务日本本地市场",
-              "text5": "阿布扎比｜中东市场布局与合规接入"
+              "title": "Asia",
+              "text1": "Hong Kong — Global Product Management Center",
+              "text2": "Singapore — Innovation & Technology Lab",
+              "text3": "Kuala Lumpur — Multilingual Client Support Center",
+              "text4": "Tokyo — Japan Market Service Hub",
+              "text5": "Abu Dhabi — Middle East Expansion & Regulatory Access"
             },
             "item3": {
-              "title": "远程",
-              "text1": "我们正在全球范围持续招募优秀人才与合作伙伴，共同拓展交易边界涵盖英国、德国、加拿大等地团队与机构合作伙伴支持内容策略、市场拓展与法规准备工作"
+              "title": "Remote",
+              "text1": "We’re continuously expanding our global remote teams and partnerships — across the UK, Germany, Canada, and beyond — to support our growth in\ncontent strategy, market development, and regulatory readiness."
             }
           }
         },
         "hire": {
-          "title": "招聘岗位",
-          "apply": "立即申请",
+          "title": "Open Roles",
+          "apply": "Apply Now",
           "list": {
             "development": {
-              "title": "系统研发 Engineering",
+              "title": "Engineering",
               "1": {
-                "name": "后端开发工程师（Python / FastAPI）",
-                "location": "远程 / 悉尼",
-                "desc": "构建与维护订单路由、风控模型与数据服务模块，确保系统高可用性与低延迟执行。"
+                "name": "Backend Engineer (Python / FastAPI)",
+                "location": "Remote / Sydney",
+                "desc": "Build and maintain order routing, risk models, and data services with high availability and ultra-low latency."
               },
               "2": {
-                "name": "交易系统测试工程师",
-                "location": "远程",
-                "desc": "设计与实施高质量自动化测试，覆盖账户、交易、结算与行情系统模块。"
+                "name": "Trading Systems Test Engineer",
+                "location": "Remote",
+                "desc": "Design and implement robust automated tests across account, trading, clearing, and market-data systems."
               }
             },
             "operation": {
-              "title": "交易运营 Trading Operations",
+              "title": "Trading Operations",
               "1": {
-                "name": "交易运营实习生",
-                "location": "香港 / 新加坡 / 远程",
-                "desc": "支持交易数据整理、用户行为分析与交易指标追踪，参与策略迭代支持"
+                "name": "Trading Operations Intern",
+                "location": "Hong Kong / Singapore / Remote",
+                "desc": "Support trade data curation, user-behavior analytics, and KPI tracking; assist with strategy iteration."
               },
               "2": {
-                "name": "客户支持专员（多语言）",
-                "location": "香港 / 吉隆坡 / 远程",
-                "desc": "负责面向东南亚或欧洲客户的日常支持工作，涵盖开户、订单问题与账户协助。"
+                "name": "Client Support Specialist (Multilingual)",
+                "location": "Hong Kong / Kuala Lumpur / Remote",
+                "desc": "Provide daily client support (onboarding, order inquiries, account assistance) for SEA and EU regions."
               }
             },
             "growth": {
-              "title": "品牌与增长 Marketing & Growth",
+              "title": "Marketing & Growth",
               "1": {
-                "name": "增长策略分析师",
-                "location": "远程 / 悉尼",
-                "desc": "结合用户数据、渠道分析与转化漏斗建模，制定与优化增长策略。"
+                "name": "Growth Strategy Analyst",
+                "location": "Remote / Sydney",
+                "desc": "Combine user analytics, channel insights, and funnel modeling to design and optimize growth strategies."
               },
               "2": {
-                "name": "品牌内容编辑 / 撰稿人",
-                "location": "远程 / 弹性办公",
-                "desc": "产出市场教育内容、品牌博客与产品解读文案，协助构建可信的内容体系。"
+                "name": "Brand Content Editor / Writer",
+                "location": "Remote / Flexible",
+                "desc": "Produce education pieces, brand blog articles, and product explainers to build a credible content stack."
               }
             },
             "analysis": {
-              "title": "分析师 / 实习岗位 Analyst & Internship",
+              "title": "Analyst & Internship",
               "1": {
-                "name": "市场分析实习生",
-                "location": "远程",
-                "desc": "研究宏观经济、加密市场或外汇流动性趋势，撰写支持产品或用户策略的分析报告。"
+                "name": "Market Research Intern",
+                "location": "Remote",
+                "desc": "Research macroeconomic trends, crypto markets, or FX liquidity dynamics. Produce analytical reports to support product development and user strategies."
               },
               "2": {
-                "name": "视觉 / UI 设计实习生",
-                "location": "远程 / 弹性办公",
-                "desc": "参与品牌设计体系迭代，协助设计营销资产、UI 模块与社交媒体内容。"
+                "name": "Visual / UI Design Intern",
+                "location": "Remote / Flexible",
+                "desc": "Contribute to AFT’s evolving design system — assist in creating marketing assets, UI modules, and social media visuals."
               }
             },
-            "desc1": "找不到适合你的岗位？欢迎主动联系我们。",
-            "desc2": "如果你对 Asia Future Trading 的使命有强烈共鸣，具备系统能力、学习能力或独特视角，请将简历和动机信发送至",
-            "desc3": "我们更看重动机与契合度，而不仅是简历上的段落。"
+            "desc1": "Didn’t see a perfect fit?",
+            "desc2": "If you resonate with AFT’s mission and bring systems thinking, rapid learning, or a unique perspective, send your résumé and a brief motivation letter to",
+            "desc3": "We care more about motivation and alignment than what’s written on your résumé."
           }
         },
         "setOut": {
-          "title": "现在，轮到你出发",
-          "desc": "我们正在构建面向未来的金融系统，从交易基础设施到用户体验，每一环节都值得被重新定义。Asia Future Trading 欢迎敢于挑战旧范式的你，一起把全球交易者真正放在中心。",
-          "view": "查看空缺职位"
+          "title": "Now it’s your turn to shape the future of trading.",
+          "desc": "We’re building the next generation of financial infrastructure — where every layer, from execution systems to user experience, is being redefined. At Asia Future Trading, we welcome those who challenge old paradigms and believe the global trading ecosystem should put traders at the center.",
+          "view": "View Open Positions"
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "我所在的国家可以申请吗？",
-              "desc": "是的，Asia Future Trading 接受来自全球各地的申请人。除远程岗位外，我们在悉尼、香港、新加坡等地亦设有实体办公室。"
+              "title": "Can I apply if I’m not based in one of your office locations?",
+              "desc": "Yes. Asia Future Trading welcomes applicants from all over the world. In addition to remote positions, we have physical offices in Sydney, Hong Kong, and Singapore."
             },
             "li2": {
-              "title": "是否接受实习生或应届毕业生？",
-              "desc": "我们欢迎具备潜力的年轻候选人加入 Analyst 或 Internship 方向，只要你具备强烈动机与自我驱动能力。"
+              "title": "Do you accept interns or recent graduates?",
+              "desc": "Absolutely. We welcome motivated young candidates to join our Analyst or Internship programs — what matters most is your drive and curiosity to learn."
             },
             "li3": {
-              "title": "我不是金融背景出身，也能申请吗？",
-              "desc": "当然。我们关注系统性思维、技术能力与学习力。欢迎来自工程、数据、设计等多领域的人才加入我们。"
+              "title": "I don’t have a finance background — can I still apply?",
+              "desc": "Of course. We value system thinking, technical ability, and a strong learning mindset. Candidates from engineering, data, or design backgrounds are encouraged to apply."
             }
           }
         }
@@ -3372,12 +3372,12 @@
   "Navigation": {
     "menu": {
       "products": {
-        "title": "Products",
+        "title": "CFD Products",
         "description": "专业定价 ，更低交易成本，低点差、低佣金、低借贷利率。",
         "btn": "探索加密货币",
         "row": {
           "col-1": {
-            "title": "CFD 产品",
+            "title": "CFD Products",
             "ul": {
               "li1": "Forex",
               "li2": "Precious Metals",
@@ -3388,18 +3388,18 @@
             }
           },
           "col-2": {
-            "title": "定价",
+            "title": "Pricing",
             "ul": {
               "li1": "定价概览",
               "li2": "点差",
-              "li3": "一般费用",
+              "li3": "General Fees",
               "li4": "调期利率"
             }
           },
           "col-3": {
-            "title": "条件",
+            "title": "Trading Conditions",
             "ul": {
-              "li1": "入金与出金",
+              "li1": "Deposits & Withdrawals",
               "li2": "客户保护",
               "li3": "交易条款与合规KYC"
             }
@@ -3609,7 +3609,9 @@
       "ms": "马拉西亚",
       "id": "印度尼西亚",
       "vi": "越南"
-    }
+    },
+    "login": "Login",
+    "register": "Open Account"
   },
   "Footer": {
     "contact": {

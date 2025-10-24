@@ -67,7 +67,7 @@ export default function Competition() {
                                     {!isActive && (
                                         <div className="flex h-full items-center justify-center flex-col gap-4">
                                             <div
-                                                className="flex justify-center items-center h-full [writing-mode:vertical-rl] [text-orientation:upright] text-lg font-semibold">
+                                                className="flex justify-center items-center h-full [writing-mode:vertical-rl] [text-orientation:mixed] rotate-180 font-semibold text-lg">
                                                 <Typography>
                                                     {it.title}
                                                 </Typography>
