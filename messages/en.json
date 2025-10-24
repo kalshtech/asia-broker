@@ -17,7 +17,7 @@
     "open": "Open",
     "changePercentage": "Change(%)",
     "change": "Change",
-    "marketCap": "市值",
+    "marketCap": "marketCap",
     "volume": "Volume",
     "productName": "Product Name",
     "mockTrade": "模拟交易",
@@ -35,14 +35,14 @@
     "bid": "Bid",
     "ask": "Ask",
     "qa-title": "Frequently Asked Questions",
-    "join-community": "加入帆船积木社区，专属客户经理为您提供更详细的信息",
-    "join-community-btn": "加入社群",
+    "join-community": "Join the Sailboat Brick Community and let your dedicated account manager provide you with more detailed information.",
+    "join-community-btn": "Join the Community",
     "search": "Search",
     "search-placeholder": "Search the product you want to trade",
-    "searching": "搜索中...",
-    "search-articles": "搜索文章",
-    "no-articles": "未找到匹配的文章",
-    "error": "错误",
+    "searching": "Search...",
+    "search-articles": "Search Articles",
+    "no-articles": "No Articles",
+    "error": "error",
     "tools": {
       "title": "Trading Tools — Build Your Professional Dashboard",
       "row": {
@@ -477,35 +477,37 @@
         }
       },
       "reward": {
-        "title1": "新客奖励",
-        "title2": "限时翻倍",
-        "best": "最高拎走",
-        "transfer": "股赠股",
-        "get": "立即领取"
+        "title1": "New Client Bonus",
+        "title2": "Limited-Time Multiplier Offer",
+        "best": "Earn Up to",
+        "transfer": "Stock-for-Stock Reward",
+        "get": "Claim Now"
       },
       "competition": {
-        "title": "加入属于你的交易比赛",
+        "title": "Join Your AFT Trading Competition",
         "rows": {
           "1": {
-            "title": "Classic美分账户周赛",
-            "join": "加入美分周赛"
+            "title": "Classic Cent Weekly Cup",
+            "join": "Join the Cent Account Weekly Challenge"
           },
           "2": {
-            "title": "经典账户月赛",
-            "join": "立即报名经典月赛"
+            "title": "Classic Monthly Cup",
+            "join": "Register Now for the Classic Monthly Challenge"
           },
           "3": {
-            "title": "铂金账户月赛",
-            "join": "解锁铂金挑战"
+            "title": "Platinum Monthly Cup",
+            "join": "Unlock the Platinum Trading Challenge"
           },
           "4": {
-            "title": "VIC 账户尊享大赛",
-            "join": "申请加入 VIC Club"
+            "title": "VIC Elite Championship",
+            "join": "Apply to Join the VIC Club"
           }
         },
-        "week": "每周",
-        "month": "每月",
-        "climate": "每季"
+        "week": "Weekly",
+        "month": "Monthly",
+        "climate": "Quarterly",
+        "pool": "Prize Pool Amount",
+        "period": "Competition Cycle"
       },
       "calendar": {
         "title": "Trade Smarter. No Account Required. Built for Every Trader.",
@@ -1751,121 +1753,121 @@
     "corporation": {
       "about": {
         "banner": {
-          "title": "关于 Asia Future Trading",
-          "prompt": "Born in Asia.  Built for the World.  Refine the Future of Trading.",
-          "desc": "一家以科技与全球流动性高效协作为核心的多资产差价合约经纪商，致力于通过算法驱动的系统、深度流动性与产品创新，为全球交易者持续优化交易体验。"
+          "title": "About Asia Future Trading",
+          "prompt": "Born in Asia. Built for the World. Refine the Future of Trading.",
+          "desc": "Asia Future Trading is a multi-asset CFD broker built on technology, liquidity collaboration, and global connectivity.\nWe focus on delivering an institutional-grade trading experience — combining algorithmic systems, deep liquidity, and continuous product innovation to empower traders worldwide."
         },
         "step": {
           "row": {
             "col1": {
-              "title": "正式启动机构业务",
+              "title": "Launched institutional trading operations",
               "year": "2019"
             },
             "col2": {
-              "title": "布局加密资产管理",
+              "title": "Expanded into digital asset management",
               "year": "2020"
             },
             "col3": {
-              "title": "推出外汇&商品定价服务",
+              "title": "Introduced FX & Commodity pricing services",
               "year": "2021"
             },
             "col4": {
-              "title": "合规框架与全球接入",
+              "title": "Established regulatory framework and global access",
               "year": "2023"
             },
             "col5": {
-              "title": "全球化运营",
+              "title": "Evolving into a global multi-asset brokerage",
               "year": "2024-Now"
             }
           }
         },
         "trust": {
-          "title": "使命，科技驱动信任",
-          "desc": "以“科技驱动信任”为使命，致力于成为全球交易者最值得依赖的合作伙伴。所有账户 0 佣金，0.0点差起。卓越的交易体验，不止于成本与速度，更关乎信任与掌控。",
-          "start": "开始交易"
+          "title": "Our Mission — Technology Builds Trust",
+          "desc": "At Asia Future Trading, our mission is simple — to make technology the foundation of trust.\nWe aim to become the most reliable partner for traders worldwide. With zero commissions and spreads from 0.0, we go beyond cost and speed — delivering confidence, control, and integrity in every trade.",
+          "start": "Start Trading"
         },
         "global": {
-          "title": "全球视野，技术驱动，我们在行动",
+          "title": "Global Vision, Technology Driven — We’re in Action",
           "row": {
             "col1": {
-              "title": "来自 10+ 国家",
-              "desc": "全球策略员与工程师组成核心团队"
+              "title": "From 10+ Countries",
+              "desc": "A core team of global strategists and engineers united by innovation."
             },
             "col2": {
-              "title": "7个地区运营中心",
-              "desc": "悉尼、香港、新加坡、吉隆坡等战略节点"
+              "title": "7 Regional Operation Centers",
+              "desc": "Strategic hubs across Sydney, Hong Kong, Singapore, Kuala Lumpur, and more."
             },
             "col3": {
-              "title": "覆盖全球 37+ 市场",
-              "desc": "多地区合规接入，产品矩阵持续扩展"
+              "title": "Covering 37+ Global Markets",
+              "desc": "Multi-region regulatory access with an ever-expanding product matrix."
             },
             "col4": {
-              "title": "$100 亿+ 月执行交易量",
-              "desc": "外汇、加密货币、指数与商品等CFD产品"
+              "title": "$10 B+ Monthly Trading Volume",
+              "desc": "Spanning Forex, Cryptocurrency, Indices, and Commodity CFDs."
             }
           }
         },
         "values": {
-          "title": "我们的价值观，引领我们每一次技术迭代与服务进化",
-          "desc": "从平台设计、交易执行到客户服务，每一次改进背后，我们始终遵循以下核心信念。",
+          "title": "Our Core Values — Guiding Every Step of Innovation and Service Evolution",
+          "desc": "From platform design and trade execution to client support, every improvement we make is driven by a set of core principles that define who we are.",
           "row": {
             "col1": {
-              "title": "科技驱动",
-              "desc": "我们坚信交易体验的优化来自持续的系统升级。无论是订单撮合还是风控建模，我们都以科技作为底层驱动力。"
+              "title": "Technology Driven",
+              "desc": "We believe that every improvement in trading experience begins with technology. From order matching to risk modeling, continuous system innovation powers everything we build."
             },
             "col2": {
-              "title": "全球透明",
-              "desc": "从点差到执行数据，从成本结构到撮合逻辑，Asia Future Trading 重视每一位用户对“清晰可见”的信任期待。"
+              "title": "Radical Transparency",
+              "desc": "From spreads to execution data, from cost structures to matching logic — Asia Future Trading values clarity as the foundation of trust."
             },
             "col3": {
-              "title": "专业制胜",
-              "desc": "我们将机构级产品设计带入每一位交易者的账户体验。从报价深度到延迟控制，每一个细节皆对标专业市场。"
+              "title": "Professional Excellence",
+              "desc": "We bring institutional-grade design to every trader’s experience. From market depth to latency control, every detail meets professional standards."
             },
             "col4": {
-              "title": "本地信赖，全球链接",
-              "desc": "我们从亚洲出发，连接世界流动性并服务全球交易者。通过本地化服务与全球化平台融合，打造用户熟悉而强大的交易合作体验。"
+              "title": "Local Trust, Global Connectivity",
+              "desc": "Born in Asia, built for the world — we connect global liquidity with localized service to create a trading experience that feels both familiar and world-class."
             }
           }
         },
         "compliance": {
-          "title": "全球信任，从合规开始",
+          "title": "Global Trust Begins with Compliance",
           "row": {
             "col1": {
-              "title": "即将成为新加坡交易所（SGX）成员",
-              "desc": "我们致力于提高市场透明度，推动亚洲资本市场健康发展。"
+              "title": "Becoming a Member of SGX (Singapore Exchange) — Coming Soon",
+              "desc": "We are committed to enhancing market transparency and supporting the sustainable development of Asia’s capital markets."
             },
             "col2": {
-              "title1": "澳大利亚 ASIC",
-              "desc1": "作为澳洲本地运营核心之一，Asia Future Trading 目前为 ASIC 授权代表（AR）：编号 001313916",
-              "title2": "英国 FCA",
-              "desc2": "牌照申请稳步推进，合规接入流程已全部完成",
-              "title3": "支持全球业务拓展",
-              "desc3": "针对东南亚、日本、韩国及欧洲等主要市场，已完成支付合规、数据合规与用户接入机制建设",
-              "view": "查看合规资质"
+              "title1": "Australia — ASIC Authorized Representative (AR No. 001313916)",
+              "desc1": "As one of our key operational bases, Asia Future Trading is authorized under the Australian Securities and Investments Commission framework.",
+              "title2": "United Kingdom — FCA Registration in Progress",
+              "desc2": "Our FCA license application is progressing steadily, with all compliance integration processes already completed.",
+              "title3": "Supporting Global Expansion",
+              "desc3": "We have established compliant payment and operational frameworks for major regions — including Southeast Asia, Japan, Korea, and Europe — to enable seamless global service delivery.",
+              "view": "View Regulatory Licenses "
             }
           }
         },
         "articles": {
-          "title": "我们最重视的，不只是交易，还有人与人之间的连接。我们相信，负责任的交易环境，是金融体系可持续演进的基础。",
-          "desc": "Asia Future Trading 相信，值得信赖的金融平台，不仅要提供专业的交易服务，更要成为用户背后的长期伙伴。我们持续投入于 社区运营、教育共建与内容共创，通过连接真实的交易者群体，推动一场有温度、有价值的金融革新。交易之外，我们更关心你是否被理解、是否在成长。",
+          "title": "We value more than trading — we value human connection. ",
+          "desc": "At Asia Future Trading, we believe a responsible trading environment is the foundation of a sustainable financial system. Beyond execution and markets, we’re committed to building a community where traders are understood, supported, and empowered to grow through shared knowledge and genuine connection.",
           "row": {
             "col1": {
-              "title": "全球交易者的陪伴式社区，用长期主义打造",
-              "desc": "帆船积木 · Discord 全球社群、线下见面沙龙、策略分享会、交易挑战赛、KOL 内容共创"
+              "title": "Global Trader Community — Built on Long-Termism",
+              "desc": "SailBrick Discord community, global meetups, strategy workshops, trading challenges, and KOL co-creation — built to connect traders worldwide."
             },
             "col2": {
-              "title": "教育计划 ，交易从理解开始",
-              "desc": "新手学院学习中心、交易灵感洞察、模拟账户训练营、直播课程体系"
+              "title": "Education Initiative — Because Every Trade Begins with Understanding",
+              "desc": "Beginner Learning Hub, AFT Insights, demo trading camps, and live sessions — helping traders grow through real learning and shared insight."
             },
             "col3": {
-              "title": "责任与 ESG 愿景，为了更长远的信任",
-              "desc": "Asia Future Trading 将 ESG（环境、社会与公司治理）理念纳入我们的长期发展路线图中"
+              "title": "Responsibility & ESG Vision — Building Long-Term Trust",
+              "desc": "AFT integrates ESG principles into its long-term growth strategy — advancing a sustainable and responsible trading ecosystem."
             }
           }
         },
         "brief": {
-          "text": "资料概要· 宣传手册",
-          "document": "下载PDF文档"
+          "text": "Company Overview · Brochure",
+          "document": "Download PDF"
         },
         "join": {
           "title": "加入我们，让金融变得更好",

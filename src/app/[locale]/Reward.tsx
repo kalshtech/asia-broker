@@ -29,15 +29,15 @@ const Reward = () => {
                             viewport={{once: true, amount: 0.5}}
                         >
                             <Typography
-                                variant={"h1"}
-                                className={"!text-white !tracking-wide !text-[36px] lg:!text-[68px]"}
+                                variant={"h3"}
+                                className={"!text-white !tracking-wide"}
                             >
                                 {t("title1")}
                             </Typography>
 
                             <Typography
-                                variant={"h1"}
-                                className={"!text-white !tracking-wide mt-2 !text-[36px] lg:!text-[68px]"}
+                                variant={"h3"}
+                                className={"!text-white !tracking-wide mt-2"}
                             >
                                 {t("title2")}
                             </Typography>
@@ -72,10 +72,10 @@ const Reward = () => {
                                         </div>
                                     </div>
                                     <div className={"ml-4 flex flex-col"}>
-                                        <Typography className={"text-white border p-2 rounded-lg"}>
+                                        <Typography variant={"p"} className={"!text-white mt-4 border p-2 rounded-lg"}>
                                             {t("best")}
                                         </Typography>
-                                        <Typography className={"text-white mt-1 text-xl lg:text-2xl"}>
+                                        <Typography variant={"p"} className={"!text-white mt-1"}>
                                             {t("transfer")}
                                         </Typography>
                                     </div>
@@ -114,10 +114,10 @@ const Reward = () => {
                                         </div>
                                     </div>
                                     <div className={"ml-4 flex flex-col"}>
-                                        <Typography className={"border border-black p-2 rounded-lg"}>
+                                        <Typography variant={"p"} className={"border mt-4 border-black p-2 rounded-lg"}>
                                             {t("best")}
                                         </Typography>
-                                        <Typography className={"mt-1 text-xl lg:text-2xl"}>
+                                        <Typography variant={"p"} className={"mt-1"}>
                                             {t("transfer")}
                                         </Typography>
                                     </div>

@@ -39,7 +39,7 @@ const Banner =  () => {
 
                     <Typography
                         variant={"muted"}
-                        className={"font-medium !text-white mt-16 max-w-lg leading-[24px]"}
+                        className={"font-medium !text-white lg:8 mt-16 max-w-lg leading-[24px]"}
                     >
                         {t("desc")}
                     </Typography>

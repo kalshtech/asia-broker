@@ -509,7 +509,9 @@
         },
         "week": "每周",
         "month": "每月",
-        "climate": "每季"
+        "climate": "每季",
+        "pool": "奖池金额",
+        "period": "周期"
       },
       "calendar": {
         "title": "无需开户，掌握关键时刻，把握交易节奏",

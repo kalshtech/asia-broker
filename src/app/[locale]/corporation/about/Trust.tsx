@@ -20,7 +20,7 @@ const Trust = () => {
                         </Typography>
                         <Typography
                             variant={"large"}
-                            className={"font-medium max-w-3xl mt-4"}
+                            className={"font-medium max-w-5xl mt-4"}
                         >
                             {t("desc")}
                         </Typography>
