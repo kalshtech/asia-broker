@@ -36,7 +36,7 @@ const Rank = () => {
         { name: "马丁格老司机", credit: "1654.92%", type: "Classic", operator: t("table.copy") },
         { name: "小账户大梦想", credit: "1580.67%", type: "Classic", operator: t("table.copy") },
         { name: "不懂技术靠直觉", credit: "1463.45%", type: "Classic", operator: t("table.copy") },
-        { name: "每天稳定打卡", credit: "1463.45%", type: "Classic", operator: t("table.copy") },
+        { name: "每天稳定打卡", credit: "1248.45%", type: "Classic", operator: t("table.copy") },
     ];
 
     const twoAry = [
@@ -96,19 +96,19 @@ const Rank = () => {
                         <TabsList className={"bg-[#3B4259] h-10 rounded-full"}>
                             <TabsTrigger
                                 value={"1"}
-                                className={"cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                                className={"cursor-pointer text-white data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
                             >
                                 {t("tabs.1")}
                             </TabsTrigger>
                             <TabsTrigger
                                 value={"2"}
-                                className={"cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                                className={"cursor-pointer text-white data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
                             >
                                 {t("tabs.2")}
                             </TabsTrigger>
                             <TabsTrigger
                                 value={"3"}
-                                className={"cursor-pointer data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                                className={"cursor-pointer text-white data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
                             >
                                 {t("tabs.3")}
                             </TabsTrigger>

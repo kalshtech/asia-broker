@@ -1408,7 +1408,7 @@
           "title": "Future Earn Account — Turn Idle Funds into Active Returns",
           "box": {
             "title": "Exclusive to Platinum & VIC Accounts",
-            "desc": "At Asia Future Trading, we transform idle balances into earning opportunities.\nYour capital doesn’t just sit — it works for you, reducing holding costs and enhancing long-term returns.",
+            "desc": "At Asia Future Trading, we transform idle balances into earning opportunities.Your capital doesn’t just sit — it works for you, reducing holding costs and enhancing long-term returns.",
             "more": "Learn About Future Earn"
           }
         },
@@ -1826,7 +1826,7 @@
             },
             "col3": {
               "title": "Professional Excellence",
-              "desc": "We bring institutional-grade design to every trader’s experience. From market depth to latency control, every detail meets professional standards."
+              "desc": "We bring institutional-grade design to every trader's experience. From market depth to latency control, every detail meets professional standards."
             },
             "col4": {
               "title": "Local Trust, Global Connectivity",
@@ -3075,8 +3075,8 @@
           "desc2": "It’s simple — open an account, start trading, and aim for victory.",
           "review": "Featured Competitions Recap",
           "total": "Total Prize Pool",
-          "progressing": "正在进行",
-          "end": "已结束",
+          "progressing": "Live Now",
+          "end": "Past Competitions\n",
           "current": "Ongoing",
           "past": "Past Competitions",
           "swiper": {
@@ -3216,15 +3216,15 @@
               "desc": "Competition Period: Monday–Friday (UTC)"
             },
             "col2": {
-              "title": "2. Classic Pro Cup | Monthly Challenge",
+              "title": "Classic Pro Cup | Monthly Challenge",
               "desc": "Competition Period: Monthly (UTC)"
             },
             "col3": {
-              "title": "3. Platinum Cup | Monthly Championship",
+              "title": "Platinum Cup | Monthly Championship",
               "desc": "Competition Period: Monthly (UTC)"
             },
             "col4": {
-              "title": "4. VIC Elite Challenge | Institutional Tier",
+              "title": "VIC Elite Challenge | Institutional Tier",
               "desc": "Competition Period: Quarterly (UTC)"
             }
           }
