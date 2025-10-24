@@ -124,7 +124,7 @@ const PackageMenuItem = (props: any) => {
                                 <div className={"w-full p-4 bg-theme-light-bg rounded-lg"}>
                                     <div className={"relative"}>
                                         <img className={"w-full h-full"} src={item.btnImg} alt=""/>
-                                        <Button className={"absolute bottom-4 left-4 m-auto right-4 bg-theme-active hover:bg-theme-active-hover"}>
+                                        <Button className={"absolute bottom-4 left-0 m-auto right-0 max-w-[calc(100%-16px)] bg-theme-active hover:bg-theme-active-hover"}>
                                             <Link
                                                 href={item.btnPath}
                                                 className={"w-full h-full"}
@@ -136,6 +136,7 @@ const PackageMenuItem = (props: any) => {
                                     <div className={"mt-4"}>
                                         <Typography
                                             variant={"muted"}
+                                            className={"text-center"}
                                         >
                                             { item.description }
                                         </Typography>

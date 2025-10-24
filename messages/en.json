@@ -9,7 +9,7 @@
     "futures": "Futures",
     "crypto": "Crypto",
     "code": "symbol",
-    "miniChart": "迷你走势",
+    "miniChart": "Mini Market Trend",
     "price": "Price",
     "close": "Price",
     "high": "High",
@@ -20,7 +20,7 @@
     "marketCap": "marketCap",
     "volume": "Volume",
     "productName": "Product Name",
-    "mockTrade": "模拟交易",
+    "mockTrade": "Demo Trading",
     "transfer": "Deposit Now",
     "all": "All",
     "date": "Date",
@@ -523,12 +523,12 @@
           "download": "Download Report"
         },
         "stars": {
-          "high": "高-3星",
-          "medium": "中-2星",
-          "low": "低-1星",
-          "none": "无关紧要-0星"
+          "high": "High",
+          "medium": "Medium",
+          "low": "Low",
+          "none": "Not Material"
         },
-        "from": "数据来源于：",
+        "from": "Data from:",
         "form": {
           "first-placeholder": "Please input your first name",
           "last-placeholder": "Please input your last name",
@@ -1513,8 +1513,8 @@
       },
       "professional": {
         "banner": {
-          "title1": "Asia Future Trading",
-          "title2": "AFT Insights Centre",
+          "title1": "",
+          "title2": "Insights Centre",
           "desc": "Explore essential guides, strategies, and weekly market perspectives — designed to help you trade smarter. You’re not here to watch the market. You’re here to master it.",
           "placeholder": "Search for strategies, markets, or analysis..."
         },
@@ -1889,7 +1889,7 @@
       },
       "contact": {
         "banner": {
-          "title1": "We’re Here,",
+          "title1": "We're Here,",
           "title2": "Ready to Support Your Every Need",
           "desc": "Asia Future Trading is more than just a trading platform — we’re your partner, your foundation, and your strategic support team.",
           "tips": "From account setup and trading assistance to technical inquiries, our team responds swiftly to provide reliability, trust, and confidence in every trade.",
@@ -3373,8 +3373,8 @@
     "menu": {
       "products": {
         "title": "CFD Products",
-        "description": "专业定价 ，更低交易成本，低点差、低佣金、低借贷利率。",
-        "btn": "探索加密货币",
+        "description": "Institutional pricing. Minimal costs as low as 0.01%. Maximum performance.",
+        "btn": "Explore Crypto",
         "row": {
           "col-1": {
             "title": "CFD Products",
@@ -3408,25 +3408,25 @@
       },
       "platforms": {
         "title": "Platforms",
-        "description": "为专业而生，覆盖所有交易员，从个人到机构",
-        "btn": "立即下载",
+        "description": "Built for professionals — trusted by traders worldwide, from individuals to institutions.",
+        "btn": "Download Now",
         "row": {
           "col-1": {
-            "title": "桌面端",
+            "title": "Desktop",
             "ul": {
               "li1": "MetaTrader 5 (Windows)",
               "li2": "MetaTrader 5 (macOS)"
             }
           },
           "col-2": {
-            "title": "移动端",
+            "title": "Mobile",
             "ul": {
               "li1": "MetaTrader 5 (iOS)",
               "li2": "MetaTrader 5 (Android)"
             }
           },
           "col-3": {
-            "title": "网页端",
+            "title": "Web",
             "ul": {
               "li1": "MetaTrader 5 WebTrader"
             }
@@ -3435,25 +3435,25 @@
       },
       "account": {
         "title": "Accounts",
-        "description": "来自亚洲交易旗舰平台提供的账户，访问全球所有资产列别，六位账户 ID，畅达六万市场产品，还能参与收益增强计划，最大化投资效率。",
-        "btn": "开设铂金账户",
+        "description": "Experience true global access — 60,000+ instruments, transparent pricing, and smarter capital performance.",
+        "btn": "Open a Platinum Account",
         "row": {
           "col-1": {
-            "title": "账户类型",
+            "title": "Account Types",
             "ul": {
               "li1": "Classic Account",
-              "desc1": "最受欢迎、行业领先的标准账户",
+              "desc1": "The most popular and industry-leading standard account.",
               "li2": "Platinum Account",
-              "desc2": "享受低至0-行业最低佣金，访问每一个交易品种",
-              "li3": "机构 VIC 级账户",
-              "desc3": "赋能数字资产时代的机构交易"
+              "desc2": "Enjoy ultra-low commissions — access every trading instrument at institutional rates.",
+              "li3": "VIC Institutional Account",
+              "desc3": "Built for institutional and high-net-worth clients in the digital asset era."
             }
           },
           "col-2": {
-            "title": "简单赚",
+            "title": "Yield Program",
             "ul": {
-              "li1": "简单赚取利息*账户",
-              "desc1": "Asia Future Trading 账户利息新模式，安全无忧稳定赚"
+              "li1": "Future Earn Account",
+              "desc1": "A new way to earn stable, secure interest directly within your AFT trading account."
             }
           },
           "col-3": {
@@ -3466,9 +3466,9 @@
         }
       },
       "beginner": {
-        "title": "CFD 新手学院",
-        "description": "新手必读、操作指南、尽在新手学院，帮助你从新手成为CFD交易大师，轻松交易CFD。立即尝试美分账户，1美金交易英伟达 Share - CFD。",
-        "btn": "前往学习中心",
+        "title": "CFD Academy",
+        "description": "Start your trading journey — just $1 to trade NVIDIA Share-CFD with a Cent Account.",
+        "btn": "Visit Trading Academy",
         "row": {
           "col-1": {
             "title": "基础文章",
@@ -3495,36 +3495,36 @@
             }
           },
           "col-3": {
-            "title": "了解更多",
+            "title": "CFD Beginner Academy",
             "ul": {
-              "li1": "CFD新手学院",
-              "desc1": "全面汇聚新手必读资料和实用交易指南，助您持续进阶。",
-              "li2": "CFD新手文档中心",
-              "desc2": "全面汇聚新手必读资料和实用交易指南，助您持续进阶。"
+              "li1": "Asia Future Trading Academy",
+              "desc1": "Your central hub for essential guides and practical trading tutorials — learn, grow, and trade with confidence.",
+              "li2": "Documentation Hub",
+              "desc2": "Comprehensive learning materials and platform resources designed to help you start strong and continuously improve."
             }
           }
         }
       },
       "inspiration": {
-        "title": "交易灵感",
-        "description": "我们将全球重要经济事件、利率决议、就业数据、通胀发布等宏观信号编入The Asia Future Trading View 财经日历中。专家团队洞察精选撰写技术分析和交易策略建议，帮助投资者更从容应对市场波动并把握每一次的交易机会。",
-        "btn": "参与比赛",
+        "title": "AFT Insights",
+        "description": "Track key global events and expert insights — trade with clarity and precision.",
+        "btn": "Join the Competition",
         "row": {
           "col-1": {
-            "title": "雷达-数据与工具",
-            "desc": "精准工具，锁定交易方向",
+            "title": "Radar & Tools",
+            "desc": "Essential trading tools to navigate markets and capture opportunities.",
             "ul": {
-              "li1": "Asia Future Trading 财经日历",
-              "li2": "费用计算器",
-              "li3": "VPS托管服务",
-              "li4": "市场热力图"
+              "li1": "AFT Economic Calendar",
+              "li2": "Trading Calculator ",
+              "li3": "VPS Hosting Service",
+              "li4": "Market Heatmap"
             }
           },
           "col-2": {
-            "title": "巡航-交易启迪",
-            "desc": "我们专家组的旗舰策略，助力您稳健巡航",
+            "title": "Cruise & Insights",
+            "desc": "Expert insights and flagship strategies to guide your trades with confidence.",
             "ul": {
-              "li1": "AFT Strats专家团队洞察",
+              "li1": "AFT Insights Centre",
               "li2": "大师现场课程",
               "desc2": "了解您所在地区的线下课程与我们和合作伙伴交易学院"
             }
@@ -3543,20 +3543,20 @@
         }
       },
       "support": {
-        "title": "客户支持",
-        "description": "我们致力于成为亚洲第一的专注社群驱动的交易伙伴，六语种服务、多币种交易，真正为亚洲交易者量身打造的差价合约平台",
-        "btn": "加入社区",
+        "title": "Support",
+        "description": "We're building Asia’s leading community-driven CFD platform — with multilingual support and multi-currency access designed for Asian traders.",
+        "btn": "Join the Community",
         "row": {
           "col-1": {
-            "title": "客户支持中心",
+            "title": "Support Centre",
             "ul": {
-              "li1": "点击获取帮助-寻找您的问题答案"
+              "li1": "SailingBrick Community"
             }
           },
           "col-2": {
-            "title": "帆船积木社区｜超10, 000人加入，从开户开始，让交易像搭积木一样简单的全球社区",
+            "title": "SailingBrick Community",
             "ul": {
-              "li1": "Discord社区 -即刻加入"
+              "li1": "Join Discord"
             }
           }
         }
