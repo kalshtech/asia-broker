@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useRouter, usePathname, Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { useLocale, useTranslations } from 'next-intl';
@@ -62,7 +61,7 @@ const PackageMenuItem = (props: any) => {
                 open && (
                     <NavigationMenuContent
                         onMouseLeave={() => setOpen(false)}
-                        className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-26"}
+                        className={"!fixed !w-full !top-[64px] !rounded-none !border-0 shadow !m-0 py-12 px-26"}
                     >
                         <main className={"grid grid-cols-12 gap-4"}>
                             <div className={"col-span-10 grid grid-cols-12 gap-12"}>
@@ -533,13 +532,7 @@ const Navigation = () => {
             <Container orientation={"horizontal"}>
                 <NavigationMenu viewport={false} ref={rootRef as any}>
                     <Link href={`/`} className={"cursor-pointer"}>
-                        <Image src={RenderNavigationLogo()}
-                               alt={"logo"}
-                               className={"w-auto h-auto"}
-                               width={128}
-                               height={40}
-                               priority={true}
-                        />
+                        <img src={RenderNavigationLogo()} alt={"logo"} className={"w-[128px] object-cover"}/>
                     </Link>
                     <NavigationMenuList className={"ml-8 hidden lg:flex"}>
                         {

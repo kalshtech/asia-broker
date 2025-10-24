@@ -41,7 +41,7 @@ const EnglishPricing = () => {
     const listAry = [
         {
             title: "Crypto",
-            path: "/products/forex",
+            path: "/products/crypto",
             children: [
                 { img: "/images/home/crypto-5.svg", label: "Bitcoin" },
                 { img: "/images/home/crypto-6.svg", label: "Ethereum" },
