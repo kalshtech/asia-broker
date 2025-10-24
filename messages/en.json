@@ -3562,36 +3562,36 @@
         }
       },
       "corporation": {
-        "title": "公司",
-        "description": "信任，是我们提供给客户最大的杠杆。从全球流动性直连、透明撮合到合规风控，每一步都为信任而构建。",
-        "btn": "加入我们",
+        "title": "Company",
+        "description": "Trust is our greatest leverage — built on global liquidity, transparent execution, and strict compliance.",
+        "btn": "Join Us",
         "row": {
           "col-1": {
-            "title": "关于我们",
+            "title": "About Us",
             "ul": {
-              "li1": "关于Asia Future Trading",
-              "li2": "招贤纳士",
+              "li1": "About Asia Future Trading",
+              "li2": "Careers",
               "li3": "ESG",
-              "li4": "联系我们",
+              "li4": "Contact Us",
               "li5": "法律文件"
             }
           }
         }
       },
       "doublewin": {
-        "title": "共赢+",
-        "description": "亚洲精英交易者与合作伙伴的首选平台，在全球可信的平台上交易、竞技、共同成长，让您的洞见创造更多成功，助力您成为交易传奇。",
-        "btn": "成为我们的伙伴",
+        "title": "Winwin+",
+        "description": "The preferred platform for Asia’s elite traders and partners — trade, compete, and grow together on a trusted global infrastructure.",
+        "btn": "Join Our Network",
         "row": {
           "col-1": {
-            "title": "共赢+",
+            "title": "The Premier Platform for Global Traders & Partners",
             "ul": {
-              "li1": "交易大赛",
-              "desc1": "每周交易竞技，用 100 美金起步，开启专属美分账户的精彩对决。瓜分百万美金奖池，缔造属于你的交易传奇。",
+              "li1": "Trading Competitions",
+              "desc1": "Compete weekly with just USD 100 to start — join exclusive Cent Account battles and share a multi-million-dollar prize pool.",
               "li2": "跟单社区",
               "desc2": "关注全球顶尖交易员，一键复制他们的交易策略。成为带单交易员，最高可享 30% 跟单分润 + 10% 手续费返佣。",
               "li3": "Funding Program",
-              "desc3": "通过认证成为 Asia Future Trading 旗下自营交易员，我们为你提供所有交易资金。",
+              "desc3": "Get certified as an AFT proprietary trader and receive full funding from Asia Future Trading to scale your performance.",
               "li4": "全球合作伙伴 Affiliate Program",
               "desc4": "赋能行业意见领袖，将专业认知变现。我们的全球合作伙伴计划，助您多年来的积累实现持续收益。"
             }
