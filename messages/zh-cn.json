@@ -1521,6 +1521,8 @@
           "placeholder": "搜索你关心的策略、市场、工具…"
         },
         "brief": {
+          "title": "The Asia Future Trading View",
+          "desc": "Weekly perspectives from AFT and beyond — where data meets insight, and trading meets clarity.",
           "row": {
             "left": {
               "title": "精选 · 每周专家洞察 · The Asia Trading View",
@@ -1535,6 +1537,7 @@
         },
         "articles": {
           "title": "文章分类浏览导航",
+          "desc": "Browse expert perspectives, strategy guides, and market analysis — all in one place.",
           "more": "查看更多"
         }
       },

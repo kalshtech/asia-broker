@@ -104,6 +104,12 @@ const Articles = () => {
                     <Typography variant={"h3"} className={"text-center"}>
                         {t("title")}
                     </Typography>
+                    <Typography
+                        variant={"muted"}
+                        className={"text-center mt-4"}
+                    >
+                        {t("desc")}
+                    </Typography>
                 </motion.div>
                 <div className={""}>
                     <MultiSelectTabs/>

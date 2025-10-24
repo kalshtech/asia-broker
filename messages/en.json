@@ -82,14 +82,14 @@
         "stocks": "Stocks & ETFs",
         "futures": "Futures",
         "energy": "Energy",
-        "beginner": "新手入门",
-        "guide": "操作指南",
-        "strategy": "交易策略",
-        "data": "数据与指标",
-        "weekly": "每周洞察",
-        "macro": "宏观研究",
-        "market": "市场解读",
-        "allocation": "资产配置"
+        "beginner": "Beginner's Guide",
+        "guide": "Platform Tutorials",
+        "strategy": "Trading Strategies",
+        "data": "Data & Indicators",
+        "weekly": "Weekly Insights",
+        "macro": "Macro Research",
+        "market": "Market Commentary",
+        "allocation": "Asset Allocation"
       }
     },
     "profession": {
@@ -1512,17 +1512,19 @@
       "professional": {
         "banner": {
           "title1": "Asia Future Trading",
-          "title2": "交易灵感学院",
-          "desc": "新手必读、操作指南、进阶策略、每周专家洞察尽在Asia Future Trading灵感学院。 你不是来观望市场的。你是来掌控它的。",
-          "placeholder": "搜索你关心的策略、市场、工具…"
+          "title2": "AFT Insights Centre",
+          "desc": "Explore essential guides, strategies, and weekly market perspectives — designed to help you trade smarter. You’re not here to watch the market. You’re here to master it.",
+          "placeholder": "Search for strategies, markets, or analysis..."
         },
         "brief": {
+          "title": "The Asia Future Trading View",
+          "desc": "Weekly perspectives from AFT and beyond — where data meets insight, and trading meets clarity.",
           "row": {
             "left": {
               "title": "精选 · 每周专家洞察 · The Asia Trading View",
-              "prospect": "2025年衍生品展望",
+              "prospect": "Macro Outlook 2025: Inflation, Yields, and Cross-Asset Flows",
               "prospect-desc": "Tracks outstanding notional and gross market value of OTC ...",
-              "download": "立即下载"
+              "download": "Read Full Report"
             },
             "right": {
               "title": "往期精选文章列表"
@@ -1530,8 +1532,9 @@
           }
         },
         "articles": {
-          "title": "文章分类浏览导航",
-          "more": "查看更多"
+          "title": "Explore Insights by Category",
+          "desc": "Browse expert perspectives, strategy guides, and market analysis — all in one place.",
+          "more": "Load More"
         }
       },
       "calendar": {
