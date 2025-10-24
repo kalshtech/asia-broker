@@ -22,15 +22,15 @@
     "productName": "Product Name",
     "mockTrade": "模拟交易",
     "transfer": "Deposit Now",
-    "all": "全部",
-    "date": "日期",
-    "star": "星级",
-    "counties": "国家",
-    "time": "时间",
-    "event": "事件",
-    "prev": "前值",
-    "estimate": "预测值",
-    "currency": "币种",
+    "all": "All",
+    "date": "Date",
+    "star": "Rating",
+    "counties": "Country",
+    "time": "Date",
+    "event": "Event",
+    "prev": "Previous",
+    "estimate": "Estimate",
+    "currency": "Currency",
     "view": "View",
     "bid": "Bid",
     "ask": "Ask",
@@ -528,10 +528,10 @@
         },
         "from": "数据来源于：",
         "form": {
-          "first-placeholder": "请输入您的姓",
-          "last-placeholder": "请输入您的名",
-          "country-placeholder": "请输入国家",
-          "email-placeholder": "请输入您的邮箱",
+          "first-placeholder": "Please input your first name",
+          "last-placeholder": "Please input your last name",
+          "country-placeholder": "Please input your country",
+          "email-placeholder": "Please input your email address",
           "subscribe": "立即免费订阅，交易巡航工具"
         }
       }
@@ -1482,13 +1482,13 @@
           "form-name": "Please fill out the form below. Our team will contact you shortly to confirm your account details and configure your VPS node.",
           "form": {
             "first": "First Name",
-            "first-placeholder": "请输入你的名字",
+            "first-placeholder": "Please input your first name",
             "last": "Last Name",
-            "last-placeholder": "请输入你的姓氏",
+            "last-placeholder": "Please input your last name",
             "email": "Registered Email",
-            "email-placeholder": "请输入你的邮箱",
+            "email-placeholder": "Please input your email address",
             "phone": "Phone Number",
-            "phone-placeholder": "请输入你的手机",
+            "phone-placeholder": "Please input your phone number",
             "submit": "Apply"
           }
         },
@@ -1527,7 +1527,7 @@
               "download": "Read Full Report"
             },
             "right": {
-              "title": "往期精选文章列表"
+              "title": "Past Reports & Articles"
             }
           }
         },

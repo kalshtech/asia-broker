@@ -105,7 +105,7 @@ const Articles = () => {
                         {t("title")}
                     </Typography>
                     <Typography
-                        variant={"muted"}
+                        variant={"p"}
                         className={"text-center mt-4"}
                     >
                         {t("desc")}

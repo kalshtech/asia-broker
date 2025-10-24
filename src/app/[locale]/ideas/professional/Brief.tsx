@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import Container from "@/components/Container";
 import { motion, Variants} from "framer-motion";
+import { Link } from "@/i18n/navigation"
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -17,6 +18,16 @@ const fadeInUp: Variants = {
 
 export default function Brief() {
     const t = useTranslations("Pages.ideas.professional.brief");
+
+
+    const articlesAry = [
+        { label: "US CPI Data & Fed Reactions — Week 41, 2025", link: "/articles/beginner/common-currency", },
+        { label: "Crypto Volatility & Macro Flow: What’s Next for BTC", link: "/articles/beginner/common-currency", },
+        { label: "Asian Equities Rebound: Momentum or Mirage?", link: "/articles/beginner/common-currency", },
+        { label: "FX Weekly: Yen Intervention and Global Dollar Strength", link: "/articles/beginner/common-currency", },
+        { label: "Commodities Recap: Gold & Oil Divergence Explained", link: "/articles/beginner/common-currency", },
+    ];
+
     return (
         <section className={"py-4 lg:py-30"}>
             <motion.div
@@ -33,7 +44,7 @@ export default function Brief() {
                 </Typography>
 
                 <Typography
-                    variant={"muted"}
+                    variant={"p"}
                     className={"text-center mx-auto mt-6 max-w-3xl"}
                 >
                     {t("desc")}
@@ -50,7 +61,6 @@ export default function Brief() {
                                 src={"/images/ideas/financial-report.png"}
                                 alt={"financial-report"}
                                 title={"financial-report"}
-                                className={"mt-4"}
                             />
                             <div className={"mt-6 flex"}>
                                 <div>
@@ -76,46 +86,28 @@ export default function Brief() {
                     </div>
                     <div className={"col-span-12 lg:col-span-6"}>
                         <div>
-                            {/*<Typography variant={"h4"}>*/}
-                            {/*    {t("row.right.title")}*/}
-                            {/*</Typography>*/}
+                            <Typography
+                                variant={"h4"}
+                            >
+                                {t("row.right.title")}
+                            </Typography>
 
                             <ul>
-                                <li className={"my-5"}>
-                                    <Typography variant={"large"}>
-                                        {t("row.right.title")}
-                                    </Typography>
-                                </li>
-                                <li className={"my-5"}>
-                                    <Typography variant={"large"}>
-                                        {t("row.right.title")}
-                                    </Typography>
-                                </li>
-                                <li className={"my-5"}>
-                                    <Typography variant={"large"}>
-                                        {t("row.right.title")}
-                                    </Typography>
-                                </li>
-                                <li className={"my-5"}>
-                                    <Typography variant={"large"}>
-                                        {t("row.right.title")}
-                                    </Typography>
-                                </li>
-                                <li className={"my-5"}>
-                                    <Typography variant={"large"}>
-                                        {t("row.right.title")}
-                                    </Typography>
-                                </li>
-                                <li className={"my-4"}>
-                                    <Typography variant={"large"}>
-                                        {t("row.right.title")}
-                                    </Typography>
-                                </li>
-                                <li className={"my-4"}>
-                                    <Typography variant={"large"}>
-                                        {t("row.right.title")}
-                                    </Typography>
-                                </li>
+                                {
+                                    articlesAry.map((d, i) => (
+                                        <li className={"my-6"} key={i}>
+                                            <Link href={d.link} className={"underline flex items-center font-semibold"}>
+                                                <span className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
+                                                <Typography
+                                                    variant={"p"}
+                                                    className={"ml-2"}
+                                                >
+                                                    {d.label}
+                                                </Typography>
+                                            </Link>
+                                        </li>
+                                    ))
+                                }
                             </ul>
                         </div>
                     </div>
