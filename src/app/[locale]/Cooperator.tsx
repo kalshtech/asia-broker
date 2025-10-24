@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import * as React from "react";
 import {motion, Variants} from "framer-motion";
 import {Typography} from "@/components/ui/typography";
 import {useTranslations} from "next-intl";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
+import { Star } from "lucide-react"
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -17,6 +18,7 @@ const fadeInUp: Variants = {
 }
 
 const Cooperator = () => {
+    const [rating, setRating] = React.useState(4)
     const t = useTranslations("Pages.home.cooperator");
     const [ tabActive, setTabActive ] = React.useState("trader");
     return (
@@ -35,7 +37,23 @@ const Cooperator = () => {
                         {t("desc")}
                     </Typography>
                 </motion.div>
-                <div className={"mt-16"}>
+                <div className={"mx-auto mt-6"}>
+                    <img src="/images/home/Trustpilot.png" className={"w-30"} alt=""/>
+                    <div className={"mt-2"}>
+                        <div className="flex space-x-1">
+                            {[1, 2, 3, 4, 5].map((i) => (
+                                <Star
+                                    key={i}
+                                    onClick={() => setRating(i)}
+                                    className={`h-6 w-6 cursor-pointer transition-colors ${
+                                        i <= rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                                    }`}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                <div className={"mt-10"}>
                     <div className={"flex flex-col items-center"}>
                         <Tabs defaultValue="trader"
                               onValueChange={(value) => setTabActive(value)}

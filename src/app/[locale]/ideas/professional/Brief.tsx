@@ -22,10 +22,10 @@ export default function Brief() {
 
     const articlesAry = [
         { label: "US CPI Data & Fed Reactions — Week 41, 2025", link: "/articles/beginner/common-currency", },
-        { label: "Crypto Volatility & Macro Flow: What’s Next for BTC", link: "/articles/beginner/common-currency", },
-        { label: "Asian Equities Rebound: Momentum or Mirage?", link: "/articles/beginner/common-currency", },
-        { label: "FX Weekly: Yen Intervention and Global Dollar Strength", link: "/articles/beginner/common-currency", },
-        { label: "Commodities Recap: Gold & Oil Divergence Explained", link: "/articles/beginner/common-currency", },
+        { label: "Crypto Volatility & Macro Flow: What’s Next for BTC", link: "/articles/beginner/common-mistakes", },
+        { label: "Asian Equities Rebound: Momentum or Mirage?", link: "/articles/beginner/explain-rates", },
+        { label: "FX Weekly: Yen Intervention and Global Dollar Strength", link: "/articles/beginner/forex-basic-analysis", },
+        { label: "Commodities Recap: Gold & Oil Divergence Explained", link: "/articles/beginner/forex-fundamental-knowledge", },
     ];
 
     return (

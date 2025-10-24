@@ -81,6 +81,9 @@ const HeatCharts = () => {
                     <Typography variant={"h3"} className={"text-center"}>
                         {t("forex-title")}
                     </Typography>
+                    <Typography variant={"h4"} className={"text-center mt-4"}>
+                        {t("forex-midst")}
+                    </Typography>
                     <Typography variant={"p"} className={"text-center mx-auto mt-6"}>
                         {t("forex-desc")}
                     </Typography>

@@ -1634,9 +1634,11 @@
       "marketsmap": {
         "charts": {
           "stock-title": "股票热力图",
+          "stock-midst": "See how global equities and sectors are performing in real time.",
           "stock-desc": "快速了解全球主要股票的涨跌分布与行业表现。通过热力图，您可以直观查看哪些板块领涨、哪些个股回调，为日内操作与板块轮动策略提供参考依据。",
           "stock-explore": "探索股票",
           "forex-title": "外汇热力图",
+          "forex-midst": "Quickly visualize the strength and weakness of major currency pairs.",
           "forex-desc": "快速洞察不同货币对的强弱变化，识别市场趋势动能。通过热力图，您可以一目了然地查看哪些货币走强，哪些正在回调，为日内交易与趋势策略提供直观支持",
           "forex-explore": "探索外汇",
           "crypto-title": "数字货币热力图",

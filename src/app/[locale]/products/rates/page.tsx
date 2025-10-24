@@ -70,7 +70,7 @@ export default async function Page() {
                 description={t("banner.desc")}
                 imageUrl={"bg-[url(/images/products/rates-banner.png)]"}
                 midst={t("banner.midst")}
-                colorTheme={"dark"}
+                colorTheme={"light"}
             />
             <Row
                 ary={rowAry}

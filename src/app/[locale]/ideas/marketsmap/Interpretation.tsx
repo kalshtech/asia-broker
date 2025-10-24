@@ -51,7 +51,7 @@ const Interpretation = () => {
                                     {t("row.col1.enter")}
                                 </Button>
 
-                                <Typography variant={"muted"} className={"!text-white mt-2"}>
+                                <Typography variant={"muted"} className={"!text-white mt-4"}>
                                     {t("row.col1.enter-prompt")}
                                 </Typography>
                             </div>
