@@ -452,11 +452,11 @@ const Navigation = () => {
                                 //     desc: t("menu.doublewin.row.col-1.ul.desc2"),
                                 //     path: "/"
                                 // },
-                                {
-                                    label: t("menu.doublewin.row.col-1.ul.li3"),
-                                    desc: t("menu.doublewin.row.col-1.ul.desc3"),
-                                    path: "/mutual/funding"
-                                },
+                                // {
+                                //     label: t("menu.doublewin.row.col-1.ul.li3"),
+                                //     desc: t("menu.doublewin.row.col-1.ul.desc3"),
+                                //     path: "/mutual/funding"
+                                // },
                                 // {
                                 //     label: t("menu.doublewin.row.col-1.ul.li4"),
                                 //     desc: t("menu.doublewin.row.col-1.ul.desc4"),

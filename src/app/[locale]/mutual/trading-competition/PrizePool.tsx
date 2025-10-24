@@ -50,8 +50,7 @@ const PrizePool = () => {
                         {
                             ary.map((item, index) => (
                                 <div className={"col-span-12 lg:col-span-3"} key={index}>
-                                    <div
-                                        className={"rounded-2xl pb-10 flex flex-col items-center justify-center specially-card"}>
+                                    <div className={"rounded-2xl pb-10 px-4 h-full flex flex-col items-center justify-center specially-card"}>
                                         <img src={item.imageUrl} className={"w-[140px] h-[140px]"} alt=""/>
                                         <Typography
                                             variant={"h5"}

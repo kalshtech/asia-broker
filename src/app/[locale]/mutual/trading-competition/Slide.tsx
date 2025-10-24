@@ -34,7 +34,7 @@ const SwiperSlideItem = (props: ItemProps) => {
                     </Button>
                 </div>
                 <Typography
-                    variant={"h5"}
+                    variant={"h6"}
                     className={"font-medium mt-auto !text-white"}
                 >
                     { props.title }
@@ -42,7 +42,7 @@ const SwiperSlideItem = (props: ItemProps) => {
 
                 <Typography
                     variant={"muted"}
-                    className={"font-medium mt-4 !text-white"}
+                    className={"mt-2 !text-white"}
                 >
                     { props.desc }
                 </Typography>
@@ -130,11 +130,22 @@ const Slide = () => {
                                         </Button>
                                     </div>
                                     <Typography
-                                        variant={"h5"}
+                                        variant={"h6"}
                                         className={"font-medium mt-auto !text-white"}
                                     >
                                         {t("swiper.item1.title")}
                                     </Typography>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"mt-2 !text-white"}
+                                    >
+                                        {t("swiper.item1.desc")}
+                                    </Typography>
+                                    <div className={"mt-4 flex justify-center"}>
+                                        <Button className={"max-w-max bg-theme-active hover:bg-theme-active-hover"}>
+                                            {t("swiper.item1.btn")}
+                                        </Button>
+                                    </div>
                                 </div>
                                 <div className={"mt-6 text-center"}>
                                     <Typography

@@ -43,6 +43,11 @@
     "search-articles": "Search Articles",
     "no-articles": "No Articles",
     "error": "error",
+    "rankOfMonthly-1": "Champion",
+    "rankOfMonthly-2": "Runner-up",
+    "rankOfMonthly-3": "Third Place",
+    "rankOfMonthly-4": "Fourth Place",
+    "rankOfMonthly-5": "Fifth Place",
     "tools": {
       "title": "Trading Tools — Build Your Professional Dashboard",
       "row": {
@@ -3057,193 +3062,203 @@
     "mutual": {
       "trading-competition": {
         "banner": {
-          "title": "全球千万美金交易大赛 · Asia Future Trading",
-          "desc1": "与全球顶尖交易者同场竞技，赢取荣耀与丰厚奖励",
-          "desc2": "无论你是新手、高手还是量化团队，都能找到属于你的舞台",
+          "title": "Global $10 Million Trading Championship · Asia Future Trading",
+          "desc1": "Compete with the world’s top traders and earn both glory and rewards.",
+          "desc2": "Whether you’re a beginner, a professional, or a quantitative team — there’s a stage for you",
           "blueprint": {
-            "title": "免费复制冠军策略，开启实战之旅",
-            "desc": "共赴悉尼颁奖盛典，见证交易传奇诞生"
+            "title": "Copy champion strategies for free and start your live trading journey.",
+            "desc": "Join us at the Sydney Awards Ceremony and witness the rise of new trading legends."
           }
         },
         "slide": {
-          "desc1": "通过一家值得信赖的全球经纪商，向市场证明你的实力",
-          "desc2": "参赛规则很简单：创建账户，开始交易，并努力获胜！",
-          "review": "赛事精选回顾",
-          "total": "总奖池",
-          "progressing": "进行中",
+          "desc1": "Prove your skill with a trusted global broker.",
+          "desc2": "It’s simple — open an account, start trading, and aim for victory.",
+          "review": "Featured Competitions Recap",
+          "total": "Total Prize Pool",
+          "progressing": "正在进行",
           "end": "已结束",
-          "current": "当前热门比赛",
-          "past": "往期比赛",
+          "current": "Ongoing",
+          "past": "Past Competitions",
           "swiper": {
             "item1": {
-              "title": "AFT 铂金账户速赢挑战赛"
+              "title": "AFT Platinum Quick-Win Challenge",
+              "desc": "Compete for rapid rewards under real trading conditions — open to all Platinum Account holders.",
+              "btn": "Join Now"
             },
             "item2": {
-              "title": "AFT 铂金账户速赢挑战赛",
-              "desc": "冠军收益率达125%，已发奖 $ 100,0000"
+              "title": "AFT Global Demo Challenge · Season 2",
+              "desc": "Prizes: $1,000,000. A global demo event showcasing top trading skill and precision."
             },
             "item3": {
-              "title": "VIC 专属私享赛",
-              "desc": "私人定制奖金计划"
+              "title": "VIC Private Invitational",
+              "desc": "Exclusive black-and-gold competition for institutional traders with custom rewards."
             },
             "item4": {
-              "title": "AFT 新年争霸赛",
-              "desc": "2025新年活动，送福袋"
+              "title": "AFT New Year Clash",
+              "desc": "Festive 2025 challenge featuring seasonal bonuses and special rewards."
             },
             "item5": {
-              "title": "AFT 夏季交易之王",
-              "desc": "高手对决，美股冲榜争霸"
+              "title": "AFT Summer Trading King",
+              "desc": "Summer tournament inspired by U.S. equities — traders battled for the top spot."
             }
           },
-          "prompt": "AFT全球千万美金交易大赛，汇聚全球顶级交易者。我们将帆船哲学融入金融赛场，传承悉尼卓越，热爱的力量。当然，您是操作巨星，还是交易新秀，都可以免费复制冠军收益。大赛优胜者将受邀前去悉尼参加颁奖典礼，见证交易赛场与航海的传奇。"
+          "prompt": "AFT Global $10 Million Trading Championship unites top traders worldwide. Inspired by the spirit of sailing and Sydney’s legacy of excellence, every participant can freely copy champion strategies and compete for glory. Winners will be invited to Sydney for the Grand Awards Ceremony — where trading meets passion, and legends set sail."
         },
         "professional": {
-          "title": "专业赛场，需要专业平台",
-          "desc": "从全球流动性到专业工具，从策略支持到联盟奖励，Asia Future Trading 为交易者打造全面的竞赛环境与长期支持",
-          "understand": "了解平台",
-          "trade": "立即开始交易",
+          "title": "Professional Competitions Demand Professional Platforms",
+          "desc": "From global liquidity to advanced tools, from strategy support to partner rewards — Asia Future Trading builds a complete, transparent, and professional environment for every competitor.",
+          "understand": "Explore the Platform",
+          "trade": "Start Trading",
           "row": {
             "col1": {
-              "title": "全球直连流动性",
-              "desc": "与 XTX Markets、Finato 等全球顶级流动性提供商深度合作，报价稳定，订单快速执行"
+              "title": "Global Institutional Liquidity",
+              "desc": "Direct access to top-tier providers such as XTX Markets and Finato, ensuring stable pricing and lightning-fast execution."
             },
             "col2": {
-              "title": "Metatrader 5 交易工具",
-              "desc": "支持 MT5 桌面端 / 移动端 / 网页端，覆盖全球 90% 专业交易员的首选工具"
+              "title": "MetaTrader 5 Trading Tools",
+              "desc": "Available on desktop, mobile, and web, MT5 remains the preferred choice of over 90% of professional traders worldwide."
             },
             "col3": {
-              "title": "支持一键复制跟单",
-              "desc": "支持一键复制功能，每个人都可以复制传奇"
+              "title": "One-Click Copy Trading",
+              "desc": "Copy top-performing strategies instantly — trade like the champions."
             },
             "col4": {
-              "title": "联盟计划返佣高达 70%",
-              "desc": "业内领先返佣计划，多种联盟合作机制助力你的长期收益"
+              "title": "Affiliate Rewards up to 70%",
+              "desc": "Industry-leading rebate programs and multi-level partnerships that fuel your long-term growth."
             },
             "col5": {
-              "title": "策略自由和透明",
-              "desc": "不限制交易策略类型，比赛规则公开透明"
+              "title": "Freedom & Transparency",
+              "desc": "No restrictions on trading strategies — all competition rules are open and transparent."
             },
             "col6": {
-              "title": "杠杆高达1:2000",
-              "desc": "满足多种交易风格和资金管理需求"
+              "title": "Leverage up to 1:2000",
+              "desc": "Built for every trading style and capital management approach."
             }
           }
         },
         "prize-pool": {
-          "title": "Asia Future Trading 全球交易大赛全年奖金池，激励全球交易者突破自我",
-          "desc": "月度、季度均有排行榜与终极对决，多资产、多市场，多重挑战，总有一场属于你",
-          "total": "总奖金：",
+          "title": "Asia Future Trading Global Trading Championships. A Year-Round Prize Pool Inspiring Traders Worldwide",
+          "desc": "Monthly and quarterly leaderboards. Multi-asset, multi-market, and multi-challenge — there’s always a competition built for you.",
+          "total": "Total Prize Pool：",
           "row": {
             "col1": {
-              "title": "贵金属市场奖池",
+              "title": "Precious Metals Division",
               "number": "$50,000,000",
-              "desc": "覆盖核心资产：黄金（XAU/USD）"
+              "desc": "Core Asset: Gold (XAU/USD)"
             },
             "col2": {
-              "title": "加密货币市场奖池",
+              "title": "Crypto Assets Division",
               "number": "$10,000,000",
-              "desc": "涵盖 BTC、ETH、SOL、XRP 等热门加密资产"
+              "desc": "Covering BTC, ETH, SOL, XRP, and more leading digital assets."
             },
             "col3": {
-              "title": "外汇市场奖池",
+              "title": "Forex Division",
               "number": "$30,000,000",
-              "desc": "涵盖主流货币对与交叉盘（EUR/USD、GBP/JPY 等）"
+              "desc": "Featuring major and cross pairs such as EUR/USD and GBP/JPY."
             },
             "col4": {
-              "title": "股票市场奖池",
+              "title": "Stocks Division",
               "number": "$5,000,000",
-              "desc": "涵盖美股热门 CFD：特斯拉、英伟达、苹果等"
+              "desc": "Includes top U.S. stock CFDs — Tesla, NVIDIA, Apple, and more."
             }
           }
         },
         "reward": {
-          "title": "全球奖金池，赢取最终荣誉与丰厚奖励",
-          "desc1": "全球交易者逐鹿赛场，最终前 10 名将载入交易名人榜，赢得至高荣耀与奖励",
-          "desc2": "交易名人榜头号荣耀，受邀出席悉尼盛典"
+          "title": "Trade. Compete. Rise.",
+          "desc1": "The top 10 global traders will earn eternal recognition in the AFT Hall of Fame and share in exclusive rewards.",
+          "desc2": "The Hall of Fame Champion will be invited to Sydney to attend the official AFT Global Awards Ceremony."
         },
         "celebrity": {
-          "title": "全球交易名人榜",
-          "desc": "当前排名领先选手将进入“交易名人榜”，接受全球交易者复制！",
-          "growth": "累积增长率：",
-          "copy": "复制人数：",
-          "type": "帐户类型：",
-          "quickly": "一键复制交易",
-          "prompt": "复制交易功能需使用与被复制交易者相同账户类型（如 Classic / Platinum / VIC）。如需了解复制机制详情，请联系您的客户经理或咨询 Asia Future Trading 客户支持中心。"
+          "title": "Global Trading Hall of Fame",
+          "desc": "Top-performing traders will be featured in the Global Hall of Fame,\nwhere their strategies can be viewed — and even copied — by traders worldwide.",
+          "growth": "Total Return (%):",
+          "copy": "Copiers:",
+          "type": "Account Type:",
+          "quickly": "Copy Trade",
+          "prompt": "Copy-trading requires using the same account type as the trader being copied (e.g., Classic, Platinum, or VIC). For details about the copy mechanism, please contact your account manager or reach out to the Asia Future Trading Support Center."
         },
         "rank": {
-          "title": "不同赛道，同样荣耀",
-          "desc": "新锐、专家与明星交易者组别，谁将登顶荣耀巅峰？",
+          "title": "From Rising Stars to Elites — Every Trader’s Journey to Glory.",
+          "desc": "Rising Stars, Experts, and Elites — who will rise to the top of the trading world?",
           "tabs": {
-            "1": "新锐组",
-            "2": "专家组",
-            "3": "明星组"
+            "1": "Rising Star",
+            "2": "Expert",
+            "3": "Elite"
           },
           "prompt": {
-            "1": "适用于入金 ≤ $5,000 的经典账户参赛者",
-            "2": "适用于入金 $5,000–$50,000 的铂金账户参赛者",
-            "3": "适用于入金 ≥ $50,000 的VIC账户参赛者"
+            "1": "For Classic Account participants with deposits ≤ $5,000 USD",
+            "2": "For Platinum Account participants with deposits between $5,000 – $50,000 USD",
+            "3": "For VIC Account participants with deposits ≥ $50,000 USD"
           },
           "table": {
-            "rank": "排名",
-            "name": "昵称",
-            "credit": "累计收益率",
-            "type": "账户类型",
-            "operator": "操作",
-            "copy": "复制交易"
+            "rank": "Rank",
+            "name": "Nickname",
+            "credit": "Total Return",
+            "type": "Account Type",
+            "operator": "Action",
+            "copy": "Copy Trade"
           }
         },
         "entry": {
-          "title": "交易赛季进度条与账户赛道入口",
-          "desc": "每个账户，都有属于你的竞技赛道",
+          "title": "Trading Season Progress & Account Track Entry",
+          "desc": "Every account has its own path to glory.",
           "card": {
             "btns": {
-              "crypto": "加入加密货币比赛",
-              "forex": "加入外汇市场比赛",
-              "metals": "加入贵金属市场比赛",
-              "stocks": "加入股票市场比赛"
+              "crypto": "Join Crypto Competition",
+              "forex": "Join Forex Competition",
+              "metals": "Join Metals Competition",
+              "stocks": "Join Stocks Competition"
             },
-            "weeklyPool": "每周奖金池",
-            "monthlyPool": "每月奖金池",
+            "weeklyPool": "Prize Pool: Week",
+            "monthlyPool": "Prize Pool: Month",
             "col1": {
-              "title": "美分账户周赛",
-              "desc": "比赛周期：本周一至周五（UTC 时间）"
+              "title": "Classic Mini Cup | Cent Account Weekly",
+              "desc": "Competition Period: Monday–Friday (UTC)"
             },
             "col2": {
-              "title": "经典账户月赛",
-              "desc": "比赛周期：为期 12 个月（UTC 时间）"
+              "title": "2. Classic Pro Cup | Monthly Challenge",
+              "desc": "Competition Period: Monthly (UTC)"
             },
             "col3": {
-              "title": "铂金账户月赛",
-              "desc": "比赛周期：为期 12 个月（UTC 时间）"
+              "title": "3. Platinum Cup | Monthly Championship",
+              "desc": "Competition Period: Monthly (UTC)"
             },
             "col4": {
-              "title": "VIC 账户尊享赛",
-              "desc": "比赛周期：为期 12 个月（UTC 时间）"
+              "title": "4. VIC Elite Challenge | Institutional Tier",
+              "desc": "Competition Period: Quarterly (UTC)"
             }
           }
         },
         "decision": {
-          "title": "赋能每一次交易决策",
-          "desc1": "无论你是新手交易者还是资深操盘手，我们为你提供全方位的学习与策略支持。",
-          "desc2": "从实战经验的专家团队，到每日更新的交易灵感，再到实时互动的网络研讨会，我们致力于帮助你在市场中做出更明智的决策。",
+          "title": "Empowering Every Trading Decision",
+          "desc1": "Whether you’re a beginner or a seasoned trader, we provide comprehensive learning and strategy support.",
+          "desc2": "From expert-led insights and daily trading signals to live webinars and interactive discussions, AFT is dedicated to helping you make smarter decisions in every market move.",
           "row": {
             "col1": {
-              "title": "你将获得",
+              "title": "What You'll Gain",
               "desc": "CTA策略信号支持：由量化分析团队每日发布核心交易提示交易灵感洞察学院：涵盖趋势解析、资产专题、策略构建等模块每周网络研讨会（Webinar）：与分析师实时互动，掌握最新行情社交媒体跟进：每日市场观点、平台资讯不间断更新",
-              "register": "立即开户",
-              "jump": "进入洞察学院"
+              "register": "Open an Account",
+              "jump": "Enter AFT Insights",
+              "1-title": "CTA Strategy Signals",
+              "1-desc": "Daily trading alerts and insights curated by our quantitative analysis team.",
+              "2-title": "AFT Insight Academy",
+              "2-desc": "Covering trend analysis, asset breakdowns, and strategy-building modules.",
+              "3-title": "Weekly Webinars",
+              "3-desc": "Live sessions with analysts to stay ahead of market trends.",
+              "4-title": "Social Media Updates",
+              "4-desc": "Daily perspectives and platform news — always up to date."
             },
             "col2": {
-              "title": "成功的交易并非来自直觉，而是来自系统性思维与信息优势。",
-              "desc": "——— 每周网络研讨会 ｜AFT 策略顾问 Jerry Zhang"
+              "title": "Successful trading isn’t about intuition — it’s about structured thinking and information advantage.",
+              "desc": "— Jerry Zhang, AFT Strategy Advisor (Weekly Webinar Host)"
             }
           }
         },
         "conquer": {
-          "title": "征服市场，主宰赛场",
-          "desc": "AFT 全球千万美金交易大赛，等待真正的操盘者登场。下一位站上领奖台的，也许就是你。",
-          "register": "开启账户",
-          "trade": "立即交易"
+          "title": "Conquer the Market. Command the Arena.",
+          "desc": "Join the AFT Global Trading Championship with a multi-million-dollar prize pool. The next trader to stand on the winner’s podium could be you.",
+          "register": "Open an Account",
+          "trade": "Start Trading"
         }
       },
       "funding": {

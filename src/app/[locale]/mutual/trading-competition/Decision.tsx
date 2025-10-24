@@ -1,7 +1,7 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
@@ -16,6 +16,15 @@ const fadeInUp: Variants = {
 
 const Decision = () => {
     const t = useTranslations("Pages.mutual.trading-competition.decision");
+    const locale = useLocale();
+    const isEn = locale  === "en";
+
+    const ary = [
+        { title: t("row.col1.1-title"), desc: t("row.col1.1-desc") },
+        { title: t("row.col1.2-title"), desc: t("row.col1.2-desc") },
+        { title: t("row.col1.3-title"), desc: t("row.col1.3-desc") },
+        { title: t("row.col1.4-title"), desc: t("row.col1.4-desc") },
+    ];
 
     return (
         <section className={"py-8 lg:py-30"}>
@@ -56,25 +65,55 @@ const Decision = () => {
                                 >
                                     {t("row.col1.title")}
                                 </Typography>
-                                <Typography
-                                    variant={"muted"}
-                                    className={"font-medium !text-white mt-6 leading-[32px]"}
-                                >
-                                    {t("row.col1.desc")}
-                                </Typography>
+                                {
+                                    isEn ? (
+                                        <div>
+                                            <ul>
+                                                {
+                                                    ary.map((d, i) => (
+                                                        <li key={i} className={"flex items-start mt-4"}>
+                                                            <span
+                                                                className={"block w-[5px] h-[5px] mt-2 bg-white rounded-full"}></span>
+                                                            <div className={"ml-2"}>
+                                                                <Typography variant={"p"}
+                                                                            className={"!text-white font-medium"}>
+                                                                    {d.title}
+                                                                </Typography>
+                                                                <Typography variant={"muted"}
+                                                                            className={"!text-white mt-1"}>
+                                                                    {d.desc}
+                                                                </Typography>
+                                                            </div>
+                                                        </li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        </div>
+                                    ) : (
+                                        <>
+                                            <Typography
+                                                variant={"muted"}
+                                                className={"font-medium !text-white mt-6 leading-[32px]"}
+                                            >
+                                                {t("row.col1.desc")}
+                                            </Typography>
+                                        </>
+                                    )
+                                }
                             </div>
                             <div className={"mt-16"}>
                                 <Button className={"bg-white text-theme-active hover:bg-white"}>
-                                    { t("row.col1.register") }
+                                    {t("row.col1.register")}
                                 </Button>
                                 <Button className={"ml-4 border text-white bg-transparent hover:bg-transparent"}>
-                                    { t("row.col1.jump") }
+                                    {t("row.col1.jump")}
                                 </Button>
                             </div>
                         </div>
                     </div>
                     <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={"bg-[url(/images/mutual/competition-decision-portrait.png)] bg-cover bg-center overflow h-full"}>
+                        <div
+                            className={"bg-[url(/images/mutual/competition-decision-portrait.png)] bg-cover bg-center overflow h-full"}>
                             <div className={"px-8 lg:px-30 pt-20 lg:pt-60 pb-8 lg:pb-20"}>
                                <div>
                                    <Typography

@@ -16,7 +16,7 @@ const fadeInUp: Variants = {
 const Banner = () => {
     const t = useTranslations("Pages.mutual.trading-competition.banner");
     return (
-        <section className={"bg-[url(/images/mutual/competition-banner.png)] bg-center bg-cover relative h-120 lg:h-[632px] py-8 px-4 lg:py-30"}>
+        <section className={"bg-[url(/images/mutual/competition-banner.png)] bg-center bg-cover relative h-164 lg:h-[632px] py-8 px-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -43,8 +43,7 @@ const Banner = () => {
                         {t("desc2")}
                     </Typography>
                 </motion.div>
-                <div
-                    className={"bg-[url(/images/mutual/competition-blueprint.png)] flex flex-col justify-center items-center bg-center bg-cover h-40 absolute bottom-0 left-0 right-0 mx-auto w-[calc(100%-640px)]"}>
+                <div className={"bg-[url(/images/mutual/competition-blueprint.png)]  flex flex-col justify-center items-center bg-center bg-cover h-40 absolute bottom-0 left-0 right-0 mx-auto w-0 md:w-[calc(100%-240px)] lg:w-[calc(100%-360px)] xl:w-[calc(100%-640px)]"}>
                     <motion.div
                         variants={fadeInUp}
                         initial="hidden"
@@ -53,20 +52,20 @@ const Banner = () => {
                     >
                         <Typography
                             variant={"h3"}
-                            className={"text-center !text-white"}
+                            className={"text-center !text-white md:!text-[24px]"}
                         >
                             {t("blueprint.title")}
                         </Typography>
                         <div className={"grid grid-cols-12 gap-8 mt-4"}>
-                            <div className={"col-span-4 mt-4"}>
+                            <div className={"col-span-12 md:col-span-3 lg:col-span-3 xl:col-span-2 lg:mt-4"}>
                                 <div className={"border border-solid [border-image:linear-gradient(270deg,rgba(255,255,255,1),rgba(255,255,255,0))_1_1]"}/>
                             </div>
-                            <div className={"col-span-4"}>
-                                <Typography className={"font-medium text-center !text-white"}>
+                            <div className={"col-span-12  md:col-span-6 lg:col-span-6 xl:col-span-8"}>
+                                <Typography variant={"p"} className={"font-medium text-center !text-white"}>
                                     {t("blueprint.desc")}
                                 </Typography>
                             </div>
-                            <div className={"col-span-4 mt-4"}>
+                            <div className={"col-span-12  md:col-span-3 lg:col-span-3 xl:col-span-2 lg:mt-4"}>
                                 <div
                                     className={"border border-solid [border-image:linear-gradient(270deg,rgba(255,255,255,0),rgba(255,255,255,1))_1_1]"}/>
                             </div>

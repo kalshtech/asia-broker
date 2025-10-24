@@ -19,6 +19,7 @@ const fadeInUp: Variants = {
 
 const Celebrity = () => {
     const t = useTranslations("Pages.mutual.trading-competition.celebrity");
+    const CommonT = useTranslations("Common");
 
     const ary = [
         { avatar: "/images/mutual/competition-avatar1.png", name: "TitanQuantX", growth: "49.0306", copy: "1,289", type: "VIC", position: "1" },
@@ -46,15 +47,15 @@ const Celebrity = () => {
     const renderPositionText = (position: string) => {
         switch (position) {
             case "1":
-                return "本月冠军";
+                return CommonT("rankOfMonthly-1");
             case "2":
-                return "本月亚军";
+                return CommonT("rankOfMonthly-2");
             case "3":
-                return "本月季军";
+                return CommonT("rankOfMonthly-3");
             case "4":
-                return "本月第四";
+                return CommonT("rankOfMonthly-4");
             case "5":
-                return "本月第五";
+                return CommonT("rankOfMonthly-5");
         }
     }
 
@@ -167,7 +168,7 @@ const Celebrity = () => {
                 <div className={"mt-4 lg:mt-16"}>
                     <Typography
                         variant={"muted"}
-                        className={"!text-white max-w-2xl"}
+                        className={"!text-white max-w-2xl text-center mx-auto"}
                     >
                         {t("prompt")}
                     </Typography>

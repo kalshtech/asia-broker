@@ -160,7 +160,7 @@ const Entry = () => {
                             desc={t("card.col2.desc")}
                             btnAry={btnAry}
                             poolText={t("card.monthlyPool")}
-                            number={"$20,000"}
+                            number={"$50,000"}
                             type={"monthly"}
                         />
                     </div>
@@ -170,7 +170,7 @@ const Entry = () => {
                             desc={t("card.col3.desc")}
                             btnAry={btnAry}
                             poolText={t("card.monthlyPool")}
-                            number={"$20,000"}
+                            number={"$500,000"}
                             type={"monthly"}
                         />
                     </div>
@@ -180,7 +180,7 @@ const Entry = () => {
                             desc={t("card.col4.desc")}
                             btnAry={btnAry}
                             poolText={t("card.monthlyPool")}
-                            number={"$20,000"}
+                            number={"$1,000,000"}
                             type={"monthly"}
                         />
                     </div>

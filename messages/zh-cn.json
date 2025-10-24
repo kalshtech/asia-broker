@@ -43,6 +43,11 @@
     "search-articles": "搜索文章",
     "no-articles": "未找到匹配的文章",
     "error": "错误",
+    "rankOfMonthly-1": "本月冠军",
+    "rankOfMonthly-2": "本月亚军",
+    "rankOfMonthly-3": "本月季军",
+    "rankOfMonthly-4": "本月第四",
+    "rankOfMonthly-5": "本月第五",
     "tools": {
       "title": "交易工具 · 打造你的专业战斗面板",
       "row": {
@@ -3079,7 +3084,9 @@
           "past": "往期比赛",
           "swiper": {
             "item1": {
-              "title": "AFT 铂金账户速赢挑战赛"
+              "title": "AFT 铂金账户速赢挑战赛",
+              "desc": "Compete for rapid rewards under real trading conditions — open to all Platinum Account holders.",
+              "btn": "Join Now"
             },
             "item2": {
               "title": "AFT 铂金账户速赢挑战赛",
@@ -3234,7 +3241,15 @@
               "title": "你将获得",
               "desc": "CTA策略信号支持：由量化分析团队每日发布核心交易提示交易灵感洞察学院：涵盖趋势解析、资产专题、策略构建等模块每周网络研讨会（Webinar）：与分析师实时互动，掌握最新行情社交媒体跟进：每日市场观点、平台资讯不间断更新",
               "register": "立即开户",
-              "jump": "进入洞察学院"
+              "jump": "进入洞察学院",
+              "1-title": "CTA Strategy Signals",
+              "1-desc": "Daily trading alerts and insights curated by our quantitative analysis team.",
+              "2-title": "AFT Insight Academy",
+              "2-desc": "Covering trend analysis, asset breakdowns, and strategy-building modules.",
+              "3-title": "Weekly Webinars",
+              "3-desc": "Live sessions with analysts to stay ahead of market trends.",
+              "4-title": "Social Media Updates",
+              "4-desc": "Daily perspectives and platform news — always up to date."
             },
             "col2": {
               "title": "成功的交易并非来自直觉，而是来自系统性思维与信息优势。",
