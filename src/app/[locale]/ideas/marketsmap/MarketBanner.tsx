@@ -28,7 +28,7 @@ const MarketBanner = () => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"font-medium text-center"}
+                        className={"text-center"}
                     >
                         {t("title")}
                     </Typography>

@@ -96,10 +96,7 @@ const Advertisement = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {t("title")}
                     </Typography>
                 </motion.div>

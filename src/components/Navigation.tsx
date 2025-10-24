@@ -95,6 +95,7 @@ const PackageMenuItem = (props: any) => {
                                                                     href={ul_d.path}
                                                                     className={"text-theme-active hover:text-theme-active-hover"}
                                                                     onClick={() => setOpen(false)}
+                                                                    target={item._blank ? "_blank" : "_self"}
                                                                 >
                                                                     <div className={"flex items-center"}>
                                                                         <Typography variant={"large"}>
@@ -174,6 +175,29 @@ const Navigation = () => {
         { value: "id", label: "Indonesian", country: t("countries.id") },
         { value: "vi", label: "Tiếng Việt", country: t("countries.vi") },
     ];
+
+    const renderHelpCenterLink = () => {
+        switch (locale) {
+            case "en" :
+                return "https://support.afttmarkets.com/hc/en-au";
+            case "zh-cn":
+                return "https://support.afttmarkets.com/hc/zh-sg";
+            case "zh-tw":
+                return "https://support.afttmarkets.com/hc/zh-tw";
+            case "ja":
+                return "https://support.afttmarkets.com/hc/ja-jp";
+            case "th":
+                return "https://support.afttmarkets.com/hc/th";
+            case "ms":
+                return "https://support.afttmarkets.com/hc/ms";
+            case "id":
+                return "https://support.afttmarkets.com/hc/id-id";
+            case "vi":
+                return "https://support.afttmarkets.com/hc/vi";
+            default:
+                return "https://support.afttmarkets.com/hc/en-au";
+        }
+    }
 
     const ary = [
         {
@@ -373,7 +397,7 @@ const Navigation = () => {
                         {
                             title: t("menu.support.row.col-1.title"),
                             ul: [
-                                { label: t("menu.support.row.col-1.ul.li1"), path: "/" }
+                                { label: t("menu.support.row.col-1.ul.li1"), _blank: true, path: renderHelpCenterLink() }
                             ]
                         },
                         {

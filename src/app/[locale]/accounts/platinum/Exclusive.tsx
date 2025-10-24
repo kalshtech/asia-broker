@@ -26,10 +26,7 @@ const Exclusive = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography
-                        variant={"h3"}
-                        className={"text-center"}
-                    >
+                    <Typography variant={"h3"} className={"text-center"}>
                         {t("title")}
                     </Typography>
 
@@ -50,7 +47,7 @@ const Exclusive = () => {
                     >
                         <Typography
                             variant={"h3"}
-                            className={"font-medium !text-white text-center"}
+                            className={"!text-white text-center"}
                         >
                             {t("best.title")}
                         </Typography>
