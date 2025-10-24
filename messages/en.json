@@ -3605,8 +3605,8 @@
   },
   "Footer": {
     "contact": {
-      "title": "联系我们",
-      "phone": "(客服在线支持的联络时间, 周一 至 周五)"
+      "title": "CONTACT",
+      "phone": "(Lines open 24hrs, Monday - Friday)"
     },
     "future": {
       "title": "ASIA FUTURE TRADING HEADQUARTERS",
@@ -3615,24 +3615,24 @@
       "hk": "Office Adddress: A68,3F,Manning Industrial Building,116-118 How Ming St, KwunTong, Hong Kong SAR"
     },
     "login": {
-      "title": "登录",
-      "mt5": "客户门户登陆",
-      "partner": "伙伴门户登录"
+      "title": "LOGIN",
+      "mt5": "MetaTrader Client Portal",
+      "partner": "Partner Portal"
     },
     "join-us": {
-      "title": "加入我们的社群"
+      "title": "Join Our Social Community"
     },
     "risks": {
       "title": "交易类投资有风险",
       "list": {
-        "1-title": "风险披露声明",
-        "1-content": "差价合约（CFD）及其他场外交易（OTC）杠杆产品属于复杂的金融工具，因杠杆效应可能导致资金迅速亏损，存在较高的投资风险。此类产品并不适合所有投资者。根据行业数据，约有 70% 的零售投资者账户在交易差价合约时发生亏损。请您务必确保充分理解差价合约及其他杠杆类产品的运作机制，并在能够承受亏损的前提下进行交易。如有需要，请寻求独立的财务建议。",
-        "2-title": "公司信息与业务范围",
-        "2-content": "本网站由 Asia Future Trading Corporation Limited 运营（注册编号：25606 BC 2019），并已在圣文森特和格林纳丁斯金融服务局（FSA）注册。Asia Future Trading Pty Ltd 在部分市场以以下名称开展业务与品牌推广：“亚洲商市”、“AsiaFutureTrading”及“AFT”。上述名称仅为商号或品牌名称，与注册主体名称无异。Asia Future Trading Corporation Limited 作为场外衍生品（OTC Derivatives）交易服务的执行方，通过本平台为零售客户提供交易指令的执行与市场准入服务。公司不构成金融产品的发行人，亦不为客户提供投资建议或资产管理服务。本公司通过与多个市场流动性提供方及清算渠道对接，为客户交易提供技术及执行支持。所有交易均基于客户自愿指令执行，并可能涉及市场对手方风险。",
-        "3-title": "办公室地址",
+        "1-title": "Risk Warning",
+        "1-content": "OTC leveraged products, including CFDs, are complex instruments that carry a high risk of rapid financial loss due to leverage. Industry data shows approximately 70 % of retail investor accounts lose money when trading CFDs. Please ensure you fully understand how CFDs and other OTC leveraged products work, and only trade with capital you can afford to lose.",
+        "2-title": "Company Information",
+        "2-content": "This website is operated by Asia Future Trading Corporation Limited (Registration Number: 25606 BC 2019).",
+        "3-title": "Registered Office",
         "3-content": "Suite 305, Griffith Corporate Centre, Kingstown, St Vincent and the Grenadines",
-        "4-title": "司法辖区信息",
-        "4-content": "我们不会向部分司法辖区的个人或公司提供任何产品或服务。受限制地区包括但不限于：阿富汗、加拿大、刚果（金）、古巴、塞浦路斯、香港、印度尼西亚、伊朗、马来西亚、朝鲜、新加坡、苏丹、叙利亚、阿拉伯联合酋长国、美国和也门。来自上述地区的访问者应自行确保其在本网站上的行为符合其所属国家或地区的适用法律法规，特别是在进行任何投资决定前务必审慎评估合规性。我们保留随时变更、修改或终止本公司产品与服务的权利，不另行通知。"
+        "4-title": "Jurisdictional Information",
+        "4-content": "The information on this site is not directed at residents of the United States and is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation. We do not provide services to individuals or companies in certain jurisdictions, including but not limited to Afghanistan, Canada, Congo (Kinshasa), Cuba, Cyprus, Hong Kong, Indonesia, Iran, Malaysia, North Korea, Singapore, Sudan, Syria, the United Arab Emirates, the United States, and Yemen. Visitors from these regions should ensure that any decision to invest in our services complies with the laws and regulations of their country or jurisdiction. We reserve the right to change, modify, or discontinue our products and services at any time."
       }
     }
   },
