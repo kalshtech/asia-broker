@@ -472,7 +472,7 @@
         },
         "trader": {
           "title": "Maximize Your Returns with the Industry’s Leading Profit Split",
-          "desc": "Unlock high-performance infrastructure, raw pricing, and customized payout schemes. Whether you’re trading independently or managing a following — we reduce your cost so you keep more of your alpha.",
+          "desc": "Unlock high-performance infrastructure, raw pricing, and customized payout schemes. Whether you're trading independently or managing a following — we reduce your cost so you keep more of your alpha.",
           "btn": "Learn More"
         },
         "partners": {
@@ -1379,7 +1379,7 @@
             "col1": {
               "title": "Partner directly with top-tier liquidity providers through institutional-grade execution systems.",
               "desc": "Experience Institutional Precision",
-              "prompt1": "Whether you’re a day trader, arbitrage strategist, or long-term investor, you’ll experience the same execution quality trusted by global financial institutions.",
+              "prompt1": "Whether you're a day trader, arbitrage strategist, or long-term investor, you’ll experience the same execution quality trusted by global financial institutions.",
               "prompt2": "This is the foundation behind our 0 Commission + Lightning Execution — where institutional liquidity meets every trader.",
               "ul": {
                 "li1": "Tighter Spreads — True market pricing sourced from deep liquidity pools.",
@@ -1436,7 +1436,7 @@
           "ul": {
             "li1": {
               "title": "Are all Asia Future Trading accounts truly zero-commission?",
-              "desc": "Yes. Whether you’re using a Classic, Platinum, or VIC account, all instruments are commission-free — no platform or execution fees applied."
+              "desc": "Yes. Whether you're using a Classic, Platinum, or VIC account, all instruments are commission-free — no platform or execution fees applied."
             },
             "li2": {
               "title": "Are overnight swaps waived for all products?",
@@ -1663,7 +1663,7 @@
                 "li2": "Cryptocurrencies: Compare multi-asset movements and capture short-term rotations.",
                 "li3": "Stocks & ETFs: Spot sector leaders, laggards, and rotation patterns."
               },
-              "prompt": "Whether you’re a day trader or multi-asset strategist, heatmaps give you a clear global view of market dynamics — enhancing your awareness and decision-making speed.",
+              "prompt": "Whether you're a day trader or multi-asset strategist, heatmaps give you a clear global view of market dynamics — enhancing your awareness and decision-making speed.",
               "enter": "Explore AFT Insights",
               "enter-prompt": "Gain deeper market perspectives and strategic insights"
             }
@@ -2448,7 +2448,7 @@
           "ul": {
             "li1": {
               "title": "Who is the Classic Account designed for?",
-              "desc": "Almost everyone! Whether you’re a beginner, an experienced trader, or testing lightweight strategies, the Classic Account provides a stable and flexible trading environment for all levels."
+              "desc": "Almost everyone! Whether you're a beginner, an experienced trader, or testing lightweight strategies, the Classic Account provides a stable and flexible trading environment for all levels."
             },
             "li2": {
               "title": "Can I upgrade from a Cent Account to a USD Account?",
@@ -2524,7 +2524,7 @@
         },
         "environment": {
           "title": "Lightning-Fast VPS Environment for MetaTrader 5",
-          "desc": "Asia Future Trading provides global low-latency VPS servers, purpose-built for high-frequency and EA trading. Whether you’re in Asia, Europe, or the Americas, connect directly to MT5 via VPS for millisecond-level execution and unmatched trading stability.",
+          "desc": "Asia Future Trading provides global low-latency VPS servers, purpose-built for high-frequency and EA trading. Whether you're in Asia, Europe, or the Americas, connect directly to MT5 via VPS for millisecond-level execution and unmatched trading stability.",
           "more": "Learn More About VPS Services",
           "download": "Download MetaTrader 5"
         },
@@ -3064,7 +3064,7 @@
         "banner": {
           "title": "Global $10 Million Trading Championship · Asia Future Trading",
           "desc1": "Compete with the world’s top traders and earn both glory and rewards.",
-          "desc2": "Whether you’re a beginner, a professional, or a quantitative team — there’s a stage for you",
+          "desc2": "Whether you're a beginner, a professional, or a quantitative team — there’s a stage for you",
           "blueprint": {
             "title": "Copy champion strategies for free and start your live trading journey.",
             "desc": "Join us at the Sydney Awards Ceremony and witness the rise of new trading legends."
@@ -3076,7 +3076,7 @@
           "review": "Featured Competitions Recap",
           "total": "Total Prize Pool",
           "progressing": "Live Now",
-          "end": "Past Competitions\n",
+          "end": "Past Competitions",
           "current": "Ongoing",
           "past": "Past Competitions",
           "swiper": {
@@ -3231,7 +3231,7 @@
         },
         "decision": {
           "title": "Empowering Every Trading Decision",
-          "desc1": "Whether you’re a beginner or a seasoned trader, we provide comprehensive learning and strategy support.",
+          "desc1": "Whether you're a beginner or a seasoned trader, we provide comprehensive learning and strategy support.",
           "desc2": "From expert-led insights and daily trading signals to live webinars and interactive discussions, AFT is dedicated to helping you make smarter decisions in every market move.",
           "row": {
             "col1": {
