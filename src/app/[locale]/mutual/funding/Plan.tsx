@@ -46,7 +46,7 @@ export default function Plan() {
                     </Typography>
                     <Typography
                         variant={"muted"}
-                        className={"text-center mx-auto mt-4 !text-white"}
+                        className={"text-center mx-auto mt-4 max-w-5xl !text-white"}
                     >
                         {t("desc")}
                     </Typography>

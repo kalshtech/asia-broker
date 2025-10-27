@@ -52,7 +52,7 @@ export default function Vision() {
                     </div>
                     <Typography
                         variant={"muted"}
-                        className={"text-center mx-auto mt-6 !text-white"}
+                        className={"text-center max-w-3xl mx-auto mt-6 !text-white"}
                     >
                         {t("desc")}
                     </Typography>

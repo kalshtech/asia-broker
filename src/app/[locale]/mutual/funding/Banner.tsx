@@ -27,42 +27,40 @@ const Banner = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <div className={"max-w-5xl mx-auto flex-col justify-center flex"}>
-                        <Typography
-                            variant={"h1"}
-                            className={"text-center !text-white"}
-                        >
-                            {t("title")}
-                        </Typography>
+                    <Typography
+                        variant={"h1"}
+                        className={"text-center !text-white"}
+                    >
+                        {t("title")}
+                    </Typography>
+                    <Typography
+                        variant={"muted"}
+                        className={"font-medium text-center mt-4 lg:mt-10 !text-white"}
+                    >
+                        {t("desc")}
+                    </Typography>
+
+                    <Typography
+                        variant={"h4"}
+                        className={"font-medium text-center max-w-5xl mx-auto mt-4 lg:mt-10 !text-white"}
+                    >
+                        {t("midst")}
+                    </Typography>
+
+                    <div className={"mt-8 lg:mt-16 flex justify-center"}>
+                        <RegisterBtn/>
+                        <Button
+                            className={"ml-8 border bg-transparent hover:bg-transparent"}>
+                            {t("ticker")}
+                        </Button>
+                    </div>
+                    <div>
                         <Typography
                             variant={"muted"}
-                            className={"font-medium text-right mt-4 lg:mt-10 !text-white"}
+                            className={"font-medium text-center !text-xs max-w-3xl mx-auto mt-6 !text-[#999999]"}
                         >
-                            {t("desc")}
+                            {t("prompt")}
                         </Typography>
-
-                        <Typography
-                            variant={"h4"}
-                            className={"font-medium text-center mt-4 lg:mt-10 !text-white"}
-                        >
-                            {t("midst")}
-                        </Typography>
-
-                        <div className={"mt-8 lg:mt-16 flex justify-center"}>
-                            <RegisterBtn/>
-                            <Button
-                                className={"ml-8 border bg-transparent hover:bg-transparent"}>
-                                {t("ticker")}
-                            </Button>
-                        </div>
-                        <div>
-                            <Typography
-                                variant={"muted"}
-                                className={"font-medium text-center !text-xs mt-6 !text-[#999999]"}
-                            >
-                                {t("prompt")}
-                            </Typography>
-                        </div>
                     </div>
                 </motion.div>
             </Container>

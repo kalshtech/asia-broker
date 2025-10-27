@@ -3264,44 +3264,44 @@
       "funding": {
         "banner": {
           "title": "Asia Future Trading Funding Program",
-          "desc": "—— 为卓越交易员提供成长计划",
-          "midst": "开启自营交易之路，助力全球交易者放大实力 覆盖外汇、期货与加密资产，多资产支持，实时利润分成",
-          "ticker": "购买门票",
-          "prompt": "购买门票后将赠送三个月的个人铂金账户，个人铂金账户与参与项目的账户为独立账户。"
+          "desc": "— A Growth Path for Exceptional Traders",
+          "midst": "Start your proprietary trading journey and amplify your performance. Trade across Forex, Futures, and Crypto Assets with multi-asset access and real-time profit sharing.",
+          "ticker": "Get Your Ticket",
+          "prompt": "Upon purchasing a ticket, you’ll receive a complimentary 3-month Platinum Account.The Platinum Account operates independently from your Funding Program trading account."
         },
         "vision": {
           "title1": "Our Vision:",
           "title2": "1 Million Funded Traders",
-          "desc": "通过 Asia Future Trading Funding Program，全球优秀交易者已获得资金支持与利润分成。无论你是新锐交易员还是资深策略师，都能在这里找到属于你的舞台。",
-          "join": "立即加入 Funding Program",
+          "desc": "Through the Asia Future Trading Funding Program, top traders worldwide have gained access to capital and real profit sharing. Whether you’re an emerging talent or a seasoned strategist, this is your stage to shine.",
+          "join": "Get Funded Now",
           "prompt": "示例金额与用户仅作演示用途，实际分成情况以 Funding Program 实际规则为准。"
         },
         "plan": {
-          "title": "什么是 Funding Program 自营交易员成长计划？",
-          "midst": "Asia Future Trading Funding Program 不只是一次交易挑战，而是一条 完整的职业成长路径",
-          "desc": "挑战→验证→获得资金→利润分成→成为机构级认证交易员",
+          "title": "What Is the AFT Funding Program?",
+          "midst": "Asia Your Path to Becoming a Certified Proprietary Trader",
+          "desc": "The Asia Future Trading Funding Program isn’t just a trading challenge — it's a complete career growth journey. Challenge → Verification → Capital Allocation → Profit Sharing → Institutional Recognition",
           "row": {
-            "title": "成长路径四步",
+            "title": "The 4 Stages of Growth",
             "col1": {
-              "title": "选择挑战计划",
-              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+              "title": "Choose Your Challenge",
+              "desc": "Select the challenge plan that fits your trading style to demonstrate skill and risk discipline."
             },
             "col2": {
-              "title": "选择挑战计划",
-              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+              "title": "Complete the Evaluation Phase",
+              "desc": "Trade within a simulated environment and achieve the set performance targets, proving consistency and discipline."
             },
             "col3": {
-              "title": "选择挑战计划",
-              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+              "title": "Enjoy Real-Time Profit Sharing",
+              "desc": "Once verified, receive instant profit splits — no lock-up periods, no delays, full flexibility."
             },
             "col4": {
-              "title": "选择挑战计划",
-              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+              "title": "Become a Certified Institutional Trader",
+              "desc": "Join the Asia Future Trading certified copy-trading network, gain access to long-term funding, higher commissions,and scale your success to institutional levels."
             }
           }
         },
         "challenge": {
-          "title": "选择你的挑战 —— Become an Asia Future Trading Trader",
+          "title": "Choose Your Challenge — Become an Asia Future Trading Trader",
           "desc": "Asia Future Trading Funding Program 不只是一次交易挑战，而是一条 完整的职业成长路径",
           "row": {
             "col1": {
@@ -3309,75 +3309,75 @@
             },
             "col2": {
               "title": "账户摘要",
-              "buy": "立即购买挑战",
-              "more": "了解更多规则",
-              "desc1": "从 $198 开始你的百万美金交易席位？",
-              "desc2": "购买任何挑战计划，即可获赠：",
-              "desc3": "个人交易账户铂金账户权限 3 个月",
-              "desc4": "（铂金账户专属：更低点差、Future Earn 增强利息机制、更多特权）"
+              "buy": "Buy Challenge Now",
+              "more": "View Rules",
+              "desc1": "Start your journey to a $1 Million trading seat from just $198.",
+              "desc2": "Purchase any challenge",
+              "desc3": "Receive 3 months of complimentary Platinum Account access",
+              "desc4": "(Platinum exclusive: lower spreads, Future Earn yield enhancement, and premium benefits.*)"
             }
           }
         },
         "withdrawal": {
-          "title": "即时提现，真实收益",
-          "challenge": "开始你的挑战",
+          "title": "Instant Withdrawals, Real Profits",
+          "challenge": "Start Your Challenge",
           "row": {
             "col1": {
-              "title": "利润随时分成",
-              "desc": "无锁定周期，你一旦盈利即可立即申请分成。"
+              "title": "Real-Time Profit Sharing",
+              "desc": "No lock-up periods — withdraw your profits anytime once you’ve earned them."
             },
             "col2": {
-              "title": "快速处理",
-              "desc": "出金请求 24 小时内受理，加密货币与本地支付最快可在 1–15 分钟到账。"
+              "title": "Fast Processing",
+              "desc": "Withdrawal requests are processed within 24 hours. Crypto and local payments can arrive as fast as 1–15 minutes."
             },
             "col3": {
-              "title": "全球支持",
-              "desc": "支持 USDT / USDC / BTC / ETH 及国际电汇，多种渠道安全合规。"
+              "title": "Global Support",
+              "desc": "Supports USDT / USDC / BTC / ETH and international bank transfers — secure, compliant, and globally accessible."
             }
           }
         },
         "advantages": {
-          "title": "三大核心优势",
-          "prompt": "想进一步了解 Asia Future Trading 的交易技术与流动性优势？",
-          "more": "了解平台",
+          "title": "Why Traders Trust the Asia Future Trading Funding Program Three Core Advantages",
+          "prompt": "Want to learn more about AFT's technology and liquidity infrastructure?",
+          "more": "Explore Platform",
           "row": {
             "col1": {
-              "title": "杠杆最高 1:100",
-              "desc": "资金管理灵活，适配不同风格与策略需求。"
+              "title": "Leverage up to 1:100",
+              "desc": "Flexible capital management tailored to diverse trading styles and risk strategies."
             },
             "col2": {
-              "title": "xPrimeX 报价桥驱动",
-              "desc": "提供机构级订单执行速度与稳定性，毫秒级撮合。"
+              "title": "Powered by xPrimeX Bridge",
+              "desc": "Experience institutional-grade execution speed and stability — orders matched within milliseconds."
             },
             "col3": {
-              "title": "全球流动性支持",
-              "desc": "深度连接 XTX、LMAX、Finalto 等一线流动性提供商，报价透明，市场深度真实可见。"
+              "title": "Global Liquidity Network",
+              "desc": "Deep connections with XTX, LMAX, and Finalto ensure transparent pricing and genuine market depth."
             }
           }
         },
         "qa": {
-          "join": "立即加入 Funding Program",
-          "view": "查看挑战规则",
+          "join": "Join Funding Program",
+          "view": "View Challenge Rules",
           "ul": {
             "li1": {
-              "title": "这是真实资金账户还是模拟账户？",
-              "desc": "挑战阶段使用的是模拟账户，但所有价格数据与执行逻辑均来自真实流动性环境（xPrimeX 报价桥）。通过挑战后，你将获得 资金分成账户 并成为认证跟单交易员，利润结算真实有效，且支持提现。"
+              "title": "Is this a real or simulated account?",
+              "desc": "The challenge phase uses a simulated account, but all pricing and execution logic are connected to real liquidity through the xPrimeX bridge. Once you pass the challenge, you’ll receive a Funded Account as a certified copy-trader — with real profit sharing and withdrawals enabled."
             },
             "li2": {
-              "title": "分成什么时候到账？",
-              "desc": "Funding Program 采用 15 天利润分成周期。账户一旦有盈利，即可在每个结算周期内申请分成，收益将按 15 天为单位发放。"
+              "title": "When will profits be distributed?",
+              "desc": "The Funding Program follows a 15-day profit-sharing cycle.Once your account is profitable, you can request payouts within each cycle, and all earnings are settled every 15 days."
             },
             "li3": {
-              "title": "挑战费用能退吗？",
-              "desc": "挑战费用不可退。但 只要加入 Funding Program，即可额外获赠个人铂金账户 3 个月使用权（独立于挑战账户）。"
+              "title": "Is the challenge fee refundable?",
+              "desc": "The fee is non-refundable. However, all participants receive 3 months of complimentary Platinum Account access, independent of the challenge account."
             },
             "li4": {
-              "title": "最大杠杆是多少？",
-              "desc": "Funding Program 资金账户杠杆最高 1:100；个人独立交易账户杠杆最高可达 1:2000。"
+              "title": "What's the maximum leverage?",
+              "desc": "Funded accounts offer up to 1:100 leverage, while personal trading accounts can reach 1:2000 leverage."
             },
             "li5": {
-              "title": "我可以同时参加多个挑战吗？",
-              "desc": "可以。你可同时购买多个挑战，用于分散不同策略的测试与执行。"
+              "title": "Can I join multiple challenges at the same time?",
+              "desc": "Yes. You may purchase and run multiple challenges simultaneously to test or diversify your trading strategies."
             }
           }
         }
