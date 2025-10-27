@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const ProfessionalTools = () => {
     const t = useTranslations("Pages.platform.professionalTools");
     return (
-        <section className={"bg-[url(/images/platform/professional-tools-background.png)] bg-cover bg-center h-96 lg:h-[532px] py-4 lg:py-30"}>
+        <section className={"bg-[url(/images/platform/professional-tools-background.png)] bg-cover bg-center h-124 lg:h-[532px] py-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -31,8 +31,8 @@ const ProfessionalTools = () => {
                 </motion.div>
                 <div className={"mt-16"}>
                     <div className={"grid grid-cols-12"}>
-                        <div className={"col-span-6"}>
-                            <div className={"border-r border-b border-[#51586F] py-6 px-4"}>
+                        <div className={"col-span-6 h-full"}>
+                            <div className={"border-r border-b h-full border-[#51586F] py-6 px-4"}>
                                 <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
                                     38+
                                 </Typography>
@@ -44,8 +44,8 @@ const ProfessionalTools = () => {
                                 </Typography>
                             </div>
                         </div>
-                        <div className={"col-span-6"}>
-                            <div className={"py-6 px-4 border-b border-[#51586F]"}>
+                        <div className={"col-span-6 h-full"}>
+                            <div className={"py-6 px-4 border-b h-full border-[#51586F]"}>
                                 <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
                                     44+
                                 </Typography>
@@ -59,8 +59,8 @@ const ProfessionalTools = () => {
                         </div>
                     </div>
                     <div className={"grid grid-cols-12"}>
-                        <div className={"col-span-6"}>
-                            <div className={"flex justify-center border-r border-[#51586F] py-6 px-4"}>
+                        <div className={"col-span-6 h-full"}>
+                            <div className={"flex justify-center h-full border-r border-[#51586F] py-6 px-4"}>
                                 <div>
                                     <Typography variant={"h3"} className={"text-center font-medium !text-white"}>
                                         3
