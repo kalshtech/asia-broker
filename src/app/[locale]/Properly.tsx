@@ -225,7 +225,7 @@ const Properly = () => {
                     </Typography>
                 </motion.div>
 
-                <div className={"mt-16"}>
+                <div className={"mt-8 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
                         <div className={"col-span-12 lg:col-span-2"}>
                             <Typography variant={"h4"} className={"font-medium"}>
@@ -238,11 +238,11 @@ const Properly = () => {
                                 {t(`left.${tabActive}.desc`)}
                             </Typography>
 
-                            <div className={"mt-12"}>
+                            <div className={"mt-6 lg:mt-12 flex justify-center lg:justify-start flex-row lg:flex-col"}>
                                 <RegisterBtn/>
                                 {
                                     isEn && (
-                                        <Button className={"mt-4 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
+                                        <Button className={"ml-4 lg:ml-0 lg:mt-4 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
                                             {t("explore")}
                                         </Button>
                                     )

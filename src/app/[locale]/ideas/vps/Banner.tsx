@@ -48,7 +48,7 @@ const Banner = () => {
                     </Typography>
                 </motion.div>
 
-                <div className={"flex justify-center flex-col mt-20"}>
+                <div className={"flex justify-center flex-col mt-8 lg:mt-20"}>
                     <div className={"flex justify-center"}>
                         <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("btnText")}
@@ -57,7 +57,7 @@ const Banner = () => {
 
                     <Typography
                         variant={"muted"}
-                        className={"text-center mt-10 !text-white max-w-3xl mx-auto"}
+                        className={"text-center mt-4 lg:mt-10 !text-white max-w-3xl mx-auto"}
                     >
                         {t("muted")}
                     </Typography>

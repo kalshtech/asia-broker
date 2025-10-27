@@ -44,14 +44,14 @@ const Banner =  () => {
             </section>
             <div className={"bg-theme-active rounded-lg -mt-16 mx-4 p-4 lg:py-10 lg:px-16 2xl:mx-30"}>
                 <Container>
-                    <div className={"flex items-center"}>
+                    <div className={"flex flex-col items-center lg:flex-row"}>
                         <Typography
                             variant={"h5"}
                             className={"font-medium !text-white max-w-5xl "}
                         >
                             {t("tips")}
                         </Typography>
-                        <Button className={"ml-auto text-theme-active bg-white hover:bg-white"}>
+                        <Button className={"mt-4 lg:mt-0 lg:ml-auto text-theme-active bg-white hover:bg-white"}>
                             {t("view")}
                         </Button>
                     </div>

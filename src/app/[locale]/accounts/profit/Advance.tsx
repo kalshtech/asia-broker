@@ -58,7 +58,7 @@ const Advance = () => {
                     <div className={"grid grid-cols-12 gap-8"}>
                         <div className={"col-span-12 lg:col-span-6"}>
                             <div className={"bg-white rounded-xl p-16 h-full"}>
-                                <div className={"h-42"}>
+                                <div className={"h-60 lg:h-42"}>
                                     <Typography
                                         variant={"h5"}
                                         className={"font-medium mt-6 text-center"}
@@ -83,7 +83,7 @@ const Advance = () => {
                         </div>
                         <div className={"col-span-12 lg:col-span-6"}>
                             <div className={"bg-white rounded-xl p-16 h-full"}>
-                                <div className={"h-42"}>
+                                <div className={"h-60 lg:h-42"}>
                                     <Typography
                                         variant={"h5"}
                                         className={"font-medium mt-6 text-center"}

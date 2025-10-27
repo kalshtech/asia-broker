@@ -71,13 +71,13 @@ const Reward = () => {
                                             />
                                         </div>
                                     </div>
-                                    <div className={"ml-4 flex flex-col"}>
-                                        <Typography variant={"p"} className={"!text-white mt-4 border p-2 rounded-lg"}>
+                                    <div className={"ml-2 lg:ml-4 flex flex-col"}>
+                                        <p className={"!text-white text-sm lg:text-base mt-2 lg:mt-4 border p-2 rounded-lg"}>
                                             {t("best")}
-                                        </Typography>
-                                        <Typography variant={"p"} className={"!text-white mt-1"}>
+                                        </p>
+                                        <p className={"!text-white text-[10px] lg:text-base mt-1"}>
                                             {t("transfer")}
-                                        </Typography>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -113,13 +113,13 @@ const Reward = () => {
                                             />
                                         </div>
                                     </div>
-                                    <div className={"ml-4 flex flex-col"}>
-                                        <Typography variant={"p"} className={"border mt-4 border-black p-2 rounded-lg"}>
+                                    <div className={"ml-2 lg:ml-4 flex flex-col"}>
+                                        <p className={"border text-sm lg:text-base mt-2 lg:mt-4 border-black p-2 rounded-lg"}>
                                             {t("best")}
-                                        </Typography>
-                                        <Typography variant={"p"} className={"mt-1"}>
+                                        </p>
+                                        <p className={"mt-1 text-[10px] lg:text-base"}>
                                             {t("transfer")}
-                                        </Typography>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

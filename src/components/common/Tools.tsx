@@ -95,7 +95,7 @@ const Tools = () => {
                                                     <img className={"w-10 h-10"} src={item.image} alt=""/>
                                                 </CardTitle>
                                             </CardHeader>
-                                            <CardContent className={"h-20"}>
+                                            <CardContent className={"h-24 lg:h-20"}>
                                                 <Typography variant={"large"}>
                                                     {item.title}
                                                 </Typography>

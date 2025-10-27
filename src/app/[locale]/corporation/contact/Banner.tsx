@@ -19,7 +19,7 @@ const Banner = () => {
     const t = useTranslations("Pages.corporation.contact.banner");
     return (
         <div>
-            <section className={"bg-[url(/images/corporation/contact-banner.png)] bg-center bg-cover h-[632px] py-4 lg:py-30"}>
+            <section className={"bg-[url(/images/corporation/contact-banner.png)] bg-center bg-cover h-120 lg:h-[632px] py-4 lg:py-30"}>
                 <Container>
                     <motion.div
                         variants={fadeInUp}

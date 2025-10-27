@@ -22,7 +22,7 @@ const Banner = () => {
     const isEn = locale === "en";
 
     return (
-        <section className={"bg-[url(/images/accounts/vic-banner.png)] bg-center bg-cover h-100 lg:h-[632px] py-4 lg:py-30"}>
+        <section className={"bg-[url(/images/accounts/vic-banner.png)] bg-center bg-cover h-120 lg:h-[632px] py-4 lg:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -30,12 +30,10 @@ const Banner = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-
                     <TitleReveal
                         title={t("title")}
                         className={"!text-white !bg-gradient-to-b !from-[#F0F7FF] !to-[#587DAC] !bg-clip-text !text-transparent"}
                     />
-
                     <Typography
                         variant={"h5"}
                         className={"font-medium !text-white mt-10"}
@@ -48,7 +46,6 @@ const Banner = () => {
                     >
                         {t("midst2")}
                     </Typography>
-
                     <div className={"flex items-end mt-4 lg:mt-8"}>
                         {
                             isEn ? (
@@ -90,7 +87,6 @@ const Banner = () => {
                             )
                         }
                     </div>
-
                     {
                         isEn && (
                             <Typography
@@ -101,7 +97,6 @@ const Banner = () => {
                             </Typography>
                         )
                     }
-
                     <div className={"mt-4 lg:mt-16"}>
                         <Button className={"bg-white text-black hover:bg-white"}>
                             {t("register")}

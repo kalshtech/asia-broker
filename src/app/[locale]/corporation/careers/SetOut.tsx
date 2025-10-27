@@ -32,7 +32,7 @@ const SetOut = () => {
                     <Typography variant={"muted"} className={"mt-6 text-center"}>
                         {t("desc")}
                     </Typography>
-                    <div className={"mt-16 flex justify-center items-center"}>
+                    <div className={"mt-4 lg:mt-16 flex justify-center items-center"}>
                         <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                             {t("view")}
                         </Button>

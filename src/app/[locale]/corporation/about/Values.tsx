@@ -40,7 +40,7 @@ const Values = () => {
                 <div className={"mt-16"}>
                     <div className={"grid grid-cols-12"}>
                         <div className={"col-span-6 h-full"}>
-                            <div className={"py-10 px-8 border-r border-b"}>
+                            <div className={"py-10 px-8 border-r h-full border-b"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium"}
@@ -56,7 +56,7 @@ const Values = () => {
                             </div>
                         </div>
                         <div className={"col-span-6 h-full"}>
-                            <div className={"py-10 px-8 border-b"}>
+                            <div className={"py-10 px-8 h-full border-b"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium"}
@@ -72,7 +72,7 @@ const Values = () => {
                             </div>
                         </div>
                         <div className={"col-span-6 h-full"}>
-                            <div className={"py-10 px-8 border-r"}>
+                            <div className={"py-10 px-8 h-full border-r"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium"}
@@ -88,7 +88,7 @@ const Values = () => {
                             </div>
                         </div>
                         <div className={"col-span-6 h-full"}>
-                            <div className={"py-10 px-8"}>
+                            <div className={"py-10 px-8 h-full"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium"}

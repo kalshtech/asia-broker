@@ -64,7 +64,7 @@ const Assets = () => {
                                         <Button
                                             key={index}
                                             className={classnames([
-                                                "bg-transparent border border-white mr-4 last:mr-0 last:mt-4 lg:last:mt-0",
+                                                "bg-transparent border border-white mr-2 lg:mr-4 last:mr-0 last:mt-4 lg:last:mt-0",
                                                 {
                                                     "bg-white hover:!bg-white text-black": tabActive === item.value
                                                 }
