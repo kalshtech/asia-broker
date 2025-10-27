@@ -9,7 +9,7 @@
     "futures": "Futures",
     "crypto": "Crypto",
     "code": "symbol",
-    "miniChart": "迷你走势",
+    "miniChart": "Mini Market Trend",
     "price": "Price",
     "close": "Price",
     "high": "High",
@@ -17,79 +17,84 @@
     "open": "Open",
     "changePercentage": "Change(%)",
     "change": "Change",
-    "marketCap": "市值",
+    "marketCap": "marketCap",
     "volume": "Volume",
     "productName": "Product Name",
-    "mockTrade": "模拟交易",
-    "transfer": "立即入金",
-    "all": "全部",
-    "date": "日期",
-    "star": "星级",
-    "counties": "国家",
-    "time": "时间",
-    "event": "事件",
-    "prev": "前值",
-    "estimate": "预测值",
-    "currency": "币种",
-    "view": "查看",
+    "mockTrade": "Demo Trading",
+    "transfer": "Deposit Now",
+    "all": "All",
+    "date": "Date",
+    "star": "Rating",
+    "counties": "Country",
+    "time": "Date",
+    "event": "Event",
+    "prev": "Previous",
+    "estimate": "Estimate",
+    "currency": "Currency",
+    "view": "View",
     "bid": "Bid",
     "ask": "Ask",
     "qa-title": "Frequently Asked Questions",
-    "join-community": "加入帆船积木社区，专属客户经理为您提供更详细的信息",
-    "join-community-btn": "加入社群",
+    "join-community": "Join the Sailboat Brick Community and let your dedicated account manager provide you with more detailed information.",
+    "join-community-btn": "Join the Community",
     "search": "Search",
     "search-placeholder": "Search the product you want to trade",
-    "searching": "搜索中...",
-    "search-articles": "搜索文章",
-    "no-articles": "未找到匹配的文章",
-    "error": "错误",
+    "searching": "Search...",
+    "search-articles": "Search Articles",
+    "no-articles": "No Articles",
+    "error": "error",
+    "rankOfMonthly-1": "Champion",
+    "rankOfMonthly-2": "Runner-up",
+    "rankOfMonthly-3": "Third Place",
+    "rankOfMonthly-4": "Fourth Place",
+    "rankOfMonthly-5": "Fifth Place",
     "tools": {
-      "title": "交易工具 · 打造你的专业战斗面板",
+      "title": "Trading Tools — Build Your Professional Dashboard",
       "row": {
         "calendar": {
-          "title": "财经日历",
-          "desc": "追踪全球经济事件，掌握行情先机"
+          "title": "Global Economic Calendar",
+          "desc": "Track global economic events and stay ahead of market moves."
         },
         "calculation": {
-          "title": "费用计算器",
-          "desc": "轻松测算点差、佣金与隔夜利息成本"
+          "title": "Trading Calculator",
+          "desc": "Instantly calculate margin and trading costs — plan smarter before every trade."
         },
         "servers": {
-          "title": "VPS托管服务",
-          "desc": "接入高性能云服务器，确保低延迟交易"
+          "title": "VPS Hosting Service",
+          "desc": "Access enterprise-grade cloud servers for seamless, low-latency execution."
         },
         "hot-charts": {
-          "title": "市场热力图",
-          "desc": "一图掌握最热资产波动与涨跌分布"
+          "title": "Market Heatmap",
+          "desc": "Visualize market momentum — see strength and weakness in real time."
         },
         "ideas": {
-          "title": "交易灵感洞察",
-          "desc": "精选策略案例与每周实盘观点，激发交易灵感"
+          "title": "AFT Insights",
+          "desc": "Explore weekly insights, macro trends, and strategy ideas — built to inspire smarter trading."
         }
       }
     },
     "start": {
-      "title": "立即开户，开启全球交易之旅",
-      "desc": "Asia Future Trading 提供全球领先的交易基础设施与资金管理体验，从开户、入金到实盘交易，一切尽在掌握。",
-      "register": "立即开户",
-      "download": "下载 MetaTrader 5"
+      "title": "Your Gateway to Global Markets.",
+      "desc": "Experience world-class trading infrastructure and seamless fund management with Asia Future Trading — giving you full control from account setup to live execution.\nTrade globally, manage funds effortlessly, and access institutional-grade liquidity — all in one platform.",
+      "register": "Open Account",
+      "download": "Download MetaTrader 5"
     },
     "news": {
       "category": {
-        "forex": "外汇",
-        "crypto": "加密货币",
-        "metals": "贵金属",
-        "stocks": "股票 & ETF",
-        "futures": "期货",
-        "energy": "能源",
-        "beginner": "新手入门",
-        "guide": "操作指南",
-        "strategy": "交易策略",
-        "data": "数据与指标",
-        "weekly": "每周洞察",
-        "macro": "宏观研究",
-        "market": "市场解读",
-        "allocation": "资产配置"
+        "forex": "Forex",
+        "crypto": "Crypto Assets",
+        "metals": "Precious Metals",
+        "stocks": "Stocks & ETFs",
+        "futures": "Futures",
+        "energy": "Energy",
+        "beginner": "Beginner's Guide",
+        "guide": "Platform Tutorials",
+        "strategy": "Trading Strategies",
+        "data": "Data & Indicators",
+        "weekly": "Weekly Insights",
+        "macro": "Macro Research",
+        "market": "Market Commentary",
+        "allocation": "Asset Allocation"
       }
     },
     "profession": {
@@ -271,276 +276,278 @@
           "3": {
             "title1": "MQL5による戦略の自動化",
             "title2": "セキュリティー&  プロフェッショナル",
-            "description1": "Run EAs and backtests with ease, and fine-tune strategies through MQL5 scripting.",
-            "description2": "ASIC-regulated and globally trusted — trade on a platform built for pros."
+            "description1": "EAとバックテストを簡単に実行し、MQL5スクリプトで戦略を微調整.",
+            "description2": "ASIC（オーストラリア証券投資委員会）の規制を受け、世界中のユーザーから信頼される——プロフェッショナル向けに設計されたプラットフォームで取引."
           }
         }
       },
       "community": {
-        "title": "A Global Platform. Powered by Local Communities.",
-        "description": "Multilingual support. Multi-currency accounts. Global access with local precision.",
+        "title": "グローバルプラットフォーム。ローカルコミュニティ主導.",
+        "description": "多言語対応。複数通貨口座。グローバルなアクセス、ローカルでの精密なサービス.",
         "row": {
           "1": {
-            "desc1": "Global Support, Human Connection",
-            "desc2": "Real people. Real support — in your language.",
-            "desc3": "From onboarding to strategy, our local managers are always one message away on Discord, WhatsApp, Telegram, and WeChat.",
-            "desc4": "Bootcamps. Live trading reviews. Strategy Q&A. Learning hubs. Tech insights",
+            "desc1": "グローバルサポート、人と人をつなぐ",
+            "desc2": "ローカライズチーム・多言語サポート・リアルタイム対応.",
+            "desc3": "新規ユーザーガイドから戦略策定まで, 当社の現地マネージャーは、Discord、WhatsApp、Telegram、WeChatでいつでもメッセージ一つで連絡が取れます.",
+            "desc4": "ブートキャンプ。ライブ取引レビュー。戦略Q&A。学習ハブ。技術インサイト",
             "desc5": "新手训练营、实盘分享、策略答疑",
-            "link": "Contact Us"
+            "link": "お問い合わせ"
           },
           "2": {
-            "title": "SailingBrick™ Community",
-            "description": "让交易像搭积木一样简单，我们不只是交易系统，更是陪你拼出第一块积木的伙伴。",
-            "description1": "Where trading feels modular, intuitive, and never alone.",
-            "description2": "Join a community that supports your first trade and scales with your ambition.",
-            "btnText": "Join Our Discord",
-            "prompt": "Reach out via the 「Fast Onboarding Channel」 or leave your info — we’ll follow up within 1 hour."
+            "title": "セーリングブリック™ コミュニティ",
+            "description": "取引を積み木のように簡単に。私たちは単なる取引システムではなく、最初の積み木を組み立てるパートナーです。",
+            "description1": "当交易如积木般灵活，如直觉般自然，更从不孤单.",
+            "description2": "取引が積み木のように柔軟で、直感のように自然な時、孤独を感じることはない.",
+            "btnText": "Discordグループに加入する",
+            "prompt": "「クイックアクセスチャネル」を通じてお問い合わせいただくか、ご連絡先をご記入ください。1時間以内にご連絡いたします."
           },
           "3": {
-            "desc1": "Challenge. Compete. Elevate.",
-            "desc2": "Level up with trading challenges, live rankings, and real rewards.",
-            "desc3": "交易挑战赛、盈利榜单",
-            "desc4": "活跃福利",
-            "desc5": "周度抽奖、交易积分奖励，多种奖品 —— 从比特币到劳力士",
-            "explore": "Explore Competitions"
+            "desc1": "挑戦せよ。競え。高めよ.",
+            "desc2": "アップグレードチャレンジ：取引対決に参加し、リアルタイムランキングで実在の報酬を獲得しよう.",
+            "desc3": "取引チャレンジ、収益ランキング",
+            "desc4": "アクティブ特典",
+            "desc5": "週次抽選、ポイント報酬、多彩な賞品 —— ビットコイン&ロレックス",
+            "explore": "コンペティションを探る"
           }
         }
       },
       "assets": {
-        "title": "Fast Deposits. Free Withdrawals. Global Payment Support.",
+        "title": "即時入金。無料出金。グローバルな決済サポート.",
         "button": {
-          "type": "Deposit Methods",
-          "safe": "Fees & Security",
-          "card": "AFT Card"
+          "type": "入金方法",
+          "safe": "料金とセキュリティ",
+          "card": "AFTカード"
         },
         "text": {
           "type": {
-            "title": "Global Transfers. Built for Speed. Backed by Trust.",
-            "description": "Support for major payment channels worldwide, ensuring fast and secure fund flows.",
-            "ul-title1": "Local rails across Asia and Europe",
-            "ul-desc1": "Support for trusted methods in Thailand, Malaysia, Indonesia, Vietnam, Korea, Japan, and the EU.",
-            "ul-title2": "USDT on-chain: under 1 min",
-            "ul-desc2": "Instant blockchain deposits. Withdrawals cleared in ~10 mins.",
-            "ul-title3": "Fiat or crypto. Your choice.",
-            "ul-desc3": "Flexible settlement in local currencies or digital assets.",
-            "ul-title4": "Fully compliant by design",
-            "ul-desc4": "Real-time risk controls and AML monitoring ensure safe transfers.",
-            "more": "View All Methods"
+            "title": "グローバル・トランスファー。スピードを 目指す。信頼が基盤.",
+            "description": "世界主要な決済をサポートし、迅速かつ安全な資金の流れを確保します.",
+            "ul-title1": "アジアおよびヨーロッパ全域のローカル線",
+            "ul-desc1": "タイ、マレーシア、インドネシア、ベトナム、韓国、日本、EUにおける認定方法のサポート.",
+            "ul-title2": "USDTオンチェーン：1分未満",
+            "ul-desc2": "即時ブロックチェーン入金。出金は約10分で処理完了.",
+            "ul-title3": "法定通貨か暗号通貨か。選択はあなた次第.",
+            "ul-desc3": "現地通貨あるいはデジタル資産による柔軟な決済.",
+            "ul-title4": "設計により完全に準拠",
+            "ul-desc4": "リアルタイムのリスク管理とAMLモニタリングにより安全な送金を保証します.",
+            "more": "すべての方法を見る"
           },
           "safe": {
-            "title": "Zero Fees. Instant Transfers. Fully Protected.",
-            "description": "Transparent pricing & real-time security.",
-            "ul-title1": "0 Fees",
-            "ul-desc1": "No charges on deposits or withdrawals across supported methods.",
-            "ul-title2": "Fast Processing",
-            "ul-desc2": "On-chain deposits arrive in as fast as 1 minute. Withdrawals processed within 10 minutes on average, never exceeding 30.",
-            "ul-title3": "Fund Protection",
-            "ul-desc3": "Abnormal transaction flows are automatically flagged and held for review.",
-            "more": "View All Methods"
+            "title": "手数料ゼロ。即時送金。完全保護付き.",
+            "description": "透明な料金体系とリアルタイムセキュリティ.",
+            "ul-title1": "0 手数料",
+            "ul-desc1": "対応方法での入金・出金手数料はかかりません。.",
+            "ul-title2": "高速处理",
+            "ul-desc2": "オンチェーンでの入金は最短1分で反映されます。出金は平均10分以内に処理され、30分を超えることはありません.",
+            "ul-title3": "資金の保護",
+            "ul-desc3": "異常な取引フローは自動的にフラグが立てられ、審査のために保留される.",
+            "more": "すべてのメソッドを表示"
           },
           "card": {
-            "title": "AFT Card. Spend Smarter. Live Freer — Anywhere.",
-            "description": "Now live. Instantly spend your AFT balance worldwide — in-store or online — with Visa or Mastercard options, tailored for lifestyle, investing, and daily use.",
-            "ul-title1": "Free for VIC users",
-            "ul-desc1": "No $20 monthly fee. Enjoy premium access with your VIC Account.",
-            "ul-title2": "Global spending, no limits",
-            "ul-desc2": "Use your balance for lifestyle, trading, or everyday purchases — online and offline.",
-            "ul-title3": "Visa & Mastercard options",
-            "ul-desc3": "Choose the network that fits your needs and region.",
-            "ul-title4": "Use it anywhere, for anything",
-            "ul-desc4": "From trading desks to dinner bills — your capital, your call.",
-            "more": "Get AFT Card"
+            "title": "AFTカード。賢く使おう。自由に生きよう — いつでも.",
+            "description": "即時利用開始。AFT残高を世界中で即時利用可能 — 店舗でもオンラインでも — VisaまたはMastercardオプションで、ライフスタイル、投資、日常利用に合わせて設計されています.",
+            "ul-title1": "VICユーザーは無料",
+            "ul-desc1": "月額20ドルの料金はかかりません。VICアカウントでプレミアムアクセスをお楽しみください.",
+            "ul-title2": "世界中の支出、制限なし",
+            "ul-desc2": "バランスをライフスタイル・取引・日常の買い物に活用——オンラインでもオフラインでも.",
+            "ul-title3": "Visa＆Mastercardのオプション",
+            "ul-desc3": "ご自身のニーズと地域に合ったネットワークをお選びください.",
+            "ul-title4": "どこでも、何にでも使えます",
+            "ul-desc4": "トレーディングデスクから夕食代の支払いまで——資本はあなたのもの、判断はあなた次第.",
+            "more": "AFTカードを取得する"
           }
         }
       },
       "properly": {
-        "title": "Choose the Right Account for Your Edge",
-        "description": "Trade with pricing, leverage, and execution tailored to your strategy.",
-        "explore": "Explore Classic Benefits",
+        "title": "エッジに最適なアカウントを選択してください",
+        "description": "戦略に合わせてカスタマイズされた価格設定、レバレッジ、執行による取引.",
+        "explore": "クラシック特典を探る",
         "tabs": {
-          "classic": "Classic",
-          "platinum": "Platinum",
+          "classic": "クラシック",
+          "platinum": "プラチナ",
           "vic": "VIC"
         },
         "left": {
           "classic": {
-            "name": "Classic Account",
-            "title": "Your all-access starting point. Built for everyone.",
-            "desc": "Dual-mode in USD & Cent Account, with just a $100 minimum deposit."
+            "name": "クラシックアカウント",
+            "title": "すべてへの出発点。すべての人々のために。.",
+            "desc": "USD口座とセント口座のデュアルモード、わずか最低入金額100ドルで利用可能."
           },
           "platinum": {
-            "name": "Platinum Account",
-            "title": "Step into the world of professional trading.",
-            "desc": "Unlock lower spreads, faster execution, and exclusive benefits — all starting from just $5,000."
+            "name": "プラチナアカウント",
+            "title": "プロフェッショナル取引へ.",
+            "desc": "低いスプレッド、より高速な取引執行、そして限定特典をアンロック——わずか5,000ドルから開始可能."
           },
           "vic": {
-            "name": "VIC Account",
-            "title": "Join the AFT VIC Club.",
-            "desc": "Unlock elite trading privileges with institutional-grade infrastructure. Starting from $100,000."
+            "name": "VICアカウント",
+            "title": "AFT VICクラブに参加する.",
+            "desc": "エリート級取引特権をアンロックし、プロフェッショナルレベルのインフラサポートを享受.10万ドルから開始可能."
           }
         },
         "right": {
           "swiper1": {
             "1": {
-              "title": "Low Barrier · Quick Start · Demo Account Ready",
-              "description": "Get started in global markets with just $100. Cent Accounts let you explore real trading environments using small capital, with demo accounts available for easy onboarding."
+              "title": "ハードルが低く・すぐに始められる・デモ口座準備完了",
+              "description": "わずか100ドルでグローバル市場への旅を始められます.マイクロ口座で少額資金で実際の取引環境を探索でき、デモ口座で簡単に始められます。."
             },
             "2": {
-              "title": "Zero Commission · Transparent Costs",
-              "description": "Trade with no commission fees. Only pay the spread — floating as low as 1.2 to 1.8 pips across major assets like FX, gold, and indices."
+              "title": "手数料無料・料金透明性",
+              "description": "手数料無料取引。スプレッドのみのお支払い——外国為替、金、指数などの主要資産の変動スプレッドはわずか1.2～1.8ポイント."
             },
             "3": {
-              "title": "Learn & Grow · Community Support",
-              "description": "Join the Sail & Blocks community to access beginner bootcamps, strategy Q&A, trading challenges, and ongoing education resources."
+              "title": "学びと成長 · コミュニティサポート",
+              "description": "Sail & Blocksコミュニティに参加して、初心者向けブートキャンプ、戦略Q&A、トレーディングチャレンジ、継続的な教育リソースにアクセスしましょう."
             },
             "4": {
-              "title": "Cent Account Exclusive Competitions",
-              "description": "Enter weekly trading contests tailored for Cent Account users. Earn real cash prizes and rewards — perfect for both new and experienced traders."
+              "title": "セント口座専用コンテスト",
+              "description": "スタンダード口座ユーザー向けに設計された週次取引コンテストに参加しましょう.リアルな現金賞金を獲得できます——初心者からベテラントレーダーまで、どなたでも参加可能です."
             }
           },
           "swiper2": {
             "1": {
-              "title": "Institutional Pricing · Better Fills",
+              "title": "機関向け価格設定・優良取引",
               "ul": {
-                "1": "Access global Tier-1 liquidity providers",
-                "2": "Supports block trades, EAs, and high-frequency strategies",
-                "3": "Millisecond-level matching to reduce slippage"
+                "1": "グローバルなプライム流動性プロバイダーネットワークに接続する",
+                "2": "ブロック取引、EA、および高頻度戦略をサポートします",
+                "3": "ミリ秒レベルのマッチングによるスリップ削減"
               }
             },
             "2": {
-              "title": "Platinum Routing · Execution at Speed",
+              "title": "プラチナ・ルーティング・高速実行",
               "ul": {
-                "1": "Direct connectivity to Equinix financial data centers",
-                "2": "Millisecond order routing with priority queuing",
-                "3": "Reliable fills even for high-volume orders"
+                "1": "エクイニックス金融データセンターへの直接接続",
+                "2": "優先度付きキューイングによるミリ秒単位のルーティング",
+                "3": "大量注文でも確実な充填を実現"
               }
             },
             "3": {
-              "title": "Raw Spreads · Lower Costs",
+              "title": "ロー・スプレッド · コスト削減",
               "ul": {
-                "1": "Spreads from as low as 0.0 pips",
-                "2": "Paired with ultra-low commissions ($3–$3.5/lot/side)",
-                "3": "Optimized for scalping and high-frequency strategies"
+                "1": "スプレッドはわずか0.0ピップス",
+                "2": "超低手数料と組み合わせて利用可能（3～3.5ドル/ロット/サイド）",
+                "3": "スキャルピングおよび高頻度戦略向けに最適化"
               }
             },
             "4": {
-              "title": "Dedicated Tools · Expert Support",
+              "title": "専用ツール・専門サポート",
               "ul": {
-                "1": "Free VPS hosting for uninterrupted automated trading",
-                "2": "Seamless multi-account, multi-terminal access",
-                "3": "Dedicated relationship manager and technical support — every step of the way"
+                "1": "無料VPS、自動取引を中断なく実行するためのホスティング",
+                "2": "シームレスなマルチアカウント・マルチ端末アクセス",
+                "3": "専任の担当者と技術サポートが、あらゆる段階でお手伝いします"
               }
             }
           },
           "swiper3": {
             "1": {
-              "title": "Custom Products & Pricing, Your Way",
+              "title": "カスタマイズ製品と価格、お好きなように",
               "ul": {
-                "1": "Create your own tradable instruments — FX pairs, crypto assets, and more",
-                "2": "Define your liquidity and pricing structure from as low as $1 per million traded"
+                "1": "独自の取引可能な金融商品を創出 — 為替ペア、暗号資産など",
+                "2": "流動性と価格体系を定義最低1ドル/百万から取引"
               }
             },
             "2": {
-              "title": "Independent Tech & Infrastructure",
+              "title": "独立系テクノロジー＆インフラストラクチャー",
               "ul": {
-                "1": "Dedicated VPS & ultra-low-latency lines",
-                "2": "Custom API & FIX solutions for institutional and quantitative setups"
+                "1": "専用VPS & 超低遅延回線",
+                "2": "資家向けおよび定量分析環境向けカスタムAPI・FIXソリューション"
               }
             },
             "3": {
-              "title": "Exclusive Funding & Settlement",
+              "title": "独占的資金調達及び決済",
               "ul": {
-                "1": "Priority processing for large, multi-currency deposits and withdrawals",
-                "2": "Complimentary AFT USDT Card — spend globally with Mastercard"
+                "1": "多通貨対応の大口入出金における優先処理",
+                "2": "無料AFT USDTカード — マスターカードで世界中でご利用いただけます"
               }
             },
             "4": {
-              "title": "Private Club Access & Strategic Perks",
+              "title": "プライベートクラブアクセス＆戦略的特典",
               "ul": {
-                "1": "Invitation-only VIC Club with gated access",
-                "2": "Closed-door roundtables, private research briefings",
-                "3": "VIP rewards from Bitcoin bonuses to luxury timepieces",
-                "4": "Priority access to AFT’s strategic initiatives & partnerships"
+                "1": "招待制のVICクラブ（ゲート付きアクセス）",
+                "2": "非公開の円卓会議、非公開の研究ブリーフィング",
+                "3": "ビットコインボーナスから高級時計まで、VIP特典",
+                "4": " AFTの戦略計画とパートナーシップへの優先アクセス"
               }
             }
           }
         }
       },
       "cooperator": {
-        "title": "The Premier Platform for Global Traders & Partners",
-        "desc": "Your edge in trading. Your growth in partnership.",
+        "title": "世界の貿易業者とパートナーの第一選択プラットフォーム",
+        "desc": "あなたのトレーディングにおける優位性.パートナーシップにおける成長.",
         "tabs": {
-          "trader": "For Strategy Traders",
-          "partners": "For Partners & Affiliates"
+          "trader": "ストラテジー・トレーダー向けに",
+          "partners": "パートナーおよびアフィリエイトの皆様へ"
         },
         "trader": {
-          "title": "Maximize Your Returns with the Industry’s Leading Profit Split",
-          "desc": "Unlock high-performance infrastructure, raw pricing, and customized payout schemes. Whether you’re trading independently or managing a following — we reduce your cost so you keep more of your alpha.",
-          "btn": "Learn More"
+          "title": "業界トップクラスの利益分配で収益を最大化",
+          "desc": "高性能インフラ、原価ベースの価格設定、カスタマイズされた決済ソリューションを解放.個人取引であれフォロワー管理であれ——コスト削減により、より多くの超過収益を保持できるよう支援します。",
+          "btn": "詳細はこちら"
         },
         "partners": {
-          "title": "Your All-in-One Partner Portal",
-          "desc": "We built a dedicated portal to support your client management and performance tracking needs. From marketing kits to multi-language creatives, you’ll have every tool to grow your business globally — backed by AFT.",
-          "btn": "Explore Partner Program"
+          "title": "オールインワン パートナー ポータル",
+          "desc": "お客様のクライアント管理と業績追跡を支援する専用ポータルを構築しました.マーケティングキットから多言語クリエイティブまで、AFTの支援のもと、グローバルにビジネスを成長させるためのあらゆるツールをご利用いただけます.",
+          "btn": "パートナープログラムを探る"
         }
       },
       "reward": {
-        "title1": "新客奖励",
-        "title2": "限时翻倍",
-        "best": "最高拎走",
-        "transfer": "股赠股",
-        "get": "立即领取"
+        "title1": "新規特典",
+        "title2": "期間限定で倍増",
+        "best": "最高で持ち去る",
+        "transfer": "株式購入特典として株式を贈呈",
+        "get": "今すぐ受け取る"
       },
       "competition": {
-        "title": "加入属于你的交易比赛",
+        "title": "取引コンテストに参加しよう",
         "rows": {
           "1": {
-            "title": "Classic美分账户周赛",
-            "join": "加入美分周赛"
+            "title": "Classic米ドル口座週間コンテスト",
+            "join": "美分週間レースに加入する"
           },
           "2": {
-            "title": "经典账户月赛",
-            "join": "立即报名经典月赛"
+            "title": "クラシック口座月間コンテスト",
+            "join": "今すぐクラシック月例大会にお申し込みください"
           },
           "3": {
-            "title": "铂金账户月赛",
-            "join": "解锁铂金挑战"
+            "title": "プラチナアカウント月間コンテスト",
+            "join": "プラチナチャレンジをアンロック"
           },
           "4": {
-            "title": "VIC 账户尊享大赛",
-            "join": "申请加入 VIC Club"
+            "title": "VICアカウント限定コンテスト",
+            "join": "VIC Clubへの入会申請"
           }
         },
-        "week": "每周",
-        "month": "每月",
-        "climate": "每季"
+        "week": "毎週",
+        "month": "毎月",
+        "climate": "各季節",
+        "pool": "Prize Pool Amount",
+        "period": "Competition Cycle"
       },
       "calendar": {
-        "title": "Trade Smarter. No Account Required. Built for Every Trader.",
-        "description": "Access the AFT Highlight calendar, expert insights, and technical analysis — all free, no login required.\nStay in sync with global markets, data events, and trading opportunities.",
-        "explore": "Explore Calendar",
-        "subscribe": "Free Subscribe",
+        "title": "より賢く取引.アカウント不要.全てのトレーダーのために設計されたプラットフォーム.",
+        "description": "AFTハイライトカレンダー、専門家の見解、テクニカル分析にアクセス — すべて無料、ログイン不要。\nグローバル市場、データイベント、取引機会と常に連携を保ちましょう.",
+        "explore": "カレンダーを閲覧する",
+        "subscribe": "無料登録",
         "prospect": {
-          "title": "2025 Industry Outlook",
-          "description": "Tracks outstanding notional and gross market value of OTC ..."
+          "title": "2025年業界展望",
+          "description": "OTC取引の未決済名目価値及び総時価総額の追跡 ..."
         },
         "buttons": {
-          "past": "Explore Learn Starts Insight",
-          "download": "Download Report"
+          "past": "探求　学習　出発　洞察",
+          "download": "レポートをダウンロード"
         },
         "stars": {
-          "high": "高-3星",
-          "medium": "中-2星",
-          "low": "低-1星",
-          "none": "无关紧要-0星"
+          "high": "高-3つ星",
+          "medium": "中-2つ星",
+          "low": "低-1つ星",
+          "none": "どうでもいい-0星"
         },
-        "from": "数据来源于：",
+        "from": "データの由来：",
         "form": {
-          "first-placeholder": "请输入您的姓",
-          "last-placeholder": "请输入您的名",
-          "country-placeholder": "请输入国家",
-          "email-placeholder": "请输入您的邮箱",
-          "subscribe": "立即免费订阅，交易巡航工具"
+          "first-placeholder": "ご氏名を入力してください",
+          "last-placeholder": "お名前を入力してください",
+          "country-placeholder": "国を入力してください",
+          "email-placeholder": "メールアドレスを入力してください",
+          "subscribe": "今すぐ無料で登録、取引クルーズツールをご利用ください"
         }
       }
     },
@@ -1221,233 +1228,235 @@
       },
       "transfer": {
         "banner": {
-          "title": "全方位掌控你的资金流动",
-          "midst": "Asia Future Trading 不收取任何出入金手续费，24/7 随时取用",
-          "desc": "使用安全、高效的本地与国际支付方式，您的交易请求将自动快速处理。不收取任何出入金手续费，助您资金流转无忧。"
+          "title": "Full Control of Your Funds",
+          "midst": "0 Fees. 24/7 Access. Total Freedom.",
+          "desc": "At Asia Future Trading, you can move your funds anytime, anywhere — with no deposit or withdrawal fees. We partner with secure and efficient local and international payment providers to ensure every transaction is processed automatically, safely, and fast."
         },
         "professional": {
-          "title": "一切为您的资金流动而优化",
+          "title": "Optimized for Effortless Fund Movement",
           "row": {
             "col1": {
-              "title": "快速入金",
-              "desc": "支持多种本地与国际支付方式，入金申请 24 小时实时处理，一周 5 天无间断服务。"
+              "title": "Fast Deposits",
+              "desc": "Enjoy real-time processing through multiple local and international payment methods — available 24 hours a day, 5 days a week."
             },
             "col2": {
-              "title": "0 手续费",
-              "desc": "所有支付方式均免手续费，100% 净额到账，出入金体验更丝滑。"
+              "title": "0 Fees",
+              "desc": "No platform or transaction fees. Receive your full amount — no deductions, no hidden costs."
             },
             "col3": {
-              "title": "账户安全保障",
-              "desc": "客户资金与平台运营资金 完全隔离存放于受监管的独立账户，符合国际监管标准。"
+              "title": "Secure Account Protection",
+              "desc": "Client funds are fully segregated and held in regulated custodial accounts, ensuring maximum safety and compliance."
             },
             "col4": {
-              "title": "加密货币极速到账",
-              "desc": "全面支持 USDT、USDC、BTC、ETH 等主流加密资产，链上确认后即可秒级入账。"
+              "title": "Instant Crypto Deposits",
+              "desc": "Support for USDT, USDC, BTC, and ETH. Funds are credited within seconds after blockchain confirmation."
             }
           }
         },
         "advertising": {
-          "title": "快速、安全、触手可及",
+          "title": "Fast, Secure, and Within Reach",
           "row": {
-            "title": "覆盖全球的支付网络，让资金进出更轻松",
-            "desc": "Asia Future Trading 支持多样化本地与国际支付方式，满足不同地区用户的资金需求。无论您身在何处，入金都可快速到账，出金亦可随时发起、自动审批。"
+            "title": "Global Payment Network — Simplified Fund Transfers",
+            "desc": "Asia Future Trading supports a wide range of local and international payment options to meet your funding needs wherever you are.\nDeposits are processed instantly, withdrawals can be initiated anytime with automated approval."
           },
-          "prompt": "所有方式0 手续费，无隐藏成本。平台仅使用官方对接渠道，保障每一笔入金安全稳定。"
+          "prompt": "All payment methods come with 0 fees and no hidden costs. We use only official, verified channels to ensure every transaction is safe, stable, and seamless."
         },
         "card": {
-          "title": "Asia Future Trading Mastercard  & Visa 卡",
+          "title": "Asia Future Trading Mastercard & Visa Card",
           "row": {
             "col1": {
-              "title": "一张卡，连接你的交易账户与生活。",
-              "desc1": "无论你身在何处，AFT 实体卡与虚拟卡皆可用于日常消费、全球提现与商旅场景。资金灵活调度，自由掌控，全球畅行无阻。",
-              "desc2": "所有交易账户用户皆可申请，VIC 账户专属客户可免费领取，尊享更多权益。",
-              "vic": "了解VIC 账户",
-              "apply": "立即申请银行卡"
+              "title": "AFT Card. Trade. Spend. Live Freely.",
+              "desc1": "Wherever you are, your AFT physical and virtual cards seamlessly connect your trading account to everyday life. Spend globally, withdraw cash, and travel freely — with instant fund access and complete flexibility.",
+              "desc2": "Available for all AFT account holders. VIC clients enjoy complimentary cards with exclusive privileges.",
+              "vic": "Learn About VIC Account",
+              "apply": "Apply for Card"
             }
           }
         },
         "process": {
-          "title": "只需三个简单步骤，资金即刻到账",
+          "title": "Fund Your Account in 3 Simple Steps",
           "row": {
             "col1": {
-              "title": "注册和登录交易账户",
-              "desc": "前往 Asia Future Trading 客户中心，使用已注册账户信息登录。",
-              "bottom": "立即开户"
+              "title": "Register and Log In",
+              "desc": "Go to the Asia Future Trading Client Center and log in using your registered account details.",
+              "bottom": "Open Account"
             },
             "col2": {
-              "title": "选择您的入金方式",
-              "desc": "选择适合您的支付方式（银行转账 / 加密货币 / 本地支付等），填写入金金额并提交申请。",
-              "bottom": "了解出入金方式"
+              "title": "Choose Your Deposit Method",
+              "desc": "Select your preferred payment option — bank transfer, cryptocurrency, or local payment — enter the amount, and submit your request.",
+              "bottom": "Deposit Now"
             },
             "col3": {
-              "title": "完成转账并确认",
-              "desc": "根据页面指引完成转账，提交凭证后系统将自动处理，资金将在到账后即时入账您的交易账户。",
-              "bottom": "立即体验交易"
+              "title": "Complete and Confirm Your Transfer",
+              "desc": "Follow the on-screen instructions to finalize your transfer.",
+              "bottom": "Start Trading"
             }
           }
         },
         "assets-safe": {
-          "title": "我们将资金安全作为最高优先级",
+          "title": "Where Trusted Infrastructure Powers Every Trade",
           "row": {
             "col1": {
-              "title": "客户资金独立存放",
-              "desc": "客户资金严格存放于受监管的独立账户，与平台自有资金完全隔离，杜绝挪用风险。"
+              "title": "Segregated Client Funds",
+              "desc": "Client funds are securely held in fully segregated, regulated custodial accounts — completely isolated from company operational capital to eliminate any misuse risk."
             },
             "col2": {
-              "title": "银行级通道加密",
-              "desc": "所有支付方式均支持多重加密协议，并通过银行级 KYC/AML 审核机制，保障资金流转安全。"
+              "title": "Bank-Grade Encryption",
+              "desc": "Every transaction is protected by multi-layer encryption and verified through rigorous KYC/AML protocols, ensuring full security and compliance."
             },
             "col3": {
-              "title": "实时风险监控",
-              "desc": "平台构建 7×24 小时自动化风险监控系统，覆盖异常行为识别与资金动向预警。"
+              "title": "24/7 Risk Monitoring",
+              "desc": "Automated monitoring runs continuously to detect anomalies and flag potential risks in real time, safeguarding client assets around the clock."
             },
             "col4": {
-              "title": "国际合规标准",
-              "desc": "全面遵循 AML / CFT（反洗钱与反恐融资）标准，确保资金来源合规、交易安全可溯。"
+              "title": "Global Compliance Standards",
+              "desc": "We adhere to strict international AML and CFT standards, ensuring every fund movement remains transparent, traceable, and compliant."
             }
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "入金多久到账？",
-              "text-1": "加密货币 / 稳定币（USDT / USDC）：1–15 分钟到账，具体时间取决于链上确认速度",
-              "text-2": "加密货币 / 稳定币（USDT / USDC）：1–15 分钟到账，具体时间取决于链上确认速度",
-              "text-3": "国际电汇（SWIFT）：处理时间约为 3–5 个工作日，具体视银行及国家地区而定"
+              "title": "How long does it take for deposits to arrive?",
+              "text-1": "Crypto / Stablecoins (USDT / USDC): Typically within 1–15 minutes, depending on blockchain confirmation speed.",
+              "text-2": "Local Bank Transfers: Usually credited within 1–2 business days.",
+              "text-3": "International Wire (SWIFT): Typically 3–5 business days, depending on the bank and region."
             },
             "li2": {
-              "title": "Asia Future Trading 是否收取入金或出金手续费？",
-              "desc": "平台本身不收取任何入金或出金手续费。",
-              "text-1": "您只需承担支付通道（如银行、电汇、区块链网络）本身可能产生的少量服务费。"
+              "title": "Does Asia Future Trading charge deposit or withdrawal fees?",
+              "desc": "No. The platform does not charge any fees for deposits or withdrawals.",
+              "text-1": "Only third-party providers (banks, payment processors, or blockchain networks) may charge a small service fee."
             },
             "li3": {
-              "title": "支持哪些入金方式？",
-              "desc": "我们支持以下多种支付方式，满足不同地区客户需求：",
-              "text-1": "国际电汇（SWIFT）",
-              "text-2": "本地银行转账",
-              "text-3": "稳定币：USDT / USDC",
-              "text-4": "加密货币：BTC / ETH 等主流币种",
-              "text-5": "各类本地快捷支付方式（视国家/地区而定）"
+              "title": "What funding methods are supported?",
+              "desc": "We offer a wide range of payment methods to meet different regional needs, including:",
+              "text-1": "International Wire Transfer (SWIFT)",
+              "text-2": "Local Bank Transfer",
+              "text-3": "Stablecoins: USDT / USDC",
+              "text-4": "Cryptocurrencies: BTC / ETH and other major assets",
+              "text-5": "Local instant payment channels (availability varies by region)",
+              "text-6": "Physical collateral such as gold, subject to local regulatory approval — please contact your account manager for specific arrangements."
             },
             "li4": {
-              "title": "出入金是否支持 24/7 处理？",
-              "desc": "是的，您可在任意时间提交出入金请求，系统将自动处理。我们承诺在24 小时内受理与完成资金操作。",
-              "text-1": "注意：部分银行或第三方支付服务的处理时间可能会导致延迟。平台不对因支付通道本身引起的处理滞后承担责任。"
+              "title": "Are deposits and withdrawals available 24/7?",
+              "desc": "Yes. You can submit deposit or withdrawal requests anytime. Our system processes all requests automatically within 24 hours.",
+              "text-1": "Note: Some banks or payment processors may experience their own delays. The platform is not responsible for delays caused by third-party channels."
             },
             "li5": {
-              "title": "可以从模拟账户中出金吗？",
-              "desc": "不可以。模拟账户中的资金为虚拟资产，仅用于模拟交易与策略测试，不可用于出金或转账操作。"
+              "title": "Can I withdraw from a demo account?",
+              "desc": "No. Demo account balances are virtual funds used solely for simulated trading and strategy testing — they cannot be withdrawn or transferred."
             },
             "li6": {
-              "title": "如何申请 Asia Future Trading Mastercard / Visa 卡？",
-              "desc": "所有真实账户用户均可申请 AFT 实体或虚拟银行卡。",
-              "text-1": "VIC 用户可享受免费申领权益",
-              "text-2": "请联系您的客户经理或前往卡片服务页面提交申请"
+              "title": "How do I apply for the Asia Future Trading Mastercard / Visa Card?",
+              "desc": "All live account holders are eligible to apply for an AFT physical or virtual card.",
+              "text-1": "VIC clients enjoy complimentary cards and exclusive benefits.",
+              "text-2": "Please contact your account manager or visit the Card Services page to submit your application."
             }
           }
         }
       },
       "rates": {
         "banner": {
-          "title": "0 交易佣金",
-          "midst": "全账户支持，一切只为降低你的交易成本",
-          "desc": "Asia Future Trading 为全球交易者打造机构级低成本交易环境，费用结构透明、公平、简明，不隐藏、不复杂，专注为你降低每一笔交易成本。"
+          "title": "0 Trading Commissions",
+          "midst": "Trade Like Institutions — For Life. With Zero Fees.",
+          "desc": "At Asia Future Trading, we’ve built an institutional-grade, low-cost trading environment designed for performance and transparency. No hidden fees. No complex pricing. Just pure, efficient trading — where every order is executed faster, cleaner, and at true market cost."
         },
         "mechanism": {
-          "title": "三大核心减负机制，让你交易更轻松",
-          "title1": "0 交易佣金 · 0 出入金手续费 · 0 隔夜利息（部分产品）",
+          "title": "Three Core Cost-Saving Mechanisms",
+          "title1": "0 Trading Commissions · 0 Deposit & Withdrawal Fees · 0 Overnight Interest¹",
           "row": {
             "col1": {
-              "title": "所有账户 0 交易佣金 / 0 手续费",
-              "desc": "无论是 Classic、Platinum 还是 VIC 账户，我们对所有产品交易 一律不收取佣金。"
+              "title": "0 Trading Commissions Across All Accounts",
+              "desc": "Trade commission-free across all account types — Classic, Platinum, or VIC. Enjoy full transparency with no hidden platform charges."
             },
             "col2": {
-              "title": "出入金 0 手续费",
-              "desc": "支持多种入金方式（本地银行、电汇、USDT 等），我们不收取任何平台手续费。"
+              "title": "0 Deposit & Withdrawal Fees",
+              "desc": "Fund and withdraw easily via bank transfer, wire, or USDT — all fee-free. Your funds stay yours, without platform fees."
             },
             "col3": {
-              "title": "大部分产品 0 隔夜利息（Swap）",
-              "desc": "大部分热门产品（如比特币、以太坊）及铂金 / VIC 账户支持免除隔夜利息，长期持仓无负担。",
+              "title": "0 Overnight Interest on Most Instruments",
+              "desc": "Popular markets — including Bitcoin, Ethereum, and key assets under Platinum or VIC accounts — offer swap-free trading for more efficient long-term positions.",
               "prompt": "免隔夜利息适用范围可能因市场条件及账户类型而异，请查看每种产品的详情说明。"
             }
           }
         },
         "stream": {
-          "title": "我们将机构级流动性带给每一位用户，机构级产品，不再遥不可及",
+          "title": "Trade Like Institutions — Without the Barriers",
+          "desc": "Bringing Wall Street–Level Execution to Your Fingertips",
           "row": {
             "col1": {
-              "title": "连接全球顶级流动性提供者 XTX Markets｜LMAX｜Finalto",
-              "desc": "我们采用与专业机构一致的撮合引擎与订单执行机制，确保每一位交易者都能享有：",
-              "prompt1": "无论你是日内交易者，策略套利者，还是长期持仓者，你都将体验到真正对标华尔街水准的流动性质量。",
-              "prompt2": "这就是我们能做到 0 佣金 + 高速成交的底层保障。",
+              "title": "Partner directly with top-tier liquidity providers through institutional-grade execution systems.",
+              "desc": "Experience Institutional Precision",
+              "prompt1": "Whether you're a day trader, arbitrage strategist, or long-term investor, you’ll experience the same execution quality trusted by global financial institutions.",
+              "prompt2": "This is the foundation behind our 0 Commission + Lightning Execution — where institutional liquidity meets every trader.",
               "ul": {
-                "li1": "更紧的点差",
-                "li2": "更深的市场深度",
-                "li3": "更快的成交速度"
+                "li1": "Tighter Spreads — True market pricing sourced from deep liquidity pools.",
+                "li2": "Deeper Market Depth — Transparent order books, no dealing desk.",
+                "li3": "Faster Execution — Institutional-grade speed with sub-millisecond fills."
               }
             }
           }
         },
         "table": {
-          "title": "想了解每个交易品种的具体成本？",
-          "overview": "以下为您概览",
+          "title": "Want to Know the Exact Cost for Each Asset Class?",
+          "overview": "Here’s a quick overview of what you can trade at Asia Future Trading.",
           "head": {
-            "type": "资产类别",
-            "introduction": "简介"
+            "type": "Asset Class",
+            "introduction": "Description"
           },
-          "prompt1": "点差低至 0 点，交易全球最大市场货币对",
-          "prompt2": "黄金、白银、铂金等多品类支持，适合构建抗通胀组合",
-          "prompt3": "把握原油、天然气等热门大宗商品波动机会",
-          "prompt4": "交易特斯拉、苹果、英伟达等热门股票，低成本高灵活",
-          "prompt5": "涵盖股指、利率、能源、农产品等全球期货品种",
-          "prompt6": "BTC、ETH 等热门币种，0 隔夜利息，支持高杠杆与双向交易",
-          "details": "了解详情"
+          "prompt1": "Spreads from 0.0 pips — trade the world’s most liquid currency pairs with institutional-grade pricing.",
+          "prompt2": "Gold, silver, and platinum — diversify your portfolio and hedge against inflation.",
+          "prompt3": "Capture market opportunities in crude oil, Brent, and natural gas with low-cost CFDs.",
+          "prompt4": "Trade global leaders like Tesla, Apple, and NVIDIA with low costs and flexible leverage.",
+          "prompt5": "Access global futures across indices, rates, energy, and agriculture — all in one platform.",
+          "prompt6": "Trade BTC, ETH, and more — 0 swap fees on selected pairs, full leverage, and bi-directional trading.",
+          "details": "Learn More"
         },
         "enhance": {
-          "title": "闲置收益增强账户，进一步降低您的持仓成本",
+          "title": "Future Earn Account — Turn Idle Funds into Active Returns",
           "box": {
-            "title": "Future Earn Account｜铂金 / VIC 账户专属利息机制",
-            "desc": "Asia Future Trading 提供差异化账户福利，长期持仓不再“闲置”，让每一笔资金都在为你创造回报。",
-            "more": "了解 Future Earn 功能"
+            "title": "Exclusive to Platinum & VIC Accounts",
+            "desc": "At Asia Future Trading, we transform idle balances into earning opportunities.Your capital doesn’t just sit — it works for you, reducing holding costs and enhancing long-term returns.",
+            "more": "Learn About Future Earn"
           }
         },
         "statement": {
-          "title": "隔夜费用 & 产品交易时间",
-          "desc": "想了解更多？我们为每位用户提供清晰的参考指引",
+          "title": "Overnight Fees & Trading Hours",
+          "desc": "Want to know more? We’ve made it easy with clear, transparent reference guides for every trader.",
           "row": {
             "col1": {
-              "title": "隔夜利息说明",
-              "desc": "不同账户类型、不同资产类别的隔夜利息规则",
-              "more": "了解隔夜利息详情"
+              "title": "Overnight Swap Guide",
+              "desc": "Learn how overnight interest rates vary by account type and asset class.",
+              "more": "View Swap Details"
             },
             "col2": {
-              "title": "产品交易时间表",
-              "desc": "涵盖全球市场主要品种的开收盘时间，帮助你规划交易节奏",
-              "more": "查看产品交易时间表"
+              "title": "Trading Hours Schedule",
+              "desc": "Check the opening and closing times of major global markets to plan your trading sessions effectively.",
+              "more": "View Trading Hours"
             }
           }
         },
         "standard": {
-          "title": "重塑全球交易成本新标准",
-          "desc": "Asia Future Trading 以机构级别的定价与流动性，为全球交易者提供透明、公平的市场接入。从专业到细节，每一步都为你的长期交易成功而设计。"
+          "title": "Redefining the Global Standard for Trading Costs",
+          "desc": "At Asia Future Trading, we bring institutional-level pricing and liquidity to traders worldwide — making transparency, fairness, and precision accessible to everyone. From execution speed to every detail of cost design, everything is built to support your long-term trading success."
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "Asia Future Trading 是否真的所有账户都 0 佣金？",
-              "desc": "是的，无论 Classic、Platinum 还是 VIC 账户，所有产品均不收取平台佣金。"
+              "title": "Are all Asia Future Trading accounts truly zero-commission?",
+              "desc": "Yes. Whether you're using a Classic, Platinum, or VIC account, all instruments are commission-free — no platform or execution fees applied."
             },
             "li2": {
-              "title": "隔夜利息是否所有产品都免？",
-              "desc": "并非全部免除。热门品种（如 BTC、ETH）以及铂金 / VIC 账户部分产品可享免隔夜利息，详情请参考隔夜利息说明页面。"
+              "title": "Are overnight swaps waived for all products?",
+              "desc": "Not entirely. Popular products such as BTC and ETH, as well as selected Platinum and VIC account instruments, qualify for swap-free trading. For full details, please refer to the Overnight Swap Guide."
             },
             "li3": {
-              "title": "出入金是否支持 24/7？",
-              "desc": "是的，出入金申请可随时提交，平台将在 24 小时内完成处理。但部分银行 / 支付系统可能有自身延迟。详情请参考出入金页面。"
+              "title": "Is deposit and withdrawal available 24/7?",
+              "desc": "Yes, requests can be submitted anytime and are typically processed within 24 hours.\nHowever, certain banks or payment providers may have their own operational delays.\nFor more information, visit the Deposits & Withdrawals page."
             },
             "li4": {
-              "title": "在哪里可以查阅产品的点差和交易时间？",
-              "desc": "你可以在【费率表】和【产品交易时间表】页面查看实时更新的详细说明。"
+              "title": "Where can I check spreads and trading hours?",
+              "desc": "You can find up-to-date details on the Overnight Swap Guide and Trading Hours Schedule pages."
             }
           }
         }
@@ -1456,122 +1465,125 @@
     "ideas": {
       "vps": {
         "banner": {
-          "title1": "Asia Future Trading",
-          "title2": "专用低延迟 VPS 为 MT5 和 MQL 专业策略打造",
-          "desc": "为铂金账户的极速交易环境，限时免费申请",
-          "btnText": "立即注册铂金账户",
-          "muted": "我们希望你能赢。我们将协助为你选择最优的 VPS 节点位置，以实现与交易服务器间最低延迟的连接。"
+          "title1": "Asia Future Trading Low-Latency VPS",
+          "title2": "Built for MT5 and MQL Professional Strategies",
+          "desc": "Ultra-fast trading environment — free for Platinum Accounts",
+          "btnText": "Open Platinum Account",
+          "muted": "We want you to win. Our team helps you choose the optimal VPS node location to achieve the lowest latency connection between your setup and our trading servers — ensuring every trade executes faster, smoother, and more precisely."
         },
         "autoTrade": {
-          "title": "全天候自动化交易，无需值守",
-          "midst": "通过 VPS，你的 EA 策略可以 24 小时不间断运行，即使你关闭电脑、断网或离开办公桌，交易依然照常进行。",
-          "desc": "完美兼容 MT5 与 MQL 环境，支持各类智能交易脚本与复制交易系统。"
+          "title": "Trade Automatically, 24/7 — No Supervision Needed",
+          "midst": "With VPS hosting, your EA strategies run continuously — even if your computer is off, internet disconnects, or you’re away from your desk.",
+          "desc": "Fully compatible with MT5 and MQL environments, supporting automated strategies, expert advisors, and copy trading systems seamlessly."
         },
         "localServers": {
-          "title": "专线直连，极速下单不卡顿",
-          "midst": "VPS 服务器搭载企业级网络架构，连接 Asia Future Trading 平台的最低延迟节点，让每一笔订单执行更迅速、更精准，避免因延迟错过行情。",
-          "desc": "我们会根据你的地理位置，智能推荐最优机房（香港、新加坡、伦敦、纽约等）。"
+          "title": "Dedicated Connection — Execute Instantly, Without Lag",
+          "midst": "Our VPS infrastructure is powered by enterprise-grade networks, connecting directly to Asia Future Trading’s lowest-latency nodes for faster, more precise order execution — ensuring you never miss a market move due to delay.",
+          "desc": "Based on your location, we intelligently recommend the optimal data center — including Hong Kong, Singapore, London, and New York — delivering millisecond-level connectivity."
         },
         "running": {
-          "title": "稳定运行，不占用本地资源",
-          "midst": "VPS 拥有独立操作系统，运行于云端，不影响你本地电脑性能。你可以随时远程连接，跨设备管理你的策略、监控交易动态，自由又高效。",
-          "desc": "随时随地，与专业机构一样操作你的交易系统。"
+          "title": "Stable Performance — Zero Local Resource Usage",
+          "midst": "The VPS runs on an independent cloud-based operating system, keeping your local computer free and efficient. Access remotely anytime, manage your strategies across devices, and monitor trades securely with ease.",
+          "desc": "Trade like an institution — anytime, anywhere."
         },
         "globalPoints": {
-          "title": "全球低延迟节点，连接更快、下单更稳",
-          "midst": "我们与顶级云服务商合作，在全球多地部署高性能 VPS 节点。系统将智能匹配您所在地与交易服务器之间的最优路径，实现毫秒级连接，为高频和自动化策略提供坚实网络基础。",
-          "btnText": "立即注册铂金账户",
-          "muted": "完成注册流程后，我们的客户经理通常会在 1 小时内 与您取得联系。您也可以通过加入我们的 Discord 社区 直接联系客户经理获取详细信息，我们将在 15 分钟内为您完成 VPS 配置。"
+          "title": "Global Low-Latency Nodes — Faster, More Stable Execution",
+          "midst": "Partnered with top-tier cloud providers, Asia Future Trading deploys high-performance VPS nodes across major financial hubs. Our system intelligently matches your location with the optimal trading server path, delivering millisecond-level connectivity for high-frequency and automated strategies.",
+          "btnText": "Open Platinum Account",
+          "muted": "Once registered, a client manager will reach out within 1 hour to assist with setup. You can also join our Discord community for instant support — VPS configuration is typically completed within 15 minutes."
         },
         "subscribe": {
-          "title": "订阅 Asia Trading View VPS",
-          "form-name": "请填写以下注册表",
+          "title": "Subscribe to Asia Trading View VPS",
+          "form-name": "Please fill out the form below. Our team will contact you shortly to confirm your account details and configure your VPS node.",
           "form": {
-            "first": "名字",
-            "first-placeholder": "请输入你的名字",
-            "last": "姓氏",
-            "last-placeholder": "请输入你的姓氏",
-            "email": "后台注册邮箱",
-            "email-placeholder": "请输入你的邮箱",
-            "phone": "手机",
-            "phone-placeholder": "请输入你的手机",
-            "submit": "申请"
+            "first": "First Name",
+            "first-placeholder": "Please input your first name",
+            "last": "Last Name",
+            "last-placeholder": "Please input your last name",
+            "email": "Registered Email",
+            "email-placeholder": "Please input your email address",
+            "phone": "Phone Number",
+            "phone-placeholder": "Please input your phone number",
+            "submit": "Apply"
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "我需要具备什么条件才能申请 VPS？",
-              "desc": "只需开通铂金账户，即可限时免费申请 VPS 服务。无额外费用，系统审核账户类型后由客户经理协助配置。"
+              "title": "What are the requirements to apply for a VPS?",
+              "desc": "Simply open a Platinum Account to enjoy free VPS access for a limited time.No additional fees — the system will verify your account type, and a client manager will assist with setup."
             },
             "li2": {
-              "title": "VPS 是否兼容我的自动交易策略或 EA？",
-              "desc": "是的。AFT 的 VPS 完全支持 MT5 平台，适配所有 MQL 编写的 EA、复制交易程序与自定义脚本。"
+              "title": "Is the VPS compatible with my automated trading or EA strategies?",
+              "desc": "Yes. The AFT VPS is fully compatible with the MT5 platform, supporting all MQL-based Expert Advisors, copy trading systems, and custom scripts."
             },
             "li3": {
-              "title": "VPS 配置需要多久？是否复杂？",
-              "desc": "通常在 15 分钟内完成。您只需提交申请，客户经理将远程协助配置完成，无需技术经验，零学习成本。"
+              "title": "How long does it take to configure the VPS? Is it complicated?",
+              "desc": "Setup typically takes less than 15 minutes. Once you submit your application, your client manager will guide you through the process remotely — no technical skills required."
             }
           }
         }
       },
       "professional": {
         "banner": {
-          "title1": "Asia Future Trading",
-          "title2": "交易灵感学院",
-          "desc": "新手必读、操作指南、进阶策略、每周专家洞察尽在Asia Future Trading灵感学院。 你不是来观望市场的。你是来掌控它的。",
-          "placeholder": "搜索你关心的策略、市场、工具…"
+          "title1": "",
+          "title2": "Insights Centre",
+          "desc": "Explore essential guides, strategies, and weekly market perspectives — designed to help you trade smarter. You’re not here to watch the market. You’re here to master it.",
+          "placeholder": "Search for strategies, markets, or analysis..."
         },
         "brief": {
+          "title": "The Asia Future Trading View",
+          "desc": "Weekly perspectives from AFT and beyond — where data meets insight, and trading meets clarity.",
           "row": {
             "left": {
               "title": "精选 · 每周专家洞察 · The Asia Trading View",
-              "prospect": "2025年衍生品展望",
+              "prospect": "Macro Outlook 2025: Inflation, Yields, and Cross-Asset Flows",
               "prospect-desc": "Tracks outstanding notional and gross market value of OTC ...",
-              "download": "立即下载"
+              "download": "Read Full Report"
             },
             "right": {
-              "title": "往期精选文章列表"
+              "title": "Past Reports & Articles"
             }
           }
         },
         "articles": {
-          "title": "文章分类浏览导航",
-          "more": "查看更多"
+          "title": "Explore Insights by Category",
+          "desc": "Browse expert perspectives, strategy guides, and market analysis — all in one place.",
+          "more": "Load More"
         }
       },
       "calendar": {
         "banner": {
-          "title": "Asia Trading View 财经日历",
-          "desc": "根据即将发布的全球财经事件和历史数据，制定你的交易计划，洞察波动背后的市场逻辑。"
+          "title": "Asia Future Trading Global Economic & Trading Calendar",
+          "desc": "Plan your trades with confidence — track upcoming global economic events and historical data to understand the forces driving every market move."
         },
         "subscribe": {
           "ul": {
-            "li1": "我们相信，优质的市场信息，应该对所有交易者开放。",
-            "li2": "无需开户，只需留下邮箱，即可免费订阅 AFT 财经日历。",
-            "li3": "我们的团队会每周为你精选全球重要事件，如利率决议、就业数据、通胀指标等，并配套技术分析与交易策略建议，让你的邮箱变身 7×24 小时的市场情报站。"
+            "li1": "We believe that high-quality market intelligence should be accessible to every trader.",
+            "li2": "No account required — simply subscribe with your email to receive the AFT Weekly Economic Calendar for free.",
+            "li3": "Each week, our research team curates key global events — from rate decisions and employment data to inflation indicators — along with market insights and trading strategies that turn your inbox into a 24/7 intelligence hub."
           },
-          "watch": "免费订阅洞察",
-          "register": "开通账户"
+          "watch": "Free Subscription",
+          "register": "Open Account"
         },
         "financialCalendar": {
-          "title": "财经日历"
+          "title": "Our Global Economic & Trading Calendar"
         },
         "aboutCalendar": {
-          "title": "如何使用我们的财经与交易日历",
-          "desc": "您可以通过财经日历，浏览或搜索即将发生的宏观经济事件、财报与股息公告、IPO 上市、拆股时间等关键信息。同时欢迎订阅我们的专家洞察，每周更新涵盖利率决议、就业数据、通胀发布等重点事件，并附带技术分析与策略建议，助您更从容应对市场波动。",
+          "title": "How to Use Our Economic & Trading Calendar",
+          "desc": "Use the AFT Economic Calendar to browse or search for upcoming macroeconomic events, earnings releases, dividend announcements, IPOs, and corporate actions — all in one place. You can also subscribe to our weekly expert insights, featuring key updates on interest rate decisions, employment data, and inflation reports — along with technical analysis and strategy recommendations to help you stay ahead of market volatility.",
           "form": {
-            "first-placeholder": "请输入您的姓",
-            "last-placeholder": "请输入您的名",
-            "country-placeholder": "请输入国家",
-            "email-placeholder": "请输入您的邮箱",
-            "subscribe": "立即订阅"
+            "first-placeholder": "Enter Your Last Name",
+            "last-placeholder": "Enter Your First Name",
+            "country-placeholder": "Enter Your Country",
+            "email-placeholder": "Enter Your Email",
+            "subscribe": "Free Subscription"
           }
         }
       },
       "calculator": {
         "fee": {
-          "title": "费用计算器",
+          "title": "Margin Calculation",
           "desc": "使用Asia Future Trading 投资计算器计算点、保证金、点差和手续费等数值。 我们便捷的工具可以帮助您简化复杂的交易头寸计算。",
           "tabs": {
             "forex": "外汇",
@@ -1586,14 +1598,15 @@
           "indices-prompt": "针对全球热门的美国、欧盟和亚洲指数，规划您的交易。 此投资计算器可助您轻松计算保证金和点值等数值。",
           "crypto-prompt": "规划加密货币交易，比如BTCUSD和ETHUSD等热门数字货币对。 此投资计算器可助您确定保证金、点值和预期交易成本。",
           "form": {
-            "type": "账户类型",
-            "currency": "帐户货币",
-            "species": "品种",
-            "level": "杠杆",
-            "volume": "手数",
+            "type": "Account Base Currency",
+            "currency": "Currency Pair",
+            "size": "Contract Size/Lot",
+            "level": "Leverage",
+            "volume": "Volume in Lots",
             "calculate": "计算",
             "result": "计算结果",
             "margin": "保证金",
+            "rate": "Exchange Rate",
             "shortCredit": "空头隔夜利息",
             "longCredit": "多头隔夜利息",
             "cost": "点差成本",
@@ -1603,61 +1616,64 @@
           "disclaimer": "免责声明：投资计算器仅供参考。 计算器所提供的结果仅供教育和估算之用，不应将其视为完整结果或用于投资决策。 实时结果只能在执行订单时确定。 点差或因市场波动、新闻发布、经济事件、市场的开市和休市时间以及正在交易的品种等因素而波动或扩大。"
         },
         "use": {
-          "title": "如何使用外汇费用交易计算器",
-          "desc": "使用我们的计算器，让交易前的准备更高效。节省计算时间，专注于真正重要的交易决策",
+          "title": "How to Use the Margin Calculator",
+          "desc": "Make your preparation faster and smarter. Save time on calculations and focus on what truly matters — your trading strategy.",
           "ul": {
-            "li1": "选择您的账户类型和基础货币（如 USD、EUR 等）",
-            "li2": "选择您希望交易的品种，例如EURUSD、XAUUSD 等",
-            "li3": "输入交易手数与杠杆，点击“计算”，即可获得所需保证金、每点价值、交易成本等关键参数"
+            "li1": "Select your account type and base currency (e.g. USD, EUR)",
+            "li2": "Choose a trading instrument, such as EURUSD or XAUUSD",
+            "li3": "Enter trade size and leverage, then click “Calculate” to view your required margin"
           },
-          "prompt": "*该计算器适用于所有标准、铂金等账户类型，支持主要外汇品种、黄金、原油等差价合约交易产品。"
+          "prompt": "This calculator uses indicative market data for educational and reference purposes only. Actual trading conditions may vary depending on liquidity, spreads, volatility, and account type.\nResults do not represent live quotes or investment advice."
         },
         "reasons": {
-          "title": "为什么每个交易者都需要一个外汇计算器",
+          "title": "Why Every Trader Needs a Forex Calculator",
           "row": {
             "col1": {
-              "title": "交易计划，从精确计算开始",
+              "title": "Plan Every Trade with Precision",
               "desc": "外汇交易费用计算器是每位交易者制定交易计划的重要工具。它可以在建仓前帮助您提前评估：",
               "ul": {
                 "li1": "所需保证金",
                 "li2": "每点价值",
                 "li3": "预估交易成本"
               },
-              "prompt": "这类信息对任何短线、日内或波段策略都至关重要。由于外汇市场波动剧烈，微小的价格变动就可能带来显著盈亏结果，精确的成本预判是风险控制的第一步。借助该计算器，您可以更好地评估杠杆对风险敞口的影响，制定更稳健的建仓/平仓策略。尤其在多品种、多仓位组合下，提前量化每一笔交易的成本与边际收益，将成为您在剧烈行情中立于不败之地的关键。",
-              "explore": "探索外汇"
+              "prompt": "The Margin Calculator helps traders estimate margin requirements before opening a position —allowing you to understand leverage impact, manage exposure, and plan every trade with confidence.",
+              "explore": "Explore Forex"
             }
           }
         }
       },
       "marketsmap": {
         "charts": {
-          "stock-title": "股票热力图",
-          "stock-desc": "快速了解全球主要股票的涨跌分布与行业表现。通过热力图，您可以直观查看哪些板块领涨、哪些个股回调，为日内操作与板块轮动策略提供参考依据。",
-          "stock-explore": "探索股票",
-          "forex-title": "外汇热力图",
-          "forex-desc": "快速洞察不同货币对的强弱变化，识别市场趋势动能。通过热力图，您可以一目了然地查看哪些货币走强，哪些正在回调，为日内交易与趋势策略提供直观支持",
-          "forex-explore": "探索外汇",
-          "crypto-title": "数字货币热力图",
-          "crypto-desc": "跟踪主流与热门币种在不同时间维度的涨跌变化。无论是 BTC、ETH 还是 SOL、DOGE，加密热力图帮助您迅速把握板块轮动与资金聚焦点，为短线交易或板块轮动提供图形化支持。",
-          "crypto-explore": "探索数字货币"
+          "stock-title": "Stock Heatmap",
+          "stock-midst": "See how global equities and sectors are performing in real time.",
+          "stock-desc": "Spot leading sectors and lagging stocks instantly, giving you a clearer edge in rotation and short-term trading.",
+          "stock-explore": "Explore Stocks",
+          "forex-title": "Asia Future Trading Market Heatmap",
+          "forex-midst": "Quickly visualize the strength and weakness of major currency pairs.",
+          "forex-desc": "Identify market momentum and short-term trends at a glance — helping you plan intraday and trend-following strategies with confidence.",
+          "forex-explore": "Explore Forex",
+          "crypto-title": "Crypto Heatmap",
+          "crypto-midst": "Track market flow and volatility across leading and emerging cryptocurrencies.",
+          "crypto-desc": "From BTC and ETH to SOL and DOGE, the crypto heatmap highlights sector rotations and capital concentration zones — all in one view.",
+          "crypto-explore": "Explore Crypto"
         },
         "marketBanner": {
-          "title": "市场热力图"
+          "title": "Asia Future Trading Market Heatmap"
         },
         "interpretation": {
           "row": {
             "col1": {
-              "title": "什么是热力图？",
-              "desc": "热力图是一种用于可视化市场走势强弱对比的图表工具。它通过颜色深浅变化，直观展示多个交易产品在不同时间段内的涨跌幅，帮助交易者识别波动机会与交易节奏。",
-              "ul-title": "它广泛应用于多个差价合约市场：",
+              "title": "What Is a Market Heatmap?",
+              "desc": "A heatmap is a visual tool that highlights market strength and price movement at a glance. By using color gradients, it shows the relative performance of multiple trading instruments across different timeframes — helping traders identify volatility, trends, and opportunities faster.",
+              "ul-title": "It’s widely used across various CFD markets:",
               "ul": {
-                "li1": "外汇：识别货币对强弱变化，把握趋势动能",
-                "li2": "加密货币：对比多个币种涨跌，捕捉短线机会",
-                "li3": "股票CFD：观察行业轮动与代表性股票的相对强弱"
+                "li1": "Forex: Track currency pair strength and trend momentum.",
+                "li2": "Cryptocurrencies: Compare multi-asset movements and capture short-term rotations.",
+                "li3": "Stocks & ETFs: Spot sector leaders, laggards, and rotation patterns."
               },
-              "prompt": "无论是日内交易还是多品种比较，热力图都能帮助你迅速形成全局判断，提升交易效率。",
-              "enter": "进入交易灵感洞察",
-              "enter-prompt": "获取更多市场解读与策略灵感"
+              "prompt": "Whether you're a day trader or multi-asset strategist, heatmaps give you a clear global view of market dynamics — enhancing your awareness and decision-making speed.",
+              "enter": "Explore AFT Insights",
+              "enter-prompt": "Gain deeper market perspectives and strategic insights"
             }
           }
         }
@@ -1666,81 +1682,82 @@
     "academy": {
       "learning": {
         "banner": {
-          "title": "Asia Future Trading 新手学院学习中心",
-          "midst": "开启你的交易之旅，从这里开始。你不是来观望市场的。你是来掌控它的。",
-          "desc": "从认识市场、了解术语到在Asia Future Trading下出第一笔订单，Asia Future Trading 新手学院为你准备了系统清晰的学习路径，帮助你真正理解并掌握交易的本质。"
+          "title": "Asia Future Trading Academy — Learning Center for New Traders",
+          "midst": "Start your trading journey here. You’re not here to watch the markets — you’re here to master them.",
+          "desc": "From understanding market fundamentals and trading terminology to placing your first live order on Asia Future Trading — our Learning Center provides a clear, structured path designed to help you truly grasp the essence of trading and build confidence with every step."
         },
         "core": {
-          "title": "快速掌握核心交易术语",
-          "desc": "从点差、杠杆到套利机制，我们为新手整理了最常用的交易术语与简明定义，助你快速理解金融语言。",
-          "explore": "探索更多交易术语",
+          "title": "Trader’s Glossary — Master Core Trading Terms Fast",
+          "desc": "From spreads and leverage to arbitrage mechanisms, this glossary helps new traders understand the language of global markets — clearly, simply, and effectively.",
+          "explore": "Discover the Glossary",
           "btn": {
-            "term": "通过术语浏览",
-            "theme": "通过主题浏览"
+            "term": "Browse by Term",
+            "theme": "Browse by Topic"
           },
-          "placeholder": "尝试找出您的答案",
-          "searchNodata": "未找到匹配结果，请尝试更换关键词。",
-          "item": "项",
-          "nodata": "没有数据"
+          "placeholder": "Search trading terms or try a keyword…",
+          "searchNodata": "No matching results were found. Please try changing your keywords.",
+          "item": "Item",
+          "nodata": "No Data"
         },
         "compass": {
-          "title": "新手交易指南 · 三大关键起点",
-          "desc": "掌握交易的原理、选择合适的券商与账户类型，是每一位新手走向成熟的第一步。",
+          "title": "Beginner’s Trading Guide — Three Essential Starting Points",
+          "desc": "Understanding how trading works, choosing the right broker, and selecting the right account type — these are the first essential steps every beginner must take to trade with confidence.",
           "row": {
             "span1": {
-              "title": "如何选择合适的CFD账户？",
-              "desc": "从产品种类到账户功能全面了解",
+              "title": "How to Choose the Right CFD Account?",
+              "desc": "Learn the differences between account types and find the setup that best suits your trading goals.",
               "prompt": "了解什么是CFD账户，不同账户类型的区别，以及如何根据你的交易目标选择最合适的平台与账户结构。"
             },
             "span2": {
-              "title": "如何选择合适的券商？",
-              "desc": "判断平台是否值得信赖",
+              "title": "How to Choose a Reliable Broker？",
+              "desc": "Understand key factors like regulation, cost structure, and platform quality to find a trusted trading partner.",
               "prompt": "从监管信息、费用结构到用户体验，教你如何评估一个券商是否安全可靠、适合你的交易偏好。"
             },
             "span3": {
-              "title": "如何选择合适的CFD账户？",
-              "desc": "从产品种类到账户功能全面了解",
+              "title": "How Trading Works?",
+              "desc": "Discover how the CFD market operates — from pricing and margin to leverage and order execution.",
               "prompt": "了解什么是CFD账户，不同账户类型的区别，以及如何根据你的交易目标选择最合适的平台与账户结构。"
             }
           },
-          "view": "阅读文章"
+          "view": "Read Article"
         },
         "articles": {
-          "title": "系统学习，从你最关心的问题开始",
+          "title": "Documentation Hub",
+          "desc": "Learn Systematically — Start with What Matters Most to You",
           "stage": {
-            "title": "阶段分类",
-            "before": "开户前",
-            "order": "下单前",
-            "operating": "操作中",
-            "control": "风险控制",
-            "functions": "平台功能"
+            "title": "By Stage",
+            "before": "Before Opening",
+            "order": "Before Placing Orders",
+            "operating": "During Trading",
+            "control": "Risks Control",
+            "functions": "Platform Functions"
           },
           "theme": {
-            "title": "主题分类",
-            "forex": "外汇",
-            "crypto": "加密货币",
-            "metal": "贵金属",
-            "stock": "股票&ETF",
-            "future": "期货",
-            "energy": "能源",
-            "beginner": "新手入门",
-            "operationalGuide": "操作指南",
-            "trade": "交易策略",
-            "indices": "操作与指标",
-            "weekView": "每周洞察",
-            "study": "宏观研究",
-            "interpretation": "市场解读",
-            "configuration": "资产配置"
+            "title": "By Topic",
+            "forex": "Forex",
+            "crypto": "Cryptocurrency",
+            "metal": "Precious Metals",
+            "stock": "Stocks & ETFs",
+            "future": "Futures",
+            "energy": "Energy",
+            "beginner": "Getting Started",
+            "operationalGuide": "Trading Guide",
+            "trade": "Strategies",
+            "indices": "Indicators",
+            "weekView": "Weekly Insights",
+            "study": "Macro Research",
+            "interpretation": "Market Analysis",
+            "configuration": "Asset Allocation"
           },
-          "more": "查看更多"
+          "more": "Load More"
         },
         "explore": {
           "row": {
             "col1": {
-              "title": "探索更高一层的交易智慧",
-              "desc": "当你迈出入门的第一步，我们也为你的下一步做好了准备。在交易灵感洞察学院，你将收获更深入的市场解读与策略启发——涵盖每周观点、宏观趋势、进阶策略和多元资产的深度分析。助你持续成长，交易不止步于执行，更走向认知与洞察。",
-              "btnText": "进入交易灵感洞察",
-              "prompt": "获取宏观策略、产品洞察与实战灵感"
+              "title": "Explore a Higher Level of Trading Intelligence",
+              "desc": "As you take your first steps in trading, we’ve already prepared your next.At AFT Insights, you’ll go beyond execution — gaining deeper market understanding and strategic inspiration through weekly outlooks, macro trends, advanced strategies, and multi-asset analysis.Grow continuously, trade not just with skill, but with insight.",
+              "btnText": "Explore AFT Insights",
+              "prompt": "Access macro strategies, product insights, and real-world inspiration."
             }
           }
         }
@@ -1749,385 +1766,385 @@
     "corporation": {
       "about": {
         "banner": {
-          "title": "关于 Asia Future Trading",
-          "prompt": "Born in Asia.  Built for the World.  Refine the Future of Trading.",
-          "desc": "一家以科技与全球流动性高效协作为核心的多资产差价合约经纪商，致力于通过算法驱动的系统、深度流动性与产品创新，为全球交易者持续优化交易体验。"
+          "title": "About Asia Future Trading",
+          "prompt": "Born in Asia. Built for the World. Refine the Future of Trading.",
+          "desc": "Asia Future Trading is a multi-asset CFD broker built on technology, liquidity collaboration, and global connectivity.\nWe focus on delivering an institutional-grade trading experience — combining algorithmic systems, deep liquidity, and continuous product innovation to empower traders worldwide."
         },
         "step": {
           "row": {
             "col1": {
-              "title": "正式启动机构业务",
+              "title": "Launched institutional trading operations",
               "year": "2019"
             },
             "col2": {
-              "title": "布局加密资产管理",
+              "title": "Expanded into digital asset management",
               "year": "2020"
             },
             "col3": {
-              "title": "推出外汇&商品定价服务",
+              "title": "Introduced FX & Commodity pricing services",
               "year": "2021"
             },
             "col4": {
-              "title": "合规框架与全球接入",
+              "title": "Established regulatory framework and global access",
               "year": "2023"
             },
             "col5": {
-              "title": "全球化运营",
+              "title": "Evolving into a global multi-asset brokerage",
               "year": "2024-Now"
             }
           }
         },
         "trust": {
-          "title": "使命，科技驱动信任",
-          "desc": "以“科技驱动信任”为使命，致力于成为全球交易者最值得依赖的合作伙伴。所有账户 0 佣金，0.0点差起。卓越的交易体验，不止于成本与速度，更关乎信任与掌控。",
-          "start": "开始交易"
+          "title": "Our Mission — Technology Builds Trust",
+          "desc": "At Asia Future Trading, our mission is simple — to make technology the foundation of trust.\nWe aim to become the most reliable partner for traders worldwide. With zero commissions and spreads from 0.0, we go beyond cost and speed — delivering confidence, control, and integrity in every trade.",
+          "start": "Start Trading"
         },
         "global": {
-          "title": "全球视野，技术驱动，我们在行动",
+          "title": "Global Vision, Technology Driven — We’re in Action",
           "row": {
             "col1": {
-              "title": "来自 10+ 国家",
-              "desc": "全球策略员与工程师组成核心团队"
+              "title": "From 10+ Countries",
+              "desc": "A core team of global strategists and engineers united by innovation."
             },
             "col2": {
-              "title": "7个地区运营中心",
-              "desc": "悉尼、香港、新加坡、吉隆坡等战略节点"
+              "title": "7 Regional Operation Centers",
+              "desc": "Strategic hubs across Sydney, Hong Kong, Singapore, Kuala Lumpur, and more."
             },
             "col3": {
-              "title": "覆盖全球 37+ 市场",
-              "desc": "多地区合规接入，产品矩阵持续扩展"
+              "title": "Covering 37+ Global Markets",
+              "desc": "Multi-region regulatory access with an ever-expanding product matrix."
             },
             "col4": {
-              "title": "$100 亿+ 月执行交易量",
-              "desc": "外汇、加密货币、指数与商品等CFD产品"
+              "title": "$10 B+ Monthly Trading Volume",
+              "desc": "Spanning Forex, Cryptocurrency, Indices, and Commodity CFDs."
             }
           }
         },
         "values": {
-          "title": "我们的价值观，引领我们每一次技术迭代与服务进化",
-          "desc": "从平台设计、交易执行到客户服务，每一次改进背后，我们始终遵循以下核心信念。",
+          "title": "Our Core Values — Guiding Every Step of Innovation and Service Evolution",
+          "desc": "From platform design and trade execution to client support, every improvement we make is driven by a set of core principles that define who we are.",
           "row": {
             "col1": {
-              "title": "科技驱动",
-              "desc": "我们坚信交易体验的优化来自持续的系统升级。无论是订单撮合还是风控建模，我们都以科技作为底层驱动力。"
+              "title": "Technology Driven",
+              "desc": "We believe that every improvement in trading experience begins with technology. From order matching to risk modeling, continuous system innovation powers everything we build."
             },
             "col2": {
-              "title": "全球透明",
-              "desc": "从点差到执行数据，从成本结构到撮合逻辑，Asia Future Trading 重视每一位用户对“清晰可见”的信任期待。"
+              "title": "Radical Transparency",
+              "desc": "From spreads to execution data, from cost structures to matching logic — Asia Future Trading values clarity as the foundation of trust."
             },
             "col3": {
-              "title": "专业制胜",
-              "desc": "我们将机构级产品设计带入每一位交易者的账户体验。从报价深度到延迟控制，每一个细节皆对标专业市场。"
+              "title": "Professional Excellence",
+              "desc": "We bring institutional-grade design to every trader's experience. From market depth to latency control, every detail meets professional standards."
             },
             "col4": {
-              "title": "本地信赖，全球链接",
-              "desc": "我们从亚洲出发，连接世界流动性并服务全球交易者。通过本地化服务与全球化平台融合，打造用户熟悉而强大的交易合作体验。"
+              "title": "Local Trust, Global Connectivity",
+              "desc": "Born in Asia, built for the world — we connect global liquidity with localized service to create a trading experience that feels both familiar and world-class."
             }
           }
         },
         "compliance": {
-          "title": "全球信任，从合规开始",
+          "title": "Global Trust Begins with Compliance",
           "row": {
             "col1": {
-              "title": "即将成为新加坡交易所（SGX）成员",
-              "desc": "我们致力于提高市场透明度，推动亚洲资本市场健康发展。"
+              "title": "Becoming a Member of SGX (Singapore Exchange) — Coming Soon",
+              "desc": "We are committed to enhancing market transparency and supporting the sustainable development of Asia’s capital markets."
             },
             "col2": {
-              "title1": "澳大利亚 ASIC",
-              "desc1": "作为澳洲本地运营核心之一，Asia Future Trading 目前为 ASIC 授权代表（AR）：编号 001313916",
-              "title2": "英国 FCA",
-              "desc2": "牌照申请稳步推进，合规接入流程已全部完成",
-              "title3": "支持全球业务拓展",
-              "desc3": "针对东南亚、日本、韩国及欧洲等主要市场，已完成支付合规、数据合规与用户接入机制建设",
-              "view": "查看合规资质"
+              "title1": "Australia — ASIC Authorized Representative (AR No. 001313916)",
+              "desc1": "As one of our key operational bases, Asia Future Trading is authorized under the Australian Securities and Investments Commission framework.",
+              "title2": "United Kingdom — FCA Registration in Progress",
+              "desc2": "Our FCA license application is progressing steadily, with all compliance integration processes already completed.",
+              "title3": "Supporting Global Expansion",
+              "desc3": "We have established compliant payment and operational frameworks for major regions — including Southeast Asia, Japan, Korea, and Europe — to enable seamless global service delivery.",
+              "view": "View Regulatory Licenses "
             }
           }
         },
         "articles": {
-          "title": "我们最重视的，不只是交易，还有人与人之间的连接。我们相信，负责任的交易环境，是金融体系可持续演进的基础。",
-          "desc": "Asia Future Trading 相信，值得信赖的金融平台，不仅要提供专业的交易服务，更要成为用户背后的长期伙伴。我们持续投入于 社区运营、教育共建与内容共创，通过连接真实的交易者群体，推动一场有温度、有价值的金融革新。交易之外，我们更关心你是否被理解、是否在成长。",
+          "title": "We value more than trading — we value human connection. ",
+          "desc": "At Asia Future Trading, we believe a responsible trading environment is the foundation of a sustainable financial system. Beyond execution and markets, we’re committed to building a community where traders are understood, supported, and empowered to grow through shared knowledge and genuine connection.",
           "row": {
             "col1": {
-              "title": "全球交易者的陪伴式社区，用长期主义打造",
-              "desc": "帆船积木 · Discord 全球社群、线下见面沙龙、策略分享会、交易挑战赛、KOL 内容共创"
+              "title": "Global Trader Community — Built on Long-Termism",
+              "desc": "SailBrick Discord community, global meetups, strategy workshops, trading challenges, and KOL co-creation — built to connect traders worldwide."
             },
             "col2": {
-              "title": "教育计划 ，交易从理解开始",
-              "desc": "新手学院学习中心、交易灵感洞察、模拟账户训练营、直播课程体系"
+              "title": "Education Initiative — Because Every Trade Begins with Understanding",
+              "desc": "Beginner Learning Hub, AFT Insights, demo trading camps, and live sessions — helping traders grow through real learning and shared insight."
             },
             "col3": {
-              "title": "责任与 ESG 愿景，为了更长远的信任",
-              "desc": "Asia Future Trading 将 ESG（环境、社会与公司治理）理念纳入我们的长期发展路线图中"
+              "title": "Responsibility & ESG Vision — Building Long-Term Trust",
+              "desc": "AFT integrates ESG principles into its long-term growth strategy — advancing a sustainable and responsible trading ecosystem."
             }
           }
         },
         "brief": {
-          "text": "资料概要· 宣传手册",
-          "document": "下载PDF文档"
+          "text": "Company Overview · Brochure",
+          "document": "Download PDF"
         },
         "join": {
-          "title": "加入我们，让金融变得更好",
-          "desc": "Asia Future Trading 正在寻找来自运营、设计、技术、市场等领域的优秀人才与机构合作伙伴，共同推动全球交易体验的下一次跃迁。",
+          "title": "Join Us — Let's Build a Better Financial Future Together",
+          "desc": "Asia Future Trading is seeking talented individuals and strategic partners across operations, design, technology, and marketing to help us redefine the global trading experience.",
           "col1": {
-            "title": "我们团队的目标，是重构一个技术驱动、可信任、属于全球交易者的金融系统。",
-            "desc1": "Leo W.｜Asia Future Trading 量化基础设施工程师",
-            "desc2": "现负责 Asia Future Trading 的数据流处理与风控引擎开发。",
-            "view": "查看开放职位"
+            "title": "“Our goal is to redefine what trust and performance mean in modern finance.”",
+            "desc1": "Leo W. — Quant Infrastructure Engineer, Asia Future Trading",
+            "desc2": "Currently leading the development of AFT’s data-stream processing and risk-control engine.",
+            "view": "View Open Positions"
           }
         },
         "ready": {
-          "title": "准备好开启你的全球交易之旅了吗？",
-          "desc": "Asia Future Trading 已为你接通全球市场的流动性与交易基础设施，现在，是你掌握节奏的时候。",
-          "joint": "连接全球市场 · 机构级基础设施 · 透明可信的交易环境",
-          "trade": "立即交易",
-          "support": "联系支持"
+          "title": "Ready to begin your global trading journey?",
+          "desc": "Asia Future Trading has connected you to global liquidity and market infrastructure — now it’s your turn to take the lead and define your trading future.",
+          "joint": "Connect to Global Markets · Institutional-Grade Infrastructure · Transparent & Trusted Trading Environment",
+          "trade": "Start Trading",
+          "support": "Contact Support"
         }
       },
       "contact": {
         "banner": {
-          "title1": "我们在，",
-          "title2": "真正回应你的每一个需要",
-          "desc": "Asia Future Trading 不只是一个交易平台，我们是你的伙伴、后盾与策略支持团队。",
-          "tips": "开户问题、交易技术、账户咨询，我们始终第一时间响应，为你在市场中提供稳定的信任感与支持力。",
-          "view": "立即联系",
-          "join": "加入社群"
+          "title1": "We're Here,",
+          "title2": "Ready to Support Your Every Need",
+          "desc": "Asia Future Trading is more than just a trading platform — we’re your partner, your foundation, and your strategic support team.",
+          "tips": "From account setup and trading assistance to technical inquiries, our team responds swiftly to provide reliability, trust, and confidence in every trade.",
+          "view": "Contact Us",
+          "join": "Join Community"
         },
         "methods": {
-          "title": "三种方式，全方位支持你的交易之旅",
+          "title": "Three Ways to Support Your Trading Journey — Anytime, Anywhere",
           "row": {
             "col1": {
-              "title": "客户支持中心",
-              "desc": "常见问题快速解答，包括账户、平台、交易规则等",
-              "btnText": "前往支持中心"
+              "title": "Client Support Center",
+              "desc": "Find quick answers to common questions covering accounts, platforms, and trading rules.",
+              "btnText": "Visit Support Center"
             },
             "col2": {
-              "title": "帆船积木社区",
-              "desc": "10,000+ 全球真实用户共建的交易社群，从开户到实盘，全流程陪伴",
-              "btnText": "加入 Discord 社群"
+              "title": "AFT Sailing Blocks Community",
+              "desc": "Join 10,000+ real traders worldwide — a global community guiding you from onboarding to live trading.",
+              "btnText": "Join Discord Community"
             },
             "col3": {
-              "title": "专属客户经理",
-              "desc": "每位账户用户配有一对一客户经理，提供定制化支持服务",
-              "btnText": "联系客户经理"
+              "title": "Dedicated Account Manager",
+              "desc": "Every account holder is assigned a personal manager, providing tailored support and responsive service.",
+              "btnText": "Open Account"
             }
           }
         },
         "joinus": {
-          "title": "加入帆船积木社区，认识更多交易者",
-          "desc": "10,000+ 全球真实用户，与你一起启航交易之旅",
+          "title": "Join the SailingBrick Community — Where Traders Grow Together",
+          "desc": "A global network of 10,000+ real traders, sharing insights, strategies, and the passion for progress.",
           "row": {
             "col1": {
               "1": {
-                "title": "专属服务支持",
-                "desc": "一对一客户服务与策略对接"
+                "title": "Dedicated Support",
+                "desc": "One-on-one client service and strategy consultation."
               },
               "2": {
-                "title": "内容栏目丰富",
-                "desc": "训练营 · 策略栏目 · 问答互动"
+                "title": "Rich Content Hub",
+                "desc": "Bootcamps, strategy columns, and interactive Q&A sessions."
               }
             },
             "col2": {
-              "title": "我们不止是一个平台，更是你的交易伙伴",
-              "desc1": "在 Asia Future Trading，我们希望你在“交易”之外，也能被理解、被帮助、被支持",
-              "desc2": "这正是我们创建帆船积木社区的初衷",
-              "join": "立即加入"
+              "title": "We’re more than a platform — we’re your trading partner.",
+              "desc1": "At Asia Future Trading, we believe trading is just the beginning.",
+              "desc2": "Understanding, support, and growth — that’s why we built the SailingBrick Community.",
+              "join": "Join Now"
             },
             "col3": {
               "1": {
-                "title": "社群互动与激励",
-                "desc": "挑战赛 · 积分系统 · 抽奖活动"
+                "title": "Community Engagement & Rewards",
+                "desc": "Trading challenges, point systems, and giveaway events."
               },
               "2": {
-                "title": "Discord 群组全球互联",
-                "desc": "多语言社群覆盖全球"
+                "title": "Global Connection on Discord",
+                "desc": "Multi-language communities connecting traders worldwide."
               }
             }
           }
         },
         "type": {
-          "title": "你还可以通过这种方式联系我们",
-          "desc": "我们欢迎你的来信，无论是业务合作、意见反馈，还是希望加入我们。",
-          "prompt1": "我们通常会在 3–5 个工作日 内回复所有邮件。",
-          "prompt2": "若你尚未收到回信，可能是由于信息量较大，请耐心等待，我们一定会认真处理每一封来信。",
-          "join": "加入我们",
+          "title": "You Can Also Reach Us Here",
+          "desc": "We welcome your message — whether it’s for partnership, feedback, or career opportunities.",
+          "prompt1": "We usually reply within 3–5 business days.",
+          "prompt2": "If you haven’t received a response yet, please allow some time — every message will be carefully reviewed.",
+          "join": "Join US",
           "row": {
             "col1": {
-              "title": "一般咨询",
-              "desc": "适用于商务合作、产品反馈、媒体采访等一般性联络。"
+              "title": "General Enquiries",
+              "desc": "For business partnerships, product feedback, or media requests."
             },
             "col2": {
-              "title": "一般咨询",
-              "desc": "适用于商务合作、产品反馈、媒体采访等一般性联络。"
+              "title": "Join Our Team",
+              "desc": "For job applications, collaborations, or internship opportunities."
             }
           }
         },
         "language": {
-          "title": "我们支持多语言沟通",
-          "desc": "无论你来自哪里，我们都有语言支持团队为你服务。",
-          "online": "在线",
-          "ready": "准备上线",
-          "prompt1": "全球客服标准语言，24小时支持",
-          "prompt2": "客户支持时间为每天中午12点至晚10点",
-          "prompt3": "每日支持时间为早上10点至晚上8点",
+          "title": "We Support Multi-Language Communication",
+          "desc": "Wherever you are, our language support teams are here to assist you.",
+          "online": "Online",
+          "ready": "Coming Soon",
+          "prompt1": "Global standard language — 24/7 support",
+          "prompt2": "Support hours: 12:00 PM – 10:00 PM (daily)",
+          "prompt3": "Support hours: 10:00 AM – 8:00 PM (daily)",
           "table": {
             "head": {
-              "status": "当前状态",
-              "support": "支持语音",
-              "statement": "说明"
+              "status": "Status",
+              "support": "Supported Language",
+              "statement": "Notes"
             }
           }
         },
         "colleague": {
-          "title": "我们不只是交易系统，我们更是陪你拼出第一块交易积木的伙伴"
+          "title": "From the first block to your trading world — we build it together."
         }
       },
       "careers": {
         "banner": {
-          "title": "让金融变得更好，从你加入 Asia Future Trading 开始",
-          "desc": "让我们一起构建一个真正服务全球交易者的金融系统",
-          "tips": "我们在搭建一套透明、可信、可持续的交易基础设施，以机构级标准，为全球用户提供可验证的市场体验",
-          "view": "查看开放职位"
+          "title": "Make Finance Better — Starting with You at Asia Future Trading",
+          "desc": "Together, we’re building a financial system that truly serves global traders",
+          "tips": "We’re developing a transparent, trusted, and sustainable trading infrastructure — delivering an institutional-grade experience that every trader can verify and trust.",
+          "view": "View Open Roles"
         },
         "infrastructure": {
-          "title": "我们为现代交易者构建交易基础设施",
-          "desc": "Asia Future Trading 是一家面向全球交易者的多资产差价合约经纪商。我们不仅连接市场，更在设计一套面向未来的交易基础设施，让快速执行、透明成本与机构级服务成为每位用户的日常体验。",
+          "title": "Building the Trading Infrastructure for the Modern Trader",
+          "desc": "Asia Future Trading is a multi-asset CFD broker built for global traders. We don’t just connect markets — we’re designing the trading infrastructure of the future, where lightning-fast execution, transparent pricing, and institutional-grade service become everyday standards.",
           "row": {
             "col1": {
-              "title": "全球覆盖",
-              "desc": "服务覆盖亚洲、欧洲与中东等全球 37+ 市场。"
+              "title": "Global Reach",
+              "desc": "Serving clients across 37+ markets in Asia, Europe, and the Middle East — providing localized service, multi-language support, and global access."
             },
             "col2": {
-              "title": "核心团队",
-              "desc": "核心成员来自金融、工程与品牌设计行业，具有复合型背景。"
+              "title": "Core Team",
+              "desc": "Our leadership team brings together experience from finance, engineering, and brand design, combining analytical precision with creative vision to redefine how modern trading feels."
             },
             "col3": {
-              "title": "每月执行交易量",
-              "desc": "月度执行交易量超 100 亿美元，涵盖外汇、加密货币、指数等多个市场。"
+              "title": "Monthly Trading Volume —  10B+",
+              "desc": "Over USD 10 billion in executed volume every month, spanning Forex, Cryptocurrency, Indices, Energy, and Stock CFDs."
             }
           }
         },
         "principle": {
-          "title": "引领我们构建的核心原则",
-          "desc": "无论是产品设计、系统搭建，还是服务交付，我们始终坚持一套核心原则。它们是我们建立信任、提供性能、实现可持续发展的基础。",
+          "title": "The Core Principles That Guide Us",
+          "desc": "Whether in product design, system architecture, or client service, we’re guided by a set of principles that define who we are — the foundation of trust, performance, and long-term sustainability.",
           "row": {
             "col1": {
-              "title": "全球覆盖",
-              "desc": "服务覆盖亚洲、欧洲与中东等全球 37+ 市场。"
+              "title": "Global Presence",
+              "desc": "Serving clients across 37+ markets in Asia, Europe, and the Middle East — combining global scale with local depth to empower every trader’s journey."
             },
             "col2": {
-              "title": "全球透明，重塑信任标准",
-              "desc": "我们对成本结构与执行机制保持设计级别的透明。因为信任的前提，是“可见”。"
+              "title": "Radical Transparency",
+              "desc": "We maintain design-level transparency across our cost structure and execution logic — because trust begins with visibility."
             },
             "col3": {
-              "title": "专业制胜，对标机构级标准",
-              "desc": "专业不该只属于机构。从深度流动性到订单延迟，我们为每位交易者提供机构级性能。"
+              "title": "Professional by Default",
+              "desc": "Professional performance shouldn’t be reserved for institutions. From deep liquidity to low-latency execution, every trader deserves institutional-grade precision."
             },
             "col4": {
-              "title": "本地信赖，全球链接",
-              "desc": "我们连接全球市场，同时提供本地化服务支持。技术可以扩展，但信任，来自一对一的陪伴。"
+              "title": "Local Trust, Global Reach",
+              "desc": "We connect global markets while providing localized, human support. Technology scales — trust is built one relationship at a time."
             }
           }
         },
         "offices": {
-          "title": "全球办公节点",
+          "title": "Global Offices & Operations",
           "list": {
             "item1": {
-              "title": "大洋洲",
-              "text1": "悉尼｜全球运营总部"
+              "title": "Oceania",
+              "text1": "Sydney — Global Operations Headquarters"
             },
             "item2": {
-              "title": "亚洲",
-              "text1": "香港｜全球产品管理中心",
-              "text2": "新加坡｜创新实验室基地",
-              "text3": "吉隆坡｜多语种客服中心",
-              "text4": "东京｜服务日本本地市场",
-              "text5": "阿布扎比｜中东市场布局与合规接入"
+              "title": "Asia",
+              "text1": "Hong Kong — Global Product Management Center",
+              "text2": "Singapore — Innovation & Technology Lab",
+              "text3": "Kuala Lumpur — Multilingual Client Support Center",
+              "text4": "Tokyo — Japan Market Service Hub",
+              "text5": "Abu Dhabi — Middle East Expansion & Regulatory Access"
             },
             "item3": {
-              "title": "远程",
-              "text1": "我们正在全球范围持续招募优秀人才与合作伙伴，共同拓展交易边界涵盖英国、德国、加拿大等地团队与机构合作伙伴支持内容策略、市场拓展与法规准备工作"
+              "title": "Remote",
+              "text1": "We’re continuously expanding our global remote teams and partnerships — across the UK, Germany, Canada, and beyond — to support our growth in\ncontent strategy, market development, and regulatory readiness."
             }
           }
         },
         "hire": {
-          "title": "招聘岗位",
-          "apply": "立即申请",
+          "title": "Open Roles",
+          "apply": "Apply Now",
           "list": {
             "development": {
-              "title": "系统研发 Engineering",
+              "title": "Engineering",
               "1": {
-                "name": "后端开发工程师（Python / FastAPI）",
-                "location": "远程 / 悉尼",
-                "desc": "构建与维护订单路由、风控模型与数据服务模块，确保系统高可用性与低延迟执行。"
+                "name": "Backend Engineer (Python / FastAPI)",
+                "location": "Remote / Sydney",
+                "desc": "Build and maintain order routing, risk models, and data services with high availability and ultra-low latency."
               },
               "2": {
-                "name": "交易系统测试工程师",
-                "location": "远程",
-                "desc": "设计与实施高质量自动化测试，覆盖账户、交易、结算与行情系统模块。"
+                "name": "Trading Systems Test Engineer",
+                "location": "Remote",
+                "desc": "Design and implement robust automated tests across account, trading, clearing, and market-data systems."
               }
             },
             "operation": {
-              "title": "交易运营 Trading Operations",
+              "title": "Trading Operations",
               "1": {
-                "name": "交易运营实习生",
-                "location": "香港 / 新加坡 / 远程",
-                "desc": "支持交易数据整理、用户行为分析与交易指标追踪，参与策略迭代支持"
+                "name": "Trading Operations Intern",
+                "location": "Hong Kong / Singapore / Remote",
+                "desc": "Support trade data curation, user-behavior analytics, and KPI tracking; assist with strategy iteration."
               },
               "2": {
-                "name": "客户支持专员（多语言）",
-                "location": "香港 / 吉隆坡 / 远程",
-                "desc": "负责面向东南亚或欧洲客户的日常支持工作，涵盖开户、订单问题与账户协助。"
+                "name": "Client Support Specialist (Multilingual)",
+                "location": "Hong Kong / Kuala Lumpur / Remote",
+                "desc": "Provide daily client support (onboarding, order inquiries, account assistance) for SEA and EU regions."
               }
             },
             "growth": {
-              "title": "品牌与增长 Marketing & Growth",
+              "title": "Marketing & Growth",
               "1": {
-                "name": "增长策略分析师",
-                "location": "远程 / 悉尼",
-                "desc": "结合用户数据、渠道分析与转化漏斗建模，制定与优化增长策略。"
+                "name": "Growth Strategy Analyst",
+                "location": "Remote / Sydney",
+                "desc": "Combine user analytics, channel insights, and funnel modeling to design and optimize growth strategies."
               },
               "2": {
-                "name": "品牌内容编辑 / 撰稿人",
-                "location": "远程 / 弹性办公",
-                "desc": "产出市场教育内容、品牌博客与产品解读文案，协助构建可信的内容体系。"
+                "name": "Brand Content Editor / Writer",
+                "location": "Remote / Flexible",
+                "desc": "Produce education pieces, brand blog articles, and product explainers to build a credible content stack."
               }
             },
             "analysis": {
-              "title": "分析师 / 实习岗位 Analyst & Internship",
+              "title": "Analyst & Internship",
               "1": {
-                "name": "市场分析实习生",
-                "location": "远程",
-                "desc": "研究宏观经济、加密市场或外汇流动性趋势，撰写支持产品或用户策略的分析报告。"
+                "name": "Market Research Intern",
+                "location": "Remote",
+                "desc": "Research macroeconomic trends, crypto markets, or FX liquidity dynamics. Produce analytical reports to support product development and user strategies."
               },
               "2": {
-                "name": "视觉 / UI 设计实习生",
-                "location": "远程 / 弹性办公",
-                "desc": "参与品牌设计体系迭代，协助设计营销资产、UI 模块与社交媒体内容。"
+                "name": "Visual / UI Design Intern",
+                "location": "Remote / Flexible",
+                "desc": "Contribute to AFT’s evolving design system — assist in creating marketing assets, UI modules, and social media visuals."
               }
             },
-            "desc1": "找不到适合你的岗位？欢迎主动联系我们。",
-            "desc2": "如果你对 Asia Future Trading 的使命有强烈共鸣，具备系统能力、学习能力或独特视角，请将简历和动机信发送至",
-            "desc3": "我们更看重动机与契合度，而不仅是简历上的段落。"
+            "desc1": "Didn’t see a perfect fit?",
+            "desc2": "If you resonate with AFT’s mission and bring systems thinking, rapid learning, or a unique perspective, send your résumé and a brief motivation letter to",
+            "desc3": "We care more about motivation and alignment than what’s written on your résumé."
           }
         },
         "setOut": {
-          "title": "现在，轮到你出发",
-          "desc": "我们正在构建面向未来的金融系统，从交易基础设施到用户体验，每一环节都值得被重新定义。Asia Future Trading 欢迎敢于挑战旧范式的你，一起把全球交易者真正放在中心。",
-          "view": "查看空缺职位"
+          "title": "Now it’s your turn to shape the future of trading.",
+          "desc": "We’re building the next generation of financial infrastructure — where every layer, from execution systems to user experience, is being redefined. At Asia Future Trading, we welcome those who challenge old paradigms and believe the global trading ecosystem should put traders at the center.",
+          "view": "View Open Positions"
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "我所在的国家可以申请吗？",
-              "desc": "是的，Asia Future Trading 接受来自全球各地的申请人。除远程岗位外，我们在悉尼、香港、新加坡等地亦设有实体办公室。"
+              "title": "Can I apply if I’m not based in one of your office locations?",
+              "desc": "Yes. Asia Future Trading welcomes applicants from all over the world. In addition to remote positions, we have physical offices in Sydney, Hong Kong, and Singapore."
             },
             "li2": {
-              "title": "是否接受实习生或应届毕业生？",
-              "desc": "我们欢迎具备潜力的年轻候选人加入 Analyst 或 Internship 方向，只要你具备强烈动机与自我驱动能力。"
+              "title": "Do you accept interns or recent graduates?",
+              "desc": "Absolutely. We welcome motivated young candidates to join our Analyst or Internship programs — what matters most is your drive and curiosity to learn."
             },
             "li3": {
-              "title": "我不是金融背景出身，也能申请吗？",
-              "desc": "当然。我们关注系统性思维、技术能力与学习力。欢迎来自工程、数据、设计等多领域的人才加入我们。"
+              "title": "I don’t have a finance background — can I still apply?",
+              "desc": "Of course. We value system thinking, technical ability, and a strong learning mindset. Candidates from engineering, data, or design backgrounds are encouraged to apply."
             }
           }
         }
@@ -2439,7 +2456,7 @@
           "ul": {
             "li1": {
               "title": "Who is the Classic Account designed for?",
-              "desc": "Almost everyone! Whether you’re a beginner, an experienced trader, or testing lightweight strategies, the Classic Account provides a stable and flexible trading environment for all levels."
+              "desc": "Almost everyone! Whether you're a beginner, an experienced trader, or testing lightweight strategies, the Classic Account provides a stable and flexible trading environment for all levels."
             },
             "li2": {
               "title": "Can I upgrade from a Cent Account to a USD Account?",
@@ -2515,7 +2532,7 @@
         },
         "environment": {
           "title": "Lightning-Fast VPS Environment for MetaTrader 5",
-          "desc": "Asia Future Trading provides global low-latency VPS servers, purpose-built for high-frequency and EA trading. Whether you’re in Asia, Europe, or the Americas, connect directly to MT5 via VPS for millisecond-level execution and unmatched trading stability.",
+          "desc": "Asia Future Trading provides global low-latency VPS servers, purpose-built for high-frequency and EA trading. Whether you're in Asia, Europe, or the Americas, connect directly to MT5 via VPS for millisecond-level execution and unmatched trading stability.",
           "more": "Learn More About VPS Services",
           "download": "Download MetaTrader 5"
         },
@@ -2691,231 +2708,234 @@
       "vic": {
         "banner": {
           "title": "Asia Future Trading VIC",
-          "midst1": "赋能数字时代的机构和专业交易员",
-          "midst2": "更强交易权限 · 更高定制自由 · 为专业交易员和机构而生",
-          "desc1": "入金门槛：",
+          "midst1": "Empowering institutions and professional traders in the digital era.",
+          "midst2": "Greater access. Higher flexibility. Designed for those who trade without limits.",
+          "desc1": "Minimum Deposit:",
           "desc2": "美金起",
-          "register": "申请成为 VIC 客户",
-          "transfer": "立即入金50,000USD"
+          "prompt": "Step into an exclusive tier of professional-grade trading excellence — with direct liquidity access, personalized service, and institutional-grade execution.",
+          "register": "Apply for VIC Account",
+          "transfer": "Deposit USD 50,000"
         },
         "permission": {
-          "title": "机构级账户权限，专为策略驱动而设",
-          "desc": "VIC账户为机构级交易者提供更强控制、更深流动性与更高自由度，六大核心权益，全面重塑你的交易架构。",
+          "title": "Institutional Privileges — Engineered for Strategy-Driven Trading",
+          "desc": "The VIC Account empowers institutional and high-net-worth traders with deeper liquidity, greater control, and complete flexibility. 6 exclusive privileges — redefining what professional trading should be.",
           "swiper": {
             "span1": {
-              "title": "0佣金 + 0.0 点差起的原生点差",
-              "desc": "主流产品接入原生报价通道，真正低成本执行，无佣金、无加点。"
+              "title": "0 Commissions · Raw Spreads from 0.0 Pips",
+              "desc": "Access direct institutional pricing channels on major instruments — no markups, no commissions, just pure execution."
             },
             "span2": {
-              "title": "产品定制 + OTC报价",
-              "desc": "支持 ETH/XAU 等组合合约、非标产品与大宗交易柜台报价通道。"
+              "title": "Custom Products & OTC Pricing",
+              "desc": "Trade bespoke pairs such as ETH/XAU or request OTC quotes for large-block and non-standard transactions."
             },
             "span3": {
-              "title": "VIC 专属撮合队列优先权与最优报价",
-              "desc": "订单进入独立高优先级队列，享受最优流动性与更快成交速度。"
+              "title": "Priority Matching & Best Execution",
+              "desc": "VIC orders are routed through an exclusive high-priority queue, ensuring optimal liquidity access and lightning-fast fills."
             },
             "span4": {
-              "title": "Asia Future Trading 银行卡",
-              "desc": "提供全球支付、消费返现与资金清算功能，连接交易账户与日常生活。"
+              "title": "Asia Future Trading Mastercard & Visa",
+              "desc": "Experience seamless fund access with global spending, cashback, and settlement features — connecting your trading and daily life."
             },
             "span5": {
-              "title": "技术顾问 + 客户经理双支持",
-              "desc": "一对一策略顾问与专属客户经理，覆盖技术部署与账户运营支持。"
+              "title": "Dedicated Technical & Account Support",
+              "desc": "Work directly with both a strategy advisor and a relationship manager for integrated technical deployment and operational assistance."
             },
             "span6": {
-              "title": "全球 VIC 俱乐部活动",
-              "desc": "专属帆船 & F1赛席位、策略大师课、线下闭门交流会，仅限邀请参与。"
+              "title": "Global VIC Club Access",
+              "desc": "Enjoy invitation-only experiences — from private sailing and F1 events to elite strategy workshops and networking summits."
             }
           },
-          "prompt1": "VIC 账户默认继承所有铂金账户权益（包括利息账户、VPS服务等）。",
-          "prompt2": "俱乐部活动与节假日礼品视平台运营策略动态调整，最终解释权归 Asia Future Trading 所有。"
+          "prompt1": "All Platinum privileges are automatically included with every VIC Account — including access to the Future Earn interest program, VPS hosting, and other premium features.\nClub events and seasonal rewards are subject to change based on platform operations and marketing strategy.",
+          "prompt2": "Asia Future Trading reserves the right of final interpretation."
         },
         "route": {
-          "title1": "Asia Future Trading VIC 机构专线",
-          "title2": "重构你的交易路径，掌控执行背后的每一步",
-          "midst": "不只更快、更优，还更精准",
-          "desc": "连接全球核心金融节点，接入专属订单通道，VIC 账户掌握从撮合队列、流动性源头、系统接口到最终成交路径的完整控制权。",
+          "title1": "Asia Future Trading VIC — Institutional Direct Line",
+          "title2": "Redefine your execution. Command every step from liquidity to final fill.",
+          "midst": "Not just faster or deeper — but smarter, more precise, and truly institutional.",
+          "desc": "Connect with the world’s core financial hubs through dedicated order channels. Gain full control over every step — from matching queues and liquidity sources to final execution. Every trade, engineered for precision, performance, and trust.",
           "row": {
             "col1": {
-              "title": "专属撮合引擎与定向路由",
-              "desc": "订单不再与零散订单混排，而是进入机构级独立撮合系统，根据策略类型、品种波动性、挂单规模等自动分配报价与执行路径。不止更快，而是更精准。"
+              "title": "Dedicated Matching Engine & Smart Routing",
+              "desc": "Your orders are handled through an institutional-grade matching engine — separated from retail flow and dynamically routed for optimal pricing and execution. Precision built in, not just speed."
             },
             "col2": {
-              "title": "直连核心撮合系统",
-              "desc": "构建真正可控的交易执行底座。特别适用于高频、量化、网格与跨品类策略执行系统对接。"
+              "title": "Direct Connectivity to Core Execution Systems",
+              "desc": "Gain a fully controllable foundation for execution. Built for high-frequency, quantitative, grid, and multi-asset trading architectures requiring low-latency API and FIX connectivity."
             },
             "col3": {
-              "title": "全球 Equinix 节点 + 流动性池支持",
-              "desc": "Equinix LD4（伦敦）/ NY4（纽约）/ TY3（东京）直连，VIC 用户可直通流动性池挂单通道，保障隐私、降低冲击。"
+              "title": "Global Equinix Network & Liquidity Access",
+              "desc": "Connect directly to Equinix LD4 (London), NY4 (New York), and TY3 (Tokyo). VIC clients gain private access to institutional liquidity pools — ensuring confidentiality, stability, and minimal market impact."
             }
           }
         },
         "stream": {
-          "title": "定制你的流动性与成本结构",
-          "desc": "可以 1 USD / Million USD（每百万美元交易量）起为单位定制，VIC 账户从报价源到费用结构，给予你前所未有的掌控权。",
+          "title": "Customize Your Liquidity and Cost Structure",
+          "desc": "With the VIC Account, you gain full flexibility to define your own liquidity and pricing model — starting from as low as USD 1 per million traded.",
           "row": {
             "col1": {
-              "title": "连接全球顶级流动性提供者，从点差、佣金到执行路径，你不再只是接受系统设定，而是与我们共同定义你的交易条件。",
+              "title": "Partner with global liquidity and brokerage networks to define your pricing and execution path. Build a trading environment tailored to your strategy, free from system constraints.",
               "ul": {
-                "li1": "连接 Finalto、LMAX、XTX 等全球一线流动性提供者",
-                "li2": "按百万美金起交易量申请定制佣金与点差",
-                "li3": "支持浮动/固定点差配置，佣金阶梯返还与团队共享返点",
-                "li4": "大宗订单可接入 OTC 通道，执行更隐蔽、滑点更低",
-                "li5": "可基于策略类型申请定制流动性来源（Custom Routing）"
+                "li1": "Direct access to Finalto, LMAX, XTX, and other Tier-1 liquidity providers",
+                "li2": "Integration with prime brokers and institutional venues",
+                "li3": "Fully customizable spreads & commissions (from USD 1 per million traded)",
+                "li4": "Choice of floating or fixed spreads with tiered rebates",
+                "li5": "OTC channels for large orders — deeper liquidity, lower slippage, more privacy",
+                "li6": "Optional custom routing based on strategy type and liquidity preference"
               }
             },
             "col2": {
-              "apply": "申请 VIC 定制报价方案",
-              "desc": "仅限已开户的 VIC 用户，需完成策略说明与交易量评估。"
+              "apply": "Request a Custom VIC Quote",
+              "desc": "Available exclusively to approved VIC members — subject to strategy assessment and trading volume evaluation."
             }
           }
         },
         "custom": {
-          "title": "定制你的交易产品结构",
-          "desc": "标准产品不一定适配你的所有策略。VIC 账户为合格用户提供组合交易标的的申请与结构定制通道，由流动性团队进行评估与配置。",
+          "title": "Customize Your Trading Product Structure",
+          "desc": "Standard products don’t always fit every strategy. The VIC Account gives qualified clients access to bespoke cross-asset instruments, evaluated and structured by our liquidity team.",
           "row": {
             "col2": {
-              "title": "组合标的合约（Cross-Symbol Product）",
+              "title": "Cross-Symbol Products",
               "ul": {
-                "li1": "支持如 ETH/XAU、BTC/ XAU、GOLD/USDT 等跨品类组合交易品种",
-                "li2": "产品结构将由 AFT 内部产品与流动性团队评估后决定是否上线",
-                "li3": "仅限 VIC 用户申请"
+                "li1": "Trade custom instruments such as ETH/XAU, BTC/XAU, or GOLD/USDT, bridging digital and traditional markets.",
+                "li2": "Product structures are subject to AFT’s internal liquidity and product evaluation before being listed.",
+                "li3": "Available exclusively to VIC clients."
               },
-              "desc": "VIC 并不对所有策略开放自动创建权限，所有产品结构均需经由 AFT 合规与流动性评估后上线。我们致力于在合规、安全的前提下，为策略逻辑提供最大自由度。",
-              "apply": "申请组合产品定制权限",
-              "prompt": "*请提交策略逻辑说明，我们将在 5 个工作日内完成初步评估反馈。"
+              "desc": "VIC clients do not have automatic creation privileges. All product structures must pass AFT’s compliance and liquidity assessments prior to activation. Our goal is to maximize strategic flexibility — within a framework of transparency, safety, and regulatory integrity.",
+              "apply": "Request Custom Product Authorization",
+              "prompt": "*Submit your strategy documentation — our team will review and respond within 5 business days."
             }
           }
         },
         "credit": {
-          "account": "美金免费申请解锁VIC账户。"
+          "account": "Apply for free and unlock your VIC Account today."
         },
         "bankCards": {
-          "title1": "Asia Future Trading USDT 银行卡",
-          "title2": "免费申请·连接全球交易与支付网络",
+          "title1": "Asia Future Trading USDT Card",
+          "title2": "Free to Apply · Connect Your Trading and Global Payment Network",
           "row": {
             "col1": {
-              "title": "解决你的大额出入金烦恼，打通从账户资金到日常消费的全流程。不只是出入金，更是你交易生活的一部分。",
+              "title": "Solve your large-scale funding challenges with a seamless bridge between your trading capital and everyday spending.\nMore than a payment solution — it’s an extension of your trading lifestyle.",
               "ul": {
-                "li1": "VIC 用户专属申请权限，支持虚拟卡或实体实体卡开通",
-                "li2": "USDT 账户一键提现至联名银行卡，快速到账、稳定通道",
-                "li3": "支持绑定 Apple Pay / Google Pay，全球消费通行无阻",
-                "li4": "VIC 用户免费申请，免除 $20 USD / 月银行卡订阅费用"
+                "li1": "Exclusive to VIC clients — available as both virtual and physical cards",
+                "li2": "Withdraw USDT directly to your linked AFT Card with instant settlement and secure channels",
+                "li3": "Fully compatible with Apple Pay and Google Pay for effortless global payments",
+                "li4": "VIC members enjoy complimentary application — saving the standard USD 20/month subscription fee"
               },
-              "understand": "了解USDT 联名卡"
+              "understand": "Learn About USDT Card"
             },
             "col2": {
-              "desc": "*VIC 用户登录后台或联系专属客服经理即可申请，审批周期预计 2–3 个工作日"
+              "desc": "*VIC clients can apply via the client portal or through their dedicated account manager. Approval typically takes 2–3 business days."
             }
           }
         },
         "experience": {
-          "title": "VIC 私享服务俱乐部，交易之外的尊享体验，只为极少数人开放",
-          "desc": "加入全球顶尖交易者的专属社群，拓展你的圈层、策略视野与生活方式。",
-          "prospect": "交易是你通往世界的方式，我们帮你把世界带到你面前。",
+          "title": "Asia Future Trading VIC Club, an exclusive experience beyond trading — reserved for the few who truly lead the markets.",
+          "desc": "Join an elite circle of global traders and investors.Expand your network, sharpen your strategy, and elevate your lifestyle.",
+          "prospect": "Trading connects you to the world — we bring the world closer to you.",
           "row": {
             "col1": {
-              "title": "私享活动 · 高净值社交圈层",
-              "desc": "帆船赛事、方程式赛事、投资闭门会、策略圆桌每年定期举行「VIC Global Gathering」峰会AFT VIC 客户团队全程协助安排接待与行程"
+              "title": "Private Events & Networking",
+              "desc": "Exclusive access to sailing regattas, Formula One, and private investment gatherings. VIC clients enjoy priority invitations with full concierge support."
             },
             "col2": {
-              "title": "交易者社交网络 · 高质量连接",
-              "desc": "仅限 VIC 用户进入的私享社群定期发布宏观策略、流动性洞察、结构化产品示范连接真正懂交易的人，与全球策略玩家并肩前行"
+              "title": "Global Trader Network",
+              "desc": "Join a private VIC community to share insights, strategies, and market intelligence with top global traders."
             },
             "col3": {
-              "title": "高端礼遇 · 奖励计划优先级",
-              "desc": "VIC 用户积分加权，优先进入高级奖池奖励从限量 NFT、BTC、劳力士、香奈儿到法拉利试驾体验、私人航班、战略配对服务"
+              "title": "Premium Rewards",
+              "desc": "Unlock weighted rewards and priority access to elite prizes — from NFTs and BTC to Rolex and Ferrari."
             }
           }
         },
         "table": {
+          "title": "VIC — Not Just a Higher Tier, But a Complete Redefinition of Trading Architecture.",
           "row": {
-            "head1": "账户维度",
-            "head2": "Platinum 铂金账户",
-            "head3": "VIC 机构账户",
-            "col1-1-1": "入金门槛",
-            "col1-1-2": "$5,000 USD",
-            "col1-1-3": "$50,000 USD",
-            "col1-2-1": "撮合优先级",
-            "col1-2-2": "高优先级队列",
-            "col1-2-3": "独立队列 + 可定向撮合路由",
-            "col1-3-1": "点差结构",
-            "col1-3-2": "低至 0.0 点",
-            "col1-3-3": "低至 0.0 点；可定制，单位：USD / Million，按交易量评估",
-            "col1-4-1": "产品定制权限",
-            "col1-4-2": "否",
-            "col1-4-3": "可申请 ETH/XAU 等组合品种，策略逻辑接入",
-            "col1-5-1": "利息账户",
-            "col1-5-2": "可申请（5.6% AER 浮动）",
-            "col1-5-3": "同享权益",
-            "col1-6-1": "银行卡支持",
-            "col1-6-2": "可申请",
-            "col1-6-3": "免订阅费，优先开通",
-            "col1-7-1": "服务支持",
-            "col1-7-2": "客户经理 + 通用客服",
-            "col1-7-3": "多对一客户团队 + 技术对接支持",
-            "col1-8-1": "交易积分与奖励",
-            "col1-8-2": "进阶积分比率",
-            "col1-8-3": "高阶加权积分 + 高级奖池自动参与",
-            "col1-9-1": "社群与活动",
-            "col1-9-2": "铂金俱乐部（基础权益）",
-            "col1-9-3": "VIC 专属私享俱乐部，定向邀请 + 圈层连接"
+            "head1": "Account Dimension",
+            "head2": "Platinum Account",
+            "head3": "VIC Institutional Account",
+            "col1-1-1": "Minimum Deposit",
+            "col1-1-2": "USD 5,000",
+            "col1-1-3": "USD 5,000",
+            "col1-2-1": "Matching Priority",
+            "col1-2-2": "High-priority queue",
+            "col1-2-3": "Independent queue + Smart routing options",
+            "col1-3-1": "Spread Structure",
+            "col1-3-2": "As low as 0.0 pips",
+            "col1-3-3": "As low as 0.0 pips · Fully customizable (USD / Million — volume-based pricing)",
+            "col1-4-1": "Product Customization",
+            "col1-4-2": "-",
+            "col1-4-3": "Eligible for cross-symbol instruments (e.g., ETH/XAU), with strategy logic integration",
+            "col1-5-1": "Interest Account",
+            "col1-5-2": "Optional (Up to 5.6% AER variable)",
+            "col1-5-3": "Same entitlement included",
+            "col1-6-1": "AFT Card Support",
+            "col1-6-2": "Available upon request",
+            "col1-6-3": "Subscription fee waived · Priority issuance",
+            "col1-7-1": "Service & Support",
+            "col1-7-2": "Dedicated manager + standard support",
+            "col1-7-3": "Multi-manager team + technical integration support",
+            "col1-8-1": "Trading Points & Rewards",
+            "col1-8-2": "Standard progressive rewards",
+            "col1-8-3": "Weighted points + exclusive premium reward pools",
+            "col1-9-1": "Community & Events",
+            "col1-9-2": "Platinum Club (basic access)",
+            "col1-9-3": "VIC Private Club · Invitation-only network & elite events"
           }
         },
         "process": {
-          "title": "开户流程",
+          "title": "How to Open a VIC Account in 4 Steps",
           "step": {
             "1": {
-              "title": "开设账户",
-              "desc": "只需填写基础信息，1分钟完成注册",
-              "bottom": "立即开户"
+              "title": "Open an Account",
+              "desc": "Start your VIC onboarding with a quick registration.\nOur client services team will assist you through verification and eligibility review.",
+              "bottom": "Open Account"
             },
             "2": {
-              "title": "下载 MetaTrader5",
-              "desc": "支持桌面端、移动端与网页版",
-              "bottom": "探索下载MetaTrader5"
+              "title": "Download MetaTrader 5",
+              "desc": "Access institutional-grade trading infrastructure on desktop, mobile, or web — all synchronized in real time.",
+              "bottom": "Download MetaTrader 5"
             },
             "3": {
-              "title": "入金",
-              "desc": "多种方式支持，包括银行卡、电汇、USDT",
-              "bottom": "了解出入金方式"
+              "title": "Fund Your Account",
+              "desc": "Deposit USD 50,000 or more to unlock full VIC privileges. Choose from secure funding options — bank transfer, wire transfer, or USDT.",
+              "bottom": "Fund Now"
             },
             "4": {
-              "title": "开始交易",
-              "desc": "立即进入全球市场，体验 0 佣金快速执行",
-              "bottom": "立即体验交易"
+              "title": "Activate Institutional Access",
+              "desc": "Once verified, gain direct liquidity access, personalized service, and institutional-grade execution — all within one seamless platform.",
+              "bottom": "Start Trading"
             }
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "成为 VIC 用户需要什么条件？",
-              "desc": "需要满足最低入金 50,000 美元，具备一定交易经验，并能提供清晰的策略逻辑或资金用途说明。所有申请将由 AFT 客户经理与风控团队进行评估。"
+              "title": "What are the requirements to become a VIC member?",
+              "desc": "A: A minimum deposit of USD 50,000 is required. Applicants should demonstrate relevant trading experience and provide a clear strategy rationale or fund usage description. All applications are reviewed by AFT’s client services and risk management teams."
             },
             "li2": {
-              "title": "我可以随时从铂金账户升级为 VIC 吗？",
-              "desc": "可以。请联系您的客户经理或通过后台提交 VIC 升级申请，我们将为您进行资格审核与配置调整。"
+              "title": "Can I upgrade from a Platinum Account to a VIC Account at any time?",
+              "desc": "A: Yes. You can request an upgrade through your account dashboard or by contacting your dedicated account manager. Your eligibility and account configuration will then be reviewed and adjusted accordingly."
             },
             "li3": {
-              "title": "VIC 用户有哪些定制权限？",
-              "desc": "VIC 用户可申请组合标的（如 ETH/XAU）、定制报价通道（Custom Routing）、专属佣金与点差结构（以百万美元为单位评估），也可接入 FIX 协议或使用 API 交易。"
+              "title": "What customization privileges do VIC members have?",
+              "desc": "A: VIC clients can apply for cross-symbol products (e.g., ETH/XAU), custom routing channels, and personalized commission or spread structures (evaluated per USD million traded). Access to API or FIX trading connectivity can also be granted upon request."
             },
             "li4": {
-              "title": "USDT 银行卡是否对 VIC 用户免费？",
-              "desc": "是的，VIC 用户可免费申请 AFT 联名银行卡，免除 $20/月订阅费用，并享受优先审批与高额度出入金支持。"
+              "title": "Is the USDT bank card free for VIC members?",
+              "desc": "A: Yes. VIC members enjoy free access to the AFT co-branded USDT card, with the $20/month subscription fee waived. VIC clients also receive priority approval and enhanced deposit/withdrawal limits."
             },
             "li5": {
-              "title": "利息账户是否稳定？可以随时取出吗？",
-              "desc": "是的。AFT 利息账户每日结算，利息实时到账，用户可随时提取，不影响交易资金流动性。年化收益浮动，当前最高为 5.6%。"
+              "title": "Is the Future Earn Account stable, and can I withdraw anytime?",
+              "desc": "A: Yes. Interest is calculated daily and credited automatically. You can withdraw at any time without affecting trading liquidity. The annualized rate is variable — currently up to 5.6% AER."
             },
             "li6": {
-              "title": "如何参与 VIC 的积分计划与实物奖励？",
-              "desc": "所有 VIC 用户自动参与 AFT 积分计划，交易越多、奖励越高。积分可兑换专属 NFT、BTC、品牌腕表、汽车体验等。详情请联系客户经理获取兑换手册。"
+              "title": "How can I participate in the VIC rewards and loyalty program?",
+              "desc": "A: All VIC members are automatically enrolled in AFT’s points-based reward system. The more you trade, the higher your reward tier. Points can be redeemed for exclusive NFTs, BTC, luxury watches, car experiences, and more. Contact your account manager for the latest redemption catalog."
             },
             "li7": {
-              "title": "VIC Club 的活动信息如何获取？",
-              "desc": "所有 VIC Club 活动均由客户经理定向邀请，不一定对外公开。请确保联系方式更新，并开启通知权限，我们将第一时间同步相关活动安排。"
+              "title": "How can I get notified about VIC Club events?",
+              "desc": "A: VIC Club events are invite-only and often not publicly announced. Make sure your contact details are up to date and notifications enabled — your account manager will personally inform you of any upcoming activities or invitations."
             }
           }
         }
@@ -2923,122 +2943,125 @@
       "profit": {
         "banner": {
           "top": "Future Earn Account",
-          "title": "闲置收益增强账户",
-          "desc": "铂金/VIC 账户专享利息无需锁仓、无资金费率、挂钩真实市场利率（SOFR），利息 T+1 自动入账。为长期信任用户打造的可视化利息回报账户。",
-          "register": "立即开通铂金账户",
-          "vic": "立即开通 VIC 账户",
-          "prompt": "Future Earn 是 Asia Future Trading 推出的闲置资金收益解决方案。所有利息每日结算，直接计入交易账户，可随时提取、不影响交易。通过挂钩 SOFR，帮助长期交易者将账户余额转化为稳定的日常回报。",
+          "title": "Your Interest-Enhanced Trading Balance Solution.",
+          "desc": "Exclusive to Platinum and VIC clients — earn daily interest with no lock-ups, no funding fees, and rates benchmarked to real-market SOFR. All interest is automatically credited on a T+1 basis, creating a transparent, effortless return system designed for long-term traders.",
+          "register": "Open Platinum Account",
+          "vic": "Open VIC Account",
           "board": {
-            "rates": "今日市场参考利率（SOFR）：",
-            "from": "数据来源 ：美国纽约联邦储备银行（Federal Reserve Bank of New York）",
-            "desc": "Future Earn Account 的利息计算挂钩公开市场利率（SOFR），用于提供收益估算与透明度锚点。实际利息由 Asia Future Trading 平台发放，并非源自资金再投资或市场操作。用户资金不会被投入任何金融市场或进行资产管理，相关利率仅为市场参考指标，不构成任何投资建议或收益承诺。",
-            "tag": "纽约联储官方（FRED: SOFR）｜利息发放与平台机制详见用户协议"
+            "rates": "Today’s Reference Rate (SOFR): ",
+            "from": "Source：Federal Reserve Bank of New York (FRED: SOFR)",
+            "desc": "Future Earn is Asia Future Trading’s yield solution for idle balances. Interest is calculated daily, automatically credited, and withdrawable anytime without affecting trading. Rates are benchmarked to SOFR for transparency and market alignment. All interest is paid directly by Asia Future Trading, not from reinvestment or market activity. Funds are never used for asset management, and reference rates do not constitute investment advice or guaranteed returns.",
+            "tag": "Interest distribution and platform mechanism details are outlined in the User Agreement."
           }
         },
         "mechanism": {
-          "title": "利息机制，简明清晰，为长期持有而生",
+          "title": "A Simple, Transparent Interest Mechanism — Built for Committed Traders",
           "row": {
             "col1": {
-              "title": "每日结息",
-              "desc": "每天计算、次日到账，系统自动累积，无需手动领取。"
+              "title": "Daily Interest",
+              "desc": "Earn automatically — interest is calculated daily and credited on a T+1 basis, with no manual steps required."
             },
             "col2": {
-              "title": "挂钩 SOFR",
-              "desc": "锚定纽约联储 SOFR 利率，数据透明公开、每日更新。"
+              "title": "SOFR-Linked",
+              "desc": "Rates benchmarked to the New York Fed’s SOFR index for transparent, market-aligned performance."
             },
             "col3": {
-              "title": "无锁仓",
-              "desc": "资金随时进出，不影响过往利息，灵活应对市场策略。"
+              "title": "No Lock-Up",
+              "desc": "Access your funds anytime without interrupting accrued interest — total flexibility for active, long-term trading."
             }
           }
         },
         "rates": {
-          "title": "我们将你的闲置资金，锚定真实的市场利率",
-          "desc1": "我们每日引用 SOFR（Secured Overnight Financing Rate） 作为利率锚点，由 美国纽约联邦储备银行 发布，广泛应用于全球银行、对冲基金与金融市场。",
-          "desc2": "与旧有的 LIBOR 相比，SOFR 更透明、基于实际市场成交，已成为全球主流的美元短期利率参考。",
-          "desc3": "在 Asia Future Trading，每一笔 Future Earn 利息 都锚定 SOFR ——无营销利率、无隐藏算法，所有逻辑公开、可验证。",
-          "line-title": "SOFR 历史折线图"
+          "title": "Anchoring Your Idle Funds to Real Market Rates",
+          "desc1": "At Asia Future Trading, every Future Earn interest calculation is benchmarked to the SOFR (Secured Overnight Financing Rate) — a transparent rate published daily by the Federal Reserve Bank of New York, and widely used by global banks, hedge funds, and institutional investors.",
+          "desc2": "Unlike the outdated LIBOR, SOFR is derived from real market transactions, offering full transparency and credibility across financial markets.",
+          "desc3": "Your interest is tied to genuine market performance — no promotional rates, no hidden formulas, and complete visibility into how your returns are calculated.",
+          "line-title": "SOFR Historical Trend"
         },
         "profit": {
-          "title": "在你的 MetaTrader 5 交易账户里！利息每日结算，T+1 自动入账，闲置生息，无感收息",
-          "desc": "Future Earn Account 致力于为策略型交易者和长期账户用户，提供透明、高效、不打扰交易节奏的收益型机制。所有利息每日自动结算、T+1 入账，资金全程自由流动。",
+          "title": "Earn Daily Interest — Right in Your MT5 Account！Trade and grow effortlessly with automatic T+1 interest crediting.",
+          "desc": "The Future Earn Account is built for strategic traders and long-term clients — offering a transparent, automated, and interruption-free yield mechanism. Interest is calculated daily and credited automatically on T+1, while your funds remain fully flexible for deposits, withdrawals, or trading anytime.",
           "row": {
             "col1": {
               "ul": {
-                "li1": "每日系统自动计算利息",
-                "li2": "次日（T+1）自动计入您的 MT5 账户余额（Balance）",
-                "li3": "无需申领，无额外手续费",
-                "li4": "所有利息 可提现、复投、或用于交易"
+                "li1": "Daily interest automatically calculated",
+                "li2": "Credited to your MT5 Balance on T+1",
+                "li3": "No manual claiming or extra fees",
+                "li4": "Withdraw, reinvest, or trade anytime"
               },
-              "gold": "探索铂金账户",
-              "vic": "探索 VIC 账户",
-              "download": "下载 MetaTrader 5"
+              "gold": "Explore Platinum Account",
+              "vic": "Explore VIC Account",
+              "download": "Download MetaTrader 5"
             }
           }
         },
         "mockCalculator": {
           "row": {
             "col1": {
-              "title1": "模拟收益试算器",
-              "desc1": "输入你账户中的可用余额，系统将自动根据SOFR市场利率为你计算每日预估收益。无需锁仓、利息每日到账。",
-              "title2": "单日参考年化利率(SOFR)：5.30%",
-              "desc2": "来源: New York Fed — SOFR reference"
+              "title1": "Future Earn Simulator",
+              "desc1": "Enter your available account balance to estimate your potential daily interest earnings based on the current SOFR market rate.\nNo lock-ups. Interest is credited daily and automatically to your MT5 account.",
+              "title2": "Current Reference Annual Rate (SOFR):  5.30%",
+              "desc2": "Source: Federal Reserve Bank of New York — SOFR Benchmark"
             },
             "col2": {
-              "title": "年目标利息收益",
-              "desc": "滑动选择你想获得的年收益，系统将基于当日 SOFR 年化利率帮你计算需要投入多少资金。",
-              "tips": "所需闲置资金（实时变动）：",
-              "prompt": "本计算器仅用于参考与模拟，不构成投资建议或收益承诺。所需资金为根据用户设定的年收益目标及当前市场参考利率（如 SOFR）反向估算，实际利息将按每日市场利率动态计算并结算到账。最终收益受市场行情、账户状态及平台机制等因素影响，平台不保证未来收益表现，请以实际到账金额为准。"
+              "title": "Set Your Annual Interest Goal",
+              "desc": "Choose your desired annual return — from USD 20 to USD 1,000+ — and see how much idle capital you’d need to achieve it, calculated in real time using the latest SOFR benchmark rate.",
+              "tips": "Required Idle Balance (Live Estimate):",
+              "prompt": "Disclaimer: This calculator is for simulation and reference only. It does not constitute financial advice or a guaranteed return. All figures are reverse-calculated based on user-selected targets and current market reference rates such as SOFR. Actual interest is settled daily and may vary with market conditions, account status, and platform mechanisms. Final credited interest should be considered the only accurate outcome."
             }
           }
         },
         "values": {
-          "title": "你的余额，在持续产生价值，每天",
-          "desc": "Future Earn 让你的账户，每天都在创造回报无需操作，无需干预，收益自然发生"
+          "title": "Your Balance Never Sleeps — Earning Every Day",
+          "desc": "Future Earn transforms your idle funds into daily returns — automatically, transparently, and without disrupting your trading. No extra steps, no hidden rates — your capital keeps working while you trade."
         },
         "advance": {
-          "title": "我们提供的不只是利率而是机制的进化",
-          "desc1": "Future Earn 是 Asia Future Trading 为策略型与长期用户打造的日息账户机制",
-          "desc2": "无需申购理财产品｜不锁仓、不干扰交易｜每日结息，T+1 入账 MT5 余额",
+          "title": "We Offer More Than Interest — A Sustainable, User-Empowering Yield Mechanism",
+          "desc1": "Future Earn is a daily interest system built by Asia Future Trading for strategic and long-term traders.",
+          "desc2": "No subscriptions, no lock-ups, no disruption — interest is settled daily and automatically credited to your MT5 balance on T+1.",
           "desc3": "市面虽有不同收益方式，但像这样无感操作、每日到账、机制透明的设计仍属少见。我们提供的不是年化承诺，而是一套 可验证、可持续、尊重用户自由的收益机制",
           "row": {
             "col1": {
-              "title": "适合专业交易者｜解锁日息账户 + VPS云服务器支持",
-              "desc": "极低点差，最快成交速度，最大化交易效率",
-              "btn": "开通铂金账户"
+              "title": "For Professional Traders. Daily Interest + VPS Cloud Support",
+              "desc": "Unlock institutional-grade trading with ultra-tight spreads, sub-millisecond execution,and seamless access to Future Earn daily interest.Designed for professionals who demand precision, speed, and control.",
+              "btn": "Open Platinum Account"
             },
             "col2": {
-              "title": "面向机构与高净值交易者｜享专属客户经理与技术对接",
-              "desc": "加入 Asia Future Trading 百万美元俱乐部，尊享定制服务",
-              "btn": "开通 VIC 账户"
+              "title": "For Institutions & High-Net-Worth Clients. Private Manager + Technical Integration",
+              "desc": "Experience true premium trading — priority execution, dedicated account management,and direct access to Asia Future Trading’s exclusive Million-Dollar Club.Tailored for elite traders and institutional partners.",
+              "btn": "Open VIC Account"
             }
           }
         },
         "qa": {
           "ul": {
             "li1": {
-              "title": "成为 VIC 用户需要什么条件？",
-              "desc": "需要满足最低入金 50,000 美元，具备一定交易经验，并能提供清晰的策略逻辑或资金用途说明。所有申请将由 AFT 客户经理与风控团队进行评估。"
+              "title": "What are the requirements to become a VIC client?",
+              "desc": "A minimum deposit of USD 50,000 is required, along with proven trading experience and a clear strategy or capital utilization plan. All applications are reviewed by AFT’s client management and risk control teams."
             },
             "li2": {
-              "title": "利息是如何计算和发放的？",
-              "desc": "系统每天根据账户可用余额 × 当日 SOFR 利率进行利息计算，并在 T+1 自动计入您的 MT5 账户余额（Balance）。"
+              "title": "What are the requirements for opening a Platinum Account?",
+              "desc": "Start with a minimum deposit of USD 5,000,or activate your Platinum Account with a USD 10/month subscription (free application available through your client manager)."
             },
             "li3": {
-              "title": "利息是否需要锁仓或特定操作？",
-              "desc": "无需锁仓、无需手动领取。利息不影响正常交易、出金或其他账户操作，真正做到“无感收息”。"
+              "title": "How is interest calculated and credited?",
+              "desc": "Interest is calculated daily based on your available account balance × the current SOFR rate, and automatically credited to your MT5 account balance on a T+1 basis."
             },
             "li4": {
-              "title": "利率是多少？是否浮动？",
-              "desc": "利息每日锚定由美国纽约联储发布的 SOFR（无担保隔夜融资利率），会随市场变动同步调整，无平台人为设定。"
+              "title": "Do I need to lock up funds or perform any manual actions to receive interest?",
+              "desc": "No. There are no lock-ups or claim steps. Interest does not affect your trading, withdrawals, or any account operations — it’s completely automatic and seamless."
             },
             "li5": {
-              "title": "我的资金是否会被再投资或托管？",
-              "desc": "不会。Future Earn 利息由 Asia Future Trading 平台发放，用户资金不会进入任何投资或资产管理流程，仅作为交易账户余额存在。"
+              "title": "What determines the interest rate?",
+              "desc": "Interest is benchmarked to the SOFR (Secured Overnight Financing Rate) published by the Federal Reserve Bank of New York. The rate fluctuates with market conditions and is not manually adjusted by the platform."
             },
             "li6": {
-              "title": "利息是否会显示在我的账户记录中？",
-              "desc": "是的。每日到账利息将以交易记录形式显示在您的 MT5 历史中（备注为“Interest”），可随时查看与提取。"
+              "title": "Will my funds be reinvested or managed externally?",
+              "desc": "No. Future Earn interest is fully issued by Asia Future Trading. Client funds remain securely in your trading account and are not invested or used in any asset management activities."
+            },
+            "li7": {
+              "title": "Will my earned interest appear in my account records?",
+              "desc": "Yes. Each credited interest payment is recorded in your MT5 account history under the label “Interest”, visible and withdrawable anytime."
             }
           }
         }
@@ -3047,193 +3070,203 @@
     "mutual": {
       "trading-competition": {
         "banner": {
-          "title": "全球千万美金交易大赛 · Asia Future Trading",
-          "desc1": "与全球顶尖交易者同场竞技，赢取荣耀与丰厚奖励",
-          "desc2": "无论你是新手、高手还是量化团队，都能找到属于你的舞台",
+          "title": "Global $10 Million Trading Championship · Asia Future Trading",
+          "desc1": "Compete with the world’s top traders and earn both glory and rewards.",
+          "desc2": "Whether you're a beginner, a professional, or a quantitative team — there's a stage for you",
           "blueprint": {
-            "title": "免费复制冠军策略，开启实战之旅",
-            "desc": "共赴悉尼颁奖盛典，见证交易传奇诞生"
+            "title": "Copy champion strategies for free and start your live trading journey.",
+            "desc": "Join us at the Sydney Awards Ceremony and witness the rise of new trading legends."
           }
         },
         "slide": {
-          "desc1": "通过一家值得信赖的全球经纪商，向市场证明你的实力",
-          "desc2": "参赛规则很简单：创建账户，开始交易，并努力获胜！",
-          "review": "赛事精选回顾",
-          "total": "总奖池",
-          "progressing": "进行中",
-          "end": "已结束",
-          "current": "当前热门比赛",
-          "past": "往期比赛",
+          "desc1": "Prove your skill with a trusted global broker.",
+          "desc2": "It’s simple — open an account, start trading, and aim for victory.",
+          "review": "Featured Competitions Recap",
+          "total": "Total Prize Pool",
+          "progressing": "Live Now",
+          "end": "Past Competitions",
+          "current": "Ongoing",
+          "past": "Past Competitions",
           "swiper": {
             "item1": {
-              "title": "AFT 铂金账户速赢挑战赛"
+              "title": "AFT Platinum Quick-Win Challenge",
+              "desc": "Compete for rapid rewards under real trading conditions — open to all Platinum Account holders.",
+              "btn": "Join Now"
             },
             "item2": {
-              "title": "AFT 铂金账户速赢挑战赛",
-              "desc": "冠军收益率达125%，已发奖 $ 100,0000"
+              "title": "AFT Global Demo Challenge · Season 2",
+              "desc": "Prizes: $1,000,000. A global demo event showcasing top trading skill and precision."
             },
             "item3": {
-              "title": "VIC 专属私享赛",
-              "desc": "私人定制奖金计划"
+              "title": "VIC Private Invitational",
+              "desc": "Exclusive black-and-gold competition for institutional traders with custom rewards."
             },
             "item4": {
-              "title": "AFT 新年争霸赛",
-              "desc": "2025新年活动，送福袋"
+              "title": "AFT New Year Clash",
+              "desc": "Festive 2025 challenge featuring seasonal bonuses and special rewards."
             },
             "item5": {
-              "title": "AFT 夏季交易之王",
-              "desc": "高手对决，美股冲榜争霸"
+              "title": "AFT Summer Trading King",
+              "desc": "Summer tournament inspired by U.S. equities — traders battled for the top spot."
             }
           },
-          "prompt": "AFT全球千万美金交易大赛，汇聚全球顶级交易者。我们将帆船哲学融入金融赛场，传承悉尼卓越，热爱的力量。当然，您是操作巨星，还是交易新秀，都可以免费复制冠军收益。大赛优胜者将受邀前去悉尼参加颁奖典礼，见证交易赛场与航海的传奇。"
+          "prompt": "AFT Global $10 Million Trading Championship unites top traders worldwide. Inspired by the spirit of sailing and Sydney’s legacy of excellence, every participant can freely copy champion strategies and compete for glory. Winners will be invited to Sydney for the Grand Awards Ceremony — where trading meets passion, and legends set sail."
         },
         "professional": {
-          "title": "专业赛场，需要专业平台",
-          "desc": "从全球流动性到专业工具，从策略支持到联盟奖励，Asia Future Trading 为交易者打造全面的竞赛环境与长期支持",
-          "understand": "了解平台",
-          "trade": "立即开始交易",
+          "title": "Professional Competitions Demand Professional Platforms",
+          "desc": "From global liquidity to advanced tools, from strategy support to partner rewards — Asia Future Trading builds a complete, transparent, and professional environment for every competitor.",
+          "understand": "Explore the Platform",
+          "trade": "Start Trading",
           "row": {
             "col1": {
-              "title": "全球直连流动性",
-              "desc": "与 XTX Markets、Finato 等全球顶级流动性提供商深度合作，报价稳定，订单快速执行"
+              "title": "Global Institutional Liquidity",
+              "desc": "Direct access to top-tier providers such as XTX Markets and Finato, ensuring stable pricing and lightning-fast execution."
             },
             "col2": {
-              "title": "Metatrader 5 交易工具",
-              "desc": "支持 MT5 桌面端 / 移动端 / 网页端，覆盖全球 90% 专业交易员的首选工具"
+              "title": "MetaTrader 5 Trading Tools",
+              "desc": "Available on desktop, mobile, and web, MT5 remains the preferred choice of over 90% of professional traders worldwide."
             },
             "col3": {
-              "title": "支持一键复制跟单",
-              "desc": "支持一键复制功能，每个人都可以复制传奇"
+              "title": "One-Click Copy Trading",
+              "desc": "Copy top-performing strategies instantly — trade like the champions."
             },
             "col4": {
-              "title": "联盟计划返佣高达 70%",
-              "desc": "业内领先返佣计划，多种联盟合作机制助力你的长期收益"
+              "title": "Affiliate Rewards up to 70%",
+              "desc": "Industry-leading rebate programs and multi-level partnerships that fuel your long-term growth."
             },
             "col5": {
-              "title": "策略自由和透明",
-              "desc": "不限制交易策略类型，比赛规则公开透明"
+              "title": "Freedom & Transparency",
+              "desc": "No restrictions on trading strategies — all competition rules are open and transparent."
             },
             "col6": {
-              "title": "杠杆高达1:2000",
-              "desc": "满足多种交易风格和资金管理需求"
+              "title": "Leverage up to 1:2000",
+              "desc": "Built for every trading style and capital management approach."
             }
           }
         },
         "prize-pool": {
-          "title": "Asia Future Trading 全球交易大赛全年奖金池，激励全球交易者突破自我",
-          "desc": "月度、季度均有排行榜与终极对决，多资产、多市场，多重挑战，总有一场属于你",
-          "total": "总奖金：",
+          "title": "Asia Future Trading Global Trading Championships. A Year-Round Prize Pool Inspiring Traders Worldwide",
+          "desc": "Monthly and quarterly leaderboards. Multi-asset, multi-market, and multi-challenge — there’s always a competition built for you.",
+          "total": "Total Prize Pool：",
           "row": {
             "col1": {
-              "title": "贵金属市场奖池",
+              "title": "Precious Metals Division",
               "number": "$50,000,000",
-              "desc": "覆盖核心资产：黄金（XAU/USD）"
+              "desc": "Core Asset: Gold (XAU/USD)"
             },
             "col2": {
-              "title": "加密货币市场奖池",
+              "title": "Crypto Assets Division",
               "number": "$10,000,000",
-              "desc": "涵盖 BTC、ETH、SOL、XRP 等热门加密资产"
+              "desc": "Covering BTC, ETH, SOL, XRP, and more leading digital assets."
             },
             "col3": {
-              "title": "外汇市场奖池",
+              "title": "Forex Division",
               "number": "$30,000,000",
-              "desc": "涵盖主流货币对与交叉盘（EUR/USD、GBP/JPY 等）"
+              "desc": "Featuring major and cross pairs such as EUR/USD and GBP/JPY."
             },
             "col4": {
-              "title": "股票市场奖池",
+              "title": "Stocks Division",
               "number": "$5,000,000",
-              "desc": "涵盖美股热门 CFD：特斯拉、英伟达、苹果等"
+              "desc": "Includes top U.S. stock CFDs — Tesla, NVIDIA, Apple, and more."
             }
           }
         },
         "reward": {
-          "title": "全球奖金池，赢取最终荣誉与丰厚奖励",
-          "desc1": "全球交易者逐鹿赛场，最终前 10 名将载入交易名人榜，赢得至高荣耀与奖励",
-          "desc2": "交易名人榜头号荣耀，受邀出席悉尼盛典"
+          "title": "Trade. Compete. Rise.",
+          "desc1": "The top 10 global traders will earn eternal recognition in the AFT Hall of Fame and share in exclusive rewards.",
+          "desc2": "The Hall of Fame Champion will be invited to Sydney to attend the official AFT Global Awards Ceremony."
         },
         "celebrity": {
-          "title": "全球交易名人榜",
-          "desc": "当前排名领先选手将进入“交易名人榜”，接受全球交易者复制！",
-          "growth": "累积增长率：",
-          "copy": "复制人数：",
-          "type": "帐户类型：",
-          "quickly": "一键复制交易",
-          "prompt": "复制交易功能需使用与被复制交易者相同账户类型（如 Classic / Platinum / VIC）。如需了解复制机制详情，请联系您的客户经理或咨询 Asia Future Trading 客户支持中心。"
+          "title": "Global Trading Hall of Fame",
+          "desc": "Top-performing traders will be featured in the Global Hall of Fame,\nwhere their strategies can be viewed — and even copied — by traders worldwide.",
+          "growth": "Total Return (%):",
+          "copy": "Copiers:",
+          "type": "Account Type:",
+          "quickly": "Copy Trade",
+          "prompt": "Copy-trading requires using the same account type as the trader being copied (e.g., Classic, Platinum, or VIC). For details about the copy mechanism, please contact your account manager or reach out to the Asia Future Trading Support Center."
         },
         "rank": {
-          "title": "不同赛道，同样荣耀",
-          "desc": "新锐、专家与明星交易者组别，谁将登顶荣耀巅峰？",
+          "title": "From Rising Stars to Elites — Every Trader’s Journey to Glory.",
+          "desc": "Rising Stars, Experts, and Elites — who will rise to the top of the trading world?",
           "tabs": {
-            "1": "新锐组",
-            "2": "专家组",
-            "3": "明星组"
+            "1": "Rising Star",
+            "2": "Expert",
+            "3": "Elite"
           },
           "prompt": {
-            "1": "适用于入金 ≤ $5,000 的经典账户参赛者",
-            "2": "适用于入金 $5,000–$50,000 的铂金账户参赛者",
-            "3": "适用于入金 ≥ $50,000 的VIC账户参赛者"
+            "1": "For Classic Account participants with deposits ≤ $5,000 USD",
+            "2": "For Platinum Account participants with deposits between $5,000 – $50,000 USD",
+            "3": "For VIC Account participants with deposits ≥ $50,000 USD"
           },
           "table": {
-            "rank": "排名",
-            "name": "昵称",
-            "credit": "累计收益率",
-            "type": "账户类型",
-            "operator": "操作",
-            "copy": "复制交易"
+            "rank": "Rank",
+            "name": "Nickname",
+            "credit": "Total Return",
+            "type": "Account Type",
+            "operator": "Action",
+            "copy": "Copy Trade"
           }
         },
         "entry": {
-          "title": "交易赛季进度条与账户赛道入口",
-          "desc": "每个账户，都有属于你的竞技赛道",
+          "title": "Trading Season Progress & Account Track Entry",
+          "desc": "Every account has its own path to glory.",
           "card": {
             "btns": {
-              "crypto": "加入加密货币比赛",
-              "forex": "加入外汇市场比赛",
-              "metals": "加入贵金属市场比赛",
-              "stocks": "加入股票市场比赛"
+              "crypto": "Join Crypto Competition",
+              "forex": "Join Forex Competition",
+              "metals": "Join Metals Competition",
+              "stocks": "Join Stocks Competition"
             },
-            "weeklyPool": "每周奖金池",
-            "monthlyPool": "每月奖金池",
+            "weeklyPool": "Prize Pool: Week",
+            "monthlyPool": "Prize Pool: Month",
             "col1": {
-              "title": "美分账户周赛",
-              "desc": "比赛周期：本周一至周五（UTC 时间）"
+              "title": "Classic Mini Cup | Cent Account Weekly",
+              "desc": "Competition Period: Monday–Friday (UTC)"
             },
             "col2": {
-              "title": "经典账户月赛",
-              "desc": "比赛周期：为期 12 个月（UTC 时间）"
+              "title": "Classic Pro Cup | Monthly Challenge",
+              "desc": "Competition Period: Monthly (UTC)"
             },
             "col3": {
-              "title": "铂金账户月赛",
-              "desc": "比赛周期：为期 12 个月（UTC 时间）"
+              "title": "Platinum Cup | Monthly Championship",
+              "desc": "Competition Period: Monthly (UTC)"
             },
             "col4": {
-              "title": "VIC 账户尊享赛",
-              "desc": "比赛周期：为期 12 个月（UTC 时间）"
+              "title": "VIC Elite Challenge | Institutional Tier",
+              "desc": "Competition Period: Quarterly (UTC)"
             }
           }
         },
         "decision": {
-          "title": "赋能每一次交易决策",
-          "desc1": "无论你是新手交易者还是资深操盘手，我们为你提供全方位的学习与策略支持。",
-          "desc2": "从实战经验的专家团队，到每日更新的交易灵感，再到实时互动的网络研讨会，我们致力于帮助你在市场中做出更明智的决策。",
+          "title": "Empowering Every Trading Decision",
+          "desc1": "Whether you're a beginner or a seasoned trader, we provide comprehensive learning and strategy support.",
+          "desc2": "From expert-led insights and daily trading signals to live webinars and interactive discussions, AFT is dedicated to helping you make smarter decisions in every market move.",
           "row": {
             "col1": {
-              "title": "你将获得",
+              "title": "What You'll Gain",
               "desc": "CTA策略信号支持：由量化分析团队每日发布核心交易提示交易灵感洞察学院：涵盖趋势解析、资产专题、策略构建等模块每周网络研讨会（Webinar）：与分析师实时互动，掌握最新行情社交媒体跟进：每日市场观点、平台资讯不间断更新",
-              "register": "立即开户",
-              "jump": "进入洞察学院"
+              "register": "Open an Account",
+              "jump": "Enter AFT Insights",
+              "1-title": "CTA Strategy Signals",
+              "1-desc": "Daily trading alerts and insights curated by our quantitative analysis team.",
+              "2-title": "AFT Insight Academy",
+              "2-desc": "Covering trend analysis, asset breakdowns, and strategy-building modules.",
+              "3-title": "Weekly Webinars",
+              "3-desc": "Live sessions with analysts to stay ahead of market trends.",
+              "4-title": "Social Media Updates",
+              "4-desc": "Daily perspectives and platform news — always up to date."
             },
             "col2": {
-              "title": "成功的交易并非来自直觉，而是来自系统性思维与信息优势。",
-              "desc": "——— 每周网络研讨会 ｜AFT 策略顾问 Jerry Zhang"
+              "title": "Successful trading isn’t about intuition — it’s about structured thinking and information advantage.",
+              "desc": "— Jerry Zhang, AFT Strategy Advisor (Weekly Webinar Host)"
             }
           }
         },
         "conquer": {
-          "title": "征服市场，主宰赛场",
-          "desc": "AFT 全球千万美金交易大赛，等待真正的操盘者登场。下一位站上领奖台的，也许就是你。",
-          "register": "开启账户",
-          "trade": "立即交易"
+          "title": "Conquer the Market. Command the Arena.",
+          "desc": "Join the AFT Global Trading Championship with a multi-million-dollar prize pool. The next trader to stand on the winner’s podium could be you.",
+          "register": "Open an Account",
+          "trade": "Start Trading"
         }
       },
       "funding": {
@@ -3362,34 +3395,34 @@
   "Navigation": {
     "menu": {
       "products": {
-        "title": "产品",
-        "description": "专业定价 ，更低交易成本，低点差、低佣金、低借贷利率。",
-        "btn": "探索加密货币",
+        "title": "CFD Products",
+        "description": "Institutional pricing. Minimal costs as low as 0.01%. Maximum performance.",
+        "btn": "Explore Crypto",
         "row": {
           "col-1": {
-            "title": "CFD 产品",
+            "title": "CFD Products",
             "ul": {
-              "li1": "外汇",
-              "li2": "贵金属",
-              "li3": "能源",
-              "li4": "股票 & ETF",
-              "li5": "期货合约",
-              "li6": "加密资产"
+              "li1": "Forex",
+              "li2": "Precious Metals",
+              "li3": "Energy",
+              "li4": "Stocks & ETFs",
+              "li5": "Futures",
+              "li6": "Crypto Assets"
             }
           },
           "col-2": {
-            "title": "定价",
+            "title": "Pricing",
             "ul": {
               "li1": "定价概览",
               "li2": "点差",
-              "li3": "一般费用",
+              "li3": "General Fees",
               "li4": "调期利率"
             }
           },
           "col-3": {
-            "title": "条件",
+            "title": "Trading Conditions",
             "ul": {
-              "li1": "入金与出金",
+              "li1": "Deposits & Withdrawals",
               "li2": "客户保护",
               "li3": "交易条款与合规KYC"
             }
@@ -3397,26 +3430,26 @@
         }
       },
       "platforms": {
-        "title": "交易平台",
-        "description": "为专业而生，覆盖所有交易员，从个人到机构",
-        "btn": "立即下载",
+        "title": "Platforms",
+        "description": "Built for professionals — trusted by traders worldwide, from individuals to institutions.",
+        "btn": "Download Now",
         "row": {
           "col-1": {
-            "title": "桌面端",
+            "title": "Desktop",
             "ul": {
               "li1": "MetaTrader 5 (Windows)",
               "li2": "MetaTrader 5 (macOS)"
             }
           },
           "col-2": {
-            "title": "移动端",
+            "title": "Mobile",
             "ul": {
               "li1": "MetaTrader 5 (iOS)",
               "li2": "MetaTrader 5 (Android)"
             }
           },
           "col-3": {
-            "title": "网页端",
+            "title": "Web",
             "ul": {
               "li1": "MetaTrader 5 WebTrader"
             }
@@ -3424,26 +3457,26 @@
         }
       },
       "account": {
-        "title": "交易账户",
-        "description": "来自亚洲交易旗舰平台提供的账户，访问全球所有资产列别，六位账户 ID，畅达六万市场产品，还能参与收益增强计划，最大化投资效率。",
-        "btn": "开设铂金账户",
+        "title": "Accounts",
+        "description": "Experience true global access — 60,000+ instruments, transparent pricing, and smarter capital performance.",
+        "btn": "Open a Platinum Account",
         "row": {
           "col-1": {
-            "title": "账户类型",
+            "title": "Account Types",
             "ul": {
-              "li1": "Classic 经典账户",
-              "desc1": "最受欢迎、行业领先的标准账户",
-              "li2": "Platinum 铂金账户",
-              "desc2": "享受低至0-行业最低佣金，访问每一个交易品种",
-              "li3": "机构 VIC 级账户",
-              "desc3": "赋能数字资产时代的机构交易"
+              "li1": "Classic Account",
+              "desc1": "The most popular and industry-leading standard account.",
+              "li2": "Platinum Account",
+              "desc2": "Enjoy ultra-low commissions — access every trading instrument at institutional rates.",
+              "li3": "VIC Institutional Account",
+              "desc3": "Built for institutional and high-net-worth clients in the digital asset era."
             }
           },
           "col-2": {
-            "title": "简单赚",
+            "title": "Yield Program",
             "ul": {
-              "li1": "简单赚取利息*账户",
-              "desc1": "Asia Future Trading 账户利息新模式，安全无忧稳定赚"
+              "li1": "Future Earn Account",
+              "desc1": "A new way to earn stable, secure interest directly within your AFT trading account."
             }
           },
           "col-3": {
@@ -3456,9 +3489,9 @@
         }
       },
       "beginner": {
-        "title": "CFD 新手学院",
-        "description": "新手必读、操作指南、尽在新手学院，帮助你从新手成为CFD交易大师，轻松交易CFD。立即尝试美分账户，1美金交易英伟达 Share - CFD。",
-        "btn": "前往学习中心",
+        "title": "CFD Academy",
+        "description": "Start your trading journey — just $1 to trade NVIDIA Share-CFD with a Cent Account.",
+        "btn": "Visit Trading Academy",
         "row": {
           "col-1": {
             "title": "基础文章",
@@ -3485,36 +3518,36 @@
             }
           },
           "col-3": {
-            "title": "了解更多",
+            "title": "CFD Beginner Academy",
             "ul": {
-              "li1": "CFD新手学院",
-              "desc1": "全面汇聚新手必读资料和实用交易指南，助您持续进阶。",
-              "li2": "CFD新手文档中心",
-              "desc2": "全面汇聚新手必读资料和实用交易指南，助您持续进阶。"
+              "li1": "Asia Future Trading Academy",
+              "desc1": "Your central hub for essential guides and practical trading tutorials — learn, grow, and trade with confidence.",
+              "li2": "Documentation Hub",
+              "desc2": "Comprehensive learning materials and platform resources designed to help you start strong and continuously improve."
             }
           }
         }
       },
       "inspiration": {
-        "title": "交易灵感",
-        "description": "我们将全球重要经济事件、利率决议、就业数据、通胀发布等宏观信号编入The Asia Future Trading View 财经日历中。专家团队洞察精选撰写技术分析和交易策略建议，帮助投资者更从容应对市场波动并把握每一次的交易机会。",
-        "btn": "参与比赛",
+        "title": "AFT Insights",
+        "description": "Track key global events and expert insights — trade with clarity and precision.",
+        "btn": "Join the Competition",
         "row": {
           "col-1": {
-            "title": "雷达-数据与工具",
-            "desc": "精准工具，锁定交易方向",
+            "title": "Radar & Tools",
+            "desc": "Essential trading tools to navigate markets and capture opportunities.",
             "ul": {
-              "li1": "Asia Future Trading 财经日历",
-              "li2": "费用计算器",
-              "li3": "VPS托管服务",
-              "li4": "市场热力图"
+              "li1": "AFT Economic Calendar",
+              "li2": "Trading Calculator ",
+              "li3": "VPS Hosting Service",
+              "li4": "Market Heatmap"
             }
           },
           "col-2": {
-            "title": "巡航-交易启迪",
-            "desc": "我们专家组的旗舰策略，助力您稳健巡航",
+            "title": "Cruise & Insights",
+            "desc": "Expert insights and flagship strategies to guide your trades with confidence.",
             "ul": {
-              "li1": "AFT Strats专家团队洞察",
+              "li1": "AFT Insights Centre",
               "li2": "大师现场课程",
               "desc2": "了解您所在地区的线下课程与我们和合作伙伴交易学院"
             }
@@ -3533,55 +3566,55 @@
         }
       },
       "support": {
-        "title": "客户支持",
-        "description": "我们致力于成为亚洲第一的专注社群驱动的交易伙伴，六语种服务、多币种交易，真正为亚洲交易者量身打造的差价合约平台",
-        "btn": "加入社区",
+        "title": "Support",
+        "description": "We're building Asia’s leading community-driven CFD platform — with multilingual support and multi-currency access designed for Asian traders.",
+        "btn": "Join the Community",
         "row": {
           "col-1": {
-            "title": "客户支持中心",
+            "title": "Support Centre",
             "ul": {
-              "li1": "点击获取帮助-寻找您的问题答案"
+              "li1": "SailingBrick Community"
             }
           },
           "col-2": {
-            "title": "帆船积木社区｜超10, 000人加入，从开户开始，让交易像搭积木一样简单的全球社区",
+            "title": "SailingBrick Community",
             "ul": {
-              "li1": "Discord社区 -即刻加入"
+              "li1": "Join Discord"
             }
           }
         }
       },
       "corporation": {
-        "title": "公司",
-        "description": "信任，是我们提供给客户最大的杠杆。从全球流动性直连、透明撮合到合规风控，每一步都为信任而构建。",
-        "btn": "加入我们",
+        "title": "Company",
+        "description": "Trust is our greatest leverage — built on global liquidity, transparent execution, and strict compliance.",
+        "btn": "Join Us",
         "row": {
           "col-1": {
-            "title": "关于我们",
+            "title": "About Us",
             "ul": {
-              "li1": "关于Asia Future Trading",
-              "li2": "招贤纳士",
+              "li1": "About Asia Future Trading",
+              "li2": "Careers",
               "li3": "ESG",
-              "li4": "联系我们",
+              "li4": "Contact Us",
               "li5": "法律文件"
             }
           }
         }
       },
       "doublewin": {
-        "title": "共赢+",
-        "description": "亚洲精英交易者与合作伙伴的首选平台，在全球可信的平台上交易、竞技、共同成长，让您的洞见创造更多成功，助力您成为交易传奇。",
-        "btn": "成为我们的伙伴",
+        "title": "Winwin+",
+        "description": "The preferred platform for Asia’s elite traders and partners — trade, compete, and grow together on a trusted global infrastructure.",
+        "btn": "Join Our Network",
         "row": {
           "col-1": {
-            "title": "共赢+",
+            "title": "The Premier Platform for Global Traders & Partners",
             "ul": {
-              "li1": "交易大赛",
-              "desc1": "每周交易竞技，用 100 美金起步，开启专属美分账户的精彩对决。瓜分百万美金奖池，缔造属于你的交易传奇。",
+              "li1": "Trading Competitions",
+              "desc1": "Compete weekly with just USD 100 to start — join exclusive Cent Account battles and share a multi-million-dollar prize pool.",
               "li2": "跟单社区",
               "desc2": "关注全球顶尖交易员，一键复制他们的交易策略。成为带单交易员，最高可享 30% 跟单分润 + 10% 手续费返佣。",
               "li3": "Funding Program",
-              "desc3": "通过认证成为 Asia Future Trading 旗下自营交易员，我们为你提供所有交易资金。",
+              "desc3": "Get certified as an AFT proprietary trader and receive full funding from Asia Future Trading to scale your performance.",
               "li4": "全球合作伙伴 Affiliate Program",
               "desc4": "赋能行业意见领袖，将专业认知变现。我们的全球合作伙伴计划，助您多年来的积累实现持续收益。"
             }
@@ -3599,12 +3632,14 @@
       "ms": "马拉西亚",
       "id": "印度尼西亚",
       "vi": "越南"
-    }
+    },
+    "login": "Login",
+    "register": "Open Account"
   },
   "Footer": {
     "contact": {
-      "title": "联系我们",
-      "phone": "(客服在线支持的联络时间, 周一 至 周五)"
+      "title": "CONTACT",
+      "phone": "(Lines open 24hrs, Monday - Friday)"
     },
     "future": {
       "title": "ASIA FUTURE TRADING HEADQUARTERS",
@@ -3613,24 +3648,24 @@
       "hk": "Office Adddress: A68,3F,Manning Industrial Building,116-118 How Ming St, KwunTong, Hong Kong SAR"
     },
     "login": {
-      "title": "登录",
-      "mt5": "客户门户登陆",
-      "partner": "伙伴门户登录"
+      "title": "LOGIN",
+      "mt5": "MetaTrader Client Portal",
+      "partner": "Partner Portal"
     },
     "join-us": {
-      "title": "加入我们的社群"
+      "title": "Join Our Social Community"
     },
     "risks": {
       "title": "交易类投资有风险",
       "list": {
-        "1-title": "风险披露声明",
-        "1-content": "差价合约（CFD）及其他场外交易（OTC）杠杆产品属于复杂的金融工具，因杠杆效应可能导致资金迅速亏损，存在较高的投资风险。此类产品并不适合所有投资者。根据行业数据，约有 70% 的零售投资者账户在交易差价合约时发生亏损。请您务必确保充分理解差价合约及其他杠杆类产品的运作机制，并在能够承受亏损的前提下进行交易。如有需要，请寻求独立的财务建议。",
-        "2-title": "公司信息与业务范围",
-        "2-content": "本网站由 Asia Future Trading Corporation Limited 运营（注册编号：25606 BC 2019），并已在圣文森特和格林纳丁斯金融服务局（FSA）注册。Asia Future Trading Pty Ltd 在部分市场以以下名称开展业务与品牌推广：“亚洲商市”、“AsiaFutureTrading”及“AFT”。上述名称仅为商号或品牌名称，与注册主体名称无异。Asia Future Trading Corporation Limited 作为场外衍生品（OTC Derivatives）交易服务的执行方，通过本平台为零售客户提供交易指令的执行与市场准入服务。公司不构成金融产品的发行人，亦不为客户提供投资建议或资产管理服务。本公司通过与多个市场流动性提供方及清算渠道对接，为客户交易提供技术及执行支持。所有交易均基于客户自愿指令执行，并可能涉及市场对手方风险。",
-        "3-title": "办公室地址",
+        "1-title": "Risk Warning",
+        "1-content": "OTC leveraged products, including CFDs, are complex instruments that carry a high risk of rapid financial loss due to leverage. Industry data shows approximately 70 % of retail investor accounts lose money when trading CFDs. Please ensure you fully understand how CFDs and other OTC leveraged products work, and only trade with capital you can afford to lose.",
+        "2-title": "Company Information",
+        "2-content": "This website is operated by Asia Future Trading Corporation Limited (Registration Number: 25606 BC 2019).",
+        "3-title": "Registered Office",
         "3-content": "Suite 305, Griffith Corporate Centre, Kingstown, St Vincent and the Grenadines",
-        "4-title": "司法辖区信息",
-        "4-content": "我们不会向部分司法辖区的个人或公司提供任何产品或服务。受限制地区包括但不限于：阿富汗、加拿大、刚果（金）、古巴、塞浦路斯、香港、印度尼西亚、伊朗、马来西亚、朝鲜、新加坡、苏丹、叙利亚、阿拉伯联合酋长国、美国和也门。来自上述地区的访问者应自行确保其在本网站上的行为符合其所属国家或地区的适用法律法规，特别是在进行任何投资决定前务必审慎评估合规性。我们保留随时变更、修改或终止本公司产品与服务的权利，不另行通知。"
+        "4-title": "Jurisdictional Information",
+        "4-content": "The information on this site is not directed at residents of the United States and is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation. We do not provide services to individuals or companies in certain jurisdictions, including but not limited to Afghanistan, Canada, Congo (Kinshasa), Cuba, Cyprus, Hong Kong, Indonesia, Iran, Malaysia, North Korea, Singapore, Sudan, Syria, the United Arab Emirates, the United States, and Yemen. Visitors from these regions should ensure that any decision to invest in our services complies with the laws and regulations of their country or jurisdiction. We reserve the right to change, modify, or discontinue our products and services at any time."
       }
     }
   },
