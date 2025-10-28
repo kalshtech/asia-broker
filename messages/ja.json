@@ -75,7 +75,7 @@
     },
     "start": {
       "title": "Your Gateway to Global Markets.",
-      "desc": "Experience world-class trading infrastructure and seamless fund management with Asia Future Trading — giving you full control from account setup to live execution.\nTrade globally, manage funds effortlessly, and access institutional-grade liquidity — all in one platform.",
+      "desc": "Experience world-class trading infrastructure and seamless fund management with Asia Future Trading — giving you full control from account setup to live execution.Trade globally, manage funds effortlessly, and access institutional-grade liquidity — all in one platform.",
       "register": "Open Account",
       "download": "Download MetaTrader 5"
     },
@@ -103,7 +103,7 @@
       "row": {
         "col1": {
           "title": "Forex",
-          "desc1": "Trade the world’s most liquid market.",
+          "desc1": "Trade the world's most liquid market.",
           "desc2": "Access major and emerging currency pairs with ultra-fast execution, deep liquidity, and competitive spreads across both G10 and EM currencies.",
           "btnText": "Explore Forex Markets"
         },
@@ -178,7 +178,7 @@
         "7": {
           "title1": "あなたの初めてのグローバル・トレーディング・コミュニティ",
           "title2": "トレーダーが共に成長する場所",
-          "description": "に参加しよう — 仲間と共に学び、共有し、成長を加速させる多言語ハブです"
+          "description1": "に参加しよう — 仲間と共に学び、共有し、成長を加速させる多言語ハブです"
         }
       },
       "advertisement": {
@@ -215,6 +215,7 @@
         }
       },
       "pricing": {
+        "popular": "人気先物",
         "left": {
           "title1": "投資家向け価格設定。深い流動性",
           "title2": "最高の執行のために構築。精度が原動力",
@@ -555,8 +556,8 @@
       "forex": {
         "banner": {
           "title": "Forex",
-          "midst": "Experience the world’s leading Forex markets.",
-          "description": "The Forex market is the world’s largest and most liquid financial market. We provide direct access to top-tier global liquidity with tight spreads, fast execution, and 24/5 support — helping traders across Asia capture every market move."
+          "midst": "Experience the world's leading Forex markets.",
+          "description": "The Forex market is the world's largest and most liquid financial market. We provide direct access to top-tier global liquidity with tight spreads, fast execution, and 24/5 support — helping traders across Asia capture every market move."
         },
         "markets": {
           "title": "Search for the Forex Pair You Want to Trade",
@@ -614,7 +615,7 @@
           "row": {
             "col1": {
               "title": "Learn How to Trade in the Global Forex Market",
-              "desc": "Access the world’s largest market through CFDs on major, minor, and exotic pairs — trade 24/5 with tight spreads and flexible leverage.",
+              "desc": "Access the world's largest market through CFDs on major, minor, and exotic pairs — trade 24/5 with tight spreads and flexible leverage.",
               "more": "Learn More"
             },
             "col2": {
@@ -751,7 +752,7 @@
             },
             "li2": {
               "title": "What are the advantages of trading Crypto CFDs?",
-              "desc": "Unlike on-chain trading, CFDs eliminate wallet and custody risks, offering faster execution and higher flexibility.\nYou can trade price movements in both directions without holding actual coins — ideal for short- and medium-term strategies."
+              "desc": "Unlike on-chain trading, CFDs eliminate wallet and custody risks, offering faster execution and higher flexibility.You can trade price movements in both directions without holding actual coins — ideal for short- and medium-term strategies."
             },
             "li3": {
               "title": "What leverage is available for crypto trading?",
@@ -826,7 +827,7 @@
         },
         "meta": {
           "title": "Trade Global Precious Metals — Capture Every Market Move",
-          "desc": "Trade gold, silver, and platinum CFDs with Asia Future Trading.\nEnjoy flexible long and short positions, overnight holding, and zero delivery or storage costs.",
+          "desc": "Trade gold, silver, and platinum CFDs with Asia Future Trading.Enjoy flexible long and short positions, overnight holding, and zero delivery or storage costs.",
           "trade": "Trade Precious Metals",
           "open": "Open Demo Account"
         },
@@ -867,7 +868,7 @@
             },
             "li3": {
               "title": "What are the trading hours for Precious Metals CFDs?",
-              "desc": "The precious metals market operates nearly 24 hours a day, Monday to Friday, though trading may pause briefly during holidays or scheduled maintenance. Please refer to the platform’s official time for accuracy."
+              "desc": "The precious metals market operates nearly 24 hours a day, Monday to Friday, though trading may pause briefly during holidays or scheduled maintenance. Please refer to the platform's official time for accuracy."
             },
             "li4": {
               "title": "What are the main trading costs for Precious Metals CFDs?",
@@ -1081,12 +1082,12 @@
         "qa": {
           "ul": {
             "li1": {
-              "title": "What’s the difference between Stock & ETF CFDs and traditional stock trading?",
-              "desc": "CFDs (Contracts for Difference) are derivative instruments that let you trade price movements without owning the actual shares.\nYou can profit from both rising and falling prices, with no physical delivery or ownership required."
+              "title": "What's the difference between Stock & ETF CFDs and traditional stock trading?",
+              "desc": "CFDs (Contracts for Difference) are derivative instruments that let you trade price movements without owning the actual shares.You can profit from both rising and falling prices, with no physical delivery or ownership required."
             },
             "li2": {
               "title": "Which stocks and ETFs can I trade?",
-              "desc": "Asia Future Trading offers a wide range of global stocks — including Tesla (TSLA), Apple (AAPL), and NVIDIA (NVDA) — as well as popular index ETFs such as SPY, QQQ, and XLF.\nOur product list is continuously expanding. Please check the trading platform for the latest instruments."
+              "desc": "Asia Future Trading offers a wide range of global stocks — including Tesla (TSLA), Apple (AAPL), and NVIDIA (NVDA) — as well as popular index ETFs such as SPY, QQQ, and XLF.Our product list is continuously expanding. Please check the trading platform for the latest instruments."
             },
             "li3": {
               "title": "Do Stock & ETF CFDs support T+0 trading?",
@@ -1116,7 +1117,7 @@
         "banner": {
           "title": "Trade Futures CFDs",
           "midst": "Capture opportunities across commodities, energy, metals, and interest rate assets.",
-          "desc": "Join the world’s most liquid futures markets with no delivery, no limits, and flexible leverage. Execute instantly. Manage risk efficiently. Trade the trend, not the contract."
+          "desc": "Join the world's most liquid futures markets with no delivery, no limits, and flexible leverage. Execute instantly. Manage risk efficiently. Trade the trend, not the contract."
         },
         "markets": {
           "title": "Search for Futures Contracts You Want to Trade",
@@ -1188,11 +1189,11 @@
               },
               "span2": {
                 "title": "High Leverage and Capital Efficiency",
-                "desc": "Access major global futures markets without large margin requirements.\nEnhance your capital utilization while maintaining control over your exposure.。"
+                "desc": "Access major global futures markets without large margin requirements.Enhance your capital utilization while maintaining control over your exposure.。"
               },
               "span3": {
                 "title": "Capture Volatility and Short-Term Opportunities",
-                "desc": "Leverage T+0 execution and CFD-based trading for intra-day flexibility.\nReact quickly to price movements and short-term macro shifts."
+                "desc": "Leverage T+0 execution and CFD-based trading for intra-day flexibility.React quickly to price movements and short-term macro shifts."
               }
             }
           }
@@ -1200,8 +1201,8 @@
         "qa": {
           "ul": {
             "li1": {
-              "title": "What’s the difference between Futures CFDs and traditional futures?",
-              "desc": "Futures CFDs (Contracts for Difference) let you trade on the price movements of futures without taking physical delivery or holding the contract until expiry.\n They offer more flexibility, smaller trade sizes, and dynamic leverage — ideal for intraday and strategy-based traders."
+              "title": "What's the difference between Futures CFDs and traditional futures?",
+              "desc": "Futures CFDs (Contracts for Difference) let you trade on the price movements of futures without taking physical delivery or holding the contract until expiry. They offer more flexibility, smaller trade sizes, and dynamic leverage — ideal for intraday and strategy-based traders."
             },
             "li2": {
               "title": "Which major futures products are supported?",
@@ -1257,7 +1258,7 @@
           "title": "Fast, Secure, and Within Reach",
           "row": {
             "title": "Global Payment Network — Simplified Fund Transfers",
-            "desc": "Asia Future Trading supports a wide range of local and international payment options to meet your funding needs wherever you are.\nDeposits are processed instantly, withdrawals can be initiated anytime with automated approval."
+            "desc": "Asia Future Trading supports a wide range of local and international payment options to meet your funding needs wherever you are.Deposits are processed instantly, withdrawals can be initiated anytime with automated approval."
           },
           "prompt": "All payment methods come with 0 fees and no hidden costs. We use only official, verified channels to ensure every transaction is safe, stable, and seamless."
         },
@@ -1399,12 +1400,12 @@
         },
         "table": {
           "title": "Want to Know the Exact Cost for Each Asset Class?",
-          "overview": "Here’s a quick overview of what you can trade at Asia Future Trading.",
+          "overview": "Here's a quick overview of what you can trade at Asia Future Trading.",
           "head": {
             "type": "Asset Class",
             "introduction": "Description"
           },
-          "prompt1": "Spreads from 0.0 pips — trade the world’s most liquid currency pairs with institutional-grade pricing.",
+          "prompt1": "Spreads from 0.0 pips — trade the world's most liquid currency pairs with institutional-grade pricing.",
           "prompt2": "Gold, silver, and platinum — diversify your portfolio and hedge against inflation.",
           "prompt3": "Capture market opportunities in crude oil, Brent, and natural gas with low-cost CFDs.",
           "prompt4": "Trade global leaders like Tesla, Apple, and NVIDIA with low costs and flexible leverage.",
@@ -1452,7 +1453,7 @@
             },
             "li3": {
               "title": "Is deposit and withdrawal available 24/7?",
-              "desc": "Yes, requests can be submitted anytime and are typically processed within 24 hours.\nHowever, certain banks or payment providers may have their own operational delays.\nFor more information, visit the Deposits & Withdrawals page."
+              "desc": "Yes, requests can be submitted anytime and are typically processed within 24 hours.However, certain banks or payment providers may have their own operational delays.For more information, visit the Deposits & Withdrawals page."
             },
             "li4": {
               "title": "Where can I check spreads and trading hours?",
@@ -1478,7 +1479,7 @@
         },
         "localServers": {
           "title": "Dedicated Connection — Execute Instantly, Without Lag",
-          "midst": "Our VPS infrastructure is powered by enterprise-grade networks, connecting directly to Asia Future Trading’s lowest-latency nodes for faster, more precise order execution — ensuring you never miss a market move due to delay.",
+          "midst": "Our VPS infrastructure is powered by enterprise-grade networks, connecting directly to Asia Future Trading's lowest-latency nodes for faster, more precise order execution — ensuring you never miss a market move due to delay.",
           "desc": "Based on your location, we intelligently recommend the optimal data center — including Hong Kong, Singapore, London, and New York — delivering millisecond-level connectivity."
         },
         "running": {
@@ -1623,7 +1624,7 @@
             "li2": "Choose a trading instrument, such as EURUSD or XAUUSD",
             "li3": "Enter trade size and leverage, then click “Calculate” to view your required margin"
           },
-          "prompt": "This calculator uses indicative market data for educational and reference purposes only. Actual trading conditions may vary depending on liquidity, spreads, volatility, and account type.\nResults do not represent live quotes or investment advice."
+          "prompt": "This calculator uses indicative market data for educational and reference purposes only. Actual trading conditions may vary depending on liquidity, spreads, volatility, and account type.Results do not represent live quotes or investment advice."
         },
         "reasons": {
           "title": "Why Every Trader Needs a Forex Calculator",
@@ -1665,7 +1666,7 @@
             "col1": {
               "title": "What Is a Market Heatmap?",
               "desc": "A heatmap is a visual tool that highlights market strength and price movement at a glance. By using color gradients, it shows the relative performance of multiple trading instruments across different timeframes — helping traders identify volatility, trends, and opportunities faster.",
-              "ul-title": "It’s widely used across various CFD markets:",
+              "ul-title": "It's widely used across various CFD markets:",
               "ul": {
                 "li1": "Forex: Track currency pair strength and trend momentum.",
                 "li2": "Cryptocurrencies: Compare multi-asset movements and capture short-term rotations.",
@@ -1687,7 +1688,7 @@
           "desc": "From understanding market fundamentals and trading terminology to placing your first live order on Asia Future Trading — our Learning Center provides a clear, structured path designed to help you truly grasp the essence of trading and build confidence with every step."
         },
         "core": {
-          "title": "Trader’s Glossary — Master Core Trading Terms Fast",
+          "title": "Trader's Glossary — Master Core Trading Terms Fast",
           "desc": "From spreads and leverage to arbitrage mechanisms, this glossary helps new traders understand the language of global markets — clearly, simply, and effectively.",
           "explore": "Discover the Glossary",
           "btn": {
@@ -1700,7 +1701,7 @@
           "nodata": "No Data"
         },
         "compass": {
-          "title": "Beginner’s Trading Guide — Three Essential Starting Points",
+          "title": "Beginner's Trading Guide — Three Essential Starting Points",
           "desc": "Understanding how trading works, choosing the right broker, and selecting the right account type — these are the first essential steps every beginner must take to trade with confidence.",
           "row": {
             "span1": {
@@ -1768,7 +1769,7 @@
         "banner": {
           "title": "About Asia Future Trading",
           "prompt": "Born in Asia. Built for the World. Refine the Future of Trading.",
-          "desc": "Asia Future Trading is a multi-asset CFD broker built on technology, liquidity collaboration, and global connectivity.\nWe focus on delivering an institutional-grade trading experience — combining algorithmic systems, deep liquidity, and continuous product innovation to empower traders worldwide."
+          "desc": "Asia Future Trading is a multi-asset CFD broker built on technology, liquidity collaboration, and global connectivity.We focus on delivering an institutional-grade trading experience — combining algorithmic systems, deep liquidity, and continuous product innovation to empower traders worldwide."
         },
         "step": {
           "row": {
@@ -1796,7 +1797,7 @@
         },
         "trust": {
           "title": "Our Mission — Technology Builds Trust",
-          "desc": "At Asia Future Trading, our mission is simple — to make technology the foundation of trust.\nWe aim to become the most reliable partner for traders worldwide. With zero commissions and spreads from 0.0, we go beyond cost and speed — delivering confidence, control, and integrity in every trade.",
+          "desc": "At Asia Future Trading, our mission is simple — to make technology the foundation of trust.We aim to become the most reliable partner for traders worldwide. With zero commissions and spreads from 0.0, we go beyond cost and speed — delivering confidence, control, and integrity in every trade.",
           "start": "Start Trading"
         },
         "global": {
@@ -1847,7 +1848,7 @@
           "row": {
             "col1": {
               "title": "Becoming a Member of SGX (Singapore Exchange) — Coming Soon",
-              "desc": "We are committed to enhancing market transparency and supporting the sustainable development of Asia’s capital markets."
+              "desc": "We are committed to enhancing market transparency and supporting the sustainable development of Asia's capital markets."
             },
             "col2": {
               "title1": "Australia — ASIC Authorized Representative (AR No. 001313916)",
@@ -1888,13 +1889,13 @@
           "col1": {
             "title": "“Our goal is to redefine what trust and performance mean in modern finance.”",
             "desc1": "Leo W. — Quant Infrastructure Engineer, Asia Future Trading",
-            "desc2": "Currently leading the development of AFT’s data-stream processing and risk-control engine.",
+            "desc2": "Currently leading the development of AFT's data-stream processing and risk-control engine.",
             "view": "View Open Positions"
           }
         },
         "ready": {
           "title": "Ready to begin your global trading journey?",
-          "desc": "Asia Future Trading has connected you to global liquidity and market infrastructure — now it’s your turn to take the lead and define your trading future.",
+          "desc": "Asia Future Trading has connected you to global liquidity and market infrastructure — now it's your turn to take the lead and define your trading future.",
           "joint": "Connect to Global Markets · Institutional-Grade Infrastructure · Transparent & Trusted Trading Environment",
           "trade": "Start Trading",
           "support": "Contact Support"
@@ -1946,7 +1947,7 @@
             "col2": {
               "title": "We’re more than a platform — we’re your trading partner.",
               "desc1": "At Asia Future Trading, we believe trading is just the beginning.",
-              "desc2": "Understanding, support, and growth — that’s why we built the SailingBrick Community.",
+              "desc2": "Understanding, support, and growth — that's why we built the SailingBrick Community.",
               "join": "Join Now"
             },
             "col3": {
@@ -1963,7 +1964,7 @@
         },
         "type": {
           "title": "You Can Also Reach Us Here",
-          "desc": "We welcome your message — whether it’s for partnership, feedback, or career opportunities.",
+          "desc": "We welcome your message — whether it's for partnership, feedback, or career opportunities.",
           "prompt1": "We usually reply within 3–5 business days.",
           "prompt2": "If you haven’t received a response yet, please allow some time — every message will be carefully reviewed.",
           "join": "Join US",
@@ -2029,7 +2030,7 @@
           "row": {
             "col1": {
               "title": "Global Presence",
-              "desc": "Serving clients across 37+ markets in Asia, Europe, and the Middle East — combining global scale with local depth to empower every trader’s journey."
+              "desc": "Serving clients across 37+ markets in Asia, Europe, and the Middle East — combining global scale with local depth to empower every trader's journey."
             },
             "col2": {
               "title": "Radical Transparency",
@@ -2062,7 +2063,7 @@
             },
             "item3": {
               "title": "Remote",
-              "text1": "We’re continuously expanding our global remote teams and partnerships — across the UK, Germany, Canada, and beyond — to support our growth in\ncontent strategy, market development, and regulatory readiness."
+              "text1": "We’re continuously expanding our global remote teams and partnerships — across the UK, Germany, Canada, and beyond — to support our growth incontent strategy, market development, and regulatory readiness."
             }
           }
         },
@@ -2119,16 +2120,16 @@
               "2": {
                 "name": "Visual / UI Design Intern",
                 "location": "Remote / Flexible",
-                "desc": "Contribute to AFT’s evolving design system — assist in creating marketing assets, UI modules, and social media visuals."
+                "desc": "Contribute to AFT's evolving design system — assist in creating marketing assets, UI modules, and social media visuals."
               }
             },
             "desc1": "Didn’t see a perfect fit?",
-            "desc2": "If you resonate with AFT’s mission and bring systems thinking, rapid learning, or a unique perspective, send your résumé and a brief motivation letter to",
-            "desc3": "We care more about motivation and alignment than what’s written on your résumé."
+            "desc2": "If you resonate with AFT's mission and bring systems thinking, rapid learning, or a unique perspective, send your résumé and a brief motivation letter to",
+            "desc3": "We care more about motivation and alignment than what's written on your résumé."
           }
         },
         "setOut": {
-          "title": "Now it’s your turn to shape the future of trading.",
+          "title": "Now it's your turn to shape the future of trading.",
           "desc": "We’re building the next generation of financial infrastructure — where every layer, from execution systems to user experience, is being redefined. At Asia Future Trading, we welcome those who challenge old paradigms and believe the global trading ecosystem should put traders at the center.",
           "view": "View Open Positions"
         },
@@ -2154,7 +2155,7 @@
       "banner": {
         "title1": "Asia Future Trading MetaTrader 5",
         "title2": "Trade Smarter with Advanced Technology",
-        "desc": "Access over 65,000+ global instruments on the world’s leading multi-terminal trading platform — fast, precise, and secure.",
+        "desc": "Access over 65,000+ global instruments on the world's leading multi-terminal trading platform — fast, precise, and secure.",
         "download": "Download",
         "ul": {
           "windows": "For Windows",
@@ -2166,7 +2167,7 @@
       },
       "reasons": {
         "title": "Why Trade MT5 at Asia Future Trading",
-        "desc": "Trade with one of the world’s most popular trading platforms at Asia Future Trading. Institutional-grade infrastructure for MT5 — millisecond execution, regulatory security, and seamless multi-market access.",
+        "desc": "Trade with one of the world's most popular trading platforms at Asia Future Trading. Institutional-grade infrastructure for MT5 — millisecond execution, regulatory security, and seamless multi-market access.",
         "professional": "Experience",
         "ul": {
           "li-title1": "Multi-platform access",
@@ -2244,12 +2245,12 @@
       "download": {
         "windows": {
           "title": "MetaTrader 5 for Windows",
-          "desc": "Experience professional-grade trading on MetaTrader 5 for Windows — built for stability, speed, and precision.\nTrade Forex, Metals, Indices, Energy, and Crypto CFDs seamlessly on one powerful platform.",
+          "desc": "Experience professional-grade trading on MetaTrader 5 for Windows — built for stability, speed, and precision.Trade Forex, Metals, Indices, Energy, and Crypto CFDs seamlessly on one powerful platform.",
           "downloadText": "Download for Windows"
         },
         "macos": {
           "title": "MetaTrader 5 for macOS",
-          "desc": "Optimized for Mac users with smooth performance and intuitive design.\nAccess global markets, manage your Forex and CFD portfolio, and trade across multiple charts effortlessly.",
+          "desc": "Optimized for Mac users with smooth performance and intuitive design.Access global markets, manage your Forex and CFD portfolio, and trade across multiple charts effortlessly.",
           "downloadText": "Download for macOS"
         },
         "ios": {
@@ -2294,7 +2295,7 @@
           "title": "The Standard Account You Truly Need",
           "row": {
             "left": {
-              "title": "More Than Just “Free” — It’s Transparent, Fast, and Reliable.",
+              "title": "More Than Just “Free” — It's Transparent, Fast, and Reliable.",
               "desc": "Experience trading built on trust — zero commissions, real pricing, and institutional-grade execution.",
               "ul": {
                 "li1": "No Trading Fees",
@@ -2468,7 +2469,7 @@
             },
             "li4": {
               "title": "What order types and execution methods does the Classic Account support?",
-              "desc": "The Classic Account supports all major order types — market, limit, stop-loss, and take-profit.\nAll orders are executed through Equinix’s low-latency network, ensuring millisecond-level execution speed with minimal slippage and no requotes."
+              "desc": "The Classic Account supports all major order types — market, limit, stop-loss, and take-profit.All orders are executed through Equinix's low-latency network, ensuring millisecond-level execution speed with minimal slippage and no requotes."
             }
           }
         }
@@ -2477,7 +2478,7 @@
         "banner": {
           "title": "Platinum Account",
           "midst": "Activate with a $5,000 Deposit or a $10/month Subscription",
-          "desc": "Designed for advanced traders seeking tighter spreads, faster execution, and greater returns.\nStep beyond standard accounts and experience professional-grade trading powered by institutional infrastructure.",
+          "desc": "Designed for advanced traders seeking tighter spreads, faster execution, and greater returns.Step beyond standard accounts and experience professional-grade trading powered by institutional infrastructure.",
           "ul": {
             "li1": "Earn up to 5.6% annual interest with our Future Earn Account",
             "li2": "Zero commissions and ultra-low spreads across all markets",
@@ -2521,7 +2522,7 @@
         },
         "exclusive": {
           "title": "Exclusive Platinum Execution & Matching Priority",
-          "desc": "Platinum clients connect through a dedicated Equinix fiber network and institutional-grade liquidity bridge, gaining access to advanced matching queues shared with top-tier financial participants.\nRegardless of market volatility, Platinum orders receive priority routing and execution, ensuring faster fills, minimal slippage, and consistent trade stability.",
+          "desc": "Platinum clients connect through a dedicated Equinix fiber network and institutional-grade liquidity bridge, gaining access to advanced matching queues shared with top-tier financial participants.Regardless of market volatility, Platinum orders receive priority routing and execution, ensuring faster fills, minimal slippage, and consistent trade stability.",
           "best": {
             "title": "Faster Execution · Better Pricing",
             "joint": "Global Equinix Data Centers: LD4 · NY4 · TY3",
@@ -2533,14 +2534,14 @@
         "environment": {
           "title": "Lightning-Fast VPS Environment for MetaTrader 5",
           "desc": "Asia Future Trading provides global low-latency VPS servers, purpose-built for high-frequency and EA trading. Whether you're in Asia, Europe, or the Americas, connect directly to MT5 via VPS for millisecond-level execution and unmatched trading stability.",
-          "more": "Learn More About VPS Services",
+          "more": "Learn More",
           "download": "Download MetaTrader 5"
         },
         "credit": {
           "title1": "Unlock the Future Earn Account",
           "title2-1": "Earn up to",
           "title2-2": "%AER annually ",
-          "midst": "Earn daily interest automatically — visible directly in your MetaTrader 5 account.\nEnjoy compounding returns of up to 5.6% AER (variable), with no withdrawal fees and instant access anytime.",
+          "midst": "Earn daily interest automatically — visible directly in your MetaTrader 5 account.Enjoy compounding returns of up to 5.6% AER (variable), with no withdrawal fees and instant access anytime.",
           "desc": "每天获得高达5.6%的AER（可变）利息。没有提款费用。随时即时访问。",
           "transfer": "Minimum Deposit:",
           "account": "Apply for free and unlock your Platinum Account today.",
@@ -2661,7 +2662,7 @@
         "VIC": {
           "title": "VIC Institutional Account — The Next Dimension of Trading",
           "left": {
-            "desc": "For traders and institutions seeking higher limits, advanced strategy integration, and complex account management — the VIC Institutional Account offers a truly elevated experience.\nPartnering with Tier-1 liquidity providers, AFT delivers customized trading environments and even bespoke instruments such as ETH/XAU, empowering you to trade without boundaries.",
+            "desc": "For traders and institutions seeking higher limits, advanced strategy integration, and complex account management — the VIC Institutional Account offers a truly elevated experience.Partnering with Tier-1 liquidity providers, AFT delivers customized trading environments and even bespoke instruments such as ETH/XAU, empowering you to trade without boundaries.",
             "title": "Step into a world of",
             "for": "institutional precision, flexibility, and scale.",
             "understand": "Learn About VIC Account"
@@ -2745,14 +2746,14 @@
               "desc": "Enjoy invitation-only experiences — from private sailing and F1 events to elite strategy workshops and networking summits."
             }
           },
-          "prompt1": "All Platinum privileges are automatically included with every VIC Account — including access to the Future Earn interest program, VPS hosting, and other premium features.\nClub events and seasonal rewards are subject to change based on platform operations and marketing strategy.",
+          "prompt1": "All Platinum privileges are automatically included with every VIC Account — including access to the Future Earn interest program, VPS hosting, and other premium features.Club events and seasonal rewards are subject to change based on platform operations and marketing strategy.",
           "prompt2": "Asia Future Trading reserves the right of final interpretation."
         },
         "route": {
           "title1": "Asia Future Trading VIC — Institutional Direct Line",
           "title2": "Redefine your execution. Command every step from liquidity to final fill.",
           "midst": "Not just faster or deeper — but smarter, more precise, and truly institutional.",
-          "desc": "Connect with the world’s core financial hubs through dedicated order channels. Gain full control over every step — from matching queues and liquidity sources to final execution. Every trade, engineered for precision, performance, and trust.",
+          "desc": "Connect with the world's core financial hubs through dedicated order channels. Gain full control over every step — from matching queues and liquidity sources to final execution. Every trade, engineered for precision, performance, and trust.",
           "row": {
             "col1": {
               "title": "Dedicated Matching Engine & Smart Routing",
@@ -2797,10 +2798,10 @@
               "title": "Cross-Symbol Products",
               "ul": {
                 "li1": "Trade custom instruments such as ETH/XAU, BTC/XAU, or GOLD/USDT, bridging digital and traditional markets.",
-                "li2": "Product structures are subject to AFT’s internal liquidity and product evaluation before being listed.",
+                "li2": "Product structures are subject to AFT's internal liquidity and product evaluation before being listed.",
                 "li3": "Available exclusively to VIC clients."
               },
-              "desc": "VIC clients do not have automatic creation privileges. All product structures must pass AFT’s compliance and liquidity assessments prior to activation. Our goal is to maximize strategic flexibility — within a framework of transparency, safety, and regulatory integrity.",
+              "desc": "VIC clients do not have automatic creation privileges. All product structures must pass AFT's compliance and liquidity assessments prior to activation. Our goal is to maximize strategic flexibility — within a framework of transparency, safety, and regulatory integrity.",
               "apply": "Request Custom Product Authorization",
               "prompt": "*Submit your strategy documentation — our team will review and respond within 5 business days."
             }
@@ -2814,7 +2815,7 @@
           "title2": "Free to Apply · Connect Your Trading and Global Payment Network",
           "row": {
             "col1": {
-              "title": "Solve your large-scale funding challenges with a seamless bridge between your trading capital and everyday spending.\nMore than a payment solution — it’s an extension of your trading lifestyle.",
+              "title": "Solve your large-scale funding challenges with a seamless bridge between your trading capital and everyday spending.More than a payment solution — it's an extension of your trading lifestyle.",
               "ul": {
                 "li1": "Exclusive to VIC clients — available as both virtual and physical cards",
                 "li2": "Withdraw USDT directly to your linked AFT Card with instant settlement and secure channels",
@@ -2887,7 +2888,7 @@
           "step": {
             "1": {
               "title": "Open an Account",
-              "desc": "Start your VIC onboarding with a quick registration.\nOur client services team will assist you through verification and eligibility review.",
+              "desc": "Start your VIC onboarding with a quick registration.Our client services team will assist you through verification and eligibility review.",
               "bottom": "Open Account"
             },
             "2": {
@@ -2911,31 +2912,31 @@
           "ul": {
             "li1": {
               "title": "What are the requirements to become a VIC member?",
-              "desc": "A: A minimum deposit of USD 50,000 is required. Applicants should demonstrate relevant trading experience and provide a clear strategy rationale or fund usage description. All applications are reviewed by AFT’s client services and risk management teams."
+              "desc": "A minimum deposit of USD 50,000 is required. Applicants should demonstrate relevant trading experience and provide a clear strategy rationale or fund usage description. All applications are reviewed by AFT's client services and risk management teams."
             },
             "li2": {
               "title": "Can I upgrade from a Platinum Account to a VIC Account at any time?",
-              "desc": "A: Yes. You can request an upgrade through your account dashboard or by contacting your dedicated account manager. Your eligibility and account configuration will then be reviewed and adjusted accordingly."
+              "desc": "Yes. You can request an upgrade through your account dashboard or by contacting your dedicated account manager. Your eligibility and account configuration will then be reviewed and adjusted accordingly."
             },
             "li3": {
               "title": "What customization privileges do VIC members have?",
-              "desc": "A: VIC clients can apply for cross-symbol products (e.g., ETH/XAU), custom routing channels, and personalized commission or spread structures (evaluated per USD million traded). Access to API or FIX trading connectivity can also be granted upon request."
+              "desc": "VIC clients can apply for cross-symbol products (e.g., ETH/XAU), custom routing channels, and personalized commission or spread structures (evaluated per USD million traded). Access to API or FIX trading connectivity can also be granted upon request."
             },
             "li4": {
               "title": "Is the USDT bank card free for VIC members?",
-              "desc": "A: Yes. VIC members enjoy free access to the AFT co-branded USDT card, with the $20/month subscription fee waived. VIC clients also receive priority approval and enhanced deposit/withdrawal limits."
+              "desc": "Yes. VIC members enjoy free access to the AFT co-branded USDT card, with the $20/month subscription fee waived. VIC clients also receive priority approval and enhanced deposit/withdrawal limits."
             },
             "li5": {
               "title": "Is the Future Earn Account stable, and can I withdraw anytime?",
-              "desc": "A: Yes. Interest is calculated daily and credited automatically. You can withdraw at any time without affecting trading liquidity. The annualized rate is variable — currently up to 5.6% AER."
+              "desc": "Yes. Interest is calculated daily and credited automatically. You can withdraw at any time without affecting trading liquidity. The annualized rate is variable — currently up to 5.6% AER."
             },
             "li6": {
               "title": "How can I participate in the VIC rewards and loyalty program?",
-              "desc": "A: All VIC members are automatically enrolled in AFT’s points-based reward system. The more you trade, the higher your reward tier. Points can be redeemed for exclusive NFTs, BTC, luxury watches, car experiences, and more. Contact your account manager for the latest redemption catalog."
+              "desc": "All VIC members are automatically enrolled in AFT's points-based reward system. The more you trade, the higher your reward tier. Points can be redeemed for exclusive NFTs, BTC, luxury watches, car experiences, and more. Contact your account manager for the latest redemption catalog."
             },
             "li7": {
               "title": "How can I get notified about VIC Club events?",
-              "desc": "A: VIC Club events are invite-only and often not publicly announced. Make sure your contact details are up to date and notifications enabled — your account manager will personally inform you of any upcoming activities or invitations."
+              "desc": "VIC Club events are invite-only and often not publicly announced. Make sure your contact details are up to date and notifications enabled — your account manager will personally inform you of any upcoming activities or invitations."
             }
           }
         }
@@ -2948,9 +2949,9 @@
           "register": "Open Platinum Account",
           "vic": "Open VIC Account",
           "board": {
-            "rates": "Today’s Reference Rate (SOFR): ",
+            "rates": "Today's Reference Rate (SOFR): ",
             "from": "Source：Federal Reserve Bank of New York (FRED: SOFR)",
-            "desc": "Future Earn is Asia Future Trading’s yield solution for idle balances. Interest is calculated daily, automatically credited, and withdrawable anytime without affecting trading. Rates are benchmarked to SOFR for transparency and market alignment. All interest is paid directly by Asia Future Trading, not from reinvestment or market activity. Funds are never used for asset management, and reference rates do not constitute investment advice or guaranteed returns.",
+            "desc": "Future Earn is Asia Future Trading's yield solution for idle balances. Interest is calculated daily, automatically credited, and withdrawable anytime without affecting trading. Rates are benchmarked to SOFR for transparency and market alignment. All interest is paid directly by Asia Future Trading, not from reinvestment or market activity. Funds are never used for asset management, and reference rates do not constitute investment advice or guaranteed returns.",
             "tag": "Interest distribution and platform mechanism details are outlined in the User Agreement."
           }
         },
@@ -2963,7 +2964,7 @@
             },
             "col2": {
               "title": "SOFR-Linked",
-              "desc": "Rates benchmarked to the New York Fed’s SOFR index for transparent, market-aligned performance."
+              "desc": "Rates benchmarked to the New York Fed's SOFR index for transparent, market-aligned performance."
             },
             "col3": {
               "title": "No Lock-Up",
@@ -2990,7 +2991,7 @@
                 "li4": "Withdraw, reinvest, or trade anytime"
               },
               "gold": "Explore Platinum Account",
-              "vic": "Explore VIC Account",
+              "vic": "Explore VIC",
               "download": "Download MetaTrader 5"
             }
           }
@@ -2999,7 +3000,7 @@
           "row": {
             "col1": {
               "title1": "Future Earn Simulator",
-              "desc1": "Enter your available account balance to estimate your potential daily interest earnings based on the current SOFR market rate.\nNo lock-ups. Interest is credited daily and automatically to your MT5 account.",
+              "desc1": "Enter your available account balance to estimate your potential daily interest earnings based on the current SOFR market rate.No lock-ups. Interest is credited daily and automatically to your MT5 account.",
               "title2": "Current Reference Annual Rate (SOFR):  5.30%",
               "desc2": "Source: Federal Reserve Bank of New York — SOFR Benchmark"
             },
@@ -3028,7 +3029,7 @@
             },
             "col2": {
               "title": "For Institutions & High-Net-Worth Clients. Private Manager + Technical Integration",
-              "desc": "Experience true premium trading — priority execution, dedicated account management,and direct access to Asia Future Trading’s exclusive Million-Dollar Club.Tailored for elite traders and institutional partners.",
+              "desc": "Experience true premium trading — priority execution, dedicated account management,and direct access to Asia Future Trading's exclusive Million-Dollar Club.Tailored for elite traders and institutional partners.",
               "btn": "Open VIC Account"
             }
           }
@@ -3037,7 +3038,7 @@
           "ul": {
             "li1": {
               "title": "What are the requirements to become a VIC client?",
-              "desc": "A minimum deposit of USD 50,000 is required, along with proven trading experience and a clear strategy or capital utilization plan. All applications are reviewed by AFT’s client management and risk control teams."
+              "desc": "A minimum deposit of USD 50,000 is required, along with proven trading experience and a clear strategy or capital utilization plan. All applications are reviewed by AFT's client management and risk control teams."
             },
             "li2": {
               "title": "What are the requirements for opening a Platinum Account?",
@@ -3049,7 +3050,7 @@
             },
             "li4": {
               "title": "Do I need to lock up funds or perform any manual actions to receive interest?",
-              "desc": "No. There are no lock-ups or claim steps. Interest does not affect your trading, withdrawals, or any account operations — it’s completely automatic and seamless."
+              "desc": "No. There are no lock-ups or claim steps. Interest does not affect your trading, withdrawals, or any account operations — it's completely automatic and seamless."
             },
             "li5": {
               "title": "What determines the interest rate?",
@@ -3071,7 +3072,7 @@
       "trading-competition": {
         "banner": {
           "title": "Global $10 Million Trading Championship · Asia Future Trading",
-          "desc1": "Compete with the world’s top traders and earn both glory and rewards.",
+          "desc1": "Compete with the world's top traders and earn both glory and rewards.",
           "desc2": "Whether you're a beginner, a professional, or a quantitative team — there's a stage for you",
           "blueprint": {
             "title": "Copy champion strategies for free and start your live trading journey.",
@@ -3080,7 +3081,7 @@
         },
         "slide": {
           "desc1": "Prove your skill with a trusted global broker.",
-          "desc2": "It’s simple — open an account, start trading, and aim for victory.",
+          "desc2": "It's simple — open an account, start trading, and aim for victory.",
           "review": "Featured Competitions Recap",
           "total": "Total Prize Pool",
           "progressing": "Live Now",
@@ -3110,7 +3111,7 @@
               "desc": "Summer tournament inspired by U.S. equities — traders battled for the top spot."
             }
           },
-          "prompt": "AFT Global $10 Million Trading Championship unites top traders worldwide. Inspired by the spirit of sailing and Sydney’s legacy of excellence, every participant can freely copy champion strategies and compete for glory. Winners will be invited to Sydney for the Grand Awards Ceremony — where trading meets passion, and legends set sail."
+          "prompt": "AFT Global $10 Million Trading Championship unites top traders worldwide. Inspired by the spirit of sailing and Sydney's legacy of excellence, every participant can freely copy champion strategies and compete for glory. Winners will be invited to Sydney for the Grand Awards Ceremony — where trading meets passion, and legends set sail."
         },
         "professional": {
           "title": "Professional Competitions Demand Professional Platforms",
@@ -3146,7 +3147,7 @@
         },
         "prize-pool": {
           "title": "Asia Future Trading Global Trading Championships. A Year-Round Prize Pool Inspiring Traders Worldwide",
-          "desc": "Monthly and quarterly leaderboards. Multi-asset, multi-market, and multi-challenge — there’s always a competition built for you.",
+          "desc": "Monthly and quarterly leaderboards. Multi-asset, multi-market, and multi-challenge — there's always a competition built for you.",
           "total": "Total Prize Pool：",
           "row": {
             "col1": {
@@ -3178,7 +3179,7 @@
         },
         "celebrity": {
           "title": "Global Trading Hall of Fame",
-          "desc": "Top-performing traders will be featured in the Global Hall of Fame,\nwhere their strategies can be viewed — and even copied — by traders worldwide.",
+          "desc": "Top-performing traders will be featured in the Global Hall of Fame,where their strategies can be viewed — and even copied — by traders worldwide.",
           "growth": "Total Return (%):",
           "copy": "Copiers:",
           "type": "Account Type:",
@@ -3186,7 +3187,7 @@
           "prompt": "Copy-trading requires using the same account type as the trader being copied (e.g., Classic, Platinum, or VIC). For details about the copy mechanism, please contact your account manager or reach out to the Asia Future Trading Support Center."
         },
         "rank": {
-          "title": "From Rising Stars to Elites — Every Trader’s Journey to Glory.",
+          "title": "From Rising Stars to Elites — Every Trader's Journey to Glory.",
           "desc": "Rising Stars, Experts, and Elites — who will rise to the top of the trading world?",
           "tabs": {
             "1": "Rising Star",
@@ -3257,14 +3258,14 @@
               "4-desc": "Daily perspectives and platform news — always up to date."
             },
             "col2": {
-              "title": "Successful trading isn’t about intuition — it’s about structured thinking and information advantage.",
+              "title": "Successful trading isn’t about intuition — it's about structured thinking and information advantage.",
               "desc": "— Jerry Zhang, AFT Strategy Advisor (Weekly Webinar Host)"
             }
           }
         },
         "conquer": {
           "title": "Conquer the Market. Command the Arena.",
-          "desc": "Join the AFT Global Trading Championship with a multi-million-dollar prize pool. The next trader to stand on the winner’s podium could be you.",
+          "desc": "Join the AFT Global Trading Championship with a multi-million-dollar prize pool. The next trader to stand on the winner's podium could be you.",
           "register": "Open an Account",
           "trade": "Start Trading"
         }
@@ -3272,120 +3273,120 @@
       "funding": {
         "banner": {
           "title": "Asia Future Trading Funding Program",
-          "desc": "—— 为卓越交易员提供成长计划",
-          "midst": "开启自营交易之路，助力全球交易者放大实力 覆盖外汇、期货与加密资产，多资产支持，实时利润分成",
-          "ticker": "购买门票",
-          "prompt": "购买门票后将赠送三个月的个人铂金账户，个人铂金账户与参与项目的账户为独立账户。"
+          "desc": "— A Growth Path for Exceptional Traders",
+          "midst": "Start your proprietary trading journey and amplify your performance. Trade across Forex, Futures, and Crypto Assets with multi-asset access and real-time profit sharing.",
+          "ticker": "Get Your Ticket",
+          "prompt": "Upon purchasing a ticket, you’ll receive a complimentary 3-month Platinum Account.The Platinum Account operates independently from your Funding Program trading account."
         },
         "vision": {
           "title1": "Our Vision:",
           "title2": "1 Million Funded Traders",
-          "desc": "通过 Asia Future Trading Funding Program，全球优秀交易者已获得资金支持与利润分成。无论你是新锐交易员还是资深策略师，都能在这里找到属于你的舞台。",
-          "join": "立即加入 Funding Program",
+          "desc": "Through the Asia Future Trading Funding Program, top traders worldwide have gained access to capital and real profit sharing. Whether you’re an emerging talent or a seasoned strategist, this is your stage to shine.",
+          "join": "Get Funded Now",
           "prompt": "示例金额与用户仅作演示用途，实际分成情况以 Funding Program 实际规则为准。"
         },
         "plan": {
-          "title": "什么是 Funding Program 自营交易员成长计划？",
-          "midst": "Asia Future Trading Funding Program 不只是一次交易挑战，而是一条 完整的职业成长路径",
-          "desc": "挑战→验证→获得资金→利润分成→成为机构级认证交易员",
+          "title": "What Is the AFT Funding Program?",
+          "midst": "Your Path to Becoming a Certified Proprietary Trader",
+          "desc": "The Asia Future Trading Funding Program isn’t just a trading challenge — it's a complete career growth journey. Challenge → Verification → Capital Allocation → Profit Sharing → Institutional Recognition",
           "row": {
-            "title": "成长路径四步",
+            "title": "The 4 Stages of Growth",
             "col1": {
-              "title": "选择挑战计划",
-              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+              "title": "Choose Your Challenge",
+              "desc": "Select the challenge plan that fits your trading style to demonstrate skill and risk discipline."
             },
             "col2": {
-              "title": "选择挑战计划",
-              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+              "title": "Complete the Evaluation Phase",
+              "desc": "Trade within a simulated environment and achieve the set performance targets, proving consistency and discipline."
             },
             "col3": {
-              "title": "选择挑战计划",
-              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+              "title": "Enjoy Real-Time Profit Sharing",
+              "desc": "Once verified, receive instant profit splits — no lock-up periods, no delays, full flexibility."
             },
             "col4": {
-              "title": "选择挑战计划",
-              "desc": "购买适合你的挑战，验证你的交易能力与风险管理。"
+              "title": "Become a Certified Institutional Trader",
+              "desc": "Join the Asia Future Trading certified copy-trading network, gain access to long-term funding, higher commissions,and scale your success to institutional levels."
             }
           }
         },
         "challenge": {
-          "title": "选择你的挑战 —— Become an Asia Future Trading Trader",
-          "desc": "Asia Future Trading Funding Program 不只是一次交易挑战，而是一条 完整的职业成长路径",
+          "title": "Choose Your Challenge — Become an Asia Future Trading Trader",
+          "desc": "Asia Future Trading Funding Program is not just a trading challenge — it’s a complete growth path.",
           "row": {
             "col1": {
-              "title": "配置你的挑战"
+              "title": "Configure Your Challenge"
             },
             "col2": {
-              "title": "账户摘要",
-              "buy": "立即购买挑战",
-              "more": "了解更多规则",
-              "desc1": "从 $198 开始你的百万美金交易席位？",
-              "desc2": "购买任何挑战计划，即可获赠：",
-              "desc3": "个人交易账户铂金账户权限 3 个月",
-              "desc4": "（铂金账户专属：更低点差、Future Earn 增强利息机制、更多特权）"
+              "title": "Account Overview",
+              "buy": "Buy Challenge Now",
+              "more": "View Rules",
+              "desc1": "Start your journey to a $1 Million trading seat from just $198.",
+              "desc2": "Purchase any challenge",
+              "desc3": "Receive 3 months of complimentary Platinum Account access",
+              "desc4": "(Platinum exclusive: lower spreads, Future Earn yield enhancement, and premium benefits.*)"
             }
           }
         },
         "withdrawal": {
-          "title": "即时提现，真实收益",
-          "challenge": "开始你的挑战",
+          "title": "Instant Withdrawals, Real Profits",
+          "challenge": "Start Your Challenge",
           "row": {
             "col1": {
-              "title": "利润随时分成",
-              "desc": "无锁定周期，你一旦盈利即可立即申请分成。"
+              "title": "Real-Time Profit Sharing",
+              "desc": "No lock-up periods — withdraw your profits anytime once you’ve earned them."
             },
             "col2": {
-              "title": "快速处理",
-              "desc": "出金请求 24 小时内受理，加密货币与本地支付最快可在 1–15 分钟到账。"
+              "title": "Fast Processing",
+              "desc": "Withdrawal requests are processed within 24 hours. Crypto and local payments can arrive as fast as 1–15 minutes."
             },
             "col3": {
-              "title": "全球支持",
-              "desc": "支持 USDT / USDC / BTC / ETH 及国际电汇，多种渠道安全合规。"
+              "title": "Global Support",
+              "desc": "Supports USDT / USDC / BTC / ETH and international bank transfers — secure, compliant, and globally accessible."
             }
           }
         },
         "advantages": {
-          "title": "三大核心优势",
-          "prompt": "想进一步了解 Asia Future Trading 的交易技术与流动性优势？",
-          "more": "了解平台",
+          "title": "Why Traders Trust the Asia Future Trading Funding Program Three Core Advantages",
+          "prompt": "Want to learn more about AFT's technology and liquidity infrastructure?",
+          "more": "Explore Platform",
           "row": {
             "col1": {
-              "title": "杠杆最高 1:100",
-              "desc": "资金管理灵活，适配不同风格与策略需求。"
+              "title": "Leverage up to 1:100",
+              "desc": "Flexible capital management tailored to diverse trading styles and risk strategies."
             },
             "col2": {
-              "title": "xPrimeX 报价桥驱动",
-              "desc": "提供机构级订单执行速度与稳定性，毫秒级撮合。"
+              "title": "Powered by xPrimeX Bridge",
+              "desc": "Experience institutional-grade execution speed and stability — orders matched within milliseconds."
             },
             "col3": {
-              "title": "全球流动性支持",
-              "desc": "深度连接 XTX、LMAX、Finalto 等一线流动性提供商，报价透明，市场深度真实可见。"
+              "title": "Global Liquidity Network",
+              "desc": "Deep connections with XTX, LMAX, and Finalto ensure transparent pricing and genuine market depth."
             }
           }
         },
         "qa": {
-          "join": "立即加入 Funding Program",
-          "view": "查看挑战规则",
+          "join": "Join Funding Program",
+          "view": "View Challenge Rules",
           "ul": {
             "li1": {
-              "title": "这是真实资金账户还是模拟账户？",
-              "desc": "挑战阶段使用的是模拟账户，但所有价格数据与执行逻辑均来自真实流动性环境（xPrimeX 报价桥）。通过挑战后，你将获得 资金分成账户 并成为认证跟单交易员，利润结算真实有效，且支持提现。"
+              "title": "Is this a real or simulated account?",
+              "desc": "The challenge phase uses a simulated account, but all pricing and execution logic are connected to real liquidity through the xPrimeX bridge. Once you pass the challenge, you’ll receive a Funded Account as a certified copy-trader — with real profit sharing and withdrawals enabled."
             },
             "li2": {
-              "title": "分成什么时候到账？",
-              "desc": "Funding Program 采用 15 天利润分成周期。账户一旦有盈利，即可在每个结算周期内申请分成，收益将按 15 天为单位发放。"
+              "title": "When will profits be distributed?",
+              "desc": "The Funding Program follows a 15-day profit-sharing cycle.Once your account is profitable, you can request payouts within each cycle, and all earnings are settled every 15 days."
             },
             "li3": {
-              "title": "挑战费用能退吗？",
-              "desc": "挑战费用不可退。但 只要加入 Funding Program，即可额外获赠个人铂金账户 3 个月使用权（独立于挑战账户）。"
+              "title": "Is the challenge fee refundable?",
+              "desc": "The fee is non-refundable. However, all participants receive 3 months of complimentary Platinum Account access, independent of the challenge account."
             },
             "li4": {
-              "title": "最大杠杆是多少？",
-              "desc": "Funding Program 资金账户杠杆最高 1:100；个人独立交易账户杠杆最高可达 1:2000。"
+              "title": "What's the maximum leverage?",
+              "desc": "Funded accounts offer up to 1:100 leverage, while personal trading accounts can reach 1:2000 leverage."
             },
             "li5": {
-              "title": "我可以同时参加多个挑战吗？",
-              "desc": "可以。你可同时购买多个挑战，用于分散不同策略的测试与执行。"
+              "title": "Can I join multiple challenges at the same time?",
+              "desc": "Yes. You may purchase and run multiple challenges simultaneously to test or diversify your trading strategies."
             }
           }
         }
@@ -3567,13 +3568,13 @@
       },
       "support": {
         "title": "Support",
-        "description": "We're building Asia’s leading community-driven CFD platform — with multilingual support and multi-currency access designed for Asian traders.",
+        "description": "We're building Asia's leading community-driven CFD platform — with multilingual support and multi-currency access designed for Asian traders.",
         "btn": "Join the Community",
         "row": {
           "col-1": {
             "title": "Support Centre",
             "ul": {
-              "li1": "SailingBrick Community"
+              "li1": "Get Help — Find Answers"
             }
           },
           "col-2": {
@@ -3603,7 +3604,7 @@
       },
       "doublewin": {
         "title": "Winwin+",
-        "description": "The preferred platform for Asia’s elite traders and partners — trade, compete, and grow together on a trusted global infrastructure.",
+        "description": "The preferred platform for Asia's elite traders and partners — trade, compete, and grow together on a trusted global infrastructure.",
         "btn": "Join Our Network",
         "row": {
           "col-1": {

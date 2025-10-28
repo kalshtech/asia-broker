@@ -1,6 +1,5 @@
 "use client";
 import { useRouter, usePathname, Link } from "@/i18n/navigation";
-import { routing } from "@/i18n/routing";
 import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import {
@@ -18,7 +17,6 @@ import { MoveRight, Globe, AlignJustify, X, ChevronRight, ArrowLeft } from 'luci
 import { useState, useEffect, useRef } from "react";
 import Container from "@/components/Container";
 
-const { locales } = routing;
 
 const PackageMenuItem = (props: any) => {
     const [open, setOpen] = useState(false);
@@ -63,8 +61,8 @@ const PackageMenuItem = (props: any) => {
                         onMouseLeave={() => setOpen(false)}
                         className={"!fixed !w-full !top-[64px] !rounded-none !border-0 shadow !m-0 py-12 px-26"}
                     >
-                        <main className={"grid grid-cols-12 gap-4"}>
-                            <div className={"col-span-10 grid grid-cols-12 gap-12"}>
+                        <main className={"grid grid-cols-24 gap-4"}>
+                            <div className={"col-span-19 grid grid-cols-12 gap-12"}>
                                 {
                                     item.children.map((c_d: any, c_i: number) => (
                                         <div className={item.colSpan} key={c_i}>
@@ -83,7 +81,7 @@ const PackageMenuItem = (props: any) => {
                                                         {c_d.desc}
                                                     </Typography>
                                                 ) }
-                                                <Separator className={"my-4 mx-4 bg-theme-light-bg"}/>
+                                                <Separator className={"m-4 !w-[calc(100%-16px)] bg-theme-light-bg"}/>
                                             </div>
                                             <div>
                                                 <ul>
@@ -119,23 +117,24 @@ const PackageMenuItem = (props: any) => {
                                     ))
                                 }
                             </div>
-                            <div className={"col-span-2"}>
+                            <div className={"col-span-5"}>
                                 <div className={"w-full p-4 bg-theme-light-bg rounded-lg"}>
                                     <div className={"relative"}>
                                         <img className={"w-full h-full"} src={item.btnImg} alt=""/>
-                                        <Button className={"absolute bottom-4 left-0 m-auto right-0 max-w-[calc(100%-16px)] bg-theme-active hover:bg-theme-active-hover"}>
-                                            <Link
-                                                href={item.btnPath}
-                                                className={"w-full h-full"}
-                                            >
-                                                { item.btn }
-                                            </Link>
-                                        </Button>
+                                        <div className={"absolute bottom-4 flex justify-center left-0 mx-auto right-0 max-w-[calc(100%-16px)]"}>
+                                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
+                                                <Link
+                                                    href={item.btnPath}
+                                                    className={"w-full h-full flex justify-center items-center"}
+                                                >
+                                                    { item.btn }
+                                                </Link>
+                                            </Button>
+                                        </div>
                                     </div>
                                     <div className={"mt-4"}>
                                         <Typography
                                             variant={"muted"}
-                                            className={"text-center"}
                                         >
                                             { item.description }
                                         </Typography>
