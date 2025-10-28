@@ -530,7 +530,8 @@
         "subscribe": "無料登録",
         "prospect": {
           "title": "2025年業界展望",
-          "description": "OTC取引の未決済名目価値及び総時価総額の追跡 ..."
+          "description": "OTC取引の未決済名目価値及び総時価総額の追跡 ...",
+          "prompt": "無料ダウンロード。アカウントは不要です。"
         },
         "buttons": {
           "past": "探求　学習　出発　洞察",

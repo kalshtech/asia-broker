@@ -522,7 +522,8 @@
         "subscribe": "免费订阅",
         "prospect": {
           "title": "2025 行业展望",
-          "description": "追踪场外（OTC）名义未平仓与总市值变化……"
+          "description": "追踪场外（OTC）名义未平仓与总市值变化……",
+          "prompt": "免费下载。无需账户。"
         },
         "buttons": {
           "past": "浏览 · 学习 · 洞察",

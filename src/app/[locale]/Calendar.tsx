@@ -80,7 +80,7 @@ const CalendarComponent = () => {
                                     </div>
                                     <div>
                                         <Typography variant={"muted"} className={"mt-4 !text-[#979797] roboto"}>
-                                            Free download. No account required.
+                                            {t("prospect.prompt")}
                                         </Typography>
                                     </div>
                                 </div>

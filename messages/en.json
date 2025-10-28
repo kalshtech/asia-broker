@@ -522,7 +522,8 @@
         "subscribe": "Free Subscribe",
         "prospect": {
           "title": "2025 Industry Outlook",
-          "description": "Tracks outstanding notional and gross market value of OTC ..."
+          "description": "Tracks outstanding notional and gross market value of OTC ...",
+          "prompt": "Free download. No account required."
         },
         "buttons": {
           "past": "Explore Learn Starts Insight",
