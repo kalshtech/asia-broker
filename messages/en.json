@@ -690,26 +690,26 @@
           "trade": "Trade Crypto CFDs"
         },
         "guide": {
-          "title": "掌握加密CFD交易指南",
+          "title": "Master the Crypto CFD Trading Guide",
           "row": {
             "col1": {
-              "title": "开启你的加密货币交易进阶之路",
-              "midst": "为什么在2025年越来越多专业交易者转向加密CFD？",
-              "desc": "更高效、更公平、更透明的加密资产交易方式。",
-              "more": "阅读更多加密资产CFD指南"
+              "title": "Start Your Advanced Crypto Trading Journey",
+              "midst": "Why are more professional traders shifting to Crypto CFDs in 2025?",
+              "desc": "A faster, fairer, and more transparent way to trade digital assets.",
+              "more": "Read the Complete Crypto CFD Guide"
             },
             "col2": {
               "span1": {
-                "title": "高流动性，极速成交？",
-                "desc": "通过我们接入的深度流动性池，随时进出市场，快速响应行情。"
+                "title": "High Liquidity. Lightning-Fast Execution.",
+                "desc": "Access deep liquidity pools and enter or exit the market instantly with real-time price responsiveness."
               },
               "span2": {
-                "title": "零资金费率，BTC单边手续费低至万分之一",
-                "desc": "与永续合约不同，Crypto CFD 不收取隔夜资金费。手续费最低仅万分之一。"
+                "title": "Zero Funding Fees. BTC Commission as Low as 0.01%.",
+                "desc": "Unlike perpetual futures, Crypto CFDs charge no overnight funding fees — with trading costs starting from just 0.01% per side."
               },
               "span3": {
-                "title": "一站式账户 · 覆盖多资产交易",
-                "desc": "在一个账户中同时管理你的加密与全球资产投资组合。资金更集中，策略更灵活，提升整体交易效率。"
+                "title": "All-in-One Account · Multi-Asset Coverage",
+                "desc": "Manage your crypto and global asset portfolios from a single account. Streamline capital, optimize strategies, and enhance overall efficiency."
               }
             }
           }
@@ -801,16 +801,16 @@
             },
             "col2": {
               "span1": {
-                "title": "无交割负担，纯粹价格交易",
-                "desc": "无实物交割，零仓储与保险成本。"
+                "title": "No Delivery Obligation. Pure Price Trading.",
+                "desc": "Trade without physical delivery — zero storage or insurance costs."
               },
               "span2": {
-                "title": "适合避险与多空双向策略",
-                "desc": "在经济不确定或通胀压力下，黄金往往表现坚挺。"
+                "title": "Ideal for Hedging and Two-Way Strategies.",
+                "desc": "During periods of uncertainty or inflation, gold often remains a strong performer."
               },
               "span3": {
-                "title": "全天候交易，波动中见机会",
-                "desc": "贵金属市场交易活跃，撮合效率高，适合高频与短线策略。"
+                "title": "24/5 Trading. Opportunities in Every Move.",
+                "desc": "The precious metals market is highly liquid and efficiently executed — perfect for high-frequency and short-term strategies."
               }
             }
           }
@@ -900,16 +900,16 @@
             },
             "col2": {
               "span1": {
-                "title": "无需交割，轻松参与能源市场",
-                "desc": "无需持有实物原油或天然气，无运输、仓储与结算周期，可专注价格波动本身的交易机会。"
+                "title": "No Physical Delivery. Easy Access to Energy Markets.",
+                "desc": "Trade oil and natural gas without holding physical assets — no transport, storage, or settlement cycles. Focus purely on price movements and market opportunities."
               },
               "span2": {
-                "title": "对新闻高度敏感，策略更有预判性",
-                "desc": "能源是市场对政策、战争、制裁等信息最先反应的资产之一，适合新闻事件+突破组合策略。"
+                "title": "News-Driven and Highly Reactive Markets.",
+                "desc": "Energy assets are among the first to respond to policies, conflicts, or sanctions — ideal for event-driven and breakout trading strategies."
               },
               "span3": {
-                "title": "行情波动大，交易机会频繁",
-                "desc": "受全球供需、突发事件等影响，油气价格日内波动剧烈，是短线和日内交易者的热门标的。"
+                "title": "High Volatility. Frequent Trading Opportunities.",
+                "desc": "Influenced by global supply and demand and unexpected events, oil and gas prices move sharply within the day — a favorite for short-term and intraday traders."
               }
             }
           }
@@ -928,8 +928,8 @@
               "text-3": "Please check your trading platform for exact times."
             },
             "li3": {
-              "title": "原油和天然气的点差是多少？",
-              "desc": "点差为浮动机制，依据市场流动性动态变化。在正常波动环境下，WTI点差可低至 0.03，天然气点差低至 0.02。高波动或低流动性时点差可能扩大。"
+              "title": "What Are the Spreads for Crude Oil and Natural Gas?",
+              "desc": "Spreads are floating and adjust dynamically based on market liquidity. Under normal conditions, WTI spreads can be as low as 0.03 and natural gas spreads as low as 0.02. During high volatility or low liquidity, spreads may widen."
             },
             "li4": {
               "title": "Are energy CFDs sensitive to news events?",
@@ -1004,16 +1004,16 @@
             },
             "col2": {
               "span1": {
-                "title": "多样化投资组合配置",
-                "desc": "仅通过一笔交易，即可投资多个行业或资产类型，如科技、商品、债券与房地产等。"
+                "title": "Diversified Portfolio Allocation.",
+                "desc": "With a single trade, gain exposure to multiple sectors or asset classes — including technology, commodities, bonds, and real estate."
               },
               "span2": {
-                "title": "打破地域与资金限制，让每个人都能交易全球市场",
-                "desc": "CFD提供了更低门槛、更高自由度的方式参与美股、ETF行情。"
+                "title": "Breaking Barriers to Global Markets.",
+                "desc": "CFDs offer lower entry thresholds and greater flexibility for participating in U.S. stocks and ETF markets."
               },
               "span3": {
-                "title": "精准聚焦主题投资",
-                "desc": "通过CFD交易特定行业ETF（如AI、清洁能源、芯片等），快速响应全球趋势。"
+                "title": "Focused Thematic Investing.",
+                "desc": "Trade sector-specific ETFs — such as AI, clean energy, or semiconductors — and react swiftly to global market trends."
               }
             }
           }
@@ -1304,7 +1304,7 @@
             "col3": {
               "title": "0 Overnight Interest on Most Instruments",
               "desc": "Popular markets — including Bitcoin, Ethereum, and key assets under Platinum or VIC accounts — offer swap-free trading for more efficient long-term positions.",
-              "prompt": "免隔夜利息适用范围可能因市场条件及账户类型而异，请查看每种产品的详情说明。"
+              "prompt": "The eligibility for overnight interest exemption may vary depending on market conditions and account type. Please refer to the detailed specifications of each product for more information."
             }
           }
         },
@@ -1464,7 +1464,7 @@
           "desc": "Weekly perspectives from AFT and beyond — where data meets insight, and trading meets clarity.",
           "row": {
             "left": {
-              "title": "精选 · 每周专家洞察 · The Asia Trading View",
+              "title": "Featured · Weekly Expert Insights · The Asia Trading View",
               "prospect": "Macro Outlook 2025: Inflation, Yields, and Cross-Asset Flows",
               "prospect-desc": "Tracks outstanding notional and gross market value of OTC ...",
               "download": "Read Full Report"
@@ -1512,36 +1512,29 @@
       "calculator": {
         "fee": {
           "title": "Margin Calculation",
-          "desc": "使用Asia Future Trading 投资计算器计算点、保证金、点差和手续费等数值。 我们便捷的工具可以帮助您简化复杂的交易头寸计算。",
           "tabs": {
-            "forex": "外汇",
-            "commodity": "大宗商品",
-            "indices": "指数",
-            "stock": "股票&ETF",
-            "crypto": "加密货币"
+            "forex": "Forex",
+            "commodity": "Commodity",
+            "indices": "indices",
+            "stock": "Stocks & ETF",
+            "crypto": "Crypto"
           },
-          "forex-prompt": "精准规划您的外汇交易。 这个投资计算器可帮助您管理风险，以及确定所需保证金和潜在交易成本等所有费用。",
-          "commodity-prompt": "使用功能强大的投资计算器，确定保证金、点值和预期交易成本，助您规划金属和能源交易。",
-          "stock-prompt": "使用这一实用的投资计算器，规划苹果和特斯拉等热门股票的交易。 使用此选项卡来确定所需保证金和交易成本等费用。",
-          "indices-prompt": "针对全球热门的美国、欧盟和亚洲指数，规划您的交易。 此投资计算器可助您轻松计算保证金和点值等数值。",
-          "crypto-prompt": "规划加密货币交易，比如BTCUSD和ETHUSD等热门数字货币对。 此投资计算器可助您确定保证金、点值和预期交易成本。",
           "form": {
             "type": "Account Base Currency",
             "currency": "Currency Pair",
             "size": "Contract Size/Lot",
             "level": "Leverage",
             "volume": "Volume in Lots",
-            "calculate": "计算",
-            "result": "计算结果",
-            "margin": "保证金",
+            "calculate": "calculate",
+            "result": "result",
+            "margin": "margin",
             "rate": "Exchange Rate",
-            "shortCredit": "空头隔夜利息",
-            "longCredit": "多头隔夜利息",
-            "cost": "点差成本",
-            "fee": "手续费",
-            "pointValue": "点值"
-          },
-          "disclaimer": "免责声明：投资计算器仅供参考。 计算器所提供的结果仅供教育和估算之用，不应将其视为完整结果或用于投资决策。 实时结果只能在执行订单时确定。 点差或因市场波动、新闻发布、经济事件、市场的开市和休市时间以及正在交易的品种等因素而波动或扩大。"
+            "shortCredit": "Short Position Overnight Interest",
+            "longCredit": "Long Position Overnight Interest",
+            "cost": "Spread Cost",
+            "fee": "Commission Fee",
+            "pointValue": "Pip Value"
+          }
         },
         "use": {
           "title": "How to Use the Margin Calculator",
@@ -1558,11 +1551,11 @@
           "row": {
             "col1": {
               "title": "Plan Every Trade with Precision",
-              "desc": "外汇交易费用计算器是每位交易者制定交易计划的重要工具。它可以在建仓前帮助您提前评估：",
+              "desc": "The Forex Trading Cost Calculator is an essential tool for every trader when planning a trade. It helps you evaluate key metrics in advance before opening a position:",
               "ul": {
-                "li1": "所需保证金",
-                "li2": "每点价值",
-                "li3": "预估交易成本"
+                "li1": "Required Margin",
+                "li2": "Value per Point",
+                "li3": "Estimated Trading Cost"
               },
               "prompt": "The Margin Calculator helps traders estimate margin requirements before opening a position —allowing you to understand leverage impact, manage exposure, and plan every trade with confidence.",
               "explore": "Explore Forex"
@@ -1634,17 +1627,17 @@
             "span1": {
               "title": "How to Choose the Right CFD Account?",
               "desc": "Learn the differences between account types and find the setup that best suits your trading goals.",
-              "prompt": "了解什么是CFD账户，不同账户类型的区别，以及如何根据你的交易目标选择最合适的平台与账户结构。"
+              "prompt": "Learn what a CFD account is, understand the differences between account types, and discover how to choose the most suitable platform and account structure for your trading goals."
             },
             "span2": {
               "title": "How to Choose a Reliable Broker？",
               "desc": "Understand key factors like regulation, cost structure, and platform quality to find a trusted trading partner.",
-              "prompt": "从监管信息、费用结构到用户体验，教你如何评估一个券商是否安全可靠、适合你的交易偏好。"
+              "prompt": "Learn what a CFD account is, understand the differences between account types, and discover how to choose the most suitable platform and account structure for your trading goals."
             },
             "span3": {
               "title": "How Trading Works?",
               "desc": "Discover how the CFD market operates — from pricing and margin to leverage and order execution.",
-              "prompt": "了解什么是CFD账户，不同账户类型的区别，以及如何根据你的交易目标选择最合适的平台与账户结构。"
+              "prompt": "Understand what a CFD account is, explore the differences between various account types, and learn how to choose the most suitable platform and account setup based on your trading objectives"
             }
           },
           "view": "Read Article"
@@ -2947,7 +2940,7 @@
           "title": "We Offer More Than Interest — A Sustainable, User-Empowering Yield Mechanism",
           "desc1": "Future Earn is a daily interest system built by Asia Future Trading for strategic and long-term traders.",
           "desc2": "No subscriptions, no lock-ups, no disruption — interest is settled daily and automatically credited to your MT5 balance on T+1.",
-          "desc3": "市面虽有不同收益方式，但像这样无感操作、每日到账、机制透明的设计仍属少见。我们提供的不是年化承诺，而是一套 可验证、可持续、尊重用户自由的收益机制",
+          "desc3": "While many profit models exist in the market, few offer seamless operation, daily payouts, and full transparency. What we provide is not a fixed annualized return, but a verifiable, sustainable profit-sharing mechanism that respects user autonomy.",
           "row": {
             "col1": {
               "title": "For Professional Traders. Daily Interest + VPS Cloud Support",
@@ -3172,7 +3165,7 @@
           "row": {
             "col1": {
               "title": "What You'll Gain",
-              "desc": "CTA策略信号支持：由量化分析团队每日发布核心交易提示交易灵感洞察学院：涵盖趋势解析、资产专题、策略构建等模块每周网络研讨会（Webinar）：与分析师实时互动，掌握最新行情社交媒体跟进：每日市场观点、平台资讯不间断更新",
+              "desc": "CTA Strategy Signals: Core trading insights released daily by our quantitative analysis team. Insight Academy: Covers trend analysis, asset spotlights, and strategy development modules.  \nWeekly Webinars: Interact with analysts in real time and stay ahead of market movements. Social Media Updates: Daily market views and platform news, continuously refreshed.",
               "register": "Open an Account",
               "jump": "Enter AFT Insights",
               "1-title": "CTA Strategy Signals",
@@ -3210,7 +3203,7 @@
           "title2": "1 Million Funded Traders",
           "desc": "Through the Asia Future Trading Funding Program, top traders worldwide have gained access to capital and real profit sharing. Whether you’re an emerging talent or a seasoned strategist, this is your stage to shine.",
           "join": "Get Funded Now",
-          "prompt": "示例金额与用户仅作演示用途，实际分成情况以 Funding Program 实际规则为准。"
+          "prompt": "All example figures and users are for demonstration purposes only. Actual profit-sharing arrangements are subject to the official Funding Program rules."
         },
         "plan": {
           "title": "What Is the AFT Funding Program?",
@@ -3341,18 +3334,18 @@
           "col-2": {
             "title": "Pricing",
             "ul": {
-              "li1": "定价概览",
-              "li2": "点差",
+              "li1": "Pricing Overview",
+              "li2": "Spreads",
               "li3": "General Fees",
-              "li4": "调期利率"
+              "li4": "Swap Rates"
             }
           },
           "col-3": {
             "title": "Trading Conditions",
             "ul": {
               "li1": "Deposits & Withdrawals",
-              "li2": "客户保护",
-              "li3": "交易条款与合规KYC"
+              "li2": "Client Protection",
+              "li3": "Trading Terms & KYC Compliance"
             }
           }
         }
@@ -3408,10 +3401,10 @@
             }
           },
           "col-3": {
-            "title": "福利中心",
+            "title": "Rewards Center",
             "ul": {
-              "li1": "AFT 积分激励计划",
-              "desc1": "您的每一次交易，都可以获得额外的积分奖励"
+              "li1": "AFT Points Incentive Program",
+              "desc1": "Earn bonus points with every trade you make."
             }
           }
         }
@@ -3422,27 +3415,27 @@
         "btn": "Visit Trading Academy",
         "row": {
           "col-1": {
-            "title": "基础文章",
+            "title": "Essential Articles",
             "ul": {
-              "li1": "1. 什么是交易",
-              "desc1": "发现交易的世界：可进行投机的各类金融工具，以及市场中所有买卖资产的参与者。",
-              "li2": "2.如何为自己选择合适的券商",
-              "desc2": "针对您偏好的市场选择最佳券商。了解如何调研其业绩记录与公司概况，以及如何评估佣金和其他费用。",
-              "li3": "3.如何为自己选择合适的CFD 账户",
-              "desc3": "了解选择最佳投资平台时应关注的要素，从可投资的证券种类到客服支持与费用结构。",
-              "li4": "4.如何入门交易CFD",
-              "desc4": "为初次投资者详解投资基础，教您如何在平台上购买各种市场的股票。",
-              "li5": "5.如何挑选理想的投资平台",
-              "desc5": "了解选择最佳投资平台时应关注的要素，从可投资的证券种类到客服支持与费用结构。"
+              "li1": "1. What Is Trading?",
+              "desc1": "Explore the world of trading — the financial instruments available for speculation and the participants who buy and sell assets in global markets.",
+              "li2": "2. How to Choose the Right Broker",
+              "desc2": "Find the best broker for your preferred markets. Learn how to review performance records, company background, commissions, and other fees.",
+              "li3": "3. How to Select the Right CFD Account",
+              "desc3": "Understand the key factors to consider when choosing a trading platform — from available instruments to customer support and fee structures.",
+              "li4": "4. How to Get Started with CFD Trading",
+              "desc4": "A beginner’s guide to investing — learn how to start trading shares and other markets through a CFD platform.",
+              "li5": "5. How to Choose Your Ideal Trading Platform",
+              "desc5": "Discover what matters most when selecting an investment platform — from tradable assets and usability to support and cost efficiency."
             }
           },
           "col-2": {
-            "title": "学习资源",
+            "title": "Learning Resources",
             "ul": {
-              "li1": "在线课程",
-              "desc1": "系统化视频教学，涵盖基础知识与实战技巧，帮助快速掌握CFD交易。",
-              "li2": "交易术语词汇表",
-              "desc2": "详解常用交易术语，帮助您快速理解行业语言，轻松跟上市场节奏。"
+              "li1": "Online Courses",
+              "desc1": "Structured video tutorials covering both fundamentals and practical strategies to help you master CFD trading efficiently.",
+              "li2": "Trading Glossary",
+              "desc2": "A comprehensive guide to common trading terms — understand industry language and stay in sync with market conversations."
             }
           },
           "col-3": {
@@ -3476,19 +3469,19 @@
             "desc": "Expert insights and flagship strategies to guide your trades with confidence.",
             "ul": {
               "li1": "AFT Insights Centre",
-              "li2": "大师现场课程",
-              "desc2": "了解您所在地区的线下课程与我们和合作伙伴交易学院"
+              "li2": "Masterclass Sessions",
+              "desc2": "Discover in-person courses available in your region, hosted by us and our partner trading academies."
             }
           },
           "col-3": {
             "title": "引航-全球视野分析- The Asia Future Trading View",
             "desc": "全球实时资讯与Asia Future Trading 专家分析，把握市场先机",
             "ul": {
-              "li1": "全部",
-              "li2": "股票",
-              "li3": "债券",
-              "li4": "商品",
-              "li5": "宏观"
+              "li1": "All",
+              "li2": "Stocks",
+              "li3": "Bonds",
+              "li4": "Commodities",
+              "li5": "Macro"
             }
           }
         }
@@ -3524,7 +3517,7 @@
               "li2": "Careers",
               "li3": "ESG",
               "li4": "Contact Us",
-              "li5": "法律文件"
+              "li5": "legal files"
             }
           }
         }
@@ -3539,12 +3532,12 @@
             "ul": {
               "li1": "Trading Competitions",
               "desc1": "Compete weekly with just USD 100 to start — join exclusive Cent Account battles and share a multi-million-dollar prize pool.",
-              "li2": "跟单社区",
-              "desc2": "关注全球顶尖交易员，一键复制他们的交易策略。成为带单交易员，最高可享 30% 跟单分润 + 10% 手续费返佣。",
+              "li2": "Copy-Trading Community",
+              "desc2": "Follow top traders worldwide and replicate their strategies with one click. Become a signal provider to earn up to 30% in performance fees plus 10% commission rebates.",
               "li3": "Funding Program",
               "desc3": "Get certified as an AFT proprietary trader and receive full funding from Asia Future Trading to scale your performance.",
-              "li4": "全球合作伙伴 Affiliate Program",
-              "desc4": "赋能行业意见领袖，将专业认知变现。我们的全球合作伙伴计划，助您多年来的积累实现持续收益。"
+              "li4": "Global Affiliate Program",
+              "desc4": "Empower industry influencers to turn expertise into earnings. Our Global Affiliate Program helps you transform years of experience into sustainable income."
             }
           }
         }
@@ -3605,7 +3598,7 @@
     "relation": "相关文章",
     "beginner": {
       "common-currency": {
-        "title": "常见货币对与其特性",
+        "title": "Common currency pairs and their characteristics",
         "desc": "好的，下面我专门针对 美元系货币对（USD 作为一方），整理了一篇完整内容。引用了国际清算银行（BIS）、美国联邦储备（Federal Reserve）、IMF 等高权威机构的信息，帮助解释每个主要美元货币对的特性。",
         "section1": {
           "title": "一、背景",
@@ -3721,7 +3714,7 @@
         }
       },
       "common-mistakes": {
-        "title": "新手常犯的五个错误",
+        "title": "Five common mistakes made by beginners",
         "section1": {
           "title": "新手常犯的五个错误：外汇交易的第一堂必修课",
           "desc": "外汇交易看似门槛不高，但正因其高流动性与杠杆特性，许多新手很快就在市场中“交学费”。世界银行在一份关于零售外汇行为的研究中指出：“缺乏系统性学习与风险控制，是零售投资者高淘汰率的根本原因”【World Bank, Financial Inclusion Report】。以下五个错误，是外汇新手最容易掉入的陷阱。"
@@ -3806,7 +3799,7 @@
         }
       },
       "forex-basic-analysis": {
-        "title": "外汇交易中的基本面分析",
+        "title": "Fundamental Analysis in Forex Trading",
         "section1": {
           "title": "外汇交易中的基本面分析：透过宏观看货币",
           "desc": "外汇市场的波动，从来不是孤立事件，而是国家经济、政策博弈与资本流向的结果。交易者要想读懂汇率，就必须理解所谓的 基本面分析（Fundamental Analysis）——从利率、通胀、就业到地缘政治，把宏观变量转化为交易逻辑。"
@@ -3876,7 +3869,7 @@
         }
       },
       "forex-vs-stock": {
-        "title": "外汇 vs 股票：有什么不同？",
+        "title": "Forex vs Stocks: What's the Difference?",
         "section1": {
           "title": "外汇 vs 股票：两种市场的分野与互补",
           "desc": "在金融市场的宏大舞台上，外汇（Forex）与股票（Equities）是最广为人知的两类资产。二者经常被放在一起比较，但在交易逻辑、市场结构和风险属性上却有显著差异。正如《Bloomberg Markets》在一篇专题中提到的：“外汇是全球资金的血液，而股票是企业成长的映射”【Bloomberg Markets, FX vs Equities】。"
@@ -3946,7 +3939,7 @@
         }
       },
       "forex-fundamental-knowledge": {
-        "title": "外汇交易基础知识",
+        "title": "Forex Trading Basics",
         "section1": {
           "title": "一、引言",
           "desc": "外汇（Forex, Foreign Exchange）是全球交易量最大的金融市场。对于刚入门的投资者来说，理解外汇交易的基础知识至关重要。它不仅关系到能否正确操作，更决定了风险控制和盈利能力。本文将从货币对、点值、杠杆、订单类型等方面，全面介绍外汇交易的基本概念，帮助新手建立清晰的知识框架。"
@@ -4082,7 +4075,7 @@
         }
       },
       "what-is-forex": {
-        "title": "什么是外汇？",
+        "title": "What is Forex?",
         "section1": {
           "title": "一、引言",
           "desc1": "外汇（Forex, Foreign Exchange）是全球最大、最活跃的金融市场之一。根据国际清算银行（BIS）的统计，全球外汇市场的日均成交量已超过 7 万亿美元，远远超过股票和债券市场的交易规模。外汇交易覆盖全球 24 小时，从悉尼、东京、伦敦到纽约，不间断地进行。",
@@ -4221,7 +4214,7 @@
         }
       },
       "explain-rates": {
-        "title": "汇率如何形成？全面解析货币价值背后的逻辑",
+        "title": "How are exchange rates formed? A comprehensive analysis of the logic behind currency value",
         "section1": {
           "title": "一、引言",
           "desc1": "在全球化经济体系中，汇率是国际贸易、投资和金融市场的核心变量。一个国家货币相对另一种货币的价值，不仅影响到企业的出口成本和消费者的进口价格，还牵动着全球资本流动和金融稳定。",
@@ -4338,7 +4331,7 @@
         }
       },
       "leverage-and-margin": {
-        "title": "杠杆与保证金机制：一场交易者必经的思考",
+        "title": "Leverage and Margin Mechanism: A Must-Think for Traders",
         "section1": {
           "title": "一、为什么要谈杠杆与保证金",
           "desc": "在外汇交易里，杠杆（Leverage）与保证金（Margin）是最绕不开的两个概念。它们不是复杂的金融衍生品，而是每个交易者每天必须面对的操作规则。理解它们，不仅关系到盈利空间，也决定了账户的生存概率。"
@@ -4411,7 +4404,7 @@
         }
       },
       "trading-mechanism": {
-        "title": "多空双向交易机制",
+        "title": "Long-short two-way trading mechanism",
         "section1": {
           "title": "多空双向交易机制：交易者的另一面选择权",
           "desc1": "在外汇与差价合约（CFD）的市场上，双向交易机制（Two-way Trading Mechanism）是被频繁提及却常被误解的概念。它指的是交易者既可以通过做多（Long）从价格上涨获利，也可以通过做空（Short）在价格下跌中寻找机会。",

@@ -4,8 +4,6 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import {Label} from "@/components/ui/label";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
@@ -22,7 +20,6 @@ const fadeInUp: Variants = {
 
 const FeeCalculator = () => {
     const t = useTranslations("Pages.ideas.calculator.fee");
-    const [ tabActive, setTabActive ] = React.useState<string>("forex");
     const [ formData, setFormData ] = React.useState({
         base: "USD",
         currency: "EURUSD",
@@ -104,12 +101,6 @@ const FeeCalculator = () => {
         { label: "100000", value: "100000" },
     ];
 
-    const TablePrompt = React.useMemo(() => t(`${tabActive}-prompt`), [tabActive])
-
-    const handleToggleTabActive = (active: string) => {
-        setTabActive(active);
-    }
-
     const handleGetRateValue = () => {
         fetch(`https://api.fastbull.com/fastbull-quotes-service/api/getMarginConvert?depositCurrency=${formData.base}&symbol=${formData.currency}`)
             .then(response => response.json()).then(result => {
@@ -138,56 +129,7 @@ const FeeCalculator = () => {
                     <Typography variant={"h3"} className={"text-center"}>
                         {t("title")}
                     </Typography>
-                    {/*<Typography*/}
-                    {/*    variant={"p"}*/}
-                    {/*    className={"mt-4 text-center"}*/}
-                    {/*>*/}
-                    {/*    {t("desc")}*/}
-                    {/*</Typography>*/}
                 </motion.div>
-                {/*<div className={"mt-16"}>*/}
-                {/*    <div className={"flex lg:hidden"}>*/}
-                {/*        <Select value={tabActive} onValueChange={handleToggleTabActive}>*/}
-                {/*            <SelectTrigger className={"w-full"}>*/}
-                {/*                <SelectValue placeholder="Theme"/>*/}
-                {/*            </SelectTrigger>*/}
-                {/*            <SelectContent>*/}
-                {/*                {*/}
-                {/*                    tabList.map((item, index) => (*/}
-                {/*                        <SelectItem value={item.value} key={index}>*/}
-                {/*                            {item.label}*/}
-                {/*                        </SelectItem>*/}
-                {/*                    ))*/}
-                {/*                }*/}
-                {/*            </SelectContent>*/}
-                {/*        </Select>*/}
-                {/*    </div>*/}
-
-                {/*    <Tabs value={tabActive}*/}
-                {/*          className={"justify-center items-center hidden lg:flex"}*/}
-                {/*          onValueChange={handleToggleTabActive}*/}
-                {/*    >*/}
-                {/*        <TabsList className={"h-10 grid grid-cols-3 lg:block"}>*/}
-                {/*            {*/}
-                {/*                tabList.map((item, index) => (*/}
-                {/*                    <TabsTrigger*/}
-                {/*                        key={index}*/}
-                {/*                        value={item.value}*/}
-                {/*                        className={"ext-base bg-theme-light-bg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}*/}
-                {/*                    >*/}
-                {/*                        {item.label}*/}
-                {/*                    </TabsTrigger>*/}
-                {/*                ))*/}
-                {/*            }*/}
-                {/*        </TabsList>*/}
-                {/*    </Tabs>*/}
-                {/*    <Typography*/}
-                {/*        variant={"p"}*/}
-                {/*        className={"mt-10 text-center"}*/}
-                {/*    >*/}
-                {/*        {TablePrompt}*/}
-                {/*    </Typography>*/}
-                {/*</div>*/}
                 <div className={"mt-10 bg-theme-light-bg rounded-xs p-4 lg:px-20 lg:py-12"}>
                     <div className={"grid gap-4 lg:gap-8 grid-cols-1 lg:grid-cols-2"}>
                         <div className={""}>

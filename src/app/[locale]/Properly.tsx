@@ -215,10 +215,10 @@ const Properly = () => {
                             <Typography variant={"h4"}>
                                 {t(`left.${tabActive}.name`)}
                             </Typography>
-                            <Typography className={"font-medium mt-2"}>
+                            <Typography variant={"p"} className={"font-medium mt-2 lg:mt-6"}>
                                 {t(`left.${tabActive}.title`)}
                             </Typography>
-                            <Typography className={"mt-2"}>
+                            <Typography variant={"muted"} className={"mt-4"}>
                                 {t(`left.${tabActive}.desc`)}
                             </Typography>
 

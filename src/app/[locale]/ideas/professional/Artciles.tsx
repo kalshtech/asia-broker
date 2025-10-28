@@ -86,11 +86,11 @@ const Articles = () => {
     const t = useTranslations("Pages.ideas.professional.articles");
     const articlesAry = [
         { imageUrl: "/images/ideas/article-1.png", title: "基于税收尺度的定量研究：地方保护的“衡量”", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/ideas/article-2.png", title: "宏观经济深度报告：大财政时代冲击联储独立性...", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/ideas/article-3.png", title: "人民币升值：短期催化与长期重估", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/ideas/article-4.png", title: "资产配置日报：风云突变", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/ideas/article-5.png", title: "债市分析框架之资金面", disc: "宏观", time: "2025/9/3" },
-        { imageUrl: "/images/ideas/article-6.png", title: "盛宴未散 见招拆招", disc: "宏观", time: "2025/9/3" },
+        { imageUrl: "/images/ideas/article-1.png", title: "宏观经济深度报告：大财政时代冲击联储独立性...", disc: "宏观", time: "2025/9/3" },
+        { imageUrl: "/images/ideas/article-1.png", title: "人民币升值：短期催化与长期重估", disc: "宏观", time: "2025/9/3" },
+        { imageUrl: "/images/ideas/article-1.png", title: "资产配置日报：风云突变", disc: "宏观", time: "2025/9/3" },
+        { imageUrl: "/images/ideas/article-1.png", title: "债市分析框架之资金面", disc: "宏观", time: "2025/9/3" },
+        { imageUrl: "/images/ideas/article-1.png", title: "盛宴未散 见招拆招", disc: "宏观", time: "2025/9/3" },
     ];
     return (
         <section className={"pb-4 lg:pb-30"}>

@@ -77,63 +77,63 @@ const Articles = (props: Props) => {
         {
             imageUrl: "/images/academy/learning-article1.png",
             title: ArticlesT("common-currency.title"),
-            disc: "宏观",
+            disc: t("theme.energy"),
             time: "2025/9/3",
             href: "/articles/beginner/common-currency"
         },
         {
             imageUrl: "/images/academy/learning-article2.png",
             title: ArticlesT("trading-mechanism.title"),
-            disc: "宏观",
+            disc: t("theme.beginner"),
             time: "2025/9/3",
             href: "/articles/beginner/trading-mechanism"
         },
         {
             imageUrl: "/images/academy/learning-article3.png",
             title: ArticlesT("leverage-and-margin.title"),
-            disc: "宏观",
+            disc: t("theme.forex"),
             time: "2025/9/3",
             href: "/articles/beginner/leverage-and-margin"
         },
         {
             imageUrl: "/images/academy/learning-article4.png",
             title: ArticlesT("explain-rates.title"),
-            disc: "宏观",
+            disc: t("theme.metal"),
             time: "2025/9/3",
             href: "/articles/beginner/explain-rates"
         },
         {
             imageUrl: "/images/academy/learning-article5.png",
             title: ArticlesT("what-is-forex.title"),
-            disc: "宏观",
+            disc: t("theme.configuration"),
             time: "2025/9/3",
             href: "/articles/beginner/what-is-forex"
         },
         {
             imageUrl: "/images/academy/learning-article6.png",
             title: ArticlesT("forex-vs-stock.title"),
-            disc: "宏观",
+            disc: t("theme.crypto"),
             time: "2025/9/3",
             href: "/articles/beginner/forex-vs-stock"
         },
         {
             imageUrl: "/images/academy/learning-article2.png",
             title: ArticlesT("forex-fundamental-knowledge.title"),
-            disc: "宏观",
+            disc: t("theme.weekView"),
             time: "2025/9/3",
             href: "/articles/beginner/forex-fundamental-knowledge"
         },
         {
             imageUrl: "/images/academy/learning-article3.png",
             title: ArticlesT("forex-basic-analysis.title"),
-            disc: "宏观",
+            disc: t("theme.energy"),
             time: "2025/9/3",
             href: "/articles/beginner/forex-basic-analysis"
         },
         {
             imageUrl: "/images/academy/learning-article1.png",
             title: ArticlesT("common-mistakes.title"),
-            disc: "宏观",
+            disc: t("theme.beginner"),
             time: "2025/9/3",
             href: "/articles/beginner/common-mistakes"
         },
