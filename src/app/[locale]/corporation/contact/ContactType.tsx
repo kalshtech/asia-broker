@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import {Button} from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -65,12 +66,17 @@ const ContactType = () => {
                         </div>
                         <div className={"col-span-12 lg:col-span-6 bg-white p-10 rounded-2xl"}>
                             <div className={"flex"}>
-                                <img src="/images/corporation/contact-type2.png" className={"w-10 h-10 object-cover"}
-                                     alt="icon"/>
-                                <Button
-                                    className={"ml-auto bg-theme-active hover:bg-theme-active-hover"}>
-                                    {t("join")}
-                                </Button>
+                                <img
+                                    src="/images/corporation/contact-type2.png"
+                                    className={"w-10 h-10 object-cover"}
+                                    alt="icon"
+                                />
+                                <GeneralLinkBtn
+                                    text={t("join")}
+                                    path={"/corporation/careers"}
+                                    theme={"active-solid"}
+                                    className={"ml-auto"}
+                                />
                             </div>
                             <div>
                                 <Typography

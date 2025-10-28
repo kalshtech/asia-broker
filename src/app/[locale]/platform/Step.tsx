@@ -6,6 +6,7 @@ import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -104,9 +105,12 @@ const Step = () => {
                 <div className={"mx-auto mt-8 lg:mt-24"}>
                     <div className={"flex justify-center"}>
                         <RegisterBtn className={"bg-white hover:bg-white text-theme-active"}/>
-                        <Button className={"ml-12 border bg-transparent hover:bg-transparent"}>
-                            {t("join")}
-                        </Button>
+                        <GeneralLinkBtn
+                            text={t("join")}
+                            path={"/corporation/careers"}
+                            theme={"light-hollow"}
+                            className={"ml-8"}
+                        />
                     </div>
                 </div>
             </Container>

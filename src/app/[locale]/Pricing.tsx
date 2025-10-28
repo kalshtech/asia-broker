@@ -8,6 +8,7 @@ import Container from "@/components/Container";
 import Image from "next/image";
 import RealTimeUpdate from "@/components/charts/RealtimeUpdate";
 import { Link } from "@/i18n/navigation";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -183,13 +184,16 @@ const EnglishPricing = () => {
 
                     <div>
                         <div className={"flex justify-center mt-10 lg:mt-24"}>
-                            <Button className={"bg-white text-theme-active cursor-pointer hover:bg-white"}>
-                                {t("left.btnText")}
-                            </Button>
-                            <Button
-                                className={"bg-transparent ml-4 text-white border cursor-pointer hover:bg-transparent"}>
-                                {t("left.more")}
-                            </Button>
+                            <GeneralLinkBtn
+                                text={t("left.btnText")}
+                                path={"/accounts/platinum"}
+                            />
+                            <GeneralLinkBtn
+                                text={t("left.more")}
+                                path={"/products/rates"}
+                                theme={"light-hollow"}
+                                className={"ml-4"}
+                            />
                         </div>
                         <div>
                             <Typography variant={"muted"} className={"!text-white text-center mx-auto mt-8"}>
@@ -260,18 +264,11 @@ const OtherPricing = () => {
                                     {t("left.description2")}
                                 </Typography>
 
-                                <div className={"mt-10 lg:mt-27"}>
-                                    <Button className={"bg-white text-theme-active cursor-pointer hover:bg-white"}>
-                                        {t("left.btnText")}
-                                    </Button>
-
-                                    {
-                                        isEn && (
-                                            <Button className={"bg-transparent ml-4 text-white border cursor-pointer hover:bg-transparent"}>
-                                                {t("left.more")}
-                                            </Button>
-                                        )
-                                    }
+                                <div className={"mt-10 lg:mt-26"}>
+                                    <GeneralLinkBtn
+                                        text={t("left.btnText")}
+                                        path={"/accounts/platinum"}
+                                    />
                                 </div>
 
                                 <Typography variant={"muted"} className={"!text-white mt-12 lg:mt-40"}>

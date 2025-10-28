@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
 import TitleReveal from "@/components/TitleReveal";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -56,9 +57,12 @@ const Banner =  () => {
                 </motion.div>
                 <div className={"mt-16 flex"}>
                     <RegisterBtn className={"bg-white text-black hover:bg-white"} />
-                    <Button className={"ml-4 bg-transparent border hover:bg-transparent"}>
-                        {t("support")}
-                    </Button>
+                    <GeneralLinkBtn
+                        text={t("support")}
+                        path={"/corporation/contact"}
+                        theme={"light-hollow"}
+                        className={"ml-4"}
+                    />
                 </div>
             </Container>
         </section>

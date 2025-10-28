@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import CalendarTable from "@/components/common/CalendarTable";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -65,14 +66,17 @@ const CalendarComponent = () => {
                                 </Typography>
                                 <div className={"mt-8"}>
                                     <div className={"flex-1 flex"}>
-                                        <Button className={"border bg-transparent hover:bg-transparent"}>
-                                            {t("buttons.past")}
-                                        </Button>
+                                        <GeneralLinkBtn
+                                            text={t("explore")}
+                                            path={"/ideas/professional"}
+                                            theme={"light-hollow"}
+                                        />
                                     </div>
                                     <div className={"flex-1 flex mt-4"}>
-                                        <Button className={"bg-white hover:bg-white text-black"}>
-                                            {t("buttons.download")}
-                                        </Button>
+                                        <GeneralLinkBtn
+                                            text={t("buttons.download")}
+                                            path={"/platform"}
+                                        />
                                     </div>
                                     <div>
                                         <Typography variant={"muted"} className={"mt-4 !text-[#979797] roboto"}>

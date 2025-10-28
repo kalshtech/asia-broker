@@ -3,8 +3,8 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -58,9 +58,11 @@ const VIC = () => {
                                 </div>
 
                                 <div className={"mt-4 lg:mt-16"}>
-                                    <Button>
-                                        {t("left.understand")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text= {t("left.understand")}
+                                        path={"/accounts/vic"}
+                                        theme={"dark-solid"}
+                                    />
                                 </div>
                             </div>
                         </div>

@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -79,9 +80,11 @@ const Explore = () => {
                                             }
                                         </ul>
                                         <div className={"mt-4 lg:mt-20"}>
-                                            <Button>
-                                                {t("card1.btn")}
-                                            </Button>
+                                            <GeneralLinkBtn
+                                                text={t("card1.btn")}
+                                                path={"/accounts/platinum"}
+                                                theme={"dark-solid"}
+                                            />
                                         </div>
                                     </div>
                                 </div>
@@ -127,9 +130,11 @@ const Explore = () => {
                                             }
                                         </ul>
                                         <div className={"mt-4 lg:mt-20"}>
-                                            <Button>
-                                                {t("card2.btn")}
-                                            </Button>
+                                            <GeneralLinkBtn
+                                                text={t("card2.btn")}
+                                                path={"/accounts/vic"}
+                                                theme={"dark-solid"}
+                                            />
                                         </div>
                                     </div>
                                 </div>

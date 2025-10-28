@@ -37,7 +37,7 @@ const Methods = () => {
                     </Typography>
                 </motion.div>
                 <div className={"mt-8 lg:mt-16"}>
-                    <div className={"grid grid-cols-12 gap-8"}>
+                    <div className={"grid grid-cols-12 gap-8 h-full"}>
                         {
                             ary.map((item, index) => (
                                 <div className={"col-span-12 lg:col-span-4 p-4 lg:p-10 bg-theme-light-bg rounded-2xl"}
@@ -54,9 +54,11 @@ const Methods = () => {
                                     >
                                         {item.title}
                                     </Typography>
-                                    <Typography variant={"muted"}>
-                                        {item.desc}
-                                    </Typography>
+                                    <div className={"h-24"}>
+                                        <Typography variant={"muted"}>
+                                            {item.desc}
+                                        </Typography>
+                                    </div>
                                     <div className={"mt-8 lg:mt-16"}>
                                         <Button
                                             className={"bg-theme-active hover:bg-theme-active"}>

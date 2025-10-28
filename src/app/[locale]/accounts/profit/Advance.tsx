@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -75,9 +76,11 @@ const Advance = () => {
                                 </div>
 
                                 <div className={"mt-16 flex justify-center"}>
-                                    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                        {t("row.col1.btn")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text={t("row.col1.btn")}
+                                        path={"/accounts/platinum"}
+                                        theme={"active-solid"}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -100,9 +103,11 @@ const Advance = () => {
                                 </div>
 
                                 <div className={"mt-16 flex justify-center"}>
-                                    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                        {t("row.col2.btn")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text={t("row.col2.btn")}
+                                        path={"/accounts/vic"}
+                                        theme={"active-solid"}
+                                    />
                                 </div>
                             </div>
                         </div>

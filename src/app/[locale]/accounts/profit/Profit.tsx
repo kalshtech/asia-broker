@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -65,17 +66,24 @@ const Profit = () => {
                                 }
                             </ul>
                             <div className={"mt-10"}>
-                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                    {t("row.col1.gold")}
-                                </Button>
-                                <Button className={"ml-4 bg-theme-active hover:bg-theme-active-hover"}>
-                                    {t("row.col1.vic")}
-                                </Button>
+                                <GeneralLinkBtn
+                                    text={t("row.col1.gold")}
+                                    path={"/accounts/platinum"}
+                                    theme={"active-solid"}
+                                />
+                                <GeneralLinkBtn
+                                    text={t("row.col1.vic")}
+                                    path={"/accounts/vic"}
+                                    theme={"active-solid"}
+                                    className={"ml-4"}
+                                />
                             </div>
-                            <div className={"mt-6"}>
-                                <Button className={"border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
-                                    {t("row.col1.download")}
-                                </Button>
+                            <div className={"mt-4"}>
+                                <GeneralLinkBtn
+                                    text={t("row.col1.download")}
+                                    path={"/platform"}
+                                    theme={"active-hollow"}
+                                />
                             </div>
                         </div>
                         <div className={"col-span-12 lg:col-span-6"}>

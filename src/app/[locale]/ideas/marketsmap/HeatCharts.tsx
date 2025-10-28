@@ -12,6 +12,7 @@ import { useSearchParams } from "next/navigation";
 import {useMemo} from "react";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -88,9 +89,11 @@ const HeatCharts = () => {
                         {t("forex-desc")}
                     </Typography>
                     <div className={"mt-6 flex justify-center"}>
-                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                            {t("forex-explore")}
-                        </Button>
+                        <GeneralLinkBtn
+                            text={t("forex-explore")}
+                            path={"/products/forex"}
+                            theme={"active-solid"}
+                        />
                     </div>
                 </motion.div>
                 <div className={"mt-16 items-center hidden lg:flex"}>
@@ -145,9 +148,11 @@ const HeatCharts = () => {
                         {t("stock-desc")}
                     </Typography>
                     <div className={"mt-6 flex justify-center"}>
-                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                            {t("stock-explore")}
-                        </Button>
+                        <GeneralLinkBtn
+                            text={t("stock-explore")}
+                            path={"/products/stocks"}
+                            theme={"active-solid"}
+                        />
                     </div>
                 </motion.div>
                 <div className={"mt-10"}>
@@ -167,9 +172,11 @@ const HeatCharts = () => {
                         {t("crypto-desc")}
                     </Typography>
                     <div className={"mt-6 flex justify-center"}>
-                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                            {t("crypto-explore")}
-                        </Button>
+                        <GeneralLinkBtn
+                            text={t("crypto-explore")}
+                            path={"/products/crypto"}
+                            theme={"active-solid"}
+                        />
                     </div>
                 </motion.div>
                 <div className={"mt-10"}>

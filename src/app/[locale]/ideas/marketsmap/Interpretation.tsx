@@ -4,6 +4,7 @@ import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import {useTranslations} from "next-intl";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 const Interpretation = () => {
     const t = useTranslations("Pages.ideas.marketsmap.interpretation");
     const ulAry = [
@@ -47,9 +48,11 @@ const Interpretation = () => {
                             </Typography>
 
                             <div className={"mt-16"}>
-                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                    {t("row.col1.enter")}
-                                </Button>
+                                <GeneralLinkBtn
+                                    text={t("row.col1.enter")}
+                                    path={"/ideas/professional"}
+                                    theme={"active-solid"}
+                                />
 
                                 <Typography variant={"muted"} className={"!text-white mt-4"}>
                                     {t("row.col1.enter-prompt")}

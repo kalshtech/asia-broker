@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button }  from "@/components/ui/button";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -31,9 +32,11 @@ const Introduction = () => {
                         {t("col1.desc2")}
                     </Typography>
                     <div className={"mt-8 lg:mt-16"}>
-                        <Button className={"bg-white text-black text-theme-active hover:bg-white"}>
-                            {t("col1.view")}
-                        </Button>
+                        <GeneralLinkBtn
+                            text={t("col1.view")}
+                            path={"/corporation/careers"}
+                            theme={"light-solid"}
+                        />
                     </div>
                 </div>
             </div>

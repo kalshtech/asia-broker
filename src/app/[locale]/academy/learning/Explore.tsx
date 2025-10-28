@@ -4,6 +4,7 @@ import Container from "@/components/Container";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const Explore = () => {
     const t = useTranslations("Pages.academy.learning.explore");
@@ -28,9 +29,11 @@ const Explore = () => {
                             </Typography>
 
                             <div className={"mt-16"}>
-                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                    {t("row.col1.btnText")}
-                                </Button>
+                                <GeneralLinkBtn
+                                    text={t("row.col1.btnText")}
+                                    path={"/ideas/professional"}
+                                    theme={"active-solid"}
+                                />
 
                                 <Typography
                                     variant={"muted"}

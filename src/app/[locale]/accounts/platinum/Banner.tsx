@@ -6,6 +6,7 @@ import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
 import TitleReveal from "@/components/TitleReveal";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -74,9 +75,12 @@ const Banner =  () => {
                     <Button className={"bg-white hover:!bg-white text-black"}>
                         {t("register")}
                     </Button>
-                    <Button className={"ml-4 bg-transparent hover:bg-transparent border border-white"}>
-                        {t("support")}
-                    </Button>
+                    <GeneralLinkBtn
+                        text={t("support")}
+                        path={"/corporation/contact"}
+                        theme={"light-hollow"}
+                        className={"ml-4"}
+                    />
                 </div>
             </Container>
         </section>

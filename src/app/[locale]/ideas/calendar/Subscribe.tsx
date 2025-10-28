@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CircleCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,9 +68,11 @@ const Subscribe = () => {
                             </ul>
                         </div>
                         <div className={"flex justify-center lg:justify-start"}>
-                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                {t("watch")}
-                            </Button>
+                            <GeneralLinkBtn
+                                text={t("watch")}
+                                path={"/ideas/professional"}
+                                theme={"active-solid"}
+                            />
                             <Button
                                 className={"ml-4 border text-theme-active border-theme-active bg-white hover:bg-transparent"}>
                                 {t("register")}

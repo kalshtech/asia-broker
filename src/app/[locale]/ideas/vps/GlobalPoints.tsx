@@ -6,6 +6,7 @@ import {Typography} from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
 import {Button} from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -41,9 +42,11 @@ const GlobalPoints = () => {
                 </motion.div>
                 <div className={"flex justify-center flex-col mt-6 lg:mt-12"}>
                     <div className={"flex justify-center"}>
-                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                            {t("btnText")}
-                        </Button>
+                        <GeneralLinkBtn
+                            text={t("btnText")}
+                            path={"/accounts/platinum"}
+                            theme={"active-solid"}
+                        />
                     </div>
 
                     <Typography

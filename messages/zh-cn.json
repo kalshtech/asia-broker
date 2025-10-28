@@ -1048,6 +1048,7 @@
         },
         "moreMarket": {
           "title": "快速接入全球股票与ETF市场",
+          "midst": "",
           "desc": "Asia Future Trading 提供涵盖全球核心股票与ETF的差价合约产品，您只需一个账户，便可交易苹果、特斯拉、英伟达等热门股票，或通过SPY、QQQ等ETF轻松布局整个行业与市场指数。",
           "btnText": "交易全球股票与ETF"
         },

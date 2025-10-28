@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button }  from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -55,10 +56,12 @@ const Ready = () => {
                                     <Button className={"h-10 bg-theme-active hover:bg-theme-active-hover"}>
                                         {t("trade")}
                                     </Button>
-                                    <Button
-                                        className={"ml-4 border bg-transparent hover:bg-transparent"}>
-                                        {t("support")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text={t("support")}
+                                        path={"/corporation/contact"}
+                                        theme={"light-hollow"}
+                                        className={"ml-4"}
+                                    />
                                 </div>
                             </div>
                         </div>

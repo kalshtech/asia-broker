@@ -3,9 +3,9 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
 import TitleReveal from "@/components/TitleReveal";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -48,12 +48,17 @@ const Banner =  () => {
                             {t("desc")}
                         </Typography>
                         <div className={"mt-10"}>
-                            <Button className={"text-black bg-white hover:bg-white"}>
-                                {t("register")}
-                            </Button>
-                            <Button className={"ml-6 border bg-transparent hover:bg-transparent"}>
-                                {t("vic")}
-                            </Button>
+                            <GeneralLinkBtn
+                                text={t("register")}
+                                path={"/accounts/platinum"}
+                                theme={"light-solid"}
+                            />
+                            <GeneralLinkBtn
+                                text={t("vic")}
+                                path={"/accounts/vic"}
+                                theme={"light-hollow"}
+                                className={"ml-4"}
+                            />
                         </div>
                     </motion.div>
                 </Container>

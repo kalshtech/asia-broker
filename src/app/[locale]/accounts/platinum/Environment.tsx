@@ -3,10 +3,10 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 gsap.registerPlugin(ScrollTrigger);
 
 const fadeInUp: Variants = {
@@ -52,12 +52,17 @@ const Environment = () => {
                             </Typography>
                         </div>
                         <div className={"mt-4 lg:mt-16"}>
-                            <Button className={"bg-white text-black hover:bg-white"}>
-                                {t("more")}
-                            </Button>
-                            <Button className={"border ml-4 text-white bg-transparent hover:bg-transparent"}>
-                                {t("download")}
-                            </Button>
+                            <GeneralLinkBtn
+                                text={t("more")}
+                                path={"/ideas/vps"}
+                                theme={"light-solid"}
+                            />
+                            <GeneralLinkBtn
+                                text={t("download")}
+                                path={"/platform"}
+                                theme={"light-hollow"}
+                                className={"ml-4"}
+                            />
                         </div>
                     </div>
                 </div>
