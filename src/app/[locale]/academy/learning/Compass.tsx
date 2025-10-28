@@ -1,7 +1,7 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import Container from "@/components/Container";
 import { MoveRight } from "lucide-react";
@@ -17,8 +17,6 @@ const fadeInUp: Variants = {
 
 const Compass = () => {
     const t = useTranslations("Pages.academy.learning.compass");
-    const locale = useLocale();
-    const isEn = locale === "en";
     const ary = [
         { imageUrl:"/images/academy/learning-compass-swiper1.png", title: t("row.span1.title"), desc: t("row.span1.desc"), prompt: t("row.span1.prompt") },
         { imageUrl:"/images/academy/learning-compass-swiper2.png", title: t("row.span2.title"), desc: t("row.span2.desc"), prompt: t("row.span2.prompt") },
@@ -55,13 +53,6 @@ const Compass = () => {
                                     <Typography variant={"muted"} className={"mt-2"}>
                                         {item.desc}
                                     </Typography>
-                                    {
-                                        !isEn && (
-                                            <Typography variant={"muted"} className={"mt-6 font-normal"}>
-                                                {item.prompt}
-                                            </Typography>
-                                        )
-                                    }
                                     <div className={"flex items-center mt-6 cursor-pointer"}>
                                         <Typography variant={"muted"}>
                                             {t("view")}

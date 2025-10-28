@@ -1,10 +1,9 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
-import Container from "@/components/Container";
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -16,8 +15,6 @@ const fadeInUp: Variants = {
 
 const Decision = () => {
     const t = useTranslations("Pages.mutual.trading-competition.decision");
-    const locale = useLocale();
-    const isEn = locale  === "en";
 
     const ary = [
         { title: t("row.col1.1-title"), desc: t("row.col1.1-desc") },
@@ -65,41 +62,28 @@ const Decision = () => {
                                 >
                                     {t("row.col1.title")}
                                 </Typography>
-                                {
-                                    isEn ? (
-                                        <div>
-                                            <ul>
-                                                {
-                                                    ary.map((d, i) => (
-                                                        <li key={i} className={"flex items-start mt-4"}>
+                                <div>
+                                    <ul>
+                                        {
+                                            ary.map((d, i) => (
+                                                <li key={i} className={"flex items-start mt-4"}>
                                                             <span
                                                                 className={"block w-[5px] h-[5px] mt-2 bg-white rounded-full"}></span>
-                                                            <div className={"ml-2"}>
-                                                                <Typography variant={"p"}
-                                                                            className={"!text-white font-medium"}>
-                                                                    {d.title}
-                                                                </Typography>
-                                                                <Typography variant={"muted"}
-                                                                            className={"!text-white mt-1"}>
-                                                                    {d.desc}
-                                                                </Typography>
-                                                            </div>
-                                                        </li>
-                                                    ))
-                                                }
-                                            </ul>
-                                        </div>
-                                    ) : (
-                                        <>
-                                            <Typography
-                                                variant={"muted"}
-                                                className={"font-medium !text-white mt-6 leading-[32px]"}
-                                            >
-                                                {t("row.col1.desc")}
-                                            </Typography>
-                                        </>
-                                    )
-                                }
+                                                    <div className={"ml-2"}>
+                                                        <Typography variant={"p"}
+                                                                    className={"!text-white font-medium"}>
+                                                            {d.title}
+                                                        </Typography>
+                                                        <Typography variant={"muted"}
+                                                                    className={"!text-white mt-1"}>
+                                                            {d.desc}
+                                                        </Typography>
+                                                    </div>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
                             </div>
                             <div className={"mt-16"}>
                                 <Button className={"bg-white text-theme-active hover:bg-white"}>
@@ -115,20 +99,20 @@ const Decision = () => {
                         <div
                             className={"bg-[url(/images/mutual/competition-decision-portrait.png)] bg-cover bg-center overflow h-full"}>
                             <div className={"px-8 lg:px-30 pt-20 lg:pt-60 pb-8 lg:pb-20"}>
-                               <div>
-                                   <Typography
-                                       variant={"h5"}
-                                       className={"font-medium !text-white"}
-                                   >
-                                       {t("row.col2.title")}
-                                   </Typography>
-                                   <Typography
-                                       variant={"muted"}
-                                       className={"font-medium text-right !text-white mt-6"}
-                                   >
-                                       {t("row.col2.desc")}
-                                   </Typography>
-                               </div>
+                                <div>
+                                    <Typography
+                                        variant={"h5"}
+                                        className={"font-medium !text-white"}
+                                    >
+                                        {t("row.col2.title")}
+                                    </Typography>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"font-medium text-right !text-white mt-6"}
+                                    >
+                                        {t("row.col2.desc")}
+                                    </Typography>
+                                </div>
                                 <div className={"mt-10 flex justify-end"}>
                                     <a href="/">
                                         <img className={"w-[30px] h-[30px] object-cover"} src="/images/mutual/competition-x.png" alt=""/>

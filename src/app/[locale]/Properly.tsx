@@ -1,6 +1,6 @@
 "use client";
 import React, {useState} from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
 import RegisterBtn from "@/components/RegisterBtn";
@@ -21,8 +21,6 @@ const fadeInUp: Variants = {
 const Properly = () => {
     const t = useTranslations("Pages.home.properly");
     const [ tabActive, setTabActive ] = useState<string>("classic");
-    const locale = useLocale();
-    const isEn = locale === "en";
 
     const oneAry = [
         { url: "/images/home/properly1.png", title: t("right.swiper1.1.title"), description: t("right.swiper1.1.description") },
@@ -124,14 +122,10 @@ const Properly = () => {
                         <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography variant={"muted"}>{t("right.swiper3.1.ul.1")}</Typography>
                     </li>
-                    {
-                        isEn && (
-                            <li className={"flex items-center mt-1"}>
-                                <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                                <Typography variant={"muted"}>{t("right.swiper3.1.ul.2")}</Typography>
-                            </li>
-                        )
-                    }
+                    <li className={"flex items-center mt-1"}>
+                        <span className={"w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography variant={"muted"}>{t("right.swiper3.1.ul.2")}</Typography>
+                    </li>
                 </ul>
             )
         },
@@ -160,14 +154,10 @@ const Properly = () => {
                         <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography variant={"muted"}>{t("right.swiper3.3.ul.1")}</Typography>
                     </li>
-                    {
-                        isEn && (
-                            <li className={"flex items-center mt-1"}>
-                                <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                                <Typography variant={"muted"}>{t("right.swiper3.3.ul.2")}</Typography>
-                            </li>
-                        )
-                    }
+                    <li className={"flex items-center mt-1"}>
+                        <span className={"w-1 h-1 min-w-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography variant={"muted"}>{t("right.swiper3.3.ul.2")}</Typography>
+                    </li>
                 </ul>
             )
         },
@@ -180,24 +170,18 @@ const Properly = () => {
                         <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography variant={"muted"}>{t("right.swiper3.4.ul.1")}</Typography>
                     </li>
-                    {
-                        isEn && (
-                            <>
-                                <li className={"flex items-center mt-1"}>
-                                    <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                                    <Typography variant={"muted"}>{t("right.swiper3.4.ul.2")}</Typography>
-                                </li>
-                                <li className={"flex items-center mt-1"}>
-                                    <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                                    <Typography variant={"muted"}>{t("right.swiper3.4.ul.3")}</Typography>
-                                </li>
-                                <li className={"flex items-center mt-1"}>
-                                    <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                                    <Typography variant={"muted"}>{t("right.swiper3.4.ul.4")}</Typography>
-                                </li>
-                            </>
-                        )
-                    }
+                    <li className={"flex items-center mt-1"}>
+                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.2")}</Typography>
+                    </li>
+                    <li className={"flex items-center mt-1"}>
+                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.3")}</Typography>
+                    </li>
+                    <li className={"flex items-center mt-1"}>
+                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
+                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.4")}</Typography>
+                    </li>
                 </ul>
             )
         },
@@ -227,7 +211,7 @@ const Properly = () => {
 
                 <div className={"mt-8 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
-                        <div className={"col-span-12 lg:col-span-2"}>
+                        <div className={"col-span-12 lg:col-span-3"}>
                             <Typography variant={"h4"} className={"font-medium"}>
                                 {t(`left.${tabActive}.name`)}
                             </Typography>
@@ -240,16 +224,14 @@ const Properly = () => {
 
                             <div className={"mt-6 lg:mt-12 flex justify-center lg:justify-start flex-row lg:flex-col"}>
                                 <RegisterBtn/>
-                                {
-                                    isEn && (
-                                        <Button className={"ml-4 lg:ml-0 lg:mt-4 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
-                                            {t("explore")}
-                                        </Button>
-                                    )
-                                }
+                                <div>
+                                    <Button className={"ml-4 lg:ml-0 lg:mt-4 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
+                                        {t("explore")}
+                                    </Button>
+                                </div>
                             </div>
                         </div>
-                        <div className={"col-span-12 lg:col-span-10"}>
+                        <div className={"col-span-12 lg:col-span-9"}>
                             <div className={"w-full"}>
                                 {tabActive === "classic" &&
                                     <SimpleSwiper prevEl={"test-custom-prev"} nextEl={"test-custom-next"}

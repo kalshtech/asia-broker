@@ -212,6 +212,7 @@
         }
       },
       "pricing": {
+        "popular": "Popular Futures",
         "left": {
           "title1": "Institutional-Grade Pricing. Deep Liquidity.",
           "title2": "Built for best execution. Powered by precision.",
@@ -2903,31 +2904,31 @@
           "ul": {
             "li1": {
               "title": "What are the requirements to become a VIC member?",
-              "desc": "A: A minimum deposit of USD 50,000 is required. Applicants should demonstrate relevant trading experience and provide a clear strategy rationale or fund usage description. All applications are reviewed by AFT's client services and risk management teams."
+              "desc": "A minimum deposit of USD 50,000 is required. Applicants should demonstrate relevant trading experience and provide a clear strategy rationale or fund usage description. All applications are reviewed by AFT's client services and risk management teams."
             },
             "li2": {
               "title": "Can I upgrade from a Platinum Account to a VIC Account at any time?",
-              "desc": "A: Yes. You can request an upgrade through your account dashboard or by contacting your dedicated account manager. Your eligibility and account configuration will then be reviewed and adjusted accordingly."
+              "desc": "Yes. You can request an upgrade through your account dashboard or by contacting your dedicated account manager. Your eligibility and account configuration will then be reviewed and adjusted accordingly."
             },
             "li3": {
               "title": "What customization privileges do VIC members have?",
-              "desc": "A: VIC clients can apply for cross-symbol products (e.g., ETH/XAU), custom routing channels, and personalized commission or spread structures (evaluated per USD million traded). Access to API or FIX trading connectivity can also be granted upon request."
+              "desc": "VIC clients can apply for cross-symbol products (e.g., ETH/XAU), custom routing channels, and personalized commission or spread structures (evaluated per USD million traded). Access to API or FIX trading connectivity can also be granted upon request."
             },
             "li4": {
               "title": "Is the USDT bank card free for VIC members?",
-              "desc": "A: Yes. VIC members enjoy free access to the AFT co-branded USDT card, with the $20/month subscription fee waived. VIC clients also receive priority approval and enhanced deposit/withdrawal limits."
+              "desc": "Yes. VIC members enjoy free access to the AFT co-branded USDT card, with the $20/month subscription fee waived. VIC clients also receive priority approval and enhanced deposit/withdrawal limits."
             },
             "li5": {
               "title": "Is the Future Earn Account stable, and can I withdraw anytime?",
-              "desc": "A: Yes. Interest is calculated daily and credited automatically. You can withdraw at any time without affecting trading liquidity. The annualized rate is variable — currently up to 5.6% AER."
+              "desc": "Yes. Interest is calculated daily and credited automatically. You can withdraw at any time without affecting trading liquidity. The annualized rate is variable — currently up to 5.6% AER."
             },
             "li6": {
               "title": "How can I participate in the VIC rewards and loyalty program?",
-              "desc": "A: All VIC members are automatically enrolled in AFT's points-based reward system. The more you trade, the higher your reward tier. Points can be redeemed for exclusive NFTs, BTC, luxury watches, car experiences, and more. Contact your account manager for the latest redemption catalog."
+              "desc": "All VIC members are automatically enrolled in AFT's points-based reward system. The more you trade, the higher your reward tier. Points can be redeemed for exclusive NFTs, BTC, luxury watches, car experiences, and more. Contact your account manager for the latest redemption catalog."
             },
             "li7": {
               "title": "How can I get notified about VIC Club events?",
-              "desc": "A: VIC Club events are invite-only and often not publicly announced. Make sure your contact details are up to date and notifications enabled — your account manager will personally inform you of any upcoming activities or invitations."
+              "desc": "VIC Club events are invite-only and often not publicly announced. Make sure your contact details are up to date and notifications enabled — your account manager will personally inform you of any upcoming activities or invitations."
             }
           }
         }
@@ -3302,10 +3303,10 @@
         },
         "challenge": {
           "title": "Choose Your Challenge — Become an Asia Future Trading Trader",
-          "desc": "Asia Future Trading Funding Program 不只是一次交易挑战，而是一条 完整的职业成长路径",
+          "desc": "Asia Future Trading Funding Program is not just a trading challenge — it’s a complete growth path.",
           "row": {
             "col1": {
-              "title": "配置你的挑战"
+              "title": "Configure Your Challenge"
             },
             "col2": {
               "title": "Account Overview",

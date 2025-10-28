@@ -1,9 +1,8 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
@@ -18,13 +17,6 @@ const fadeInUp: Variants = {
 
 const Reasons = () => {
     const t = useTranslations("Pages.ideas.calculator.reasons");
-    const locale = useLocale();
-    const isEn = locale === "en";
-    const ulAry = [
-        { text: t("row.col1.ul.li1") },
-        { text: t("row.col1.ul.li2") },
-        { text: t("row.col1.ul.li3") },
-    ];
     return (
         <section className={"my-4 lg:my-30"}>
             <Container>
@@ -46,39 +38,6 @@ const Reasons = () => {
                         >
                             {t("row.col1.title")}
                         </Typography>
-
-                        {
-                            !isEn && (
-                                <Typography
-                                    variant={"h6"}
-                                    className={"font-medium !text-white mt-10"}
-                                >
-                                    {t("row.col1.desc")}
-                                </Typography>
-                            )
-                        }
-
-
-                        {
-                            !isEn && (
-                                <ul className={"mt-8"}>
-                                    {
-                                        ulAry.map((item, index) => (
-                                            <li key={index} className={"flex items-center my-4"}>
-                                        <span
-                                            className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-white block rounded-full"}/>
-                                                <Typography
-                                                    variant={"muted"}
-                                                    className={"font-medium !text-white ml-2"}
-                                                >
-                                                    {item.text}
-                                                </Typography>
-                                            </li>
-                                        ))
-                                    }
-                                </ul>
-                            )
-                        }
 
                         <Typography
                             variant={"h6"}

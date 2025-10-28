@@ -1,11 +1,9 @@
 "use client";
 import * as React from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
 import { motion, Variants } from "framer-motion";
 import Container from "@/components/Container";
-import Image from "next/image";
 import RealTimeUpdate from "@/components/charts/RealtimeUpdate";
 import { Link } from "@/i18n/navigation";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
@@ -26,9 +24,8 @@ function Counter({from = 10, to = 0, duration = 1.2, decimals = 0, trigger}: { f
 
 const EnglishPricing = () => {
     const t = useTranslations("Pages.home.pricing");
-    const locale = useLocale();
+    const CommonT = useTranslations("Common");
     const cardsWrapRef = React.useRef<HTMLDivElement | null>(null);
-    const isEn = locale === "en";
 
     const popularFutures = [
         { label: "BTC", img: "/images/home/en-pricing-futures1.png" },
@@ -41,7 +38,7 @@ const EnglishPricing = () => {
 
     const listAry = [
         {
-            title: "Crypto",
+            title: CommonT("crypto"),
             path: "/products/crypto",
             children: [
                 { img: "/images/home/crypto-5.svg", label: "Bitcoin" },
@@ -50,7 +47,7 @@ const EnglishPricing = () => {
             ]
         },
         {
-            title: "Precious Metals",
+            title: CommonT("metals"),
             path: "/products/pm",
             children: [
                 { img: "/images/home/gold.svg", label: "XAU/USD" },
@@ -59,7 +56,7 @@ const EnglishPricing = () => {
             ]
         },
         {
-            title: "Forex",
+            title: CommonT("forex"),
             path: "/products/forex",
             children: [
                 { img: "/images/home/forex-4.svg", label: "EUR/USD" },
@@ -68,7 +65,7 @@ const EnglishPricing = () => {
             ]
         },
         {
-            title: "Energy",
+            title: CommonT("energy"),
             path: "/products/energy",
             children: [
                 { img: "/images/home/energy1.svg", label: "WTI Crude Oil" },
@@ -77,7 +74,7 @@ const EnglishPricing = () => {
             ]
         },
         {
-            title: "Stocks & ETFs",
+            title: CommonT("usStock"),
             path: "/products/stocks",
             children: [
                 { img: "/images/home/stock-2.svg", label: "AAPL" },
@@ -86,7 +83,7 @@ const EnglishPricing = () => {
             ]
         },
         {
-            title: "Futures",
+            title: CommonT("futures"),
             path: "/products/future",
             children: [
                 { img: "/images/home/future-1.svg", label: "S&P 500" },
@@ -117,7 +114,7 @@ const EnglishPricing = () => {
                                     variant={"h5"}
                                     className={"!text-white text-center"}
                                 >
-                                    Popular Futures
+                                    { t("popular") }
                                 </Typography>
                                 <div className={"grid grid-cols-3 gap-4 space-y-8 mt-16"}>
                                     {
@@ -207,339 +204,9 @@ const EnglishPricing = () => {
     )
 }
 
-const OtherPricing = () => {
-    const t = useTranslations("Pages.home.pricing");
-    const locale = useLocale();
-    const cardsWrapRef = React.useRef<HTMLDivElement | null>(null);
-    const isEn = locale === "en";
-
-    const CryptoAry = [
-        {imageNumber: "1", name: "Bitcoin"},
-        {imageNumber: "2", name: "Ethereum"},
-        {imageNumber: "3", name: "Ripple"},
-    ];
-
-    const CommodityAry = [
-        {imageNumber: "1", name: "XAU USD"},
-        {imageNumber: "1", name: "XAG/USD"},
-        {imageNumber: "1", name: "WTI"},
-    ];
-
-    const ForexAry = [
-        {imageNumber: "1", name: "EUR/USD"},
-        {imageNumber: "2", name: "GBP/USD" },
-        { imageNumber: "3", name: "GBP/JPY" },
-    ];
-
-    const StockAry = [
-        { imageNumber: "1", name: "S&P 500" },
-        { imageNumber: "2", name: "Nasdaq 100" },
-        { imageNumber: "3", name: "Dow Jones" },
-    ];
-
-    return (
-        <section ref={cardsWrapRef}  className={"bg-[linear-gradient(270deg,_#000C35_37%,_#1F3A93_100%)]"}>
-            <Container>
-                <div className={"grid gap-4 grid-cols-12 lg:py-10"}>
-                    <div className={"flex-1 col-span-12 lg:col-span-7"}>
-                        <div className={"flex flex-col mt-8 lg:mt-16"}>
-                            <motion.div
-                                variants={fadeInUp}
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{once: true, amount: 0.5}}
-                                className={"flex flex-col h-full"}
-                            >
-                                <Typography variant={"h3"} className={"!text-white max-w-3xl"}>
-                                    {t("left.title1")}
-                                </Typography>
-
-                                <Typography variant={"h4"} className={"font-medium !text-white mt-6"}>
-                                    {t("left.title2")}
-                                </Typography>
-                                <Typography variant={"h4"} className={"font-medium !text-white"}>
-                                    {t("left.title3")}
-                                </Typography>
-                                <Typography className={"!text-white text-base max-w-3xl mt-10"}>
-                                    {t("left.description2")}
-                                </Typography>
-
-                                <div className={"mt-10 lg:mt-26"}>
-                                    <GeneralLinkBtn
-                                        text={t("left.btnText")}
-                                        path={"/accounts/platinum"}
-                                    />
-                                </div>
-
-                                <Typography variant={"muted"} className={"!text-white mt-12 lg:mt-40"}>
-                                    {t("left.fromText")}
-                                </Typography>
-                            </motion.div>
-                        </div>
-                    </div>
-                    <div className={"flex-1 col-span-12 lg:col-span-5"}>
-                        <header>
-                            <Typography className={"font-normal !text-white"}>
-                                {t("right.title")}
-                            </Typography>
-                        </header>
-                        <section className={"mt-10 h-[calc(100%-84px)]"}>
-                            <div className={"h-full grid grid-cols-1 md:grid-cols-2 gap-6"}>
-                                <div className={"h-full bg-[rgba(123,130,154,0.4)] rounded-lg px-4 py-6"}
-                                     data-anim="from-top">
-                                    <div className={"flex items-center"}>
-                                        <Typography className={"!text-white"}>
-                                            {t("right.crypto")}
-                                        </Typography>
-                                        <div className={"ml-auto flex items-center"}>
-                                            <Counter
-                                                from={10}
-                                                to={0}
-                                                duration={1.2}
-                                                decimals={1}
-                                                trigger={cardsWrapRef}
-                                            />
-                                            <Typography
-                                                variant={"muted"}
-                                                className={"!text-white !text-xs ml-2"}
-                                            >
-                                                {t("right.commission")}
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                    <div className={"mt-6"}>
-                                        {
-                                            CryptoAry.map((d, index) => (
-                                                <div className={"flex my-4"} key={index}>
-                                                    <Image
-                                                        src={`/images/home/crypto-${d.imageNumber}.svg`}
-                                                        width={20}
-                                                        height={20}
-                                                        alt={"icon"}
-                                                        title={"icon"}
-                                                    />
-                                                    <Typography
-                                                        variant={"muted"}
-                                                        className={"!text-white !text-xs ml-2"}
-                                                    >
-                                                        {d.name}
-                                                    </Typography>
-                                                </div>
-                                            ))
-                                        }
-                                    </div>
-
-                                    <div className={""}>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"!text-white"}
-                                        >
-                                            {t("right.more")}
-                                        </Typography>
-                                        <div className={"mt-4"}>
-                                            <Typography
-                                                className={"!text-white"}
-                                            >
-                                                {t("right.prompt")}
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={"h-full bg-[rgba(123,130,154,0.4)] rounded-lg px-4 py-6"}
-                                     data-anim="from-top">
-                                    <div className={"flex items-center"}>
-                                        <Typography className={"!text-white"}>
-                                            {t("right.commodity")}
-                                        </Typography>
-                                        <div className={"ml-auto flex items-center"}>
-                                            <Counter
-                                                from={10}
-                                                to={0}
-                                                duration={1.2}
-                                                decimals={1}
-                                                trigger={cardsWrapRef}
-                                            />
-                                            <Typography
-                                                variant={"muted"}
-                                                className={"!text-white !text-xs ml-2"}
-                                            >
-                                                {t("right.commission")}
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                    <div className={"mt-6"}>
-                                        {
-                                            CommodityAry.map((d, index) => (
-                                                <div className={"flex my-4"} key={index}>
-                                                    <Image
-                                                        src={`/images/home/commodity-${d.imageNumber}.svg`}
-                                                        width={20}
-                                                        height={20}
-                                                        alt={"icon"}
-                                                        title={"icon"}
-                                                    />
-                                                    <Typography
-                                                        variant={"muted"}
-                                                        className={"!text-white !text-xs ml-2"}
-                                                    >
-                                                        {d.name}
-                                                    </Typography>
-                                                </div>
-                                            ))
-                                        }
-                                    </div>
-
-                                    <div className={""}>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"!text-white"}
-                                        >
-                                            {t("right.more")}
-                                        </Typography>
-                                        <div className={"mt-4"}>
-                                            <Typography
-                                                className={"!text-white"}
-                                            >
-                                                {t("right.prompt")}
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={"h-full bg-[rgba(123,130,154,0.4)] rounded-lg px-4 py-6"}
-                                     data-anim="from-bottom">
-                                    <div className={"flex items-center"}>
-                                        <Typography className={"!text-white"}>
-                                            {t("right.forex")}
-                                        </Typography>
-                                        <div className={"ml-auto flex items-center"}>
-                                            <Counter
-                                                from={10}
-                                                to={0}
-                                                duration={1.2}
-                                                decimals={1}
-                                                trigger={cardsWrapRef}
-                                            />
-                                            <Typography
-                                                variant={"muted"}
-                                                className={"!text-white !text-xs ml-2"}
-                                            >
-                                                {t("right.commission")}
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                    <div className={"mt-6"}>
-                                        {
-                                            ForexAry.map((d, index) => (
-                                                <div className={"flex my-4"} key={index}>
-                                                    <Image
-                                                        src={`/images/home/forex-${d.imageNumber}.svg`}
-                                                        width={20}
-                                                        height={20}
-                                                        alt={"icon"}
-                                                        title={"icon"}
-                                                    />
-                                                    <Typography
-                                                        variant={"muted"}
-                                                        className={"!text-white !text-xs ml-2"}
-                                                    >
-                                                        {d.name}
-                                                    </Typography>
-                                                </div>
-                                            ))
-                                        }
-                                    </div>
-
-                                    <div className={""}>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"!text-white"}
-                                        >
-                                            {t("right.more")}
-                                        </Typography>
-                                        <div className={"mt-4"}>
-                                            <Typography
-                                                className={"!text-white"}
-                                            >
-                                                {t("right.prompt")}
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={"h-full bg-[rgba(123,130,154,0.4)] rounded-lg px-4 py-6"}
-                                     data-anim="from-bottom">
-                                    <div className={"flex items-center"}>
-                                        <Typography className={"!text-white"}>
-                                            {t("right.index")}
-                                        </Typography>
-                                        <div className={"ml-auto flex items-center"}>
-                                            <Counter
-                                                from={10}
-                                                to={0}
-                                                duration={1.2}
-                                                decimals={1}
-                                                trigger={cardsWrapRef}
-                                            />
-                                            <Typography
-                                                variant={"muted"}
-                                                className={"!text-white !text-xs ml-2"}
-                                            >
-                                                {t("right.commission")}
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                    <div className={"mt-6"}>
-                                        {
-                                            StockAry.map((d, index) => (
-                                                <div className={"flex my-4"} key={index}>
-                                                    <Image
-                                                        src={`/images/home/crypto-${d.imageNumber}.svg`}
-                                                        width={20}
-                                                        height={20}
-                                                        alt={"icon"}
-                                                        title={"icon"}
-                                                    />
-                                                    <Typography
-                                                        variant={"muted"}
-                                                        className={"!text-white !text-xs ml-2"}
-                                                    >
-                                                        {d.name}
-                                                    </Typography>
-                                                </div>
-                                            ))
-                                        }
-                                    </div>
-
-                                    <div className={""}>
-                                        <Typography
-                                            variant={"muted"}
-                                            className={"!text-white"}
-                                        >
-                                            {t("right.more")}
-                                        </Typography>
-                                        <div className={"mt-4"}>
-                                            <Typography
-                                                className={"!text-white"}
-                                            >
-                                                {t("right.prompt")}
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </Container>
-        </section>
-    )
-}
 
 const Pricing = () => {
-    const t = useTranslations("Pages.home.pricing");
-    const locale = useLocale();
-    const isEn = locale === "en";
-
-    return isEn ? <EnglishPricing/> : <OtherPricing/>
+    return <EnglishPricing/>
 }
 
 export default Pricing;

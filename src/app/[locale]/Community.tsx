@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
-import {useLocale, useTranslations} from "next-intl";
+import {useTranslations} from "next-intl";
 import {Typography} from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
-import { CircleChevronRight } from "lucide-react";
 import Container from "@/components/Container";
 
 const fadeInUp: Variants = {
@@ -20,8 +19,6 @@ const fadeInUp: Variants = {
 
 const Community = () => {
     const t = useTranslations("Pages.home.community");
-    const locale = useLocale();
-    const isEn = locale === "en";
 
     return (
         <section className={"lg:p-30 bg-theme-light-bg"}>
@@ -42,204 +39,94 @@ const Community = () => {
                 </motion.div>
                 <div className={"grid grid-cols-12 gap-6 mt-16"}>
                     <div className={"col-span-12 lg:col-span-3"}>
-                        <div
-                            className={"bg-[url('/images/home/communitybg1.png')] h-full bg-cover bg-center bg-no-repeat p-6"}>
-                            {
-                                isEn ? (
-                                    <div className={"flex h-full flex-1 flex-col"}>
-                                        <div className={"flex flex-col pb-20 pt-20 h-full lg:pt-[310px]"}>
-                                            <div className={"flex flex-col"}>
-                                                <Typography variant={"muted"} className={"!text-white font-medium"}>
-                                                    {t("row.1.desc1")}
-                                                </Typography>
-                                                <Typography variant={"muted"} className={"mt-8 !text-white"}>
-                                                    {t("row.1.desc2")}
-                                                </Typography>
-                                                <Typography variant={"muted"} className={"!text-white mt-4"}>
-                                                    {t("row.1.desc3")}
-                                                </Typography>
-                                            </div>
-
-                                            <Separator className={"my-8"}/>
-
-                                            <div className={"flex flex-col"}>
-                                                <Typography variant={"muted"} className={"!text-white"}>
-                                                    {t("row.1.desc4")}
-                                                </Typography>
-                                            </div>
-                                            <div className={"text-center mt-10"}>
-                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                                    <Link href={"/"} className={"text-white mx-auto justify-center flex"}>
-                                                        {t("row.1.link")}
-                                                    </Link>
-                                                </Button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ) : (
-                                    <div className={"flex h-full flex-1 flex-col"}>
-                                        <Typography variant={"p"} className={"!text-white"}>
+                        <div className={"bg-[url('/images/home/communitybg1.png')] h-full bg-cover bg-center bg-no-repeat p-6"}>
+                            <div className={"flex h-full flex-1 flex-col"}>
+                                <div className={"flex flex-col pb-20 pt-20 h-full lg:pt-[310px]"}>
+                                    <div className={"flex flex-col"}>
+                                        <Typography variant={"muted"} className={"!text-white font-medium"}>
                                             {t("row.1.desc1")}
                                         </Typography>
-                                        <div className={"flex flex-col pb-20 pt-20 lg:pt-[280px]"}>
-                                            <div className={"flex flex-col"}>
-                                                <Typography variant={"p"} className={"!text-white"}>
-                                                    {t("row.1.desc2")}
-                                                </Typography>
-                                                <Typography variant={"p"} className={"!text-white mt-4"}>
-                                                    {t("row.1.desc3")}
-                                                </Typography>
-                                            </div>
-
-                                            <Separator className={"my-8"}/>
-
-                                            <div className={"flex flex-col"}>
-                                                <Typography variant={"p"} className={"!text-white"}>
-                                                    {t("row.1.desc4")}
-                                                </Typography>
-                                                <Typography variant={"p"} className={"!text-white mt-4"}>
-                                                    {t("row.1.desc5")}
-                                                </Typography>
-                                            </div>
-                                        </div>
+                                        <Typography variant={"muted"} className={"mt-8 !text-white"}>
+                                            {t("row.1.desc2")}
+                                        </Typography>
+                                        <Typography variant={"muted"} className={"!text-white mt-4"}>
+                                            {t("row.1.desc3")}
+                                        </Typography>
                                     </div>
-                                )
-                            }
+
+                                    <Separator className={"my-8"}/>
+
+                                    <div className={"flex flex-col"}>
+                                        <Typography variant={"muted"} className={"!text-white"}>
+                                            {t("row.1.desc4")}
+                                        </Typography>
+                                    </div>
+                                    <div className={"text-center mt-10"}>
+                                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
+                                            <Link href={"/"} className={"text-white mx-auto justify-center flex"}>
+                                                {t("row.1.link")}
+                                            </Link>
+                                        </Button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className={"col-span-12 lg:col-span-6"}>
-                        <div
-                            className={"bg-[url('/images/home/communitybg2.png')] bg-cover bg-center bg-no-repeat p-6 h-full"}>
-                            {
-                                isEn ? (
-                                    <div className={"flex flex-1 h-full flex-col"}>
-                                        <div className={"flex-col flex h-full justify-center items-center"}>
-                                            <Typography
-                                                variant={"h4"}
-                                                className={"font-medium !text-white"}
-                                            >
-                                                {t("row.2.title")}
-                                            </Typography>
-                                            <Typography variant={"p"} className={"!text-white text-center max-w-3xl mt-4"}>
-                                                {t("row.2.description1")}
-                                            </Typography>
-                                            <Typography variant={"muted"}
-                                                        className={"!text-white text-center max-w-3xl mt-6"}>
-                                                {t("row.2.description2")}
-                                            </Typography>
-                                            <div className={"mt-8"}>
-                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                                    {t("row.2.btnText")}
-                                                </Button>
-                                            </div>
-                                        </div>
-                                        <div className={"mt-auto flex justify-center"}>
-                                            <Typography variant={"muted"}
-                                                        className={"!text-white text-center text-xs max-w-md mt-5 roboto"}>
-                                                {t("row.2.prompt")}
-                                            </Typography>
-                                        </div>
+                        <div className={"bg-[url('/images/home/communitybg2.png')] bg-cover bg-center bg-no-repeat p-6 h-full"}>
+                            <div className={"flex flex-1 h-full flex-col"}>
+                                <div className={"flex-col flex h-full justify-center items-center"}>
+                                    <Typography
+                                        variant={"h4"}
+                                        className={"font-medium !text-white"}
+                                    >
+                                        {t("row.2.title")}
+                                    </Typography>
+                                    <Typography variant={"p"}
+                                                className={"!text-white text-center max-w-3xl mt-4"}>
+                                        {t("row.2.description1")}
+                                    </Typography>
+                                    <Typography variant={"muted"}
+                                                className={"!text-white text-center max-w-3xl mt-6"}>
+                                        {t("row.2.description2")}
+                                    </Typography>
+                                    <div className={"mt-8"}>
+                                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
+                                            {t("row.2.btnText")}
+                                        </Button>
                                     </div>
-                                ) : (
-                                    <div className={"flex flex-1 h-full flex-col"}>
-                                        <div className={"flex-col flex h-full justify-center items-center"}>
-                                            <Typography
-                                                variant={"h4"}
-                                                className={"!text-white"}
-                                            >
-                                                {t("row.2.title")}
-                                            </Typography>
-                                            <Typography variant={"muted"}
-                                                        className={"!text-white text-center max-w-[320px] mt-5"}
-                                            >
-                                                {t("row.2.description")}
-                                            </Typography>
-                                            <div className={"mt-8"}>
-                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                                    {t("row.2.btnText")}
-                                                </Button>
-                                            </div>
-                                        </div>
-                                        <div className={"mt-auto flex justify-center"}>
-                                            <Typography variant={"muted"}
-                                                        className={"!text-white text-center text-xs max-w-[320px] mt-5"}
-                                            >
-                                                {t("row.2.prompt")}
-                                            </Typography>
-                                        </div>
-                                    </div>
-                                )
-                            }
+                                </div>
+                                <div className={"mt-auto flex justify-center"}>
+                                    <Typography variant={"muted"}
+                                                className={"!text-white text-center text-xs max-w-md mt-5 roboto"}>
+                                        {t("row.2.prompt")}
+                                    </Typography>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className={"col-span-12 lg:col-span-3"}>
                         <div
                             className={"bg-[url('/images/home/communitybg3.png')] h-full bg-cover bg-center bg-no-repeat p-6"}>
                             <div className={"flex h-full flex-1 flex-col"}>
-                                {
-                                    isEn ? (
-                                        <div className={"flex flex-col pb-20 pt-20 lg:pt-120"}>
-                                            <div className={"flex flex-col"}>
-                                                <Typography variant={"p"} className={"!text-white font-medium"}>
-                                                    {t("row.3.desc1")}
-                                                </Typography>
-                                                <Typography variant={"muted"} className={"!text-white mt-4"}>
-                                                    {t("row.3.desc2")}
-                                                </Typography>
-                                            </div>
-                                            <div className={"text-center mt-10"}>
-                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                                    <Link href={"/"} className={"text-white mx-auto justify-center flex"}>
-                                                        {t("row.3.explore")}
-                                                    </Link>
-                                                </Button>
-                                            </div>
-                                        </div>
-                                    ) : (
-                                        <div className={"flex h-full flex-1 flex-col"}>
-                                            <Typography variant={"p"} className={"!text-white"}>
-                                                {t("row.3.desc1")}
-                                            </Typography>
-                                            <div className={"flex flex-col pb-20 pt-20 lg:pt-[280px]"}>
-                                                <div className={"flex flex-col"}>
-                                                    <div className={"flex"}>
-                                                        <Typography variant={"p"} className={"!text-white"}>
-                                                            {t("row.3.desc2")}
-                                                        </Typography>
-                                                        <img
-                                                            src="/images/home/award.svg"
-                                                            className={"w-6 h-6"}
-                                                            alt="award"
-                                                            title={"award"}
-                                                        />
-                                                    </div>
-                                                    <Typography variant={"p"} className={"!text-white mt-4"}>
-                                                        {t("row.3.desc3")}
-                                                    </Typography>
-                                                </div>
-
-                                                <Separator className={"my-8"}/>
-
-                                                <div className={"flex flex-col"}>
-                                                    <div className={"flex"}>
-                                                        <Typography variant={"p"} className={"!text-white"}>
-                                                            {t("row.3.desc4")}
-                                                        </Typography>
-                                                        <img
-                                                            src="/images/home/benefit.svg"
-                                                            className={"w-6 h-6"}
-                                                            alt="award"
-                                                            title={"award"}
-                                                        />
-                                                    </div>
-                                                    <Typography variant={"p"} className={"!text-white mt-4"}>
-                                                        {t("row.3.desc5")}
-                                                    </Typography>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                }
+                                <div className={"flex flex-col pb-20 pt-20 lg:pt-120"}>
+                                    <div className={"flex flex-col"}>
+                                        <Typography variant={"p"} className={"!text-white font-medium"}>
+                                            {t("row.3.desc1")}
+                                        </Typography>
+                                        <Typography variant={"muted"} className={"!text-white mt-4"}>
+                                            {t("row.3.desc2")}
+                                        </Typography>
+                                    </div>
+                                    <div className={"text-center mt-10"}>
+                                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
+                                            <Link href={"/"}
+                                                  className={"text-white mx-auto justify-center flex"}>
+                                                {t("row.3.explore")}
+                                            </Link>
+                                        </Button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
