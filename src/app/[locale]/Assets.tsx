@@ -18,12 +18,12 @@ const fadeInUp: Variants = {
 
 const Assets = () => {
     const t = useTranslations("Pages.home.assets");
-    const [tabActive, setTabActive] = useState("type");
+    const [tabActive, setTabActive] = useState("card");
 
     const BtnAry = [
+        { label: t("button.card"), value: "card" },
         { label: t("button.type"), value: "type" },
         { label: t("button.safe"), value: "safe" },
-        { label: t("button.card"), value: "card" },
     ];
 
     const renderImageSrc = () => {

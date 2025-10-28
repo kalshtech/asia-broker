@@ -356,9 +356,9 @@
         "description": "Trade with pricing, leverage, and execution tailored to your strategy.",
         "explore": "Explore Classic Benefits",
         "tabs": {
-          "classic": "Classic",
-          "platinum": "Platinum",
-          "vic": "VIC"
+          "classic": "Classic Account",
+          "platinum": "Platinum Account",
+          "vic": "VIC Account"
         },
         "left": {
           "classic": {

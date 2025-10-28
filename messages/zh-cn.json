@@ -356,9 +356,9 @@
         "description": "用匹配你策略的定价、杠杆与执行进行交易。",
         "explore": "了解 Classic 权益",
         "tabs": {
-          "classic": "Classic",
-          "platinum": "Platinum",
-          "vic": "VIC"
+          "classic": "Classic 账户",
+          "platinum": "Platinum 账户",
+          "vic": "VIC 账户"
         },
         "left": {
           "classic": {
@@ -3578,7 +3578,7 @@
         }
       },
       "corporation": {
-        "title": "公司信息",
+        "title": "公司",
         "description": "信任是我们最大的杠杆——源自全球流动性、透明执行与严格合规。",
         "btn": "加入我们",
         "row": {

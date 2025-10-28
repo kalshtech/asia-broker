@@ -212,7 +212,7 @@ const Properly = () => {
                 <div className={"mt-8 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
                         <div className={"col-span-12 lg:col-span-3"}>
-                            <Typography variant={"h4"} className={"font-medium"}>
+                            <Typography variant={"h4"}>
                                 {t(`left.${tabActive}.name`)}
                             </Typography>
                             <Typography className={"font-medium mt-2"}>
