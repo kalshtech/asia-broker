@@ -533,7 +533,7 @@ const Navigation = () => {
                     <Link href={`/`} className={"cursor-pointer"}>
                         <img src={RenderNavigationLogo()} alt={"logo"} className={"w-[128px] object-cover"}/>
                     </Link>
-                    <NavigationMenuList className={"ml-8 hidden lg:flex"}>
+                    <NavigationMenuList className={"ml-8 hidden xl:flex"}>
                         {
                             ary.map((item, index) => (
                                 <PackageMenuItem rootRef={rootRef} ary={item.children} key={index}/>
@@ -544,7 +544,7 @@ const Navigation = () => {
 
                 <div className={"ml-auto flex items-center"}>
                     <div className={"items-center flex"}>
-                        <NavigationMenu viewport={false} className={"hidden lg:flex"}>
+                        <NavigationMenu viewport={false} className={"hidden xl:flex"}>
                             <NavigationMenuList>
                                 <NavigationMenuItem value={"local"}>
                                     <NavigationMenuTrigger
@@ -565,7 +565,7 @@ const Navigation = () => {
                                             <NavigationMenuContent
                                                 className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}>
                                                 <div>
-                                                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-8 cursor-pointer">
+                                                    <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-16 gap-y-8 cursor-pointer">
                                                         {
                                                             localAry.map((item, index) => (
                                                                 <li className="flex items-start gap-4"
@@ -607,8 +607,8 @@ const Navigation = () => {
                         </Button>
                         {
                             !drawerOpen ?
-                                <AlignJustify className={"block lg:hidden ml-4"} onClick={() => setDrawerOpen(true)}/>
-                                : <X className={"block lg:hidden ml-4"} onClick={() => setDrawerOpen(false)}/>
+                                <AlignJustify className={"block xl:hidden ml-4"} onClick={() => setDrawerOpen(true)}/>
+                                : <X className={"block xl:hidden ml-4"} onClick={() => setDrawerOpen(false)}/>
                         }
                     </div>
                 </div>
