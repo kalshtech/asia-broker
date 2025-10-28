@@ -58,7 +58,7 @@ const Assets = () => {
                     <div className={"grid grid-cols-12 gap-4"}>
                         <div className={"col-span-12 lg:col-span-6"}>
                             <img src={renderImageSrc()} className={"max-w-[320px] mx-auto lg:mx-0"} alt=""/>
-                            <div className={"mt-6"}>
+                            <div className={"mt-6 grid grid-cols-2 space-y-6"}>
                                 {
                                     BtnAry.map((item, index) => (
                                         <Button
