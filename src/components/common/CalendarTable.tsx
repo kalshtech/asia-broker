@@ -11,7 +11,7 @@ import dayjs from "dayjs";
 import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip";
 import StarRating from "@/components/Rating";
 import React from "react";
-import {useTranslations, useLocale} from "next-intl";
+import {useTranslations} from "next-intl";
 import {params_economic_calendar} from "@/params/api";
 import {http} from "@/utils/http";
 import classnames from "classnames";
@@ -33,10 +33,6 @@ const CalendarTable = (props: Props) => {
     const [country, setCountry] = React.useState<string>("all");
     const [tableData, setTableData] = React.useState<any>([]);
     const [loading, setLoading] = React.useState(true);
-
-    const locale = useLocale();
-
-    const isEn = locale === "en";
 
     const starAry = [
         { value: 'all', label: CommonT("all")},
@@ -494,7 +490,7 @@ const CalendarTable = (props: Props) => {
                 </Table>
             </div>
             {
-                (isEn && isShowForm) && (
+                isShowForm && (
                     <div className={"mx-auto max-w-7xl mt-8 lg:mt-30"}>
                         <div className={"grid grid-cols-12 gap-8"}>
                             <div className={"col-span-12 lg:col-span-4"}>

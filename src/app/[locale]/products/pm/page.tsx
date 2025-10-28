@@ -6,9 +6,8 @@ import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import Markets from "@/components/common/products/Markets";
 import Profession from "@/components/common/products/Profession";
-import MetaProfession from "@/components/common/products/MetaProfession";
+import Row from "@/components/common/products/Row";
 import MetaCommission from "@/components/common/products/MetaCommission";
-import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.pm");
@@ -115,14 +114,10 @@ export default async function Page() {
                 desc={t("markets.desc")}
                 trade={t("markets.trade")}
             />
-            <MetaProfession rowAry={rowAry} title={t("professional.title")} />
+            <Row ary={rowAry} title={t("professional.title")} />
             <MetaCommission
                 languageLocal={"Pages.products.pm"}
                 backgroundImage={"bg-[url(/images/products/energy-commission-background.png)]"}
-            />
-            <MetaMoreMarkets
-                languageLocal={"Pages.products.pm"}
-                backgroundImage={"bg-[url(/images/products/pm-market-background.png)]"}
             />
             <Guide
                 title={t("guide.title")}

@@ -6,9 +6,8 @@ import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import Markets from "@/components/common/products/Markets";
 import Profession from "@/components/common/products/Profession";
-import MetaProfession from "@/components/common/products/MetaProfession";
+import Row from "@/components/common/products/Row"
 import MetaCommission from "@/components/common/products/MetaCommission";
-import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.stocks");
@@ -124,17 +123,13 @@ export default async function Page() {
                 trade={t("markets.trade")}
                 tabList={marketTabList}
             />
-            <MetaProfession
-                rowAry={rowAry}
+            <Row
+                ary={rowAry}
                 title={t("professional.title")}
             />
             <MetaCommission
                 languageLocal={"Pages.products.stocks"}
                 backgroundImage={"bg-[url(/images/products/stocks-commission-background.png)]"}
-            />
-            <MetaMoreMarkets
-                languageLocal={"Pages.products.stocks"}
-                backgroundImage={"bg-[url(/images/products/stocks-market-background.png)]"}
             />
             <Guide
                 title={t("guide.title")}

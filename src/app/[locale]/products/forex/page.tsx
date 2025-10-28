@@ -2,13 +2,12 @@ import * as React from 'react';
 import { getTranslations } from "next-intl/server";
 import Banner from "@/components/common/products/Banner";
 import Markets from "@/components/common/products/Markets";
-import MetaProfession from "@/components/common/products/MetaProfession";
+import Row from "@/components/common/products/Row"
 import Guide from "@/components/common/Guide";
 import Profession from "@/components/common/products/Profession";
 import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import MetaCommission from "@/components/common/products/MetaCommission";
-import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
 import { Typography } from "@/components/ui/typography";
 
 
@@ -150,8 +149,8 @@ export default async function Page() {
                 trade={t("markets.trade")}
                 desc={t("markets.desc")}
             />
-            <MetaProfession
-                rowAry={rowAry}
+            <Row
+                ary={rowAry}
                 title={t("professional.title")}
             >
                 <div>
@@ -170,14 +169,10 @@ export default async function Page() {
                         </a>
                     </div>
                 </div>
-            </MetaProfession>
+            </Row>
             <MetaCommission
                 languageLocal={"Pages.products.forex"}
                 backgroundImage={"bg-[url(/images/products/forex-kline-background.png)]"}
-            />
-            <MetaMoreMarkets
-                languageLocal={"Pages.products.forex"}
-                backgroundImage={"bg-[url(/images/products/forex-market-background.png)]"}
             />
             <Guide
                 title={t("guide.title")}

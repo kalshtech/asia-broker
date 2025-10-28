@@ -6,7 +6,6 @@ import classnames from "classnames";
 import Register from "@/components/RegisterBtn";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
-import { useLocale } from "next-intl"
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -19,8 +18,6 @@ const fadeInUp: Variants = {
 
 const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, children }: any) => {
     const isLight = theme === "light";
-    const locale = useLocale();
-    const isEn = locale === "en";
     return (
         <section className={classnames(["lg:py-30", {
             "bg-[#000515]": !isLight
@@ -93,7 +90,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, ch
                                     </Typography>
 
                                     {
-                                        (item.prompt && !isEn) && (
+                                        item.prompt && (
                                             <Typography
                                                 variant={"muted"}
                                                 className={classnames(["!text-xs mt-6", {

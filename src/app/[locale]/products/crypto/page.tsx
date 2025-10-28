@@ -1,15 +1,13 @@
 import * as React from 'react';
 import { getTranslations } from "next-intl/server";
 import Banner from "@/components/common/products/Banner";
-import MoreMarkets from "@/components/common/products/MoreMarkets";
 import Guide from "@/components/common/Guide";
 import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import Markets from "@/components/common/products/Markets";
 import Profession from "@/components/common/products/Profession";
-import MetaProfession from "@/components/common/products/MetaProfession";
 import MetaCommission from "@/components/common/products/MetaCommission";
-import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
+import Row from "@/components/common/products/Row";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.crypto");
@@ -138,8 +136,8 @@ export default async function Page() {
                 desc={t("markets.desc")}
                 trade={t("markets.trade")}
             />
-            <MetaProfession
-                rowAry={rowAry}
+            <Row
+                ary={rowAry}
                 title={t("professional.title")}
             />
             <MetaCommission
@@ -147,11 +145,6 @@ export default async function Page() {
                 backgroundImage={"bg-[url(/images/products/stocks-commission-background.png)]"}
                 isShowOpenBtn={false}
             />
-            <MetaMoreMarkets
-                languageLocal={"Pages.products.crypto"}
-                backgroundImage={"bg-[url(/images/products/stocks-market-background.png)]"}
-            />
-
             <Guide
                 title={t("guide.title")}
                 left={{

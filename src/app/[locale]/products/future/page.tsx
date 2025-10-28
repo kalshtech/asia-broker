@@ -8,7 +8,6 @@ import Guide from "@/components/common/Guide";
 import Row from "@/components/common/products/Row";
 import Profession from "@/components/common/products/Profession";
 import MetaCommission from "@/components/common/products/MetaCommission";
-import MetaMoreMarkets from "@/components/common/products/MetaMoreMarkets";
 
 export default async function Page() {
     const t = await getTranslations("Pages.products.future");
@@ -147,10 +146,6 @@ export default async function Page() {
                 languageLocal={"Pages.products.future"}
                 backgroundImage={"bg-[url(/images/products/forex-kline-background.png)]"}
                 isShowCommission={false}
-            />
-            <MetaMoreMarkets
-                languageLocal={"Pages.products.future"}
-                backgroundImage={"bg-[url(/images/products/future-market-background.png)]"}
             />
             <Guide
                 title={t("guide.title")}

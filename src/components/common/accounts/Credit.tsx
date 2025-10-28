@@ -1,7 +1,7 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import classnames from "classnames";
@@ -24,8 +24,6 @@ type Props = {
 
 const Credit = ({ typeText, className, number }: Props) => {
     const t = useTranslations("Pages.accounts.platinum.credit");
-    const locale = useLocale();
-    const isEn = locale === "en";
 
     return (
         <section className={classnames(["py-4 lg:py-30", className])}>
@@ -67,65 +65,32 @@ const Credit = ({ typeText, className, number }: Props) => {
                     <Typography variant={"h4"} className={"text-center max-w-3xl mx-auto"}>
                         {t("midst")}
                     </Typography>
-
-                    {
-                        !isEn && (
-                            <Typography variant={"muted"} className={"text-center mt-6"}>
-                                {t("desc")}
-                            </Typography>
-                        )
-                    }
                 </div>
 
-                {
-                    isEn ? (
-                        <div className={"mt-4 lg:mt-8"}>
-                            <div className={"flex justify-center items-end"}>
-                                <Typography
-                                    variant={"h5"}
-                                    className={"font-medium text-center mb-2"}
-                                >
-                                    {t("transfer")}
-                                </Typography>
-                                <Typography
-                                    variant={"h3"}
-                                    className={"!text-[36px] lg:!text-[64px] text-center mx-4"}
-                                >
-                                    {`USD ${number}`}
-                                </Typography>
-                            </div>
-                            <div className={"mt-4 lg:mt-10"}>
-                                <Typography
-                                    variant={"p"}
-                                    className={"text-center"}
-                                >
-                                    {typeText}
-                                </Typography>
-                            </div>
-                        </div>
-                    ) : (
-                        <div className={"flex justify-center items-end mt-4 lg:mt-8"}>
-                            <Typography
-                                variant={"h5"}
-                                className={"font-medium text-center"}
-                            >
-                                {t("transfer")}
-                            </Typography>
-                            <Typography
-                                variant={"h3"}
-                                className={"lg:!text-[64px] text-center mx-4"}
-                            >
-                                {number}
-                            </Typography>
-                            <Typography
-                                variant={"h5"}
-                                className={"font-medium text-center"}
-                            >
-                                {typeText}
-                            </Typography>
-                        </div>
-                    )
-                }
+                <div className={"mt-4 lg:mt-8"}>
+                    <div className={"flex justify-center items-end"}>
+                        <Typography
+                            variant={"h5"}
+                            className={"font-medium text-center mb-2"}
+                        >
+                            {t("transfer")}
+                        </Typography>
+                        <Typography
+                            variant={"h3"}
+                            className={"!text-[36px] lg:!text-[64px] text-center mx-4"}
+                        >
+                            {`USD ${number}`}
+                        </Typography>
+                    </div>
+                    <div className={"mt-4 lg:mt-10"}>
+                        <Typography
+                            variant={"p"}
+                            className={"text-center"}
+                        >
+                            {typeText}
+                        </Typography>
+                    </div>
+                </div>
 
                 <div className={"flex justify-center mt-4 lg:mt-16"}>
                     <Button>
