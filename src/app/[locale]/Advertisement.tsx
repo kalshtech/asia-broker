@@ -87,35 +87,35 @@ const Advertisement = () => {
             title: t("2.title"),
             description: t("2.description"),
             url: `bg-[url('/images/home/en-advertisement-2.png')]`,
-            path: "/accounts/profit"
+            path: "/platform"
         },
         {
             ImageNumber: "3",
             title: t("3.title"),
             description: t("3.description"),
             url: `bg-[url('/images/home/en-advertisement-3.png')]`,
-            path: "/accounts/platinum"
+            path: "/accounts/vic"
         },
         {
             ImageNumber: "4",
             title: t("4.title"),
             description: t("4.description"),
             url: `bg-[url('/images/home/en-advertisement-4.png')]`,
-            path: "/platform"
+            path: "/ideas/vps"
         },
         {
             ImageNumber: "5",
             title: t("5.title"),
             description: t("5.description"),
             url: `bg-[url('/images/home/en-advertisement-5.png')]`,
-            path: "/accounts/vic"
+            path: "/accounts/profit"
         },
         {
             ImageNumber: "6",
             title: t("6.title"),
             description: t("6.description"),
             url: `bg-[url('/images/home/en-advertisement-6.png')]`,
-            path: "/ideas/vps"
+            path: "/accounts/platinum"
         },
     ];
 

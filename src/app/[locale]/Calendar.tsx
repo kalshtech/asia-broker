@@ -50,10 +50,9 @@ const CalendarComponent = () => {
                 </div>
 
                 <div className={"grid grid-cols-12 gap-8 mt-10"}>
-                    <div className={"col-span-12 lg:col-span-3"}>
+                    <div className={"col-span-12 xl:col-span-3"}>
                         <div className={"h-full relative"}>
-                            <img src="/images/home/calendar-assets.png" alt=""/>
-                            <div className={"flex-1 h-full py-10 px-8 flex flex-col absolute bottom-0  left-0"}>
+                            <div className={"flex-1 h-full w-full border py-10 px-8 flex flex-col bg-[url(/images/home/calendar-assets.png)] rounded-2xl bg-cover bg-center"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"!text-white xl:mt-64"}
@@ -89,7 +88,7 @@ const CalendarComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"col-span-12 lg:col-span-9"}>
+                    <div className={"col-span-12 xl:col-span-9"}>
                         <CalendarTable isShowForm theme={"dark"}/>
                     </div>
                 </div>

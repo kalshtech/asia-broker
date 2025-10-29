@@ -1,66 +1,48 @@
 "use client";
 import * as React from 'react'
-import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import Container from "@/components/Container";
 import TitleReveal from "@/components/TitleReveal";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
-const fadeInUp: Variants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.8, ease: 'easeOut' },
-    },
-}
-
 const Banner =  () => {
     const t = useTranslations("Pages.accounts.profit.banner");
-
     return (
         <div>
             <section className={"bg-[url(/images/accounts/profit-banner.png)] bg-center bg-cover h-140 xl:h-[632px] py-4 xl:py-30"}>
                 <Container>
-                    <motion.div
-                        variants={fadeInUp}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{once: true, amount: 0.5}}
+                    <Typography
+                        variant={"h4"}
+                        className={"font-medium !text-white !bg-gradient-to-b !from-[#5368AC] !to-[#1F3A93] !bg-clip-text !text-transparent"}
                     >
-                        <Typography
-                            variant={"h4"}
-                            className={"font-medium !text-white !bg-gradient-to-b !from-[#5368AC] !to-[#1F3A93] !bg-clip-text !text-transparent"}
-                        >
-                            {t("top")}
-                        </Typography>
+                        {t("top")}
+                    </Typography>
 
-                        <TitleReveal
-                            className={"!text-white mt-6"}
-                            title={t("title")}
+                    <TitleReveal
+                        className={"!text-white mt-6"}
+                        title={t("title")}
+                    />
+
+                    <Typography
+                        variant={"p"}
+                        className={"!text-white max-w-3xl mt-10"}
+                    >
+                        {t("desc")}
+                    </Typography>
+                    <div className={"mt-10"}>
+                        <GeneralLinkBtn
+                            text={t("register")}
+                            path={"/accounts/platinum"}
+                            theme={"light-solid"}
                         />
-
-                        <Typography
-                            variant={"p"}
-                            className={"!text-white max-w-3xl mt-10"}
-                        >
-                            {t("desc")}
-                        </Typography>
-                        <div className={"mt-10"}>
-                            <GeneralLinkBtn
-                                text={t("register")}
-                                path={"/accounts/platinum"}
-                                theme={"light-solid"}
-                            />
-                            <GeneralLinkBtn
-                                text={t("vic")}
-                                path={"/accounts/vic"}
-                                theme={"light-hollow"}
-                                className={"ml-4"}
-                            />
-                        </div>
-                    </motion.div>
+                        <GeneralLinkBtn
+                            text={t("vic")}
+                            path={"/accounts/vic"}
+                            theme={"light-hollow"}
+                            className={"ml-4"}
+                        />
+                    </div>
                 </Container>
             </section>
             <Container>
