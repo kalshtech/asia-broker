@@ -35,7 +35,7 @@ const Profession = () => {
     const activeImageUrl = cols.find(item => item.value === tabActive)?.img;
 
     return (
-        <section className={"lg:py-30"}>
+        <section className={"xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

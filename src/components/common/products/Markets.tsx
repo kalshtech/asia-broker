@@ -127,14 +127,14 @@ const Markets = (props: Props) => {
     }, [ tabActive ]);
 
     return (
-        <section className={"lg:py-10"}>
+        <section className={"xl:py-10"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
-                    className={"mt-4 lg:mt-16"}
+                    className={"mt-4 xl:mt-16"}
                 >
                     <Typography variant={"h3"} className={"text-center"}>
                         {title}
@@ -150,7 +150,7 @@ const Markets = (props: Props) => {
                         )
                     }
                 </motion.div>
-                <div className={"mt-4 lg:mt-16"}>
+                <div className={"mt-4 xl:mt-16"}>
                     <SimpleSearch placeholder={placeholder} onSelect={(opt) => console.log("picked:", opt)}/>
                 </div>
                 {
@@ -200,7 +200,7 @@ const Markets = (props: Props) => {
                 <div className={"mt-10"}>
                     {type === "elementary" && (
                         <Table>
-                            <TableCaption className={"mt-16"}>
+                            <TableCaption className={"mt-4 xl:mt-16"}>
                                 <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                     {trade}
                                 </Button>
@@ -266,7 +266,7 @@ const Markets = (props: Props) => {
 
                     {type === "future" && (
                         <Table>
-                            <TableCaption className={"mt-16"}>
+                            <TableCaption className={"mt-4 xl:mt-16"}>
                                 <Button
                                     className={"bg-theme-active hover:bg-theme-active-hover"}>
                                     {trade}

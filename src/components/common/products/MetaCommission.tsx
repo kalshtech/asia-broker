@@ -18,7 +18,7 @@ const MetaProfession = ( props: Props ) => {
 
     return (
         <Container>
-            <div className={"flex items-center flex-col lg:flex-row"}>
+            <div className={"flex items-center flex-col xl:flex-row"}>
                 <div>
                     <Typography variant={"h3"} className={"!text-theme-active max-w-xl"}>
                         { t("meta.title") }
@@ -31,7 +31,7 @@ const MetaProfession = ( props: Props ) => {
                         { t("meta.desc") }
                     </Typography>
                 </div>
-                <div className={"mt-4 lg:mt-0 lg:ml-auto"}>
+                <div className={"mt-4 lg:mt-8 xl:mt-0 xl:ml-auto"}>
                     <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                         { t("meta.trade") }
                     </Button>
