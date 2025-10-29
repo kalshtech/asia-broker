@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { motion, Variants } from "framer-motion";
@@ -21,6 +21,7 @@ import MiniChart from "@/components/charts/Mini";
 import { convert, rangeCls, rangeChange } from "@/utils/common";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import { Link } from "@/i18n/navigation";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -46,18 +47,24 @@ const forexRows = [
 const Markets = () => {
     const t = useTranslations("Pages.home.markets");
     const commonT = useTranslations("Common");
-    const [ tabActive, setTabActive ] = useState<string>("stock");
     const [ rows, setRows ] = useState(usStockRows);
     const [ loading, setLoading ] = useState(true);
 
+    const [ tabActive, setTabActive ] = useState<string>("stock");
+
     const tabsList = [
-        { label: commonT("usStock"), value: "stock" },
-        { label: commonT("forex"), value: "forex" },
-        { label: commonT("metals"), value: "metals" },
-        { label: commonT("energy"), value: "energy" },
-        { label: commonT("futures"), value: "futures" },
-        { label: commonT("crypto"), value: "crypto" },
+        { label: commonT("usStock"), value: "stock", path: "/products/stocks" },
+        { label: commonT("forex"), value: "forex", path: "/products/forex" },
+        { label: commonT("metals"), value: "metals", path: "/products/pm" },
+        { label: commonT("energy"), value: "energy", path: "/products/energy" },
+        { label: commonT("futures"), value: "futures", path: "/products/future" },
+        { label: commonT("crypto"), value: "crypto", path: "/products/crypto" },
     ];
+
+    const currentPath = useMemo(() => {
+        const currentTab = tabsList.find(tab => tab.value === tabActive);
+        return currentTab?.path || "";
+    }, [tabActive, tabsList]);
 
     const handleChangeTabActive = (value: string) => {
         setTabActive(value);
@@ -73,7 +80,6 @@ const Markets = () => {
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true);
-
             const today = new Date();
             const dayOfWeek = today.getDay();
             let dayNumber = 5;
@@ -190,7 +196,9 @@ const Markets = () => {
                                     <div className={"flex flex-col"}>
                                         <div>
                                             <Button className={"mt-8 bg-theme-active hover:bg-theme-active-hover"}>
-                                                {t("more")}
+                                                <Link href={currentPath} target={"_blank"}>
+                                                    {t("more")}
+                                                </Link>
                                             </Button>
                                         </div>
                                     </div>

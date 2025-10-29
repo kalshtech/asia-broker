@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 import { MoveRight } from 'lucide-react';
 import classnames from "classnames";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -114,7 +115,11 @@ export default function Competition() {
                                                                 {it.period}
                                                             </Typography>
                                                             <div className="mt-8 flex justify-center">
-                                                                <Button size="lg">{it.cta ?? "立即参加"}</Button>
+                                                                <GeneralLinkBtn
+                                                                    text={it.cta ?? "visit"}
+                                                                    path={"/mutual/trading-competition"}
+                                                                    theme={"dark-solid"}
+                                                                />
                                                             </div>
                                                         </div>
                                                     </>

@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const DownloadAndRegister = () => {
     const t = useTranslations("Pages.home.downloadAndRegister");
@@ -23,10 +24,12 @@ const DownloadAndRegister = () => {
                                 </Typography>
                                 <div className={"mt-10 flex"}>
                                     <RegisterBtn text={t("open")}/>
-                                    <Button
-                                        className={"ml-4 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
-                                        {t("download")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text={t("download")}
+                                        path={"/platform"}
+                                        theme={"active-hollow"}
+                                        className={"ml-4"}
+                                    />
                                 </div>
                             </div>
                             <div className={"flex flex-1 bg-theme-deep-bg mt-4 lg:mt-20"}>

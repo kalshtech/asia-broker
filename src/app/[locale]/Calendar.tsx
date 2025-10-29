@@ -39,9 +39,11 @@ const CalendarComponent = () => {
                 </motion.div>
 
                 <div className={"mt-10 flex justify-center"}>
-                    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                        {t("explore")}
-                    </Button>
+                    <GeneralLinkBtn
+                        text={t("explore")}
+                        path={"/ideas/professional"}
+                        theme={"active-solid"}
+                    />
                     <Button className={"ml-4 border bg-transparent hover:bg-transparent"}>
                         {t("subscribe")}
                     </Button>

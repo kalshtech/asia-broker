@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import classnames from "classnames";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -58,7 +59,7 @@ const Assets = () => {
                     <div className={"grid grid-cols-12 gap-4"}>
                         <div className={"col-span-12 lg:col-span-6"}>
                             <img src={renderImageSrc()} className={"max-w-[320px] mx-auto xl:mx-0"} alt=""/>
-                            <div className={"mt-6 grid grid-cols-2 space-y-6"}>
+                            <div className={"mt-6 grid grid-cols-2 lg:space-y-4 xl:space-y-6"}>
                                 {
                                     BtnAry.map((item, index) => (
                                         <Button
@@ -174,9 +175,11 @@ const Assets = () => {
                                             </ul>
 
                                             <div className={"mt-10"}>
-                                                <Button className={"bg-white hover:!bg-white text-black"}>
-                                                    {t("text.type.more")}
-                                                </Button>
+                                                <GeneralLinkBtn
+                                                    text={t("text.type.more")}
+                                                    path={"/products/transfer"}
+                                                    theme={"light-solid"}
+                                                />
                                             </div>
                                         </div>
                                     )
@@ -258,9 +261,11 @@ const Assets = () => {
                                             </ul>
 
                                             <div className={"mt-10"}>
-                                                <Button className={"bg-white hover:!bg-white text-black"}>
-                                                    {t("text.type.more")}
-                                                </Button>
+                                                <GeneralLinkBtn
+                                                    text={t("text.type.more")}
+                                                    path={"/products/transfer"}
+                                                    theme={"light-solid"}
+                                                />
                                             </div>
                                         </div>
                                     )

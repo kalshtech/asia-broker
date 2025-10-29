@@ -7,6 +7,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -62,11 +63,11 @@ const Community = () => {
                                         </Typography>
                                     </div>
                                     <div className={"text-center mt-10"}>
-                                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                            <Link href={"/"} className={"text-white mx-auto justify-center flex"}>
-                                                {t("row.1.link")}
-                                            </Link>
-                                        </Button>
+                                        <GeneralLinkBtn
+                                            text={t("row.1.link")}
+                                            path={"/corporation/contact"}
+                                            theme={"active-solid"}
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -119,12 +120,11 @@ const Community = () => {
                                         </Typography>
                                     </div>
                                     <div className={"text-center mt-10"}>
-                                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                            <Link href={"/"}
-                                                  className={"text-white mx-auto justify-center flex"}>
-                                                {t("row.3.explore")}
-                                            </Link>
-                                        </Button>
+                                        <GeneralLinkBtn
+                                            text={t("row.3.explore")}
+                                            path={"/mutual/trading-competition"}
+                                            theme={"active-solid"}
+                                        />
                                     </div>
                                 </div>
                             </div>

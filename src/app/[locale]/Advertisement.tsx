@@ -8,12 +8,14 @@ import { motion, Variants } from "framer-motion";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 import { Navigation } from "swiper/modules";
 import Container from "@/components/Container";
+import { Link } from "@/i18n/navigation"
 
 type ItemProps = {
     ImageNumber: string | number;
     title: string;
     description: string;
-    url: string
+    url: string;
+    path: string;
 }
 
 const fadeInUp: Variants = {
@@ -65,7 +67,9 @@ const SwiperSlideItem = (props: ItemProps) => {
                     </div>
                     <div className={"mt-4"}>
                         <Button className={"bg-theme-active hover:bg-theme-active-hover cursor-pointer"}>
-                            { CommonT("view") }
+                            <Link href={props.path} target={"_blank"}>
+                                { CommonT("view") }
+                            </Link>
                         </Button>
                     </div>
                 </div>
@@ -78,11 +82,41 @@ const Advertisement = () => {
     const t = useTranslations("Pages.home.advertisement");
 
     const ary = [
-        { ImageNumber: "2", title: t("2.title"), description: t("2.description"), url: `bg-[url('/images/home/en-advertisement-2.png')]` },
-        { ImageNumber: "3", title: t("3.title"), description: t("3.description"), url: `bg-[url('/images/home/en-advertisement-3.png')]` },
-        { ImageNumber: "4", title: t("4.title"), description: t("4.description"), url: `bg-[url('/images/home/en-advertisement-4.png')]` },
-        { ImageNumber: "5", title: t("5.title"), description: t("5.description"), url: `bg-[url('/images/home/en-advertisement-5.png')]` },
-        { ImageNumber: "6", title: t("6.title"), description: t("6.description"), url: `bg-[url('/images/home/en-advertisement-6.png')]` },
+        {
+            ImageNumber: "2",
+            title: t("2.title"),
+            description: t("2.description"),
+            url: `bg-[url('/images/home/en-advertisement-2.png')]`,
+            path: "/accounts/profit"
+        },
+        {
+            ImageNumber: "3",
+            title: t("3.title"),
+            description: t("3.description"),
+            url: `bg-[url('/images/home/en-advertisement-3.png')]`,
+            path: "/accounts/platinum"
+        },
+        {
+            ImageNumber: "4",
+            title: t("4.title"),
+            description: t("4.description"),
+            url: `bg-[url('/images/home/en-advertisement-4.png')]`,
+            path: "/platform"
+        },
+        {
+            ImageNumber: "5",
+            title: t("5.title"),
+            description: t("5.description"),
+            url: `bg-[url('/images/home/en-advertisement-5.png')]`,
+            path: "/accounts/vic"
+        },
+        {
+            ImageNumber: "6",
+            title: t("6.title"),
+            description: t("6.description"),
+            url: `bg-[url('/images/home/en-advertisement-6.png')]`,
+            path: "/ideas/vps"
+        },
     ];
 
     return (

@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from "react";
+import React, {useMemo, useState} from "react";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import SimpleSwiper from "@/components/common/products/SimpleSwiper";
 import {Button} from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -28,6 +29,17 @@ const Properly = () => {
         { url: "/images/home/properly3.png", title: t("right.swiper1.3.title"), description: t("right.swiper1.3.description") },
         { url: "/images/home/properly4.png", title: t("right.swiper1.4.title"), description: t("right.swiper1.4.description") },
     ];
+
+    const tabsList = [
+        { label: t("tabs.classic"), value: "classic", path: "/accounts/classic" },
+        { label: t("tabs.platinum"), value: "platinum", path: "/accounts/platinum" },
+        { label: t("tabs.vic"), value: "vic", path: "/accounts/vic" },
+    ]
+
+    const currentPath = useMemo(() => {
+        const currentTab = tabsList.find(tab => tab.value === tabActive);
+        return currentTab?.path || "";
+    }, [tabActive, tabsList]);
 
     const twoAry = [
         {
@@ -225,23 +237,41 @@ const Properly = () => {
                             <div className={"mt-6 lg:mt-12 flex justify-center lg:justify-start flex-row lg:flex-col"}>
                                 <RegisterBtn/>
                                 <div>
-                                    <Button className={"ml-4 lg:ml-0 lg:mt-4 border text-theme-active bg-transparent hover:bg-transparent border-theme-active"}>
-                                        {t("explore")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text={t("explore")}
+                                        path={currentPath}
+                                        theme={"active-hollow"}
+                                        className={"ml-4 lg:ml-0 lg:mt-4"}
+                                    />
                                 </div>
                             </div>
                         </div>
                         <div className={"col-span-12 lg:col-span-9"}>
                             <div className={"w-full"}>
-                                {tabActive === "classic" &&
-                                    <SimpleSwiper prevEl={"test-custom-prev"} nextEl={"test-custom-next"}
-                                                  ary={oneAry}/>}
-                                {tabActive === "platinum" &&
-                                    <SimpleSwiper prevEl={"test-custom-prev"} nextEl={"test-custom-next"}
-                                                  ary={twoAry}/>}
-                                {tabActive === "vic" &&
-                                    <SimpleSwiper prevEl={"test-custom-prev"} nextEl={"test-custom-next"}
-                                                  ary={threeAry}/>}
+                                {
+                                    tabActive === "classic" &&
+                                    <SimpleSwiper
+                                        prevEl={"test-custom-prev"}
+                                        nextEl={"test-custom-next"}
+                                        ary={oneAry}
+                                    />
+                                }
+                                {
+                                    tabActive === "platinum" &&
+                                    <SimpleSwiper
+                                        prevEl={"test-custom-prev"}
+                                        nextEl={"test-custom-next"}
+                                        ary={twoAry}
+                                    />
+                                }
+                                {
+                                    tabActive === "vic" &&
+                                    <SimpleSwiper
+                                        prevEl={"test-custom-prev"}
+                                        nextEl={"test-custom-next"}
+                                        ary={threeAry}
+                                    />
+                                }
                             </div>
                         </div>
                     </div>
@@ -251,24 +281,17 @@ const Properly = () => {
                 <div className={"flex justify-center mt-4 xl:mt-20"}>
                     <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
                         <TabsList className={"h-10 rounded-full"}>
-                            <TabsTrigger
-                                value="classic"
-                                className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
-                            >
-                                {t("tabs.classic")}
-                            </TabsTrigger>
-                            <TabsTrigger
-                                value="platinum"
-                                className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
-                            >
-                                {t("tabs.platinum")}
-                            </TabsTrigger>
-                            <TabsTrigger
-                                value="vic"
-                                className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
-                            >
-                                {t("tabs.vic")}
-                            </TabsTrigger>
+                            {
+                                tabsList.map((d, i) => (
+                                    <TabsTrigger
+                                        value={d.value}
+                                        key={i}
+                                        className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
+                                    >
+                                        { d.label }
+                                    </TabsTrigger>
+                                ))
+                            }
                         </TabsList>
                     </Tabs>
                 </div>
