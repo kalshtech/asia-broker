@@ -9,7 +9,7 @@ import Container from "@/components/Container";
 const DownloadAndRegister = () => {
     const t = useTranslations("Pages.home.downloadAndRegister");
     return (
-        <section className={"lg:p-30"}>
+        <section className={"xl:p-30"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-8"}>
                     <div className={"col-span-12 lg:col-span-4"}>

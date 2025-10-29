@@ -21,7 +21,7 @@ const CalendarComponent = () => {
     const t = useTranslations("Pages.home.calendar");
 
     return (
-        <section className={"bg-theme-deep-bg lg:py-30"}>
+        <section className={"bg-theme-deep-bg xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -54,7 +54,7 @@ const CalendarComponent = () => {
                             <div className={"flex-1 h-full py-10 px-8 flex flex-col absolute bottom-0  left-0"}>
                                 <Typography
                                     variant={"h5"}
-                                    className={"!text-white mt-64"}
+                                    className={"!text-white xl:mt-64"}
                                 >
                                     {t("prospect.title")}
                                 </Typography>

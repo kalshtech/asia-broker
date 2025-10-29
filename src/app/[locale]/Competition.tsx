@@ -32,7 +32,7 @@ export default function Competition() {
     const collapsed = (1 - ACTIVE) / (items.length - 1);
 
     return (
-        <section className={"lg:p-30"}>
+        <section className={"xl:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

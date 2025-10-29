@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Speed = () => {
     const t = useTranslations("Pages.home.speed");
     return (
-        <section className={"bg-theme-light-bg lg:p-30"}>
+        <section className={"bg-theme-light-bg xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

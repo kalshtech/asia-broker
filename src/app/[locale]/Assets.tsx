@@ -42,7 +42,7 @@ const Assets = () => {
     }
 
     return (
-        <section className={"bg-theme-deep-bg lg:p-30"}>
+        <section className={"bg-theme-deep-bg xl:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -54,10 +54,10 @@ const Assets = () => {
                         {t("title")}
                     </Typography>
                 </motion.div>
-                <div className={"mt-10 lg:mt-20 lg:px-50"}>
+                <div className={"mt-10 xl:mt-20 xl:px-50"}>
                     <div className={"grid grid-cols-12 gap-4"}>
                         <div className={"col-span-12 lg:col-span-6"}>
-                            <img src={renderImageSrc()} className={"max-w-[320px] mx-auto lg:mx-0"} alt=""/>
+                            <img src={renderImageSrc()} className={"max-w-[320px] mx-auto xl:mx-0"} alt=""/>
                             <div className={"mt-6 grid grid-cols-2 space-y-6"}>
                                 {
                                     BtnAry.map((item, index) => (

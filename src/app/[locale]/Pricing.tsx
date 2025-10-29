@@ -94,7 +94,7 @@ const EnglishPricing = () => {
     ];
 
     return (
-        <section ref={cardsWrapRef}  className={"bg-[linear-gradient(180deg,#000516_0%,#1C327B_48%,#000516_100%)] py-4 lg:py-20"}>
+        <section ref={cardsWrapRef}  className={"bg-[linear-gradient(180deg,#000516_0%,#1C327B_48%,#000516_100%)] py-4 xl:py-20"}>
             <Container>
                 <div>
                     <div>
@@ -107,9 +107,9 @@ const EnglishPricing = () => {
                         </Typography>
                     </div>
 
-                    <div className={"grid grid-cols-12 gap-4 lg:gap-12 mt-10"}>
-                        <div className={"col-span-12 lg:col-span-4"}>
-                            <div className={"bg-black py-20 px-16 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] lg:mt-10"}>
+                    <div className={"grid grid-cols-12 gap-4 xl:gap-12 mt-10"}>
+                        <div className={"col-span-12 xl:col-span-4"}>
+                            <div className={"bg-black py-20 px-16 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] xl:mt-10"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"!text-white text-center"}
@@ -133,13 +133,13 @@ const EnglishPricing = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={"col-span-12 lg:col-span-4"}>
+                        <div className={"col-span-12 xl:col-span-4"}>
                             <div className={"bg-black px-4 py-20 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] h-full"}>
                                 <RealTimeUpdate/>
                             </div>
                         </div>
-                        <div className={"col-span-12 lg:col-span-4"}>
-                            <div className={"bg-black p-4 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] lg:mt-10"}>
+                        <div className={"col-span-12 xl:col-span-4"}>
+                            <div className={"bg-black p-4 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] xl:mt-10"}>
                                 <div className={"grid grid-cols-2 gap-4"}>
                                     {
                                         listAry.map((d, i) => (
@@ -180,7 +180,7 @@ const EnglishPricing = () => {
                     </div>
 
                     <div>
-                        <div className={"flex justify-center mt-10 lg:mt-24"}>
+                        <div className={"flex justify-center mt-10 xl:mt-24"}>
                             <GeneralLinkBtn
                                 text={t("left.btnText")}
                                 path={"/accounts/platinum"}

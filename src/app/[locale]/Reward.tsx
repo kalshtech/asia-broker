@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Reward = () => {
     const t = useTranslations("Pages.home.reward");
     return (
-        <section className={"bg-[url('/images/home/reward-background.png')] bg-cover bg-center bg-no-repeat py-8 lg:py-20 lg:px-30"}>
+        <section className={"bg-[url('/images/home/reward-background.png')] bg-cover bg-center bg-no-repeat py-8 xl:py-20 xl:px-30"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-4"}>
                     <div className={"flex items-center col-span-12 lg:col-span-6"}>
@@ -52,14 +52,14 @@ const Reward = () => {
                                     <div>
                                         <Typography
                                             variant={"h1"}
-                                            className={"!text-white !tracking-wide !text-[36px] lg:!text-[80px]"}
+                                            className={"!text-white !tracking-wide !text-[36px] xl:!text-[80px]"}
                                         >
                                             60
                                         </Typography>
                                         <div className={"flex items-center"}>
                                             <Typography
                                                 variant={"h2"}
-                                                className={"!text-gray-200 !tracking-wide line-through decoration-slate-400 decoration-2 !text-2xl lg:!text-[40px]"}
+                                                className={"!text-gray-200 !tracking-wide line-through decoration-slate-400 decoration-2 !text-2xl xl:!text-[40px]"}
                                             >
                                                 30
                                             </Typography>
@@ -67,12 +67,12 @@ const Reward = () => {
                                                 src="/images/home/arrow-white.png"
                                                 alt="arrow"
                                                 title="arrow"
-                                                className={"ml-1 max-w-[16px] max-h-[16px] lg:max-w-[30px] lg:max-h-[30px]"}
+                                                className={"ml-1 max-w-[16px] max-h-[16px] xl:max-w-[30px] xl:max-h-[30px]"}
                                             />
                                         </div>
                                     </div>
                                     <div className={"ml-2 lg:ml-4 flex flex-col"}>
-                                        <p className={"!text-white text-sm lg:text-base mt-2 lg:mt-4 border p-2 rounded-lg"}>
+                                        <p className={"!text-white text-sm lg:text-base mt-2 xl:mt-4 border p-2 rounded-lg"}>
                                             {t("best")}
                                         </p>
                                         <p className={"!text-white text-[10px] lg:text-base mt-1"}>
@@ -94,14 +94,14 @@ const Reward = () => {
                                     <div>
                                         <Typography
                                             variant={"h1"}
-                                            className={"!text-black !tracking-wide !text-[36px] lg:!text-[80px]"}
+                                            className={"!text-black !tracking-wide !text-[36px] xl:!text-[80px]"}
                                         >
                                             60
                                         </Typography>
                                         <div className={"flex items-center"}>
                                             <Typography
                                                 variant={"h2"}
-                                                className={"!text-gray-800 !tracking-wide line-through decoration-slate-400 decoration-2 !text-2xl lg:!text-[40px]"}
+                                                className={"!text-gray-800 !tracking-wide line-through decoration-slate-400 decoration-2 !text-2xl xl:!text-[40px]"}
                                             >
                                                 30
                                             </Typography>
@@ -114,7 +114,7 @@ const Reward = () => {
                                         </div>
                                     </div>
                                     <div className={"ml-2 lg:ml-4 flex flex-col"}>
-                                        <p className={"border text-sm lg:text-base mt-2 lg:mt-4 border-black p-2 rounded-lg"}>
+                                        <p className={"border text-sm lg:text-base mt-2 xl:mt-4 border-black p-2 rounded-lg"}>
                                             {t("best")}
                                         </p>
                                         <p className={"mt-1 text-[10px] lg:text-base"}>

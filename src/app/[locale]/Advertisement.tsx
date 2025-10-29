@@ -29,7 +29,7 @@ const SwiperSlideItem = (props: ItemProps) => {
     const CommonT = useTranslations("Common");
     return (
         <div className={`${props.url} bg-center bg-cover w-auto h-100 rounded-lg`} >
-            <div className={"flex flex-col h-full cursor-pointer group relative px-3 py-4 lg:px-6 lg:py-8"}>
+            <div className={"flex flex-col h-full cursor-pointer group relative px-3 py-4 xl:px-6 xl:py-8"}>
                 <div className={"mt-auto group-hover:hidden"}>
                     <Typography
                         variant={"h6"}
@@ -86,7 +86,7 @@ const Advertisement = () => {
     ];
 
     return (
-        <section className={"lg:p-30"}>
+        <section className={"xl:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -99,15 +99,15 @@ const Advertisement = () => {
                     </Typography>
                 </motion.div>
 
-                <div className={"mt-4 lg:mt-16"}>
-                    <div className={"grid grid-cols-12 gap-4 lg:gap-9"}>
+                <div className={"mt-4 xl:mt-16"}>
+                    <div className={"grid grid-cols-12 gap-4 xl:gap-9"}>
                         <div className={"col-span-6 lg:col-span-4 xl:col-span-3"}>
                             <div
                                 className={`bg-[url('/images/home/en-advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
                                 <div
-                                    className={"flex flex-col h-full cursor-pointer relative px-3 py-8 lg:px-6 lg:py-16"}>
+                                    className={"flex flex-col h-full cursor-pointer relative px-3 py-8 xl:px-6 xl:py-16"}>
                                     <div
-                                        className={"bg-[rgba(0,0,0,0.42)] justify-center rounded-lg flex flex-col w-full h-full top-0 left-0 transition absolute px-2 lg:px-6 py-8 lg:py-16"}>
+                                        className={"bg-[rgba(0,0,0,0.42)] justify-center rounded-lg flex flex-col w-full h-full top-0 left-0 transition absolute px-2 xl:px-6 py-8 xl:py-16"}>
                                         <div>
                                             <Typography
                                                 variant={"h6"}
@@ -124,7 +124,7 @@ const Advertisement = () => {
                                                 {t("1.description")}
                                             </Typography>
                                         </div>
-                                        <div className={"mt-4 lg:mt-8"}>
+                                        <div className={"mt-4 xl:mt-8"}>
                                             <Button className={"bg-theme-active hover:bg-theme-active-hover cursor-pointer"}>
                                                 {t("1.btn")}
                                             </Button>

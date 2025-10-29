@@ -192,7 +192,7 @@ const Properly = () => {
     }
 
     return (
-        <section className={"lg:py-30 lg:pl-30"}>
+        <section className={"xl:py-30 xl:pl-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -209,7 +209,7 @@ const Properly = () => {
                     </Typography>
                 </motion.div>
 
-                <div className={"mt-8 lg:mt-16"}>
+                <div className={"mt-8 xl:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
                         <div className={"col-span-12 lg:col-span-3"}>
                             <Typography variant={"h4"}>
@@ -248,7 +248,7 @@ const Properly = () => {
                 </div>
 
 
-                <div className={"flex justify-center mt-4 lg:mt-20"}>
+                <div className={"flex justify-center mt-4 xl:mt-20"}>
                     <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
                         <TabsList className={"h-10 rounded-full"}>
                             <TabsTrigger

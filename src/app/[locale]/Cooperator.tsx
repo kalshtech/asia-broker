@@ -22,7 +22,7 @@ const Cooperator = () => {
     const t = useTranslations("Pages.home.cooperator");
     const [ tabActive, setTabActive ] = React.useState("trader");
     return (
-        <section className={"lg:p-30"}>
+        <section className={"xl:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
