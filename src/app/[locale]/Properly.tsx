@@ -23,13 +23,6 @@ const Properly = () => {
     const t = useTranslations("Pages.home.properly");
     const [ tabActive, setTabActive ] = useState<string>("classic");
 
-    const oneAry = [
-        { url: "/images/home/properly1.png", title: t("right.swiper1.1.title"), description: t("right.swiper1.1.description") },
-        { url: "/images/home/properly2.png", title: t("right.swiper1.2.title"), description: t("right.swiper1.2.description") },
-        { url: "/images/home/properly3.png", title: t("right.swiper1.3.title"), description: t("right.swiper1.3.description") },
-        { url: "/images/home/properly4.png", title: t("right.swiper1.4.title"), description: t("right.swiper1.4.description") },
-    ];
-
     const tabsList = [
         { label: t("tabs.classic"), value: "classic", path: "/accounts/classic" },
         { label: t("tabs.platinum"), value: "platinum", path: "/accounts/platinum" },
@@ -40,6 +33,13 @@ const Properly = () => {
         const currentTab = tabsList.find(tab => tab.value === tabActive);
         return currentTab?.path || "";
     }, [tabActive, tabsList]);
+
+    const oneAry = [
+        { url: "/images/home/properly1.png", title: t("right.swiper1.1.title"), description: t("right.swiper1.1.description") },
+        { url: "/images/home/properly2.png", title: t("right.swiper1.2.title"), description: t("right.swiper1.2.description") },
+        { url: "/images/home/properly3.png", title: t("right.swiper1.3.title"), description: t("right.swiper1.3.description") },
+        { url: "/images/home/properly4.png", title: t("right.swiper1.4.title"), description: t("right.swiper1.4.description") },
+    ];
 
     const twoAry = [
         {
