@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import Container from "@/components/Container";
 import { motion, Variants} from "framer-motion";
-import { Link } from "@/i18n/navigation"
+import { Link } from "@/i18n/navigation";
+import { Separator } from "@/components/ui/separator"
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -21,11 +22,36 @@ export default function Brief() {
 
 
     const articlesAry = [
-        { label: "US CPI Data & Fed Reactions — Week 41, 2025", link: "/articles/beginner/common-currency", },
-        { label: "Crypto Volatility & Macro Flow: What’s Next for BTC", link: "/articles/beginner/common-mistakes", },
-        { label: "Asian Equities Rebound: Momentum or Mirage?", link: "/articles/beginner/explain-rates", },
-        { label: "FX Weekly: Yen Intervention and Global Dollar Strength", link: "/articles/beginner/forex-basic-analysis", },
-        { label: "Commodities Recap: Gold & Oil Divergence Explained", link: "/articles/beginner/forex-fundamental-knowledge", },
+        {
+            label: "US CPI Data & Fed Reactions — Week 41, 2025",
+            link: "/articles/beginner/common-currency",
+            image: "/images/ideas/profession-article1.png",
+            time: "2025-10-02"
+        },
+        {
+            label: "Crypto Volatility & Macro Flow: What’s Next for BTC",
+            link: "/articles/beginner/common-mistakes",
+            image: "/images/ideas/profession-article2.png",
+            time: "2025-10-02"
+        },
+        {
+            label: "Asian Equities Rebound: Momentum or Mirage?",
+            link: "/articles/beginner/explain-rates",
+            image: "/images/ideas/profession-article3.png",
+            time: "2025-10-02"
+        },
+        {
+            label: "FX Weekly: Yen Intervention and Global Dollar Strength",
+            link: "/articles/beginner/forex-basic-analysis",
+            image: "/images/ideas/profession-article4.png",
+            time: "2025-10-02"
+        },
+        {
+            label: "Commodities Recap: Gold & Oil Divergence Explained",
+            link: "/articles/beginner/forex-fundamental-knowledge",
+            image: "/images/ideas/profession-article5.png",
+            time: "2025-10-02"
+        },
     ];
 
     return (
@@ -95,16 +121,27 @@ export default function Brief() {
                             <ul>
                                 {
                                     articlesAry.map((d, i) => (
-                                        <li className={"my-6"} key={i}>
-                                            <Link href={d.link} className={"underline flex items-center font-semibold"}>
-                                                <span className={"w-[5px] h-[5px] min-w-[5px] min-h-[5px] bg-theme-active block rounded-full"}/>
-                                                <Typography
-                                                    variant={"p"}
-                                                    className={"ml-2"}
-                                                >
-                                                    {d.label}
-                                                </Typography>
+                                        <li className={"my-4"} key={i}>
+                                            <Link href={d.link} className={"flex"}>
+                                                <div>
+                                                    <img src={d.image} className={"max-w-[100px]"} alt=""/>
+                                                </div>
+                                                <div className={"ml-4"}>
+                                                    <Typography
+                                                        variant={"p"}
+                                                        className={"font-semibold"}
+                                                    >
+                                                        {d.label}
+                                                    </Typography>
+                                                    <Typography
+                                                        variant={"muted"}
+                                                        className={"mt-3"}
+                                                    >
+                                                        {d.time}
+                                                    </Typography>
+                                                </div>
                                             </Link>
+                                            <Separator className={"mt-4"} />
                                         </li>
                                     ))
                                 }
