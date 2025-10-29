@@ -125,7 +125,7 @@ const Rank = () => {
                     <Table className={"mt-4"}>
                         <TableHeader className={"bg-[#323A53]"}>
                             <TableRow>
-                                <TableHead className={"py-6 !text-white"}>{t("table.rank")}</TableHead>
+                                <TableHead className={"py-6 !text-white pl-16 w-80"}>{t("table.rank")}</TableHead>
                                 <TableHead className={"py-6 !text-white"}>{t("table.name")}</TableHead>
                                 <TableHead className={"py-6 !text-white"}>{t("table.credit")}</TableHead>
                                 <TableHead className={"py-6 !text-white"}>{t("table.type")}</TableHead>
@@ -136,7 +136,7 @@ const Rank = () => {
                             {
                                 Ary.map((item: any, index: any) => (
                                     <TableRow key={index} className={"bg-[#3B4259]"}>
-                                        <TableCell className={"py-6 text-white"}>
+                                        <TableCell className={"py-6 text-white pl-16 w-80"}>
                                             {
                                                 index === 0 ?
                                                     <img src={"/images/mutual/competition-1.png"}
@@ -164,7 +164,7 @@ const Rank = () => {
                                         <TableCell className={"py-6 text-white"}>
                                             {item.type}
                                         </TableCell>
-                                        <TableCell className={"py-6 text-white"}>
+                                        <TableCell className={"py-6 text-white pr-16"}>
                                             {item.operator}
                                         </TableCell>
                                     </TableRow>

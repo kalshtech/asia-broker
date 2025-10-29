@@ -13,7 +13,7 @@ type Props = {
 
 export default function TitleReveal(props: Props) {
     const {
-        title = "外汇交易",
+        title = "",
         duration = 2.0,
         endSquareSize = 12,
         isActive = false,
@@ -63,7 +63,7 @@ export default function TitleReveal(props: Props) {
     return (
         <div ref={rootRef} className="relative">
             <div className="flex items-center gap-3">
-                <div className="relative inline-block align-middle overflow-hidden">
+                <div className="relative inline-block align-middle overflow-hidden py-1">
                     <Typography
                         variant={"h1"}
                         className={classnames(["ml-8 max-w-5xl ibm-plex-sans", {

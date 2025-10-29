@@ -26,7 +26,7 @@ export default function Banner({ title, description, midst, imageUrl, transfer =
                 <div>
                     <TitleReveal
                         title={title}
-                        className={classnames(["!leading-[56px]", {
+                        className={classnames([{
                             "!text-white": isLight,
                             "!text-black": !isLight,
                         }])}

@@ -50,7 +50,7 @@ export default async function Page() {
         {
             question: t("qa.ul.li1.title"),
             answer: (
-                <div className="text-muted-foreground leading-[28px] space-y-3">
+                <div className="space-y-3">
                     <ul className="space-y-1">
                         <li>{t("qa.ul.li1.text-1")}</li>
                         <li>{t("qa.ul.li1.text-2")}</li>
@@ -61,7 +61,7 @@ export default async function Page() {
         {
             question: t("qa.ul.li2.title"),
             answer: (
-                <div className="text-muted-foreground leading-[28px] space-y-3">
+                <div className="space-y-3">
                     <ul className="space-y-1">
                         <li>{t("qa.ul.li2.text-1")}</li>
                         <li>{t("qa.ul.li2.text-2")}</li>
@@ -72,7 +72,7 @@ export default async function Page() {
         {
             question: t("qa.ul.li3.title"),
             answer: (
-                <div className="text-muted-foreground leading-[28px] space-y-3">
+                <div className="space-y-3">
                     <ul className="space-y-1">
                         <li>{t("qa.ul.li3.text-1")}</li>
                         <li>{t("qa.ul.li3.text-2")}</li>
@@ -83,7 +83,7 @@ export default async function Page() {
         {
             question: t("qa.ul.li4.title"),
             answer: (
-                <div className="text-muted-foreground leading-[28px] space-y-3">
+                <div className="space-y-3">
                     <ul className="space-y-1">
                         <li>{t("qa.ul.li4.text-1")}</li>
                         <li>{t("qa.ul.li4.text-2")}</li>
@@ -94,7 +94,7 @@ export default async function Page() {
         {
             question: t("qa.ul.li5.title"),
             answer: (
-                <div className="text-muted-foreground leading-[28px] space-y-3">
+                <div className="space-y-3">
                     <p>
                         {t("qa.ul.li5.text-1")}
                     </p>
@@ -110,7 +110,7 @@ export default async function Page() {
         {
             question: t("qa.ul.li6.title"),
             answer: (
-                <div className="text-muted-foreground leading-[28px] space-y-3">
+                <div className="space-y-3">
                     <ul className="space-y-1">
                         <li>{t("qa.ul.li6.text-1")}</li>
                         <li>{t("qa.ul.li6.text-2")}</li>

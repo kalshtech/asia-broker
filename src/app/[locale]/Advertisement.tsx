@@ -103,7 +103,7 @@ const Advertisement = () => {
                     <div className={"grid grid-cols-12 gap-4 lg:gap-9"}>
                         <div className={"col-span-6 lg:col-span-4 xl:col-span-3"}>
                             <div
-                                className={`bg-[url('/images/home/advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
+                                className={`bg-[url('/images/home/en-advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
                                 <div
                                     className={"flex flex-col h-full cursor-pointer relative px-3 py-8 lg:px-6 lg:py-16"}>
                                     <div

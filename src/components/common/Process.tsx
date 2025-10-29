@@ -88,7 +88,7 @@ const Process = (props: Props) => {
                                                 <div className={"mt-16 flex items-center cursor-pointer"}>
                                                     <Typography
                                                         variant={"muted"}
-                                                        className={"!text-sm"}
+                                                        className={"!text-sm font-semibold"}
                                                     >
                                                         {item.bottom}
                                                     </Typography>

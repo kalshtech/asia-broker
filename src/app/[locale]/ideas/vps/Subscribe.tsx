@@ -78,7 +78,7 @@ const Subscribe = () => {
                         {t("form-name")}
                     </Typography>
                     <Form {...form}>
-                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5 mt-10">
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5 mt-10 max-w-5xl mx-auto">
                             <div className={"grid grid-cols-12 gap-4"}>
                                 <div className={"col-span-6"}>
                                     <FormField

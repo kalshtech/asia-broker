@@ -2592,22 +2592,22 @@
           "ul": {
             "li1": {
               "title": "Will my account automatically upgrade to Platinum after depositing $5,000?",
-              "text-1": "A：No, the upgrade is not automatic.",
+              "text-1": "No, the upgrade is not automatic.",
               "text-2": "After completing your deposit, please submit a request via your account dashboard or contact your account manager. The system will review and activate Platinum privileges within one business day."
             },
             "li2": {
               "title": "Are there any hidden costs behind “spreads from 0.0 pips”?",
-              "text-1": "A：No.",
+              "text-1": "No.",
               "text-2": "Platinum Accounts enjoy 0.0 starting spreads on core instruments with zero commissions. We do not charge hidden markups or platform fees — all pricing and execution are fully transparent."
             },
             "li3": {
               "title": "Is there a lock-up period for the Future Earn Account feature?",
-              "text-1": "A：No lock-up period.",
+              "text-1": "No lock-up period.",
               "text-2": "USD balances accrue daily interest automatically, and funds can be withdrawn at any time with interest settled instantly — no redemption delays or restrictions."
             },
             "li4": {
               "title": "Is the VPS cloud service free? How can I apply?",
-              "text-1": "A：Yes, it is currently free for Platinum users.",
+              "text-1": "Yes, it is currently free for Platinum users.",
               "text-2": "Eligible clients can apply for access to our recommended high-speed VPS service, optimized for EA and algorithmic trading.Your dedicated account manager will assist with setup and configuration."
             },
             "li5": {
@@ -2620,7 +2620,7 @@
             },
             "li6": {
               "title": "Can I keep my Classic Account while opening a Platinum Account?",
-              "text-1": "A：Yes.",
+              "text-1": "Yes.",
               "text-2": "You can maintain your existing Classic Account while applying for a new Platinum Account. Each account will operate under separate permissions and risk parameters — ideal for strategy segregation or fund compartmentalization."
             }
           }
