@@ -8,7 +8,7 @@ import Container from "@/components/Container";
 const Trust = () => {
     const t = useTranslations("Pages.corporation.about.trust");
     return (
-        <section className={"py-4 lg:py-30"}>
+        <section className={"py-4 xl:py-30"}>
             <Container>
                 <div className={"grid grid-cols-12"}>
                     <div className={"col-span-12 lg:col-span-10"}>

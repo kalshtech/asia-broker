@@ -24,7 +24,7 @@ const PrizePool = () => {
     ];
 
     return (
-        <section className={"py-4 lg:py-30"}>
+        <section className={"py-4 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

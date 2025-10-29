@@ -40,7 +40,7 @@ const AutoTrade = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className={"py-4 lg:py-30"}>
+        <section ref={sectionRef} className={"py-4 xl:py-30"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-4 lg:gap-8 max-w-[1400px] mx-auto"}>
                     <div className={"col-span-12 lg:col-span-6"}>

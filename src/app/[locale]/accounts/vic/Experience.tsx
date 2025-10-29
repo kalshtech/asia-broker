@@ -22,7 +22,7 @@ const Experience = () => {
         { imageUrl: "bg-[url(/images/accounts/vic-experience-3.png)]", title: t("row.col3.title"), desc: t("row.col3.desc") },
     ];
     return (
-        <section className={"py-4 lg:py-30"}>
+        <section className={"py-4 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

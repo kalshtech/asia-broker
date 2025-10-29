@@ -22,7 +22,7 @@ const Statement = () => {
         { imageUrl: "/images/products/rates-statement2.png", title: t("row.col2.title"), desc: t("row.col2.desc"), more: t("row.col2.more") },
     ]
     return (
-        <section className={"bg-theme-light-bg py-4 lg:py-30"}>
+        <section className={"bg-theme-light-bg py-4 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

@@ -55,7 +55,7 @@ export default function Brief() {
     ];
 
     return (
-        <section className={"py-4 lg:py-30"}>
+        <section className={"py-4 xl:py-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"

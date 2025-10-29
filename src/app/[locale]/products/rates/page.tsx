@@ -21,7 +21,7 @@ export default async function Page() {
     const rowAry = [
         { imageUrl: "/images/products/rates-mechanism1.png", title: t("mechanism.row.col1.title"), desc: t("mechanism.row.col1.desc") },
         { imageUrl: "/images/products/rates-mechanism2.png", title: t("mechanism.row.col2.title"), desc: t("mechanism.row.col2.desc") },
-        { imageUrl: "/images/products/rates-mechanism3.png", title: t("mechanism.row.col3.title"), desc: t("mechanism.row.col3.desc"), prompt: t("mechanism.row.col3.prompt") },
+        { imageUrl: "/images/products/rates-mechanism3.png", title: t("mechanism.row.col3.title"), desc: t("mechanism.row.col3.desc") },
     ];
 
     const StreamUlAry = [
@@ -76,6 +76,7 @@ export default async function Page() {
                 ary={rowAry}
                 title={t("mechanism.title")}
                 title1={t("mechanism.title1")}
+                prompt={t("mechanism.row.col3.prompt")}
             />
 
             <div className={"bg-theme-light-bg"}>

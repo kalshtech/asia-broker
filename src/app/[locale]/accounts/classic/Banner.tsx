@@ -21,7 +21,7 @@ const fadeInUp: Variants = {
 const Banner =  () => {
     const t = useTranslations("Pages.accounts.classic.banner");
     return (
-        <section className={"bg-[url(/images/accounts/classic-banner.png)] bg-center bg-cover py-4 lg:py-30 h-120 lg:h-[632px]"}>
+        <section className={"bg-[url(/images/accounts/classic-banner.png)] bg-center bg-cover py-4 xl:py-30 h-120 xl:h-[632px]"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

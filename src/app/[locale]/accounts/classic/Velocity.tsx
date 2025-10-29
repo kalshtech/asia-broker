@@ -29,7 +29,7 @@ const Velocity = () => {
                         {t("title")}
                     </Typography>
                 </motion.div>
-                <div className="py-4 lg:py-10 lg:mt-16">
+                <div className="py-4 xl:py-10 xl:mt-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2">
                         <article className="relative overflow-hidden h-80 lg:-mr-12">
                             <img

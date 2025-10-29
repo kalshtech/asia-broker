@@ -33,7 +33,7 @@ const Support = () => {
         { label: t("row.col3.ul.li2") },
     ];
     return (
-        <section className={"bg-[url(/images/accounts/platinum-support-bg.png)] bg-center bg-cover h-200 lg:h-[580px] py-4 lg:py-30"}>
+        <section className={"bg-[url(/images/accounts/platinum-support-bg.png)] bg-center bg-cover h-164 lg:h-136 xl:h-[580px] py-4 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

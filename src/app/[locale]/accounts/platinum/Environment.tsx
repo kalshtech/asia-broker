@@ -25,7 +25,7 @@ const Environment = () => {
     const rightRef = React.useRef<HTMLDivElement>(null);
 
     return (
-        <section ref={sectionRef} className={"bg-gradient-to-b from-[#20150A] from-[10%] to-[#5E554C] to-[80%] py-4 lg:py-16"}>
+        <section ref={sectionRef} className={"bg-gradient-to-b from-[#20150A] from-[10%] to-[#5E554C] to-[80%] py-4 xl:py-16"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-4"}>
                     <div className={"col-span-12 lg:col-span-6"} ref={leftRef}>

@@ -24,7 +24,7 @@ const Principle = () => {
         { imgUrl: "/images/corporation/careers-principle4.png", title: t("row.col4.title"), desc: t("row.col4.desc") },
     ];
     return (
-        <section className={"py-4 lg:py-30"}>
+        <section className={"py-4 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

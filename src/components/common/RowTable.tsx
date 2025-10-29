@@ -33,7 +33,7 @@ type Props = {
 const RowTable = (props: Props) => {
     const { title, desc, rowHeadAry, children, overview, overviewText } = props;
     return (
-        <section className={"py-4 lg:py-30"}>
+        <section className={"py-4 xl:py-30"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-8"}>
                     <div className={"col-span-12 lg:col-span-4"}>

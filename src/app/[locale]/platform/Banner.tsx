@@ -62,11 +62,10 @@ const Banner = () => {
                 </div>
 
                 <div className={"mt-24"}>
-                    <div className={"flex flex-wrap gap-4"}>
+                    <div className={"grid lg:grid-cols-3 xl:grid-cols-5 gap-4"}>
                         {
                             downloadAry.map((item, index) => (
-                                <div key={index}
-                                     className={"flex flex-1 items-center border py-4 bg-[#2D2D2D]/40 px-8 rounded-lg cursor-pointer"}>
+                                <div key={index} className={"flex flex-1 items-center border py-4 bg-[#2D2D2D]/40 px-8 rounded-lg cursor-pointer"}>
                                     <img src={item.imageUrl} className={"w-[30px] h-[30px]"} alt={item.vision}/>
                                     <div className={"flex flex-col ml-4"}>
                                         <Typography variant={"small"} className={"text-white"}>

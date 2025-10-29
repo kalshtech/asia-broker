@@ -19,7 +19,7 @@ const fadeInUp: Variants = {
 const AboutCalendar = () => {
     const t = useTranslations("Pages.ideas.calendar.aboutCalendar");
     return (
-        <section className={"bg-[url(/images/ideas/about-calendar-background.png)] bg-cover bg-center py-4 lg:py-30"}>
+        <section className={"bg-[url(/images/ideas/about-calendar-background.png)] bg-cover bg-center py-4 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

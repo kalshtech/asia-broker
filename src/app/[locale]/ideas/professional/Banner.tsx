@@ -44,7 +44,7 @@ function SearchBar({ placeholder, className, value, onChange,}: Props) {
 const Banner = () => {
     const t = useTranslations("Pages.ideas.professional.banner");
     return (
-        <section className={"bg-[url(/images/ideas/professional-banner.png)] bg-cover bg-center py-4 lg:py-30 h-88 lg:h-[632px]"}>
+        <section className={"bg-[url(/images/ideas/professional-banner.png)] bg-cover bg-center py-4 xl:py-30 h-88 lg:120 xl:h-[632px]"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

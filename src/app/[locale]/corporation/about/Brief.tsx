@@ -7,7 +7,7 @@ import { Typography } from "@/components/ui/typography";
 const Brief = () => {
     const t = useTranslations("Pages.corporation.about.brief");
     return (
-        <section className={"bg-[url(/images/corporation/about-brief-background.png)] bg-cover bg-center py-4 lg:py-30"}>
+        <section className={"bg-[url(/images/corporation/about-brief-background.png)] bg-cover bg-center py-4 xl:py-30"}>
             <Container>
                 <div className={"flex"}>
                     <Typography variant={"muted"}>

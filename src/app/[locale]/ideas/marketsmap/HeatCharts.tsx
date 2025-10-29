@@ -71,7 +71,7 @@ const HeatCharts = () => {
     }, [tabActive])
 
     return (
-        <section className={"p-4 lg:p-30"}>
+        <section className={"p-4 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -138,7 +138,7 @@ const HeatCharts = () => {
                     variants={fadeInUp}
                     initial="hidden"
                     whileInView="visible"
-                    className={"mt-8 lg:mt-30"}
+                    className={"mt-8 xl:mt-24"}
                     viewport={{once: true, amount: 0.5}}
                 >
                     <Typography variant={"h3"} className={"text-center"}>
@@ -163,7 +163,7 @@ const HeatCharts = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
-                    className={"mt-4 lg:mt-30"}
+                    className={"mt-4 xl:mt-24"}
                 >
                     <Typography variant={"h3"} className={"text-center"}>
                         {t("crypto-title")}

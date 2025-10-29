@@ -22,7 +22,7 @@ const Banner =  () => {
 
     return (
         <div>
-            <section className={"py-4 lg:py-30 bg-[url(/images/corporation/careers-banner.png)] bg-center bg-cover h-120 lg:h-[632px]"}>
+            <section className={"bg-[url(/images/corporation/careers-banner.png)] bg-center bg-cover h-120 py-4 xl:py-30 xl:h-[632px]"}>
                 <Container>
                     <motion.div
                         variants={fadeInUp}
@@ -43,9 +43,9 @@ const Banner =  () => {
                     </motion.div>
                 </Container>
             </section>
-            <div className={"bg-theme-active rounded-lg -mt-16 mx-4 p-4 lg:py-10 lg:px-16 2xl:mx-30"}>
+            <div className={"bg-theme-active rounded-lg -mt-16 mx-4 p-4 xl:py-10 xl:px-16 2xl:mx-30"}>
                 <Container>
-                    <div className={"flex flex-col items-center lg:flex-row"}>
+                    <div className={"flex flex-col items-center xl:flex-row"}>
                         <Typography
                             variant={"h5"}
                             className={"font-medium !text-white max-w-5xl "}
@@ -56,7 +56,7 @@ const Banner =  () => {
                             text={t("view")}
                             path={"/corporation/careers"}
                             theme={"light-solid"}
-                            className={"mt-4 lg:mt-0 lg:ml-auto"}
+                            className={"mt-4 xl:mt-0 xl:ml-auto"}
                         />
                     </div>
                 </Container>

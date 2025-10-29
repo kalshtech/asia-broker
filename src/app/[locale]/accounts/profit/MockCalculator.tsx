@@ -8,7 +8,7 @@ import { Slider } from "@/components/ui/slider"
 const MockCalculator = () => {
     const t = useTranslations("Pages.accounts.profit.mockCalculator");
     return (
-        <section className={"bg-[#262E48] py-4 lg:py-30"}>
+        <section className={"bg-[#262E48] py-4 xl:py-30"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-4"}>
                     <div className={"col-span-12 lg:col-span-6"}>

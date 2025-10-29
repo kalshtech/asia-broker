@@ -19,7 +19,7 @@ const Banner = () => {
     const t = useTranslations("Pages.corporation.contact.banner");
     return (
         <div>
-            <section className={"bg-[url(/images/corporation/contact-banner.png)] bg-center bg-cover h-120 lg:h-[632px] py-4 lg:py-30"}>
+            <section className={"bg-[url(/images/corporation/contact-banner.png)] bg-center bg-cover h-120 xl:h-[632px] py-4 xl:py-30"}>
                 <Container>
                     <motion.div
                         variants={fadeInUp}
@@ -49,21 +49,21 @@ const Banner = () => {
                     </motion.div>
                 </Container>
             </section>
-            <div className={"bg-theme-active rounded-lg py-4 lg:py-10 -mt-16 mx-4 2xl:mx-30"}>
+            <div className={"bg-theme-active rounded-lg py-4 xl:py-10 -mt-16 mx-4 2xl:mx-30"}>
                 <Container>
-                    <div className={"flex items-center flex-col lg:flex-row"}>
+                    <div className={"flex items-center flex-col xl:flex-row"}>
                         <Typography
                             variant={"h5"}
-                            className={"font-medium !text-white max-w-2xl "}
+                            className={"font-medium !text-white max-w-2xl"}
                         >
                             {t("tips")}
                         </Typography>
-                        <div className={"lg:ml-auto"}>
+                        <div className={"xl:ml-auto"}>
                             <Button className={"text-theme-active bg-white hover:bg-white"}>
                                 {t("view")}
                             </Button>
                             <Button
-                                className={"mt-4 lg:mt-0 ml-4 text-theme-active bg-transparent text-white border hover:bg-transparent"}>
+                                className={"mt-4 xl:mt-0 ml-4 text-theme-active bg-transparent text-white border hover:bg-transparent"}>
                                 {t("join")}
                             </Button>
                         </div>

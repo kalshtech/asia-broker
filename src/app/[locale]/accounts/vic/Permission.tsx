@@ -30,7 +30,7 @@ const Permission = () => {
         { title: t("swiper.span6.title"), description: t("swiper.span6.desc"), url: "bg-[url('/images/accounts/permission-swiper6.png')]" },
     ];
     return (
-        <section className={"py-4 lg:py-30"}>
+        <section className={"py-4 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

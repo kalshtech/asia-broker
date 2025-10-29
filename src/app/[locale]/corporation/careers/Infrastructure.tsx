@@ -23,7 +23,7 @@ const Infrastructure =  () => {
     ];
 
     return (
-        <section className={"py-4 lg:py-30"}>
+        <section className={"py-4 xl:py-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -40,9 +40,9 @@ const Infrastructure =  () => {
                     {t("desc")}
                 </Typography>
             </motion.div>
-            <div className={"mt-16 bg-[url(/images/corporation/careers-infrastructure-bg.png)] bg-cover bg-center h-120 lg:h-[600px]"}/>
+            <div className={"mt-16 bg-[url(/images/corporation/careers-infrastructure-bg.png)] bg-cover bg-center h-120 xl:h-[600px]"}/>
             <Container>
-                <div className={"grid grid-cols-12 gap-4 lg:gap-8 mx-4 lg:mx-30 -mt-64 lg:-mt-32"}>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-8 mx-4 xl:mx-30 -mt-64 xl:-mt-32"}>
                     {
                         colAry.map((item, index) => (
                             <div className={"col-span-12 lg:col-span-4 bg-theme-light-bg px-10 pt-10 pb-24 rounded-lg"}

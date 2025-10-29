@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Reasons = () => {
     const t = useTranslations("Pages.ideas.calculator.reasons");
     return (
-        <section className={"my-4 lg:my-30"}>
+        <section className={"my-4 xl:my-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

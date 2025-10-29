@@ -27,7 +27,7 @@ const Banner =  () => {
     ];
 
     return (
-        <section className={"bg-[url(/images/accounts/platinum-banner.png)] bg-center bg-cover py-4 lg:py-24 h-160 lg:h-[632px]"}>
+        <section className={"bg-[url(/images/accounts/platinum-banner.png)] bg-center bg-cover py-4 xl:py-24 h-124 xl:h-[632px]"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -71,7 +71,7 @@ const Banner =  () => {
                         }
                     </ul>
                 </motion.div>
-                <div className={"mt-8 lg:mt-16"}>
+                <div className={"mt-8 xl:mt-16"}>
                     <Button className={"bg-white hover:!bg-white text-black"}>
                         {t("register")}
                     </Button>

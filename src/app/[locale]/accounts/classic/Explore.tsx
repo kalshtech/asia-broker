@@ -31,7 +31,7 @@ const Explore = () => {
     ];
 
     return (
-        <section className={"py-4 lg:py-30 bg-theme-deep-bg"}>
+        <section className={"py-4 xl:py-30 bg-theme-deep-bg"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -48,7 +48,7 @@ const Explore = () => {
                 </motion.div>
                 <div className={"mt-16"}>
                     <div className={"grid grid-cols-12 lg:gap-10"}>
-                        <div className={"col-span-12 lg:col-span-6"}>
+                        <div className={"col-span-12 xl:col-span-6"}>
                             <div className={"grid-cols-12 grid"}>
                                 <div className={"col-span-12 lg:col-span-7"}>
                                     <div className={"bg-white h-full px-8 py-16"}>
@@ -98,7 +98,7 @@ const Explore = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={"col-span-12 lg:col-span-6"}>
+                        <div className={"col-span-12 xl:col-span-6"}>
                             <div className={"grid-cols-12 grid"}>
                                 <div className={"col-span-12 lg:col-span-7"}>
                                     <div className={"bg-white h-full px-8 py-16"}>

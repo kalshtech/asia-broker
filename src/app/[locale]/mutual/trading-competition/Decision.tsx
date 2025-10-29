@@ -24,7 +24,7 @@ const Decision = () => {
     ];
 
     return (
-        <section className={"py-8 lg:py-30"}>
+        <section className={"py-8 xl:py-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
@@ -54,7 +54,7 @@ const Decision = () => {
             <div className={"mt-16"}>
                 <div className={"grid grid-cols-12"}>
                     <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={"bg-theme-active h-full py-6 px-8 lg:px-30 lg:py-20"}>
+                        <div className={"bg-theme-active h-full py-6 px-8 xl:px-30 xl:py-20"}>
                             <div>
                                 <Typography
                                     variant={"h5"}

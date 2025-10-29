@@ -16,7 +16,7 @@ const fadeInUp: Variants = {
     },
 }
 
-const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, children }: any) => {
+const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, children, prompt }: any) => {
     const isLight = theme === "light";
     return (
         <section className={classnames(["xl:py-30", {
@@ -88,23 +88,24 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, ch
                                     >
                                         {item.desc}
                                     </Typography>
-
-                                    {
-                                        item.prompt && (
-                                            <Typography
-                                                variant={"muted"}
-                                                className={classnames(["!text-xs mt-6", {
-                                                    "!text-white": !isLight
-                                                }])}
-                                            >
-                                                {item.prompt}
-                                            </Typography>
-                                        )
-                                    }
                                 </div>
                             ))
                         }
                     </div>
+
+                    {
+                        prompt && (
+                            <Typography
+                                variant={"muted"}
+                                className={classnames(["!text-xs text-center max-w-3xl mx-auto mt-6", {
+                                    "!text-white": !isLight
+                                }])}
+                            >
+                                {prompt}
+                            </Typography>
+                        )
+                    }
+
                     {
                         isShowBtn && (
                             <div className={"mt-16 flex justify-center"}>
