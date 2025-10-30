@@ -30,6 +30,11 @@ const Rank = () => {
     const t = useTranslations("Pages.mutual.trading-competition.rank");
     const [ tabActive, setTabActive ] = useState<string>("1");
 
+    const tabList = [
+        { label: t("tabs.1"), value: "1" },
+        { label: t("tabs.2"), value: "2" },
+        { label: t("tabs.3"), value: "3" },
+    ];
 
     const oneAry = [
         { name: "风中的指标侠", credit: "1870.58%", type: "Classic", operator: t("table.copy") },
@@ -94,24 +99,17 @@ const Rank = () => {
                 <div className={"mt-4 lg:mt-16 flex justify-center"}>
                     <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
                         <TabsList className={"bg-[#3B4259] h-10 rounded-full"}>
-                            <TabsTrigger
-                                value={"1"}
-                                className={"cursor-pointer text-white data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
-                            >
-                                {t("tabs.1")}
-                            </TabsTrigger>
-                            <TabsTrigger
-                                value={"2"}
-                                className={"cursor-pointer text-white data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
-                            >
-                                {t("tabs.2")}
-                            </TabsTrigger>
-                            <TabsTrigger
-                                value={"3"}
-                                className={"cursor-pointer text-white data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
-                            >
-                                {t("tabs.3")}
-                            </TabsTrigger>
+                            {
+                                tabList.map((d, i) => (
+                                    <TabsTrigger
+                                        key={i}
+                                        value={d.value}
+                                        className={"cursor-pointer text-white data-[state=active]:bg-theme-active data-[state=active]:text-primary-foreground"}
+                                    >
+                                        {d.label}
+                                    </TabsTrigger>
+                                ))
+                            }
                         </TabsList>
                     </Tabs>
                 </div>
@@ -123,8 +121,8 @@ const Rank = () => {
                         {t(`prompt.${tabActive}`)}
                     </Typography>
                     <Table className={"mt-4"}>
-                        <TableHeader className={"bg-[#323A53]"}>
-                            <TableRow>
+                        <TableHeader className={"bg-[#1F2538]"}>
+                            <TableRow className={"!border-b-[#3B4259] hover:!bg-[#1F2538]"}>
                                 <TableHead className={"py-6 !text-white pl-16 w-80"}>{t("table.rank")}</TableHead>
                                 <TableHead className={"py-6 !text-white"}>{t("table.name")}</TableHead>
                                 <TableHead className={"py-6 !text-white"}>{t("table.credit")}</TableHead>
@@ -135,7 +133,7 @@ const Rank = () => {
                         <TableBody>
                             {
                                 Ary.map((item: any, index: any) => (
-                                    <TableRow key={index} className={"bg-[#3B4259]"}>
+                                    <TableRow key={index} className={"bg-[#1F2538] !border-b-[#3B4259] hover:!bg-[#1F2538]"}>
                                         <TableCell className={"py-6 text-white pl-16 w-80"}>
                                             {
                                                 index === 0 ?
