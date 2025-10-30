@@ -52,7 +52,7 @@ const Principle = () => {
                                 >
                                     <Typography
                                         variant={"h5"}
-                                        className={"font-medium"}
+                                        className={"font-medium truncate"}
                                     >
                                         {item.title}
                                     </Typography>

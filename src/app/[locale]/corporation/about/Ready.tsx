@@ -43,15 +43,15 @@ const Ready = () => {
                     <img src="/images/corporation/about-ready.png" className={"relative z-10"} alt=""/>
                     <Container>
                         <div className={"grid grid-cols-12 gap-4 p-4 lg:p-12 bg-theme-deep-bg rounded-lg -mt-20 flex-col lg:flex-row relative z-20"}>
-                            <div className={"col-span-12 lg:col-span-8"}>
+                            <div className={"col-span-12 xl:col-span-8"}>
                                 <Typography
                                     variant={"lead"}
-                                    className={"!text-white"}
+                                    className={"!text-white text-center xl:text-left"}
                                 >
                                     {t("joint")}
                                 </Typography>
                             </div>
-                            <div className={"col-span-12 lg:col-span-4"}>
+                            <div className={"col-span-12 xl:col-span-4"}>
                                 <div className={"flex mt-4 lg:mt-0 justify-center"}>
                                     <Button className={"h-10 bg-theme-active hover:bg-theme-active-hover"}>
                                         {t("trade")}

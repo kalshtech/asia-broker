@@ -68,7 +68,8 @@ const Permission = () => {
                         breakpoints={{
                             320: {slidesPerView: 1.5, spaceBetween: 16,},
                             600: {slidesPerView: 2.5, spaceBetween: 24,},
-                            900: {slidesPerView: 4.5, spaceBetween: 36,},
+                            900: {slidesPerView: 3.5, spaceBetween: 36,},
+                            1200: {slidesPerView: 4.5, spaceBetween: 36,},
                         }}
                         className="mySwiper"
                     >

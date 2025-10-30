@@ -53,7 +53,7 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, ch
                         {
                             ary.map((item: any, index: number) => (
                                 <div
-                                    className={classnames(["rounded-2xl py-10 px-8 col-span-12", `lg:col-span-${12 / ary.length}`, {
+                                    className={classnames(["rounded-2xl py-10 px-8 col-span-12", `lg:col-span-6 xl:col-span-${12 / ary.length}`, {
                                         "bg-theme-light-bg": isLight,
                                         "bg-[#1F2538] border border-[#4F5670]": !isLight
                                     }])} key={index}>
