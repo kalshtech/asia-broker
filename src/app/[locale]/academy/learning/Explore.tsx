@@ -28,7 +28,7 @@ const Explore = () => {
                                 {t("row.col1.desc")}
                             </Typography>
 
-                            <div className={"mt-16"}>
+                            <div className={"mt-8 xl:mt-16"}>
                                 <GeneralLinkBtn
                                     text={t("row.col1.btnText")}
                                     path={"/ideas/professional"}

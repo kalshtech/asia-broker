@@ -39,13 +39,13 @@ export default function Vision() {
                     <div className={"flex justify-center"}>
                         <Typography
                             variant={"h3"}
-                            className={"text-center !text-white"}
+                            className={"text-center !text-white lg:text-2xl"}
                         >
                             {t("title1")}
                         </Typography>
                         <Typography
                             variant={"h3"}
-                            className={"text-center !text-[#1F8BFF] ml-2"}
+                            className={"text-center !text-[#1F8BFF] ml-2 lg:text-2xl"}
                         >
                             {t("title2")}
                         </Typography>
@@ -86,9 +86,9 @@ export default function Vision() {
                         {
                             swiperAry.map((item, index) => (
                                 <SwiperSlide key={index} className={"specially-swiper-card h-full"}>
-                                    <div className={"p-6"}>
+                                    <div className={"p-6 h-full"}>
                                         <div className={"grid grid-cols-12 gap-4"}>
-                                            <div className={"col-span-6"}>
+                                            <div className={"col-span-12 xl:col-span-6"}>
                                                 <div>
                                                     <Typography
                                                         variant={"h3"}
@@ -97,7 +97,7 @@ export default function Vision() {
                                                         {item.amount}
                                                     </Typography>
                                                 </div>
-                                                <div className={"mt-10"}>
+                                                <div className={"mt-4 xl:mt-10"}>
                                                     <Typography
                                                         variant={"muted"}
                                                         className={"font-medium !text-white"}
@@ -116,7 +116,7 @@ export default function Vision() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className={"col-span-6"}>
+                                            <div className={"col-span-12 xl:col-span-6"}>
                                                 <img src={item.imageUrl} alt=""/>
                                             </div>
                                         </div>

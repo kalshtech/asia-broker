@@ -52,7 +52,7 @@ export default async function Page() {
         },
         {
             question: t("qa.ul.li5.title"),
-            answer: t("qa.ul.li6.desc"),
+            answer: t("qa.ul.li5.desc"),
         },
         {
             question: t("qa.ul.li6.title"),

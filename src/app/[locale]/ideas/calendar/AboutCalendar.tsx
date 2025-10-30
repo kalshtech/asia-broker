@@ -35,7 +35,7 @@ const AboutCalendar = () => {
                         {t("desc")}
                     </Typography>
                 </motion.div>
-                <div className={"max-w-4xl mx-auto mt-8 lg:mt-30"}>
+                <div className={"max-w-4xl mx-auto mt-8 xl:mt-30"}>
                     <div className={"grid grid-cols-12 gap-8"}>
                         <div className={"col-span-12 lg:col-span-4"}>
                             <Input placeholder={t("form.first-placeholder")}
