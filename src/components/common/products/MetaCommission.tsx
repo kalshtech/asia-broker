@@ -20,13 +20,13 @@ const MetaProfession = ( props: Props ) => {
         <Container>
             <div className={"flex items-center flex-col xl:flex-row"}>
                 <div>
-                    <Typography variant={"h3"} className={"!text-theme-active max-w-xl"}>
+                    <Typography variant={"h3"} className={"!text-theme-active"}>
                         { t("meta.title") }
                     </Typography>
 
                     <Typography
                         variant={"p"}
-                        className={"max-w-xl mt-6"}
+                        className={"mt-6"}
                     >
                         { t("meta.desc") }
                     </Typography>
