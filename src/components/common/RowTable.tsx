@@ -36,7 +36,7 @@ const RowTable = (props: Props) => {
         <section className={"py-4 xl:py-30"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-12 lg:col-span-4"}>
+                    <div className={"col-span-12 xl:col-span-4"}>
                         <motion.div
                             variants={fadeInUp}
                             initial="hidden"
@@ -45,7 +45,10 @@ const RowTable = (props: Props) => {
                             className={overview ? "mt-8 lg:mt-16" : ""}
                         >
 
-                            <Typography variant={"h3"}>
+                            <Typography
+                                variant={"h3"}
+                                className={"text-center xl:text-left"}
+                            >
                                 {title}
                             </Typography>
 
@@ -62,13 +65,13 @@ const RowTable = (props: Props) => {
 
                         </motion.div>
                     </div>
-                    <div className={"col-span-12 lg:col-span-8"}>
+                    <div className={"col-span-12 xl:col-span-8"}>
                         <div>
                             {
                                 overview && (
                                     <Typography
                                         variant={"p"}
-                                        className={"font-normal !text-[#999]"}
+                                        className={"font-normal !text-[#999] text-center xl:text-left"}
                                     >
                                         {overviewText}
                                     </Typography>

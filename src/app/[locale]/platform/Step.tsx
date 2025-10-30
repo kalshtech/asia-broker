@@ -102,7 +102,7 @@ const Step = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"mx-auto mt-8 lg:mt-24"}>
+                <div className={"mx-auto mt-8 xl:mt-24"}>
                     <div className={"flex justify-center"}>
                         <RegisterBtn className={"bg-white hover:bg-white text-theme-active"}/>
                         <GeneralLinkBtn
