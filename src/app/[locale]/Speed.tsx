@@ -33,7 +33,7 @@ const Speed = () => {
                         {t("title2")}
                     </Typography>
 
-                    <Typography className={"text-center mt-6 mx-auto max-w-7xl"}>
+                    <Typography variant={"muted"} className={"text-center mt-6 mx-auto max-w-7xl"}>
                         {t("description")}
                     </Typography>
                 </motion.div>
@@ -48,8 +48,8 @@ const Speed = () => {
 
                 <div className={"relative"}>
                     <div
-                        className={"bg-[url(/images/home/speed-server-bg.png)] bg-center bg-cover bg-no-repeat min-h-[369px]"}>
-                        <div className={"grid grid-cols-12 gap-4 px-10 py-12 w-full"}>
+                        className={"bg-[url(/images/mobile/speed-server-bg.png)] xl:bg-[url(/images/home/speed-server-bg.png)] bg-center bg-cover bg-no-repeat min-h-[369px]"}>
+                        <div className={"grid grid-cols-12 gap-4 px-10 py-12 w-full min-h-[369px]"}>
                             <div className="text-white relative col-span-12 lg:col-span-4">
                                 <Typography
                                     variant={"h6"}

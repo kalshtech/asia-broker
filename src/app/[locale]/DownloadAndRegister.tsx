@@ -33,7 +33,7 @@ const DownloadAndRegister = () => {
                                 </div>
                             </div>
                             <div className={"flex flex-1 bg-theme-deep-bg mt-4 lg:mt-20"}>
-                                <div className={"flex flex-col flex-1 py-10 px-6 bg-[url(/images/home/example-kline-desk.png)] bg-center bg-cover lg:bg-auto lg:bg-left-top min-h-80 lg:min-h-160"}>
+                                <div className={"flex flex-col flex-1 py-10 px-6 bg-[url(/images/mobile/example-kline-desk.png)]  xl:bg-[url(/images/home/example-kline-desk.png)] bg-center bg-cover lg:bg-auto lg:bg-left-top min-h-80 lg:min-h-160"}>
                                     <Typography
                                         variant={"h5"}
                                         className={"!text-white font-medium"}
@@ -52,7 +52,7 @@ const DownloadAndRegister = () => {
                     </div>
                     <div className={"col-span-12 lg:col-span-4"}>
                         <div className={"flex bg-theme-deep-bg h-full"}>
-                            <div className={"flex flex-col flex-1 py-10 px-6 bg-[url(/images/home/example-kline.png)] min-h-80 bg-center bg-cover"}>
+                            <div className={"flex flex-col flex-1 py-10 px-6 bg-[url(/images/mobile/example-kline.png)] xl:bg-[url(/images/home/example-kline.png)] min-h-80 bg-center bg-cover"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"!text-white font-medium"}
@@ -71,7 +71,7 @@ const DownloadAndRegister = () => {
                     <div className={"col-span-12 lg:col-span-4"}>
                         <div className={"grid grid-cols-12 gap-4 h-full"}>
                             <div className={"col-span-12 h-full"}>
-                                <div className={"flex-1 flex flex-col bg-theme-deep-bg bg-[url(/images/home/auto-MQL5.png)] min-h-80 bg-center bg-cover py-10 px-6 relative h-full"}>
+                                <div className={"flex-1 flex flex-col bg-theme-deep-bg bg-[url(/images/mobile/auto-MQL5.png)] xl:bg-[url(/images/home/auto-MQL5.png)] min-h-80 bg-center bg-cover py-10 px-6 relative h-full"}>
                                     <div className={"flex flex-col z-10 h-full"}>
                                         <Typography
                                             variant={"h5"}
@@ -90,7 +90,7 @@ const DownloadAndRegister = () => {
                             </div>
                             <div className={"col-span-12"}>
                                 <div className={"flex bg-theme-deep-bg h-full"}>
-                                    <div className={"flex flex-col py-10 px-6 bg-[url(/images/home/auto-EA.png)] min-h-80 bg-center bg-cover relative flex-1 h-full"}>
+                                    <div className={"flex flex-col py-10 px-6 bg-[url(/images/mobile/auto-EA.png)] xl:bg-[url(/images/home/auto-EA.png)] min-h-80 bg-center bg-cover relative flex-1 h-full"}>
                                         <div className={"flex flex-col"}>
                                             <Typography
                                                 variant={"h5"}

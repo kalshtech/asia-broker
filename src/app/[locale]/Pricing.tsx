@@ -109,14 +109,14 @@ const EnglishPricing = () => {
 
                     <div className={"grid grid-cols-12 gap-4 xl:gap-12 mt-10"}>
                         <div className={"col-span-12 xl:col-span-4"}>
-                            <div className={"bg-black py-20 px-16 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] xl:mt-10"}>
+                            <div className={"bg-black px-8 py-10 xl:py-20 xl:px-16 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] xl:mt-10"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"!text-white text-center"}
                                 >
                                     { t("popular") }
                                 </Typography>
-                                <div className={"grid grid-cols-3 gap-4 space-y-8 mt-16"}>
+                                <div className={"grid grid-cols-3 gap-4 space-y-8 mt-12 xl:mt-16"}>
                                     {
                                         popularFutures.map((d, i) => (
                                             <div className={"text-center"} key={i}>

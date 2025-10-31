@@ -40,7 +40,7 @@ const Community = () => {
                 </motion.div>
                 <div className={"grid grid-cols-12 gap-6 mt-16"}>
                     <div className={"col-span-12 lg:col-span-3"}>
-                        <div className={"bg-[url('/images/home/communitybg1.png')] h-full bg-cover bg-center bg-no-repeat p-6"}>
+                        <div className={"bg-[url('/images/mobile/communitybg1.png')] xl:bg-[url('/images/home/communitybg1.png')] h-full bg-cover bg-center bg-no-repeat p-6"}>
                             <div className={"flex h-full flex-1 flex-col"}>
                                 <div className={"flex flex-col pb-20 pt-20 h-full lg:pt-[310px]"}>
                                     <div className={"flex flex-col"}>
@@ -74,7 +74,7 @@ const Community = () => {
                         </div>
                     </div>
                     <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={"bg-[url('/images/home/communitybg2.png')] bg-cover bg-center bg-no-repeat p-6 h-full"}>
+                        <div className={"bg-[url('/images/mobile/communitybg2.png')] xl:bg-[url('/images/home/communitybg2.png')] bg-cover bg-center bg-no-repeat p-6 h-full"}>
                             <div className={"flex flex-1 h-full flex-col"}>
                                 <div className={"flex-col flex h-full justify-center items-center"}>
                                     <Typography
@@ -108,7 +108,7 @@ const Community = () => {
                     </div>
                     <div className={"col-span-12 lg:col-span-3"}>
                         <div
-                            className={"bg-[url('/images/home/communitybg3.png')] h-full bg-cover bg-center bg-no-repeat p-6"}>
+                            className={"bg-[url('/images/mobile/communitybg3.png')] xl:bg-[url('/images/home/communitybg3.png')] h-full bg-cover bg-center bg-no-repeat p-6"}>
                             <div className={"flex h-full flex-1 flex-col"}>
                                 <div className={"flex flex-col pb-20 pt-20 lg:pt-120"}>
                                     <div className={"flex flex-col"}>

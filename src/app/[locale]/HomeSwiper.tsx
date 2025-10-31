@@ -46,7 +46,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                             </Typography>
 
                                             <Typography
-                                                variant={"h4"}
+                                                variant={"h5"}
                                                 className={classnames(["text-center font-normal mt-6 xl:hidden", {
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
