@@ -46,7 +46,7 @@ const Explore = () => {
                         {t("title")}
                     </Typography>
                 </motion.div>
-                <div className={"mt-16"}>
+                <div className={"mt-4 xl:mt-16"}>
                     <div className={"grid grid-cols-12 lg:gap-10"}>
                         <div className={"col-span-12 xl:col-span-6"}>
                             <div className={"grid-cols-12 grid"}>

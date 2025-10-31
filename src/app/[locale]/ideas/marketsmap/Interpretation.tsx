@@ -17,7 +17,7 @@ const Interpretation = () => {
             <Container>
                 <div className={"grid grid-cols-12"}>
                     <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={"px-12 py-20 bg-theme-deep-bg h-full lg:rounded-l-lg"}>
+                        <div className={"px-6 py-8 xl:px-12 xl:py-20 bg-theme-deep-bg h-full lg:rounded-l-lg"}>
                             <Typography variant={"h4"} className={"!text-white"}>
                                 {t("row.col1.title")}
                             </Typography>
