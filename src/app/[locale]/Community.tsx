@@ -22,7 +22,7 @@ const Community = () => {
     const t = useTranslations("Pages.home.community");
 
     return (
-        <section className={"xl:p-30 bg-theme-light-bg"}>
+        <section className={"py-16 xl:p-30 bg-theme-light-bg"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

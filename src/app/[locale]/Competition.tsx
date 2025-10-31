@@ -33,7 +33,7 @@ export default function Competition() {
     const collapsed = (1 - ACTIVE) / (items.length - 1);
 
     return (
-        <section className={"xl:p-30"}>
+        <section className={"py-16 xl:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

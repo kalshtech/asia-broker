@@ -43,7 +43,7 @@ const Assets = () => {
     }
 
     return (
-        <section className={"bg-theme-deep-bg xl:p-30"}>
+        <section className={"bg-theme-deep-bg py-16 xl:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

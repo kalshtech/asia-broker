@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Reward = () => {
     const t = useTranslations("Pages.home.reward");
     return (
-        <section className={"bg-[url('/images/home/reward-background.png')] bg-cover bg-center bg-no-repeat py-8 xl:py-20 xl:px-30"}>
+        <section className={"bg-[url('/images/home/reward-background.png')] bg-cover bg-center bg-no-repeat py-16 xl:py-20 xl:px-30"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-4"}>
                     <div className={"flex items-center col-span-12 lg:col-span-6"}>

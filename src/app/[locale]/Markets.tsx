@@ -154,7 +154,7 @@ const Markets = () => {
     }, [ tabActive ])
 
     return (
-        <section className={"xl:p-30 hidden lg:block"}>
+        <section className={"py-16 xl:p-30 hidden lg:block"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

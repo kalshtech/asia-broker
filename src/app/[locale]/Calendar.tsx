@@ -21,7 +21,7 @@ const CalendarComponent = () => {
     const t = useTranslations("Pages.home.calendar");
 
     return (
-        <section className={"bg-theme-deep-bg xl:py-30"}>
+        <section className={"bg-theme-deep-bg py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

@@ -659,7 +659,7 @@ const Navigation = () => {
                                 setResponsiveList(item.children);
                                 setListOpen(true);
                             }}>
-                                <Typography variant={"muted"} className={"!text-theme-active"}>{item.title}</Typography>
+                                <Typography variant={"h6"} className={"!text-theme-active"}>{item.title}</Typography>
                                 <ChevronRight className={"ml-auto"}/>
                             </li>
                         ))}
@@ -684,7 +684,6 @@ const Navigation = () => {
                         <Globe/>
                         <h2 className="text-base font-semibold ml-2">
                             {getLangText(locale)}
-                            <span>(当前语言)</span>
                         </h2>
                     </div>
                     <button
@@ -710,7 +709,7 @@ const Navigation = () => {
                                     alt={item.value}
                                     title={item.value}
                                 />
-                                <Typography variant={"muted"} className={"ml-2"}>{item.label}</Typography>
+                                <Typography variant={"h6"} className={"ml-2 !text-theme-active"}>{item.label}</Typography>
                             </li>
                         ))}
                     </ul>
@@ -752,8 +751,8 @@ const Navigation = () => {
                             responsiveList.map((item: any, index: number) => (
                                 <div key={index} className={"my-4"}>
                                     <Typography
-                                        variant={"muted"}
-                                        className={"text-[#4b5563] border-b pb-4"}
+                                        variant={"h6"}
+                                        className={"!text-[#4b5563] font-normal border-b pb-4"}
                                     >
                                         { item.title }
                                     </Typography>
@@ -770,7 +769,12 @@ const Navigation = () => {
                                                                 setDrawerOpen(false);
                                                             }}
                                                         >
-                                                            { uItem.label }
+                                                            <Typography
+                                                                variant={"h6"}
+                                                                className={"!text-theme-active"}
+                                                            >
+                                                                { uItem.label }
+                                                            </Typography>
                                                         </Link>
                                                     </li>
                                                 ))

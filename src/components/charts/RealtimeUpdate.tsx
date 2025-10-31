@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import {createChart, IChartApi, LineSeries, CandlestickSeries} from "lightweight-charts";
+import {createChart, IChartApi, LineSeries, CandlestickSeries, CandlestickData} from "lightweight-charts";
 
 let randomFactor = 25 + Math.random() * 25;
 const samplePoint = (i: any) =>
@@ -74,31 +74,34 @@ function generateData(
 
 
 const RealTimeUpdate: React.FC<any> = ({ data }) => {
+    const MAX_BARS = 200; // ✅ 想显示多少根就在这里改
+
     const chartContainerRef = useRef<HTMLDivElement>(null);
     const chartRef = useRef<IChartApi | null>(null);
+
+    const dataRef = useRef<CandlestickData[]>([]);
 
     const chartOptions = {
         autoSize: true,
         layout: {
-            textColor: 'black',
-            background: { type: 'solid', color: 'transparent' },
-            attributionLogo: false
+            textColor: "black",
+            background: { type: "solid", color: "transparent" },
+            attributionLogo: false,
         },
         grid: {
-            vertLines: { visible: false, },
-            horzLines: { visible: false, },
+            vertLines: { visible: false },
+            horzLines: { visible: false },
         },
-        timeScale: { visible: false, },
-        rightPriceScale: { visible: false, },
+        timeScale: { visible: false },
+        rightPriceScale: { visible: false },
         handleScale: false,
         handleScroll: false,
-        height: 400
+        height: 400,
     };
 
     const handleResizeHandler = () => {
         requestAnimationFrame(() => {
-            if(!chartRef.current) return;
-
+            if (!chartRef.current) return;
             chartRef.current.timeScale().fitContent();
         });
     };
@@ -109,16 +112,19 @@ const RealTimeUpdate: React.FC<any> = ({ data }) => {
         chartRef.current = createChart(chartContainerRef.current, chartOptions as any);
 
         const series = chartRef.current.addSeries(CandlestickSeries, {
-            upColor: '#26a69a',
-            downColor: '#ef5350',
+            upColor: "#26a69a",
+            downColor: "#ef5350",
             borderVisible: false,
-            wickUpColor: '#26a69a',
-            wickDownColor: '#ef5350',
+            wickUpColor: "#26a69a",
+            wickDownColor: "#ef5350",
         });
 
         const data = generateData(2500, 20, 1000);
+        const initData = data.initialData.slice(-MAX_BARS);
 
-        series.setData(data.initialData);
+        dataRef.current = initData;
+        series.setData(initData);
+
         chartRef.current.timeScale().fitContent();
 
         function* getNextRealtimeUpdate(realtimeData: any) {
@@ -135,7 +141,33 @@ const RealTimeUpdate: React.FC<any> = ({ data }) => {
                 clearInterval(intervalID);
                 return;
             }
-            series.update(update.value);
+
+            const newBar = update.value;
+
+            // 当前已经在图上的数据
+            const current = dataRef.current;
+            const last = current[current.length - 1];
+
+            // ① 情况一：时间相同 => 说明是同一根K线的“最新报价”，直接替换最后一根
+            if (last && last.time === newBar.time) {
+                const replaced = [...current.slice(0, -1), newBar];
+                dataRef.current = replaced;
+                series.update(newBar); // 这里用 update 就好
+                return;
+            }
+
+            // ② 情况二：时间往后走了 => 是真正的新K线
+            const appended = [...current, newBar];
+
+            if (appended.length > MAX_BARS) {
+                const sliced = appended.slice(-MAX_BARS);
+                dataRef.current = sliced;
+                // 因为删了前面的，就要重新 setData
+                series.setData(sliced);
+            } else {
+                dataRef.current = appended;
+                series.update(newBar);
+            }
         }, 100);
 
         window.addEventListener("resize", handleResizeHandler);
@@ -143,8 +175,9 @@ const RealTimeUpdate: React.FC<any> = ({ data }) => {
         return () => {
             chartRef.current?.remove();
             window.removeEventListener("resize", handleResizeHandler);
+            clearInterval(intervalID);
         };
-    }, [data]);
+    }, []);
 
     return (
         <div ref={chartContainerRef} />

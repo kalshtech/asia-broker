@@ -204,7 +204,7 @@ const Properly = () => {
     }
 
     return (
-        <section className={"xl:py-30 xl:pl-30"}>
+        <section className={"py-16 xl:py-30 xl:pl-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

@@ -94,7 +94,7 @@ const EnglishPricing = () => {
     ];
 
     return (
-        <section ref={cardsWrapRef}  className={"bg-[linear-gradient(180deg,#000516_0%,#1C327B_48%,#000516_100%)] py-4 xl:py-20"}>
+        <section ref={cardsWrapRef}  className={"bg-[linear-gradient(180deg,#000516_0%,#1C327B_48%,#000516_100%)] py-16"}>
             <Container>
                 <div>
                     <div>
