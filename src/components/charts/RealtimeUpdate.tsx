@@ -74,7 +74,7 @@ function generateData(
 
 
 const RealTimeUpdate: React.FC<any> = ({ data }) => {
-    const MAX_BARS = 200; // ✅ 想显示多少根就在这里改
+    const MAX_BARS = 80; // ✅ 想显示多少根就在这里改
 
     const chartContainerRef = useRef<HTMLDivElement>(null);
     const chartRef = useRef<IChartApi | null>(null);
