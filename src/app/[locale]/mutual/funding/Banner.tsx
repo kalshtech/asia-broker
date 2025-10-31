@@ -19,7 +19,7 @@ const fadeInUp: Variants = {
 const Banner = () => {
     const t = useTranslations("Pages.mutual.funding.banner");
     return (
-        <section className={"bg-[url(/images/mutual/funding-banner.png)] bg-center bg-cover relative h-96 lg:h-124 xl:h-[632px] py-8 xl:py-30"}>
+        <section className={"bg-[url(/images/mutual/funding-banner.png)] bg-center bg-cover relative h-124 lg:h-136 xl:h-[632px] py-8 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
