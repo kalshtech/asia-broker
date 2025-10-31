@@ -135,7 +135,7 @@ const Advertisement = () => {
 
                 <div className={"mt-4 xl:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4 xl:gap-9"}>
-                        <div className={"col-span-6 lg:col-span-4 xl:col-span-3"}>
+                        <div className={"col-span-12 lg:col-span-4 xl:col-span-3"}>
                             <div
                                 className={`bg-[url('/images/home/en-advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
                                 <div
@@ -158,7 +158,7 @@ const Advertisement = () => {
                                                 {t("1.description")}
                                             </Typography>
                                         </div>
-                                        <div className={"mt-4 xl:mt-8"}>
+                                        <div className={"mt-8"}>
                                             <Button className={"bg-theme-active hover:bg-theme-active-hover cursor-pointer"}>
                                                 {t("1.btn")}
                                             </Button>
@@ -167,7 +167,7 @@ const Advertisement = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={"col-span-6 lg:col-span-8 xl:col-span-9"}>
+                        <div className={"col-span-12 lg:col-span-8 xl:col-span-9"}>
                             <Swiper
                                 slidesPerView={3.5}
                                 spaceBetween={36}
@@ -181,7 +181,7 @@ const Advertisement = () => {
                                 }}
                                 modules={[Navigation]}
                                 breakpoints={{
-                                    320: {slidesPerView: 1.1, spaceBetween: 16,},
+                                    320: {slidesPerView: 1.5, spaceBetween: 24,},
                                     600: {slidesPerView: 2.2, spaceBetween: 24,},
                                     900: {slidesPerView: 2.2, spaceBetween: 36,},
                                     1200: {slidesPerView: 3.2, spaceBetween: 36,},
