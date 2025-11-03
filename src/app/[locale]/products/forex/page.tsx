@@ -137,7 +137,7 @@ export default async function Page() {
             <Banner
                 title={t("banner.title")}
                 description={t("banner.description")}
-                imageUrl={"bg-[url(/images/products/forex-background.png)]"}
+                imageUrl={"bg-[url(/images/products/forex-background-mobile.png)] xl:bg-[url(/images/products/forex-background.png)]"}
                 midst={t("banner.midst")}
             />
             <Markets

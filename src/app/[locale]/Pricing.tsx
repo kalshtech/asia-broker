@@ -93,7 +93,7 @@ const EnglishPricing = () => {
                         </Typography>
 
                         <Typography variant={"h6"} className={"font-normal text-center !text-white mt-6"}>
-                            {t("left.title2")}{t("left.title3")}
+                            {t("left.title2")} <span className={"ml-1"}>{t("left.title3")}</span>
                         </Typography>
                     </div>
 
