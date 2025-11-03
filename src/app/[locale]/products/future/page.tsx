@@ -12,55 +12,55 @@ import MetaCommission from "@/components/common/products/MetaCommission";
 export default async function Page() {
     const t = await getTranslations("Pages.products.future");
     const mainList = [
-        { symbol: "6A",  name: "澳元/美元（AUD/USD）期货" },
-        { symbol: "6B",  name: "英镑/美元（GBP/USD）期货" },
-        { symbol: "6C",  name: "加元/美元（CAD/USD）期货" },
-        { symbol: "6E",  name: "欧元/美元（EUR/USD）期货" },
-        { symbol: "6J",  name: "日元/美元（JPY/USD）期货" },
-        { symbol: "6S",  name: "瑞士法郎/美元（CHF/USD）期货" },
-        { symbol: "UC", name: "人民币相关期货（CNH/USD）" }
+        { symbol: "6A", name: "AUD/USD Futures" },
+        { symbol: "6B", name: "GBP/USD Futures" },
+        { symbol: "6C", name: "CAD/USD Futures" },
+        { symbol: "6E", name: "EUR/USD Futures" },
+        { symbol: "6J", name: "JPY/USD Futures" },
+        { symbol: "6S", name: "CHF/USD Futures" },
+        { symbol: "UC", name: "CNH/USD Futures" }
     ];
 
     const secondList = [
-        { symbol: "ES",  name: "标准普尔500指数期货" },
-        { symbol: "MES",  name: "微型标普500指数期货" },
-        { symbol: "NQ",  name: "纳斯达克100指数期货" },
-        { symbol: "MNQ",  name: "微型纳斯达克100指数期货" },
-        { symbol: "YM",  name: "道琼斯30指数期货" },
-        { symbol: "MYM",  name: "微型道琼斯指数期货" },
-        { symbol: "FDAX", name: "德国DAX指数期货" },
-        { symbol: "FDXM", name: "德国小型DAX指数期货" },
-        { symbol: "FESX", name: "欧洲Stoxx 50指数期货" },
-        { symbol: "HSI", name: "恒生指数期货" },
-        { symbol: "MHI", name: "小型恒生指数期货" },
-        { symbol: "HHI", name: "恒生中国企业指数期货" },
-        { symbol: "HTI", name: "恒生科技指数期货" },
-        { symbol: "MCA", name: "中型A股指数期货" },
-        { symbol: "MCH", name: "小型A股指数期货" }
+        { symbol: "ES", name: "S&P 500 Index Futures" },
+        { symbol: "MES", name: "Micro S&P 500 Index Futures" },
+        { symbol: "NQ", name: "Nasdaq-100 Index Futures" },
+        { symbol: "MNQ", name: "Micro Nasdaq-100 Index Futures" },
+        { symbol: "YM", name: "Dow Jones Index Futures" },
+        { symbol: "MYM", name: "Micro Dow Jones Index Futures" },
+        { symbol: "FDAX", name: "German DAX Index Futures" },
+        { symbol: "FDXM", name: "Mini DAX Index Futures" },
+        { symbol: "FESX", name: "EURO STOXX 50 Index Futures" },
+        { symbol: "HSI", name: "Hang Seng Index Futures" },
+        { symbol: "MHI", name: "Mini Hang Seng Index Futures" },
+        { symbol: "HHI", name: "Hang Seng China Enterprises Index Futures" },
+        { symbol: "HTI", name: "Hang Seng Tech Index Futures" },
+        { symbol: "MCA", name: "Mid-Cap A-Share Index Futures" },
+        { symbol: "MCH", name: "Small-Cap A-Share Index Futures" }
     ];
 
     const otherList = [
-        { symbol: "CL",  name: "原油期货" },
-        { symbol: "MCL",  name: "微型原油期货" },
-        { symbol: "QM",  name: "小型原油期货" },
-        { symbol: "NG",  name: "天然气期货" },
-        { symbol: "GC",  name: "黄金期货" },
-        { symbol: "MGC",  name: "微型黄金期货" },
-        { symbol: "QO", name: "小型黄金期货" },
-        { symbol: "SI", name: "白银期货" },
-        { symbol: "HG", name: "铜期货" },
-        { symbol: "PL", name: "铂金期货" },
-        { symbol: "PA", name: "钯金期货" }
+        { symbol: "CL", name: "Crude Oil Futures" },
+        { symbol: "MCL", name: "Micro Crude Oil Futures" },
+        { symbol: "QM", name: "Mini Crude Oil Futures" },
+        { symbol: "NG", name: "Natural Gas Futures" },
+        { symbol: "GC", name: "Gold Futures" },
+        { symbol: "MGC", name: "Micro Gold Futures" },
+        { symbol: "QO", name: "Mini Gold Futures" },
+        { symbol: "SI", name: "Silver Futures" },
+        { symbol: "HG", name: "Copper Futures" },
+        { symbol: "PL", name: "Platinum Futures" },
+        { symbol: "PA", name: "Palladium Futures" }
     ];
 
     const other4List = [
-        { symbol: "ZC",  name: "玉米期货" },
-        { symbol: "ZS",  name: "大豆期货" },
-        { symbol: "ZM",  name: "豆粕期货" },
-        { symbol: "ZL",  name: "豆油期货" },
-        { symbol: "ZW",  name: "小麦期货" },
-        { symbol: "CN",  name: "中国国债期货" },
-        { symbol: "FGBL", name: "德国长期国债（Bund）期货" }
+        { symbol: "ZC", name: "Corn Futures" },
+        { symbol: "ZS", name: "Soybean Futures" },
+        { symbol: "ZM", name: "Soybean Meal Futures" },
+        { symbol: "ZL", name: "Soybean Oil Futures" },
+        { symbol: "ZW", name: "Wheat Futures" },
+        { symbol: "CN", name: "China Government Bond Futures" },
+        { symbol: "FGBL", name: "German Bund Futures" }
     ];
 
     const marketTabList = [

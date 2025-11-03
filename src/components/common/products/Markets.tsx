@@ -266,32 +266,33 @@ const Markets = (props: Props) => {
                     )}
 
                     {type === "future" && (
-                        <Table>
-                            <TableCaption className={"mt-4 xl:mt-16"}>
-                                <Button
-                                    className={"bg-theme-active hover:bg-theme-active-hover"}>
+                        <>
+                            <Table>
+                                <TableHeader>
+                                    <TableRow>
+                                        <TableHead>{CommonT("code")}</TableHead>
+                                        <TableHead>{CommonT("productName")}</TableHead>
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
+                                    {rawData.map((item: any, index: number) => (
+                                        <TableRow key={index}>
+                                            <TableCell className={"flex"}>
+                                                <Typography className="font-medium">
+                                                    {item.symbol}
+                                                </Typography>
+                                            </TableCell>
+                                            <TableCell>{item.name}</TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                            <div className={"mt-8 flex justify-center xl:mt-16"}>
+                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                     {trade}
                                 </Button>
-                            </TableCaption>
-                            <TableHeader>
-                                <TableRow>
-                                    <TableHead>{CommonT("code")}</TableHead>
-                                    <TableHead>{CommonT("productName")}</TableHead>
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                                {rawData.map((item: any, index: number) => (
-                                    <TableRow key={index}>
-                                        <TableCell className={"flex"}>
-                                            <Typography className="font-medium">
-                                                {item.symbol}
-                                            </Typography>
-                                        </TableCell>
-                                        <TableCell>{item.name}</TableCell>
-                                    </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
+                            </div>
+                        </>
                     )}
                 </div>
             </Container>

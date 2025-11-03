@@ -186,7 +186,8 @@ const Assets = () => {
                                 </div>
                             </div>
                             <div className={"block xl:hidden"}>
-                                <Typography variant={"muted"} className={"!text-white text-center"}>
+                                <img src="/images/home/mobile-fast-deposits.png" className={"w-full h-full object-cover"} alt=""/>
+                                <Typography variant={"muted"} className={"!text-white text-center mt-8"}>
                                     { t("desc") }
                                 </Typography>
                                 <Dialog>

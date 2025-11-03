@@ -2,7 +2,7 @@
 import * as React from "react";
 import {motion, Variants} from "framer-motion";
 import {Typography} from "@/components/ui/typography";
-import {useTranslations} from "next-intl";
+import {useTranslations, useLocale} from "next-intl";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
@@ -18,9 +18,32 @@ const fadeInUp: Variants = {
 }
 
 const Cooperator = () => {
+    const locale = useLocale();
     const [rating, setRating] = React.useState(4)
     const t = useTranslations("Pages.home.cooperator");
     const [ tabActive, setTabActive ] = React.useState("trader");
+
+
+    const RenderTrustpilot = () => {
+        if(locale === "ja") {
+            return (
+                <div className="trustpilot-widget" data-locale="ja-JP" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="680278ce15b91e8838c4f5cb" data-style-height="52px" data-style-width="100%" data-token="fde10f6a-09e3-4f0e-a5d7-96f7e49aea0e">
+                    <a href="https://jp.trustpilot.com/review/afttmarkets.com" target="_blank" rel="noopener">
+                        <img src="/images/home/Trustpilot.png" className={"w-30"} alt=""/>
+                    </a>
+                </div>
+            )
+        }
+
+        return (
+            <div className="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="680278ce15b91e8838c4f5cb" data-style-height="52px" data-style-width="100%" data-token="ba496371-27c0-4e55-bfd5-d8451c8cd38a">
+                <a href="https://www.trustpilot.com/review/afttmarkets.com" target="_blank" rel="noopener">
+                    <img src="/images/home/Trustpilot.png" className={"w-30"} alt=""/>
+                </a>
+            </div>
+        )
+    }
+
     return (
         <section className={"py-16 xl:p-30"}>
             <Container>
@@ -38,7 +61,7 @@ const Cooperator = () => {
                     </Typography>
                 </motion.div>
                 <div className={"mx-auto mt-6"}>
-                    <img src="/images/home/Trustpilot.png" className={"w-30"} alt=""/>
+                    <RenderTrustpilot/>
                     <div className={"mt-2"}>
                         <div className="flex space-x-1">
                             {[1, 2, 3, 4, 5].map((i) => (
