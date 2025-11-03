@@ -216,7 +216,7 @@
         "left": {
           "title1": "Institutional-Grade Pricing. Deep Liquidity.",
           "title2": "Built for best execution. Powered by precision.",
-          "title3": "0.0 Spreads. No minimum commissions. Maximum control.",
+          "title3": "0.0 Spreads. No minimum commissions.",
           "description2": "AFT's intelligent routing and best-execution systems deliver ultra-low latency and institutional-grade depth — minimizing slippage at every step.",
           "btnText": "Explore Platinum Account",
           "fromText": "Data sourced from Asia Future Trading Platinum account and publicly available benchmarks from major platforms.",
@@ -241,7 +241,11 @@
       "speed": {
         "title1": "Lightning-Fast Infrastructure. Built for the Speed of Institutions.",
         "title2": "Direct access to Tier-1 liquidity. Internal Matching as Low as 0.1ms.",
+        "title3": "Direct access to",
+        "title4": "Tier-1 liquidity.",
         "description": "Asia Future Trading deploys ultra-low latency infrastructure across global financial hubs, directly connecting to Tier-1 liquidity providers. With Equinix data centers in London, New York, Tokyo, and Singapore, we ensure institutional-grade execution — lightning-fast, reliable, and secure.",
+        "description1": "Asia Future Trading deploys ultra-low latency infrastructure across global financial hubs, directly connecting to Tier-1 liquidity providers.",
+        "description2": "With Equinix data centers in London, New York, Tokyo, and Singapore, we ensure institutional-grade execution — lightning-fast, reliable, and secure.",
         "row": {
           "1": {
             "title": "Global Market Access",
@@ -306,6 +310,9 @@
       },
       "assets": {
         "title": "Fast Deposits. Free Withdrawals. Global Payment Support.",
+        "title1": "Fast Deposits & Withdrawals.",
+        "desc": "It's the only credit card you'll need, and it's exclusively for Asia Future Trading Gold Plan members.",
+        "prompt": "Terms and limitations apply",
         "button": {
           "type": "Deposit Methods",
           "safe": "Fees & Security",

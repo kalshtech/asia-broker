@@ -9,8 +9,6 @@ import StartTradingBtn from "@/components/StartTradingBtn";
 import RegisterBtn from "@/components/RegisterBtn";
 import classnames from "classnames";
 
-
-
 const CustomBanner = ({ ary }: { ary: any }) => {
     return (
         <div className={"h-120 lg:h-[632px]"}>
@@ -32,7 +30,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                     ary.map((item: any, index: number) => (
                         <SwiperSlide key={index}>
                             <div className={classnames([item.urlImage, "h-full bg-cover bg-center"])}>
-                                <div className={"py-4 lg:py-20"}>
+                                <div className={"py-12 lg:py-24"}>
                                     <Container>
                                         <div>
                                             <Typography
@@ -179,7 +177,7 @@ const EnglishSwiper = () => {
     return (
         <>
 
-            <div className={"h-120 xl:hidden"}>
+            <div className={"xl:hidden"}>
                 <CustomBanner ary={mobileAry}/>
             </div>
             <div className={"hidden xl:block h-[632px]"}>

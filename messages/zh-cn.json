@@ -241,7 +241,11 @@
       "speed": {
         "title1": "闪电级基础设施 · 与机构同速",
         "title2": "直连 Tier-1 流动性 · 内部撮合低至 0.1ms",
+        "title3": "闪电级基础设施 · 与机构同速",
+        "title4": "直连 Tier-1 流动性 · 内部撮合低至 0.1ms",
         "description": "Asia Future Trading 在全球金融枢纽部署超低延迟基础设施，直连一级流动性提供商。依托伦敦、纽约、东京、新加坡 Equinix 机房，提供机构级执行：更快、更稳、更安全。",
+        "description1": "Asia Future Trading 在全球金融枢纽部署超低延迟基础设施，直连一级流动性提供商。",
+        "description2": "依托伦敦、纽约、东京、新加坡 Equinix 机房，提供机构级执行：更快、更稳、更安全。",
         "row": {
           "1": {
             "title": "全球市场直达",
@@ -306,6 +310,9 @@
       },
       "assets": {
         "title": "极速入金 · 免费出金 · 全球支付支持",
+        "title1": "极速入金 & 免费出金 · 全球支付支持",
+        "desc": "It's the only credit card you'll need, and it's exclusively for Asia Future Trading Gold Plan members.",
+        "prompt": "Terms and limitations apply",
         "button": {
           "type": "入金方式",
           "safe": "费用与安全",

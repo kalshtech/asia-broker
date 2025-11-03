@@ -2,20 +2,10 @@
 import * as React from "react";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { motion, Variants } from "framer-motion";
 import Container from "@/components/Container";
 import RealTimeUpdate from "@/components/charts/RealtimeUpdate";
 import { Link } from "@/i18n/navigation";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
-
-const fadeInUp: Variants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.8, ease: 'easeOut' },
-    },
-}
 
 function Counter({from = 10, to = 0, duration = 1.2, decimals = 0, trigger}: { from?: number; to?: number; duration?: number; decimals?: number; trigger?: any; }) {
     const el = React.useRef<HTMLSpanElement>(null)
@@ -102,21 +92,21 @@ const EnglishPricing = () => {
                             {t("left.title1")}
                         </Typography>
 
-                        <Typography variant={"h4"} className={"font-normal text-center !text-white mt-6"}>
-                            {t("left.title2")} {t("left.title3")}
+                        <Typography variant={"h6"} className={"font-normal text-center !text-white mt-6"}>
+                            {t("left.title2")}{t("left.title3")}
                         </Typography>
                     </div>
 
                     <div className={"grid grid-cols-12 gap-4 xl:gap-12 mt-10"}>
                         <div className={"col-span-12 xl:col-span-4"}>
-                            <div className={"bg-black px-8 py-10 xl:py-20 xl:px-16 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] xl:mt-10"}>
+                            <div className={"px-8 py-10 xl:py-20 xl:px-16 xl:bg-black xl:rounded-lg xl:shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] xl:mt-10"}>
                                 <Typography
-                                    variant={"h5"}
+                                    variant={"h4"}
                                     className={"!text-white text-center"}
                                 >
                                     { t("popular") }
                                 </Typography>
-                                <div className={"grid grid-cols-3 gap-4 space-y-8 mt-12 xl:mt-16"}>
+                                <div className={"grid grid-cols-3 gap-4 space-y-0 lg:space-y-8 mt-8 lg:mt-12 xl:mt-16"}>
                                     {
                                         popularFutures.map((d, i) => (
                                             <div className={"text-center"} key={i}>
@@ -134,7 +124,7 @@ const EnglishPricing = () => {
                             </div>
                         </div>
                         <div className={"col-span-12 xl:col-span-4"}>
-                            <div className={"bg-black px-4 py-20 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] h-full"}>
+                            <div className={"hidden lg:block bg-black px-4 py-20 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] h-full"}>
                                 <RealTimeUpdate/>
                             </div>
                         </div>
@@ -180,7 +170,7 @@ const EnglishPricing = () => {
                     </div>
 
                     <div>
-                        <div className={"flex justify-center mt-10 xl:mt-24"}>
+                        <div className={"hidden xl:flex justify-center mt-10 xl:mt-24"}>
                             <GeneralLinkBtn
                                 text={t("left.btnText")}
                                 path={"/accounts/platinum"}
@@ -192,8 +182,23 @@ const EnglishPricing = () => {
                                 className={"ml-4"}
                             />
                         </div>
-                        <div>
-                            <Typography variant={"muted"} className={"!text-white text-center mx-auto mt-8"}>
+                        <div className={"flex justify-center flex-col xl:hidden mt-10 xl:mt-24"}>
+                            <GeneralLinkBtn
+                                text={t("left.btnText")}
+                                path={"/accounts/platinum"}
+                                className={"mx-auto"}
+                            />
+                            <div className={"flex justify-center"}>
+                                <GeneralLinkBtn
+                                    text={t("left.more")}
+                                    path={"/products/rates"}
+                                    theme={"share"}
+                                    className={"mt-4"}
+                                />
+                            </div>
+                        </div>
+                        <div className={"pb-8 xl:pb-0"}>
+                            <Typography variant={"muted"} className={"hidden xl:block !text-white text-center mx-auto mt-8"}>
                                 {t("left.description2")}
                             </Typography>
                         </div>

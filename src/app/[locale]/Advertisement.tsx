@@ -31,12 +31,9 @@ const SwiperSlideItem = (props: ItemProps) => {
     const CommonT = useTranslations("Common");
     return (
         <div className={`${props.url} bg-center bg-cover w-auto h-100 rounded-lg`} >
-            <div className={"flex flex-col h-full cursor-pointer group relative px-3 py-4 xl:px-6 xl:py-8"}>
+            <div className={"flex flex-col h-full cursor-pointer group relative p-4 xl:px-6 xl:py-8"}>
                 <div className={"mt-auto group-hover:hidden"}>
-                    <Typography
-                        variant={"h6"}
-                        className={"font-medium !text-white transition"}
-                    >
+                    <Typography variant={"h6"} className={"font-medium !text-white transition"}>
                         {props.title}
                     </Typography>
                 </div>
@@ -141,7 +138,7 @@ const Advertisement = () => {
                                 <div
                                     className={"flex flex-col h-full cursor-pointer relative px-3 py-8 xl:px-6 xl:py-16"}>
                                     <div
-                                        className={"bg-[rgba(0,0,0,0.42)] justify-center rounded-lg flex flex-col w-full h-full top-0 left-0 transition absolute px-2 xl:px-6 py-8 xl:py-16"}>
+                                        className={"bg-[rgba(0,0,0,0.42)] justify-center rounded-lg flex flex-col w-full h-full top-0 left-0 transition absolute px-4 xl:px-6 py-8 xl:py-16"}>
                                         <div>
                                             <Typography
                                                 variant={"h6"}
@@ -198,7 +195,7 @@ const Advertisement = () => {
                             </Swiper>
                         </div>
                     </div>
-                    <div className={"mt-4 hidden lg:block"}>
+                    <div className={"mt-4"}>
                         <div className={"flex justify-end"}>
                             <CircleChevronLeft className={"advertisement-custom-prev mr-2 cursor-pointer"}/>
                             <CircleChevronRight className={"advertisement-custom-next ml-2 cursor-pointer"}/>

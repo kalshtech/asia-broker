@@ -26,7 +26,7 @@ export function Typography({ variant, className, children, ...props }: Typograph
         case "h1":
             return (
                 <h1
-                    className={cn("scroll-m-20 font-semibold tracking-tight text-4xl lg:text-6xl", className)}
+                    className={cn("scroll-m-20 font-semibold tracking-tight text-3xl lg:text-6xl", className)}
                     {...props}
                 >
                     {children}
@@ -48,7 +48,7 @@ export function Typography({ variant, className, children, ...props }: Typograph
 
         case "h3":
             return (
-                <h3 className={cn("scroll-m-20 font-semibold tracking-tight text-[22px] lg:text-[40px]", className)} {...props}>
+                <h3 className={cn("scroll-m-20 font-semibold tracking-tight text-3xl lg:text-[40px]", className)} {...props}>
                     {children}
                 </h3>
             )
@@ -69,7 +69,7 @@ export function Typography({ variant, className, children, ...props }: Typograph
 
         case "h6":
             return (
-                <h4 className={cn("scroll-m-20 text-base font-semibold tracking-tight", className)} {...props}>
+                <h4 className={cn("scroll-m-20 text-[18px] font-semibold tracking-tight", className)} {...props}>
                     {children}
                 </h4>
             )
@@ -131,7 +131,7 @@ export function Typography({ variant, className, children, ...props }: Typograph
 
         case "muted":
             return (
-                <p className={cn("text-muted-foreground text-xs lg:text-sm", className)} {...props}>
+                <p className={cn("text-muted-foreground text-[15px]", className)} {...props}>
                     {children}
                 </p>
             )

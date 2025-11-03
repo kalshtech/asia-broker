@@ -9,6 +9,15 @@ import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const DownloadAndRegister = () => {
     const t = useTranslations("Pages.home.downloadAndRegister");
+    const downloadAry = [
+        { image: "/images/home/download-ios.png" },
+        { image: "/images/home/download-gooplay.png" },
+        { image: "/images/home/download-android.png" },
+        { image: "/images/home/download-macos.svg" },
+        { image: "/images/home/download-windows.svg" },
+        { image: "/images/home/download-desk.png" },
+    ]
+
     return (
         <section className={"py-16 xl:p-30"}>
             <Container>
@@ -22,7 +31,7 @@ const DownloadAndRegister = () => {
                                 <Typography className={"mt-10"}>
                                     {t("description")}
                                 </Typography>
-                                <div className={"mt-10 flex"}>
+                                <div className={"mt-10 hidden xl:flex"}>
                                     <RegisterBtn text={t("open")}/>
                                     <GeneralLinkBtn
                                         text={t("download")}
@@ -31,11 +40,34 @@ const DownloadAndRegister = () => {
                                         className={"ml-4"}
                                     />
                                 </div>
+                                <div className={"mt-10 xl:hidden"}>
+                                    <RegisterBtn
+                                        text={t("open")}
+                                        className={"flex w-full py-4.5"}
+                                    />
+                                    <GeneralLinkBtn
+                                        text={t("download")}
+                                        path={"/platform"}
+                                        theme={"dark-solid"}
+                                        className={"mt-4 flex flex-col w-full"}
+                                    >
+                                        <div className={"bg-black flex mt-1"}>
+                                            {
+                                                downloadAry.map((d, i) => (
+                                                    <img src={d.image} className={"w-4 h-4 object-cover ml-1"} key={i}
+                                                         alt=""/>
+                                                ))
+                                            }
+                                        </div>
+                                    </GeneralLinkBtn>
+
+                                </div>
                             </div>
                             <div className={"flex flex-1 bg-theme-deep-bg mt-4 lg:mt-20"}>
-                                <div className={"flex flex-col flex-1 py-10 px-6 bg-[url(/images/mobile/example-kline-desk.png)]  xl:bg-[url(/images/home/example-kline-desk.png)] bg-center bg-cover lg:bg-auto lg:bg-left-top min-h-80 lg:min-h-160"}>
+                                <div
+                                    className={"flex flex-col flex-1 py-10 px-6 bg-[url(/images/mobile/example-kline-desk.png)]  xl:bg-[url(/images/home/example-kline-desk.png)] bg-center bg-cover lg:bg-auto lg:bg-left-top min-h-80 lg:min-h-160"}>
                                     <Typography
-                                        variant={"h5"}
+                                        variant={"h3"}
                                         className={"!text-white font-medium"}
                                     >
                                         {t("row.1.title")}
@@ -54,7 +86,7 @@ const DownloadAndRegister = () => {
                         <div className={"flex bg-theme-deep-bg h-full"}>
                             <div className={"flex flex-col flex-1 py-10 px-6 bg-[url(/images/mobile/example-kline.png)] xl:bg-[url(/images/home/example-kline.png)] min-h-80 bg-center bg-cover"}>
                                 <Typography
-                                    variant={"h5"}
+                                    variant={"h3"}
                                     className={"!text-white font-medium"}
                                 >
                                     {t("row.2.title")}
@@ -74,7 +106,7 @@ const DownloadAndRegister = () => {
                                 <div className={"flex-1 flex flex-col bg-theme-deep-bg bg-[url(/images/mobile/auto-MQL5.png)] xl:bg-[url(/images/home/auto-MQL5.png)] min-h-80 bg-center bg-cover py-10 px-6 relative h-full"}>
                                     <div className={"flex flex-col z-10 h-full"}>
                                         <Typography
-                                            variant={"h5"}
+                                            variant={"h3"}
                                             className={"!text-white font-medium"}
                                         >
                                             {t("row.3.title1")}
@@ -93,7 +125,7 @@ const DownloadAndRegister = () => {
                                     <div className={"flex flex-col py-10 px-6 bg-[url(/images/mobile/auto-EA.png)] xl:bg-[url(/images/home/auto-EA.png)] min-h-80 bg-center bg-cover relative flex-1 h-full"}>
                                         <div className={"flex flex-col"}>
                                             <Typography
-                                                variant={"h5"}
+                                                variant={"h3"}
                                                 className={"!text-white font-medium"}
                                             >
                                                 {t("row.3.title2")}
