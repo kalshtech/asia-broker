@@ -2,6 +2,7 @@
   "Common": {
     "register": "开立账户",
     "startTrade": "开始交易",
+    "trade": "交易",
     "usStock": "股票与ETF",
     "forex": "外汇",
     "metals": "贵金属",

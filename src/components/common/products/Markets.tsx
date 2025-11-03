@@ -209,7 +209,8 @@ const Markets = (props: Props) => {
                                         <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("open")}</TableHead>
                                         <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("high")}</TableHead>
                                         <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("low")}</TableHead>
-                                        <TableHead className={"text-white hidden xl:table-cell text-right w-[80px]"}>{CommonT("volume")}</TableHead>
+                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("volume")}</TableHead>
+                                        <TableHead className={"text-white text-right w-[80px]"}></TableHead>
                                     </TableRow>
                                 </TableHeader>
                                 <TableBody>
@@ -250,6 +251,7 @@ const Markets = (props: Props) => {
                                             <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayHigh)}</TableCell>
                                             <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayLow)}</TableCell>
                                             <TableCell className={"hidden xl:table-cell"} align="right">{convert(item.volume)}</TableCell>
+                                            <TableHead className={"text-right text-theme-active w-[80px]"}>Trade</TableHead>
                                         </TableRow>
                                     ))}
                                 </TableBody>

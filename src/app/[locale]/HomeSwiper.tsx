@@ -44,7 +44,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                             </Typography>
 
                                             <Typography
-                                                variant={"h5"}
+                                                variant={"h6"}
                                                 className={classnames(["text-center font-normal mt-6 xl:hidden", {
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
@@ -71,7 +71,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                             >
                                                 {item.desc2}
                                             </Typography>
-                                            <div className={"mt-10 justify-center flex"}>
+                                            <div className={"mt-16 justify-center flex"}>
                                                 <StartTradingBtn/>
                                                 <RegisterBtn className={classnames(["ml-4", {
                                                     "border bg-transparent hover:bg-transparent": item.theme === "dark",

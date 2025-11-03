@@ -2,6 +2,7 @@
   "Common": {
     "register": "Open Account",
     "startTrade": "Start Trading",
+    "trade": "Trade",
     "usStock": "Stocks & ETFs",
     "forex": "Forex",
     "metals": "Precious Metals",
@@ -17,7 +18,7 @@
     "open": "Open",
     "changePercentage": "Change(%)",
     "change": "Change",
-    "marketCap": "marketCap",
+    "marketCap": "MarketCap",
     "volume": "Volume",
     "productName": "Product Name",
     "mockTrade": "Demo Trading",
@@ -42,7 +43,7 @@
     "searching": "Search. . . ",
     "search-articles": "Search Articles",
     "no-articles": "No Articles",
-    "error": "error",
+    "error": "Error",
     "rankOfMonthly-1": "Champion",
     "rankOfMonthly-2": "Runner-up",
     "rankOfMonthly-3": "Third Place",
@@ -145,7 +146,7 @@
         "1": {
           "title1": "ASIA FUTURE TRADING",
           "description1": "Trusted by traders worldwide.  Offering better-than-market trading conditions. ",
-          "description2": "Licensed by the Australian Securities and Investments Commission (ASIC). "
+          "description2": ""
         },
         "2": {
           "title1": "0 Commission Fee for All.  Trade with Raw Spreads from 0. 0 Pips",
