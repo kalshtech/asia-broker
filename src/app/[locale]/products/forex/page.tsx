@@ -161,8 +161,8 @@ export default async function Page() {
                     >
                         { t("professional.desc") }
                     </Typography>
-                    <div className={"mt-4 mx-auto text-center flex flex-col xl:flex-row justify-center"}>
-                        <a href="/" className={"text-sm font-medium flex ml-2 justify-center items-center"}>
+                    <div className={"mt-4 mx-auto text-center justify-center"}>
+                        <a href="/" className={"text-sm font-medium flex flex-col xl:flex-row justify-center items-center"}>
                             <Typography variant={"muted"} className={"pr-1"}>
                                 { t("professional.link1") }
                             </Typography>

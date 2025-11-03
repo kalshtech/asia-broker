@@ -68,7 +68,7 @@ const DownloadAndRegister = () => {
                                     className={"flex flex-col flex-1 py-10 px-6 bg-[url(/images/mobile/example-kline-desk.png)]  xl:bg-[url(/images/home/example-kline-desk.png)] bg-center bg-cover lg:bg-auto lg:bg-left-top min-h-80 lg:min-h-160"}>
                                     <Typography
                                         variant={"h4"}
-                                        className={"!text-white font-medium text-3xl lg:text-2xl"}
+                                        className={"!text-white font-medium"}
                                     >
                                         {t("row.1.title")}
                                     </Typography>
@@ -87,7 +87,7 @@ const DownloadAndRegister = () => {
                             <div className={"flex flex-col flex-1 py-10 px-6 bg-[url(/images/mobile/example-kline.png)] xl:bg-[url(/images/home/example-kline.png)] min-h-80 bg-center bg-cover"}>
                                 <Typography
                                     variant={"h4"}
-                                    className={"!text-white font-medium text-3xl lg:text-2xl"}
+                                    className={"!text-white font-medium"}
                                 >
                                     {t("row.2.title")}
                                 </Typography>
@@ -107,7 +107,7 @@ const DownloadAndRegister = () => {
                                     <div className={"flex flex-col z-10 h-full"}>
                                         <Typography
                                             variant={"h4"}
-                                            className={"!text-white font-medium text-3xl lg:text-2xl"}
+                                            className={"!text-white font-medium"}
                                         >
                                             {t("row.3.title1")}
                                         </Typography>
@@ -126,7 +126,7 @@ const DownloadAndRegister = () => {
                                         <div className={"flex flex-col"}>
                                             <Typography
                                                 variant={"h4"}
-                                                className={"!text-white font-medium text-3xl lg:text-2xl"}
+                                                className={"!text-white font-medium"}
                                             >
                                                 {t("row.3.title2")}
                                             </Typography>

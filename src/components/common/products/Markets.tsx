@@ -201,15 +201,15 @@ const Markets = (props: Props) => {
                         <>
                             <Table>
                                 <TableHeader>
-                                    <TableRow>
-                                        <TableHead className={"w-[120px]"}>{CommonT("code")}</TableHead>
-                                        <TableHead>{CommonT("price")}</TableHead>
-                                        <TableHead>{CommonT("changePercentage")}</TableHead>
-                                        <TableHead>{CommonT("change")}</TableHead>
-                                        <TableHead>{CommonT("open")}</TableHead>
-                                        <TableHead>{CommonT("high")}</TableHead>
-                                        <TableHead>{CommonT("low")}</TableHead>
-                                        <TableHead className={"text-right w-[80px]"}>{CommonT("volume")}</TableHead>
+                                    <TableRow className={"bg-theme-active hover:bg-theme-active"}>
+                                        <TableHead className={"w-[120px] text-white"}>{CommonT("code")}</TableHead>
+                                        <TableHead className={"text-white"}>{CommonT("price")}</TableHead>
+                                        <TableHead className={"text-white"}>{CommonT("changePercentage")}</TableHead>
+                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("change")}</TableHead>
+                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("open")}</TableHead>
+                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("high")}</TableHead>
+                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("low")}</TableHead>
+                                        <TableHead className={"text-white hidden xl:table-cell text-right w-[80px]"}>{CommonT("volume")}</TableHead>
                                     </TableRow>
                                 </TableHeader>
                                 <TableBody>
@@ -230,29 +230,26 @@ const Markets = (props: Props) => {
                                                 <Typography variant={"p"} className="font-medium">
                                                     {item.symbol}
                                                 </Typography>
-                                                <Typography variant={"muted"} className={"ml-2"}>
-                                                    {item.name}
-                                                </Typography>
                                             </TableCell>
                                             <TableCell>
-                                    <span className={rangeCls(item.changesPercentage)}>
-                                        {formatMaxFixed(item.open)}
-                                    </span>
+                                                <span className={rangeCls(item.changesPercentage)}>
+                                                    {formatMaxFixed(item.open)}
+                                                </span>
                                             </TableCell>
                                             <TableCell>
-                                    <span className={rangeCls(item.changesPercentage)}>
-                                        {rangeChange(item.changesPercentage)}
-                                    </span>
+                                                <span className={rangeCls(item.changesPercentage)}>
+                                                    {rangeChange(item.changesPercentage)}
+                                                </span>
                                             </TableCell>
-                                            <TableCell>
-                                     <span className={rangeCls(item.changesPercentage)}>
-                                        {formatMaxFixed(item.change)}
-                                    </span>
+                                            <TableCell className={"hidden text-right xl:table-cell"}>
+                                                 <span className={rangeCls(item.changesPercentage)}>
+                                                    {formatMaxFixed(item.change)}
+                                                </span>
                                             </TableCell>
-                                            <TableCell>{formatMaxFixed(item.open)}</TableCell>
-                                            <TableCell>{formatMaxFixed(item.dayHigh)}</TableCell>
-                                            <TableCell>{formatMaxFixed(item.dayLow)}</TableCell>
-                                            <TableCell align="right">{convert(item.volume)}</TableCell>
+                                            <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.open)}</TableCell>
+                                            <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayHigh)}</TableCell>
+                                            <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayLow)}</TableCell>
+                                            <TableCell className={"hidden xl:table-cell"} align="right">{convert(item.volume)}</TableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>

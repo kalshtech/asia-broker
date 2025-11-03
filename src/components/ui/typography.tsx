@@ -55,14 +55,14 @@ export function Typography({ variant, className, children, ...props }: Typograph
 
         case "h4":
             return (
-                <h4 className={cn("scroll-m-20 font-semibold tracking-tight text-xl lg:text-2xl", className)} {...props}>
+                <h4 className={cn("scroll-m-20 font-semibold tracking-tight text-3xl lg:text-2xl", className)} {...props}>
                     {children}
                 </h4>
             )
 
         case "h5":
             return (
-                <h4 className={cn("scroll-m-20 font-semibold tracking-tight text-base lg:text-[20px] ", className)} {...props}>
+                <h4 className={cn("scroll-m-20 font-semibold tracking-tight text-2xl lg:text-[20px] ", className)} {...props}>
                     {children}
                 </h4>
             )

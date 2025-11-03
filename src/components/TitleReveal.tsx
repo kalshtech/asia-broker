@@ -49,7 +49,7 @@ export default function TitleReveal(props: Props) {
                 x: `calc(-100% + ${endSquareSize}px)`,
                 width: `${endSquareSize}px`,
                 height: `${endSquareSize}px`,
-                top: `calc(100% - ${endSquareSize}px)`, // 收在底部
+                top: `calc(100% - ${endSquareSize + 8}px)`, // 收在底部
                 borderRadius: `${endSquareSize / 8}px`,
                 transition: {
                     duration: shrink,
