@@ -200,11 +200,11 @@ const Markets = () => {
                                         <TableHead>{commonT("changePercentage")}</TableHead>
                                         <TableHead>{commonT("change")}</TableHead>
                                         {
-                                            tabActive === "stock" && <TableHead>
+                                            tabActive === "stock" && <TableHead className={"text-right xl:w-[100px]"}>
                                                 {commonT("marketCap")}
                                             </TableHead>
                                         }
-                                        <TableHead className={"text-right xl:w-[100px]"}>{commonT("volume")}</TableHead>
+                                        {/*<TableHead className={"text-right xl:w-[100px]"}>{commonT("volume")}</TableHead>*/}
                                     </TableRow>
                                 </TableHeader>
                                 <TableBody>
@@ -244,7 +244,7 @@ const Markets = () => {
                                                             </Typography>
                                                         </TableCell>
                                                     }
-                                                    <TableCell className={"text-right"}>{convert(item.volume)}</TableCell>
+                                                    {/*<TableCell className={"text-right"}>{convert(item.volume)}</TableCell>*/}
                                                 </TableRow>
                                             ))
                                         )
