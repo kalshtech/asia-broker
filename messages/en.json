@@ -544,10 +544,10 @@
         },
         "from": "Data from:",
         "form": {
-          "first-placeholder": "Please input your first name",
-          "last-placeholder": "Please input your last name",
-          "country-placeholder": "Please input your country",
-          "email-placeholder": "Please input your email address",
+          "first-placeholder": "Your first name",
+          "last-placeholder": "Your last name",
+          "country-placeholder": "Your country",
+          "email-placeholder": "Your email address",
           "subscribe": "Subscribe"
         }
       }
@@ -1432,13 +1432,13 @@
           "form-name": "Please fill out the form below.  Our team will contact you shortly to confirm your account details and configure your VPS node. ",
           "form": {
             "first": "First Name",
-            "first-placeholder": "Please input your first name",
+            "first-placeholder": "Your first name",
             "last": "Last Name",
-            "last-placeholder": "Please input your last name",
+            "last-placeholder": "Your last name",
             "email": "Registered Email",
-            "email-placeholder": "Please input your email address",
+            "email-placeholder": "Your email address",
             "phone": "Phone Number",
-            "phone-placeholder": "Please input your phone number",
+            "phone-placeholder": "Your phone number",
             "submit": "Apply"
           }
         },

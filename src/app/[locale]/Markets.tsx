@@ -172,8 +172,8 @@ const Markets = () => {
                 </motion.div>
 
                 <div className={"flex justify-center mt-12"}>
-                    <div className={"flex-1 flex flex-col"}>
-                        <div className={"hidden xl:flex justify-center"}>
+                    <div className={"flex-1 flex flex-col  w-full"}>
+                        <div className={"hidden xl:flex justify-center w-full"}>
                             <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
                                 <TabsList className={"h-10 rounded-full"}>
                                     {
@@ -194,8 +194,8 @@ const Markets = () => {
                             <Table>
                                 <TableHeader>
                                     <TableRow>
-                                        <TableHead className="xl:w-[216px]">{commonT("code")}</TableHead>
-                                        <TableHead className="xl:w-[248px]">{commonT("miniChart")}</TableHead>
+                                        <TableHead className={"xl:w-[216px]"}>{commonT("code")}</TableHead>
+                                        <TableHead className={"xl:w-[248px]"}>{commonT("miniChart")}</TableHead>
                                         <TableHead>{commonT("close")}</TableHead>
                                         <TableHead>{commonT("changePercentage")}</TableHead>
                                         <TableHead>{commonT("change")}</TableHead>
@@ -204,7 +204,7 @@ const Markets = () => {
                                                 {commonT("marketCap")}
                                             </TableHead>
                                         }
-                                        <TableHead className="text-right xl:w-[100px]">{commonT("volume")}</TableHead>
+                                        <TableHead className={"text-right xl:w-[100px]"}>{commonT("volume")}</TableHead>
                                     </TableRow>
                                 </TableHeader>
                                 <TableBody>
@@ -234,12 +234,9 @@ const Markets = () => {
                                                             <MiniChart data={item.data}/>
                                                         </div>
                                                     </TableCell>
-                                                    <TableCell
-                                                        className={rangeCls(item.changePercentage)}>{item.price}</TableCell>
-                                                    <TableCell
-                                                        className={rangeCls(item.changePercentage)}>{rangeChange(item.changePercentage)}</TableCell>
-                                                    <TableCell
-                                                        className={rangeCls(item.changePercentage)}>{item.change}</TableCell>
+                                                    <TableCell className={rangeCls(item.changePercentage)}>{item.price}</TableCell>
+                                                    <TableCell className={rangeCls(item.changePercentage)}>{rangeChange(item.changePercentage)}</TableCell>
+                                                    <TableCell className={rangeCls(item.changePercentage)}>{item.change}</TableCell>
                                                     {
                                                         tabActive === "stock" && <TableCell>
                                                             <Typography variant={"muted"} className={"!text-[#111111]"}>
@@ -247,8 +244,7 @@ const Markets = () => {
                                                             </Typography>
                                                         </TableCell>
                                                     }
-                                                    <TableCell
-                                                        className={"text-right"}>{convert(item.volume)}</TableCell>
+                                                    <TableCell className={"text-right"}>{convert(item.volume)}</TableCell>
                                                 </TableRow>
                                             ))
                                         )
