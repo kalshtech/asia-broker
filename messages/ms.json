@@ -2928,7 +2928,7 @@
             "col1": {
               "title1": "Future Earn Simulator",
               "desc1": "Enter your available account balance to estimate your potential daily interest earnings based on the current SOFR market rate.No lock-ups. Interest is credited daily and automatically to your MT5 account.",
-              "title2": "Current Reference Annual Rate (SOFR):  5.30%",
+              "title2": "Current Reference Annual Rate (SOFR):  ",
               "desc2": "Source: Federal Reserve Bank of New York — SOFR Benchmark"
             },
             "col2": {

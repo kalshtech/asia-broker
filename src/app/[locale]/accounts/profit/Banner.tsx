@@ -10,7 +10,7 @@ const Banner =  () => {
     const t = useTranslations("Pages.accounts.profit.banner");
     return (
         <div>
-            <section className={"bg-[url(/images/accounts/profit-banner.png)] bg-center bg-cover h-140 xl:h-[632px] py-4 xl:py-30"}>
+            <section className={"bg-[url(/images/accounts/profit-banner-mobile.png)] xl:bg-[url(/images/accounts/profit-banner.png)] bg-center bg-cover h-140 xl:h-[632px] py-4 xl:py-30"}>
                 <Container>
                     <Typography
                         variant={"h4"}

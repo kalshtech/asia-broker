@@ -104,7 +104,7 @@ export default async function Page() {
             <Banner
                 title={t("banner.title")}
                 description={t("banner.desc")}
-                imageUrl={"bg-[url(/images/products/energy-background.png)]"}
+                imageUrl={"bg-[url(/images/products/energy-background-mobile.png)] xl:bg-[url(/images/products/energy-background.png)]"}
                 midst={t("banner.midst")}
             />
             <Markets

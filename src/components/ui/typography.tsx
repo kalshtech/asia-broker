@@ -131,7 +131,7 @@ export function Typography({ variant, className, children, ...props }: Typograph
 
         case "muted":
             return (
-                <p className={cn("text-muted-foreground text-[15px]", className)} {...props}>
+                <p className={cn("text-muted-foreground !leading-6 text-[15px]", className)} {...props}>
                     {children}
                 </p>
             )

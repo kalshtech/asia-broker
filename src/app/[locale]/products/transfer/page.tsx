@@ -106,7 +106,7 @@ export default async function Page() {
             <Banner
                 title={t("banner.title")}
                 description={t("banner.desc")}
-                imageUrl={"bg-[url(/images/products/transfer-banner.png)]"}
+                imageUrl={"bg-[url(/images/products/transfer-banner-mobile.png)] xl:bg-[url(/images/products/transfer-banner.png)]"}
                 midst={t("banner.midst")}
                 transfer
             />

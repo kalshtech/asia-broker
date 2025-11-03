@@ -17,7 +17,7 @@ const Banner =  () => {
     ];
 
     return (
-        <section className={"bg-[url(/images/accounts/platinum-banner.png)] bg-center bg-cover py-8 lg:py-16 xl:py-24 h-[632px]"}>
+        <section className={"bg-[url(/images/accounts/platinum-banner-mobile.png)] xl:bg-[url(/images/accounts/platinum-banner.png)] bg-center bg-cover py-8 lg:py-16 xl:py-24 h-[632px]"}>
             <Container>
                 <TitleReveal
                     title={t("title")}

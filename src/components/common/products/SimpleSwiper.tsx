@@ -39,7 +39,7 @@ const SimpleSwiper = ({ ary, prevEl = ".properly-custom-prev", nextEl = ".proper
                                     className={"w-full h-full object-cover"}
                                 />
                                 <div className={"mt-6"}>
-                                    <Typography className={"font-medium"}>
+                                    <Typography className={"font-semibold"}>
                                         {item.title}
                                     </Typography>
                                     {item.description && (

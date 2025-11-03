@@ -9,6 +9,7 @@ import FAQSection from "@/components/common/QuestionAnswer";
 import JoinCommunity from "@/components/common/JoinCommunity";
 import MetaCommission from "@/components/common/products/MetaCommission";
 import { Typography } from "@/components/ui/typography";
+import { ExternalLink } from "lucide-react";
 
 
 export default async function Page() {
@@ -160,12 +161,15 @@ export default async function Page() {
                     >
                         { t("professional.desc") }
                     </Typography>
-                    <div className={"mt-4 mx-auto text-center flex justify-center"}>
-                        <Typography variant={"muted"}>
-                            { t("professional.link1") }
-                        </Typography>
-                        <a href="/" className={"text-sm font-medium ml-2"}>
-                            { t("professional.link2") }
+                    <div className={"mt-4 mx-auto text-center flex flex-col xl:flex-row justify-center"}>
+                        <a href="/" className={"text-sm font-medium flex ml-2 justify-center items-center"}>
+                            <Typography variant={"muted"} className={"pr-1"}>
+                                { t("professional.link1") }
+                            </Typography>
+                            <Typography variant={"muted"}>
+                                { t("professional.link2") }
+                            </Typography>
+                            <ExternalLink className={"w-4 ml-2"} />
                         </a>
                     </div>
                 </div>

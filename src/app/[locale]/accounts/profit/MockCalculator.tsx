@@ -4,9 +4,39 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import Container from "@/components/Container";
 import { Slider } from "@/components/ui/slider"
+import {http} from "@/utils/http";
+import {params_sofr} from "@/params/api";
+
+const total = 500000;
 
 const MockCalculator = () => {
     const t = useTranslations("Pages.accounts.profit.mockCalculator");
+    const [rate, setRate] = React.useState<any>(1000000000000000);
+    const [slider, setSlider] = React.useState<number[]>([40]);
+    const [margin, setMargin] = React.useState("");
+    const handleGetData = async () => {
+        const result = await http.get(params_sofr.url, {  });
+        if(result.data.status === 0) {
+            const data = await result.data.data;
+            setRate(data[0].newData.dailyRate);
+        }
+    }
+
+    const handleCalculateMargin = () => {
+        const value = slider[0] / 100;
+        const wantNumber = total * value;
+        setMargin((wantNumber / rate).toFixed(3))
+    }
+
+    React.useEffect(() => {
+        handleGetData();
+        handleCalculateMargin();
+    }, [rate])
+
+    React.useEffect(() => {
+        handleCalculateMargin();
+    }, [slider])
+
     return (
         <section className={"bg-[#262E48] py-16 xl:py-30"}>
             <Container>
@@ -32,6 +62,7 @@ const MockCalculator = () => {
                                 className={"!text-white font-medium"}
                             >
                                 {t("row.col1.title2")}
+                                {rate}%
                             </Typography>
                             <Typography
                                 variant={"muted"}
@@ -50,11 +81,11 @@ const MockCalculator = () => {
                         </Typography>
                         <div className={"mt-4"}>
                             <div className="[&_span.bg-primary]:bg-theme-active">
-                                <Slider defaultValue={[40]}/>
+                                <Slider value={slider} onValueChange={(value) => setSlider(value)} />
                             </div>
                             <div className={"flex mt-2"}>
-                                <div className={"text-white"}>USD $500</div>
-                                <div className={"text-white ml-auto"}>USD $500,000+</div>
+                                <div className={"text-white"}>USD 0</div>
+                                <div className={"text-white ml-auto"}>USD $500,000</div>
                             </div>
                             <div className={"mt-4"}>
                                 <Typography
@@ -75,7 +106,7 @@ const MockCalculator = () => {
                                     variant={"h5"}
                                     className={"!text-white font-normal mt-4"}
                                 >
-                                    USD $XXXXX
+                                    USD ${margin}
                                 </Typography>
                                 <Typography
                                     variant={"muted"}
