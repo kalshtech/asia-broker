@@ -154,7 +154,7 @@ const Markets = () => {
     }, [ tabActive ])
 
     return (
-        <section className={"py-16 xl:p-30 hidden lg:block"}>
+        <section className={"py-16 xl:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -173,7 +173,7 @@ const Markets = () => {
 
                 <div className={"flex justify-center mt-12"}>
                     <div className={"flex-1 flex flex-col"}>
-                        <div className={"flex justify-center"}>
+                        <div className={"hidden xl:flex justify-center"}>
                             <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
                                 <TabsList className={"h-10 rounded-full"}>
                                     {
@@ -192,21 +192,10 @@ const Markets = () => {
                         </div>
                         <div className={"mt-8"}>
                             <Table>
-                                <TableCaption>
-                                    <div className={"flex flex-col"}>
-                                        <div>
-                                            <Button className={"mt-8 bg-theme-active hover:bg-theme-active-hover"}>
-                                                <Link href={currentPath} target={"_blank"}>
-                                                    {t("more")}
-                                                </Link>
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </TableCaption>
                                 <TableHeader>
                                     <TableRow>
-                                        <TableHead className="w-[216px]">{commonT("code")}</TableHead>
-                                        <TableHead className="w-[248px]">{commonT("miniChart")}</TableHead>
+                                        <TableHead className="xl:w-[216px]">{commonT("code")}</TableHead>
+                                        <TableHead className="xl:w-[248px]">{commonT("miniChart")}</TableHead>
                                         <TableHead>{commonT("close")}</TableHead>
                                         <TableHead>{commonT("changePercentage")}</TableHead>
                                         <TableHead>{commonT("change")}</TableHead>
@@ -215,7 +204,7 @@ const Markets = () => {
                                                 {commonT("marketCap")}
                                             </TableHead>
                                         }
-                                        <TableHead className="text-right w-[100px]">{commonT("volume")}</TableHead>
+                                        <TableHead className="text-right xl:w-[100px]">{commonT("volume")}</TableHead>
                                     </TableRow>
                                 </TableHeader>
                                 <TableBody>
@@ -266,6 +255,15 @@ const Markets = () => {
                                     }
                                 </TableBody>
                             </Table>
+                            <div className={"flex items-center justify-center"}>
+                                <div>
+                                    <Button className={"mt-8 bg-theme-active hover:bg-theme-active-hover"}>
+                                        <Link href={currentPath} target={"_blank"}>
+                                            {t("more")}
+                                        </Link>
+                                    </Button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

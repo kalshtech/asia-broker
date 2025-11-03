@@ -354,8 +354,8 @@ const CalendarTable = (props: Props) => {
         <div className={classnames(["h-full rounded-2xl", {
             "bg-[#161B2C] p-4": theme === "dark"
         }])}>
-            <div className={"flex"}>
-                <div className={""}>
+            <div className={"grid grid-cols-3 gap-4"}>
+                <div className={"w-full"}>
                     <Label htmlFor="date" className={"px-1 text-white mb-2"}>
                         {CommonT("date")}
                     </Label>
@@ -364,7 +364,7 @@ const CalendarTable = (props: Props) => {
                             <Button
                                 variant="outline"
                                 id="date"
-                                className="justify-between font-normal w-32 lg:w-48"
+                                className="justify-between font-normal w-full rounded-lg"
                             >
                                 {date ? date.toLocaleDateString() : "Select date"}
                                 <ChevronDownIcon/>
@@ -383,12 +383,12 @@ const CalendarTable = (props: Props) => {
                         </PopoverContent>
                     </Popover>
                 </div>
-                <div className={"ml-4"}>
+                <div className={"w-full"}>
                     <Label htmlFor="date" className={"px-1 text-white mb-2"}>
                         {CommonT("star")}
                     </Label>
                     <Select value={star} onValueChange={handleChangeStar}>
-                        <SelectTrigger className={"bg-white lg:min-w-40"}>
+                        <SelectTrigger className={"bg-white w-full"}>
                             <SelectValue placeholder="Theme"/>
                         </SelectTrigger>
                         <SelectContent>
@@ -402,12 +402,12 @@ const CalendarTable = (props: Props) => {
                         </SelectContent>
                     </Select>
                 </div>
-                <div className={"ml-4"}>
+                <div className={"w-full"}>
                     <Label htmlFor="date" className={"px-1 text-white mb-2"}>
                         {CommonT("counties")}
                     </Label>
                     <Select value={country} onValueChange={handleChangeCountry}>
-                        <SelectTrigger className={"bg-white lg:min-w-40"}>
+                        <SelectTrigger className={"bg-white w-full"}>
                             <SelectValue placeholder="Theme"/>
                         </SelectTrigger>
                         <SelectContent>
