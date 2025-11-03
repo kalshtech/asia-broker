@@ -364,7 +364,10 @@ const CalendarTable = (props: Props) => {
                             <Button
                                 variant="outline"
                                 id="date"
-                                className="justify-between font-normal w-full rounded-lg"
+                                className={classnames(["justify-between font-normal w-full rounded-lg", {
+                                    "bg-white": theme === "light",
+                                    "bg-[#343A4C] hover:text-white hover:bg-[#343A4C] border-none text-white": theme === "dark"
+                                }])}
                             >
                                 {date ? date.toLocaleDateString() : "Select date"}
                                 <ChevronDownIcon/>
@@ -388,7 +391,10 @@ const CalendarTable = (props: Props) => {
                         {CommonT("star")}
                     </Label>
                     <Select value={star} onValueChange={handleChangeStar}>
-                        <SelectTrigger className={"bg-white w-full"}>
+                        <SelectTrigger className={classnames(["w-full !h-10", {
+                            "bg-white": theme === "light",
+                            "bg-[#343A4C] border-none text-white": theme === "dark"
+                        }])}>
                             <SelectValue placeholder="Theme"/>
                         </SelectTrigger>
                         <SelectContent>
@@ -407,7 +413,10 @@ const CalendarTable = (props: Props) => {
                         {CommonT("counties")}
                     </Label>
                     <Select value={country} onValueChange={handleChangeCountry}>
-                        <SelectTrigger className={"bg-white w-full"}>
+                        <SelectTrigger className={classnames(["w-full !h-10", {
+                            "bg-white": theme === "light",
+                            "bg-[#343A4C] border-none text-white": theme === "dark"
+                        }])}>
                             <SelectValue placeholder="Theme"/>
                         </SelectTrigger>
                         <SelectContent>
@@ -437,14 +446,44 @@ const CalendarTable = (props: Props) => {
             <div className={"mt-4"}>
                 <Table className={"bg-white rounded-sm"}>
                     <TableHeader>
-                        <TableRow>
-                            <TableHead className={"w-40"}>{CommonT("time")}</TableHead>
-                            <TableHead className={"w-60"}>{CommonT("event")}</TableHead>
-                            <TableHead>{CommonT("prev")}</TableHead>
-                            <TableHead>{CommonT("estimate")}</TableHead>
-                            <TableHead>{CommonT("currency")}</TableHead>
-                            <TableHead>{CommonT("counties")}</TableHead>
-                            <TableHead>{CommonT("star")}</TableHead>
+                        <TableRow className={classnames([{
+                            "bg-[#343A4C] hover:bg-[#343A4C] !border-[#161B2C]": theme === "dark"
+                        }])}>
+                            <TableHead className={classnames(["w-40", {
+                                "text-white": theme === "dark"
+                            }])}>
+                                {CommonT("time")}
+                            </TableHead>
+                            <TableHead className={classnames(["w-60", {
+                                "text-white": theme === "dark"
+                            }])}>
+                                {CommonT("event")}
+                            </TableHead>
+                            <TableHead className={classnames(["", {
+                                "text-white": theme === "dark"
+                            }])}>
+                                {CommonT("prev")}
+                            </TableHead>
+                            <TableHead className={classnames(["", {
+                                "text-white": theme === "dark"
+                            }])}>
+                                {CommonT("estimate")}
+                            </TableHead>
+                            <TableHead className={classnames(["", {
+                                "text-white": theme === "dark"
+                            }])}>
+                                {CommonT("currency")}
+                            </TableHead>
+                            <TableHead className={classnames(["", {
+                                "text-white": theme === "dark"
+                            }])}>
+                                {CommonT("counties")}
+                            </TableHead>
+                            <TableHead className={classnames(["", {
+                                "text-white": theme === "dark"
+                            }])}>
+                                {CommonT("star")}
+                            </TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -462,7 +501,9 @@ const CalendarTable = (props: Props) => {
                                 ))
                             ) : (
                                 tableData.map((item: any, index: number) => (
-                                    <TableRow key={index}>
+                                    <TableRow key={index} className={classnames([{
+                                        "bg-[#343A4C] hover:bg-[#343A4C] !text-white !border-[#161B2C]": theme === "dark"
+                                    }])}>
                                         <TableCell>
                                             {dayjs(item.date).format("MM-DD HH:mm:ss")}
                                         </TableCell>

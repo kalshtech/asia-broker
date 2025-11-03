@@ -132,7 +132,7 @@ export default function Competition() {
                         })}
                     </div>
                 </div>
-                <main className="mt-8 lg:mt-16">
+                <main className="mt-8 lg:mt-16 xl:hidden">
                     <ThumbsGallery
                         initialIndex={0}
                         onIndexChange={(i) => console.log("")}
