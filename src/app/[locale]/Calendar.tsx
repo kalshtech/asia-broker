@@ -29,13 +29,23 @@ const CalendarComponent = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography variant={"h3"} className={"text-center !text-white"}>
-                        {t("title")}
-                    </Typography>
+                    <div className={"hidden xl:block"}>
+                        <Typography variant={"h3"} className={"text-center !text-white"}>
+                            {t("title")}
+                        </Typography>
+                        <Typography className={"text-center max-w-7xl mx-auto !text-white mt-6"}>
+                            {t("description")}
+                        </Typography>
+                    </div>
 
-                    <Typography className={"text-center max-w-7xl mx-auto !text-white mt-6"}>
-                        {t("description")}
-                    </Typography>
+                    <div className={"xl:hidden"}>
+                        <Typography variant={"h3"} className={"text-center !text-white"}>
+                            {t("title1")}
+                        </Typography>
+                        <Typography className={"text-center max-w-7xl mx-auto !text-white mt-6"}>
+                            {t("description1")}
+                        </Typography>
+                    </div>
                 </motion.div>
 
                 <div className={"mt-10 flex justify-center"}>
