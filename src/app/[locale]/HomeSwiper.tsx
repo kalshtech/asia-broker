@@ -3,7 +3,7 @@ import React from "react";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination, Autoplay} from 'swiper/modules';
 import Container from "@/components/Container";
-import {useTranslations} from "next-intl";
+import {useLocale, useTranslations} from "next-intl";
 import {Typography} from "@/components/ui/typography";
 import StartTradingBtn from "@/components/StartTradingBtn";
 import RegisterBtn from "@/components/RegisterBtn";
@@ -23,7 +23,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Autoplay, Pagination]}
+                modules={[Pagination]}
                 className="en-my-swiper h-full"
             >
                 {
@@ -174,9 +174,11 @@ const EnglishSwiper = () => {
             desc2: t("7.description1")
         },
     ];
+
+
+
     return (
         <>
-
             <div className={"xl:hidden"}>
                 <CustomBanner ary={mobileAry}/>
             </div>

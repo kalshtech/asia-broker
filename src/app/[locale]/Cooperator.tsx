@@ -7,6 +7,12 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
 import { Star } from "lucide-react"
+import dynamic from 'next/dynamic';
+
+const TrustpilotWidget = dynamic(
+    () => import('@/components/TrustpilotWidget'),
+    { ssr: false } // 再保险：这个组件完全不走 SSR，彻底杜绝水合不一致
+);
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -18,11 +24,10 @@ const fadeInUp: Variants = {
 }
 
 const Cooperator = () => {
-    const locale = useLocale();
     const [rating, setRating] = React.useState(4)
     const t = useTranslations("Pages.home.cooperator");
     const [ tabActive, setTabActive ] = React.useState("trader");
-
+    const locale = useLocale();
 
     const RenderTrustpilot = () => {
         if(locale === "ja") {
