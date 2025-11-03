@@ -6,7 +6,7 @@ import { Typography } from "@/components/ui/typography";
 const Values = () => {
     const t = useTranslations("Pages.accounts.profit.values");
     return (
-        <section>
+        <section className={"py-16 lg:py-0"}>
             <div className={"grid grid-cols-12"}>
                 <div className={"mx-8 flex flex-col justify-center items-center col-span-12 lg:col-span-6"}>
                     <Typography variant={"h3"} className={"text-center"}>

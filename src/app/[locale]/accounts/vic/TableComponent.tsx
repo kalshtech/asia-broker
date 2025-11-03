@@ -19,7 +19,7 @@ const TableComponent = () => {
         { one: t("row.col1-9-1"), two: t("row.col1-9-2"), three: t("row.col1-9-3") }
     ];
     return (
-        <section className={"bg-[url(/images/accounts/vic-table-bg.png)] bg-center bg-cover py-4 xl:py-30"}>
+        <section className={"bg-[url(/images/accounts/vic-table-bg.png)] bg-center bg-cover py-16 xl:py-30"}>
             <Container>
                 <Typography
                     variant={"h3"}

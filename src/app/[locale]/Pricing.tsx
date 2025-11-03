@@ -124,7 +124,7 @@ const EnglishPricing = () => {
                             </div>
                         </div>
                         <div className={"col-span-12 xl:col-span-4"}>
-                            <div className={"hidden lg:block bg-black px-4 py-20 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)] h-full"}>
+                            <div className={"invisible lg:visible h-0 xl:h-full bg-black px-4 py-20 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)]"}>
                                 <RealTimeUpdate/>
                             </div>
                         </div>

@@ -1,7 +1,6 @@
 "use client"
 import * as React from "react"
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { Typography } from "@/components/ui/typography";
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -9,6 +8,7 @@ import { MoveRight } from 'lucide-react';
 import classnames from "classnames";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
+import ThumbsGallery from "@/components/ThumbsGallery";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -20,6 +20,7 @@ const fadeInUp: Variants = {
 }
 
 type Item = { title: string; prize?: string; period?: string; cta?: string };
+
 export default function Competition() {
     const t = useTranslations("Pages.home.competition");
     const [active, setActive] = useState(0);
@@ -45,7 +46,7 @@ export default function Competition() {
                         {t("title")}
                     </Typography>
                 </motion.div>
-                <div className="mt-8 lg:mt-16 [--panel-h:400px]">
+                <div className={"mt-8 lg:mt-16 [--panel-h:400px] hidden xl:block"}>
                     <div className="flex h-[var(--panel-h)] gap-6">
                         {items.map((it, i) => {
                             const isActive = i === active
@@ -94,7 +95,7 @@ export default function Competition() {
                                                                 variant={"muted"}
                                                                 className={"block text-center"}
                                                             >
-                                                                { t("pool") }
+                                                                {t("pool")}
                                                             </Typography>
                                                             <Typography
                                                                 variant={"h4"}
@@ -106,7 +107,7 @@ export default function Competition() {
                                                                 variant={"muted"}
                                                                 className={"text-center mt-4"}
                                                             >
-                                                                { t("period") }
+                                                                {t("period")}
                                                             </Typography>
                                                             <Typography
                                                                 variant={"h4"}
@@ -131,6 +132,12 @@ export default function Competition() {
                         })}
                     </div>
                 </div>
+                <main className="mt-8 lg:mt-16">
+                    <ThumbsGallery
+                        initialIndex={0}
+                        onIndexChange={(i) => console.log('index:', i)}
+                    />
+                </main>
             </Container>
         </section>
     )

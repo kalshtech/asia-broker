@@ -23,7 +23,7 @@ const Custom = () => {
         { text: t("row.col2.ul.li3") },
     ];
     return (
-        <section className={"bg-gradient-to-b from-[#0C1724] from-[10%] to-[#163252] to-[100%] py-4 xl:py-30"}>
+        <section className={"bg-gradient-to-b from-[#0C1724] from-[10%] to-[#163252] to-[100%] py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

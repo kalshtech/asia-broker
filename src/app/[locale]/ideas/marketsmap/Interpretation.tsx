@@ -13,7 +13,7 @@ const Interpretation = () => {
         { text: t("row.col1.ul.li3") },
     ];
     return (
-        <section className={"m-4 lg:m-30"}>
+        <section className={"my-4 lg:m-30"}>
             <Container>
                 <div className={"grid grid-cols-12"}>
                     <div className={"col-span-12 lg:col-span-6"}>

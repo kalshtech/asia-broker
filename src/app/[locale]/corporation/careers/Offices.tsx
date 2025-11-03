@@ -101,7 +101,7 @@ const Offices = () => {
     ];
 
     return (
-        <section className={"py-4 xl:py-30 bg-theme-light-bg"}>
+        <section className={"py-16 xl:py-30 bg-theme-light-bg"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

@@ -39,7 +39,7 @@ const Tools = () => {
         { image: "/images/common/ideas.png", title: t("row.ideas.title"), desc: t("row.ideas.desc"), path: "/ideas/professional" },
     ];
     return (
-        <section className={"bg-theme-deep-bg py-8"}>
+        <section className={"bg-theme-deep-bg py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

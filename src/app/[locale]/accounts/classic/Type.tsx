@@ -45,63 +45,67 @@ const Type = () => {
         { one: t("table.row.col1-7-1"), two: t("table.row.col1-7-2"), three: t("table.row.col1-7-3") }
     ];
     return (
-        <section className={"bg-[url(/images/accounts/account-type-background.png)] bg-cover bg-center py-4 xl:mt-24 xl:py-16"}>
+        <section className={"bg-[url(/images/accounts/account-type-background.png)] bg-cover bg-center py-16 xl:mt-24 xl:py-30"}>
             <Container>
                 <div>
                     <div className={"grid grid-cols-12 gap-8"}>
-                        <div className={"col-span-12 lg:col-span-6"}>
-                            <div className={""}>
-                                <header className={"bg-[#373F62] py-6 px-8"}>
-                                    <Typography variant={"h5"} className={"!text-white"}>
-                                        {t("card1.title")}
-                                    </Typography>
-                                    <Typography variant={"muted"} className={"!text-white mt-2"}>
-                                        {t("card1.desc")}
-                                    </Typography>
-                                </header>
-                                <ul>
+                        <div className={"col-span-12 lg:col-span-6 h-full"}>
+                            <Table className={"bg-white"}>
+                                <TableHeader className={"bg-[#373F62]"}>
+                                    <TableRow className="hover:bg-transparent">
+                                        <TableHead className={"w-1/2 !py-8 text-center text-white"}>
+                                            {t("card1.title")}
+                                        </TableHead>
+                                        <TableHead className={"w-1/2 !py-8 text-center text-white"}>
+                                            {t("card1.desc")}
+                                        </TableHead>
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
                                     {
-                                        card1Ary.map((d, i) => (
-                                            <li key={i}
-                                                className={"py-4 px-8 flex odd:bg-white even:bg-theme-light-bg items-center"}>
-                                                <Typography variant={"h6"} className={"w-24"}>
-                                                    {d.title}
-                                                </Typography>
-                                                <Typography variant={"muted"}>
-                                                    {d.desc}
-                                                </Typography>
-                                            </li>
+                                        card1Ary.map((item, index) => (
+                                            <TableRow key={index}>
+                                                <TableCell className={"text-center py-5"}>
+                                                    {item.title}
+                                                </TableCell>
+                                                <TableCell className={"text-center py-5"}>
+                                                    {item.desc}
+                                                </TableCell>
+                                            </TableRow>
                                         ))
+
                                     }
-                                </ul>
-                            </div>
+                                </TableBody>
+                            </Table>
                         </div>
-                        <div className={"col-span-12 lg:col-span-6"}>
-                            <div className={""}>
-                                <header className={"bg-[#373F62] py-6 px-8"}>
-                                    <Typography variant={"h5"} className={"!text-white"}>
-                                        {t("card1.title")}
-                                    </Typography>
-                                    <Typography variant={"muted"} className={"!text-white mt-2"}>
-                                        {t("card1.desc")}
-                                    </Typography>
-                                </header>
-                                <ul>
+                        <div className={"col-span-12 lg:col-span-6 h-full"}>
+                            <Table className={"bg-white"}>
+                                <TableHeader className={"bg-[#373F62]"}>
+                                    <TableRow className="hover:bg-transparent">
+                                        <TableHead className={"w-1/2 !py-8 text-center text-white"}>
+                                            {t("card1.title")}
+                                        </TableHead>
+                                        <TableHead className={"w-1/2 !py-8 text-center text-white"}>
+                                            {t("card1.desc")}
+                                        </TableHead>
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
                                     {
-                                        card2Ary.map((d, i) => (
-                                            <li key={i}
-                                                className={"py-4 px-8 flex odd:bg-white even:bg-theme-light-bg items-center"}>
-                                                <Typography variant={"h6"} className={"w-24"}>
-                                                    {d.title}
-                                                </Typography>
-                                                <Typography variant={"muted"}>
-                                                    {d.desc}
-                                                </Typography>
-                                            </li>
+                                        card2Ary.map((item, index) => (
+                                            <TableRow key={index}>
+                                                <TableCell className={"text-center py-5"}>
+                                                    {item.title}
+                                                </TableCell>
+                                                <TableCell className={"text-center py-5"}>
+                                                    {item.desc}
+                                                </TableCell>
+                                            </TableRow>
                                         ))
+
                                     }
-                                </ul>
-                            </div>
+                                </TableBody>
+                            </Table>
                         </div>
                     </div>
 

@@ -127,7 +127,7 @@ const Markets = (props: Props) => {
     }, [ tabActive ]);
 
     return (
-        <section className={"xl:py-10"}>
+        <section className={"py-16"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -156,7 +156,6 @@ const Markets = (props: Props) => {
                 {
                     tabList && (
                         <div className={"mt-10"}>
-
                             {
                                 tabList.length > 3 ? (
                                     <Select value={tabActive} onValueChange={handleToggleTabActive}>
@@ -199,69 +198,71 @@ const Markets = (props: Props) => {
                 }
                 <div className={"mt-10"}>
                     {type === "elementary" && (
-                        <Table>
-                            <TableCaption className={"mt-4 xl:mt-16"}>
-                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                    {trade}
-                                </Button>
-                            </TableCaption>
-                            <TableHeader>
-                                <TableRow>
-                                    <TableHead className={"w-[120px]"}>{CommonT("code")}</TableHead>
-                                    <TableHead>{CommonT("price")}</TableHead>
-                                    <TableHead>{CommonT("changePercentage")}</TableHead>
-                                    <TableHead>{CommonT("change")}</TableHead>
-                                    <TableHead>{CommonT("open")}</TableHead>
-                                    <TableHead>{CommonT("high")}</TableHead>
-                                    <TableHead>{CommonT("low")}</TableHead>
-                                    <TableHead className={"text-right w-[80px]"}>{CommonT("volume")}</TableHead>
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                                {loading ? (
-                                    Array.from({length: 6}).map((_, i) => (
-                                        <TableRow key={i}>
-                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                            <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                        </TableRow>
-                                    ))
-                                ) : rawData.map((item: any, index: number) => (
-                                    <TableRow key={index}>
-                                        <TableCell className={"flex"}>
-                                            <Typography variant={"p"} className="font-medium">
-                                                {item.symbol}
-                                            </Typography>
-                                            <Typography variant={"muted"} className={"ml-2"}>
-                                                {item.name}
-                                            </Typography>
-                                        </TableCell>
-                                        <TableCell>
+                        <>
+                            <Table>
+                                <TableHeader>
+                                    <TableRow>
+                                        <TableHead className={"w-[120px]"}>{CommonT("code")}</TableHead>
+                                        <TableHead>{CommonT("price")}</TableHead>
+                                        <TableHead>{CommonT("changePercentage")}</TableHead>
+                                        <TableHead>{CommonT("change")}</TableHead>
+                                        <TableHead>{CommonT("open")}</TableHead>
+                                        <TableHead>{CommonT("high")}</TableHead>
+                                        <TableHead>{CommonT("low")}</TableHead>
+                                        <TableHead className={"text-right w-[80px]"}>{CommonT("volume")}</TableHead>
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
+                                    {loading ? (
+                                        Array.from({length: 6}).map((_, i) => (
+                                            <TableRow key={i}>
+                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                            </TableRow>
+                                        ))
+                                    ) : rawData.map((item: any, index: number) => (
+                                        <TableRow key={index}>
+                                            <TableCell className={"flex"}>
+                                                <Typography variant={"p"} className="font-medium">
+                                                    {item.symbol}
+                                                </Typography>
+                                                <Typography variant={"muted"} className={"ml-2"}>
+                                                    {item.name}
+                                                </Typography>
+                                            </TableCell>
+                                            <TableCell>
                                     <span className={rangeCls(item.changesPercentage)}>
                                         {formatMaxFixed(item.open)}
                                     </span>
-                                        </TableCell>
-                                        <TableCell>
+                                            </TableCell>
+                                            <TableCell>
                                     <span className={rangeCls(item.changesPercentage)}>
                                         {rangeChange(item.changesPercentage)}
                                     </span>
-                                        </TableCell>
-                                        <TableCell>
+                                            </TableCell>
+                                            <TableCell>
                                      <span className={rangeCls(item.changesPercentage)}>
                                         {formatMaxFixed(item.change)}
                                     </span>
-                                        </TableCell>
-                                        <TableCell>{formatMaxFixed(item.open)}</TableCell>
-                                        <TableCell>{formatMaxFixed(item.dayHigh)}</TableCell>
-                                        <TableCell>{formatMaxFixed(item.dayLow)}</TableCell>
-                                        <TableCell align="right">{convert(item.volume)}</TableCell>
-                                    </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
+                                            </TableCell>
+                                            <TableCell>{formatMaxFixed(item.open)}</TableCell>
+                                            <TableCell>{formatMaxFixed(item.dayHigh)}</TableCell>
+                                            <TableCell>{formatMaxFixed(item.dayLow)}</TableCell>
+                                            <TableCell align="right">{convert(item.volume)}</TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                            <div className={"mt-8 flex justify-center xl:mt-16"}>
+                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
+                                    {trade}
+                                </Button>
+                            </div>
+                        </>
                     )}
 
                     {type === "future" && (

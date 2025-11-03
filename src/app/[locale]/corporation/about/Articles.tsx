@@ -23,7 +23,7 @@ const Articles = () => {
         { imageUrl: "bg-[url(/images/corporation/about-article3.png)] bg-center bg-cover", title: t("row.col3.title"), desc: t("row.col3.desc") }
     ];
     return (
-        <section className={"py-4 xl:py-30"}>
+        <section className={"py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

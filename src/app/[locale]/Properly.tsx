@@ -247,7 +247,7 @@ const Properly = () => {
                             </div>
                         </div>
                         <div className={"col-span-12 lg:col-span-9"}>
-                            <div className={"w-full mt-16 xl:mt-0"}>
+                            <div className={"w-full mt-8 xl:mt-0"}>
                                 {
                                     tabActive === "classic" &&
                                     <SimpleSwiper

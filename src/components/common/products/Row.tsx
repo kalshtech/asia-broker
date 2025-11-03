@@ -19,7 +19,7 @@ const fadeInUp: Variants = {
 const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, children, prompt }: any) => {
     const isLight = theme === "light";
     return (
-        <section className={classnames(["xl:py-30", {
+        <section className={classnames(["py-16 xl:py-30", {
             "bg-[#000515]": !isLight
         }])}>
             <Container>

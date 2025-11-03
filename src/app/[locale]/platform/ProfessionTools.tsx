@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const ProfessionalTools = () => {
     const t = useTranslations("Pages.platform.professionalTools");
     return (
-        <section className={"bg-[url(/images/platform/professional-tools-background.png)] bg-cover bg-center h-124 lg:h-[532px] py-4 xl:py-30"}>
+        <section className={"bg-[url(/images/platform/professional-tools-background.png)] bg-cover bg-center h-124 lg:h-[532px] py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
@@ -29,7 +29,7 @@ const ProfessionalTools = () => {
                         {t("title")}
                     </Typography>
                 </motion.div>
-                <div className={"mt-16"}>
+                <div className={"mt-8 xl:mt-16"}>
                     <div className={"grid grid-cols-12"}>
                         <div className={"col-span-6 h-full"}>
                             <div className={"border-r border-b h-full border-[#51586F] py-6 px-4"}>

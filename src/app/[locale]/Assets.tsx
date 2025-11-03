@@ -190,8 +190,8 @@ const Assets = () => {
                                     { t("desc") }
                                 </Typography>
                                 <Dialog>
-                                    <DialogTrigger className={"!text-white"}>
-                                        <div className={"flex mt-8"}>
+                                    <DialogTrigger className={"!text-white text-center mx-auto w-full"}>
+                                        <div className={"flex mt-8 justify-center items-center"}>
                                             <CircleAlert />
                                             <Typography variant={"muted"} className={"!text-white text-center ml-2"}>
                                                 { t("prompt") }

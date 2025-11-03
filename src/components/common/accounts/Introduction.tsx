@@ -34,7 +34,7 @@ const Introduction = (props: Props) => {
     const { title, desc, leftTitle, liAry, leftDesc, rightRowAry, rightCol1Title, rightCol1Desc } = props;
 
     return (
-        <section className={"py-4 xl:py-30"}>
+        <section className={"py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

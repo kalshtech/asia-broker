@@ -23,7 +23,7 @@ const Compass = () => {
         { imageUrl:"/images/academy/learning-compass-swiper3.png", title: t("row.span3.title"), desc: t("row.span3.desc"), prompt: t("row.span3.prompt") },
     ];
     return (
-        <section className={"py-4 xl:py-30"}>
+        <section className={"py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

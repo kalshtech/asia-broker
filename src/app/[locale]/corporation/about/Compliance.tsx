@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Compliance = () => {
     const t = useTranslations("Pages.corporation.about.compliance");
     return (
-        <section className={"bg-[url(/images/corporation/about-compliance.png)] bg-center bg-cover py-4 xl:py-30"}>
+        <section className={"bg-[url(/images/corporation/about-compliance.png)] bg-center bg-cover py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

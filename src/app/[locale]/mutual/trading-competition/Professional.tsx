@@ -26,7 +26,7 @@ const Professional = () => {
         { imageUrl: "/images/mutual/competition-professional-col6.png", title: t("row.col6.title"), desc: t("row.col6.desc") },
     ];
     return (
-        <section className={"py-8 px-4 xl:py-30"}>
+        <section className={"py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

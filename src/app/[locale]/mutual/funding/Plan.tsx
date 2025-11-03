@@ -51,10 +51,10 @@ export default function Plan() {
                         {t("desc")}
                     </Typography>
                 </motion.div>
-                <div>
-                    <Process theme={"dark"} ary={processAry} title={t("row.title")}/>
-                </div>
             </Container>
+            <div>
+                <Process theme={"dark"} ary={processAry} title={t("row.title")}/>
+            </div>
         </section>
     )
 }

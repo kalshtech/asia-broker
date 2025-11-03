@@ -24,7 +24,7 @@ const Decision = () => {
     ];
 
     return (
-        <section className={"py-8 xl:py-30"}>
+        <section className={"py-16 xl:py-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"

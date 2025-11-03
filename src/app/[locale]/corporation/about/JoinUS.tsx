@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 const JoinUS = () => {
     const t = useTranslations("Pages.corporation.about.join");
     return (
-        <section>
+        <section className={"py-16"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"

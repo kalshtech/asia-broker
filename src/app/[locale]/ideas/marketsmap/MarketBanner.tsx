@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const MarketBanner = () => {
     const t = useTranslations("Pages.ideas.marketsmap.marketBanner");
     return (
-        <section className={"bg-theme-light-bg py-4 xl:py-16"}>
+        <section className={"bg-theme-light-bg py-16"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

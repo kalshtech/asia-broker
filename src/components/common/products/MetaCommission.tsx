@@ -18,7 +18,7 @@ const MetaProfession = ( props: Props ) => {
 
     return (
         <Container>
-            <div className={"flex items-center flex-col xl:flex-row"}>
+            <div className={"flex items-center flex-col xl:flex-row py-16 xl:py-30"}>
                 <div>
                     <Typography
                         variant={"h3"}

@@ -119,7 +119,7 @@ export default function Challenge() {
     ];
 
     return (
-        <section className={"pt-8 pb-8 lg:pt-0 xl:pb-30 bg-[#000515]"}>
+        <section className={"py-8 lg:pt-0 xl:pb-30 bg-[#000515]"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

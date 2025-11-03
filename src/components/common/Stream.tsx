@@ -40,7 +40,7 @@ const Stream = (props: Props) => {
     const t = useTranslations("Pages.accounts.vic.stream");
     const { title, desc, col1, col2 = { isShowMore: true, backgroundUrl: "" } } = props;
     return (
-        <section className={"py-4 xl:py-30"}>
+        <section className={"py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

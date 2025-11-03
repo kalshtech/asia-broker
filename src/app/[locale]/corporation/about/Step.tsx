@@ -13,7 +13,7 @@ const Step = () => {
         { imageUrl: "/images/corporation/about-step5.png", title: t("row.col5.title"), year: t("row.col5.year") },
     ];
     return (
-        <section className={"bg-theme-light-bg xl:py-30"}>
+        <section className={"bg-theme-light-bg py-16 xl:py-30"}>
             <Container>
                 <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10"}>
                     {

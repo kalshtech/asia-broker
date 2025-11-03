@@ -23,7 +23,7 @@ const Infrastructure =  () => {
     ];
 
     return (
-        <section className={"py-4 xl:py-30"}>
+        <section className={"py-16 xl:py-30"}>
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"

@@ -14,7 +14,7 @@ const JoinCommunity = (props: Props) => {
     const t  = useTranslations("Common");
     const { theme = "dark", isHavePb = true } = props;
     return (
-        <section className={classnames(["bg-theme-light-bg", isHavePb ? "xl:pb-30" : ""])}>
+        <section className={classnames(["bg-theme-light-bg", isHavePb ? "pb-16 xl:pb-30" : ""])}>
             <Container>
                 <div className={classnames(["", {
                     "bg-theme-deep-bg": theme === "dark",

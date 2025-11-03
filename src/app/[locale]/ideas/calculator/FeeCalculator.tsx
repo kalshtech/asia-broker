@@ -39,14 +39,14 @@ const FeeCalculator = () => {
     ];
 
     const TypeAry = [
-        { label: "USD 美元", value: "USD", image: "/images/ideas/USD-tag.png" },
-        { label: "EUR 欧元", value: "EUR", image: "/images/ideas/EUR-tag.png" },
-        { label: "JPY 日元", value: "JPY", image: "/images/ideas/JPY-tag.png" },
-        { label: "GBP 英镑", value: "GBP", image: "/images/ideas/GBP-tag.png" },
-        { label: "CAD 加元", value: "CAD", image: "/images/ideas/CAD-tag.png" },
-        { label: "AUD 澳元", value: "AUD", image: "/images/ideas/AUD-tag.png" },
-        { label: "CHF 瑞郎", value: "CHF", image: "/images/ideas/CHF-tag.png" },
-        { label: "NZD 纽元", value: "NZD", image: "/images/ideas/NZD-tag.png" },
+        { label: "USD", value: "USD", image: "/images/ideas/USD-tag.png" },
+        { label: "EUR", value: "EUR", image: "/images/ideas/EUR-tag.png" },
+        { label: "JPY", value: "JPY", image: "/images/ideas/JPY-tag.png" },
+        { label: "GBP", value: "GBP", image: "/images/ideas/GBP-tag.png" },
+        { label: "CAD", value: "CAD", image: "/images/ideas/CAD-tag.png" },
+        { label: "AUD", value: "AUD", image: "/images/ideas/AUD-tag.png" },
+        { label: "CHF", value: "CHF", image: "/images/ideas/CHF-tag.png" },
+        { label: "NZD", value: "NZD", image: "/images/ideas/NZD-tag.png" },
     ];
 
     const CurrencyPairAry = [
@@ -118,7 +118,7 @@ const FeeCalculator = () => {
     }, [formData.base, formData.currency])
 
     return (
-        <section className={"py-4 xl:py-30"}>
+        <section className={"py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
