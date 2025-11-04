@@ -6,7 +6,6 @@ import {motion, Variants} from "framer-motion";
 import RegisterBtn from "@/components/RegisterBtn";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import SimpleSwiper from "@/components/common/products/SimpleSwiper";
-import {Button} from "@/components/ui/button";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
@@ -212,11 +211,14 @@ const Properly = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography variant={"h3"} className={"text-center"}>
+                    <Typography
+                        variant={"h3"}
+                        className={"text-center hidden lg:block"}
+                    >
                         {t("title")}
                     </Typography>
 
-                    <Typography className={"text-center mt-6"}>
+                    <Typography className={"text-center mt-6  hidden lg:block"}>
                         {t("description")}
                     </Typography>
                 </motion.div>
@@ -234,7 +236,7 @@ const Properly = () => {
                                 {t(`left.${tabActive}.desc`)}
                             </Typography>
 
-                            <div className={"mt-6 lg:mt-12 flex justify-center lg:justify-start flex-row lg:flex-col"}>
+                            <div className={"mt-6 lg:mt-12 justify-center lg:justify-start flex-row lg:flex-col hidden lg:flex"}>
                                 <RegisterBtn/>
                                 <div>
                                     <GeneralLinkBtn
@@ -247,7 +249,7 @@ const Properly = () => {
                             </div>
                         </div>
                         <div className={"col-span-12 lg:col-span-9"}>
-                            <div className={"w-full mt-8 xl:mt-0"}>
+                            <div className={"w-full mt-4 xl:mt-0"}>
                                 {
                                     tabActive === "classic" &&
                                     <SimpleSwiper
