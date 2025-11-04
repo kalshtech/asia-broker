@@ -310,40 +310,40 @@ const Navigation = () => {
                     ]
                 },
                 // CFD新手学院
-                {
-                    title: t("menu.beginner.title"),
-                    description: t("menu.beginner.description"),
-                    btn: t("menu.beginner.btn"),
-                    btnPath: "/",
-                    btnImg: "/images/navigation/beginner.png",
-                    colSpan: "col-span-4",
-                    children: [
-                        // {
-                        //     title: t("menu.beginner.row.col-1.title"),
-                        //     ul: [
-                        //         { label: t("menu.beginner.row.col-1.ul.li1"), desc: t("menu.beginner.row.col-1.ul.desc1"), path: "/" },
-                        //         { label: t("menu.beginner.row.col-1.ul.li2"), desc: t("menu.beginner.row.col-1.ul.desc2"), path: "/" },
-                        //         { label: t("menu.beginner.row.col-1.ul.li3"), desc: t("menu.beginner.row.col-1.ul.desc3"), path: "/" },
-                        //         { label: t("menu.beginner.row.col-1.ul.li4"), desc: t("menu.beginner.row.col-1.ul.desc4"), path: "/" },
-                        //         { label: t("menu.beginner.row.col-1.ul.li5"), desc: t("menu.beginner.row.col-1.ul.desc5"), path: "/" }
-                        //     ]
-                        // },
-                        // {
-                        //     title: t("menu.beginner.row.col-2.title"),
-                        //     ul: [
-                        //         { label: t("menu.beginner.row.col-2.ul.li1"), desc: t("menu.beginner.row.col-2.ul.desc1"), path: "/" },
-                        //         { label: t("menu.beginner.row.col-2.ul.li2"), desc: t("menu.beginner.row.col-2.ul.desc2"), path: "/" },
-                        //     ]
-                        // },
-                        {
-                            title: t("menu.beginner.row.col-3.title"),
-                            ul: [
-                                { label: t("menu.beginner.row.col-3.ul.li1"), desc: t("menu.beginner.row.col-3.ul.desc1"), path: "/academy/learning" },
-                                { label: t("menu.beginner.row.col-3.ul.li2"), desc: t("menu.beginner.row.col-3.ul.desc2"), path: "/academy/document" }
-                            ]
-                        }
-                    ]
-                },
+                // {
+                //     title: t("menu.beginner.title"),
+                //     description: t("menu.beginner.description"),
+                //     btn: t("menu.beginner.btn"),
+                //     btnPath: "/",
+                //     btnImg: "/images/navigation/beginner.png",
+                //     colSpan: "col-span-4",
+                //     children: [
+                //         // {
+                //         //     title: t("menu.beginner.row.col-1.title"),
+                //         //     ul: [
+                //         //         { label: t("menu.beginner.row.col-1.ul.li1"), desc: t("menu.beginner.row.col-1.ul.desc1"), path: "/" },
+                //         //         { label: t("menu.beginner.row.col-1.ul.li2"), desc: t("menu.beginner.row.col-1.ul.desc2"), path: "/" },
+                //         //         { label: t("menu.beginner.row.col-1.ul.li3"), desc: t("menu.beginner.row.col-1.ul.desc3"), path: "/" },
+                //         //         { label: t("menu.beginner.row.col-1.ul.li4"), desc: t("menu.beginner.row.col-1.ul.desc4"), path: "/" },
+                //         //         { label: t("menu.beginner.row.col-1.ul.li5"), desc: t("menu.beginner.row.col-1.ul.desc5"), path: "/" }
+                //         //     ]
+                //         // },
+                //         // {
+                //         //     title: t("menu.beginner.row.col-2.title"),
+                //         //     ul: [
+                //         //         { label: t("menu.beginner.row.col-2.ul.li1"), desc: t("menu.beginner.row.col-2.ul.desc1"), path: "/" },
+                //         //         { label: t("menu.beginner.row.col-2.ul.li2"), desc: t("menu.beginner.row.col-2.ul.desc2"), path: "/" },
+                //         //     ]
+                //         // },
+                //         {
+                //             title: t("menu.beginner.row.col-3.title"),
+                //             ul: [
+                //                 { label: t("menu.beginner.row.col-3.ul.li1"), desc: t("menu.beginner.row.col-3.ul.desc1"), path: "/academy/learning" },
+                //                 { label: t("menu.beginner.row.col-3.ul.li2"), desc: t("menu.beginner.row.col-3.ul.desc2"), path: "/academy/document" }
+                //             ]
+                //         }
+                //     ]
+                // },
                 // 交易灵感
                 {
                     title: t("menu.inspiration.title"),
@@ -363,14 +363,14 @@ const Navigation = () => {
                                 { label: t("menu.inspiration.row.col-1.ul.li4"), path: "/ideas/marketsmap" },
                             ]
                         },
-                        {
-                            title: t("menu.inspiration.row.col-2.title"),
-                            desc: t("menu.inspiration.row.col-2.desc"),
-                            ul: [
-                                { label: t("menu.inspiration.row.col-2.ul.li1"), path: "/ideas/professional" },
-                                // { label: t("menu.inspiration.row.col-2.ul.li2"), desc: t("menu.inspiration.row.col-2.ul.desc2"), path: "/" },
-                            ]
-                        },
+                        // {
+                        //     title: t("menu.inspiration.row.col-2.title"),
+                        //     desc: t("menu.inspiration.row.col-2.desc"),
+                        //     ul: [
+                        //         { label: t("menu.inspiration.row.col-2.ul.li1"), path: "/ideas/professional" },
+                        //         // { label: t("menu.inspiration.row.col-2.ul.li2"), desc: t("menu.inspiration.row.col-2.ul.desc2"), path: "/" },
+                        //     ]
+                        // },
                         // {
                         //     title: t("menu.inspiration.row.col-3.title"),
                         //     desc: t("menu.inspiration.row.col-3.desc"),

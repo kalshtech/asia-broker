@@ -11,7 +11,7 @@ const total = 500000;
 
 const MockCalculator = () => {
     const t = useTranslations("Pages.accounts.profit.mockCalculator");
-    const [rate, setRate] = React.useState<any>(1000000000000000);
+    const [rate, setRate] = React.useState<any>(0);
     const [slider, setSlider] = React.useState<number[]>([40]);
     const [margin, setMargin] = React.useState("");
     const handleGetData = async () => {
@@ -25,7 +25,7 @@ const MockCalculator = () => {
     const handleCalculateMargin = () => {
         const value = slider[0] / 100;
         const wantNumber = total * value;
-        setMargin((wantNumber / rate).toFixed(3))
+        setMargin((wantNumber / rate * 100).toFixed(3))
     }
 
     React.useEffect(() => {
