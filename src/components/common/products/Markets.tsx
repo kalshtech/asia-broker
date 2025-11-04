@@ -202,14 +202,14 @@ const Markets = (props: Props) => {
                             <Table>
                                 <TableHeader>
                                     <TableRow className={"bg-theme-active hover:bg-theme-active"}>
-                                        <TableHead className={"w-[120px] text-white"}>{CommonT("code")}</TableHead>
+                                        <TableHead className={"text-white"}>{CommonT("code")}</TableHead>
                                         <TableHead className={"text-white"}>{CommonT("price")}</TableHead>
                                         <TableHead className={"text-white"}>{CommonT("changePercentage")}</TableHead>
                                         <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("change")}</TableHead>
                                         <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("open")}</TableHead>
                                         <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("high")}</TableHead>
                                         <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("low")}</TableHead>
-                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("volume")}</TableHead>
+                                        {/*<TableHead className={"text-white hidden xl:table-cell"}>{CommonT("volume")}</TableHead>*/}
                                         <TableHead className={"text-white text-right w-[80px]"}></TableHead>
                                     </TableRow>
                                 </TableHeader>
@@ -242,7 +242,7 @@ const Markets = (props: Props) => {
                                                     {rangeChange(item.changesPercentage)}
                                                 </span>
                                             </TableCell>
-                                            <TableCell className={"hidden text-right xl:table-cell"}>
+                                            <TableCell className={"hidden text-right xl:text-left xl:table-cell"}>
                                                  <span className={rangeCls(item.changesPercentage)}>
                                                     {formatMaxFixed(item.change)}
                                                 </span>
@@ -250,7 +250,7 @@ const Markets = (props: Props) => {
                                             <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.open)}</TableCell>
                                             <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayHigh)}</TableCell>
                                             <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayLow)}</TableCell>
-                                            <TableCell className={"hidden xl:table-cell"} align="right">{convert(item.volume)}</TableCell>
+                                            {/*<TableCell className={"hidden xl:table-cell"}>{convert(item.volume)}</TableCell>*/}
                                             <TableHead className={"text-right text-theme-active w-[80px]"}>Trade</TableHead>
                                         </TableRow>
                                     ))}
