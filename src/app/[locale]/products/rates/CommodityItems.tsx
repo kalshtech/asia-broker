@@ -51,10 +51,12 @@ const CommodityItems = () => {
                     {
                         tableData.map((item, index) => (
                             <div className={"bg-white my-6 p-4 rounded-sm flex"} key={index}>
-                                <Typography className={"font-medium"}>
-                                    { item.type }
-                                </Typography>
-                                <ArrowRight className={"ml-auto"} />
+                                <a href="/" className={"flex w-full font-medium text-theme-active"}>
+                                    <Typography className={"!text-theme-active"}>
+                                        { item.type }
+                                    </Typography>
+                                    <ArrowRight className={"ml-auto"} />
+                                </a>
                             </div>
                         ))
                     }

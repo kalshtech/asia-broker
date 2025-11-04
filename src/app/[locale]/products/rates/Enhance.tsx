@@ -36,7 +36,7 @@ const Enhance = () => {
 
                 <div className={"mt-4 lg:mt-16"}>
                     <div
-                        className={"bg-[url(/images/products/rates-enhance.png)] bg-cover bg-center flex justify-center items-center h-100 lg:h-120"}>
+                        className={"bg-[url(/images/products/rates-enhance.png)] bg-cover bg-center flex justify-center items-center p-4 h-100 lg:h-120"}>
                         <motion.div
                             variants={fadeInUp}
                             initial="hidden"
