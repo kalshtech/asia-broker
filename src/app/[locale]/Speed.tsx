@@ -39,16 +39,13 @@ const Speed = () => {
                         </Typography>
                     </div>
                     <div className={"xl:hidden"}>
-                        <Typography variant={"h3"} className={"text-left"}>
-                            {t("title3")}
-                        </Typography>
-                        <Typography variant={"h3"} className={"text-left"}>
+                        <Typography variant={"h3"} className={"text-center"}>
                             {t("title4")}
                         </Typography>
-                        <Typography variant={"muted"} className={"text-left mt-6 mx-auto max-w-7xl"}>
+                        <Typography variant={"muted"} className={"text-center mt-6 mx-auto max-w-7xl"}>
                             {t("description1")}
                         </Typography>
-                        <Typography variant={"muted"} className={"text-left mt-1 mx-auto max-w-7xl"}>
+                        <Typography variant={"muted"} className={"text-center mt-1 mx-auto max-w-7xl"}>
                             {t("description2")}
                         </Typography>
                     </div>

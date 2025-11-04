@@ -186,14 +186,14 @@ const Assets = () => {
                             </div>
                             <div className={"block xl:hidden"}>
                                 <img src="/images/home/mobile-fast-deposits.png" className={"w-full h-full object-cover"} alt=""/>
-                                <Typography variant={"muted"} className={"!text-white text-center mt-8"}>
+                                <Typography variant={"muted"} className={"!text-black text-center mt-8"}>
                                     { t("desc") }
                                 </Typography>
                                 <Dialog>
                                     <DialogTrigger className={"!text-white text-center mx-auto w-full"}>
                                         <div className={"flex mt-8 justify-center items-center"}>
-                                            <CircleAlert />
-                                            <Typography variant={"muted"} className={"!text-white text-center ml-2"}>
+                                            <CircleAlert className={"text-black"} />
+                                            <Typography variant={"muted"} className={"!text-black text-center ml-2"}>
                                                 { t("prompt") }
                                             </Typography>
                                         </div>

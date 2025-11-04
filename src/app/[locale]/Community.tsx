@@ -74,7 +74,7 @@ const Community = () => {
                         </div>
                     </div>
                     <div className={"col-span-12 lg:col-span-6"}>
-                        <div className={"h-screen xl:h-full bg-[url('/images/mobile/communitybg2.png')] xl:bg-[url('/images/home/communitybg2.png')] bg-cover bg-center bg-no-repeat p-6"}>
+                        <div className={"h-full bg-[url('/images/mobile/communitybg2.png')] xl:bg-[url('/images/home/communitybg2.png')] bg-cover bg-center bg-no-repeat py-16 px-6 lg:p-6"}>
                             <div className={"flex flex-1 h-full flex-col"}>
                                 <div className={"flex-col flex h-full justify-center items-center"}>
                                     <Typography
@@ -97,9 +97,10 @@ const Community = () => {
                                         </Button>
                                     </div>
                                 </div>
-                                <div className={"mt-auto flex justify-center"}>
-                                    <Typography variant={"muted"}
-                                                className={"!text-white text-center text-xs max-w-md mt-5 roboto"}>
+                                <div className={"mt-32 lg:mt-auto flex justify-center"}>
+                                    <Typography
+                                        variant={"muted"}
+                                        className={"!text-white text-center text-xs max-w-md mt-5 roboto"}>
                                         {t("row.2.prompt")}
                                     </Typography>
                                 </div>
