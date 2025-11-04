@@ -113,7 +113,10 @@ const Cooperator = () => {
                             </Typography>
                         </div>
                         <div className={"mt-16"}>
-                            <RegisterBtn text={t(`${tabActive}.btn`)}/>
+                            <RegisterBtn
+                                text={t(`${tabActive}.btn`)}
+                                path={"https://portal.asiafuturetrading.com"}
+                            />
                         </div>
                     </div>
                 </div>

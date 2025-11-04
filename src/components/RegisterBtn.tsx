@@ -7,16 +7,21 @@ import classnames from "classnames";
 type Props = {
     text?: string;
     className?: string;
+    path?: string;
 };
 
 const RegisterBtn = (props: Props) => {
     const t = useTranslations("Common");
-    const { text, className } = props;
+    const { text, className, path } = props;
     return (
         <div className={classnames(["cursor-pointer"])}>
-            <Button className={classnames(["cursor-pointer bg-theme-active hover:bg-theme-active-hover", className])}>
-                { text ? text : t("register") }
-            </Button>
+            <a href={path}
+               target={"_blank"}
+            >
+                <Button className={classnames(["cursor-pointer bg-theme-active hover:bg-theme-active-hover", className])}>
+                    { text ? text : t("register") }
+                </Button>
+            </a>
         </div>
     )
 }

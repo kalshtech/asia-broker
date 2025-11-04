@@ -76,7 +76,7 @@ const CalendarComponent = () => {
                                     {t("prospect.description")}
                                 </Typography>
                                 <div className={"mt-8"}>
-                                    <div className={"flex-1 flex"}>
+                                    <div className={"flex-1 flex flex-row"}>
                                         <GeneralLinkBtn
                                             text={t("explore")}
                                             path={"/ideas/professional"}

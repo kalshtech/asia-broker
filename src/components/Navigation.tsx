@@ -166,13 +166,13 @@ const Navigation = () => {
     const localAry = [
         { value: "en", label: "English", country: t("countries.en") },
         { value: "zh-cn", label: "中文简体", country: t("countries.zh-cn") },
-        { value: "zh-tw", label: "中文繁體", country: t("countries.zh-tw") },
+        // { value: "zh-tw", label: "中文繁體", country: t("countries.zh-tw") },
         { value: "ja", label: "日本語", country: t("countries.ja") },
-        { value: "ko", label: "한국어", country: t("countries.ko") },
-        { value: "th", label: "ภาษาไทย", country: t("countries.th") },
-        { value: "ms", label: "Melayu", country: t("countries.ms") },
-        { value: "id", label: "Indonesian", country: t("countries.id") },
-        { value: "vi", label: "Tiếng Việt", country: t("countries.vi") },
+        // { value: "ko", label: "한국어", country: t("countries.ko") },
+        // { value: "th", label: "ภาษาไทย", country: t("countries.th") },
+        // { value: "ms", label: "Melayu", country: t("countries.ms") },
+        // { value: "id", label: "Indonesian", country: t("countries.id") },
+        // { value: "vi", label: "Tiếng Việt", country: t("countries.vi") },
     ];
 
     const renderHelpCenterLink = () => {
