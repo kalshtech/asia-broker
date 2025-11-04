@@ -58,7 +58,7 @@ const Route = () => {
                 <div className={"mt-16"}>
                     <div className={"grid grid-cols-1 lg:grid-cols-3"}>
                         <div
-                            className={"bg-[url(/images/accounts/route-bg1.png)] bg-center bg-cover py-20 px-10 h-80 relative z-10 lg:-mr-16"}>
+                            className={"bg-[url(/images/accounts/route-bg1.png)] bg-center bg-cover py-20 px-10 h-108 xl:h-80 relative z-10 lg:-mr-16"}>
                             <Typography
                                 variant={"h4"}
                                 className={"!text-white mr-16"}
@@ -73,7 +73,7 @@ const Route = () => {
                             </Typography>
                         </div>
                         <div
-                            className={"bg-[url(/images/accounts/route-bg2.png)] bg-center bg-cover py-20 px-10 h-80 relative z-20 lg:mt-16"}>
+                            className={"bg-[url(/images/accounts/route-bg2.png)] bg-center bg-cover py-20 px-10 h-108 xl:h-80 relative z-20 lg:mt-16"}>
                             <Typography
                                 variant={"h4"}
                                 className={"!text-white"}
@@ -88,7 +88,7 @@ const Route = () => {
                             </Typography>
                         </div>
                         <div
-                            className={"bg-[url(/images/accounts/route-bg3.png)] bg-center bg-cover py-20 px-10 h-80 relative z-10 lg:-ml-16"}>
+                            className={"bg-[url(/images/accounts/route-bg3.png)] bg-center bg-cover py-20 px-10 h-108 xl:h-80 relative z-10 lg:-ml-16"}>
                             <Typography
                                 variant={"h4"}
                                 className={"!text-white lg:ml-16"}
