@@ -66,16 +66,10 @@ const TablePackage = (props: Props) => {
                         </TableBody>
                     </Table>
                 </div>
-                <div className={"p-8 lg:hidden"}>
+                <div className={"p-8 xl:hidden"}>
                     <div className={""}>
                         <Typography variant={"h5"}>
                             {first}
-                        </Typography>
-                        <Typography
-                            variant={"muted"}
-                            className={"mt-4 text-xs !text-[#999]"}
-                        >
-                            {second}
                         </Typography>
                         {
                             third && (
@@ -91,7 +85,7 @@ const TablePackage = (props: Props) => {
                     <Accordion
                         type="single"
                         collapsible
-                        className="w-full"
+                        className="w-full mt-4"
                         defaultValue="item-0"
                     >
                         {

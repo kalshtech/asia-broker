@@ -65,7 +65,7 @@ const Process = (props: Props) => {
                                                 {index + 1}
                                             </div>
                                         </header>
-                                        <div className={"h-[calc(100%-136px)]"}>
+                                        <div className={"h-[calc(100%-136px)] lg:h-[calc(100%-148px)]"}>
                                             <Typography
                                                 variant={"h5"}
                                                 className={classnames(["my-6", {

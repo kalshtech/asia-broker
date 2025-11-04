@@ -91,7 +91,7 @@ const Explore = () => {
                                 <div className={"col-span-12 lg:col-span-5"}>
                                     <img
                                         src="/images/accounts/explore1.png"
-                                        className={"w-full h-80 xl:h-full object-cover"}
+                                        className={"w-full h-80 lg:h-144 xl:h-full object-cover"}
                                         title={"placeholder"}
                                         alt="placeholder"
                                     />
@@ -141,7 +141,7 @@ const Explore = () => {
                                 <div className={"col-span-12 lg:col-span-5"}>
                                     <img
                                         src="/images/accounts/explore2.png"
-                                        className={"w-full h-80 xl:h-full object-cover"}
+                                        className={"w-full h-80 lg:h-144 xl:h-full object-cover"}
                                         title={"placeholder"}
                                         alt="placeholder"
                                     />
