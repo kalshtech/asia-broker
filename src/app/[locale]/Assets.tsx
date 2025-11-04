@@ -31,20 +31,20 @@ const Assets = () => {
     const [tabActive, setTabActive] = useState("card");
 
     const BtnAry = [
-        { label: t("button.card"), value: "card", img: "/images/home/assets-1.png" },
-        { label: t("button.type"), value: "type", img: "/images/home/assets-3.png" },
-        { label: t("button.safe"), value: "safe", img: "/images/home/assets-2.png" },
+        { label: t("button.card"), value: "card", img: "/images/home/assets-1.webp" },
+        { label: t("button.type"), value: "type", img: "/images/home/assets-3.webp" },
+        { label: t("button.safe"), value: "safe", img: "/images/home/assets-2.webp" },
     ];
 
 
     const renderImageSrc = () => {
         switch (tabActive) {
             case "type":
-                return "/images/home/assets-1.png";
+                return "/images/home/assets-1.webp";
             case "safe":
-                return "/images/home/assets-2.png";
+                return "/images/home/assets-2.webp";
             case "card":
-                return "/images/home/assets-3.png";
+                return "/images/home/assets-3.webp";
         }
     }
 
@@ -113,8 +113,7 @@ const Assets = () => {
 
                     <li className={"mt-3 lg:mt-6"}>
                         <header className={"flex items-center"}>
-                            <div
-                                className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
+                            <div className={"bg-theme-active-hover w-[5px] h-[5px] rounded-full mr-2"}/>
                             <Typography
                                 variant={"h6"}
                                 className={theme === "dark" ? "!text-white font-medium" : "font-medium"}
@@ -164,7 +163,7 @@ const Assets = () => {
                 <div className={"mt-10 xl:mt-20 xl:px-50"}>
                     <div className={"grid grid-cols-12 gap-4"}>
                         <div className={"col-span-12 lg:col-span-6"}>
-                            <div className={"hidden xl:block"}>
+                            <div className={"hidden xl:flex flex-col items-center justify-center"}>
                                 <img src={renderImageSrc()} className={"max-w-[320px] mx-auto xl:mx-0"} alt=""/>
                                 <div className={"mt-6 grid grid-cols-2 lg:space-y-4 xl:space-y-6"}>
                                     {
