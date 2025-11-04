@@ -2,8 +2,6 @@
 import * as React from 'react'
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { params_sofr } from "@/params/api";
-import { http } from "@/utils/http";
 import dynamic from "next/dynamic";
 import Highcharts from "highcharts/highstock";
 import { Options, SeriesLineOptions } from "highcharts";
@@ -74,7 +72,8 @@ function useNormalized(raw: any) {
 
 type Row = { date: string; rate?: number | null; volume?: number | null };
 
-function SOFRHighcharts({ raw, loading = true }: { raw: any, loading: boolean; }) {
+function SOFRHighcharts({ raw, loading = false }: { raw: any, loading?: boolean; }) {
+    console.log(raw)
     const { rateData, volData, hasVolume, yLeftDomain } = useNormalized(raw);
 
     const options: Options = React.useMemo(() => ({
@@ -155,24 +154,13 @@ function SOFRHighcharts({ raw, loading = true }: { raw: any, loading: boolean; }
     );
 }
 
-const Rates = () => {
+type Props = {
+    data: any
+}
+
+const Rates = (props: Props) => {
     const t = useTranslations("Pages.accounts.profit.rates");
-    const [raw, setRaw] = React.useState<Row[]>([]);
-    const [loading, setLoading] = React.useState<boolean>(true)
-
-    const handleGetData = async () => {
-        setLoading(true);
-        const result = await http.get(params_sofr.url, {  });
-        if(result.data.status === 0) {
-            const data = await result.data.data;
-            setRaw(data);
-            setLoading(false);
-        }
-    }
-
-    React.useEffect(() => {
-        handleGetData();
-    }, [])
+    const { data } = props;
 
     return (
         <section className={"bg-theme-light-bg py-16 xl:py-30"}>
@@ -197,7 +185,7 @@ const Rates = () => {
                             {t("line-title")}
                         </Typography>
                         <div className={"mt-4 h-80"}>
-                            <SOFRHighcharts loading={loading} raw={raw}/>
+                            <SOFRHighcharts loading={false} raw={data}/>
                         </div>
                     </div>
                 </div>

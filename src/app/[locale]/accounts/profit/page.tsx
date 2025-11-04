@@ -9,10 +9,36 @@ import Values from "./Values";
 import Advance from "./Advance"
 import QuestionAnswer from "@/components/common/QuestionAnswer";
 import Tools from "@/components/common/Tools";
+import {params_sofr} from "@/params/api";
+
+import { headers, cookies } from 'next/headers';
+
+export const dynamic = 'force-dynamic';
+
+async function fetchFromSelf(path: string, init?: RequestInit) {
+    const h = await headers(); // 来自本次请求的请求头
+    const proto = h.get('x-forwarded-proto') ?? 'http';
+    const host  = h.get('x-forwarded-host') ?? h.get('host'); // 兼容 Vercel/本地
+    const base  = `${proto}://${host}`;
+
+    const cookieStr = cookies().toString();
+    return fetch(`${base}${path}`, {
+        ...init,
+        cache: 'no-store',
+        headers: {
+            ...(init?.headers ?? {}),
+            cookie: cookieStr,
+        },
+    });
+}
+
 
 
 export default async function Page() {
     const t = await getTranslations("Pages.accounts.profit");
+    const result = await fetchFromSelf(params_sofr.url);
+    const data = await result.json();
+
     const QA_DATA = [
         {question: t("qa.ul.li1.title"), answer: t("qa.ul.li1.desc")},
         {question: t("qa.ul.li2.title"), answer: t("qa.ul.li2.desc")},
@@ -22,13 +48,14 @@ export default async function Page() {
         {question: t("qa.ul.li6.title"), answer: t("qa.ul.li6.desc")},
         {question: t("qa.ul.li7.title"), answer: t("qa.ul.li7.desc")},
     ]
+
     return (
         <div>
-            <Banner/>
+            <Banner rate={data.data[0].newData.dailyRate}/>
             <Mechanism/>
-            <Rates/>
+            <Rates data={data.data}/>
             <Profit/>
-            <MockCalculator/>
+            <MockCalculator rate={data.data[0].newData.dailyRate}/>
             <Values/>
             <Advance/>
             <QuestionAnswer data={QA_DATA} />

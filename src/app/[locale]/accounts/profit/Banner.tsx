@@ -6,8 +6,13 @@ import Container from "@/components/Container";
 import TitleReveal from "@/components/TitleReveal";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
-const Banner =  () => {
+type Props = {
+    rate: number
+}
+
+const Banner =  (props: Props) => {
     const t = useTranslations("Pages.accounts.profit.banner");
+    const { rate } = props;
     return (
         <div>
             <section className={"bg-[url(/images/accounts/profit-banner-mobile.png)] xl:bg-[url(/images/accounts/profit-banner.png)] bg-center bg-cover h-140 xl:h-[632px] py-4 xl:py-30"}>
@@ -59,7 +64,7 @@ const Banner =  () => {
                                 variant={"h2"}
                                 className={"font-medium text-center ml-2"}
                             >
-                                5.30%
+                                { rate } %
                             </Typography>
                         </div>
                         <div className={"col-span-12 lg:col-span-6 flex items-center justify-end"}>
