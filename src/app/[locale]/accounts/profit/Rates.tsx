@@ -73,9 +73,7 @@ function useNormalized(raw: any) {
 type Row = { date: string; rate?: number | null; volume?: number | null };
 
 function SOFRHighcharts({ raw, loading = false }: { raw: any, loading?: boolean; }) {
-    console.log(raw)
     const { rateData, volData, hasVolume, yLeftDomain } = useNormalized(raw);
-
     const options: Options = React.useMemo(() => ({
         chart: { height: 360, spacing: [10, 16, 10, 16], backgroundColor: "transparent" },
         rangeSelector: {

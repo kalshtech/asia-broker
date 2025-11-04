@@ -37,9 +37,13 @@ const GeneralLinkBtn = (props: Props) => {
 
     return (
         <Button className={classnames([renderCls(), className])}>
-            <Link href={path} className={classnames(["flex justify-center items-center", {
-                "flex-col": children
-            }])}>
+            <Link
+                href={path}
+                className={classnames(["flex justify-center items-center", {
+                    "flex-col": children
+                }])}
+                title={text}
+            >
                 { text }
                 { children }
                 { theme === "share" && (

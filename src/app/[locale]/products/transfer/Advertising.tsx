@@ -47,7 +47,7 @@ const Advertising = () => {
                 </motion.div>
                 <div className={"mt-16 bg-theme-light-bg py-16"}>
                     <div className={"grid grid-cols-12 gap-4 lg:gap-16 px-4 lg:px-12"}>
-                        <div className={"border-r-2 border-black col-span-12 lg:col-span-6 "}>
+                        <div className={"border-none xl:border-r-2 border-black col-span-12 lg:col-span-6"}>
                             <Typography
                                 variant={"h4"}
                                 className={"font-medium"}

@@ -68,7 +68,7 @@ const VIC = () => {
                         </div>
                         <div className={"col-span-12 lg:col-span-6"}>
                             <img
-                                className={"object-cover h-full"}
+                                className={"object-cover h-full max-h-[576px]"}
                                 src="/images/accounts/vic-img.png"
                                 alt="vic"
                                 title={"vic"}

@@ -42,7 +42,7 @@ const Velocity = () => {
                                 <Typography variant={"h4"} className={"!text-white"}>
                                     {t("card1.title")}
                                 </Typography>
-                                <Typography variant={"h5"} className={"!text-white font-medium block mt-16"}>
+                                <Typography variant={"h5"} className={"!text-white font-medium block mt-8 xl:mt-16"}>
                                     {t("card1.desc")}
                                 </Typography>
                             </div>
@@ -60,7 +60,7 @@ const Velocity = () => {
                                 <Typography variant={"h4"} className={"!text-white"}>
                                     {t("card2.title")}
                                 </Typography>
-                                <Typography variant={"h5"} className={"!text-white font-medium block mt-16"}>
+                                <Typography variant={"h5"} className={"!text-white font-medium block mt-8 xl:mt-16"}>
                                     {t("card2.desc")}
                                 </Typography>
                             </div>

@@ -87,7 +87,7 @@ const Reasons = () => {
                 </motion.div>
                 <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16 max-w-6xl mx-auto"}>
                     <div className={"col-span-12 lg:col-span-6"} ref={leftRef}>
-                        <div className={""}>
+                        <div className={"hidden xl:block"}>
                             <Typography variant={"large"}>
                                 {t("professional")}
                             </Typography>
@@ -114,7 +114,7 @@ const Reasons = () => {
                             </ul>
                         </div>
 
-                        <div className={"mt-10"}>
+                        <div className={"hidden xl:block mt-10"}>
                             <Typography variant={"large"}>
                                 {t("fairness")}
                             </Typography>

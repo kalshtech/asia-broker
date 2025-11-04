@@ -3,6 +3,7 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { Typography } from "@/components/ui/typography";
 import Container from "@/components/Container";
+import { CircleCheck } from "lucide-react";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -83,7 +84,8 @@ const Introduction = (props: Props) => {
                                 {
                                     liAry.map((item, index) => (
                                         <li key={index} className={"my-6 flex items-center"}>
-                                            <div className={"w-[5px] h-[5px] rounded-full bg-theme-active"}></div>
+                                            {/*<div className={"w-[5px] h-[5px] rounded-full bg-theme-active"}></div>*/}
+                                            <CircleCheck className={"text-theme-active w-6 h-6"} />
                                             <Typography variant={"muted"} className={"ml-3 font-medium"}>
                                                 {item.label}
                                             </Typography>
@@ -93,7 +95,7 @@ const Introduction = (props: Props) => {
                             </ul>
                         </div>
                     </div>
-                    <div className={"col-span-12 lg:col-span-9"}>
+                    <div className={"col-span-12 lg:col-span-9 mt-8 xl:mt-0"}>
                         <div className={"grid gap-4 grid-cols-2 lg:grid-cols-3"}>
                             <div className={"bg-theme-light-bg p-6 relative rounded-lg"}>
                                 <img

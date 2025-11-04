@@ -63,7 +63,7 @@ const Explore = () => {
                                                 {t("card1.desc")}
                                             </Typography>
                                         </div>
-                                        <ul className={"h-[calc(100%-120px)] lg:h-[calc(100%-240px)]"}>
+                                        <ul className={"h-[calc(100%-200px)] lg:h-[calc(100%-240px)]"}>
                                             {
                                                 card1Ary.map((item, index) => (
                                                     <li className={"flex items-center my-8"} key={index}>
@@ -113,7 +113,7 @@ const Explore = () => {
                                                 {t("card2.desc")}
                                             </Typography>
                                         </div>
-                                        <ul className={"h-[calc(100%-120px)] lg:h-[calc(100%-240px)] mt-4 lg:mt-10"}>
+                                        <ul className={"h-[calc(100%-200px)] lg:h-[calc(100%-240px)] mt-4 lg:mt-10"}>
                                             {
                                                 card2Ary.map((item, index) => (
                                                     <li className={"flex items-center my-8"} key={index}>

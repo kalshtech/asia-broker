@@ -10,7 +10,7 @@ import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 const Banner =  () => {
     const t = useTranslations("Pages.accounts.classic.banner");
     return (
-        <section className={"bg-[url(/images/accounts/classic-banner-mobile.png)] xl:bg-[url(/images/accounts/classic-banner.png)] bg-center bg-cover py-4 xl:py-30 h-136 xl:h-[632px]"}>
+        <section className={"bg-[url(/images/accounts/classic-banner-mobile.png)] xl:bg-[url(/images/accounts/classic-banner.png)] bg-center bg-cover py-4 xl:py-30 h-152 xl:h-[632px]"}>
             <Container>
                 <TitleReveal
                     title={t("title")}

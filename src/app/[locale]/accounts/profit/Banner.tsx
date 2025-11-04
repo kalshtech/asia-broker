@@ -51,7 +51,7 @@ const Banner =  (props: Props) => {
                 </Container>
             </section>
             <Container>
-                <div className={"bg-white px-10 py-12 -mt-24 rounded-xl shadow-[0_4px_8px_0_rgba(0,0,0,0.1)]"}>
+                <div className={"bg-white px-4 py-6 xl:px-10 xl:py-12 -mt-24 rounded-xl shadow-[0_4px_8px_0_rgba(0,0,0,0.1)]"}>
                     <div className={"grid grid-cols-12 gap-4"}>
                         <div className={"col-span-12 lg:col-span-6 flex items-center"}>
                             <Typography
