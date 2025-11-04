@@ -26,13 +26,13 @@ const JoinUS = () => {
             >
                 <Typography
                     variant={"h3"}
-                    className={"text-center"}
+                    className={"text-center hidden lg:block"}
                 >
                     {t("title")}
                 </Typography>
                 <Typography
                     variant={"muted"}
-                    className={"text-center mt-4"}
+                    className={"text-center mt-4 hidden lg:block"}
                 >
                     {t("desc")}
                 </Typography>

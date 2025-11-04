@@ -33,16 +33,16 @@ const Ready = () => {
                 </Typography>
                 <Typography
                     variant={"muted"}
-                    className={"text-center mt-6"}
+                    className={"text-center mt-6 hidden lg:block"}
                 >
                     {t("desc")}
                 </Typography>
             </motion.div>
             <div className={"mt-4 lg:mt-16"}>
                 <div className={"relative"}>
-                    <img src="/images/corporation/about-ready.png" className={"relative z-10"} alt=""/>
+                    <img src="/images/corporation/about-ready.png" className={"relative z-10 hidden lg:block"} alt=""/>
                     <Container>
-                        <div className={"grid grid-cols-12 gap-4 p-4 lg:p-12 bg-theme-deep-bg rounded-lg -mt-20 flex-col lg:flex-row relative z-20"}>
+                        <div className={"grid grid-cols-12 gap-4 p-4 lg:p-12 bg-theme-deep-bg rounded-lg mt-8 lg:-mt-20 flex-col lg:flex-row relative z-20"}>
                             <div className={"col-span-12 xl:col-span-8"}>
                                 <Typography
                                     variant={"lead"}

@@ -25,13 +25,16 @@ const Values = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography variant={"h3"} className={"text-center"}>
+                    <Typography
+                        variant={"h3"}
+                        className={"text-left lg:text-center"}
+                    >
                         {t("title")}
                     </Typography>
 
                     <Typography
                         variant={"muted"}
-                        className={"text-center mt-6"}
+                        className={"text-left lg:text-center mt-6"}
                     >
                         {t("desc")}
                     </Typography>

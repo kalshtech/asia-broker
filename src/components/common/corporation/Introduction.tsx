@@ -28,7 +28,7 @@ const Introduction = () => {
                     <Typography className={"font-medium !text-white mt-8 lg:mt-16"}>
                         {t("col1.desc1")}
                     </Typography>
-                    <Typography className={"font-medium !text-white mt-2"}>
+                    <Typography className={"font-medium !text-white mt-2 hidden lg:block"}>
                         {t("col1.desc2")}
                     </Typography>
                     <div className={"mt-8 lg:mt-16"}>

@@ -34,25 +34,25 @@ const Global =  () => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"!text-white text-center"}
+                        className={"!text-white text-left lg:text-center"}
                     >
                         {t("title")}
                     </Typography>
                 </motion.div>
-                <div className={"mt-16"}>
+                <div className={"mt-8 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4"}>
                         {
                             ulAry.map((item, index) => (
-                                <div className={"col-span-12 lg:col-span-3 relative"} key={index}>
+                                <div className={"col-span-12 lg:col-span-3 relative pr-4 last:pr-0 mt-2 first:mt-0"} key={index}>
                                     <Typography
                                         variant={"h5"}
-                                        className={"font-medium !text-white text-center"}
+                                        className={"font-medium !text-white text-left lg:text-center"}
                                     >
                                         {item.title}
                                     </Typography>
                                     <Typography
                                         variant={"muted"}
-                                        className={"!text-white text-center mt-8"}
+                                        className={"!text-white text-left lg:text-center mt-4 lg:mt-8"}
                                     >
                                         {item.desc}
                                     </Typography>
