@@ -17,7 +17,7 @@ const Banner =  () => {
     ];
 
     return (
-        <section className={"bg-[url(/images/accounts/platinum-banner-mobile.png)] xl:bg-[url(/images/accounts/platinum-banner.png)] bg-center bg-cover py-8 lg:py-16 xl:py-24 h-[632px]"}>
+        <section className={"bg-[url(/images/accounts/platinum-banner-mobile.png)] xl:bg-[url(/images/accounts/platinum-banner.png)] bg-center bg-cover py-8 lg:py-16 xl:py-24 h-108 lg:h-[632px]"}>
             <Container>
                 <TitleReveal
                     title={t("title")}
@@ -31,29 +31,32 @@ const Banner =  () => {
                     {t("midst")}
                 </Typography>
 
-                <Typography
-                    variant={"p"}
-                    className={"font-medium !text-white mt-10 !max-w-xl"}
-                >
-                    {t("desc")}
-                </Typography>
+                <div className={"hidden lg:block"}>
+                    <Typography
+                        variant={"p"}
+                        className={"font-medium !text-white mt-10 !max-w-xl"}
+                    >
+                        {t("desc")}
+                    </Typography>
 
-                <ul className={"mt-6"}>
-                    {
-                        ulAry.map((item, i) => (
-                            <li key={i} className={"flex my-4 items-center"}>
-                                <span className={"block w-[5px] h-[5px] bg-white rounded-full"}></span>
-                                <Typography
-                                    variant={"p"}
-                                    className={"!text-white ml-2"}
-                                >
-                                    {item.text}
-                                </Typography>
-                            </li>
-                        ))
-                    }
-                </ul>
-                <div className={"mt-8 xl:mt-16"}>
+                    <ul className={"mt-6"}>
+                        {
+                            ulAry.map((item, i) => (
+                                <li key={i} className={"flex my-4 items-center"}>
+                                    <span className={"block w-[5px] h-[5px] bg-white rounded-full"}></span>
+                                    <Typography
+                                        variant={"p"}
+                                        className={"!text-white ml-2"}
+                                    >
+                                        {item.text}
+                                    </Typography>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+
+                <div className={"mt-48 lg:mt-8 xl:mt-16"}>
                     <Button className={"bg-white hover:!bg-white text-black"}>
                         {t("register")}
                     </Button>

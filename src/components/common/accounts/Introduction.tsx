@@ -62,7 +62,7 @@ const Introduction = (props: Props) => {
                 </motion.div>
                 <div className={"grid grid-cols-12 gap-8 mt-4 lg:mt-16"}>
                     <div className={"col-span-12 lg:col-span-3"}>
-                        <div className={""}>
+                        <div className={"mt-8 xl:mt-0"}>
                             <div>
                                 <Typography
                                     variant={"h5"}

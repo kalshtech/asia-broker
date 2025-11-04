@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const Exclusive = () => {
     const t = useTranslations("Pages.accounts.platinum.exclusive");
     return (
-        <section className={"py-16 xl:py-30"}>
+        <section className={"py-16 xl:py-30 hidden lg:block"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}
