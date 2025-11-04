@@ -95,7 +95,7 @@ const EnglishSwiper = () => {
 
     const mobileAry = [
         {
-            urlImage: "bg-[url('/images/home/en-swiper-1.png')]",
+            urlImage: "bg-[url('/images/home/swiper1.webp')]",
             theme: "dark",
             title: t("1.title1"),
             desc1: t("1.description1"),
@@ -103,7 +103,7 @@ const EnglishSwiper = () => {
             isMobileShow: true
         },
         {
-            urlImage: "bg-[url('/images/home/en-swiper-2.png')]",
+            urlImage: "bg-[url('/images/home/swiper2.webp')]",
             theme: "dark",
             title: t("2.title1"),
             desc1: t("2.title2"),
@@ -111,7 +111,7 @@ const EnglishSwiper = () => {
             isMobileShow: true
         },
         {
-            urlImage: "bg-[url('/images/home/en-swiper-4.png')]",
+            urlImage: "bg-[url('/images/home/swiper4.webp')]",
             theme: "dark",
             title: t("4.title1"),
             desc1: t("4.title2"),
@@ -122,7 +122,7 @@ const EnglishSwiper = () => {
 
     const ary = [
         {
-            urlImage: "bg-[url('/images/home/en-swiper-1.png')]",
+            urlImage: "bg-[url('/images/home/swiper1.webp')]",
             theme: "dark",
             title: t("1.title1"),
             desc1: t("1.description1"),
@@ -130,7 +130,7 @@ const EnglishSwiper = () => {
             isMobileShow: true
         },
         {
-            urlImage: "bg-[url('/images/home/en-swiper-2.png')]",
+            urlImage: "bg-[url('/images/home/swiper2.webp')]",
             theme: "dark",
             title: t("2.title1"),
             desc1: t("2.title2"),
@@ -138,14 +138,14 @@ const EnglishSwiper = () => {
             isMobileShow: true
         },
         {
-            urlImage: "bg-[url('/images/home/en-swiper-3.png')]",
+            urlImage: "bg-[url('/images/home/swiper3.webp')]",
             theme: "light",
             title: t("3.title1"),
             desc1: t("3.title2"),
             desc2: t("3.description1"),
         },
         {
-            urlImage: "bg-[url('/images/home/en-swiper-4.png')]",
+            urlImage: "bg-[url('/images/home/swiper4.webp')]",
             theme: "dark",
             title: t("4.title1"),
             desc1: t("4.title2"),
@@ -153,21 +153,21 @@ const EnglishSwiper = () => {
             isMobileShow: true
         },
         {
-            urlImage: "bg-[url('/images/home/en-swiper-5.png')]",
+            urlImage: "bg-[url('/images/home/swiper5.webp')]",
             theme: "dark",
             title: t("5.title1"),
             desc1: t("5.title2"),
             desc2: t("5.description1")
         },
         {
-            urlImage: "bg-[url('/images/home/en-swiper-6.png')]",
+            urlImage: "bg-[url('/images/home/swiper6.webp')]",
             theme: "dark",
             title: t("6.title1"),
             desc1: t("6.title2"),
             desc2: t("6.description1")
         },
         {
-            urlImage: "bg-[url('/images/home/en-swiper-7.png')]",
+            urlImage: "bg-[url('/images/home/swiper7.webp')]",
             theme: "light",
             title: t("7.title1"),
             desc1: t("7.title2"),

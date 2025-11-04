@@ -83,35 +83,35 @@ const Advertisement = () => {
             ImageNumber: "2",
             title: t("2.title"),
             description: t("2.description"),
-            url: `bg-[url('/images/home/en-advertisement-2.png')]`,
+            url: `bg-[url('/images/home/advertisement2.webp')]`,
             path: "/platform"
         },
         {
             ImageNumber: "3",
             title: t("3.title"),
             description: t("3.description"),
-            url: `bg-[url('/images/home/en-advertisement-3.png')]`,
+            url: `bg-[url('/images/home/advertisement3.webp')]`,
             path: "/accounts/vic"
         },
         {
             ImageNumber: "4",
             title: t("4.title"),
             description: t("4.description"),
-            url: `bg-[url('/images/home/en-advertisement-4.png')]`,
+            url: `bg-[url('/images/home/advertisement4.webp')]`,
             path: "/ideas/vps"
         },
         {
             ImageNumber: "5",
             title: t("5.title"),
             description: t("5.description"),
-            url: `bg-[url('/images/home/en-advertisement-5.png')]`,
+            url: `bg-[url('/images/home/advertisement5.webp')]`,
             path: "/accounts/profit"
         },
         {
             ImageNumber: "6",
             title: t("6.title"),
             description: t("6.description"),
-            url: `bg-[url('/images/home/en-advertisement-6.png')]`,
+            url: `bg-[url('/images/home/advertisement6.webp')]`,
             path: "/accounts/platinum"
         },
     ];
@@ -133,8 +133,7 @@ const Advertisement = () => {
                 <div className={"mt-4 xl:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4 xl:gap-9"}>
                         <div className={"col-span-12 lg:col-span-4 xl:col-span-3"}>
-                            <div
-                                className={`bg-[url('/images/home/en-advertisement-1.png')] bg-center bg-cover w-auto h-100 rounded-lg`}>
+                            <div className={`bg-[url('/images/home/advertisement1.webp')] bg-center bg-cover w-auto h-100 rounded-lg`}>
                                 <div
                                     className={"flex flex-col h-full cursor-pointer relative px-3 py-8 xl:px-6 xl:py-16"}>
                                     <div
