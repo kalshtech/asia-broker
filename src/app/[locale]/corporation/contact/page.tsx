@@ -15,16 +15,16 @@ export default async function Page() {
     const tableAry = [
         { text: t("language.table.head.status") },
         { text: t("language.table.head.support") },
-        { text: t("language.table.head.statement") },
+        // { text: t("language.table.head.statement") },
     ];
 
     const ary = [
-        { status: 1, statusText: t("language.online"), support: "Chinese / Cantonese", statement: "Real-time customer service and trading support" },
-        { status: 1, statusText: t("language.online"), support: "Japanese", statement: "Localized support for Japanese clients" },
-        { status: 1, statusText: t("language.online"), support: "Vietnamese", statement: "Localized support for Vietnamese clients" },
-        { status: 1, statusText: t("language.online"), support: "English", statement: t("language.prompt1") },
-        { status: 0, statusText: t("language.ready"), support: "Korean", statement: t("language.prompt2") },
-        { status: 0, statusText: t("language.ready"), support: "Thai", statement: t("language.prompt3") },
+        { status: 1, statusText: t("language.offer"), support: "Chinese / Cantonese", statement: "Real-time customer service and trading support" },
+        { status: 1, statusText: t("language.offer"), support: "Japanese", statement: "Localized support for Japanese clients" },
+        { status: 1, statusText: t("language.offer"), support: "Vietnamese", statement: "Localized support for Vietnamese clients" },
+        { status: 1, statusText: t("language.offer"), support: "English", statement: t("language.prompt1") },
+        { status: 1, statusText: t("language.offer"), support: "Korean", statement: t("language.prompt2") },
+        { status: 1, statusText: t("language.offer"), support: "Thai", statement: t("language.prompt3") },
     ]
 
 
@@ -42,21 +42,21 @@ export default async function Page() {
                 {
                     ary.map((item, index) => (
                         <TableRow key={index}>
-                            <TableCell className={"py-4"}>
+                            <TableCell className={"w-1/2 py-4"}>
                                 <div className={"flex items-center"}>
-                                    <span className={classnames(["w-1 h-1 block rounded-full", {
+                                    <span className={classnames(["w-2 h-2 block rounded-full", {
                                         "bg-[#00A478]": item.status === 1,
                                         "bg-[#FFAE46]": item.status === 0,
                                     }])}/>
                                     <span className={"ml-4"}>{ item.statusText }</span>
                                 </div>
                             </TableCell>
-                            <TableCell className={"py-4"}>
+                            <TableCell className={"w-1/2 py-4"}>
                                 { item.support }
                             </TableCell>
-                            <TableCell className={"py-4"}>
-                                { item.statement ?? "" }
-                            </TableCell>
+                            {/*<TableCell className={"py-4"}>*/}
+                            {/*    { item.statement ?? "" }*/}
+                            {/*</TableCell>*/}
                         </TableRow>
                     ))
                 }

@@ -25,7 +25,10 @@ const Colleague = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography variant={"h3"} className={"text-center"}>
+                    <Typography
+                        variant={"h3"}
+                        className={"text-center hidden lg:block"}
+                    >
                         {t("title")}
                     </Typography>
                 </motion.div>

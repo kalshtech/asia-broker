@@ -420,7 +420,7 @@ const Navigation = () => {
                             title: t("menu.corporation.row.col-1.title"),
                             ul: [
                                 { label: t("menu.corporation.row.col-1.ul.li1"), path: "/corporation/about" },
-                                { label: t("menu.corporation.row.col-1.ul.li2"), path: "/corporation/careers" },
+                                // { label: t("menu.corporation.row.col-1.ul.li2"), path: "/corporation/careers" },
                                 // { label: t("menu.corporation.row.col-1.ul.li3"), path: "/" },
                                 { label: t("menu.corporation.row.col-1.ul.li4"), path: "/corporation/contact" },
                                 // { label: t("menu.corporation.row.col-1.ul.li5"), path: "/" }
@@ -429,44 +429,44 @@ const Navigation = () => {
                     ]
                 },
                 // doublewin
-                {
-                    title: t("menu.doublewin.title"),
-                    description: t("menu.doublewin.description"),
-                    btn: t("menu.doublewin.btn"),
-                    btnPath: "/",
-                    btnImg: "/images/navigation/doublewin.png",
-                    colSpan: "col-span-12",
-                    children: [
-                        {
-                            title: t("menu.doublewin.row.col-1.title"),
-                            ul: [
-                                {
-                                    label: t("menu.doublewin.row.col-1.ul.li1"),
-                                    desc: t("menu.doublewin.row.col-1.ul.desc1"),
-                                    path: "/mutual/trading-competition"
-                                },
-                                // {
-                                //     label: t("menu.doublewin.row.col-1.ul.li2"),
-                                //     desc: t("menu.doublewin.row.col-1.ul.desc2"),
-                                //     path: "/"
-                                // },
-                                {
-                                    label: t("menu.doublewin.row.col-1.ul.li3"),
-                                    desc: t("menu.doublewin.row.col-1.ul.desc3"),
-                                    path: "/mutual/funding"
-                                },
-                                // {
-                                //     label: t("menu.doublewin.row.col-1.ul.li4"),
-                                //     desc: t("menu.doublewin.row.col-1.ul.desc4"),
-                                //     path: "/",
-                                //     icon: (
-                                //         <img src="/images/navigation/arrow-top-right.svg" className={"w-4 h-4 ml-2"} alt=""/>
-                                //     ),
-                                // },
-                            ]
-                        }
-                    ]
-                }
+                // {
+                //     title: t("menu.doublewin.title"),
+                //     description: t("menu.doublewin.description"),
+                //     btn: t("menu.doublewin.btn"),
+                //     btnPath: "/",
+                //     btnImg: "/images/navigation/doublewin.png",
+                //     colSpan: "col-span-12",
+                //     children: [
+                //         {
+                //             title: t("menu.doublewin.row.col-1.title"),
+                //             ul: [
+                //                 {
+                //                     label: t("menu.doublewin.row.col-1.ul.li1"),
+                //                     desc: t("menu.doublewin.row.col-1.ul.desc1"),
+                //                     path: "/mutual/trading-competition"
+                //                 },
+                //                 // {
+                //                 //     label: t("menu.doublewin.row.col-1.ul.li2"),
+                //                 //     desc: t("menu.doublewin.row.col-1.ul.desc2"),
+                //                 //     path: "/"
+                //                 // },
+                //                 {
+                //                     label: t("menu.doublewin.row.col-1.ul.li3"),
+                //                     desc: t("menu.doublewin.row.col-1.ul.desc3"),
+                //                     path: "/mutual/funding"
+                //                 },
+                //                 // {
+                //                 //     label: t("menu.doublewin.row.col-1.ul.li4"),
+                //                 //     desc: t("menu.doublewin.row.col-1.ul.desc4"),
+                //                 //     path: "/",
+                //                 //     icon: (
+                //                 //         <img src="/images/navigation/arrow-top-right.svg" className={"w-4 h-4 ml-2"} alt=""/>
+                //                 //     ),
+                //                 // },
+                //             ]
+                //         }
+                //     ]
+                // }
             ]
         }
     ]

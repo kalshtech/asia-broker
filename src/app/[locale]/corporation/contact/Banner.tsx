@@ -49,7 +49,7 @@ const Banner = () => {
                     </motion.div>
                 </Container>
             </section>
-            <div className={"bg-theme-active rounded-lg py-4 xl:py-10 -mt-16 mx-4 2xl:mx-30"}>
+            <div className={"bg-theme-active rounded-lg py-4 px-16 xl:py-10 -mt-16 mx-4 xl:mx-30"}>
                 <Container>
                     <div className={"flex items-center flex-col xl:flex-row"}>
                         <Typography

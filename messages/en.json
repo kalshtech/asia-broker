@@ -1910,10 +1910,11 @@
           }
         },
         "language": {
-          "title": "We Support Multi-Language Communication",
+          "title": "Cross-language",
           "desc": "Wherever you are, our language support teams are here to assist you. ",
           "online": "Online",
           "ready": "Coming Soon",
+          "offer": "Offer",
           "prompt1": "Global standard language — 24/7 support",
           "prompt2": "Support hours: 12:00 PM – 10:00 PM (daily)",
           "prompt3": "Support hours: 10:00 AM – 8:00 PM (daily)",
