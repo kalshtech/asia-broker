@@ -62,7 +62,7 @@ const CalendarComponent = () => {
                 <div className={"grid grid-cols-12 gap-8 mt-10"}>
                     <div className={"col-span-12 xl:col-span-3"}>
                         <div className={"h-full relative"}>
-                            <div className={"flex-1 h-full w-full border py-10 px-8 flex flex-col bg-[url(/images/home/calendar-assets.png)] rounded-2xl bg-cover bg-center"}>
+                            <div className={"flex-1 h-full w-full border py-10 px-8 flex flex-col bg-[url(/images/home/calendar-assets.png)] max-h-160 rounded-2xl bg-cover bg-center"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"!text-white xl:mt-64"}
@@ -86,7 +86,8 @@ const CalendarComponent = () => {
                                     <div className={"flex-1 flex mt-4"}>
                                         <GeneralLinkBtn
                                             text={t("buttons.download")}
-                                            path={"/platform"}
+                                            path={"/files/Report.pdf"}
+                                            isFile
                                         />
                                     </div>
                                     <div>

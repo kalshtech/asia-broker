@@ -11,10 +11,11 @@ type Props = {
     className?: string;
     theme?: "light-solid" | "light-hollow" | "dark-solid" | "active-solid" | "active-hollow" | "share";
     children?: React.ReactNode;
+    isFile?: boolean;
 }
 
 const GeneralLinkBtn = (props: Props) => {
-    const { text, path, className, theme = "light-solid", children } = props;
+    const { text, path, className, theme = "light-solid", children, isFile = false } = props;
 
     const renderCls = () => {
         switch (theme) {
@@ -37,19 +38,37 @@ const GeneralLinkBtn = (props: Props) => {
 
     return (
         <Button className={classnames([renderCls(), className])}>
-            <Link
-                href={path}
-                className={classnames(["flex justify-center items-center", {
-                    "flex-col": children
-                }])}
-                title={text}
-            >
-                { text }
-                { children }
-                { theme === "share" && (
-                    <ExternalLink className={"ml-1"}/>
-                ) }
-            </Link>
+            {
+                isFile ? (
+                    <a href={path}
+                       target={"_blank"}
+                       className={classnames(["flex justify-center items-center", {
+                           "flex-col": children
+                       }])}
+                       title={text}
+                    >
+                        {text}
+                        {children}
+                        {theme === "share" && (
+                            <ExternalLink className={"ml-1"}/>
+                        )}
+                    </a>
+                ) : (
+                    <Link
+                        href={path}
+                        className={classnames(["flex justify-center items-center", {
+                            "flex-col": children
+                        }])}
+                        title={text}
+                    >
+                        { text }
+                        { children }
+                        { theme === "share" && (
+                            <ExternalLink className={"ml-1"}/>
+                        ) }
+                    </Link>
+                )
+            }
         </Button>
     )
 }
