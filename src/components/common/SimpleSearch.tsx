@@ -19,11 +19,12 @@ type Props = {
     className?: string;
     onSelect?: (opt: Option) => void;
     placeholder?: string;
+    onChange?: (value: string) => void;
 };
 
 export default function SimpleRemoteSearch(props: Props) {
     const t = useTranslations("Common");
-    const { minChars = 1, debounceMs = 300, emptyText = "No Data", className, onSelect, placeholder = t("search-placeholder") } = props;
+    const { minChars = 1, debounceMs = 300, emptyText = "No Data", className, onChange, onSelect, placeholder = t("search-placeholder") } = props;
     const [query, setQuery] = useState("");
     const [display, setDisplay] = useState(""); // 选中后回填
     const [options, setOptions] = useState<Option[]>([]);
@@ -59,31 +60,31 @@ export default function SimpleRemoteSearch(props: Props) {
     };
 
     // 去抖搜索
-    useEffect(() => {
-        if (timerRef.current) clearTimeout(timerRef.current);
-        if (query.length < minChars) {
-            setOptions([]);
-            setLoading(false);
-            setErr(null);
-            return;
-        }
-
-        timerRef.current = setTimeout(() => doSearch(query), debounceMs);
-
-        const onDocDown = (e: MouseEvent) => {
-            if (!wrapRef.current) return;
-            if (!wrapRef.current.contains(e.target as Node)) {
-                setFocused(false);
-            }
-        };
-
-        document.addEventListener("mousedown", onDocDown);
-        return () => {
-            if (timerRef.current) clearTimeout(timerRef.current);
-            abortRef.current?.abort();
-            document.removeEventListener("mousedown", onDocDown)
-        };
-    }, [query, minChars, debounceMs]);
+    // useEffect(() => {
+    //     if (timerRef.current) clearTimeout(timerRef.current);
+    //     if (query.length < minChars) {
+    //         setOptions([]);
+    //         setLoading(false);
+    //         setErr(null);
+    //         return;
+    //     }
+    //
+    //     timerRef.current = setTimeout(() => doSearch(query), debounceMs);
+    //
+    //     const onDocDown = (e: MouseEvent) => {
+    //         if (!wrapRef.current) return;
+    //         if (!wrapRef.current.contains(e.target as Node)) {
+    //             setFocused(false);
+    //         }
+    //     };
+    //
+    //     document.addEventListener("mousedown", onDocDown);
+    //     return () => {
+    //         if (timerRef.current) clearTimeout(timerRef.current);
+    //         abortRef.current?.abort();
+    //         document.removeEventListener("mousedown", onDocDown)
+    //     };
+    // }, [query, minChars, debounceMs]);
 
     const handlePick = (opt: Option) => {
         setDisplay(opt.symbol);
@@ -103,6 +104,7 @@ export default function SimpleRemoteSearch(props: Props) {
                     setDisplay("");        // 进入搜索模式
                     setQuery(e.target.value);
                     setFocused(true);
+                    onChange?.(e.target.value);
                 }}
                 className={"border rounded-full bg-[#F2F5FF] border-theme-active h-[56px]"}
             />
@@ -111,40 +113,40 @@ export default function SimpleRemoteSearch(props: Props) {
                 { t("search") }
             </Button>
 
-            {
-                isOpen && (
-                    <div className="absolute z-10 mt-1 max-h-64 w-full overflow-auto rounded-md border bg-white p-2 text-sm shadow-md">
-                        { loading && <div className="px-2 py-1"> { t("searching") }</div> }
-                        {
-                            !loading && err && (
-                                <div className="px-2 py-1 text-red-500">{ t("error") }：{err}</div>
-                            )
-                        }
-                        {
-                            !loading && !err && options.length === 0 && (
-                                <div className="px-2 py-1 text-muted-foreground">{emptyText}</div>
-                            )
-                        }
-                        {!loading && !err &&
-                            options.map((opt) => (
-                                <div
-                                    key={opt.symbol}
-                                    onMouseDown={(e) => {
-                                        e.preventDefault();
-                                        handlePick(opt);
-                                    }}
-                                    onClick={() => handlePick(opt)}
-                                    className="cursor-pointer rounded px-2 py-1 hover:bg-accent"
-                                >
-                                    <div className={"flex items-center"}>
-                                        <Typography variant={"h6"}>{opt.symbol}</Typography>
-                                        <Typography className={"ml-2"} variant={"muted"}>{opt.name}</Typography>
-                                    </div>
-                                </div>
-                            ))}
-                    </div>
-                )
-            }
+            {/*{*/}
+            {/*    isOpen && (*/}
+            {/*        <div className="absolute z-10 mt-1 max-h-64 w-full overflow-auto rounded-md border bg-white p-2 text-sm shadow-md">*/}
+            {/*            { loading && <div className="px-2 py-1"> { t("searching") }</div> }*/}
+            {/*            {*/}
+            {/*                !loading && err && (*/}
+            {/*                    <div className="px-2 py-1 text-red-500">{ t("error") }：{err}</div>*/}
+            {/*                )*/}
+            {/*            }*/}
+            {/*            {*/}
+            {/*                !loading && !err && options.length === 0 && (*/}
+            {/*                    <div className="px-2 py-1 text-muted-foreground">{emptyText}</div>*/}
+            {/*                )*/}
+            {/*            }*/}
+            {/*            {!loading && !err &&*/}
+            {/*                options.map((opt) => (*/}
+            {/*                    <div*/}
+            {/*                        key={opt.symbol}*/}
+            {/*                        onMouseDown={(e) => {*/}
+            {/*                            e.preventDefault();*/}
+            {/*                            handlePick(opt);*/}
+            {/*                        }}*/}
+            {/*                        onClick={() => handlePick(opt)}*/}
+            {/*                        className="cursor-pointer rounded px-2 py-1 hover:bg-accent"*/}
+            {/*                    >*/}
+            {/*                        <div className={"flex items-center"}>*/}
+            {/*                            <Typography variant={"h6"}>{opt.symbol}</Typography>*/}
+            {/*                            <Typography className={"ml-2"} variant={"muted"}>{opt.name}</Typography>*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                ))}*/}
+            {/*        </div>*/}
+            {/*    )*/}
+            {/*}*/}
         </div>
     );
 }

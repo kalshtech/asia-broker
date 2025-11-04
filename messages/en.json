@@ -112,30 +112,30 @@
           "title": "Cryptocurrencies",
           "desc1": "Trade leading crypto CFDs 24/7. ",
           "desc2": "Access BTC, ETH, DOGE, BNB, and other major coins with flexible leverage and institutional-grade liquidity — all with low trading costs. ",
-          "btnText": "Explore Forex Markets"
+          "btnText": "Explore Forex Crypto"
         },
         "col3": {
           "title": "Precious Metals",
           "desc1": "Hedge, diversify, or capture volatility. ",
           "desc2": "Trade gold, silver, and platinum CFDs with tight spreads, high liquidity, and zero storage or delivery costs. ",
-          "btnText": "Explore Forex Markets"
+          "btnText": "Explore Forex Precious Metals"
         },
         "col4": {
           "title": "Energy Markets",
           "desc1": "Seize opportunities in global energy. ",
-          "btnText": "Explore Forex Markets"
+          "btnText": "Explore Forex Energy"
         },
         "col5": {
           "title": "Stocks & ETFs",
           "desc1": "Access equity and index CFDs worldwide. ",
           "desc2": "Trade global stocks, tech shares, and ETF indices long or short, with flexible leverage and efficient T+0 settlement. ",
-          "btnText": "Explore Forex Markets"
+          "btnText": "Explore Forex Stocks & ETFs"
         },
         "col6": {
           "title": "Futures CFDs",
           "desc1": "Trade futures-style CFDs without restrictions. ",
           "desc2": "Access global indices, commodities, and currency futures — ideal for hedging, diversification, and short-term strategies. ",
-          "btnText": "Explore Forex Markets"
+          "btnText": "Explore Forex Futures"
         }
       }
     }

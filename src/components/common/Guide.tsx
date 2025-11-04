@@ -77,11 +77,11 @@ const Guide = ({ title, left, ary, prevEl, nextEl }: Props) => {
                                 </Typography>
                             )
                         }
-                        <div className={"mt-10"}>
-                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                {left.more}
-                            </Button>
-                        </div>
+                        {/*<div className={"mt-10"}>*/}
+                        {/*    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>*/}
+                        {/*        {left.more}*/}
+                        {/*    </Button>*/}
+                        {/*</div>*/}
 
                         {
                             left.muted && (

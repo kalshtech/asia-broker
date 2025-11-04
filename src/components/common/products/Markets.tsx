@@ -62,6 +62,7 @@ const Markets = (props: Props) => {
     const [ tabActive, setTabActive ] = React.useState<string>("main");
     const [ rawData, setRawData ] = React.useState<RawItem[]>(mainRaw);
     const [ loading, setLoading ] = React.useState<boolean>(true);
+    const [ query, setQuery ] = React.useState('');
 
     const handleToggleTabActive = (active: string) => {
         setTabActive(active);
@@ -118,6 +119,21 @@ const Markets = (props: Props) => {
         }
     }
 
+    const handleInput = (value: string) => {
+        setQuery(value);
+    }
+
+    const filtered = React.useMemo(() => {
+        const q = query.trim().toLowerCase();
+        if (!q) return rawData;
+        return rawData.filter(
+            (item: any) =>
+                item.symbol.toLowerCase().includes(q) ||
+                item.ticker.toLowerCase().includes(q) ||
+                item.name.toLowerCase().includes(q)
+        );
+    }, [query, rawData]);
+
     React.useEffect(() => {
         if(type === "elementary") {
             handleLoadQuoteData();
@@ -151,7 +167,11 @@ const Markets = (props: Props) => {
                     }
                 </motion.div>
                 <div className={"mt-4 xl:mt-16"}>
-                    <SimpleSearch placeholder={placeholder} onSelect={(opt) => console.log("picked:", opt)}/>
+                    <SimpleSearch
+                        placeholder={placeholder}
+                        onSelect={(opt) => console.log("picked:", opt)}
+                        onChange={(value) => handleInput(value)}
+                    />
                 </div>
                 {
                     tabList && (
@@ -225,7 +245,7 @@ const Markets = (props: Props) => {
                                                 <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                             </TableRow>
                                         ))
-                                    ) : rawData.map((item: any, index: number) => (
+                                    ) : filtered.map((item: any, index: number) => (
                                         <TableRow key={index}>
                                             <TableCell className={"flex"}>
                                                 <Typography variant={"p"} className="font-medium">
@@ -251,7 +271,11 @@ const Markets = (props: Props) => {
                                             <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayHigh)}</TableCell>
                                             <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayLow)}</TableCell>
                                             {/*<TableCell className={"hidden xl:table-cell"}>{convert(item.volume)}</TableCell>*/}
-                                            <TableHead className={"text-right text-theme-active w-[80px]"}>Trade</TableHead>
+                                            <TableHead className={"text-right text-theme-active w-[80px]"}>
+                                                <a href="https://portal.asiafuturetrading.com" target={"_blank"}>
+                                                    {CommonT("trade")}
+                                                </a>
+                                            </TableHead>
                                         </TableRow>
                                     ))}
                                 </TableBody>
@@ -276,7 +300,7 @@ const Markets = (props: Props) => {
                                     </TableRow>
                                 </TableHeader>
                                 <TableBody>
-                                    {rawData.map((item: any, index: number) => (
+                                    {filtered.map((item: any, index: number) => (
                                         <TableRow key={index}>
                                             <TableCell className={"flex"}>
                                                 <Typography className="font-medium">
