@@ -7,15 +7,15 @@ import { ExternalLink } from "lucide-react";
 
 type Props = {
     text: string;
-    path: string;
+    path?: string;
     className?: string;
     theme?: "light-solid" | "light-hollow" | "dark-solid" | "active-solid" | "active-hollow" | "share";
     children?: React.ReactNode;
-    isFile?: boolean;
+    isLink?: boolean;
 }
 
 const GeneralLinkBtn = (props: Props) => {
-    const { text, path, className, theme = "light-solid", children, isFile = false } = props;
+    const { text, path = "https://portal.asiafuturetrading.com", className, theme = "light-solid", children, isLink = false } = props;
 
     const renderCls = () => {
         switch (theme) {
@@ -39,7 +39,7 @@ const GeneralLinkBtn = (props: Props) => {
     return (
         <Button className={classnames([renderCls(), className])}>
             {
-                isFile ? (
+                isLink ? (
                     <a href={path}
                        target={"_blank"}
                        className={classnames(["flex justify-center items-center", {

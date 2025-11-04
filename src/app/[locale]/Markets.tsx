@@ -55,10 +55,10 @@ const Markets = () => {
     const tabsList = [
         { label: commonT("usStock"), value: "stock", path: "/products/stocks" },
         { label: commonT("forex"), value: "forex", path: "/products/forex" },
-        { label: commonT("metals"), value: "metals", path: "/products/pm" },
-        { label: commonT("energy"), value: "energy", path: "/products/energy" },
-        { label: commonT("futures"), value: "futures", path: "/products/future" },
-        { label: commonT("crypto"), value: "crypto", path: "/products/crypto" },
+        // { label: commonT("metals"), value: "metals", path: "/products/pm" },
+        // { label: commonT("energy"), value: "energy", path: "/products/energy" },
+        // { label: commonT("futures"), value: "futures", path: "/products/future" },
+        // { label: commonT("crypto"), value: "crypto", path: "/products/crypto" },
     ];
 
     const currentPath = useMemo(() => {
@@ -75,7 +75,6 @@ const Markets = () => {
             setRows(usStockRows)
         }
     }
-
 
     useEffect(() => {
         const fetchData = async () => {

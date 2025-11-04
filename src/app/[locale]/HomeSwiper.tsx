@@ -3,13 +3,13 @@ import React from "react";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination, Autoplay} from 'swiper/modules';
 import Container from "@/components/Container";
-import {useLocale, useTranslations} from "next-intl";
+import {useTranslations} from "next-intl";
 import {Typography} from "@/components/ui/typography";
-import StartTradingBtn from "@/components/StartTradingBtn";
-import RegisterBtn from "@/components/RegisterBtn";
 import classnames from "classnames";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const CustomBanner = ({ ary }: { ary: any }) => {
+    const t = useTranslations("Common");
     return (
         <div className={"h-120 lg:h-[632px]"}>
             <Swiper
@@ -23,7 +23,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
+                modules={[Autoplay, Pagination]}
                 className="en-my-swiper h-full"
             >
                 {
@@ -72,11 +72,17 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                                 {item.desc2}
                                             </Typography>
                                             <div className={"mt-16 justify-center flex"}>
-                                                <StartTradingBtn/>
-                                                <RegisterBtn className={classnames(["ml-4", {
-                                                    "border bg-transparent hover:bg-transparent": item.theme === "dark",
-                                                    "border border-theme-active text-theme-active bg-transparent hover:bg-transparent": item.theme === "light",
-                                                }])}/>
+                                                <GeneralLinkBtn
+                                                    text={t("startTrade")}
+                                                    theme={"active-solid"}
+                                                    isLink
+                                                />
+                                                <GeneralLinkBtn
+                                                    text={t("register")}
+                                                    isLink
+                                                    theme={item.theme === "dark" ? "light-hollow" : "active-hollow"}
+                                                    className={classnames(["ml-4"])}
+                                                />
                                             </div>
                                         </div>
                                     </Container>

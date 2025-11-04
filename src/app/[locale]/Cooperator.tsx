@@ -4,10 +4,10 @@ import {motion, Variants} from "framer-motion";
 import {Typography} from "@/components/ui/typography";
 import {useTranslations, useLocale} from "next-intl";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
 import { Star } from "lucide-react"
 import dynamic from 'next/dynamic';
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const TrustpilotWidget = dynamic(
     () => import('@/components/TrustpilotWidget'),
@@ -113,9 +113,10 @@ const Cooperator = () => {
                             </Typography>
                         </div>
                         <div className={"mt-16"}>
-                            <RegisterBtn
+                            <GeneralLinkBtn
                                 text={t(`${tabActive}.btn`)}
-                                path={"https://portal.asiafuturetrading.com"}
+                                theme={"active-solid"}
+                                isLink
                             />
                         </div>
                     </div>

@@ -2,8 +2,6 @@
 import React from "react";
 import { Typography } from "@/components/ui/typography";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
-import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
@@ -32,7 +30,11 @@ const DownloadAndRegister = () => {
                                     {t("description")}
                                 </Typography>
                                 <div className={"mt-10 hidden xl:flex"}>
-                                    <RegisterBtn text={t("open")}/>
+                                    <GeneralLinkBtn
+                                        text={t("open")}
+                                        theme={"active-solid"}
+                                        isLink
+                                    />
                                     <GeneralLinkBtn
                                         text={t("download")}
                                         path={"/platform"}
@@ -41,9 +43,10 @@ const DownloadAndRegister = () => {
                                     />
                                 </div>
                                 <div className={"mt-10 xl:hidden"}>
-                                    <RegisterBtn
+                                    <GeneralLinkBtn
                                         text={t("open")}
-                                        className={"flex w-full py-4.5"}
+                                        theme={"active-solid"}
+                                        isLink
                                     />
                                     <GeneralLinkBtn
                                         text={t("download")}

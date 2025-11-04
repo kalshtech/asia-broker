@@ -3,7 +3,6 @@ import React, {useMemo, useState} from "react";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
-import RegisterBtn from "@/components/RegisterBtn";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import SimpleSwiper from "@/components/common/products/SimpleSwiper";
 import Container from "@/components/Container";
@@ -20,6 +19,7 @@ const fadeInUp: Variants = {
 
 const Properly = () => {
     const t = useTranslations("Pages.home.properly");
+    const CommonT = useTranslations("Common");
     const [ tabActive, setTabActive ] = useState<string>("classic");
 
     const tabsList = [
@@ -237,7 +237,13 @@ const Properly = () => {
                             </Typography>
 
                             <div className={"mt-6 lg:mt-12 justify-center lg:justify-start flex-row lg:flex-col hidden lg:flex"}>
-                                <RegisterBtn/>
+                                <div>
+                                    <GeneralLinkBtn
+                                        text={CommonT("register")}
+                                        theme={"active-solid"}
+                                        isLink
+                                    />
+                                </div>
                                 <div>
                                     <GeneralLinkBtn
                                         text={t("explore")}

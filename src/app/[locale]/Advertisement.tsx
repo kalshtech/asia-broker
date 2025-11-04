@@ -9,6 +9,7 @@ import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 import { Navigation } from "swiper/modules";
 import Container from "@/components/Container";
 import { Link } from "@/i18n/navigation"
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 type ItemProps = {
     ImageNumber: string | number;
@@ -155,9 +156,11 @@ const Advertisement = () => {
                                             </Typography>
                                         </div>
                                         <div className={"mt-8"}>
-                                            <Button className={"bg-theme-active hover:bg-theme-active-hover cursor-pointer"}>
-                                                {t("1.btn")}
-                                            </Button>
+                                            <GeneralLinkBtn
+                                                text={t("1.btn")}
+                                                theme={"active-solid"}
+                                                isLink
+                                            />
                                         </div>
                                     </div>
                                 </div>

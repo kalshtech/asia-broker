@@ -87,7 +87,7 @@ const CalendarComponent = () => {
                                         <GeneralLinkBtn
                                             text={t("buttons.download")}
                                             path={"/files/Report.pdf"}
-                                            isFile
+                                            isLink
                                         />
                                     </div>
                                     <div>
