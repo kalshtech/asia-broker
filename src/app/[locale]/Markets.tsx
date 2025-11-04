@@ -198,7 +198,7 @@ const Markets = () => {
                                         <TableHead>{commonT("miniChart")}</TableHead>
                                         <TableHead>{commonT("close")}</TableHead>
                                         <TableHead>{commonT("changePercentage")}</TableHead>
-                                        <TableHead>{commonT("change")}</TableHead>
+                                        {/*<TableHead>{commonT("change")}</TableHead>*/}
                                         {/*{*/}
                                         {/*    tabActive === "stock" && <TableHead className={"text-right xl:w-[100px]"}>*/}
                                         {/*        {commonT("marketCap")}*/}
@@ -216,8 +216,8 @@ const Markets = () => {
                                                     <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                                     <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                                     <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                                    <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                                    {/*<TableCell><Skeleton className="h-4 w-32"/></TableCell>*/}
+                                                    {/*<TableCell><Skeleton className="h-4 w-32"/></TableCell>*/}
                                                 </TableRow>
                                             ))
                                         ) : (
@@ -226,7 +226,7 @@ const Markets = () => {
                                                     <TableCell>
                                                         <div>
                                                             <Typography variant={"h6"}>{item.symbol}</Typography>
-                                                            <Typography variant={"muted"}>{item.name}</Typography>
+                                                            {/*<Typography variant={"muted"}>{item.name}</Typography>*/}
                                                         </div>
                                                     </TableCell>
                                                     <TableCell>
@@ -236,7 +236,7 @@ const Markets = () => {
                                                     </TableCell>
                                                     <TableCell className={rangeCls(item.changePercentage)}>{item.price}</TableCell>
                                                     <TableCell className={rangeCls(item.changePercentage)}>{rangeChange(item.changePercentage)}</TableCell>
-                                                    <TableCell className={rangeCls(item.changePercentage)}>{item.change}</TableCell>
+                                                    {/*<TableCell className={rangeCls(item.changePercentage)}>{item.change}</TableCell>*/}
                                                     {/*{*/}
                                                     {/*    tabActive === "stock" && <TableCell>*/}
                                                     {/*        <Typography variant={"muted"} className={"!text-[#111111]"}>*/}
