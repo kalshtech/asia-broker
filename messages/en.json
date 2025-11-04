@@ -424,8 +424,8 @@
             "3": {
               "title": "Raw Spreads · Lower Costs",
               "ul": {
-                "1": "Spreads from as low as 0. 0 pips",
-                "2": "Paired with ultra-low commissions ($3–$3. 5/lot/side)",
+                "1": "Spreads from as low as 0.0 pips",
+                "2": "Paired with zero commissions (0 $/lot/side)",
                 "3": "Optimized for scalping and high-frequency strategies"
               }
             },
@@ -2936,7 +2936,7 @@
             },
             "col2": {
               "title": "Set Your Annual Interest Goal",
-              "desc": "Choose your desired annual return — from USD 20 to USD 1,000+ — and see how much idle capital you’d need to achieve it, calculated in real time using the latest SOFR benchmark rate. ",
+              "desc": "Choose your desired annual return — from USD 0 to USD 500,000+ — and see how much idle capital you’d need to achieve it, calculated in real time using the latest SOFR benchmark rate.",
               "tips": "Required Idle Balance (Live Estimate):",
               "prompt": "Disclaimer: This calculator is for simulation and reference only.  It does not constitute financial advice or a guaranteed return.  All figures are reverse-calculated based on user-selected targets and current market reference rates such as SOFR.  Actual interest is settled daily and may vary with market conditions, account status, and platform mechanisms.  Final credited interest should be considered the only accurate outcome. "
             }

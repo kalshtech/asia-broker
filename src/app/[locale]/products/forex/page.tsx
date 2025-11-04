@@ -166,10 +166,10 @@ export default async function Page() {
                             <Typography variant={"muted"} className={"pr-1"}>
                                 { t("professional.link1") }
                             </Typography>
-                            <Typography variant={"muted"}>
+                            <Typography variant={"muted"} className={"flex"}>
                                 { t("professional.link2") }
+                                <ExternalLink className={"w-4 ml-2"} />
                             </Typography>
-                            <ExternalLink className={"w-4 ml-2"} />
                         </a>
                     </div>
                 </div>

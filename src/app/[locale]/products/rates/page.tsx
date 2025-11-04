@@ -6,6 +6,7 @@ import FAQSection from "@/components/common/QuestionAnswer";
 import Tools from "@/components/common/Tools";
 import Banner from "@/components/common/products/Banner";
 import Row from "@/components/common/products/Row";
+import CommodityItems from "./CommodityItems";
 import {TableCell, TableRow} from "@/components/ui/table";
 import Enhance from "./Enhance";
 import Statement from "./Statement";
@@ -88,31 +89,39 @@ export default async function Page() {
                 />
             </div>
 
-            <RowTable
-                title={t("table.title")}
-                rowHeadAry={tableHead}
-                overview
-                overviewText={t("table.overview")}
-            >
-                {
-                    tableData.map((item, index) => (
-                        <TableRow key={index}>
-                            <TableCell className={"py-4"}>
-                                { item.type }
-                            </TableCell>
-                            <TableCell className={"py-4"}>
-                                { item.introduction }
-                            </TableCell>
-                            <TableCell className={"py-4"}>
-                                <Link href={"/"} className={"flex items-center text-theme-active"}>
-                                    { t("table.details") }
-                                    <ArrowRight className={"ml-2"} />
-                                </Link>
-                            </TableCell>
-                        </TableRow>
-                    ))
-                }
-            </RowTable>
+            <div>
+                <div className={"hidden xl:block"}>
+                    <RowTable
+                        title={t("table.title")}
+                        rowHeadAry={tableHead}
+                        overview
+                        overviewText={t("table.overview")}
+                    >
+                        {
+                            tableData.map((item, index) => (
+                                <TableRow key={index}>
+                                    <TableCell className={"py-4"}>
+                                        { item.type }
+                                    </TableCell>
+                                    <TableCell className={"py-4"}>
+                                        { item.introduction }
+                                    </TableCell>
+                                    <TableCell className={"py-4"}>
+                                        <Link href={"/"} className={"flex items-center text-theme-active"}>
+                                            { t("table.details") }
+                                            <ArrowRight className={"ml-2"} />
+                                        </Link>
+                                    </TableCell>
+                                </TableRow>
+                            ))
+                        }
+                    </RowTable>
+                </div>
+                <div className={"xl:hidden"}>
+                    <CommodityItems/>
+                </div>
+            </div>
+
             <Enhance/>
             <Statement/>
             <Profession/>
