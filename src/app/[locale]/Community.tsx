@@ -78,7 +78,7 @@ const Community = () => {
                             <div className={"flex flex-1 h-full flex-col"}>
                                 <div className={"flex-col flex h-full justify-center items-center"}>
                                     <Typography
-                                        variant={"h4"}
+                                        variant={"h5"}
                                         className={"font-medium !text-white"}
                                     >
                                         {t("row.2.title")}

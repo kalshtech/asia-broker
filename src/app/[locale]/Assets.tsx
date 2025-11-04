@@ -146,7 +146,7 @@ const Assets = () => {
     }
 
     return (
-        <section className={"bg-theme-deep-bg py-16 xl:p-30"}>
+        <section className={"bg-[linear-gradient(180deg,#000000_0%,#FBE6C2_50%,#D0C1B3_100%)] xl:bg-none xl:bg-[#000516] py-16 xl:p-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

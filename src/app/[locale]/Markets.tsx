@@ -194,16 +194,16 @@ const Markets = () => {
                             <Table>
                                 <TableHeader>
                                     <TableRow>
-                                        <TableHead className={"xl:w-[216px]"}>{commonT("code")}</TableHead>
-                                        <TableHead className={"xl:w-[248px]"}>{commonT("miniChart")}</TableHead>
+                                        <TableHead>{commonT("code")}</TableHead>
+                                        <TableHead>{commonT("miniChart")}</TableHead>
                                         <TableHead>{commonT("close")}</TableHead>
                                         <TableHead>{commonT("changePercentage")}</TableHead>
                                         <TableHead>{commonT("change")}</TableHead>
-                                        {
-                                            tabActive === "stock" && <TableHead className={"text-right xl:w-[100px]"}>
-                                                {commonT("marketCap")}
-                                            </TableHead>
-                                        }
+                                        {/*{*/}
+                                        {/*    tabActive === "stock" && <TableHead className={"text-right xl:w-[100px]"}>*/}
+                                        {/*        {commonT("marketCap")}*/}
+                                        {/*    </TableHead>*/}
+                                        {/*}*/}
                                         {/*<TableHead className={"text-right xl:w-[100px]"}>{commonT("volume")}</TableHead>*/}
                                     </TableRow>
                                 </TableHeader>
@@ -237,13 +237,13 @@ const Markets = () => {
                                                     <TableCell className={rangeCls(item.changePercentage)}>{item.price}</TableCell>
                                                     <TableCell className={rangeCls(item.changePercentage)}>{rangeChange(item.changePercentage)}</TableCell>
                                                     <TableCell className={rangeCls(item.changePercentage)}>{item.change}</TableCell>
-                                                    {
-                                                        tabActive === "stock" && <TableCell>
-                                                            <Typography variant={"muted"} className={"!text-[#111111]"}>
-                                                                {convert(item.marketCap)}
-                                                            </Typography>
-                                                        </TableCell>
-                                                    }
+                                                    {/*{*/}
+                                                    {/*    tabActive === "stock" && <TableCell>*/}
+                                                    {/*        <Typography variant={"muted"} className={"!text-[#111111]"}>*/}
+                                                    {/*            {convert(item.marketCap)}*/}
+                                                    {/*        </Typography>*/}
+                                                    {/*    </TableCell>*/}
+                                                    {/*}*/}
                                                     {/*<TableCell className={"text-right"}>{convert(item.volume)}</TableCell>*/}
                                                 </TableRow>
                                             ))
