@@ -107,7 +107,7 @@ const Step = () => {
                         <RegisterBtn className={"bg-white hover:bg-white text-theme-active"}/>
                         <GeneralLinkBtn
                             text={t("join")}
-                            path={"/corporation/careers"}
+                            path={"/"}
                             theme={"light-hollow"}
                             className={"ml-8"}
                         />
