@@ -3,7 +3,7 @@ import * as React from 'react'
 import { useTranslations } from "next-intl";
 import Container from "@/components/Container";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 type Props = {
     languageLocal: string;
@@ -35,14 +35,19 @@ const MetaProfession = ( props: Props ) => {
                     </Typography>
                 </div>
                 <div className={"mt-4 lg:mt-8 xl:mt-0 xl:ml-auto"}>
-                    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                        { t("meta.trade") }
-                    </Button>
+                    <GeneralLinkBtn
+                        text={t("meta.trade")}
+                        theme={"active-solid"}
+                        isLink
+                    />
                     {
                         isShowOpenBtn && (
-                            <Button className={"ml-4 border border-theme-active text-theme-active bg-transparent hover:bg-transparent"}>
-                                { t("meta.open") }
-                            </Button>
+                            <GeneralLinkBtn
+                                text={t("meta.open")}
+                                theme={"active-hollow"}
+                                className={"ml-4"}
+                                isLink
+                            />
                         )
                     }
                 </div>

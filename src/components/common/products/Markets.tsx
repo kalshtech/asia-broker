@@ -10,17 +10,17 @@ import {
     TableHeader,
     TableRow
 } from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
 import { useTranslations } from "next-intl";
 import {params_quote_query} from "@/params/api";
 import { http } from "@/utils/http";
-import {convert, rangeCls, formatMaxFixed, rangeChange} from "@/utils/common";
+import {rangeCls, formatMaxFixed, rangeChange} from "@/utils/common";
 import { Skeleton } from "@/components/ui/skeleton";
 import {motion, Variants} from "framer-motion";
 import SimpleSearch from "@/components/common/SimpleSearch";
 import Container from "@/components/Container";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -257,9 +257,11 @@ const Markets = (props: Props) => {
                                 </TableBody>
                             </Table>
                             <div className={"mt-8 flex justify-center xl:mt-16"}>
-                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                    {trade}
-                                </Button>
+                                <GeneralLinkBtn
+                                    text={trade}
+                                    theme={"active-solid"}
+                                    isLink
+                                />
                             </div>
                         </>
                     )}
@@ -287,9 +289,11 @@ const Markets = (props: Props) => {
                                 </TableBody>
                             </Table>
                             <div className={"mt-8 flex justify-center xl:mt-16"}>
-                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                    {trade}
-                                </Button>
+                                <GeneralLinkBtn
+                                    text={trade}
+                                    theme={"active-solid"}
+                                    isLink
+                                />
                             </div>
                         </>
                     )}

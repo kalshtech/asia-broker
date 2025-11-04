@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import classnames from "classnames";
 import Container from "@/components/Container";
 import TitleReveal from "@/components/TitleReveal";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 type Props = {
     title: string;
@@ -56,17 +57,17 @@ export default function Banner({ title, description, midst, imageUrl, transfer =
                     {
                         !transfer && (
                             <>
-                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                    {t("startTrade")}
-                                </Button>
-                                <Button
-                                    className={classnames(["ml-4 border bg-transparent hover:bg-transparent", {
-                                        "border-white": isLight,
-                                        "border-theme-active": !isLight,
-                                        "text-theme-active": !isLight,
-                                    }])}>
-                                    {t("register")}
-                                </Button>
+                                <GeneralLinkBtn
+                                    text={t("startTrade")}
+                                    theme={"active-solid"}
+                                    isLink
+                                />
+                                <GeneralLinkBtn
+                                    text={t("register")}
+                                    theme={"light-hollow"}
+                                    isLink
+                                    className={"ml-4"}
+                                />
                             </>
                         )
                     }
