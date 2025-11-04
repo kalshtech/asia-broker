@@ -312,8 +312,8 @@
       "assets": {
         "title": "即時入金。無料出金。グローバルな決済サポート.",
         "title1": "即時入金&無料出金。",
-        "desc": "It's the only credit card you'll need, and it's exclusively for Asia Future Trading Gold Plan members.",
-        "prompt": "Terms and limitations apply",
+        "desc": "これは、Asia Future Trading Gold Plan 会員専用の、必要な唯一のクレジットカードです。",
+        "prompt": "利用規約と制限事項が適用されます",
         "button": {
           "type": "入金方法",
           "safe": "料金とセキュリティ",
