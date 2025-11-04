@@ -46,12 +46,12 @@ const Environment = () => {
                             </Typography>
                             <Typography
                                 variant={"h6"}
-                                className={"!text-white font-medium max-w-2xl mt-10"}
+                                className={"!text-white font-medium max-w-2xl mt-10 hidden lg:block"}
                             >
                                 {t("desc")}
                             </Typography>
                         </div>
-                        <div className={"mt-4 lg:mt-16"}>
+                        <div className={"mt-8 lg:mt-16"}>
                             <GeneralLinkBtn
                                 text={t("more")}
                                 path={"/ideas/vps"}

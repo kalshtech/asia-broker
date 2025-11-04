@@ -25,7 +25,7 @@ const BankCards = () => {
         { text: t("row.col1.ul.li4") },
     ];
     return (
-        <section className={"bg-theme-deep-bg py-16 xl:py-30"}>
+        <section className={"bg-theme-deep-bg py-16 xl:py-30 hidden lg:block"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

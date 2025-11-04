@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 const VIC = () => {
     const t = useTranslations("Pages.accounts.platinum.VIC");
     return (
-        <section className={"bg-theme-deep-bg py-16 xl:py-30"}>
+        <section className={"bg-theme-deep-bg py-16 xl:py-30 hidden lg:block"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

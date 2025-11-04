@@ -10,7 +10,7 @@ const Banner = () => {
     const t = useTranslations("Pages.accounts.vic.banner");
 
     return (
-        <section className={"bg-[url(/images/accounts/vic-banner-mobile.png)] xl:bg-[url(/images/accounts/vic-banner.png)] bg-center bg-cover h-148 xl:h-[632px] py-4 xl:py-30"}>
+        <section className={"bg-[url(/images/accounts/vic-banner-mobile.png)] xl:bg-[url(/images/accounts/vic-banner.png)] bg-center bg-cover h-108 lg:h-[632px] py-8 lg:py-16 xl:py-24"}>
             <Container>
                 <TitleReveal
                     title={t("title")}
@@ -18,7 +18,7 @@ const Banner = () => {
                 />
                 <Typography
                     variant={"h5"}
-                    className={"font-medium !text-white mt-10"}
+                    className={"font-medium !text-white mt-10 hidden lg:block"}
                 >
                     {t("midst1")}
                 </Typography>
@@ -28,7 +28,7 @@ const Banner = () => {
                 >
                     {t("midst2")}
                 </Typography>
-                <div className={"flex items-end mt-4 lg:mt-8"}>
+                <div className={"items-end mt-4 lg:mt-8 hidden lg:flex"}>
                     <Typography
                         variant={"muted"}
                         className={"!text-white pb-2"}
@@ -44,11 +44,11 @@ const Banner = () => {
                 </div>
                 <Typography
                     variant={"muted"}
-                    className={"!text-white mt-6"}
+                    className={"!text-white mt-6 hidden lg:block"}
                 >
                     {t("prompt")}
                 </Typography>
-                <div className={"mt-4 lg:mt-16"}>
+                <div className={"mt-32 lg:mt-16"}>
                     <Button className={"bg-white text-black hover:bg-white"}>
                         {t("register")}
                     </Button>

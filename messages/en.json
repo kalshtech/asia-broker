@@ -2648,7 +2648,7 @@
           "transfer": "Deposit USD 50,000"
         },
         "permission": {
-          "title": "Institutional Privileges — Engineered for Strategy-Driven Trading",
+          "title": "Institutional Privileges",
           "desc": "The VIC Account empowers institutional and high-net-worth traders with deeper liquidity, greater control, and complete flexibility.  6 exclusive privileges — redefining what professional trading should be. ",
           "swiper": {
             "span1": {
@@ -2760,7 +2760,7 @@
           }
         },
         "experience": {
-          "title": "Asia Future Trading VIC Club, an exclusive experience beyond trading — reserved for the few who truly lead the markets. ",
+          "title": "Asia Future Trading VIC Club",
           "desc": "Join an elite circle of global traders and investors. Expand your network, sharpen your strategy, and elevate your lifestyle. ",
           "prospect": "Trading connects you to the world — we bring the world closer to you. ",
           "row": {

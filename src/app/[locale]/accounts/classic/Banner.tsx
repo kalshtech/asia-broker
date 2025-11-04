@@ -10,7 +10,7 @@ import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 const Banner =  () => {
     const t = useTranslations("Pages.accounts.classic.banner");
     return (
-        <section className={"bg-[url(/images/accounts/classic-banner-mobile.png)] xl:bg-[url(/images/accounts/classic-banner.png)] bg-center bg-cover py-4 xl:py-30 h-152 xl:h-[632px]"}>
+        <section className={"bg-[url(/images/accounts/classic-banner-mobile.png)] xl:bg-[url(/images/accounts/classic-banner.png)] bg-center bg-cover py-8 lg:py-16 xl:py-24 h-108 lg:h-[632px]"}>
             <Container>
                 <TitleReveal
                     title={t("title")}
@@ -26,18 +26,18 @@ const Banner =  () => {
 
                 <Typography
                     variant={"h4"}
-                    className={"font-medium !text-white mt-4"}
+                    className={"font-medium !text-white mt-4 hidden lg:block"}
                 >
                     {t("midst2")}
                 </Typography>
 
                 <Typography
                     variant={"muted"}
-                    className={"font-medium !text-white mt-8 max-w-lg leading-[24px]"}
+                    className={"font-medium !text-white mt-8 max-w-lg leading-[24px] hidden lg:block"}
                 >
                     {t("desc")}
                 </Typography>
-                <div className={"mt-16 flex"}>
+                <div className={"mt-32 lg:mt-16 flex"}>
                     <RegisterBtn className={"bg-white text-black hover:bg-white"} />
                     <GeneralLinkBtn
                         text={t("support")}

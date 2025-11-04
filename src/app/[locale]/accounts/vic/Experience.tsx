@@ -39,14 +39,14 @@ const Experience = () => {
 
                     <Typography
                         variant={"muted"}
-                        className={"text-center mt-6"}
+                        className={"text-center my-16 lg:mt-6 lg:mb-0"}
                     >
                         {t("desc")}
                     </Typography>
 
                     <Typography
                         variant={"h4"}
-                        className={"text-center mt-12"}
+                        className={"text-left lg:text-center mt-12"}
                     >
                         {t("prospect")}
                     </Typography>

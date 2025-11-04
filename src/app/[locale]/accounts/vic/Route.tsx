@@ -28,28 +28,28 @@ const Route = () => {
                 >
                     <Typography
                         variant={"h3"}
-                        className={"text-center"}
+                        className={"text-left lg:text-center"}
                     >
                         {t("title1")}
                     </Typography>
 
                     <Typography
                         variant={"h3"}
-                        className={"text-center"}
+                        className={"text-left lg:text-center"}
                     >
                         {t("title2")}
                     </Typography>
 
                     <Typography
                         variant={"h4"}
-                        className={"text-center mt-6"}
+                        className={"text-left lg:text-center mt-6"}
                     >
                         {t("midst")}
                     </Typography>
 
                     <Typography
                         variant={"muted"}
-                        className={"text-center max-w-3xl mx-auto mt-4"}
+                        className={"text-left lg:text-center max-w-3xl mx-auto mt-4"}
                     >
                         {t("desc")}
                     </Typography>
