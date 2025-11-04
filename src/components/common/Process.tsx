@@ -53,7 +53,7 @@ const Process = (props: Props) => {
                     <div className={"grid grid-cols-12 gap-4"}>
                         {
                             ary.map((item, index) => (
-                                <div className={classnames(["col-span-12", `lg:col-span-${12 / ary.length}`])}
+                                <div className={classnames(["col-span-12", `lg:col-span-6 xl:col-span-${12 / ary.length}`])}
                                      key={index}
                                 >
                                     <div className={classnames(["py-10 px-8 rounded-lg h-full", {
