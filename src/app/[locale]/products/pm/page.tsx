@@ -27,21 +27,21 @@ export default async function Page() {
 
     const mainList = [
         { symbol: "XAUUSD", name: "" },
-        { symbol: "XAUCNH", name: "" },
+        // { symbol: "XAUCNH", name: "" },
         { symbol: "XAUHKD", name: "" },
-        { symbol: "LAUHKD", name: "" },
-        { symbol: "RKGCNH", name: "" },
+        // { symbol: "LAUHKD", name: "" },
+        // { symbol: "RKGCNH", name: "" },
         { symbol: "XAUEUR", name: "" },
         { symbol: "XAUJPY", name: "" },
         { symbol: "XAUTHB", name: "" },
         { symbol: "XAUAUD", name: "" },
         { symbol: "XAUGBP", name: "" },
-        { symbol: "XAUSGD", name: "" },
+        // { symbol: "XAUSGD", name: "" },
         { symbol: "XAGUSD", name: "" },
         { symbol: "XAGEUR", name: "" },
-        { symbol: "XAGSGD", name: "" },
-        { symbol: "XPTUSD", name: "" },
-        { symbol: "XPDUSD", name: "" },
+        // { symbol: "XAGSGD", name: "" },
+        // { symbol: "XPTUSD", name: "" },
+        // { symbol: "XPDUSD", name: "" },
     ];
 
     const secondList = [
@@ -54,7 +54,7 @@ export default async function Page() {
 
     const marketTabList = [
         { label: t("markets.btn.main"), value: "main" },
-        { label: t("markets.btn.second"), value: "second" }
+        // { label: t("markets.btn.second"), value: "second" }
     ];
 
     const QA_DATA = [

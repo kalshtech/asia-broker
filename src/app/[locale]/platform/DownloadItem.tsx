@@ -65,7 +65,10 @@ const DownloadItem = (props: Props) => {
                         "order-1": direction === "left",
                         "order-2": direction === "right",
                     }])} ref={leftRef}>
-                        <Typography variant={"h3"}>
+                        <Typography
+                            variant={"h3"}
+                            className={"mt-16 lg:mt-0"}
+                        >
                             {title}
                         </Typography>
                         <Typography variant={"p"} className={"mt-10"}>

@@ -80,12 +80,12 @@ const Reasons = () => {
                     </Typography>
                     <Typography
                         variant={"muted"}
-                        className={"text-center mx-auto mt-8"}
+                        className={"text-center mt-8 max-w-6xl mx-auto"}
                     >
                         {t("desc")}
                     </Typography>
                 </motion.div>
-                <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16"}>
+                <div className={"grid grid-cols-12 gap-4 mt-4 lg:mt-16 max-w-6xl mx-auto"}>
                     <div className={"col-span-12 lg:col-span-6"} ref={leftRef}>
                         <div className={""}>
                             <Typography variant={"large"}>
@@ -141,32 +141,32 @@ const Reasons = () => {
                             </ul>
                         </div>
 
-                        <div className={"mt-10"}>
-                            <Typography variant={"large"}>
-                                {t("safe")}
-                            </Typography>
-                            <ul className={"mt-6"}>
-                                {
-                                    safeAry.map((item, index) => (
-                                        <li className={"flex items-start my-4"} key={index}>
-                                        <span
-                                            className={"mt-2.5 w-[5px] h-[5px] block bg-theme-active rounded-full"}></span>
-                                            <div className={"ml-3"}>
-                                                <Typography variant={"small"}>
-                                                    {item.title}
-                                                </Typography>
-                                                <Typography
-                                                    className={"mt-2"}
-                                                    variant={"muted"}
-                                                >
-                                                    {item.desc}
-                                                </Typography>
-                                            </div>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
+                        {/*<div className={"mt-10"}>*/}
+                        {/*    <Typography variant={"large"}>*/}
+                        {/*        {t("safe")}*/}
+                        {/*    </Typography>*/}
+                        {/*    <ul className={"mt-6"}>*/}
+                        {/*        {*/}
+                        {/*            safeAry.map((item, index) => (*/}
+                        {/*                <li className={"flex items-start my-4"} key={index}>*/}
+                        {/*                <span*/}
+                        {/*                    className={"mt-2.5 w-[5px] h-[5px] block bg-theme-active rounded-full"}></span>*/}
+                        {/*                    <div className={"ml-3"}>*/}
+                        {/*                        <Typography variant={"small"}>*/}
+                        {/*                            {item.title}*/}
+                        {/*                        </Typography>*/}
+                        {/*                        <Typography*/}
+                        {/*                            className={"mt-2"}*/}
+                        {/*                            variant={"muted"}*/}
+                        {/*                        >*/}
+                        {/*                            {item.desc}*/}
+                        {/*                        </Typography>*/}
+                        {/*                    </div>*/}
+                        {/*                </li>*/}
+                        {/*            ))*/}
+                        {/*        }*/}
+                        {/*    </ul>*/}
+                        {/*</div>*/}
                     </div>
                     <div className={"col-span-12 lg:col-span-6"} ref={rightRef}>
                         <div>

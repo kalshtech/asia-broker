@@ -490,7 +490,10 @@ const CalendarTable = (props: Props) => {
                         {
                             loading ? (
                                 Array.from({length: 12}).map((_, i) => (
-                                    <TableRow key={i}>
+                                    <TableRow key={i} className={classnames([{
+                                        "bg-[#343A4C] hover:bg-[#343A4C] !text-white !border-[#161B2C]": theme === "dark"
+                                    }])}>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                         <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                         <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                         <TableCell><Skeleton className="h-4 w-32"/></TableCell>
