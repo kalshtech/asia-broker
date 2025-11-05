@@ -3,8 +3,6 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
-import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
@@ -19,6 +17,7 @@ const fadeInUp: Variants = {
 
 const Step = () => {
     const t = useTranslations("Pages.platform.step");
+    const CommonT = useTranslations("Common");
     return (
         <section className={"bg-[url(/images/platform/step-background.png)] bg-cover bg-center h-[532px] py-16 xl:py-30"}>
             <Container>
@@ -104,12 +103,16 @@ const Step = () => {
                 </div>
                 <div className={"mx-auto mt-8 xl:mt-24"}>
                     <div className={"flex justify-center"}>
-                        <RegisterBtn className={"bg-white hover:bg-white text-theme-active"}/>
+                        <GeneralLinkBtn
+                            text={CommonT("register")}
+                            theme={"light-solid"}
+                            isLink
+                        />
                         <GeneralLinkBtn
                             text={t("join")}
-                            path={"/"}
                             theme={"light-hollow"}
                             className={"ml-8"}
+                            isLink
                         />
                     </div>
                 </div>

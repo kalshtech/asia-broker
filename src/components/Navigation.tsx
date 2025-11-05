@@ -155,6 +155,7 @@ const Navigation = () => {
     const router = useRouter();
     const pathname = usePathname();
     const t = useTranslations("Navigation");
+    const CommonT = useTranslations("Common");
     const [open, setOpen] = useState(false);
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [langOpen, setLangOpen] = useState(false);
@@ -600,9 +601,12 @@ const Navigation = () => {
                                 </NavigationMenuItem>
                             </NavigationMenuList>
                         </NavigationMenu>
-                        <Button className={"mr-4 px-6 ml-4 lg:px-8 bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
-                            { t("login") }
-                        </Button>
+                        <GeneralLinkBtn
+                            text={t("login")}
+                            theme={"active-hollow"}
+                            className={"mr-4 px-6 ml-4 lg:px-8"}
+                            isLink
+                        />
                         <GeneralLinkBtn
                             text={t("register")}
                             theme={"active-solid"}
@@ -735,7 +739,7 @@ const Navigation = () => {
                     <div className={"flex items-center"} onClick={() => setListOpen(false)}>
                         <ArrowLeft/>
                         <h2 className="text-base ml-2">
-                            Back
+                            { CommonT("back") }
                         </h2>
                     </div>
                     <button
