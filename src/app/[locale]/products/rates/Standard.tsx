@@ -3,8 +3,8 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import Register from "@/components/RegisterBtn";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -18,6 +18,7 @@ const fadeInUp: Variants = {
 
 const Standard = () => {
     const t = useTranslations("Pages.products.rates.standard");
+    const CommonT = useTranslations("Common");
     return (
         <section className={"py-16 xl:py-30"}>
             <Container>
@@ -42,7 +43,11 @@ const Standard = () => {
                     </Typography>
                 </motion.div>
                 <div className={"flex justify-center mt-4 lg:mt-16"}>
-                    <Register/>
+                    <GeneralLinkBtn
+                        text={CommonT("register")}
+                        theme={"active-solid"}
+                        isLink
+                    />
                 </div>
             </Container>
         </section>

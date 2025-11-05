@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const Trust = () => {
     const t = useTranslations("Pages.corporation.about.trust");
@@ -26,9 +27,12 @@ const Trust = () => {
                         </Typography>
                     </div>
                     <div className={"col-span-12 lg:col-span-2 mt-6 lg:mt-0"}>
-                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                            {t("start")}
-                        </Button>
+                        <GeneralLinkBtn
+                            text={t("start")}
+                            theme={"active-solid"}
+                            path={"https://portal.asiafuturetrading.com/login"}
+                            isLink
+                        />
                     </div>
                 </div>
             </Container>

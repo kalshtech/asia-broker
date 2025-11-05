@@ -95,11 +95,11 @@ const Compliance = () => {
                                         </Typography>
                                     </div>
 
-                                    <div className={"mt-10"}>
-                                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                            {t("row.col2.view")}
-                                        </Button>
-                                    </div>
+                                    {/*<div className={"mt-10"}>*/}
+                                    {/*    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>*/}
+                                    {/*        {t("row.col2.view")}*/}
+                                    {/*    </Button>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>

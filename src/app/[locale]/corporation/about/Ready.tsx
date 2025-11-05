@@ -53,9 +53,12 @@ const Ready = () => {
                             </div>
                             <div className={"col-span-12 xl:col-span-4"}>
                                 <div className={"flex mt-4 lg:mt-0 justify-center"}>
-                                    <Button className={"h-10 bg-theme-active hover:bg-theme-active-hover"}>
-                                        {t("trade")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text={t("trade")}
+                                        theme={"active-solid"}
+                                        path={"https://portal.asiafuturetrading.com/login"}
+                                        isLink
+                                    />
                                     <GeneralLinkBtn
                                         text={t("support")}
                                         path={"/corporation/contact"}

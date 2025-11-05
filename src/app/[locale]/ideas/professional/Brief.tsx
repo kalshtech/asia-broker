@@ -7,6 +7,7 @@ import Container from "@/components/Container";
 import { motion, Variants} from "framer-motion";
 import { Link } from "@/i18n/navigation";
 import { Separator } from "@/components/ui/separator"
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -103,9 +104,12 @@ export default function Brief() {
                                     </Typography>
                                 </div>
                                 <div className={"ml-auto flex justify-center items-center"}>
-                                    <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                        {t("row.left.download")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text={t("row.left.download")}
+                                        theme={"active-solid"}
+                                        path={"/files/Report.pdf"}
+                                        isLink
+                                    />
                                 </div>
                             </div>
                         </div>

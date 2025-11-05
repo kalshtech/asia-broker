@@ -68,15 +68,16 @@ const Subscribe = () => {
                             </ul>
                         </div>
                         <div className={"flex justify-center lg:justify-start"}>
+                            {/*<GeneralLinkBtn*/}
+                            {/*    text={t("watch")}*/}
+                            {/*    path={"/ideas/professional"}*/}
+                            {/*    theme={"active-solid"}*/}
+                            {/*/>*/}
                             <GeneralLinkBtn
-                                text={t("watch")}
+                                text={t("register")}
                                 path={"/ideas/professional"}
-                                theme={"active-solid"}
+                                theme={"active-hollow"}
                             />
-                            <Button
-                                className={"ml-4 border text-theme-active border-theme-active bg-white hover:bg-transparent"}>
-                                {t("register")}
-                            </Button>
                         </div>
                     </div>
                     <div className={"col-span-1 mt-4 lg:mt-0"}>

@@ -3,9 +3,10 @@ import * as React from 'react'
 import { motion, Variants } from "framer-motion";
 import { Typography } from "@/components/ui/typography";
 import classnames from "classnames";
-import Register from "@/components/RegisterBtn";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
+import {useTranslations} from "next-intl";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -17,6 +18,7 @@ const fadeInUp: Variants = {
 }
 
 const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, children, prompt }: any) => {
+    const t = useTranslations("Common");
     const isLight = theme === "light";
     return (
         <section className={classnames(["py-16 xl:py-30", {
@@ -109,7 +111,11 @@ const Row = ({ ary, title, title1, theme = "light", challengeText, isShowBtn, ch
                     {
                         isShowBtn && (
                             <div className={"mt-16 flex justify-center"}>
-                                <Register/>
+                                <GeneralLinkBtn
+                                    text={t("register")}
+                                    theme={"active-solid"}
+                                    isLink
+                                />
                                 <Button
                                     className={"ml-4 border border-white bg-transparent hover:bg-transparent"}>
                                     {challengeText}

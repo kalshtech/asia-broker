@@ -1501,7 +1501,7 @@
             "li2": "No account required — simply subscribe with your email to receive the AFT Weekly Economic Calendar for free. ",
             "li3": "Each week, our research team curates key global events — from rate decisions and employment data to inflation indicators — along with market insights and trading strategies that turn your inbox into a 24/7 intelligence hub. "
           },
-          "watch": "Subscription",
+          "watch": "Subscribe",
           "register": "Open Account"
         },
         "financialCalendar": {
@@ -1515,7 +1515,7 @@
             "last-placeholder": "Enter Your First Name",
             "country-placeholder": "Enter Your Country",
             "email-placeholder": "Enter Your Email",
-            "subscribe": "Subscription"
+            "subscribe": "Subscribe"
           }
         }
       },

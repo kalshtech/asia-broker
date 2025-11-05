@@ -2,7 +2,6 @@
 import * as React from 'react'
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import RegisterBtn from "@/components/RegisterBtn";
 import Container from "@/components/Container";
 import TitleReveal from "@/components/TitleReveal";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";

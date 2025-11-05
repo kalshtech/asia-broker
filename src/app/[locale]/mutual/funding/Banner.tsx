@@ -4,8 +4,8 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
-import RegisterBtn from "@/components/RegisterBtn"
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -18,6 +18,7 @@ const fadeInUp: Variants = {
 
 const Banner = () => {
     const t = useTranslations("Pages.mutual.funding.banner");
+    const CommonT = useTranslations("Common");
     return (
         <section className={"bg-[url(/images/mutual/funding-banner.png)] bg-center bg-cover relative h-124 lg:h-136 xl:h-[632px] py-8 xl:py-30"}>
             <Container>
@@ -48,7 +49,11 @@ const Banner = () => {
                     </Typography>
 
                     <div className={"mt-8 lg:mt-16 flex justify-center"}>
-                        <RegisterBtn/>
+                        <GeneralLinkBtn
+                            text={CommonT("register")}
+                            theme={"active-solid"}
+                            isLink
+                        />
                         <Button
                             className={"ml-8 border bg-transparent hover:bg-transparent"}>
                             {t("ticker")}
