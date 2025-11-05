@@ -29,14 +29,14 @@ export default async function Page() {
         { symbol: "YM", name: "Dow Jones Index Futures" },
         { symbol: "MYM", name: "Micro Dow Jones Index Futures" },
         { symbol: "FDAX", name: "German DAX Index Futures" },
-        { symbol: "FDXM", name: "Mini DAX Index Futures" },
-        { symbol: "FESX", name: "EURO STOXX 50 Index Futures" },
-        { symbol: "HSI", name: "Hang Seng Index Futures" },
-        { symbol: "MHI", name: "Mini Hang Seng Index Futures" },
-        { symbol: "HHI", name: "Hang Seng China Enterprises Index Futures" },
-        { symbol: "HTI", name: "Hang Seng Tech Index Futures" },
-        { symbol: "MCA", name: "Mid-Cap A-Share Index Futures" },
-        { symbol: "MCH", name: "Small-Cap A-Share Index Futures" }
+        // { symbol: "FDXM", name: "Mini DAX Index Futures" },
+        // { symbol: "FESX", name: "EURO STOXX 50 Index Futures" },
+        // { symbol: "HSI", name: "Hang Seng Index Futures" },
+        // { symbol: "MHI", name: "Mini Hang Seng Index Futures" },
+        // { symbol: "HHI", name: "Hang Seng China Enterprises Index Futures" },
+        // { symbol: "HTI", name: "Hang Seng Tech Index Futures" },
+        // { symbol: "MCA", name: "Mid-Cap A-Share Index Futures" },
+        // { symbol: "MCH", name: "Small-Cap A-Share Index Futures" }
     ];
 
     const otherList = [
@@ -66,8 +66,8 @@ export default async function Page() {
     const marketTabList = [
         { label: t("markets.btn.main"), value: "main" },
         { label: t("markets.btn.second"), value: "second" },
-        { label: t("markets.btn.other"), value: "other" },
-        { label: t("markets.btn.other-meta"), value: "other-meta" },
+        // { label: t("markets.btn.other"), value: "other" },
+        // { label: t("markets.btn.other-meta"), value: "other-meta" },
     ];
 
     const GuideAry = [

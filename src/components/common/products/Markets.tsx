@@ -19,7 +19,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import {motion, Variants} from "framer-motion";
 import SimpleSearch from "@/components/common/SimpleSearch";
 import Container from "@/components/Container";
-import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
@@ -176,43 +175,24 @@ const Markets = (props: Props) => {
                 {
                     tabList && (
                         <div className={"mt-10"}>
-                            {
-                                tabList.length > 3 ? (
-                                    <Select value={tabActive} onValueChange={handleToggleTabActive}>
-                                        <SelectTrigger className={"w-full"}>
-                                            <SelectValue placeholder="Theme"/>
-                                        </SelectTrigger>
-                                        <SelectContent>
-                                            {
-                                                tabList.map((item, index) => (
-                                                    <SelectItem value={item.value} key={index}>
-                                                        {item.label}
-                                                    </SelectItem>
-                                                ))
-                                            }
-                                        </SelectContent>
-                                    </Select>
-                                ) : (
-                                    <Tabs value={tabActive}
-                                          className={"justify-center items-center"}
-                                          onValueChange={handleToggleTabActive}
-                                    >
-                                        <TabsList className={"h-10 rounded-full"}>
-                                            {
-                                                tabList.map((item, index) => (
-                                                    <TabsTrigger
-                                                        key={index}
-                                                        value={item.value}
-                                                        className={"cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
-                                                    >
-                                                        {item.label}
-                                                    </TabsTrigger>
-                                                ))
-                                            }
-                                        </TabsList>
-                                    </Tabs>
-                                )
-                            }
+                            <Tabs value={tabActive}
+                                  className={"justify-center items-center"}
+                                  onValueChange={handleToggleTabActive}
+                            >
+                                <TabsList className={"h-10 rounded-full"}>
+                                    {
+                                        tabList.map((item, index) => (
+                                            <TabsTrigger
+                                                key={index}
+                                                value={item.value}
+                                                className={"cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                            >
+                                                {item.label}
+                                            </TabsTrigger>
+                                        ))
+                                    }
+                                </TabsList>
+                            </Tabs>
                         </div>
                     )
                 }
