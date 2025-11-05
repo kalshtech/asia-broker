@@ -317,6 +317,7 @@ const Markets = (props: Props) => {
                                 <GeneralLinkBtn
                                     text={trade}
                                     theme={"active-solid"}
+                                    path={"https://portal.asiafuturetrading.com/login"}
                                     isLink
                                 />
                             </div>
