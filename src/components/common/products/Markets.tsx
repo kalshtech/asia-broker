@@ -225,10 +225,14 @@ const Markets = (props: Props) => {
                                         <TableHead className={"text-white"}>{CommonT("code")}</TableHead>
                                         <TableHead className={"text-white"}>{CommonT("price")}</TableHead>
                                         <TableHead className={"text-white"}>{CommonT("changePercentage")}</TableHead>
-                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("change")}</TableHead>
-                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("open")}</TableHead>
-                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("high")}</TableHead>
-                                        <TableHead className={"text-white hidden xl:table-cell"}>{CommonT("low")}</TableHead>
+                                        <TableHead
+                                            className={"text-white hidden xl:table-cell"}>{CommonT("change")}</TableHead>
+                                        <TableHead
+                                            className={"text-white hidden xl:table-cell"}>{CommonT("open")}</TableHead>
+                                        <TableHead
+                                            className={"text-white hidden xl:table-cell"}>{CommonT("high")}</TableHead>
+                                        <TableHead
+                                            className={"text-white hidden xl:table-cell"}>{CommonT("low")}</TableHead>
                                         {/*<TableHead className={"text-white hidden xl:table-cell"}>{CommonT("volume")}</TableHead>*/}
                                         <TableHead className={"text-white text-right w-[80px]"}></TableHead>
                                     </TableRow>
@@ -267,9 +271,12 @@ const Markets = (props: Props) => {
                                                     {formatMaxFixed(item.change)}
                                                 </span>
                                             </TableCell>
-                                            <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.open)}</TableCell>
-                                            <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayHigh)}</TableCell>
-                                            <TableCell className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayLow)}</TableCell>
+                                            <TableCell
+                                                className={"hidden xl:table-cell"}>{formatMaxFixed(item.open)}</TableCell>
+                                            <TableCell
+                                                className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayHigh)}</TableCell>
+                                            <TableCell
+                                                className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayLow)}</TableCell>
                                             {/*<TableCell className={"hidden xl:table-cell"}>{convert(item.volume)}</TableCell>*/}
                                             <TableHead className={"text-right text-theme-active w-[80px]"}>
                                                 <a href="https://portal.asiafuturetrading.com" target={"_blank"}>
@@ -280,6 +287,13 @@ const Markets = (props: Props) => {
                                     ))}
                                 </TableBody>
                             </Table>
+                            {
+                                filtered.length === 0 && (
+                                    <div className={"flex py-8 justify-center"}>
+                                        { CommonT("nodata") }
+                                    </div>
+                                )
+                            }
                             <div className={"mt-8 flex justify-center xl:mt-16"}>
                                 <GeneralLinkBtn
                                     text={trade}
@@ -289,6 +303,7 @@ const Markets = (props: Props) => {
                             </div>
                         </>
                     )}
+
 
                     {type === "future" && (
                         <>
@@ -312,6 +327,13 @@ const Markets = (props: Props) => {
                                     ))}
                                 </TableBody>
                             </Table>
+                            {
+                                filtered.length === 0 && (
+                                    <div className={"flex py-8 justify-center"}>
+                                        { CommonT("nodata") }
+                                    </div>
+                                )
+                            }
                             <div className={"mt-8 flex justify-center xl:mt-16"}>
                                 <GeneralLinkBtn
                                     text={trade}
