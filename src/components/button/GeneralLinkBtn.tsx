@@ -40,37 +40,20 @@ const GeneralLinkBtn = (props: Props) => {
 
     return (
         <Button className={classnames([renderCls(), className])}>
-            {
-                isLink ? (
-                    <a href={path}
-                       target={"_blank"}
-                       className={classnames(["flex justify-center items-center", {
-                           "flex-col": children
-                       }])}
-                       title={text}
-                    >
-                        {text}
-                        {children}
-                        {theme === "share" && (
-                            <ExternalLink className={"ml-1"}/>
-                        )}
-                    </a>
-                ) : (
-                    <Link
-                        href={path}
-                        className={classnames(["flex justify-center items-center", {
-                            "flex-col": children
-                        }])}
-                        title={text}
-                    >
-                        { text }
-                        { children }
-                        { theme === "share" && (
-                            <ExternalLink className={"ml-1"}/>
-                        ) }
-                    </Link>
-                )
-            }
+            <Link
+                href={path}
+                target={isLink ? "_blank" : "_self"}
+                className={classnames(["flex justify-center items-center", {
+                    "flex-col": children
+                }])}
+                title={text}
+            >
+                { text }
+                { children }
+                { theme === "share" && (
+                    <ExternalLink className={"ml-1"}/>
+                ) }
+            </Link>
         </Button>
     )
 }
