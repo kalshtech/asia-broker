@@ -15,7 +15,7 @@ type Props = {
 }
 
 const GeneralLinkBtn = (props: Props) => {
-    const { text, path = "https://portal.asiafuturetrading.com", className, theme = "light-solid", children, isLink = false } = props;
+    const { text, path = "https://portal.asiafuturetrading.com/login", className, theme = "light-solid", children, isLink = false } = props;
 
     const renderCls = () => {
         switch (theme) {

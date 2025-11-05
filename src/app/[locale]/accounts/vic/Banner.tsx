@@ -5,6 +5,7 @@ import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
 import TitleReveal from "@/components/TitleReveal";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const Banner = () => {
     const t = useTranslations("Pages.accounts.vic.banner");
@@ -49,12 +50,17 @@ const Banner = () => {
                     {t("prompt")}
                 </Typography>
                 <div className={"mt-32 lg:mt-16"}>
-                    <Button className={"bg-white text-black hover:bg-white"}>
-                        {t("register")}
-                    </Button>
-                    <Button className={"border border-white bg-transparent text-white ml-4 hover:bg-transparent"}>
-                        {t("transfer")}
-                    </Button>
+                    <GeneralLinkBtn
+                        text={t("register")}
+                        theme={"light-solid"}
+                        isLink
+                    />
+                    <GeneralLinkBtn
+                        text={t("transfer")}
+                        theme={"light-hollow"}
+                        className={"ml-4"}
+                        isLink
+                    />
                 </div>
             </Container>
         </section>
