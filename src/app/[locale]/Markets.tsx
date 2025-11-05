@@ -253,7 +253,7 @@ const Markets = () => {
                             <div className={"flex items-center justify-center"}>
                                 <div>
                                     <Button className={"mt-8 bg-theme-active hover:bg-theme-active-hover"}>
-                                        <Link href={currentPath} target={"_blank"}>
+                                        <Link href={currentPath}>
                                             {t("more")}
                                         </Link>
                                     </Button>

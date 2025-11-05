@@ -143,9 +143,11 @@ const Profession = () => {
                                             </div>
 
                                             <div className={"mt-4"}>
-                                                <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                                    {item.children.btnText}
-                                                </Button>
+                                                <GeneralLinkBtn
+                                                    text={item.children.btnText}
+                                                    theme={"active-solid"}
+                                                    isLink
+                                                />
                                             </div>
                                         </div>
                                     </div>

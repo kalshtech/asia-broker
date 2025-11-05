@@ -46,6 +46,7 @@ const DownloadAndRegister = () => {
                                     <GeneralLinkBtn
                                         text={t("open")}
                                         theme={"active-solid"}
+                                        className={"w-full"}
                                         isLink
                                     />
                                     <GeneralLinkBtn
