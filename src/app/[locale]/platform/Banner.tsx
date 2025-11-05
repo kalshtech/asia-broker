@@ -23,7 +23,7 @@ const Banner = () => {
         { imageUrl: "/images/platform/apple.png", url: "https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/MetaTrader5.pkg.zip?utm_source=support.metaquotes.net&utm_campaign=download.mt5.macos", download: t("download"), vision: t("ul.macos") },
         { imageUrl: "/images/platform/apple.png", url: "https://download.metatrader.com/cdn/mobile/mt5/ios?server=AsiaFutureTrading-Server", download: t("download"), vision: t("ul.ios") },
         { imageUrl: "/images/platform/android.png", url: "https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/metatrader5.apk?utm_source=www.metatrader5.com&utm_campaign=install.metaquotes", download: t("download"), vision: t("ul.android") },
-        { imageUrl: "/images/platform/webtrade.png", url: "https://app.afttmarkets.com/", download: t("download"), vision: t("ul.webtrader") },
+        { imageUrl: "/images/platform/webtrade.png", url: "https://app.afttmarkets.com/", download: t("launch"), vision: t("ul.webtrader") },
     ];
     return (
         <section className={"bg-[url(/images/platform/banner-background-mobile.png)] xl:bg-[url(/images/platform/banner-background.png)] bg-cover bg-center py-16 lg:py-30"}>
