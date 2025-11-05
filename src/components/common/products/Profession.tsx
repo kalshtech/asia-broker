@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Navigation} from "swiper/modules";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -71,8 +72,8 @@ const Profession = () => {
                                 ))
                             }
                         </div>
-                        <div
-                            className={"absolute left-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none"}>
+                        <div className={"absolute left-0 m-auto top-0 bottom-0 h-full flex justify-center items-center pointer-events-none"}
+                        >
                             <div className={"w-full p-8 h-auto"}>
                                 <div className={"flex flex-col"}>
                                     <Typography variant={"h3"}>
@@ -81,6 +82,7 @@ const Profession = () => {
                                     <Typography variant={"p"} className={"font-medium max-w-xl mt-2"}>
                                         {activeChildren?.desc1}
                                     </Typography>
+
                                     {
                                         activeChildren?.desc2 && (
                                             <Typography variant={"muted"} className={"max-w-xl mt-2"}>
@@ -90,9 +92,12 @@ const Profession = () => {
                                     }
 
                                     <div className={"mt-10"}>
-                                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                            {activeChildren?.btnText}
-                                        </Button>
+                                        <GeneralLinkBtn
+                                            text={activeChildren?.btnText}
+                                            theme={"active-solid"}
+                                            className={"pointer-events-auto"}
+                                            isLink
+                                        />
                                     </div>
                                 </div>
                             </div>

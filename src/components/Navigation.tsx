@@ -14,8 +14,9 @@ import {
 import { Typography } from "@/components/ui/typography";
 import { Separator } from "@/components/ui/separator";
 import { MoveRight, Globe, AlignJustify, X, ChevronRight, ArrowLeft } from 'lucide-react';
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 
 const PackageMenuItem = (props: any) => {
@@ -602,9 +603,11 @@ const Navigation = () => {
                         <Button className={"mr-4 px-6 ml-4 lg:px-8 bg-transparent hover:bg-transparent border border-theme-active text-theme-active cursor-pointer"}>
                             { t("login") }
                         </Button>
-                        <Button className={"bg-theme-active cursor-pointer hover:bg-theme-active-hover"}>
-                            { t("register") }
-                        </Button>
+                        <GeneralLinkBtn
+                            text={t("register")}
+                            theme={"active-solid"}
+                            isLink
+                        />
                         {
                             !drawerOpen ?
                                 <AlignJustify className={"block xl:hidden ml-4"} onClick={() => setDrawerOpen(true)}/>

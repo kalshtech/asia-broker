@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";

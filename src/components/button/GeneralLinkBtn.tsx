@@ -6,7 +6,7 @@ import classnames from "classnames";
 import { ExternalLink } from "lucide-react";
 
 type Props = {
-    text: string;
+    text?: string;
     path?: string;
     className?: string;
     theme?: "light-solid" | "light-hollow" | "dark-solid" | "active-solid" | "active-hollow" | "share";

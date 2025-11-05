@@ -4,6 +4,7 @@ import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import classnames from "classnames";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 type Props = {
     theme?: string;
@@ -33,13 +34,12 @@ const JoinCommunity = (props: Props) => {
                             <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
                                 {t("join-community-btn")}
                             </Button>
-                            <Button
-                                className={classnames(["ml-4 border bg-transparent hover:bg-transparent", {
-                                    "border-theme-active": theme === "light",
-                                    "text-theme-active": theme === "light",
-                                }])}>
-                                {t("register")}
-                            </Button>
+                            <GeneralLinkBtn
+                                text={t("register")}
+                                theme={theme === "light" ? "active-hollow" : "light-hollow"}
+                                className={"ml-4"}
+                                isLink
+                            />
                         </div>
                     </div>
                 </div>
