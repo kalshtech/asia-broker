@@ -16,35 +16,40 @@ export default async function Page() {
             title: t("download.windows.title"),
             desc: t("download.windows.desc"),
             imageUrl: "/images/platform/download2.png",
-            downloadText: t("download.windows.downloadText")
+            downloadText: t("download.windows.downloadText"),
+            url: "https://document.afttjp.com/AFTT_setup.exe",
         },
         {
             direction: "right",
             title: t("download.macos.title"),
             desc: t("download.macos.desc"),
             imageUrl: "/images/platform/download1.png",
-            downloadText: t("download.macos.downloadText")
+            downloadText: t("download.macos.downloadText"),
+            url: "https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/MetaTrader5.pkg.zip?utm_source=support.metaquotes.net&utm_campaign=download.mt5.macos",
         },
         {
             direction: "left",
             title: t("download.ios.title"),
             desc: t("download.ios.desc"),
             imageUrl: "/images/platform/download3.png",
-            downloadText: t("download.ios.downloadText")
+            downloadText: t("download.ios.downloadText"),
+            url: "https://download.metatrader.com/cdn/mobile/mt5/ios?server=AsiaFutureTrading-Server",
         },
         {
             direction: "right",
             title: t("download.android.title"),
             desc: t("download.android.desc"),
             imageUrl: "/images/platform/download4.png",
-            downloadText: t("download.android.downloadText")
+            downloadText: t("download.android.downloadText"),
+            url: "https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/metatrader5.apk?utm_source=www.metatrader5.com&utm_campaign=install.metaquotes",
         },
         {
             direction: "left",
             title: t("download.webtrader.title"),
             desc: t("download.webtrader.desc"),
             imageUrl: "/images/platform/download5.png",
-            downloadText: t("download.webtrader.downloadText")
+            downloadText: t("download.webtrader.downloadText"),
+            url: "https://app.afttmarkets.com/"
         }
     ];
     return (

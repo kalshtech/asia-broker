@@ -26,11 +26,11 @@ export default async function Page() {
         { symbol: "ADAUSD", ticker: "ADA/USD", name: "" },
         { symbol: "ATOMUSD", ticker: "ATOM/USD", name: "" },
         { symbol: "LTCUSD", ticker: "LTC/USD", name: "" },
-        { symbol: "BCHUSD", ticker: "BCH/USD", name: "" },
-        { symbol: "TONUSD", ticker: "TON/USD", name: "" },
-        { symbol: "APTUSD", ticker: "APT/USD", name: "" },
-        { symbol: "TRXUSD", ticker: "TRX/USD", name: "" },
-        { symbol: "EOSUSD", ticker: "EOS/USD", name: "" },
+        // { symbol: "BCHUSD", ticker: "BCH/USD", name: "" },
+        // { symbol: "TONUSD", ticker: "TON/USD", name: "" },
+        // { symbol: "APTUSD", ticker: "APT/USD", name: "" },
+        // { symbol: "TRXUSD", ticker: "TRX/USD", name: "" },
+        // { symbol: "EOSUSD", ticker: "EOS/USD", name: "" },
     ];
 
     const secondForexList = [
@@ -41,11 +41,11 @@ export default async function Page() {
         { symbol: "LDOUSD", ticker: "LDO/USD", name: "" },
         { symbol: "UNIUSD", ticker: "UNI/USD", name: "" },
         { symbol: "FILUSD", ticker: "FIL/USD", name: "" },
-        { symbol: "BATUSD", ticker: "BAT/USD", name: "" },
-        { symbol: "XRPUSD", ticker: "XRP/USD", name: "" },
-        { symbol: "XLMUSD", ticker: "XLM/USD", name: "" },
-        { symbol: "LINKUSD", ticker: "LINK/USD", name: "" },
-        { symbol: "PYTHUSD", ticker: "PYTH/USD", name: "" }
+        // { symbol: "BATUSD", ticker: "BAT/USD", name: "" },
+        // { symbol: "XRPUSD", ticker: "XRP/USD", name: "" },
+        // { symbol: "XLMUSD", ticker: "XLM/USD", name: "" },
+        // { symbol: "LINKUSD", ticker: "LINK/USD", name: "" },
+        // { symbol: "PYTHUSD", ticker: "PYTH/USD", name: "" }
     ]
 
     const otherForexList = [
@@ -56,8 +56,8 @@ export default async function Page() {
         { symbol: "FLOKIUSD", ticker: "FLOKI/USD", name: "" },
         { symbol: "TRUMPUSD", ticker: "TRUMP/USD", name: "" },
         { symbol: "XMRUSD", ticker: "XMR/USD", name: "" },
-        { symbol: "ZECUSD", ticker: "ZEC/USD", name: "" },
-        { symbol: "DASHUSD", ticker: "DASH/USD", name: "" }
+        // { symbol: "ZECUSD", ticker: "ZEC/USD", name: "" },
+        // { symbol: "DASHUSD", ticker: "DASH/USD", name: "" }
     ];
 
     const marketTabList = [

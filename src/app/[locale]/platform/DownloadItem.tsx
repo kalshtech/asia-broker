@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import classnames from "classnames";
 gsap.registerPlugin(ScrollTrigger);
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 type Props = {
     direction: string;
@@ -14,10 +15,11 @@ type Props = {
     desc: string;
     downloadText: string;
     imageUrl: string;
+    url: string;
 }
 
 const DownloadItem = (props: Props) => {
-    const { direction = "left", title, desc, downloadText, imageUrl } = props;
+    const { direction = "left", title, url, desc, downloadText, imageUrl } = props;
     const sectionRef = React.useRef<HTMLDivElement>(null);
     const leftRef = React.useRef<HTMLDivElement>(null);
     const rightRef = React.useRef<HTMLDivElement>(null);
@@ -75,9 +77,12 @@ const DownloadItem = (props: Props) => {
                             {desc}
                         </Typography>
                         <div className={"mt-10"}>
-                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                {downloadText}
-                            </Button>
+                            <GeneralLinkBtn
+                                text={downloadText}
+                                theme={"active-solid"}
+                                path={url}
+                                isLink
+                            />
                         </div>
                     </div>
                     <div className={classnames(["col-span-12 lg:col-span-6", {
