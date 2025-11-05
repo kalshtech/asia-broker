@@ -237,7 +237,7 @@
         }
       },
       "markets": {
-        "title": "One Account.  Trade the World. ",
+        "title": "One Account. 0 Commission. Trade the World. ",
         "description": "A single 6-digit ID.  65,000+ instruments.  Zero borders.  No limits. ",
         "more": "Explore Markets"
       },
@@ -291,10 +291,8 @@
         "description": "Multilingual support.  Multi-currency accounts.  Global access with local precision. ",
         "row": {
           "1": {
-            "desc1": "Global Support, Human Connection",
-            "desc2": "Real people.  Real support — in your language. ",
-            "desc3": "From onboarding to strategy, our local managers are always one message away on Discord, WhatsApp, Telegram, and WeChat. ",
-            "desc4": "Bootcamps.  Live trading reviews.  Strategy Q&A.  Learning hubs.  Tech insights",
+            "desc1": "Global Support, Local Expertise",
+            "desc2": "Multilingual managers available 24/7 via Discord, WhatsApp, Telegram, and WeChat — offering real-time guidance, live insights, and exclusive AFT trading bootcamps.",
             "link": "Contact Us"
           },
           "2": {
@@ -530,7 +528,7 @@
         "title1": "Highlight Calendar",
         "description": "Access the AFT Highlight calendar, expert insights, and technical analysis — all free, no login required. Stay in sync with global markets, data events, and trading opportunities. ",
         "description1": "Stay in sync with global markets, data events, and trading opportunities.",
-        "explore": "Explore Calendar",
+        "explore": "Explore Insights",
         "subscribe": "Free Subscribe",
         "prospect": {
           "title": "2025 Industry Outlook",

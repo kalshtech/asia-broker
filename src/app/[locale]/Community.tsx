@@ -42,24 +42,13 @@ const Community = () => {
                     <div className={"col-span-12 lg:col-span-3"}>
                         <div className={"hidden xl:block bg-[url('/images/home/communitybg1.png')] h-full bg-cover bg-center bg-no-repeat p-6"}>
                             <div className={"flex h-full flex-1 flex-col"}>
-                                <div className={"flex flex-col pb-20 pt-20 h-full lg:pt-[310px]"}>
+                                <div className={"flex flex-col pb-20 pt-20 h-full lg:pt-120"}>
                                     <div className={"flex flex-col"}>
                                         <Typography variant={"muted"} className={"!text-white font-medium"}>
                                             {t("row.1.desc1")}
                                         </Typography>
                                         <Typography variant={"muted"} className={"mt-8 !text-white"}>
                                             {t("row.1.desc2")}
-                                        </Typography>
-                                        <Typography variant={"muted"} className={"!text-white mt-4"}>
-                                            {t("row.1.desc3")}
-                                        </Typography>
-                                    </div>
-
-                                    <Separator className={"my-8"}/>
-
-                                    <div className={"flex flex-col"}>
-                                        <Typography variant={"muted"} className={"!text-white"}>
-                                            {t("row.1.desc4")}
                                         </Typography>
                                     </div>
                                     <div className={"text-center mt-10"}>

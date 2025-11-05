@@ -19,6 +19,7 @@ interface AryItemProps {
     title: string;
     desc: string;
     bottom?: string;
+    url: string;
 }
 
 type Props = {
@@ -85,14 +86,16 @@ const Process = (props: Props) => {
                                         </div>
                                         {
                                             item.bottom && (
-                                                <div className={"mt-16 flex items-center cursor-pointer"}>
-                                                    <Typography
-                                                        variant={"muted"}
-                                                        className={"!text-sm font-semibold"}
-                                                    >
-                                                        {item.bottom}
-                                                    </Typography>
-                                                    <ArrowRight className={"ml-2"}/>
+                                                <div className={"mt-16 cursor-pointer"}>
+                                                    <a href={item.url} className={"flex items-center"} target={"_blank"}>
+                                                        <Typography
+                                                            variant={"muted"}
+                                                            className={"!text-sm font-semibold"}
+                                                        >
+                                                            {item.bottom}
+                                                        </Typography>
+                                                        <ArrowRight className={"ml-2"}/>
+                                                    </a>
                                                 </div>
                                             )
                                         }

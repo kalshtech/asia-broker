@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -73,9 +74,11 @@ const BankCards = () => {
                                 }
                             </ul>
                             <div className={"mt-4 lg:mt-16"}>
-                                <Button className={"text-black bg-white hover:bg-white"}>
-                                    {t("row.col1.understand")}
-                                </Button>
+                                <GeneralLinkBtn
+                                    text={t("row.col1.understand")}
+                                    theme={"light-solid"}
+                                    isLink
+                                />
                             </div>
                         </div>
                         <div className={"col-span-12 lg:col-span-6"}>

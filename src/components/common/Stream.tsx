@@ -6,6 +6,7 @@ import { Typography } from "@/components/ui/typography";
 import classnames from "classnames";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -135,9 +136,11 @@ const Stream = (props: Props) => {
                                 {
                                     col2.isShowMore && (
                                         <div className={"flex justify-center items-center h-full flex-1 flex-col"}>
-                                            <Button className={"text-black bg-white hover:bg-white"}>
-                                                {t("row.col2.apply")}
-                                            </Button>
+                                            <GeneralLinkBtn
+                                                text={t("row.col2.apply")}
+                                                theme={"light-solid"}
+                                                isLink
+                                            />
                                             <Typography
                                                 variant={"muted"}
                                                 className={"!text-white max-w-xl mx-auto text-center mt-4"}

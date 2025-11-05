@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -87,14 +88,16 @@ const Custom = () => {
                                 </Typography>
 
                                 <div className={"mt-4 lg:mt-10"}>
-                                    <Button className={"text-black bg-white hover:bg-white"}>
-                                        {t("row.col2.apply")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text={t("row.col2.apply")}
+                                        theme={"light-solid"}
+                                        isLink
+                                    />
                                     <Typography
                                         variant={"muted"}
                                         className={"!text-white mt-5"}
                                     >
-                                        {t("row.col2.prompt")}
+                                        {t("row.col2.prompt")}11111
                                     </Typography>
                                 </div>
                             </div>
