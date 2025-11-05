@@ -127,9 +127,7 @@ const Markets = (props: Props) => {
         if (!q) return rawData;
         return rawData.filter(
             (item: any) =>
-                item.symbol.toLowerCase().includes(q) ||
-                item.ticker.toLowerCase().includes(q) ||
-                item.name.toLowerCase().includes(q)
+                item.symbol.toLowerCase().includes(q) || item.name.toLowerCase().includes(q)
         );
     }, [query, rawData]);
 

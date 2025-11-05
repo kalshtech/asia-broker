@@ -605,6 +605,7 @@ const Navigation = () => {
                             text={t("login")}
                             theme={"active-hollow"}
                             className={"mr-4 px-6 ml-4 lg:px-8"}
+                            path={"https://portal.asiafuturetrading.com/login"}
                             isLink
                         />
                         <GeneralLinkBtn
