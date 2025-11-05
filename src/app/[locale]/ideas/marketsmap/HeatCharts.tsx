@@ -10,7 +10,6 @@ import {Tabs, TabsList, TabsTrigger} from "@/components/ui/tabs";
 import { useRouter } from "@/i18n/navigation";
 import { useSearchParams } from "next/navigation";
 import {useMemo} from "react";
-import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 const fadeInUp: Variants = {
@@ -156,7 +155,7 @@ const HeatCharts = () => {
                     </div>
                 </motion.div>
                 <div className={"mt-10"}>
-                    <TvStockHeatmap/>
+                    <TvStockHeatmap locale={locale}/>
                 </div>
                 <motion.div
                     variants={fadeInUp}
@@ -180,7 +179,7 @@ const HeatCharts = () => {
                     </div>
                 </motion.div>
                 <div className={"mt-10"}>
-                    <TvCryptoHeatmap/>
+                    <TvCryptoHeatmap locale={locale}/>
                 </div>
             </Container>
         </section>

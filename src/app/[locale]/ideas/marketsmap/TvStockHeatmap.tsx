@@ -11,7 +11,7 @@ type HeatmapProps = {
 export default function TvStockHeatmap({
                                            width = "100%",
                                            height = 520,
-                                           locale = "zh_CN",
+                                           locale = "en",
                                            colorTheme = "light",
                                            configOverride,
                                        }: HeatmapProps) {
