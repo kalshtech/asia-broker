@@ -94,9 +94,11 @@ const Credit = ({ typeText, className, number }: Props) => {
                 </div>
 
                 <div className={"flex justify-center mt-4 lg:mt-16"}>
-                    <Button>
-                        {t("immediately")}
-                    </Button>
+                    <GeneralLinkBtn
+                        text={t("immediately")}
+                        theme={"dark-solid"}
+                        isLink
+                    />
                     <GeneralLinkBtn
                         text={t("understand")}
                         theme={"dark-hollow"}
