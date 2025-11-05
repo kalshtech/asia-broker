@@ -9,6 +9,7 @@ import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const Banner =  () => {
     const t = useTranslations("Pages.accounts.classic.banner");
+    const CommonT = useTranslations("Common");
     return (
         <section className={"bg-[url(/images/accounts/classic-banner-mobile.png)] xl:bg-[url(/images/accounts/classic-banner.png)] bg-center bg-cover py-8 lg:py-16 xl:py-24 h-108 lg:h-[632px]"}>
             <Container>
@@ -38,7 +39,11 @@ const Banner =  () => {
                     {t("desc")}
                 </Typography>
                 <div className={"mt-32 lg:mt-16 flex"}>
-                    <RegisterBtn className={"bg-white text-black hover:bg-white"} />
+                    <GeneralLinkBtn
+                        text={CommonT("register")}
+                        theme={"light-solid"}
+                        isLink
+                    />
                     <GeneralLinkBtn
                         text={t("support")}
                         path={"/corporation/contact"}

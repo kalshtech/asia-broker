@@ -2,7 +2,6 @@
 import * as React from 'react'
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
 import TitleReveal from "@/components/TitleReveal";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
@@ -57,9 +56,11 @@ const Banner =  () => {
                 </div>
 
                 <div className={"mt-48 lg:mt-8 xl:mt-16"}>
-                    <Button className={"bg-white hover:!bg-white text-black"}>
-                        {t("register")}
-                    </Button>
+                    <GeneralLinkBtn
+                        text={t("register")}
+                        theme={"light-solid"}
+                        isLink
+                    />
                     <GeneralLinkBtn
                         text={t("support")}
                         path={"/corporation/contact"}

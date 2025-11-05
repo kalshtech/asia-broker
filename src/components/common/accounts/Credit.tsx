@@ -6,6 +6,7 @@ import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import classnames from "classnames";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -96,9 +97,12 @@ const Credit = ({ typeText, className, number }: Props) => {
                     <Button>
                         {t("immediately")}
                     </Button>
-                    <Button className={"ml-4 bg-transparent border border-black text-black hover:bg-transparent"}>
-                        {t("understand")}
-                    </Button>
+                    <GeneralLinkBtn
+                        text={t("understand")}
+                        theme={"dark-hollow"}
+                        className={"ml-4"}
+                        path={"/accounts/profit"}
+                    />
                 </div>
             </Container>
         </section>

@@ -11,7 +11,6 @@ import Explore from "./Explore";
 
 export default async function Page() {
     const t = await getTranslations("Pages.accounts.classic");
-
     const liAry = [
         { label: t("standard.row.left.ul.li1") },
         { label: t("standard.row.left.ul.li2") },

@@ -11,10 +11,8 @@ import MetaCommission from "@/components/common/products/MetaCommission";
 import { Typography } from "@/components/ui/typography";
 import { ExternalLink } from "lucide-react";
 
-
 export default async function Page() {
     const t = await getTranslations("Pages.products.forex");
-
     const mainList = [
         { symbol: "EURUSD", ticker: "EUR/USD", name: "Euro - U.S. Dollar" },
         { symbol: "USDJPY", ticker: "USD/JPY", name: "U.S. Dollar - Japanese Yen" },
