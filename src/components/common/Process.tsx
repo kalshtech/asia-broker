@@ -19,7 +19,7 @@ interface AryItemProps {
     title: string;
     desc: string;
     bottom?: string;
-    url: string;
+    url?: string;
 }
 
 type Props = {

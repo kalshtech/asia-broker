@@ -20,9 +20,9 @@ export default async function Page() {
     ];
 
     const processAry = [
-      { title: t("process.row.col1.title"), desc: t("process.row.col1.desc"), bottom: t("process.row.col1.bottom") },
-      { title: t("process.row.col2.title"), desc: t("process.row.col2.desc"), bottom: t("process.row.col2.bottom") },
-      { title: t("process.row.col3.title"), desc: t("process.row.col3.desc"), bottom: t("process.row.col3.bottom") },
+      { title: t("process.row.col1.title"), desc: t("process.row.col1.desc"), bottom: t("process.row.col1.bottom"), url: "https://portal.asiafuturetrading.com/register/trader" },
+      { title: t("process.row.col2.title"), desc: t("process.row.col2.desc"), bottom: t("process.row.col2.bottom"), url: "https://portal.asiafuturetrading.com/login" },
+      { title: t("process.row.col3.title"), desc: t("process.row.col3.desc"), bottom: t("process.row.col3.bottom"), url: "https://portal.asiafuturetrading.com/login" },
     ];
 
     const QA_DATA = [

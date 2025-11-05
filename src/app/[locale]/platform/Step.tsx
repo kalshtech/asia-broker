@@ -112,6 +112,7 @@ const Step = () => {
                             text={t("join")}
                             theme={"light-hollow"}
                             className={"ml-8"}
+                            path={"https://portal.asiafuturetrading.com/login"}
                             isLink
                         />
                     </div>

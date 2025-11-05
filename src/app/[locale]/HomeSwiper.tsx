@@ -75,6 +75,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                                 <GeneralLinkBtn
                                                     text={t("startTrade")}
                                                     theme={"active-solid"}
+                                                    path={"https://portal.asiafuturetrading.com/login"}
                                                     isLink
                                                 />
                                                 <GeneralLinkBtn

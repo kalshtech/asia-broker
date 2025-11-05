@@ -29,10 +29,10 @@ export default async function Page() {
     ];
 
     const processAry =   [
-        { title: t("process.step.1.title"), desc: t("process.step.1.desc"), bottom: t("process.step.1.bottom") },
-        { title: t("process.step.2.title"), desc: t("process.step.2.desc"), bottom: t("process.step.2.bottom") },
-        { title: t("process.step.3.title"), desc: t("process.step.3.desc"), bottom: t("process.step.3.bottom") },
-        { title: t("process.step.4.title"), desc: t("process.step.4.desc"), bottom: t("process.step.4.bottom") },
+        { title: t("process.step.1.title"), desc: t("process.step.1.desc"), bottom: t("process.step.1.bottom"), url: "https://portal.asiafuturetrading.com/register" },
+        { title: t("process.step.2.title"), desc: t("process.step.2.desc"), bottom: t("process.step.2.bottom"), url: "/platform" },
+        { title: t("process.step.3.title"), desc: t("process.step.3.desc"), bottom: t("process.step.3.bottom"), url: "https://portal.asiafuturetrading.com/login" },
+        { title: t("process.step.4.title"), desc: t("process.step.4.desc"), bottom: t("process.step.4.bottom"), url: "https://portal.asiafuturetrading.com/login" },
     ];
 
     const QA_DATA = [
