@@ -502,19 +502,19 @@
         "rows": {
           "1": {
             "title": "Classic Cent",
-            "join": "Visit"
+            "join": "Start Trading"
           },
           "2": {
             "title": "Classic",
-            "join": "Visit"
+            "join": "Start Trading"
           },
           "3": {
             "title": "Platinum",
-            "join": "Visit"
+            "join": "Start Trading"
           },
           "4": {
             "title": "VIC",
-            "join": "Visit"
+            "join": "Start Trading"
           }
         },
         "week": "Weekly",

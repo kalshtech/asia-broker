@@ -6,7 +6,6 @@ import { Typography } from "@/components/ui/typography";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CircleCheck } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 gsap.registerPlugin(ScrollTrigger);

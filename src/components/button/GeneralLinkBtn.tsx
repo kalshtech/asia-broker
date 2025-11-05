@@ -38,23 +38,44 @@ const GeneralLinkBtn = (props: Props) => {
         }
     }
 
-    return (
-        <Button className={classnames([renderCls(), className])}>
-            <Link
+    if(isLink) {
+        return (
+            <a
                 href={path}
                 target={isLink ? "_blank" : "_self"}
-                className={classnames(["flex justify-center items-center", {
+                className={classnames(["flex items-center", {
                     "flex-col": children
                 }])}
                 title={text}
             >
-                { text }
-                { children }
-                { theme === "share" && (
+                <Button className={classnames([renderCls(), className])}>
+                    {text}
+                </Button>
+                {children}
+                {theme === "share" && (
                     <ExternalLink className={"ml-1"}/>
-                ) }
-            </Link>
-        </Button>
+                )}
+            </a>
+        )
+    }
+
+    return (
+        <Link
+            href={path}
+            target={isLink ? "_blank" : "_self"}
+            className={classnames(["flex  items-center", {
+                "flex-col": children
+            }])}
+            title={text}
+        >
+            <Button className={classnames([renderCls(), className])}>
+                {text}
+            </Button>
+            {children}
+            {theme === "share" && (
+                <ExternalLink className={"ml-1"}/>
+            )}
+        </Link>
     )
 }
 

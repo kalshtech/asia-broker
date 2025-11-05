@@ -73,9 +73,15 @@ export default function Banner({ title, description, midst, imageUrl, transfer =
                     }
                     {
                         transfer && (
-                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                {t("transfer")}
-                            </Button>
+                            <div>
+                                <GeneralLinkBtn
+                                    text={t("transfer")}
+                                    theme={"active-solid"}
+                                    path={"https://portal.asiafuturetrading.com/login"}
+                                    isLink
+                                />
+                            </div>
+
                         )
                     }
                 </div>

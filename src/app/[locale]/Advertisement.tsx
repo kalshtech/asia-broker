@@ -32,26 +32,10 @@ const SwiperSlideItem = (props: ItemProps) => {
     const CommonT = useTranslations("Common");
     return (
         <div className={`${props.url} bg-center bg-cover w-auto h-100 rounded-lg`} >
-            <div className={"flex flex-col h-full cursor-pointer group relative p-4 xl:px-6 xl:py-8"}>
-                <div className={"mt-auto group-hover:hidden"}>
-                    <Typography variant={"h6"} className={"font-medium !text-white transition"}>
-                        {props.title}
-                    </Typography>
-                </div>
-                <div className={"mt-4 group-hover:hidden"}>
-                    <Typography
-                        variant={"muted"}
-                        className={"!text-white"}
-                    >
-                        {props.description}
-                    </Typography>
-                </div>
-                <div className={"opacity-0 bg-[rgba(0,0,0,0.42)] justify-center rounded-lg flex flex-col w-full h-full top-0 left-0 transition absolute px-6 py-16 group-hover:opacity-100"}>
-                    <div>
-                        <Typography
-                            variant={"h6"}
-                            className={"font-medium !text-white"}
-                        >
+            <div className={"flex flex-col h-full cursor-pointer justify-end relative p-4 xl:px-6 xl:py-8"}>
+                <Link href={props.path} target={"_blank"}>
+                    <div className={""}>
+                        <Typography variant={"h6"} className={"font-medium !text-white transition"}>
                             {props.title}
                         </Typography>
                     </div>
@@ -63,14 +47,7 @@ const SwiperSlideItem = (props: ItemProps) => {
                             {props.description}
                         </Typography>
                     </div>
-                    <div className={"mt-4"}>
-                        <Button className={"bg-theme-active hover:bg-theme-active-hover cursor-pointer"}>
-                            <Link href={props.path} target={"_blank"}>
-                                { CommonT("view") }
-                            </Link>
-                        </Button>
-                    </div>
-                </div>
+                </Link>
             </div>
         </div>
     )

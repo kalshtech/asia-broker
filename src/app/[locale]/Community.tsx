@@ -76,12 +76,15 @@ const Community = () => {
                                                 className={"!text-white text-center max-w-3xl mt-4"}>
                                         {t("row.2.description1")}
                                     </Typography>
-                                    <Typography variant={"muted"}
-                                                className={"!text-white text-center max-w-3xl mt-6"}>
+                                    <Typography 
+                                        variant={"muted"}
+                                        className={"!text-white text-center max-w-3xl mt-6"}
+                                    >
                                         {t("row.2.description2")}
                                     </Typography>
                                     <div className={"mt-8"}>
                                         <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
+                                            <img src="/images/home/discord-logo.webp" className={"w-6 h-6 object-cover"} alt=""/>
                                             {t("row.2.btnText")}
                                         </Button>
                                     </div>

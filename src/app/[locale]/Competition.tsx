@@ -118,8 +118,8 @@ export default function Competition() {
                                                             <div className="mt-8 flex justify-center">
                                                                 <GeneralLinkBtn
                                                                     text={it.cta ?? "visit"}
-                                                                    path={"/mutual/trading-competition"}
                                                                     theme={"dark-solid"}
+                                                                    isLink
                                                                 />
                                                             </div>
                                                         </div>

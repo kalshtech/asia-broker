@@ -28,6 +28,7 @@ const fadeInUp: Variants = {
 
 const Assets = () => {
     const t = useTranslations("Pages.home.assets");
+    const CommonT = useTranslations("Common");
     const [tabActive, setTabActive] = useState("card");
 
     const BtnAry = [
@@ -134,10 +135,10 @@ const Assets = () => {
 
                 <div className={theme === "dark" ? "mt-10" : "mt-10 flex justify-center"}>
                     <GeneralLinkBtn
-                        text={t("text.card.more")}
-                        path={"/"}
+                        text={CommonT("register")}
                         theme={theme === "dark" ? "light-solid" : "active-solid"}
                         className={"ml-4 lg:ml-0 lg:mt-4"}
+                        isLink
                     />
                 </div>
             </div>
