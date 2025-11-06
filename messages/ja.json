@@ -577,15 +577,22 @@
         "row": {
           "col1": {
             "title": "开立交易账户",
-            "desc": "注册 Classic、Platinum 或 VIC 账户，体验不同级别的专业交易服务。"
+            "desc": "注册 Classic、Platinum 或 VIC 账户，体验不同级别的专业交易服务。",
+            "btn1": "开户指南",
+            "btn2": "账户类型介绍",
+            "btn3": "常见问题页面"
           },
           "col2": {
             "title": "下载并安装 MT5",
-            "desc": "选择适合您的设备（Windows / macOS / iOS / Android / Web），完成安装与配置。"
+            "desc": "选择适合您的设备（Windows / macOS / iOS / Android / Web），完成安装与配置。",
+            "btn1": "立即下载",
+            "btn2": "安装教学"
           },
           "col3": {
             "title": "入金并开始交易",
-            "desc": "完成充值后，即可即时访问全球市场：外汇、贵金属、指数与加密货币差价合约。"
+            "desc": "完成充值后，即可即时访问全球市场：外汇、贵金属、指数与加密货币差价合约。",
+            "btn1": "入金方式",
+            "btn2": "支付渠道"
           }
         }
       },

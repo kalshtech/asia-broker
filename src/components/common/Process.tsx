@@ -80,7 +80,7 @@ const Process = (props: Props) => {
                                                 {index + 1}
                                             </div>
                                         </header>
-                                        <div className={"h-[calc(100%-136px)] lg:h-[calc(100%-148px)]"}>
+                                        <div>
                                             <Typography
                                                 variant={"h5"}
                                                 className={classnames(["my-6", {
@@ -98,6 +98,7 @@ const Process = (props: Props) => {
                                                 {item.desc}
                                             </Typography>
                                         </div>
+                                        { item.children && item.children }
                                         {
                                             item.bottom && (
                                                 <div className={"mt-16 cursor-pointer"}>
@@ -112,9 +113,6 @@ const Process = (props: Props) => {
                                                     </a>
                                                 </div>
                                             )
-                                        }
-                                        {
-                                            item.children && item.children
                                         }
                                     </div>
                                 </div>

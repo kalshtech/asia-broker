@@ -15,9 +15,51 @@ export default function Home() {
     const t = useTranslations("Pages.jpHome");
 
     const processAry =   [
-        { title: t("process.row.col1.title"), desc: t("process.row.col1.desc") },
-        { title: t("process.row.col2.title"), desc: t("process.row.col2.desc")  },
-        { title: t("process.row.col3.title"), desc: t("process.row.col3.desc")  }
+        {
+            title: t("process.row.col1.title"),
+            desc: t("process.row.col1.desc"),
+            children: (
+                <div className={"mt-16"}>
+                    <a href="https://support.afttmarkets.com/hc/ja-jp/articles/14225971110799" target={"_blank"} className={"underline"}>
+                        {t("process.row.col1.btn1")}
+                    </a>
+                    <a href="/accounts/classic" target={"_blank"} className={"underline ml-4"}>
+                        {t("process.row.col1.btn2")}
+                    </a>
+                    <a href="https://support.afttmarkets.com/hc/ja-jp/articles/14226850458127" target={"_blank"} className={"underline ml-4"}>
+                        {t("process.row.col1.btn3")}
+                    </a>
+                </div>
+            )
+        },
+        {
+            title: t("process.row.col2.title"),
+            desc: t("process.row.col2.desc"),
+            children: (
+                <div className={"mt-16"}>
+                    <a href="/platform" target={"_blank"} className={"underline"}>
+                        {t("process.row.col2.btn1")}
+                    </a>
+                    <a href="" className={"underline ml-4"}>
+                        {t("process.row.col2.btn2")}
+                    </a>
+                </div>
+            )
+        },
+        {
+            title: t("process.row.col3.title"),
+            desc: t("process.row.col3.desc"),
+            children: (
+                <div className={"mt-16"}>
+                    <a href="" className={"underline"}>
+                        {t("process.row.col3.btn1")}
+                    </a>
+                    <a href="" className={"underline ml-4"}>
+                        {t("process.row.col3.btn2")}
+                    </a>
+                </div>
+            )
+        }
     ];
 
     const GuideAry =  [
