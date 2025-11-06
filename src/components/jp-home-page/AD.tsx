@@ -68,6 +68,11 @@ export default function () {
                         prevEl: ".advertisement-custom-prev",
                         nextEl: ".advertisement-custom-next",
                     }}
+                    breakpoints={{
+                        320: {slidesPerView: 2.5, spaceBetween: 16,},
+                        600: {slidesPerView: 2.5, spaceBetween: 24,},
+                        980: {slidesPerView: 3.5, spaceBetween: 36,},
+                    }}
                     modules={[Autoplay, Navigation]}
                     className={"w-full"}
                 >

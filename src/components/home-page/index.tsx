@@ -3,7 +3,7 @@ import Advertisement from "@/components/home-page/Advertisement";
 import Pricing from "@/components/home-page/Pricing";
 import Markets from "@/components/home-page/Markets";
 import Speed from "@/components/home-page/Speed";
-import DownloadAndRegister from "@/components/home-page/DownloadAndRegister";
+import DownloadAndRegister from "@/components/home/DownloadAndRegister";
 import Community from "@/components/home-page/Community";
 import Assets from "@/components/home-page/Assets";
 import Properly from "@/components/home-page/Properly";

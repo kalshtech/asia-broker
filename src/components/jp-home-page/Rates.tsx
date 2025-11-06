@@ -16,10 +16,10 @@ export default function () {
         <div className={"py-16 bg-theme-light-bg"}>
             <Container>
                 <div className={"grid grid-cols-12 gap-8"}>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 xl:col-span-6"}>
                         <img src="/images/jp/home-rates.webp" className={"max-h-130 object-cover"} alt=""/>
                     </div>
-                    <div className={"col-span-6"}>
+                    <div className={"col-span-12 xl:col-span-6"}>
                         <div>
                             <Typography
                                 variant={"h3"}

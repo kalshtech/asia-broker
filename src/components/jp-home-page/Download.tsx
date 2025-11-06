@@ -80,7 +80,7 @@ export default function () {
                     <div className={"grid grid-cols-12 gap-8"}>
                         {
                             ary.map((d, i) => (
-                                <div className={"col-span-4 h-full"} key={i}>
+                                <div className={"col-span-12 xl:col-span-4 h-full"} key={i}>
                                     <div className={"h-full bg-[linear-gradient(180deg,#F9F9F9_0%,#D3D3D3_100%)] rounded-[16px] border border-[#D9D9D9] py-10 px-6"}>
                                         <div className={"text-center"}>
                                             <Typography

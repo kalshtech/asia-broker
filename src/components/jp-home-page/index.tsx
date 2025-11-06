@@ -9,6 +9,7 @@ import Guide from "@/components/common/Guide";
 import BulletinCenter from "./BulletinCenter"
 import Process from "@/components/common/Process";
 import Download from "./Download";
+import DownloadAndRegister from "@/components/home/DownloadAndRegister";
 
 export default function Home() {
     const forexT = useTranslations("Pages.products.forex");
@@ -88,6 +89,7 @@ export default function Home() {
             <Banner/>
             <AD/>
             <Rates/>
+            <DownloadAndRegister/>
             <Download/>
             <Process
                 title={t("process.title")}

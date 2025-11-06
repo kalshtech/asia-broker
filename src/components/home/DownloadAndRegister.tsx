@@ -5,7 +5,11 @@ import { useTranslations } from "next-intl";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
-const DownloadAndRegister = () => {
+type Props = {
+
+}
+
+const DownloadAndRegister = (props: Props) => {
     const t = useTranslations("Pages.home.downloadAndRegister");
     const downloadAry = [
         { image: "/images/home/download-ios.png" },

@@ -33,7 +33,7 @@ export default function () {
             <div className={"bg-[url(/images/jp/home-banner.webp)] bg-cover bg-center py-24"}>
                 <Container>
                     <div className={"grid grid-cols-12 gap-8"}>
-                        <div className={"col-span-6"}>
+                        <div className={"col-span-12 xl:col-span-6"}>
                             <Typography
                                 variant={"h1"}
                                 className={"!text-white"}
@@ -69,8 +69,8 @@ export default function () {
                                 { t("prompt") }
                             </Typography>
                         </div>
-                        <div className={"col-span-6 relative"}>
-                            <img src="/images/jp/home-banner-mobile-phone.webp" className={"absolute max-h-160"} alt="mobile-phone"/>
+                        <div className={"col-span-12 xl:col-span-6 relative"}>
+                            <img src="/images/jp/home-banner-mobile-phone.webp" className={"relative xl:absolute max-h-160"} alt="mobile-phone"/>
                         </div>
                     </div>
                 </Container>
