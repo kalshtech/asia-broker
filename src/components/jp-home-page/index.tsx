@@ -89,7 +89,15 @@ export default function Home() {
             <Banner/>
             <AD/>
             <Rates/>
-            <DownloadAndRegister/>
+            <DownloadAndRegister
+                languagePath={"Pages.jpHome.downloadAndRegister"}
+                col1Bg={"bg-[url(/images/jp/downloadAndRegisterBg1.webp)]"}
+                col1BgIsCover={true}
+                isShowMoreBtn={false}
+                col2Bg={"bg-[url(/images/jp/downloadAndRegisterBg2.webp)]"}
+                col3Bg={"bg-[url(/images/jp/downloadAndRegisterBg3.webp)]"}
+                col4Bg={"bg-[url(/images/jp/downloadAndRegisterBg4.webp)]"}
+            />
             <Download/>
             <Process
                 title={t("process.title")}

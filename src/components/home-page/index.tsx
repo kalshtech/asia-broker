@@ -20,7 +20,14 @@ export default function Home() {
             <Pricing/>
             <Markets/>
             <Speed/>
-            <DownloadAndRegister/>
+            <DownloadAndRegister
+                languagePath={"Pages.home.downloadAndRegister"}
+                col1Bg={"bg-[url(/images/mobile/example-kline-desk.png)]  xl:bg-[url(/images/home/example-kline-desk.png)]"}
+                col1BgIsCover={false}
+                col2Bg={"bg-[url(/images/mobile/example-kline.png)] xl:bg-[url(/images/home/example-kline.png)]"}
+                col3Bg={"bg-[url(/images/mobile/auto-MQL5.png)] xl:bg-[url(/images/home/auto-MQL5.png)]"}
+                col4Bg={"bg-[url(/images/mobile/auto-EA.png)] xl:bg-[url(/images/home/auto-EA.png)]"}
+            />
             <Community/>
             <Assets/>
             <Properly/>
