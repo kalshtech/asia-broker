@@ -8,6 +8,7 @@ import { motion, Variants } from "framer-motion";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 import { Navigation } from "swiper/modules";
 
+
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -18,15 +19,13 @@ const fadeInUp: Variants = {
 }
 
 
-const Permission = () => {
-    const t = useTranslations("Pages.accounts.vic.permission");
+export default function() {
     const ary = [
-        { title: t("swiper.span1.title"), description: t("swiper.span1.desc"), url: "bg-[url('/images/accounts/permission-swiper1.png')]" },
-        { title: t("swiper.span2.title"), description: t("swiper.span2.desc"), url: "bg-[url('/images/accounts/permission-swiper2.png')]" },
-        { title: t("swiper.span3.title"), description: t("swiper.span3.desc"), url: "bg-[url('/images/accounts/permission-swiper3.png')]" },
-        { title: t("swiper.span4.title"), description: t("swiper.span4.desc"), url: "bg-[url('/images/accounts/permission-swiper4.png')]" },
-        { title: t("swiper.span5.title"), description: t("swiper.span5.desc"), url: "bg-[url('/images/accounts/permission-swiper5.png')]" },
-        { title: t("swiper.span6.title"), description: t("swiper.span6.desc"), url: "bg-[url('/images/accounts/permission-swiper6.png')]" },
+        { title: "【公告】新增美股與ETF CFD交易品種", url: "/images/jp/home-bulletin1.webp" },
+        { title: "【升級】MT5伺服器維護通知（LD4 / TY3節點）", url: "/images/jp/home-bulletin2.webp" },
+        { title: "【更新】新增加密貨幣差價合約交易時間段", url: "/images/jp/home-bulletin3.webp" },
+        { title: "【比賽】AFT 全球交易大賽正式開幕", url: "/images/jp/home-bulletin4.webp" },
+        { title: "【獎勵】入金滿額贈 Apple 裝置活動", url: "/images/jp/home-bulletin5.webp" }
     ];
     return (
         <section className={"py-16 xl:py-30"}>
@@ -41,14 +40,14 @@ const Permission = () => {
                         variant={"h3"}
                         className={"text-center"}
                     >
-                        {t("title")}
+                        Asia Future Trading 公告中心
                     </Typography>
 
                     <Typography
                         variant={"muted"}
                         className={"text-center max-w-3xl mx-auto mt-4"}
                     >
-                        {t("desc")}
+                        追蹤我們的最新市場公告、產品升級與重要通知。
                     </Typography>
                 </motion.div>
                 <div className={"mt-16"}>
@@ -75,23 +74,15 @@ const Permission = () => {
                         {
                             ary.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className={`${item.url} bg-center bg-cover w-auto h-100 rounded-lg`}>
-                                        <div
-                                            className={"flex flex-col h-full cursor-pointer group relative px-6"}>
-                                            <div className={"mt-10"}>
-                                                <Typography
-                                                    variant={"h6"}
-                                                    className={"!text-white transition"}
-                                                >
-                                                    {item.title}
-                                                </Typography>
-                                            </div>
+                                    <div className={``}>
+                                        <img src={item.url} alt=""/>
+                                        <div className={"flex flex-col h-full cursor-pointer group relative"}>
                                             <div className={"mt-4"}>
                                                 <Typography
-                                                    variant={"muted"}
-                                                    className={"!text-white"}
+                                                    variant={"p"}
+                                                    className={"transition"}
                                                 >
-                                                    {item.description}
+                                                    {item.title}
                                                 </Typography>
                                             </div>
                                         </div>
@@ -107,17 +98,7 @@ const Permission = () => {
                         <CircleChevronRight className={"permission-custom-next ml-2 cursor-pointer"}/>
                     </div>
                 </div>
-                <div className={"mt-8 lg:mt-16"}>
-                    <Typography variant={"muted"} className={"text-center max-w-3xl mx-auto"}>
-                        {t("prompt1")}
-                    </Typography>
-                    <Typography variant={"muted"} className={"text-center mt-2 max-w-3xl mx-auto"}>
-                        {t("prompt2")}
-                    </Typography>
-                </div>
             </Container>
         </section>
     )
 }
-
-export default Permission;

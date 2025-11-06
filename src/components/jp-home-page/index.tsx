@@ -6,6 +6,7 @@ import FAQSection from "@/components/common/QuestionAnswer";
 import { useTranslations } from "next-intl";
 import Reward from "@/components/home/Reward";
 import Guide from "@/components/common/Guide";
+import BulletinCenter from "./BulletinCenter"
 
 export default function Home() {
     const forexT = useTranslations("Pages.products.forex");
@@ -35,6 +36,7 @@ export default function Home() {
             <Banner/>
             <AD/>
             <Rates/>
+            <BulletinCenter/>
             <Guide
                 title={forexT("guide.title")}
                 left={{ title: forexT("guide.row.col1.title"), desc: forexT("guide.row.col1.desc"), more: forexT("guide.row.col1.more") }}
