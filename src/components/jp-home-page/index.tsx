@@ -8,14 +8,16 @@ import Reward from "@/components/home/Reward";
 import Guide from "@/components/common/Guide";
 import BulletinCenter from "./BulletinCenter"
 import Process from "@/components/common/Process";
+import Download from "./Download";
 
 export default function Home() {
     const forexT = useTranslations("Pages.products.forex");
+    const t = useTranslations("Pages.jpHome");
 
     const processAry =   [
-        { title: "开立交易账户", desc: "注册 Classic、Platinum 或 VIC 账户，体验不同级别的专业交易服务。", },
-        { title: "下载并安装 MT5", desc: "选择适合您的设备（Windows / macOS / iOS / Android / Web），完成安装与配置。", },
-        { title: "入金并开始交易", desc: "完成充值后，即可即时访问全球市场：外汇、贵金属、指数与加密货币差价合约。", }
+        { title: t("process.row.col1.title"), desc: t("process.row.col1.desc") },
+        { title: t("process.row.col2.title"), desc: t("process.row.col2.desc")  },
+        { title: t("process.row.col3.title"), desc: t("process.row.col3.desc")  }
     ];
 
     const GuideAry =  [
@@ -26,16 +28,16 @@ export default function Home() {
 
     const QA_DATA = [
         {
-            question: "在美股投資方面，Asia Future Trading 與其他券商相比有什麼優勢？",
-            answer: "我們提供業界極具競爭力的點差與低交易成本，並支援 24 小時交易服務。即使在美國市場開盤的深夜時段，您也可隨時透過 MT5 平台實現交易策略，並享受 7×24 小時的專業客服支援。"
+            question: t("qa.ul.li1.title"),
+            answer: t("qa.ul.li1.desc"),
         },
         {
-            question: "Asia Future Trading 提供哪些投資產品？",
-            answer: "我們的平台涵蓋外匯、貴金屬、能源、指數、美股、ETF 與加密貨幣差價合約（CFD）。一個帳戶即可輕鬆進入全球市場。"
+            question: t("qa.ul.li2.title"),
+            answer: t("qa.ul.li2.desc"),
         },
         {
-            question: "什麼是「受監管的合規平台」？",
-            answer: "Asia Future Trading 持有澳大利亞 ASIC 授權代表牌照（AR No. 001313916），嚴格遵循監管標準，確保交易透明、安全與資金合規。",
+            question: t("qa.ul.li3.title"),
+            answer: t("qa.ul.li3.desc"),
         }
     ]
 
@@ -44,11 +46,12 @@ export default function Home() {
             <Banner/>
             <AD/>
             <Rates/>
-            {/*<Process*/}
-            {/*    title={"为第一次来的用户，三步即可开启您的 AFT 交易旅程"}*/}
-            {/*    desc={"最快 1 小时开始交易"}*/}
-            {/*    ary={processAry}*/}
-            {/*/>*/}
+            <Download/>
+            <Process
+                title={t("process.title")}
+                desc={t("process.desc")}
+                ary={processAry}
+            />
             <BulletinCenter/>
             <Guide
                 title={forexT("guide.title")}

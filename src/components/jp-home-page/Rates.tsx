@@ -2,12 +2,16 @@
 import React from "react";
 import Container from "@/components/Container";
 import { Typography } from "@/components/ui/typography";
+import {useTranslations} from "next-intl";
 export default function () {
+    const t = useTranslations("Pages.jpHome.rates");
+
     const ary = [
-        { title: "0 交易手续费", desc: "涵盖外汇、商品、指数、股票与ETF等全品类CFD产品，无隐藏费用，真实报价透明执行。" },
-        { title: "0 入金与出金费用", desc: "支持多币种入金渠道与区域支付方式，平台不收取任何手续费。" },
-        { title: "0 隔夜利息¹", desc: "部分账户类型及市场条件下可享受隔夜利息减免，助您灵活持仓更具优势。" },
+        { title: t("row.col1.title"), desc: t("row.col1.desc") },
+        { title: t("row.col2.title"), desc: t("row.col2.desc") },
+        { title: t("row.col3.title"), desc: t("row.col3.desc") },
     ];
+
     return (
         <div className={"py-16 bg-theme-light-bg"}>
             <Container>
@@ -20,7 +24,7 @@ export default function () {
                             <Typography
                                 variant={"h3"}
                             >
-                                业界超低成本 · 轻松开启全球交易
+                                { t("title") }
                             </Typography>
                         </div>
                         <div className={"mt-12"}>
@@ -53,7 +57,7 @@ export default function () {
                                 variant={"muted"}
                                 className={"!text-[#999999] text-xs"}
                             >
-                                ¹ 隔夜利息减免的适用范围可能因市场波动及账户类型而异，请参考各产品详细说明
+                                { t("desc") }
                             </Typography>
                         </div>
                     </div>

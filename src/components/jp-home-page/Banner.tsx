@@ -1,17 +1,20 @@
 "use client";
 import * as React from 'react';
+import { useTranslations } from "next-intl";
 import Container from "@/components/Container"
 import { Typography } from "@/components/ui/typography";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn"
 
 export default function () {
+    const t = useTranslations("Pages.jpHome.banner");
+
     const btnAry = [
-        { label: "美国股票", value: "us-stock" },
-        { label: "外汇", value: "forex" },
-        { label: "商品OTC", value: "otc" },
-        { label: "日本股票OTC", value: "jp-otc" },
-        { label: "美国期货OTC", value: "us-future-otc" },
-        { label: "ETF&基金", value: "etf & fund" },
+        { label: t("btns.1"), value: "us-stock" },
+        { label: t("btns.2"), value: "forex" },
+        { label: t("btns.3"), value: "otc" },
+        { label: t("btns.4"), value: "jp-otc" },
+        { label: t("btns.5"), value: "us-future-otc" },
+        { label: t("btns.6"), value: "etf & fund" },
     ]
     return (
         <div>
@@ -35,13 +38,13 @@ export default function () {
                                 variant={"h1"}
                                 className={"!text-white"}
                             >
-                                投資家が創る，投資家のためのプラットフォーム
+                                { t("title") }
                             </Typography>
                             <Typography
                                 variant={"h4"}
                                 className={"!text-white mt-6"}
                             >
-                                世界の投資家をつなぐ、新しいプラットフォーム。
+                                { t("midst") }
                             </Typography>
 
                             <div className={"mt-16"}>
@@ -49,10 +52,10 @@ export default function () {
                                     variant={"muted"}
                                     className={"!text-white"}
                                 >
-                                    最短1時間で取引を開始できます
+                                    { t("desc") }
                                 </Typography>
                                 <GeneralLinkBtn
-                                    text={"無料口座開設はこちら"}
+                                    text={t("btnText")}
                                     theme={"active-solid"}
                                     isLink
                                     className={"mt-4"}
@@ -63,9 +66,7 @@ export default function () {
                                 variant={"muted"}
                                 className={"mt-10 !text-white"}
                             >
-                                ※1 本比較結果は、主要なFX取引ブローカー（TitanFX、XM、Exness、IG、Plus500、SBI証券、松井証券、楽天証券）が公開している実行データおよび実際の取引テスト結果に基づいています。
-                                注文執行速度・約定効率・スリッページの総合比較において、当社は平均執行時間および低スリッページ管理の面で優れた水準を示しています。
-                                （集計期間：2025年9月～2025年10月／データ出典：実際の口座における取引執行ログの分析結果に基づいています）
+                                { t("prompt") }
                             </Typography>
                         </div>
                         <div className={"col-span-6 relative"}>

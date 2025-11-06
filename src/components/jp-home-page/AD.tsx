@@ -21,7 +21,7 @@ export default function () {
     ]
 
     const data = logoAry;
-    const loopData = [...data, ...data, ...data]; // 多复制几遍，避免首尾出现空段
+    const loopData = [...data, ...data, ...data];
     return (
         <div className={"my-24"}>
             <Container className={"w-full"}>
@@ -29,14 +29,14 @@ export default function () {
                     <Swiper
                         modules={[Autoplay, FreeMode]}
                         className="logo-marquee w-full"
-                        slidesPerView="auto"              // 关键：auto
+                        slidesPerView="auto"
                         spaceBetween={36}
                         loop
                         loopAdditionalSlides={data.length}
                         freeMode
                         allowTouchMove={false}
-                        centeredSlides={false}            // 不要居中
-                        speed={12000}                     // 越大越慢
+                        centeredSlides={false}
+                        speed={12000}
                         autoplay={{delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true}}
                     >
                         {loopData.map((item, i) => (

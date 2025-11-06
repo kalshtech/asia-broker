@@ -8,7 +8,6 @@ import { motion, Variants } from "framer-motion";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 import { Navigation } from "swiper/modules";
 
-
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -17,7 +16,6 @@ const fadeInUp: Variants = {
         transition: { duration: 0.8, ease: 'easeOut' },
     },
 }
-
 
 export default function() {
     const ary = [
