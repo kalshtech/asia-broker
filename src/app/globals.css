@@ -205,3 +205,12 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 16px 16px 16px 16px;
   border: 1px solid #4F5670;
 }
+
+
+.logo-marquee .swiper-wrapper{
+  transition-timing-function: linear !important; /* 匀速 */
+}
+.logo-marquee .swiper-slide{
+  width: auto !important;            /* 让每个 slide 只占自己的内容宽 */
+  display: flex; align-items: center;
+}

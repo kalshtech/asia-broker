@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {useTranslations} from "next-intl";
+import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button"
 import { motion, Variants } from "framer-motion";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 import { Navigation } from "swiper/modules";
@@ -29,7 +28,6 @@ const fadeInUp: Variants = {
 }
 
 const SwiperSlideItem = (props: ItemProps) => {
-    const CommonT = useTranslations("Common");
     return (
         <div className={`${props.url} bg-center bg-cover w-auto h-100 rounded-lg`} >
             <div className={"flex flex-col h-full cursor-pointer justify-end relative p-4 xl:px-6 xl:py-8"}>
