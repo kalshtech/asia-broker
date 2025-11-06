@@ -593,6 +593,54 @@
           }
         }
       },
+      "global": {
+        "title": "一站式接入全球市场，享受机构级交易体验",
+        "desc": "Asia Future Trading 在 伦敦（LD4）、纽约（NY4）、东京（TY3） 和 新加坡（SG1） 部署 Equinix 数据中心，以确保 机构级执行速度 —— 极速、稳定且安全。",
+        "row": {
+          "col1": {
+            "array": {
+              "1": {
+                "title": "美国股票",
+                "desc": "交易Apple、Tesla、NVIDIA等热门美股"
+              },
+              "2": {
+                "title": "商品 OTC",
+                "desc": "黄金、原油、铜、白银等大宗商品"
+              },
+              "3": {
+                "title": "日本股票 OTC",
+                "desc": "领先日企与科技股CFD交易"
+              },
+              "4": {
+                "title": "ETF & 基金",
+                "desc": "全球主题ETF与被动基金指数产品"
+              },
+              "5": {
+                "title": "美国期货 OTC",
+                "desc": "标普500、纳指、道琼斯、原油等主流期货CFD"
+              },
+              "6": {
+                "title": "外汇 Forex",
+                "desc": "覆盖G10与新兴市场货币对"
+              }
+            }
+          },
+          "col2": {
+            "text1": "1ms Execution Latency",
+            "text2": "99.99% Uptime",
+            "text3": "Tier-1 Liquidity Access"
+          }
+        }
+      },
+      "bulletin": {
+        "ul": {
+          "li1": "【公告】新增美股與ETF CFD交易品種",
+          "li2": "【升級】MT5伺服器維護通知（LD4 / TY3節點）",
+          "li3": "【更新】新增加密貨幣差價合約交易時間段",
+          "li4": "【比賽】AFT 全球交易大賽正式開幕",
+          "li5": "【獎勵】入金滿額贈 Apple 裝置活動"
+        }
+      },
       "process": {
         "title": "为第一次来的用户，三步即可开启您的 AFT 交易旅程",
         "desc": "最快 1 小时开始交易",

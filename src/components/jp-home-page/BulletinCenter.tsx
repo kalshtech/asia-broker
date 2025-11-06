@@ -18,12 +18,13 @@ const fadeInUp: Variants = {
 }
 
 export default function() {
+    const t = useTranslations("Pages.jpHome.bulletin");
     const ary = [
-        { title: "【公告】新增美股與ETF CFD交易品種", url: "/images/jp/home-bulletin1.webp" },
-        { title: "【升級】MT5伺服器維護通知（LD4 / TY3節點）", url: "/images/jp/home-bulletin2.webp" },
-        { title: "【更新】新增加密貨幣差價合約交易時間段", url: "/images/jp/home-bulletin3.webp" },
-        { title: "【比賽】AFT 全球交易大賽正式開幕", url: "/images/jp/home-bulletin4.webp" },
-        { title: "【獎勵】入金滿額贈 Apple 裝置活動", url: "/images/jp/home-bulletin5.webp" }
+        { title: t("ul.li1"), url: "/images/jp/home-bulletin1.webp" },
+        { title: t("ul.li2"), url: "/images/jp/home-bulletin2.webp" },
+        { title: t("ul.li3"), url: "/images/jp/home-bulletin3.webp" },
+        { title: t("ul.li4"), url: "/images/jp/home-bulletin4.webp" },
+        { title: t("ul.li5"), url: "/images/jp/home-bulletin5.webp" }
     ];
     return (
         <section className={"py-16 xl:py-30"}>

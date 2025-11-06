@@ -9,6 +9,7 @@ import Guide from "@/components/common/Guide";
 import BulletinCenter from "./BulletinCenter"
 import Process from "@/components/common/Process";
 import Download from "./Download";
+import Global from "./Global";
 import DownloadAndRegister from "@/components/home/DownloadAndRegister";
 
 export default function Home() {
@@ -52,7 +53,7 @@ export default function Home() {
             desc: t("process.row.col3.desc"),
             children: (
                 <div className={"mt-16"}>
-                    <a href="" className={"underline"}>
+                    <a href="https://support.afttmarkets.com/hc/ja-jp/sections/11361628651535" target={"_blank"} className={"underline"}>
                         {t("process.row.col3.btn1")}
                     </a>
                     <a href="" className={"underline ml-4"}>
@@ -89,6 +90,7 @@ export default function Home() {
             <Banner/>
             <AD/>
             <Rates/>
+            <Global/>
             <DownloadAndRegister
                 languagePath={"Pages.jpHome.downloadAndRegister"}
                 col1Bg={"bg-[url(/images/jp/downloadAndRegisterBg1.webp)]"}
