@@ -536,7 +536,7 @@ const CalendarTable = (props: Props) => {
             {
                 isShowForm && (
                     <div className={"mx-auto max-w-7xl mt-8 lg:mt-16"}>
-                        <div className={"grid grid-cols-12 gap-8"}>
+                        <div className={"grid grid-cols-12 gap-2 lg:gap-4 xl:gap-8"}>
                             <div className={"col-span-12 lg:col-span-4"}>
                                 <Input placeholder={t("form.first-placeholder")}
                                        className={"text-white rounded-full h-12 border-0 bg-black placeholder:text-white"}/>
@@ -550,7 +550,7 @@ const CalendarTable = (props: Props) => {
                                        className={"text-white rounded-full h-12 border-0 bg-black placeholder:text-white"}/>
                             </div>
                         </div>
-                        <div className={"grid grid-cols-12 gap-8 mt-6"}>
+                        <div className={"grid grid-cols-12 gap-2 lg:gap-4 xl:gap-8 mt-2 lg:mt-6"}>
                             <div className={"col-span-12 lg:col-span-8"}>
                                 <Input placeholder={t("form.email-placeholder")}
                                        className={"text-white rounded-full h-12 border-0 bg-black placeholder:text-white"}/>

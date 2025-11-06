@@ -97,6 +97,7 @@ export default function Home() {
                 col2Bg={"bg-[url(/images/jp/downloadAndRegisterBg2.webp)]"}
                 col3Bg={"bg-[url(/images/jp/downloadAndRegisterBg3.webp)]"}
                 col4Bg={"bg-[url(/images/jp/downloadAndRegisterBg4.webp)]"}
+                theme={"light"}
             />
             <Download/>
             <Process

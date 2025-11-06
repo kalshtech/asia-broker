@@ -14,10 +14,12 @@ type Props = {
     col2Bg: string;
     col3Bg: string;
     col4Bg: string;
+    theme?: "dark" | "light";
 }
 
 const DownloadAndRegister = (props: Props) => {
-    const { languagePath, col1Bg, col1BgIsCover = true, isShowMoreBtn = true, col2Bg, col3Bg, col4Bg } = props;
+    const { languagePath, col1Bg, col1BgIsCover = true, isShowMoreBtn = true, col2Bg, col3Bg, col4Bg, theme = "dark" } = props;
+    const isDark = theme === "dark";
     const t = useTranslations(languagePath);
     const downloadAry = [
         { image: "/images/home/download-ios.png" },
@@ -90,13 +92,19 @@ const DownloadAndRegister = (props: Props) => {
                                     }])}>
                                     <Typography
                                         variant={"h4"}
-                                        className={"!text-white font-medium"}
+                                        className={classnames(["font-medium", {
+                                            "!text-white": isDark,
+                                            "!text-black": !isDark
+                                        }])}
                                     >
                                         {t("row.1.title")}
                                     </Typography>
                                     <Typography
                                         variant={"muted"}
-                                        className={"!text-white font-medium mt-4"}
+                                        className={classnames(["font-medium mt-4", {
+                                            "!text-white": isDark,
+                                            "!text-black": !isDark
+                                        }])}
                                     >
                                         {t("row.1.description")}
                                     </Typography>
@@ -110,13 +118,19 @@ const DownloadAndRegister = (props: Props) => {
                                 className={classnames(["flex flex-col flex-1 py-10 px-6 min-h-80 bg-center bg-cover", col2Bg])}>
                                 <Typography
                                     variant={"h4"}
-                                    className={"!text-white font-medium"}
+                                    className={classnames(["font-medium", {
+                                        "!text-white": isDark,
+                                        "!text-black": !isDark
+                                    }])}
                                 >
                                     {t("row.2.title")}
                                 </Typography>
                                 <Typography
                                     variant={"muted"}
-                                    className={"!text-white font-medium mt-4"}
+                                    className={classnames(["font-medium mt-4", {
+                                        "!text-white": isDark,
+                                        "!text-black": !isDark
+                                    }])}
                                 >
                                     {t("row.2.description")}
                                 </Typography>
@@ -130,13 +144,19 @@ const DownloadAndRegister = (props: Props) => {
                                     <div className={"flex flex-col z-10 h-full"}>
                                         <Typography
                                             variant={"h4"}
-                                            className={"!text-white font-medium"}
+                                            className={classnames(["font-medium", {
+                                                "!text-white": isDark,
+                                                "!text-black": !isDark
+                                            }])}
                                         >
                                             {t("row.3.title1")}
                                         </Typography>
                                         <Typography
                                             variant={"muted"}
-                                            className={"!text-white font-medium mt-4"}
+                                            className={classnames(["font-medium mt-4", {
+                                                "!text-white": isDark,
+                                                "!text-black": !isDark
+                                            }])}
                                         >
                                             {t("row.3.description1")}
                                         </Typography>
@@ -149,13 +169,19 @@ const DownloadAndRegister = (props: Props) => {
                                         <div className={"flex flex-col"}>
                                             <Typography
                                                 variant={"h4"}
-                                                className={"!text-white font-medium"}
+                                                className={classnames(["font-medium ", {
+                                                    "!text-white": isDark,
+                                                    "!text-black": !isDark
+                                                }])}
                                             >
                                                 {t("row.3.title2")}
                                             </Typography>
                                             <Typography
                                                 variant={"muted"}
-                                                className={"!text-white font-medium mt-4"}
+                                                className={classnames(["font-medium mt-4", {
+                                                    "!text-white": isDark,
+                                                    "!text-black": !isDark
+                                                }])}
                                             >
                                                 {t("row.3.description2")}
                                             </Typography>
