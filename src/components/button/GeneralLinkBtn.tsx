@@ -9,7 +9,7 @@ type Props = {
     text?: string;
     path?: string;
     className?: string;
-    theme?: "light-solid" | "light-hollow" | "dark-solid" | "dark-hollow" | "active-solid" | "active-hollow" | "share";
+    theme?: "light-solid" | "light-hollow" | "dark-solid" | "dark-hollow" | "active-solid" | "active-hollow" | "share" | "transparent";
     children?: React.ReactNode;
     isLink?: boolean;
 }
@@ -31,6 +31,8 @@ const GeneralLinkBtn = (props: Props) => {
                 return "bg-theme-active hover:bg-theme-active-hover";
             case "active-hollow":
                 return "border border-theme-active text-theme-active bg-transparent hover:bg-transparent";
+            case "transparent":
+                return "bg-theme-light-bg text-[#333] rounded-md hover:bg-theme-light-bg";
             case "share":
                 return "bg-transparent hover:bg-transparent text-[#fafafa] underline font-normal";
             default:

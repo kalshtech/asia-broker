@@ -2,7 +2,7 @@ import {ReactNode} from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
-import Provider from "./Provider";
+import Provider from "@/components/home-page/Provider";
 import {routing} from '@/i18n/routing';
 import {notFound} from 'next/navigation';
 import 'swiper/css';
