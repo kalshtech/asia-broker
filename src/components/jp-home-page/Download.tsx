@@ -103,7 +103,7 @@ export default function () {
                                         </div>
                                         {
                                             d.download2Link ? (
-                                                <div className={classnames(["grid gap-8 grid-cols-2 mt-6"])}>
+                                                <div className={classnames(["grid gap-8 grid-cols-1 lg:grid-cols-2 mt-6"])}>
                                                     <a href={d.download1Link} target={"_blank"}
                                                        className={"flex items-center p-6 bg-white rounded-md"}>
                                                         <img src={d.download1Logo} className={"w-8 h-8 object-cover"}

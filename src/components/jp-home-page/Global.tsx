@@ -79,15 +79,21 @@ export default function() {
                         </div>
                         <div className={"col-span-12 lg:col-span-5"}>
                             <div>
-                                <div className={"bg-[#E9E9E9] grid grid-cols-3 p-6"}>
+                                <div className={"bg-[#E9E9E9] grid grid-cols-3 px-4 py-6"}>
                                     <div className={"border-r border-r-black text-center"}>
-                                        {'<'}{t("row.col2.text1")}
+                                        <Typography variant={"muted"}>
+                                            {'<'}{t("row.col2.text1")}
+                                        </Typography>
                                     </div>
                                     <div className={"border-r border-r-black text-center"}>
-                                        {t("row.col2.text2")}
+                                        <Typography variant={"muted"}>
+                                            {t("row.col2.text2")}
+                                        </Typography>
                                     </div>
                                     <div className={"text-center"}>
-                                        {t("row.col2.text3")}
+                                        <Typography variant={"muted"}>
+                                            {t("row.col2.text3")}
+                                        </Typography>
                                     </div>
                                 </div>
                                 <div className={"mt-4"}>
