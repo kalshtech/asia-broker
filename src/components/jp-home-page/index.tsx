@@ -10,6 +10,7 @@ import BulletinCenter from "./BulletinCenter"
 import Process from "@/components/common/Process";
 import Download from "./Download";
 import Global from "./Global";
+import Investment from "./Investment";
 import DownloadAndRegister from "@/components/home/DownloadAndRegister";
 
 export default function Home() {
@@ -101,6 +102,7 @@ export default function Home() {
                 col4Bg={"bg-[url(/images/jp/downloadAndRegisterBg4.webp)]"}
                 theme={"light"}
             />
+            <Investment/>
             <Download/>
             <Process
                 title={t("process.title")}
