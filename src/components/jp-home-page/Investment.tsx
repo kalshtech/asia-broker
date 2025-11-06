@@ -33,80 +33,80 @@ export default function() {
     const t = useTranslations("Pages.jpHome.investment");
     const data: Group[] = [
         {
-            title: "交易数据报告",
-            desc: "从复盘到成长，助你成为理性交易者",
+            title: t("row.col1.title"),
+            desc:  t("row.col1.desc"),
             leafs: [
                 {
-                    title: "有意义的交易历史数据",
+                    title: t("row.col1.leafs.col1.title"),
                     children: [
-                        { text: "可查看如 Sharpe Ratio、Profit Factor 等指标" },
-                        { text: "拆解每一笔交易的执行细节与盈亏结构" },
+                        { text: t("row.col1.leafs.col1.content1") },
+                        { text: t("row.col1.leafs.col1.content2") },
                     ]
                 },
                 {
-                    title: "复盘每一笔交易过程",
+                    title: t("row.col1.leafs.col2.title"),
                     children: [
-                        { text: "提供详细的交易行为数据回顾" },
-                        { text: "搭配学习中心与策略文章辅助理解" },
+                        { text: t("row.col1.leafs.col2.content1") },
+                        { text: t("row.col1.leafs.col2.content2") },
                     ]
                 },
                 {
-                    title: "成为更理性的投资者",
+                    title: t("row.col1.leafs.col3.title"),
                     children: [
-                        { text: "构建个人知识库与经验积累" },
-                        { text: "提供专业投资者的观点、视频、投教内容" },
+                        { text: t("row.col1.leafs.col3.content1") },
+                        { text: t("row.col1.leafs.col3.content2") },
                     ]
                 }
             ]
         },
         {
-            title: "交易功能模块",
-            desc: "程序化智能交易，让每一次下单更科学",
+            title: t("row.col2.title"),
+            desc:  t("row.col2.desc"),
             leafs: [
                 {
-                    title: "支持多种程序化订单类型",
+                    title: t("row.col2.leafs.col1.title"),
                     children: [
-                        { text: "支持条件单、追踪止盈、VWAP/TWAP/MOC 等美股策略型订单" }
+                        { text: t("row.col2.leafs.col1.content1") }
                     ]
                 },
                 {
-                    title: "可视化的交易记录展示",
+                    title: t("row.col2.leafs.col2.title"),
                     children: [
-                        { text: "图表上直接查看历史交易标记" },
-                        { text: "个股收益公告、目标价变化、消息通知推送" },
+                        { text: t("row.col2.leafs.col2.content1") },
+                        { text: t("row.col2.leafs.col2.content2") },
                     ]
                 },
                 {
-                    title: "实时追踪市场消息与公告",
+                    title: t("row.col2.leafs.col3.title"),
                     children: [
-                        { text: "多账户、多标的管理界面优化" },
-                        { text: "自动提示关键风险时间点" },
+                        { text: t("row.col2.leafs.col3.content1") },
+                        { text: t("row.col2.leafs.col3.content2") },
                     ]
                 }
             ]
         },
         {
-            title: "全天候客户支持",
-            desc: "专业团队与你随时在线",
+            title: t("row.col3.title"),
+            desc:  t("row.col3.desc"),
             leafs: [
                 {
-                    title: "24x7 全天候客户支持",
+                    title: t("row.col3.leafs.col1.title"),
                     children: [
-                        { text: "无论何时，我们的团队都在，为你的问题即时响应" }
+                        { text: t("row.col3.leafs.col1.content1") }
                     ]
                 },
                 {
-                    title: "社群互动分享与反馈通道",
+                    title: t("row.col3.leafs.col2.title"),
                     children: [
-                        { text: "我们运营专属交易社群，与用户保持活跃互动" },
-                        { text: "邀请用户分享交易故事，提供回馈通道" },
+                        { text: t("row.col3.leafs.col2.content1") },
+                        { text: t("row.col3.leafs.col2.content2") },
                     ]
                 },
                 {
-                    title: "多语种、多平台支持",
+                    title: t("row.col3.leafs.col3.title"),
                     children: [
-                        { text: "日语、英语、中文团队支持" },
-                        { text: "让本地化用户沟通更高效无障碍" },
+                        { text: t("row.col3.leafs.col3.content1") },
+                        { text: t("row.col3.leafs.col3.content2") },
                     ]
                 }
             ]
@@ -172,10 +172,7 @@ export default function() {
                                         <button
                                             key={leaf.title}
                                             onClick={() => setActiveLeafIdx(idx)}
-                                            className={classnames(
-                                                "relative py-4 text-base md:text-lg transition-colors cursor-pointer",
-                                                active ? "text-foreground font-semibold" : "text-muted-foreground hover:text-foreground"
-                                            )}
+                                            className={classnames(["relative py-4 text-base md:text-lg transition-colors cursor-pointer",  active ? "text-foreground font-semibold" : "text-muted-foreground hover:text-foreground"])}
                                         >
                                             {leaf.title}
                                             <span className={classnames("absolute left-0 -bottom-px h-[2px] w-full", active ? "bg-black" : "bg-transparent")}/>
@@ -218,10 +215,10 @@ export default function() {
                                             <Button
                                                 size="icon"
                                                 variant="ghost"
-                                                className={classnames("rounded-full border h-10 w-10 bg-black border-neutral-200 hover:bg-accent",)}
+                                                className={classnames(["rounded-full border h-10 w-10 border-neutral-200 hover:bg-accent", active ? "bg-black" : ""])}
                                                 aria-label={`${g.title}`}
                                             >
-                                                <ArrowRight className={"h-5 w-5 text-white"}/>
+                                                <ArrowRight className={classnames("h-5 w-5", active ? "text-white" : "text-black")}/>
                                             </Button>
                                         </CardContent>
                                     </Card>
