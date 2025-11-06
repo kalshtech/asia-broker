@@ -607,6 +607,32 @@
           }
         }
       },
+      "download": {
+        "title": "现在马上下载 MT5 投资软件",
+        "desc": "以先进技术驱动全球交易，让您在任何设备上尽享 专业、智能与高效 的交易体验。",
+        "row": {
+          "col1": {
+            "title": "移动端应用程序",
+            "midst": "随时随地掌握市场动态",
+            "desc": "通过手机轻松交易外汇、指数、黄金与加密货币差价合约，实时查看报价与图表走势。",
+            "download1": "Download For iOS",
+            "download2": "Download For Android"
+          },
+          "col2": {
+            "title": "桌面端应用程序",
+            "midst": "专业交易性能，一览无余",
+            "desc": "在 Windows 与 macOS 上体验稳定、极速、精准的交易执行。多图表分析、智能挂单、技术指标全支持。",
+            "download1": "Download For Windows",
+            "download2": "Download For macOS"
+          },
+          "col3": {
+            "title": "网页端 WebTrader",
+            "midst": "即开即用，无需安装",
+            "desc": "通过浏览器直接登录您的 Asia Future Trading 账户，即时交易全球市场，安全、流畅、快速。",
+            "download1": "Launch WebTrader"
+          }
+        }
+      },
       "qa": {
         "ul": {
           "li1": {
