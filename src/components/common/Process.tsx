@@ -20,16 +20,18 @@ interface AryItemProps {
     desc: string;
     bottom?: string;
     url?: string;
+    children?: React.ReactNode;
 }
 
 type Props = {
     ary: AryItemProps[],
     title: string;
+    desc?: string;
     theme?: "light" | "dark";
 }
 
 const Process = (props: Props) => {
-    const { ary, title, theme = "light" } = props;
+    const { ary, title, theme = "light", desc } = props;
     const isLight = theme === "light";
 
     return (
@@ -49,6 +51,18 @@ const Process = (props: Props) => {
                     >
                         {title}
                     </Typography>
+                    {
+                        desc && (
+                            <Typography
+                                variant={"muted"}
+                                className={classnames(["mt-6 text-center", {
+                                    "!text-white": !isLight
+                                }])}
+                            >
+                                {desc}
+                            </Typography>
+                        )
+                    }
                 </motion.div>
                 <div className={"mt-4 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4"}>
@@ -98,6 +112,9 @@ const Process = (props: Props) => {
                                                     </a>
                                                 </div>
                                             )
+                                        }
+                                        {
+                                            item.children && item.children
                                         }
                                     </div>
                                 </div>

@@ -7,9 +7,17 @@ import { useTranslations } from "next-intl";
 import Reward from "@/components/home/Reward";
 import Guide from "@/components/common/Guide";
 import BulletinCenter from "./BulletinCenter"
+import Process from "@/components/common/Process";
 
 export default function Home() {
     const forexT = useTranslations("Pages.products.forex");
+
+    const processAry =   [
+        { title: "开立交易账户", desc: "注册 Classic、Platinum 或 VIC 账户，体验不同级别的专业交易服务。", },
+        { title: "下载并安装 MT5", desc: "选择适合您的设备（Windows / macOS / iOS / Android / Web），完成安装与配置。", },
+        { title: "入金并开始交易", desc: "完成充值后，即可即时访问全球市场：外汇、贵金属、指数与加密货币差价合约。", }
+    ];
+
     const GuideAry =  [
         { url: "/images/products/forex-swiper1.png", title: forexT("guide.row.col2.span1.title"), description: forexT("guide.row.col2.span1.desc") },
         { url: "/images/products/forex-swiper2.png", title: forexT("guide.row.col2.span2.title"), description: forexT("guide.row.col2.span2.desc") },
@@ -36,6 +44,11 @@ export default function Home() {
             <Banner/>
             <AD/>
             <Rates/>
+            {/*<Process*/}
+            {/*    title={"为第一次来的用户，三步即可开启您的 AFT 交易旅程"}*/}
+            {/*    desc={"最快 1 小时开始交易"}*/}
+            {/*    ary={processAry}*/}
+            {/*/>*/}
             <BulletinCenter/>
             <Guide
                 title={forexT("guide.title")}
