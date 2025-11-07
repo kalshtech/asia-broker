@@ -18,7 +18,7 @@ export default function () {
     ]
     return (
         <div>
-            <div className={"max-w-3xl my-4 mx-auto grid grid-cols-6 gap-8"}>
+            <div className={"max-w-3xl my-4 mx-auto grid grid-cols-3 px-4 lg:px-0 lg:grid-cols-6 gap-4 lg:gap-8"}>
                 {
                     btnAry.map((item, i) => (
                         <GeneralLinkBtn
