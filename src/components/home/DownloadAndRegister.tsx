@@ -37,7 +37,10 @@ const DownloadAndRegister = (props: Props) => {
                     <div className={"col-span-12 lg:col-span-4"}>
                         <div className={"flex flex-col flex-1 h-full"}>
                             <div className={"flex-1 flex flex-col"}>
-                                <Typography variant={"h3"}>
+                                <Typography
+                                    variant={"h3"}
+                                    className={"text-center lg:text-left"}
+                                >
                                     {t("title")}
                                 </Typography>
                                 <Typography className={"mt-10"}>

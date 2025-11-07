@@ -30,7 +30,7 @@ export default function () {
                         modules={[Autoplay, FreeMode]}
                         className="logo-marquee w-full"
                         slidesPerView="auto"
-                        spaceBetween={36}
+                        spaceBetween={0}
                         loop
                         loopAdditionalSlides={data.length}
                         freeMode
@@ -38,13 +38,19 @@ export default function () {
                         centeredSlides={false}
                         speed={12000}
                         autoplay={{delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true}}
+                        breakpoints={{
+                            320: {slidesPerView: "auto", spaceBetween: 0,},
+                            600: {slidesPerView: "auto", spaceBetween: 0,},
+                            900: {slidesPerView: "auto", spaceBetween: 0,},
+                            1200: {slidesPerView: "auto", spaceBetween: 36,},
+                        }}
                     >
                         {loopData.map((item, i) => (
                             <SwiperSlide key={i}>
                                 <img
                                     src={item.imageUrl}
                                     alt={''}
-                                    className="h-24"
+                                    className={"h-12 lg:h-24"}
                                     loading={i > 8 ? 'lazy' : 'eager'}
                                 />
                             </SwiperSlide>
@@ -53,7 +59,7 @@ export default function () {
                 </div>
             </Container>
 
-            <Container className={"w-full mt-24"}>
+            <Container className={"w-full mt-12 lg:mt-24"}>
                 <Swiper
                     slidesPerView={3.5}
                     spaceBetween={36}
@@ -69,7 +75,7 @@ export default function () {
                         nextEl: ".advertisement-custom-next",
                     }}
                     breakpoints={{
-                        320: {slidesPerView: 2.5, spaceBetween: 16,},
+                        320: {slidesPerView: 1.25, spaceBetween: 16,},
                         600: {slidesPerView: 2.5, spaceBetween: 24,},
                         980: {slidesPerView: 3.5, spaceBetween: 36,},
                     }}
