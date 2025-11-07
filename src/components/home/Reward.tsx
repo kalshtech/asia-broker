@@ -57,10 +57,11 @@ const Reward = () => {
             {/*        <img src={renderMobileImageUrl()} className={"w-full object-cover"} alt=""/>*/}
             {/*    </a>*/}
             {/*</Container>*/}
-            <a href="https://portal.asiafuturetrading.com/register/trader" className={"hidden lg:block"}
-               target={"_blank"}>
-                <img src={renderImageUrl()} className={"w-full object-cover"} alt=""/>
-            </a>
+            <Container className={"hidden lg:block"}>
+                <a href="https://portal.asiafuturetrading.com/register/trader" target={"_blank"}>
+                    <img src={renderImageUrl()} className={"w-full object-cover"} alt=""/>
+                </a>
+            </Container>
             <a href="https://portal.asiafuturetrading.com/register/trader" className={"lg:hidden"}
                target={"_blank"}>
                 <img src={renderMobileImageUrl()} className={"w-full object-cover"} alt=""/>
