@@ -80,6 +80,7 @@ const Rank = () => {
     return (
         <section className={"py-16 xl:py-30"}>
             <Container>
+                
                 <motion.div
                     variants={fadeInUp}
                     initial="hidden"
