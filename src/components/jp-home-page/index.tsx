@@ -11,6 +11,7 @@ import Process from "@/components/common/Process";
 import Download from "./Download";
 import Global from "./Global";
 import Investment from "./Investment";
+import InvestmentForMobile from "./InvestmentForMobile";
 import DownloadAndRegister from "@/components/home/DownloadAndRegister";
 
 export default function Home() {
@@ -92,16 +93,21 @@ export default function Home() {
             <AD/>
             <Rates/>
             <Global/>
-            <DownloadAndRegister
-                languagePath={"Pages.jpHome.downloadAndRegister"}
-                col1Bg={"bg-[url(/images/jp/downloadAndRegisterBg1.webp)]"}
-                col1BgIsCover={true}
-                isShowMoreBtn={false}
-                col2Bg={"bg-[url(/images/jp/downloadAndRegisterBg2.webp)]"}
-                col3Bg={"bg-[url(/images/jp/downloadAndRegisterBg3.webp)]"}
-                col4Bg={"bg-[url(/images/jp/downloadAndRegisterBg4.webp)]"}
-                theme={"light"}
-            />
+            <div className={"hidden lg:block"}>
+                <DownloadAndRegister
+                    languagePath={"Pages.jpHome.downloadAndRegister"}
+                    col1Bg={"bg-[url(/images/jp/downloadAndRegisterBg1.webp)]"}
+                    col1BgIsCover={true}
+                    isShowMoreBtn={false}
+                    col2Bg={"bg-[url(/images/jp/downloadAndRegisterBg2.webp)]"}
+                    col3Bg={"bg-[url(/images/jp/downloadAndRegisterBg3.webp)]"}
+                    col4Bg={"bg-[url(/images/jp/downloadAndRegisterBg4.webp)]"}
+                    theme={"light"}
+                />
+            </div>
+            <div className={"lg:hidden"}>
+                <InvestmentForMobile/>
+            </div>
             <Investment/>
             <Download/>
             <Process
