@@ -59,7 +59,7 @@ export default function Banner({ title, description, midst, imageUrl, transfer =
                                 <GeneralLinkBtn
                                     text={t("startTrade")}
                                     theme={"active-solid"}
-                                    path={"https://portal.asiafuturetrading.com/login"}
+                                    tradeType={"login"}
                                     isLink
                                 />
                                 <GeneralLinkBtn
@@ -77,7 +77,7 @@ export default function Banner({ title, description, midst, imageUrl, transfer =
                                 <GeneralLinkBtn
                                     text={t("transfer")}
                                     theme={"active-solid"}
-                                    path={"https://portal.asiafuturetrading.com/login"}
+                                    tradeType={"login"}
                                     isLink
                                 />
                             </div>

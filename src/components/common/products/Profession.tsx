@@ -121,7 +121,7 @@ const Profession = () => {
                                             <img src={item.img} className={"rounded-2xl"} alt=""/>
                                         </div>
                                         <div className={"mt-5"}>
-                                            <div className={"h-48 xl:h-32"}>
+                                            <div className={""}>
                                                 <Typography
                                                     variant={"p"}
                                                     className={"font-medium"}

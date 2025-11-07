@@ -30,7 +30,7 @@ const Trust = () => {
                         <GeneralLinkBtn
                             text={t("start")}
                             theme={"active-solid"}
-                            path={"https://portal.asiafuturetrading.com/login"}
+                            tradeType={"login"}
                             isLink
                         />
                     </div>

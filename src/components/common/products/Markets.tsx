@@ -20,6 +20,15 @@ import {motion, Variants} from "framer-motion";
 import SimpleSearch from "@/components/common/SimpleSearch";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectLabel,
+    SelectValue,
+    SelectGroup
+} from "@/components/ui/select";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -173,28 +182,47 @@ const Markets = (props: Props) => {
                 {
                     tabList && (
                         <div className={"mt-10"}>
-                            <Tabs value={tabActive}
-                                  className={"justify-center items-center"}
-                                  onValueChange={handleToggleTabActive}
-                            >
-                                <TabsList className={"h-10 rounded-full"}>
-                                    {
-                                        tabList.map((item, index) => (
-                                            <TabsTrigger
-                                                key={index}
-                                                value={item.value}
-                                                className={"cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
-                                            >
-                                                {item.label}
-                                            </TabsTrigger>
-                                        ))
-                                    }
-                                </TabsList>
-                            </Tabs>
+                            <div className={"lg:hidden"}>
+                                <Select value={tabActive} onValueChange={handleToggleTabActive}>
+                                    <SelectTrigger className={"w-full"}>
+                                        <SelectValue placeholder="Theme"/>
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        {
+                                            tabList.map((item, index) => (
+                                                <SelectItem value={item.value} key={index}>
+                                                    {item.label}
+                                                </SelectItem>
+                                            ))
+                                        }
+                                    </SelectContent>
+                                </Select>
+                            </div>
+
+                            <div className={"hidden lg:block"}>
+                                <Tabs value={tabActive}
+                                      className={"justify-center items-center"}
+                                      onValueChange={handleToggleTabActive}
+                                >
+                                    <TabsList className={"h-10 rounded-full"}>
+                                        {
+                                            tabList.map((item, index) => (
+                                                <TabsTrigger
+                                                    key={index}
+                                                    value={item.value}
+                                                    className={"cursor-pointer data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                                >
+                                                    {item.label}
+                                                </TabsTrigger>
+                                            ))
+                                        }
+                                    </TabsList>
+                                </Tabs>
+                            </div>
                         </div>
                     )
                 }
-                <div className={"mt-10"}>
+                <div className={"mt-4 lg:mt-10"}>
                     {type === "elementary" && (
                         <>
                             <Table>
@@ -219,8 +247,6 @@ const Markets = (props: Props) => {
                                     {loading ? (
                                         Array.from({length: 6}).map((_, i) => (
                                             <TableRow key={i}>
-                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                                 <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                                 <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                                 <TableCell><Skeleton className="h-4 w-32"/></TableCell>
@@ -276,7 +302,7 @@ const Markets = (props: Props) => {
                                 <GeneralLinkBtn
                                     text={trade}
                                     theme={"active-solid"}
-                                    path={"https://portal.asiafuturetrading.com/login"}
+                                    tradeType={"login"}
                                     isLink
                                 />
                             </div>
@@ -317,7 +343,7 @@ const Markets = (props: Props) => {
                                 <GeneralLinkBtn
                                     text={trade}
                                     theme={"active-solid"}
-                                    path={"https://portal.asiafuturetrading.com/login"}
+                                    tradeType={"login"}
                                     isLink
                                 />
                             </div>

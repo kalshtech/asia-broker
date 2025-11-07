@@ -12,10 +12,22 @@ type Props = {
     theme?: "light-solid" | "light-hollow" | "dark-solid" | "dark-hollow" | "active-solid" | "active-hollow" | "share" | "transparent";
     children?: React.ReactNode;
     isLink?: boolean;
+    tradeType?: "register" | "login"
 }
 
 const GeneralLinkBtn = (props: Props) => {
-    const { text, path = "https://portal.asiafuturetrading.com/register/trader", className, theme = "light-solid", children, isLink = false } = props;
+    const { text, path = "https://portal.asiafuturetrading.com/register/trader", className, tradeType = "", theme = "light-solid", children, isLink = false } = props;
+
+    const rotatePath = () => {
+        switch (tradeType) {
+            case "register":
+                return "https://portal.asiafuturetrading.com/register/trader";
+            case "login":
+                return "https://portal.asiafuturetrading.com/login";
+            default:
+                return path;
+        }
+    }
 
     const renderCls = () => {
         switch (theme) {
@@ -84,7 +96,7 @@ const GeneralLinkBtn = (props: Props) => {
         <Button className={classnames([renderCls(), className])}>
             {
                 isLink ? (
-                    <a href={path}
+                    <a href={rotatePath()}
                        target={"_blank"}
                        className={classnames(["flex justify-center items-center", {
                            "flex-col": children
@@ -99,7 +111,7 @@ const GeneralLinkBtn = (props: Props) => {
                     </a>
                 ) : (
                     <Link
-                        href={path}
+                        href={rotatePath()}
                         className={classnames(["flex justify-center items-center", {
                             "flex-col": children
                         }])}

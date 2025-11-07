@@ -56,7 +56,7 @@ const Ready = () => {
                                     <GeneralLinkBtn
                                         text={t("trade")}
                                         theme={"active-solid"}
-                                        path={"https://portal.asiafuturetrading.com/login"}
+                                        tradeType={"login"}
                                         isLink
                                     />
                                     <GeneralLinkBtn
