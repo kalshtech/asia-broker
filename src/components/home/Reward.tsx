@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {motion, Variants} from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
@@ -17,10 +17,45 @@ const fadeInUp: Variants = {
 
 const Reward = () => {
     const t = useTranslations("Pages.home.reward");
+    const locale = useLocale();
+
+    const renderImageUrl = () => {
+        switch (locale) {
+            case "zh-cn":
+                return "/images/home/Reward2.webp";
+            case "en":
+                return "/images/home/Reward2en.webp";
+            case "ja":
+                return "/images/home/Reward2ja.webp"
+            default:
+                return "/images/home/Reward2en.webp";
+        }
+    }
+
+    const renderMobileImageUrl = () => {
+        switch (locale) {
+            case "zh-cn":
+                return "/images/home/Reward2-mobile.webp";
+            case "en":
+                return "/images/home/Reward2-mobileEn.webp";
+            case "ja":
+                return "/images/home/Reward2-mobileJa.webp"
+            default:
+                return "/images/home/Reward2-mobileEn.webp";
+        }
+    }
+
     return (
-        <div className={"w-full hidden lg:block lg:py-16"}>
+        <div className={"w-full lg:py-16"}>
             <Container>
-                <img src="/images/home/Reward2.webp" className={"w-full"} alt=""/>
+                <a href="https://portal.asiafuturetrading.com/register/trader" className={"hidden lg:block"}
+                   target={"_blank"}>
+                    <img src={renderImageUrl()} className={"w-full object-cover"} alt=""/>
+                </a>
+                <a href="https://portal.asiafuturetrading.com/register/trader" className={"lg:hidden"}
+                   target={"_blank"}>
+                    <img src={renderMobileImageUrl()} className={"w-full object-cover"} alt=""/>
+                </a>
             </Container>
         </div>
     )
