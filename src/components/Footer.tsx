@@ -55,34 +55,34 @@ const Footer = (props: Props) => {
 
     return (
         <footer>
-            <Collapsible open={open} onOpenChange={setOpen} className="relative">
-                <div className="relative">
-                    <div className="pointer-events-none absolute inset-x-0 -bottom-5 z-20 flex justify-center">
-                        <CollapsibleTrigger asChild>
-                            <Button
-                                size="icon"
-                                variant="secondary"
-                                className="pointer-events-auto h-10 w-10 rounded-full bg-theme-active text-white hover:bg-theme-active"
-                                aria-label={open ? 'open' : 'close'}
-                            >
-                                {open ? <Minus className="h-5 w-5" /> : <Plus className="h-5 w-5" />}
-                            </Button>
-                        </CollapsibleTrigger>
-                    </div>
-                    <CollapsibleContent
-                        className={classnames('overflow-hidden bg-[#DBDDE6] data-[state=closed]:animate-collapse-up data-[state=open]:animate-collapse-down')}
-                    >
-                        <Container className={"p-4"}>
-                            <Typography variant={"muted"}>
-                                本信息仅用于一般性风险披露，不构成任何投资建议。请根据自身情况谨慎决策。
-                            </Typography>
-                        </Container>
-                    </CollapsibleContent>
-                </div>
-            </Collapsible>
-            <div className={classNames(["bg-theme-deep-bg pt-10", className])}>
+            {/*<Collapsible open={open} onOpenChange={setOpen} className="relative">*/}
+            {/*    <div className="relative">*/}
+            {/*        <div className="pointer-events-none absolute inset-x-0 -bottom-5 z-20 flex justify-center">*/}
+            {/*            <CollapsibleTrigger asChild>*/}
+            {/*                <Button*/}
+            {/*                    size="icon"*/}
+            {/*                    variant="secondary"*/}
+            {/*                    className="pointer-events-auto h-10 w-10 rounded-full bg-theme-active text-white hover:bg-theme-active"*/}
+            {/*                    aria-label={open ? 'open' : 'close'}*/}
+            {/*                >*/}
+            {/*                    {open ? <Minus className="h-5 w-5" /> : <Plus className="h-5 w-5" />}*/}
+            {/*                </Button>*/}
+            {/*            </CollapsibleTrigger>*/}
+            {/*        </div>*/}
+            {/*        <CollapsibleContent*/}
+            {/*            className={classnames('overflow-hidden bg-[#DBDDE6] data-[state=closed]:animate-collapse-up data-[state=open]:animate-collapse-down')}*/}
+            {/*        >*/}
+            {/*            <Container className={"p-4"}>*/}
+            {/*                <Typography variant={"muted"}>*/}
+            {/*                    本信息仅用于一般性风险披露，不构成任何投资建议。请根据自身情况谨慎决策。*/}
+            {/*                </Typography>*/}
+            {/*            </Container>*/}
+            {/*        </CollapsibleContent>*/}
+            {/*    </div>*/}
+            {/*</Collapsible>*/}
+            {/*<div className={classNames(["bg-theme-deep-bg pt-10", className])}>*/}
 
-            </div>
+            {/*</div>*/}
             <div className={classNames(["bg-theme-deep-bg pt-10", className])}>
                 <Container>
                     <div>
@@ -154,13 +154,13 @@ const Footer = (props: Props) => {
                                             {t("future.vin")}
                                         </Typography>
                                     </div>
-                                    <div className={"flex !items-center !mt-4"}>
-                                        <Image width={34} height={22} className={"!w-[34px] !h-[22px]"} alt={"australia"}
-                                               src={"/images/footer/hongkong.png"}/>
-                                        <Typography className={"!ml-4 !text-white !text-base"}>
-                                            {t("future.hk")}
-                                        </Typography>
-                                    </div>
+                                    {/*<div className={"flex !items-center !mt-4"}>*/}
+                                    {/*    <Image width={34} height={22} className={"!w-[34px] !h-[22px]"} alt={"australia"}*/}
+                                    {/*           src={"/images/footer/hongkong.png"}/>*/}
+                                    {/*    <Typography className={"!ml-4 !text-white !text-base"}>*/}
+                                    {/*        {t("future.hk")}*/}
+                                    {/*    </Typography>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>
@@ -236,7 +236,7 @@ const Footer = (props: Props) => {
                                         </svg>
                                     </span>
                                         </a>
-                                        <a className={"!ml-8"} href={"https://t.me/aftsocialtrading"} target={"_blank"}>
+                                        <a className={"!ml-8"} href={"https://t.me/AsiaFutureTrading"} target={"_blank"}>
                                             <img src="/images/telegram.svg" className={"w-[30px] h-[30px"} alt="telegram"/>
                                         </a>
                                     </div>
