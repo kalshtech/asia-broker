@@ -30,7 +30,7 @@ export default function () {
                     ))
                 }
             </div>
-            
+
             <div className={"bg-[url(/images/jp/home-banner.webp)] bg-cover bg-center py-24"}>
                 <Container>
                     <div className={"grid grid-cols-12 gap-8"}>
