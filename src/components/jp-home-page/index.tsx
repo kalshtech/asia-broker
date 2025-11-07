@@ -29,7 +29,7 @@ export default function Home() {
                     <a href="/accounts/classic" target={"_blank"} className={"underline ml-4"}>
                         {t("process.row.col1.btn2")}
                     </a>
-                    <a href="https://support.afttmarkets.com/hc/ja-jp/articles/14226850458127" target={"_blank"} className={"underline ml-4"}>
+                    <a href="https://support.afttmarkets.com/hc/ja-jp/articles/14226850458127" target={"_blank"} className={"underline lg:ml-4"}>
                         {t("process.row.col1.btn3")}
                     </a>
                 </div>

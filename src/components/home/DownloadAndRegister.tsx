@@ -33,7 +33,7 @@ const DownloadAndRegister = (props: Props) => {
     return (
         <section className={"py-16 xl:p-30"}>
             <Container>
-                <div className={"grid grid-cols-12 gap-8"}>
+                <div className={"grid grid-cols-12 gap-4 lg:gap-8"}>
                     <div className={"col-span-12 lg:col-span-4"}>
                         <div className={"flex flex-col flex-1 h-full"}>
                             <div className={"flex-1 flex flex-col"}>
