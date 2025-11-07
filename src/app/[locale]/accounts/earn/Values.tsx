@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 
 const Values = () => {
-    const t = useTranslations("Pages.accounts.profit.values");
+    const t = useTranslations("Pages.accounts.earn.values");
     return (
         <section className={"py-16 lg:py-0"}>
             <div className={"grid grid-cols-12"}>

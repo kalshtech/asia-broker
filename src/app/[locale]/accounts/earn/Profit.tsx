@@ -17,7 +17,7 @@ const fadeInUp: Variants = {
 }
 
 const Profit = () => {
-    const t = useTranslations("Pages.accounts.profit.profit");
+    const t = useTranslations("Pages.accounts.earn.profit");
     const ulAry = [
         { text: t("row.col1.ul.li1") },
         { text: t("row.col1.ul.li2") },

@@ -16,10 +16,10 @@ const fadeInUp: Variants = {
 }
 
 const Advance = () => {
-    const t = useTranslations("Pages.accounts.profit.advance");
+    const t = useTranslations("Pages.accounts.earn.advance");
 
     return (
-        <section className={"bg-[url(/images/accounts/profit-advance-bg.png)] bg-center bg-cover py-16 xl:py-30"}>
+        <section className={"bg-[url(/images/accounts/earn-advance-bg.png)] bg-center bg-cover py-16 xl:py-30"}>
             <Container>
                 <motion.div
                     variants={fadeInUp}

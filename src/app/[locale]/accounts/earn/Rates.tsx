@@ -157,7 +157,7 @@ type Props = {
 }
 
 const Rates = (props: Props) => {
-    const t = useTranslations("Pages.accounts.profit.rates");
+    const t = useTranslations("Pages.accounts.earn.rates");
     const { data } = props;
 
     return (

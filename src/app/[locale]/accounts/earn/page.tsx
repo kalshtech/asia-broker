@@ -35,7 +35,7 @@ async function fetchFromSelf(path: string, init?: RequestInit) {
 
 
 export default async function Page() {
-    const t = await getTranslations("Pages.accounts.profit");
+    const t = await getTranslations("Pages.accounts.earn");
     const result = await fetchFromSelf(params_sofr.url);
     const data = await result.json();
 

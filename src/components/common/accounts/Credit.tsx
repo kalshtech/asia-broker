@@ -103,7 +103,7 @@ const Credit = ({ typeText, className, number }: Props) => {
                         text={t("understand")}
                         theme={"dark-hollow"}
                         className={"ml-4"}
-                        path={"/accounts/profit"}
+                        path={"/accounts/earn"}
                     />
                 </div>
             </Container>

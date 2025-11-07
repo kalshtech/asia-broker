@@ -11,7 +11,7 @@ type Props = {
 }
 
 const Banner =  (props: Props) => {
-    const t = useTranslations("Pages.accounts.profit.banner");
+    const t = useTranslations("Pages.accounts.earn.banner");
     const { rate } = props;
     return (
         <div>

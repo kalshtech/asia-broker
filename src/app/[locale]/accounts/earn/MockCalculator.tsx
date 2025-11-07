@@ -12,7 +12,7 @@ type Props = {
 }
 
 const MockCalculator = (props: Props) => {
-    const t = useTranslations("Pages.accounts.profit.mockCalculator");
+    const t = useTranslations("Pages.accounts.earn.mockCalculator");
     const { rate = 0 } = props;
     const [slider, setSlider] = React.useState<number[]>([40]);
     const [margin, setMargin] = React.useState("");

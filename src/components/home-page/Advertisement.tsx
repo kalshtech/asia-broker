@@ -81,7 +81,7 @@ const Advertisement = () => {
             title: t("5.title"),
             description: t("5.description"),
             url: `bg-[url('/images/home/advertisement5.webp')]`,
-            path: "/accounts/profit"
+            path: "/accounts/earn"
         },
         {
             ImageNumber: "6",

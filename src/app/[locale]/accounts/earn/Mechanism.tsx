@@ -15,7 +15,7 @@ const fadeInUp: Variants = {
 }
 
 const Mechanism = () => {
-    const t = useTranslations("Pages.accounts.profit.mechanism");
+    const t = useTranslations("Pages.accounts.earn.mechanism");
     const ary = [
         { imgUrl: "/images/accounts/profit-mechanism1.png", title: t("row.col1.title"), desc: t("row.col1.desc") },
         { imgUrl: "/images/accounts/profit-mechanism2.png", title: t("row.col2.title"), desc: t("row.col2.desc") },
