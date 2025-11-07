@@ -148,22 +148,52 @@ export default function() {
                         {t("desc")}
                     </Typography>
                 </motion.div>
-                <div className={"mt-16"}>
-                    <div className={""}>
+                <div className={"mt-8 lg:mt-16"}>
+
+                    <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {
+                            data.map((g, idx) => {
+                                const active = idx === activeGroupIdx;
+                                return (
+                                    <Card
+                                        key={g.title}
+                                        className={classnames("cursor-pointer transition-all border-neutral-200 hover:shadow-md", active ? "ring-1 ring-black" : "ring-0")}
+                                        onClick={() => setActiveGroupIdx(idx)}
+                                    >
+                                        <CardContent className="flex items-center justify-between">
+                                            <div className="text-lg md:text-xl font-medium">{g.title}</div>
+                                            <Button
+                                                size="icon"
+                                                variant="ghost"
+                                                className={classnames(["rounded-full border h-10 w-10 border-neutral-200 hover:bg-accent", active ? "bg-black" : ""])}
+                                                aria-label={`${g.title}`}
+                                            >
+                                                <ArrowRight
+                                                    className={classnames("h-5 w-5", active ? "text-white" : "text-black")}/>
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                );
+                            })}
+                    </div>
+
+                    <div className={"mt-8 lg:mt-16"}>
                         <Typography
                             variant={"p"}
                             className={"font-semibold"}
                         >
-                            { pageTitle }
+                            {pageTitle}
                         </Typography>
                         <Typography
                             variant={"muted"}
                             className={"!text-[#999] mt-2"}
                         >
-                            { pageDesc }
+                            {pageDesc}
                         </Typography>
                     </div>
-                    <div className={"mt-10"}>
+
+
+                    <div className={"mt-4 lg:mt-10"}>
                         <div className="border-b border-neutral-200 dark:border-neutral-800">
                             <div className="flex flex-wrap gap-x-8 gap-y-3">
                                 {leafs.map((leaf, idx) => {
@@ -172,10 +202,11 @@ export default function() {
                                         <button
                                             key={leaf.title}
                                             onClick={() => setActiveLeafIdx(idx)}
-                                            className={classnames(["relative py-4 text-base md:text-lg transition-colors cursor-pointer",  active ? "text-foreground font-semibold" : "text-muted-foreground hover:text-foreground"])}
+                                            className={classnames(["relative py-4 text-base md:text-lg transition-colors cursor-pointer", active ? "text-foreground font-semibold" : "text-muted-foreground hover:text-foreground"])}
                                         >
                                             {leaf.title}
-                                            <span className={classnames("absolute left-0 -bottom-px h-[2px] w-full", active ? "bg-black" : "bg-transparent")}/>
+                                            <span
+                                                className={classnames("absolute left-0 -bottom-px h-[2px] w-full", active ? "bg-black" : "bg-transparent")}/>
                                         </button>
                                     );
                                 })}
@@ -198,32 +229,6 @@ export default function() {
                                     }
                                 </React.Fragment>
                             ))}
-                        </div>
-
-                        <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-                            {
-                                data.map((g, idx) => {
-                                const active = idx === activeGroupIdx;
-                                return (
-                                    <Card
-                                        key={g.title}
-                                        className={classnames("cursor-pointer transition-all border-neutral-200 hover:shadow-md", active ? "ring-1 ring-black" : "ring-0")}
-                                        onClick={() => setActiveGroupIdx(idx)}
-                                    >
-                                        <CardContent className="flex items-center justify-between">
-                                            <div className="text-lg md:text-xl font-medium">{g.title}</div>
-                                            <Button
-                                                size="icon"
-                                                variant="ghost"
-                                                className={classnames(["rounded-full border h-10 w-10 border-neutral-200 hover:bg-accent", active ? "bg-black" : ""])}
-                                                aria-label={`${g.title}`}
-                                            >
-                                                <ArrowRight className={classnames("h-5 w-5", active ? "text-white" : "text-black")}/>
-                                            </Button>
-                                        </CardContent>
-                                    </Card>
-                                );
-                            })}
                         </div>
                     </div>
                 </div>

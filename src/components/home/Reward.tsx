@@ -47,16 +47,24 @@ const Reward = () => {
 
     return (
         <div className={"w-full lg:py-16"}>
-            <Container>
-                <a href="https://portal.asiafuturetrading.com/register/trader" className={"hidden lg:block"}
-                   target={"_blank"}>
-                    <img src={renderImageUrl()} className={"w-full object-cover"} alt=""/>
-                </a>
-                <a href="https://portal.asiafuturetrading.com/register/trader" className={"lg:hidden"}
-                   target={"_blank"}>
-                    <img src={renderMobileImageUrl()} className={"w-full object-cover"} alt=""/>
-                </a>
-            </Container>
+            {/*<Container>*/}
+            {/*    <a href="https://portal.asiafuturetrading.com/register/trader" className={"hidden lg:block"}*/}
+            {/*       target={"_blank"}>*/}
+            {/*        <img src={renderImageUrl()} className={"w-full object-cover"} alt=""/>*/}
+            {/*    </a>*/}
+            {/*    <a href="https://portal.asiafuturetrading.com/register/trader" className={"lg:hidden"}*/}
+            {/*       target={"_blank"}>*/}
+            {/*        <img src={renderMobileImageUrl()} className={"w-full object-cover"} alt=""/>*/}
+            {/*    </a>*/}
+            {/*</Container>*/}
+            <a href="https://portal.asiafuturetrading.com/register/trader" className={"hidden lg:block"}
+               target={"_blank"}>
+                <img src={renderImageUrl()} className={"w-full object-cover"} alt=""/>
+            </a>
+            <a href="https://portal.asiafuturetrading.com/register/trader" className={"lg:hidden"}
+               target={"_blank"}>
+                <img src={renderMobileImageUrl()} className={"w-full object-cover"} alt=""/>
+            </a>
         </div>
     )
     // return (
