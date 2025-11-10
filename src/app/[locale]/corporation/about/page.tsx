@@ -21,7 +21,7 @@ export default async function Page() {
             <Values/>
             <Compliance/>
             <Articles/>
-            <Brief/>
+            {/*<Brief/>*/}
             <JoinUS/>
             <Ready/>
             <Tools/>
