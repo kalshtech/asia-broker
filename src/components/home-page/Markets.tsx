@@ -81,7 +81,7 @@ const Markets = () => {
             setLoading(true);
             const today = new Date();
             const dayOfWeek = today.getDay();
-            let dayNumber = 5;
+            let dayNumber = 1;
             let to = dayjs().format('YYYY-MM-DD');
             let from: string;
 
