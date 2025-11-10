@@ -123,14 +123,12 @@ const PackageMenuItem = (props: any) => {
                                     <div className={"relative"}>
                                         <img className={"w-full h-full"} src={item.btnImg} alt=""/>
                                         <div className={"absolute bottom-4 flex justify-center left-0 mx-auto right-0 max-w-[calc(100%-16px)]"}>
-                                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                                <Link
-                                                    href={item.btnPath}
-                                                    className={"w-full h-full flex justify-center items-center"}
-                                                >
-                                                    { item.btn }
-                                                </Link>
-                                            </Button>
+                                            <GeneralLinkBtn
+                                                text={item.btn}
+                                                path={item.btnPath}
+                                                theme={"active-solid"}
+                                                isLink
+                                            />
                                         </div>
                                     </div>
                                     <div className={"mt-4"}>
@@ -208,7 +206,7 @@ const Navigation = () => {
                     title: t("menu.products.title"),
                     description: t("menu.products.description"),
                     btn: t("menu.products.btn"),
-                    btnPath: "/",
+                    btnPath: "/products/crypto",
                     btnImg: "/images/navigation/product.png",
                     colSpan: "col-span-4",
                     children: [
@@ -247,7 +245,7 @@ const Navigation = () => {
                     title: t("menu.platforms.title"),
                     description: t("menu.platforms.description"),
                     btn: t("menu.platforms.btn"),
-                    btnPath: "/",
+                    btnPath: "/platform",
                     btnImg: "/images/navigation/platform.png",
                     colSpan: "col-span-4",
                     children: [
@@ -278,7 +276,7 @@ const Navigation = () => {
                     title: t("menu.account.title"),
                     description: t("menu.account.description"),
                     btn: t("menu.account.btn"),
-                    btnPath: "/",
+                    btnPath: "/accounts/platinum",
                     btnImg: "/images/navigation/account.png",
                     colSpan: "col-span-4",
                     children: [
@@ -351,7 +349,7 @@ const Navigation = () => {
                     title: t("menu.inspiration.title"),
                     description: t("menu.inspiration.description"),
                     btn: t("menu.inspiration.btn"),
-                    btnPath: "/",
+                    btnPath: "https://portal.asiafuturetrading.com/register/trader",
                     btnImg: "/images/navigation/inspiration.png",
                     colSpan: "col-span-4",
                     children: [
@@ -414,7 +412,7 @@ const Navigation = () => {
                     title: t("menu.corporation.title"),
                     description: t("menu.corporation.description"),
                     btn: t("menu.corporation.btn"),
-                    btnPath: "/",
+                    btnPath: "/corporation/careers",
                     btnImg: "/images/navigation/corporation.png",
                     colSpan: "col-span-12",
                     children: [
