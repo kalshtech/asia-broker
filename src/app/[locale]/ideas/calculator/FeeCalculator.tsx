@@ -150,7 +150,7 @@ const FeeCalculator = () => {
                                     {
                                         TypeAry.map((d, i) => (
                                             <SelectItem key={i} value={d.value}>
-                                                <img src={d.image} className={"w-6 h-6 rounded-full mr-0.5"} alt=""/>
+                                                <img src={d.image} className={"min-w-9 w-9 h-6 min-h-6 mr-0.5"} alt=""/>
                                                 {d.label}
                                             </SelectItem>
                                         ))
@@ -280,7 +280,7 @@ const FeeCalculator = () => {
                     </div>
                     <div className={"flex flex-col my-8"}>
                         <Typography variant={"muted"}>
-                            Margin Calculation (USD)
+                            {t("form.result")}({`${formData.base}`}):
                         </Typography>
                         <div className={"bg-white p-10 border rounded-lg mt-4"}>
                             <Typography
