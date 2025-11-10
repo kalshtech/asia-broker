@@ -296,7 +296,7 @@
             "link": "联系我们"
           },
           "2": {
-            "title": "SailingBrick™ 社群",
+            "title": "Discord™ 社群",
             "description1": "模块化、直观、不孤单的交易体验。",
             "description2": "加入社群，从第一笔交易到规模化成长，我们一路同行。",
             "btnText": "加入 Discord",
@@ -1861,7 +1861,7 @@
           }
         },
         "joinus": {
-          "title": "加入 SailingBrick 社区——与全球交易者共同成长",
+          "title": "加入 Discord 社区——与全球交易者共同成长",
           "desc": "一个由 10,000+ 真实交易者组成的全球网络，在这里共享洞察、策略与成长热情。",
           "row": {
             "col1": {
@@ -1877,7 +1877,7 @@
             "col2": {
               "title": "我们不仅是平台，更是您的交易伙伴。",
               "desc1": "在 Asia Future Trading，我们相信交易只是起点。",
-              "desc2": "理解、支持与成长——这正是我们创建 SailingBrick 社区的初衷。",
+              "desc2": "理解、支持与成长——这正是我们创建 Discord 社区的初衷。",
               "join": "立即加入"
             },
             "col3": {
@@ -3510,7 +3510,7 @@
             }
           },
           "col-2": {
-            "title": "SailingBrick 社区",
+            "title": "Discord 社区",
             "ul": {
               "li1": "加入 Discord"
             }

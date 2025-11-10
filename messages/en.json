@@ -296,7 +296,7 @@
             "link": "Contact Us"
           },
           "2": {
-            "title": "SailingBrick™ Community",
+            "title": "Discord™ Community",
             "description1": "Where trading feels modular, intuitive, and never alone. ",
             "description2": "Join a community that supports your first trade and scales with your ambition. ",
             "btnText": "Join Our Discord",
@@ -1861,7 +1861,7 @@
           }
         },
         "joinus": {
-          "title": "Join the SailingBrick Community — Where Traders Grow Together",
+          "title": "Join the Discord Community — Where Traders Grow Together",
           "desc": "A global network of 10,000+ real traders, sharing insights, strategies, and the passion for progress. ",
           "row": {
             "col1": {
@@ -1877,7 +1877,7 @@
             "col2": {
               "title": "we're more than a platform — we're your trading partner. ",
               "desc1": "At Asia Future Trading, we believe trading is just the beginning. ",
-              "desc2": "Understanding, support, and growth — that's why we built the SailingBrick Community. ",
+              "desc2": "Understanding, support, and growth — that's why we built the Discord Community. ",
               "join": "Join Now"
             },
             "col3": {
@@ -3510,7 +3510,7 @@
             }
           },
           "col-2": {
-            "title": "SailingBrick Community",
+            "title": "Discord Community",
             "ul": {
               "li1": "Join Discord"
             }

@@ -68,8 +68,7 @@ const JoinUS = () => {
                                 </Typography>
                             </div>
                         </div>
-                        <div
-                            className={"col-span-12 lg:col-span-4 h-full bg-gradient-to-b from-[#000824] to-[#585D6C]"}>
+                        <div className={"col-span-12 lg:col-span-4 h-full bg-gradient-to-b from-[#000824] to-[#585D6C]"}>
                             <div
                                 className={"flex flex-col flex-1 py-8 lg:py-0 h-full px-8 justify-center items-center"}>
                                 <Typography
@@ -93,6 +92,8 @@ const JoinUS = () => {
                                 <div className={"mt-10"}>
                                     <Button
                                         className={"bg-theme-active hover:bg-theme-active-hover"}>
+                                        <img src="/images/home/discord-logo.webp" className={"w-6 h-6 object-cover"}
+                                             alt=""/>
                                         {t("row.col2.join")}
                                     </Button>
                                 </div>
