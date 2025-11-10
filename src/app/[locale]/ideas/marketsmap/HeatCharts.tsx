@@ -131,7 +131,7 @@ const HeatCharts = () => {
                     </Tabs>
                 </div>
                 <div className={"mt-4"}>
-                    <TvForexHeatmap type={typeActive} currencies={currencies} locale={locale}/>
+                    <TvForexHeatmap type={typeActive} currencies={currencies} locale={locale === "zh-cn" ? "zh_CN" : locale}/>
                 </div>
                 <motion.div
                     variants={fadeInUp}
@@ -155,7 +155,7 @@ const HeatCharts = () => {
                     </div>
                 </motion.div>
                 <div className={"mt-10"}>
-                    <TvStockHeatmap locale={locale}/>
+                    <TvStockHeatmap locale={locale === "zh-cn" ? "zh_CN" : locale}/>
                 </div>
                 <motion.div
                     variants={fadeInUp}
@@ -179,7 +179,7 @@ const HeatCharts = () => {
                     </div>
                 </motion.div>
                 <div className={"mt-10"}>
-                    <TvCryptoHeatmap locale={locale}/>
+                    <TvCryptoHeatmap locale={locale === "zh-cn" ? "zh_CN" : locale}/>
                 </div>
             </Container>
         </section>

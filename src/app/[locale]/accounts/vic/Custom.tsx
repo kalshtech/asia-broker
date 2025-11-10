@@ -97,7 +97,7 @@ const Custom = () => {
                                         variant={"muted"}
                                         className={"!text-white mt-5"}
                                     >
-                                        {t("row.col2.prompt")}11111
+                                        {t("row.col2.prompt")}
                                     </Typography>
                                 </div>
                             </div>

@@ -14,13 +14,14 @@ const Values = () => {
                     </Typography>
                     <Typography
                         variant={"h4"}
-                        className={"font-normal max-w-xl mt-10 leading-[40px]"}
+                        className={"font-normal mt-10 leading-[40px]"}
                     >
                         {t("desc")}
                     </Typography>
                 </div>
-                <div className={"col-span-12 mt-4 lg:mt-0 lg:col-span-6"}>
-                    <img src="/images/accounts/profit-values-protrait.png" className={"h-full object-cover"}
+                <div className={"col-span-12 mt-4 lg:mt-0 lg:col-span-6 flex items-center justify-center"}>
+                    <img src="/images/accounts/profit-values-protrait.png"
+                         className={"w-[calc(100%-120px)] h-[calc(100%-80px)] mx-auto object-cover"}
                          alt=""/>
                 </div>
             </div>

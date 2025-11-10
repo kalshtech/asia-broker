@@ -19,6 +19,7 @@ export default function TvForexHeatmap(props: Props) {
         colorTheme = "light",
         configOverride,
     } = props;
+
     useEffect(() => {
         if (!ref.current) return;
         ref.current.innerHTML = ""; // 避免重复挂载
