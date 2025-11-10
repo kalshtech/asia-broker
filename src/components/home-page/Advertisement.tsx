@@ -101,9 +101,14 @@ const Advertisement = () => {
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
                 >
-                    <Typography variant={"h3"} className={"text-center"}>
-                        {t("title")}
-                    </Typography>
+                   <div className={"flex justify-center items-end"}>
+                       <Typography variant={"h1"} className={"text-center !text-theme-active"}>
+                           0
+                       </Typography>
+                       <Typography variant={"h3"} className={"text-center ml-2"}>
+                           {t("title")}
+                       </Typography>
+                   </div>
                 </motion.div>
 
                 <div className={"mt-4 xl:mt-16"}>

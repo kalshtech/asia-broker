@@ -223,7 +223,7 @@ const Properly = () => {
                     </Typography>
                 </motion.div>
 
-                <div className={"flex justify-center mt-4 xl:mt-16"}>
+                <div className={"flex justify-center mt-4 xl:mt-16 "}>
                     <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
                         <TabsList className={"h-10 rounded-full"}>
                             {
