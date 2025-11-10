@@ -93,17 +93,19 @@ const GeneralLinkBtn = (props: Props) => {
     // )
 
     return (
-        <Button className={classnames([renderCls(), className])}>
+        <>
             {
                 isLink ? (
                     <a href={rotatePath()}
                        target={"_blank"}
-                       className={classnames(["flex justify-center items-center", {
+                       className={classnames(["flex justify-center rounded-full items-center", {
                            "flex-col": children
-                       }])}
+                       }, renderCls(), className])}
                        title={text}
                     >
-                        {text}
+                        <Button className={classnames(renderCls(), className)}>
+                            {text}
+                        </Button>
                         {children}
                         {theme === "share" && (
                             <ExternalLink className={"ml-1"}/>
@@ -112,12 +114,14 @@ const GeneralLinkBtn = (props: Props) => {
                 ) : (
                     <Link
                         href={rotatePath()}
-                        className={classnames(["flex justify-center items-center", {
+                        className={classnames(["flex justify-center rounded-full items-center", {
                             "flex-col": children
-                        }])}
+                        }], renderCls(), className)}
                         title={text}
                     >
-                        { text }
+                        <Button className={classnames(renderCls(), className)}>
+                            {text}
+                        </Button>
                         { children }
                         { theme === "share" && (
                             <ExternalLink className={"ml-1"}/>
@@ -125,7 +129,7 @@ const GeneralLinkBtn = (props: Props) => {
                     </Link>
                 )
             }
-        </Button>
+        </>
     )
 }
 
