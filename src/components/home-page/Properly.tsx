@@ -223,6 +223,24 @@ const Properly = () => {
                     </Typography>
                 </motion.div>
 
+                <div className={"flex justify-center mt-4 xl:mt-16"}>
+                    <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
+                        <TabsList className={"h-10 rounded-full"}>
+                            {
+                                tabsList.map((d, i) => (
+                                    <TabsTrigger
+                                        value={d.value}
+                                        key={i}
+                                        className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
+                                    >
+                                        {d.label}
+                                    </TabsTrigger>
+                                ))
+                            }
+                        </TabsList>
+                    </Tabs>
+                </div>
+
                 <div className={"mt-8 xl:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4 lg:gap-12"}>
                         <div className={"col-span-12 lg:col-span-3"}>
@@ -236,7 +254,8 @@ const Properly = () => {
                                 {t(`left.${tabActive}.desc`)}
                             </Typography>
 
-                            <div className={"mt-6 lg:mt-12 justify-center lg:justify-start flex-row lg:flex-col hidden lg:flex"}>
+                            <div
+                                className={"mt-6 lg:mt-12 justify-center lg:justify-start flex-row lg:flex-col hidden lg:flex"}>
                                 <div>
                                     <GeneralLinkBtn
                                         text={CommonT("register")}
@@ -283,25 +302,6 @@ const Properly = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div className={"flex justify-center mt-4 xl:mt-20"}>
-                    <Tabs value={tabActive} onValueChange={handleChangeTabActive}>
-                        <TabsList className={"h-10 rounded-full"}>
-                            {
-                                tabsList.map((d, i) => (
-                                    <TabsTrigger
-                                        value={d.value}
-                                        key={i}
-                                        className={"data-[state=active]:bg-primary cursor-pointer data-[state=active]:text-primary-foreground"}
-                                    >
-                                        { d.label }
-                                    </TabsTrigger>
-                                ))
-                            }
-                        </TabsList>
-                    </Tabs>
                 </div>
             </Container>
         </section>
