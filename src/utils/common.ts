@@ -68,14 +68,24 @@ export function formatMaxFixed(num: number | string, last = 8) {
 
 export const languageText = (lang: string) => {
     switch (lang) {
-        case "zh":
-            return "简体中文";
         case "en":
             return "English";
+        case "zh-cn":
+            return "中文简体"
+        case "zh-tw":
+            return "中文繁體"
         case "ja":
             return "日本語";
         case "ko":
             return "한국어";
+        case "th":
+            return "ภาษาไทย"
+        case "ms":
+            return "Melayu"
+        case "id":
+            return "Indonesian"
+        case "vi":
+            return "Tiếng Việt"
         default:
             return "English";
     }

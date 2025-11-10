@@ -17,7 +17,7 @@ import { MoveRight, Globe, AlignJustify, X, ChevronRight, ArrowLeft } from 'luci
 import React, { useState, useEffect, useRef } from "react";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
-
+import { languageText } from "@/utils/common"
 
 const PackageMenuItem = (props: any) => {
     const [open, setOpen] = useState(false);
@@ -148,33 +148,9 @@ const PackageMenuItem = (props: any) => {
     ))
 }
 
-const Navigation = () => {
-    const locale = useLocale();
-    const router = useRouter();
-    const pathname = usePathname();
+export const navigationMap = () => {
     const t = useTranslations("Navigation");
-    const CommonT = useTranslations("Common");
-    const [open, setOpen] = useState(false);
-    const [drawerOpen, setDrawerOpen] = useState(false);
-    const [langOpen, setLangOpen] = useState(false);
-    const [listOpen, setListOpen] = useState(false);
-
-    const [responsiveList, setResponsiveList] = useState<any>([]);
-
-    const rootRef = useRef<HTMLDivElement | null>(null);
-
-    const localAry = [
-        { value: "en", label: "English", country: t("countries.en") },
-        { value: "zh-cn", label: "中文简体", country: t("countries.zh-cn") },
-        // { value: "zh-tw", label: "中文繁體", country: t("countries.zh-tw") },
-        { value: "ja", label: "日本語", country: t("countries.ja") },
-        // { value: "ko", label: "한국어", country: t("countries.ko") },
-        // { value: "th", label: "ภาษาไทย", country: t("countries.th") },
-        // { value: "ms", label: "Melayu", country: t("countries.ms") },
-        // { value: "id", label: "Indonesian", country: t("countries.id") },
-        // { value: "vi", label: "Tiếng Việt", country: t("countries.vi") },
-    ];
-
+    const locale = useLocale();
     const renderHelpCenterLink = () => {
         switch (locale) {
             case "en" :
@@ -197,8 +173,7 @@ const Navigation = () => {
                 return "https://support.afttmarkets.com/hc/en-au";
         }
     }
-
-    const ary = [
+    return [
         {
             children: [
                 // 产品
@@ -470,6 +445,36 @@ const Navigation = () => {
             ]
         }
     ]
+}
+
+const Navigation = () => {
+    const locale = useLocale();
+    const router = useRouter();
+    const pathname = usePathname();
+    const t = useTranslations("Navigation");
+    const CommonT = useTranslations("Common");
+    const [open, setOpen] = useState(false);
+    const [drawerOpen, setDrawerOpen] = useState(false);
+    const [langOpen, setLangOpen] = useState(false);
+    const [listOpen, setListOpen] = useState(false);
+
+    const [responsiveList, setResponsiveList] = useState<any>([]);
+
+    const rootRef = useRef<HTMLDivElement | null>(null);
+
+    const localAry = [
+        { value: "en", label: "English", country: t("countries.en") },
+        { value: "zh-cn", label: "中文简体", country: t("countries.zh-cn") },
+        // { value: "zh-tw", label: "中文繁體", country: t("countries.zh-tw") },
+        { value: "ja", label: "日本語", country: t("countries.ja") },
+        // { value: "ko", label: "한국어", country: t("countries.ko") },
+        // { value: "th", label: "ภาษาไทย", country: t("countries.th") },
+        // { value: "ms", label: "Melayu", country: t("countries.ms") },
+        // { value: "id", label: "Indonesian", country: t("countries.id") },
+        // { value: "vi", label: "Tiếng Việt", country: t("countries.vi") },
+    ];
+
+    const ary = navigationMap();
 
     const RenderNavigationLogo = () => {
         // switch (locale) {
@@ -484,31 +489,6 @@ const Navigation = () => {
         // }
 
         return "/images/logo/en/logo.png";
-    }
-
-    const getLangText = (lang: string = "en") => {
-        switch (lang) {
-            case "en":
-                return "English";
-            case "zh-cn":
-                return "中文简体"
-            case "zh-tw":
-                return "中文繁體"
-            case "ja":
-                return "日本語";
-            case "ko":
-                return "한국어";
-            case "th":
-                return "ภาษาไทย"
-            case "ms":
-                return "Melayu"
-            case "id":
-                return "Indonesian"
-            case "vi":
-                return "Tiếng Việt"
-            default:
-                return "English";
-        }
     }
 
     const handleToggleLang = ({ key }: any) => {
@@ -552,18 +532,20 @@ const Navigation = () => {
                                             e.preventDefault()
                                             setOpen((prev) => !prev)
                                         }}
-                                        className={"flex justify-center items-center hover:!bg-transparent data-[state=open]:!bg-transparent hover:!text-theme-active data-[state=open]:!text-theme-active"}>
+                                        className={"flex justify-center items-center"}>
                                         <div className={"flex items-center"}>
                                             <Globe/>
                                             <Typography variant={"p"} className={"ml-1"}>
-                                                {getLangText(locale)}
+                                                {languageText(locale)}
                                             </Typography>
                                         </div>
                                     </NavigationMenuTrigger>
                                     {
                                         open && (
                                             <NavigationMenuContent
-                                                className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}>
+                                                className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}
+                                                onMouseLeave={() => setOpen(false)}
+                                            >
                                                 <div>
                                                     <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-16 gap-y-8 cursor-pointer">
                                                         {
@@ -645,7 +627,7 @@ const Navigation = () => {
                     <div className={"flex"} onClick={() => setLangOpen(true)}>
                         <Globe/>
                         <h2 className="text-base font-semibold ml-2">
-                            {getLangText(locale)}
+                            {languageText(locale)}
                         </h2>
                     </div>
                     <button
@@ -689,7 +671,7 @@ const Navigation = () => {
                     <div className={"flex items-center"}>
                         <Globe/>
                         <h2 className="text-base font-semibold ml-2">
-                            {getLangText(locale)}
+                            {languageText(locale)}
                         </h2>
                     </div>
                     <button

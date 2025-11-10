@@ -18,6 +18,13 @@ import {
     CollapsibleTrigger,
 } from '@/components/ui/collapsible';
 import { Button } from '@/components/ui/button';
+import {
+    Globe,
+    ChevronDown
+} from 'lucide-react';
+import { languageText } from "@/utils/common";
+import {navigationMap} from "@/components/Navigation";
+import { Link } from "@/i18n/navigation"
 
 const LS_KEY = 'aft-footer-expanded';
 
@@ -30,6 +37,9 @@ const Footer = (props: Props) => {
     const [open, setOpen] = React.useState(true);
     const locale = useLocale();
     const { className } = props;
+
+    const navigationAry = navigationMap();
+    console.log(navigationAry)
 
     const RenderTransparentLogo = () => {
         switch (locale) {
@@ -81,7 +91,195 @@ const Footer = (props: Props) => {
             {/*    </div>*/}
             {/*</Collapsible>*/}
             {/*<div className={classNames(["bg-theme-deep-bg pt-10", className])}>*/}
+            {/*    <Container>*/}
+            {/*        <div className={"grid grid-cols-12 gap-4 lg:gap-8 space-y-4 lg:space-y-0"}>*/}
+            {/*            <div className={"col-span-12 lg:col-span-3"}>*/}
+            {/*                <div>*/}
+            {/*                    <Image src={RenderTransparentLogo()} width={208} height={58} alt={"logo"}/>*/}
+            {/*                </div>*/}
+            {/*                <div className={"mt-8"}>*/}
+            {/*                    <div>*/}
+            {/*                        <Typography variant={"muted"} className={"!text-[#999]"}>*/}
+            {/*                            Select region*/}
+            {/*                        </Typography>*/}
+            {/*                    </div>*/}
+            {/*                    <div className={"mt-4 flex items-center !text-white cursor-pointer"}>*/}
+            {/*                        <Globe className={"w-5 h-5"}/>*/}
+            {/*                        <Typography variant={"muted"} className={"!text-white mx-2"}>*/}
+            {/*                            { languageText(locale) }*/}
+            {/*                        </Typography>*/}
+            {/*                        <ChevronDown className={"w-5 h-5"}/>*/}
+            {/*                    </div>*/}
 
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*            <div className={"col-span-12 lg:col-span-3"}>*/}
+            {/*                <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
+            {/*                    {t("contact.title")}*/}
+            {/*                </Typography>*/}
+            {/*                <div className={"!mt-6"}>*/}
+            {/*                    <div className={"flex flex-col"}>*/}
+            {/*                        <div className={"flex items-center"}>*/}
+            {/*                            <Phone size={"20"} className={"!text-[#999] !text-base"}/>*/}
+            {/*                            <a className={"!ml-2 !text-[#999] text-sm"}*/}
+            {/*                               href={"tel:+64 21 0224 7369"}*/}
+            {/*                            >*/}
+            {/*                                (NZ) +64 21 0224 7369*/}
+            {/*                            </a>*/}
+            {/*                        </div>*/}
+            {/*                        <Typography className={"!text-[#999] !text-xs !ml-6 !mt-1"}>*/}
+            {/*                            {t("contact.phone")}*/}
+            {/*                        </Typography>*/}
+            {/*                    </div>*/}
+
+            {/*                    <div className={"flex flex-col mt-6"}>*/}
+            {/*                        <div className={"flex items-center"}>*/}
+            {/*                            <Mail size={"20"} className={"!text-[#999]"}/>*/}
+            {/*                            <a className={"!ml-2 !text-[#999] text-sm hover:!text-active"}*/}
+            {/*                               href={"mailto:global@afttmarkets.com"}*/}
+            {/*                            >*/}
+            {/*                                global@afttmarkets.com*/}
+            {/*                            </a>*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*            <div className={"col-span-12 lg:col-span-3"}>*/}
+            {/*                <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
+            {/*                    {t("login.title")}*/}
+            {/*                </Typography>*/}
+            {/*                <div className={"flex flex-col !mt-6"}>*/}
+            {/*                    <a className={"!text-[#999] text-sm"}*/}
+            {/*                       href={"https://client.afttmarkets.com"}*/}
+            {/*                       target={"_blank"}*/}
+            {/*                    >*/}
+            {/*                        {t("login.mt5")}*/}
+            {/*                    </a>*/}
+            {/*                    <a className={"!text-[#999] text-sm !mt-6"}*/}
+            {/*                       href={"https://client.afttmarkets.com/register"}*/}
+            {/*                       target={"_blank"}*/}
+            {/*                    >*/}
+            {/*                        {t("login.partner")}*/}
+            {/*                    </a>*/}
+            {/*                    <a className={"!text-[#999] text-sm !mt-6"}*/}
+            {/*                       href={"https://client.afttmarkets.com/register"}*/}
+            {/*                       target={"_blank"}*/}
+            {/*                    >*/}
+            {/*                        法律条款*/}
+            {/*                    </a>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*            <div className={"col-span-12 lg:col-span-3"}>*/}
+            {/*                <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
+            {/*                    {t("join-us.title")}*/}
+            {/*                </Typography>*/}
+            {/*                <div className={"mt-6"}>*/}
+            {/*                    <Typography variant={"muted"} className={"!text-[#999]"}>*/}
+            {/*                        Discover AFT on Social Media*/}
+            {/*                    </Typography>*/}
+            {/*                </div>*/}
+            {/*                <div className={"flex flex-col !mt-6"}>*/}
+            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
+            {/*                       target={"_blank"}*/}
+            {/*                       className={"flex items-center"}*/}
+            {/*                    >*/}
+            {/*                        <img src="/images/footer/facebook.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
+            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
+            {/*                            Facebook*/}
+            {/*                        </Typography>*/}
+            {/*                    </a>*/}
+            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
+            {/*                       target={"_blank"}*/}
+            {/*                       className={"flex items-center mt-5"}*/}
+            {/*                    >*/}
+            {/*                        <img src="/images/footer/instagram.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
+            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
+            {/*                            Instagram*/}
+            {/*                        </Typography>*/}
+            {/*                    </a>*/}
+            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
+            {/*                       target={"_blank"}*/}
+            {/*                       className={"flex items-center mt-5"}*/}
+            {/*                    >*/}
+            {/*                        <img src="/images/footer/linkedln.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
+            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
+            {/*                            Linkedln*/}
+            {/*                        </Typography>*/}
+            {/*                    </a>*/}
+            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
+            {/*                       target={"_blank"}*/}
+            {/*                       className={"flex items-center mt-5"}*/}
+            {/*                    >*/}
+            {/*                        <img src="/images/footer/linkedln.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
+            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
+            {/*                            Reddit*/}
+            {/*                        </Typography>*/}
+            {/*                    </a>*/}
+            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
+            {/*                       target={"_blank"}*/}
+            {/*                       className={"flex items-center mt-5"}*/}
+            {/*                    >*/}
+            {/*                        <img src="/images/footer/x.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
+            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
+            {/*                            X(Twitter)*/}
+            {/*                        </Typography>*/}
+            {/*                    </a>*/}
+            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
+            {/*                       target={"_blank"}*/}
+            {/*                       className={"flex items-center mt-5"}*/}
+            {/*                    >*/}
+            {/*                        <img src="/images/footer/youtube.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
+            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
+            {/*                            Youtube*/}
+            {/*                        </Typography>*/}
+            {/*                    </a>*/}
+            {/*                    <a*/}
+            {/*                        href={"https://client.afttmarkets.com/register"}*/}
+            {/*                        target={"_blank"}*/}
+            {/*                        className={"flex items-center mt-5"}*/}
+            {/*                    >*/}
+            {/*                        <img src="/images/footer/discord.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
+            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
+            {/*                            Discord*/}
+            {/*                        </Typography>*/}
+            {/*                    </a>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <Separator className={"bg-[#5C6379] my-8"}/>*/}
+            {/*        <div>*/}
+            {/*            <div className={"grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8"}>*/}
+            {/*                {*/}
+            {/*                    navigationAry[0].children.map((d, i) => (*/}
+            {/*                        <div className={"space-y-8"} key={i}>*/}
+            {/*                            {*/}
+            {/*                                d.children.map((dItem, dIndex) => (*/}
+            {/*                                    <div key={dIndex}>*/}
+            {/*                                        <div>*/}
+            {/*                                            <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
+            {/*                                                { dItem.title }*/}
+            {/*                                            </Typography>*/}
+            {/*                                            <div className={"flex flex-col"}>*/}
+            {/*                                                {*/}
+            {/*                                                    dItem.ul.map((uItem, uIndex) => (*/}
+            {/*                                                        <Link href={uItem.path} className={"mt-6"} key={uIndex}>*/}
+            {/*                                                            <Typography variant={"muted"} className={"!text-[#999]"}>*/}
+            {/*                                                                { uItem.label }*/}
+            {/*                                                            </Typography>*/}
+            {/*                                                        </Link>*/}
+            {/*                                                    ))*/}
+            {/*                                                }*/}
+            {/*                                            </div>*/}
+            {/*                                        </div>*/}
+            {/*                                    </div>*/}
+            {/*                                ))*/}
+            {/*                            }*/}
+            {/*                        </div>*/}
+            {/*                    ))*/}
+            {/*                }*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </Container>*/}
             {/*</div>*/}
             <div className={classNames(["bg-theme-deep-bg pt-10", className])}>
                 <Container>
@@ -90,7 +288,8 @@ const Footer = (props: Props) => {
                     </div>
                     <div>
                         <div className={"grid grid-cols-12 gap-6"}>
-                            <div className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-4 xl:col-span-4"}>
+                            <div
+                                className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-4 xl:col-span-4"}>
                                 <Separator className={"!bg-[#5C6379] my-4"}/>
                                 <div className={"flex flex-col"}>
                                     <Typography className={"!text-white !text-base !font-medium"}>
@@ -141,14 +340,16 @@ const Footer = (props: Props) => {
                                 </div>
                                 <div className={"flex flex-col !mt-4"}>
                                     <div className={"flex !items-center"}>
-                                        <Image width={34} height={22} className={"!w-[34px] !h-[22px]"} alt={"australia"}
+                                        <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}
+                                               alt={"australia"}
                                                src={"/images/footer/australia.png"}/>
                                         <Typography className={"!ml-4 !text-white !text-base"}>
                                             {t("future.australia")}
                                         </Typography>
                                     </div>
                                     <div className={"flex !items-center !mt-4"}>
-                                        <Image width={34} height={22} className={"!w-[34px] !h-[22px]"} alt={"australia"}
+                                        <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}
+                                               alt={"australia"}
                                                src={"/images/footer/vin.png"}/>
                                         <Typography className={"!ml-4 !text-white !text-base"}>
                                             {t("future.vin")}
@@ -167,8 +368,7 @@ const Footer = (props: Props) => {
                     </div>
                     <div className={"flex flex-col"}>
                         <div className={"grid grid-cols-12 gap-6"}>
-                            <div
-                                className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-4 xl:col-span-4"}>
+                            <div className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-4 xl:col-span-4"}>
                                 <Separator className={"!bg-[#5C6379] my-4"}/>
                                 <div className={"flex flex-col"}>
                                     <Typography className={"!text-white !text-base !font-medium"}>
@@ -188,8 +388,7 @@ const Footer = (props: Props) => {
                                     </a>
                                 </div>
                             </div>
-                            <div
-                                className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-8 xl:col-span-8"}>
+                            <div className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-8 xl:col-span-8"}>
                                 <Separator className={"!bg-[#5C6379] my-4"}/>
                                 <div className={"flex flex-col"}>
                                     <Typography className={"!text-white !text-base !font-medium"}>
