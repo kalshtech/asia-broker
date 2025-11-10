@@ -1,17 +1,18 @@
 "use client";
 import React from "react";
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Pagination, Autoplay} from 'swiper/modules';
+import {Pagination, Autoplay, Navigation} from 'swiper/modules';
 import Container from "@/components/Container";
 import {useTranslations} from "next-intl";
 import {Typography} from "@/components/ui/typography";
 import classnames from "classnames";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
+import {CircleChevronLeft, CircleChevronRight} from "lucide-react";
 
 const CustomBanner = ({ ary }: { ary: any }) => {
     const t = useTranslations("Common");
     return (
-        <div className={"h-120 lg:h-[632px]"}>
+        <div className={"h-120 lg:h-[632px] relative"}>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -23,7 +24,11 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Autoplay, Pagination]}
+                navigation={{
+                    prevEl: ".home-swiper-prev",
+                    nextEl: ".home-swiper-next",
+                }}
+                modules={[Autoplay, Pagination, Navigation]}
                 className="en-my-swiper h-full"
             >
                 {
@@ -93,6 +98,8 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                     ))
                 }
             </Swiper>
+            <CircleChevronLeft className={"home-swiper-prev w-10 h-10 text-theme-active absolute left-10 m-auto top-0 bottom-0 cursor-pointer z-1000"}/>
+            <CircleChevronRight className={"home-swiper-next w-10 h-10 text-theme-active absolute right-10 m-auto top-0 bottom-0 cursor-pointer z-1000"}/>
         </div>
     )
 }
