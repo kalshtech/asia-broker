@@ -93,19 +93,17 @@ const GeneralLinkBtn = (props: Props) => {
     // )
 
     return (
-        <>
+        <Button className={classnames([renderCls(), className])}>
             {
                 isLink ? (
                     <a href={rotatePath()}
                        target={"_blank"}
-                       className={classnames(["rounded-full", {
+                       className={classnames(["flex justify-center items-center", {
                            "flex-col": children
-                       }, className])}
+                       }])}
                        title={text}
                     >
-                        <Button className={classnames(renderCls(), "w-max", className)}>
-                            {text}
-                        </Button>
+                        {text}
                         {children}
                         {theme === "share" && (
                             <ExternalLink className={"ml-1"}/>
@@ -114,22 +112,20 @@ const GeneralLinkBtn = (props: Props) => {
                 ) : (
                     <Link
                         href={rotatePath()}
-                        className={classnames(["rounded-full", {
+                        className={classnames(["flex justify-center items-center", {
                             "flex-col": children
-                        }, className])}
+                        }])}
                         title={text}
                     >
-                        <Button className={classnames(renderCls(), "w-max")}>
-                            {text}
-                        </Button>
-                        {children}
-                        {theme === "share" && (
+                        { text }
+                        { children }
+                        { theme === "share" && (
                             <ExternalLink className={"ml-1"}/>
-                        )}
+                        ) }
                     </Link>
                 )
             }
-        </>
+        </Button>
     )
 }
 

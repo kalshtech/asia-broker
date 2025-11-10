@@ -9,7 +9,6 @@ import { Navigation } from "swiper/modules";
 import Container from "@/components/Container";
 import { Link } from "@/i18n/navigation";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
-import classnames from "classnames";
 
 type ItemProps = {
     ImageNumber: string | number;
@@ -30,9 +29,9 @@ const fadeInUp: Variants = {
 
 const SwiperSlideItem = (props: ItemProps) => {
     return (
-        <div className={`${props.url} bg-center bg-cover w-auto h-100 rounded-lg`} >
-            <div className={"flex flex-col h-full cursor-pointer justify-end relative p-4 xl:px-6 xl:py-8"}>
-                <Link href={props.path} target={"_blank"}>
+        <Link href={props.path} target={"_blank"}>
+            <div className={`${props.url} bg-center bg-cover w-auto h-100 rounded-lg`}>
+                <div className={"flex flex-col h-full cursor-pointer justify-end relative p-4 xl:px-6 xl:py-8"}>
                     <div className={""}>
                         <Typography variant={"h6"} className={"font-medium !text-white transition"}>
                             {props.title}
@@ -46,9 +45,9 @@ const SwiperSlideItem = (props: ItemProps) => {
                             {props.description}
                         </Typography>
                     </div>
-                </Link>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

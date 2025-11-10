@@ -98,42 +98,14 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                     ))
                 }
             </Swiper>
-            <CircleChevronLeft className={"home-swiper-prev w-10 h-10 text-theme-active absolute left-10 m-auto top-0 bottom-0 cursor-pointer z-1000"}/>
-            <CircleChevronRight className={"home-swiper-next w-10 h-10 text-theme-active absolute right-10 m-auto top-0 bottom-0 cursor-pointer z-1000"}/>
+            <CircleChevronLeft className={"home-swiper-prev w-10 h-10 text-[#999999] absolute left-10 m-auto top-0 bottom-0 cursor-pointer z-1000"}/>
+            <CircleChevronRight className={"home-swiper-next w-10 h-10 text-[#999999] absolute right-10 m-auto top-0 bottom-0 cursor-pointer z-1000"}/>
         </div>
     )
 }
 
 const EnglishSwiper = () => {
     const t = useTranslations("Pages.home.swiper");
-
-    const mobileAry = [
-        {
-            urlImage: "bg-[url('/images/home/swiper1.webp')]",
-            theme: "dark",
-            title: t("1.title1"),
-            desc1: t("1.description1"),
-            desc2: t("1.description2"),
-            isMobileShow: true
-        },
-        {
-            urlImage: "bg-[url('/images/home/swiper2.webp')]",
-            theme: "dark",
-            title: t("2.title1"),
-            desc1: t("2.title2"),
-            desc2: t("2.description1"),
-            isMobileShow: true
-        },
-        {
-            urlImage: "bg-[url('/images/home/swiper4.webp')]",
-            theme: "dark",
-            title: t("4.title1"),
-            desc1: t("4.title2"),
-            desc2: t("4.description1"),
-            isMobileShow: true
-        },
-    ];
-
     const ary = [
         {
             urlImage: "bg-[url('/images/home/swiper1.webp')]",
@@ -141,7 +113,6 @@ const EnglishSwiper = () => {
             title: t("1.title1"),
             desc1: t("1.description1"),
             desc2: t("1.description2"),
-            isMobileShow: true
         },
         {
             urlImage: "bg-[url('/images/home/swiper2.webp')]",
@@ -149,7 +120,6 @@ const EnglishSwiper = () => {
             title: t("2.title1"),
             desc1: t("2.title2"),
             desc2: t("2.description1"),
-            isMobileShow: true
         },
         {
             urlImage: "bg-[url('/images/home/swiper3.webp')]",
@@ -163,43 +133,12 @@ const EnglishSwiper = () => {
             theme: "dark",
             title: t("4.title1"),
             desc1: t("4.title2"),
-            desc2: t("4.description1"),
-            isMobileShow: true
-        },
-        {
-            urlImage: "bg-[url('/images/home/swiper5.webp')]",
-            theme: "dark",
-            title: t("5.title1"),
-            desc1: t("5.title2"),
-            desc2: t("5.description1")
-        },
-        {
-            urlImage: "bg-[url('/images/home/swiper6.webp')]",
-            theme: "dark",
-            title: t("6.title1"),
-            desc1: t("6.title2"),
-            desc2: t("6.description1")
-        },
-        {
-            urlImage: "bg-[url('/images/home/swiper7.webp')]",
-            theme: "light",
-            title: t("7.title1"),
-            desc1: t("7.title2"),
-            desc2: t("7.description1")
-        },
+            desc2: t("4.description1")
+        }
     ];
 
-
-
     return (
-        <>
-            <div className={"xl:hidden"}>
-                <CustomBanner ary={mobileAry}/>
-            </div>
-            <div className={"hidden xl:block h-[632px]"}>
-                <CustomBanner ary={ary}/>
-            </div>
-        </>
+        <CustomBanner ary={ary}/>
     )
 }
 
