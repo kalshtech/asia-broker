@@ -96,41 +96,37 @@ const GeneralLinkBtn = (props: Props) => {
         <>
             {
                 isLink ? (
-                    <div>
-                        <a href={rotatePath()}
-                           target={"_blank"}
-                           className={classnames(["rounded-full", {
-                               "flex-col": children
-                           }])}
-                           title={text}
-                        >
-                            <Button className={classnames(renderCls(), "w-max", className)}>
-                                {text}
-                            </Button>
-                            {children}
-                            {theme === "share" && (
-                                <ExternalLink className={"ml-1"}/>
-                            )}
-                        </a>
-                    </div>
+                    <a href={rotatePath()}
+                       target={"_blank"}
+                       className={classnames(["rounded-full", {
+                           "flex-col": children
+                       }, className])}
+                       title={text}
+                    >
+                        <Button className={classnames(renderCls(), "w-max", className)}>
+                            {text}
+                        </Button>
+                        {children}
+                        {theme === "share" && (
+                            <ExternalLink className={"ml-1"}/>
+                        )}
+                    </a>
                 ) : (
-                   <div>
-                       <Link
-                           href={rotatePath()}
-                           className={classnames(["rounded-full", {
-                               "flex-col": children
-                           }])}
-                           title={text}
-                       >
-                           <Button className={classnames(renderCls(), "w-max", className)}>
-                               {text}
-                           </Button>
-                           {children}
-                           {theme === "share" && (
-                               <ExternalLink className={"ml-1"}/>
-                           ) }
-                       </Link>
-                   </div>
+                    <Link
+                        href={rotatePath()}
+                        className={classnames(["rounded-full", {
+                            "flex-col": children
+                        }, className])}
+                        title={text}
+                    >
+                        <Button className={classnames(renderCls(), "w-max")}>
+                            {text}
+                        </Button>
+                        {children}
+                        {theme === "share" && (
+                            <ExternalLink className={"ml-1"}/>
+                        )}
+                    </Link>
                 )
             }
         </>

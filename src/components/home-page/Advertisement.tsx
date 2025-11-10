@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import { motion, Variants } from "framer-motion";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 import { Navigation } from "swiper/modules";
 import Container from "@/components/Container";
-import { Link } from "@/i18n/navigation"
+import { Link } from "@/i18n/navigation";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
+import classnames from "classnames";
 
 type ItemProps = {
     ImageNumber: string | number;
@@ -53,6 +54,7 @@ const SwiperSlideItem = (props: ItemProps) => {
 
 const Advertisement = () => {
     const t = useTranslations("Pages.home.advertisement");
+    const locale = useLocale();
 
     const ary = [
         {
@@ -102,11 +104,9 @@ const Advertisement = () => {
                     viewport={{once: true, amount: 0.5}}
                 >
                    <div className={"flex justify-center items-end"}>
-                       <Typography variant={"h1"} className={"text-center !text-theme-active"}>
-                           0
-                       </Typography>
                        <Typography variant={"h3"} className={"text-center ml-2"}>
-                           {t("title")}
+                           <span className={"text-theme-active text-4xl lg:text-6xl mr-2"}>0</span>
+                           { t("title") }
                        </Typography>
                    </div>
                 </motion.div>

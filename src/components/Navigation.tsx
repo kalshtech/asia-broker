@@ -602,7 +602,7 @@ const Navigation = () => {
                         <GeneralLinkBtn
                             text={t("login")}
                             theme={"active-hollow"}
-                            className={"mr-4 px-6 ml-4 lg:px-8"}
+                            className={"mr-2 ml-4"}
                             tradeType={"login"}
                             isLink
                         />
