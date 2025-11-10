@@ -1,10 +1,12 @@
 "use client";
 import * as React from 'react'
 import { motion, Variants } from "framer-motion";
-import { useTranslations } from "next-intl";
+import {useLocale, useTranslations} from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import {Button} from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
+
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -17,10 +19,53 @@ const fadeInUp: Variants = {
 
 const Methods = () => {
     const t = useTranslations("Pages.corporation.contact.methods");
+    const locale = useLocale();
+
+    const renderHelpCenterLink = () => {
+        switch (locale) {
+            case "en" :
+                return "https://support.afttmarkets.com/hc/en-au";
+            case "zh-cn":
+                return "https://support.afttmarkets.com/hc/zh-sg";
+            case "zh-tw":
+                return "https://support.afttmarkets.com/hc/zh-tw";
+            case "ja":
+                return "https://support.afttmarkets.com/hc/ja-jp";
+            case "th":
+                return "https://support.afttmarkets.com/hc/th";
+            case "ms":
+                return "https://support.afttmarkets.com/hc/ms";
+            case "id":
+                return "https://support.afttmarkets.com/hc/id-id";
+            case "vi":
+                return "https://support.afttmarkets.com/hc/vi";
+            default:
+                return "https://support.afttmarkets.com/hc/en-au";
+        }
+    }
+
     const ary = [
-        { imageUrl: "/images/corporation/contact-methods1.png", title: t("row.col1.title"), desc: t("row.col1.desc"), btnText: t("row.col1.btnText") },
-        { imageUrl: "/images/corporation/contact-methods2.png", title: t("row.col2.title"), desc: t("row.col2.desc"), btnText: t("row.col2.btnText") },
-        { imageUrl: "/images/corporation/contact-methods3.png", title: t("row.col3.title"), desc: t("row.col3.desc"), btnText: t("row.col2.btnText") },
+        {
+            imageUrl: "/images/corporation/contact-methods1.png",
+            title: t("row.col1.title"),
+            desc: t("row.col1.desc"),
+            btnText: t("row.col1.btnText"),
+            path: renderHelpCenterLink()
+        },
+        {
+            imageUrl: "/images/corporation/contact-methods2.png",
+            title: t("row.col2.title"),
+            desc: t("row.col2.desc"),
+            btnText: t("row.col2.btnText"),
+            path: ""
+        },
+        {
+            imageUrl: "/images/corporation/contact-methods3.png",
+            title: t("row.col3.title"),
+            desc: t("row.col3.desc"),
+            btnText: t("row.col2.btnText"),
+            path: ""
+        },
     ];
 
     return (
@@ -60,10 +105,12 @@ const Methods = () => {
                                         </Typography>
                                     </div>
                                     <div className={"mt-8 lg:mt-16"}>
-                                        <Button
-                                            className={"bg-theme-active hover:bg-theme-active"}>
-                                            {item.btnText}
-                                        </Button>
+                                        <GeneralLinkBtn
+                                            text={item.btnText}
+                                            theme={"active-solid"}
+                                            isLink
+                                            path={item.path}
+                                        />
                                     </div>
                                 </div>
                             ))
