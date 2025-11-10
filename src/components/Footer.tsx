@@ -39,8 +39,7 @@ const Footer = (props: Props) => {
     const { className } = props;
 
     const navigationAry = navigationMap();
-    console.log(navigationAry)
-
+    
     const RenderTransparentLogo = () => {
         switch (locale) {
             case "ja":
