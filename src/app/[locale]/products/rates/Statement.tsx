@@ -54,7 +54,7 @@ const Statement = () => {
                                 >
                                     <img src={item.imageUrl} className={"w-10 h-10 object-cover"} alt=""/>
                                     <Typography
-                                        variant={"h3"}
+                                        variant={"h4"}
                                         className={"font-medium my-6"}
                                     >
                                         {item.title}

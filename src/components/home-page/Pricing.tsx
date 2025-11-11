@@ -12,6 +12,15 @@ function Counter({from = 10, to = 0, duration = 1.2, decimals = 0, trigger}: { f
     return <span ref={el} className={"text-2xl text-[#3967FF]"}>{from.toFixed ? from.toFixed(decimals) : from}</span>
 }
 
+import dynamic from 'next/dynamic';
+const RealtimeCandleChart = dynamic(() => import('@/components/charts/RealtimeChart'), { ssr: false });
+
+function ClientBlock() {
+    return (
+        <RealTimeUpdate />
+    );
+}
+
 const EnglishPricing = () => {
     const t = useTranslations("Pages.home.pricing");
     const CommonT = useTranslations("Common");
@@ -124,8 +133,8 @@ const EnglishPricing = () => {
                             </div>
                         </div>
                         <div className={"col-span-12 xl:col-span-4"}>
-                            <div className={"invisible lg:visible h-0 xl:h-full bg-black px-4 py-20 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)]"}>
-                                <RealTimeUpdate/>
+                            <div className={"invisible lg:visible h-0 xl:h-full bg-black px-4 py-16 rounded-lg shadow-[10px_10px_20px_0px_rgba(0,0,0,0.3)]"}>
+                                <ClientBlock/>
                             </div>
                         </div>
                         <div className={"col-span-12 xl:col-span-4"}>

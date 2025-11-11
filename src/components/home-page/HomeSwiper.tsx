@@ -130,7 +130,7 @@ const EnglishSwiper = () => {
         },
         {
             urlImage: "bg-[url('/images/home/swiper3.webp')]",
-            theme: "dark",
+            theme: "light",
             title: t("4.title1"),
             desc1: t("4.title2"),
             desc2: t("4.description1")
