@@ -90,3 +90,12 @@ export const languageText = (lang: string) => {
             return "English";
     }
 }
+
+export function formatAmount(value: number | string, decimals = 3): string {
+    const num = Number(value);
+    if (isNaN(num)) return "-";
+    return num.toLocaleString("en-US", {
+        minimumFractionDigits: decimals,
+        maximumFractionDigits: decimals,
+    });
+}

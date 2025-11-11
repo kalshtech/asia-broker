@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import Container from "@/components/Container";
 import { Slider } from "@/components/ui/slider"
+import { formatAmount } from "@/utils/common";
 
 const total = 500000;
 
@@ -100,7 +101,7 @@ const MockCalculator = (props: Props) => {
                                     variant={"h5"}
                                     className={"!text-white font-normal mt-4"}
                                 >
-                                    USD ${margin}
+                                    USD ${formatAmount(margin)}
                                 </Typography>
                                 <Typography
                                     variant={"muted"}
