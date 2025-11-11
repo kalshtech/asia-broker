@@ -121,9 +121,9 @@ const Footer = (props: Props) => {
             {/*                        <div className={"flex items-center"}>*/}
             {/*                            <Phone size={"20"} className={"!text-[#999] !text-base"}/>*/}
             {/*                            <a className={"!ml-2 !text-[#999] text-sm"}*/}
-            {/*                               href={"tel:+64 21 0224 7369"}*/}
+            {/*                               href={"tel:+61 042 047 1933"}*/}
             {/*                            >*/}
-            {/*                                (NZ) +64 21 0224 7369*/}
+            {/*                                (AU) +61 042 047 1933*/}
             {/*                            </a>*/}
             {/*                        </div>*/}
             {/*                        <Typography className={"!text-[#999] !text-xs !ml-6 !mt-1"}>*/}
@@ -298,9 +298,9 @@ const Footer = (props: Props) => {
                                         <div className={"flex items-center"}>
                                             <Phone size={"20"} className={"!text-white !text-base"}/>
                                             <a className={"!ml-2 !text-white !text-base hover:!text-active"}
-                                               href={"tel:+64 21 0224 7369"}
+                                               href={"tel:+61 042 047 1933"}
                                             >
-                                                (NZ) +64 21 0224 7369
+                                                (AU) +61 042 047 1933
                                             </a>
                                         </div>
                                         <Typography className={"!text-white !text-xs !ml-6 !mt-1"}>

@@ -282,7 +282,7 @@ const FeeCalculator = () => {
                         <Typography variant={"muted"}>
                             {t("form.result")}({`${formData.base}`}):
                         </Typography>
-                        <div className={"bg-white p-10 border rounded-lg mt-4"}>
+                        <div className={"bg-white p-6 border rounded-lg mt-4"}>
                             <Typography
                                 variant={"h3"}
                                 className={"font-medium"}

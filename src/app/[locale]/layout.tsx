@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Asis Future trading",
-  description: "Asis Future trading",
+  title: "Asia Future trading",
+  description: "Asia Future trading",
 };
 
 type Props = {

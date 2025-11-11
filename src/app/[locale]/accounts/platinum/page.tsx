@@ -134,7 +134,7 @@ export default async function Page() {
             />
             <Exclusive/>
             <Environment/>
-            <Credit number={"5,000"} className={"bg-gradient-to-b from-[#FFFFFF] to-[#D3C5B6]"} typeText={t("credit.account")} />
+            <Credit number={"3,000"} className={"bg-gradient-to-b from-[#FFFFFF] to-[#D3C5B6]"} typeText={t("credit.account")} />
             <Support/>
             <Guide
                 title={t("guide.title")}
