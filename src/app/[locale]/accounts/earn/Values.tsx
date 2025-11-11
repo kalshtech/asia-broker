@@ -10,11 +10,11 @@ const Values = () => {
             <div className={"grid grid-cols-12"}>
                 <div className={"mx-8 flex flex-col justify-center items-center col-span-12 lg:col-span-6"}>
                     <Typography variant={"h3"} className={"text-center"}>
-                        {t("title")}
+                        {t("title")}1111
                     </Typography>
                     <Typography
                         variant={"h4"}
-                        className={"font-normal mt-10 leading-[40px]"}
+                        className={"font-normal mt-10 max-w-4xl leading-[40px]"}
                     >
                         {t("desc")}
                     </Typography>
