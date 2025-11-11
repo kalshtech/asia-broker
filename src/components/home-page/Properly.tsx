@@ -185,14 +185,6 @@ const Properly = () => {
                         <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
                         <Typography variant={"muted"}>{t("right.swiper3.4.ul.2")}</Typography>
                     </li>
-                    <li className={"flex items-center mt-1"}>
-                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.3")}</Typography>
-                    </li>
-                    <li className={"flex items-center mt-1"}>
-                        <span className={"w-1 min-w-1 h-1 mr-2 block bg-theme-active-hover rounded-full"}/>
-                        <Typography variant={"muted"}>{t("right.swiper3.4.ul.4")}</Typography>
-                    </li>
                 </ul>
             )
         },

@@ -122,14 +122,14 @@ const EnglishSwiper = () => {
             desc2: t("2.description1"),
         },
         {
-            urlImage: "bg-[url('/images/home/swiper3.webp')]",
-            theme: "light",
+            urlImage: "bg-[url('/images/home/swiper4.webp')]",
+            theme: "dark",
             title: t("3.title1"),
             desc1: t("3.title2"),
             desc2: t("3.description1"),
         },
         {
-            urlImage: "bg-[url('/images/home/swiper4.webp')]",
+            urlImage: "bg-[url('/images/home/swiper3.webp')]",
             theme: "dark",
             title: t("4.title1"),
             desc1: t("4.title2"),
