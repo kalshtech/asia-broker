@@ -54,9 +54,12 @@ const CalendarComponent = () => {
                     {/*    path={"/ideas/professional"}*/}
                     {/*    theme={"active-solid"}*/}
                     {/*/>*/}
-                    <Button className={"ml-4 border bg-transparent hover:bg-transparent"}>
-                        {t("subscribe")}
-                    </Button>
+                    <GeneralLinkBtn
+                        text={t("subscribe")}
+                        className={"ml-4"}
+                        theme={"light-hollow"}
+                        isLink
+                    />
                 </div>
 
                 <div className={"grid grid-cols-12 gap-8 mt-10"}>
