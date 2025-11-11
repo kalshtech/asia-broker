@@ -178,6 +178,10 @@ const Markets = (props: Props) => {
                         onSelect={(opt) => console.log("picked:", opt)}
                         onChange={(value) => handleInput(value)}
                     />
+                    {/*<SimpleSearch*/}
+                    {/*    placeholder={placeholder}*/}
+                    {/*    onSelect={(opt) => console.log("picked:", opt)}*/}
+                    {/*/>*/}
                 </div>
                 {
                     tabList && (
