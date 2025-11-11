@@ -40,7 +40,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                         <div>
                                             <Typography
                                                 variant={"h1"}
-                                                className={classnames(["text-center max-w-3xl mx-auto", {
+                                                className={classnames([{
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
                                                 }])}
@@ -50,7 +50,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
 
                                             <Typography
                                                 variant={"h6"}
-                                                className={classnames(["text-center font-normal mt-6 xl:hidden", {
+                                                className={classnames(["font-normal mt-6 xl:hidden", {
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
                                                 }])}
@@ -60,7 +60,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
 
                                             <Typography
                                                 variant={"h4"}
-                                                className={classnames(["text-center font-normal mt-6 hidden xl:block", {
+                                                className={classnames(["font-normal mt-6 hidden xl:block", {
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
                                                 }])}
@@ -69,14 +69,14 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                             </Typography>
                                             <Typography
                                                 variant={"p"}
-                                                className={classnames(["text-center font-normal mt-6 hidden xl:block", {
+                                                className={classnames(["font-normal mt-6 hidden xl:block", {
                                                     "!text-[#979797]": item.theme === "dark",
                                                     "!text-[#999999]": item.theme === "light",
                                                 }])}
                                             >
                                                 {item.desc2}
                                             </Typography>
-                                            <div className={"mt-16 justify-center flex"}>
+                                            <div className={"mt-16"}>
                                                 <GeneralLinkBtn
                                                     text={t("startTrade")}
                                                     theme={"active-solid"}
@@ -109,14 +109,14 @@ const EnglishSwiper = () => {
     const ary = [
         {
             urlImage: "bg-[url('/images/home/swiper1.webp')]",
-            theme: "dark",
+            theme: "light",
             title: t("1.title1"),
             desc1: t("1.description1"),
             desc2: t("1.description2"),
         },
         {
             urlImage: "bg-[url('/images/home/swiper2.webp')]",
-            theme: "dark",
+            theme: "light",
             title: t("2.title1"),
             desc1: t("2.title2"),
             desc2: t("2.description1"),
