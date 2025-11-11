@@ -40,7 +40,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                         <div>
                                             <Typography
                                                 variant={"h1"}
-                                                className={classnames([{
+                                                className={classnames(["max-w-2xl",{
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
                                                 }])}
@@ -109,28 +109,28 @@ const EnglishSwiper = () => {
     const ary = [
         {
             urlImage: "bg-[url('/images/home/swiper1.webp')]",
-            theme: "light",
+            theme: "dark",
             title: t("1.title1"),
             desc1: t("1.description1"),
             desc2: t("1.description2"),
         },
         {
             urlImage: "bg-[url('/images/home/swiper2.webp')]",
-            theme: "light",
+            theme: "dark",
             title: t("2.title1"),
             desc1: t("2.title2"),
             desc2: t("2.description1"),
         },
         {
-            urlImage: "bg-[url('/images/home/swiper4.webp')]",
+            urlImage: "bg-[url('/images/home/swiper3.webp')]",
             theme: "dark",
             title: t("3.title1"),
             desc1: t("3.title2"),
             desc2: t("3.description1"),
         },
         {
-            urlImage: "bg-[url('/images/home/swiper3.webp')]",
-            theme: "light",
+            urlImage: "bg-[url('/images/home/swiper4.webp')]",
+            theme: "dark",
             title: t("4.title1"),
             desc1: t("4.title2"),
             desc2: t("4.description1")

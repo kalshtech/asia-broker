@@ -250,32 +250,116 @@ const Footer = (props: Props) => {
             {/*            <div className={"grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8"}>*/}
             {/*                {*/}
             {/*                    navigationAry[0].children.map((d, i) => (*/}
-            {/*                        <div className={"space-y-8"} key={i}>*/}
+            {/*                        <div className={""} key={i}>*/}
+            {/*                            <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
+            {/*                                { d.title }*/}
+            {/*                            </Typography>*/}
             {/*                            {*/}
             {/*                                d.children.map((dItem, dIndex) => (*/}
-            {/*                                    <div key={dIndex}>*/}
-            {/*                                        <div>*/}
-            {/*                                            <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
-            {/*                                                { dItem.title }*/}
-            {/*                                            </Typography>*/}
-            {/*                                            <div className={"flex flex-col"}>*/}
-            {/*                                                {*/}
-            {/*                                                    dItem.ul.map((uItem, uIndex) => (*/}
-            {/*                                                        <Link href={uItem.path} className={"mt-6"} key={uIndex}>*/}
-            {/*                                                            <Typography variant={"muted"} className={"!text-[#999]"}>*/}
-            {/*                                                                { uItem.label }*/}
-            {/*                                                            </Typography>*/}
-            {/*                                                        </Link>*/}
-            {/*                                                    ))*/}
-            {/*                                                }*/}
-            {/*                                            </div>*/}
-            {/*                                        </div>*/}
+            {/*                                    <div className={"flex flex-col"} key={dIndex}>*/}
+            {/*                                        {*/}
+            {/*                                            dItem.ul.map((uItem, uIndex) => (*/}
+            {/*                                                <Link href={uItem.path} className={"mt-6"} key={uIndex}>*/}
+            {/*                                                    <Typography variant={"muted"}*/}
+            {/*                                                                className={"!text-[#999]"}>*/}
+            {/*                                                        {uItem.label}*/}
+            {/*                                                    </Typography>*/}
+            {/*                                                </Link>*/}
+            {/*                                            ))*/}
+            {/*                                        }*/}
             {/*                                    </div>*/}
             {/*                                ))*/}
             {/*                            }*/}
             {/*                        </div>*/}
             {/*                    ))*/}
             {/*                }*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <div className={"mt-16"}>*/}
+            {/*            <div className={"bg-[rgba(154,157,164,0.16)] py-6"}>*/}
+            {/*                <Typography*/}
+            {/*                    variant={"muted"}*/}
+            {/*                    className={"text-center !text-[#999]"}*/}
+            {/*                >*/}
+            {/*                    Accessibility Policy｜Anti-Fraud Notice｜Customer Identification Program Notice｜Customer Relationship Summary｜Site Map*/}
+            {/*                </Typography>*/}
+            {/*            </div>*/}
+
+            {/*            <div className={"mt-8"}>*/}
+            {/*                <Typography*/}
+            {/*                    variant={"muted"}*/}
+            {/*                    className={"!text-white text-center"}*/}
+            {/*                >*/}
+            {/*                    澳大利亚证券投资委员会监管*/}
+            {/*                </Typography>*/}
+            {/*                <Typography*/}
+            {/*                    variant={"muted"}*/}
+            {/*                    className={"!text-[#999] text-center mt-4"}*/}
+            {/*                >*/}
+            {/*                    我们持有澳大利亚ASIC 授权代表牌照（AR No. 001313916），严格遵循监管要求，合规经营，保障您的资金安全与信任。*/}
+            {/*                </Typography>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <Separator className={"bg-[#5C6379] my-10"}/>*/}
+            {/*        <div className={""}>*/}
+            {/*            <div className={"flex !items-center"}>*/}
+            {/*                <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}*/}
+            {/*                       alt={"australia"}*/}
+            {/*                       src={"/images/footer/australia.png"}/>*/}
+            {/*                <Typography className={"!ml-4 !text-white !text-base"}>*/}
+            {/*                    {t("future.australia")}*/}
+            {/*                </Typography>*/}
+            {/*            </div>*/}
+            {/*            <div className={"flex !items-center !mt-4"}>*/}
+            {/*                <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}*/}
+            {/*                       alt={"australia"}*/}
+            {/*                       src={"/images/footer/vin.png"}/>*/}
+            {/*                <Typography className={"!ml-4 !text-white !text-base"}>*/}
+            {/*                    {t("future.vin")}*/}
+            {/*                </Typography>*/}
+            {/*            </div>*/}
+            {/*            <div className={"flex flex-col mt-10"}>*/}
+            {/*                <div className={"flex flex-col"}>*/}
+            {/*                    <Typography className={"!text-white !text-base !font-medium"}>*/}
+            {/*                        {t("risks.list.1-title")}*/}
+            {/*                    </Typography>*/}
+            {/*                    <Typography className={"!text-white !text-base !mt-2"}>*/}
+            {/*                        {t("risks.list.1-content")}*/}
+            {/*                    </Typography>*/}
+            {/*                </div>*/}
+            {/*                <div className={"flex flex-col !mt-6"}>*/}
+            {/*                    <Typography className={"!text-white !text-base !font-medium"}>*/}
+            {/*                        {t("risks.list.2-title")}*/}
+            {/*                    </Typography>*/}
+            {/*                    <Typography className={"!text-white !text-base !mt-2"}>*/}
+            {/*                        {t("risks.list.2-content")}*/}
+            {/*                    </Typography>*/}
+            {/*                </div>*/}
+            {/*                <div className={"flex flex-col !mt-6"}>*/}
+            {/*                    <Typography className={"!text-white !text-base !font-medium"}>*/}
+            {/*                        {t("risks.list.3-title")}*/}
+            {/*                    </Typography>*/}
+            {/*                    <Typography className={"!text-white !text-base !mt-2"}>*/}
+            {/*                        {t("risks.list.3-content")}*/}
+            {/*                    </Typography>*/}
+            {/*                </div>*/}
+            {/*                <div className={"flex flex-col !mt-6"}>*/}
+            {/*                    <Typography className={"!text-white !text-base !font-medium"}>*/}
+            {/*                        {t("risks.list.4-title")}*/}
+            {/*                    </Typography>*/}
+            {/*                    <Typography className={"!text-white !text-base !mt-2"}>*/}
+            {/*                        {t("risks.list.4-content")}*/}
+            {/*                    </Typography>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*            <div className={"flex !my-4"}>*/}
+            {/*                <Typography className={"!text-[#7C808E] !text-base !mt-2"}>*/}
+            {/*                    © 2025 Asia Future Trading*/}
+            {/*                </Typography>*/}
+            {/*            </div>*/}
+            {/*            <div className={"flex"}>*/}
+            {/*                <Image className={"mx-auto"} src={"/images/footer/large-logo.png"} width={2400} height={320}*/}
+            {/*                       alt={"logo"}/>*/}
             {/*            </div>*/}
             {/*        </div>*/}
             {/*    </Container>*/}
