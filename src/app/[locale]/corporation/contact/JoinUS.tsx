@@ -37,7 +37,7 @@ const JoinUS = () => {
                 <div className={"mt-8 lg:mt-16"}>
                     <div className={"grid grid-cols-12 gap-4"}>
                         <div className={"col-span-12 lg:col-span-4 h-full space-y-8"}>
-                            <div className={"bg-[url(/images/corporation/contact-join1.png)] py-10 px-8 h-[334px]"}>
+                            <div className={"bg-[url(/images/corporation/contact-join1.png)] bg-center bg-cover py-10 px-8 h-[334px]"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium !text-white"}
@@ -52,7 +52,7 @@ const JoinUS = () => {
                                     {t("row.col1.1.desc")}
                                 </Typography>
                             </div>
-                            <div className={"bg-[url(/images/corporation/contact-join2.png)] py-10 px-8 h-[334px]"}>
+                            <div className={"bg-[url(/images/corporation/contact-join2.png)] bg-center bg-cover py-10 px-8 h-[334px]"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium !text-white"}
@@ -100,7 +100,7 @@ const JoinUS = () => {
                             </div>
                         </div>
                         <div className={"col-span-12 lg:col-span-4 h-full space-y-8"}>
-                            <div className={"bg-[url(/images/corporation/contact-join3.png)] py-10 px-8 h-[334px]"}>
+                            <div className={"bg-[url(/images/corporation/contact-join3.png)] bg-center bg-cover py-10 px-8 h-[334px]"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium !text-white"}
@@ -115,7 +115,7 @@ const JoinUS = () => {
                                     {t("row.col3.1.desc")}
                                 </Typography>
                             </div>
-                            <div className={"bg-[url(/images/corporation/contact-join4.png)] py-10 px-8 h-[334px]"}>
+                            <div className={"bg-[url(/images/corporation/contact-join4.png)] bg-center bg-cover py-10 px-8 h-[334px]"}>
                                 <Typography
                                     variant={"h5"}
                                     className={"font-medium !text-white"}
