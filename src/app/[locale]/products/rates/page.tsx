@@ -69,7 +69,7 @@ export default async function Page() {
             <Banner
                 title={t("banner.title")}
                 description={t("banner.desc")}
-                imageUrl={"bg-[url(/images/products/rates-banner-mobile.png)] xl:bg-[url(/images/products/rates-banner.png)]"}
+                imageUrl={"bg-[url('/images/home/swiper2-mobile.webp')] xl:bg-[url(/images/products/rates-banner.png)]"}
                 midst={t("banner.midst")}
                 colorTheme={"light"}
             />
