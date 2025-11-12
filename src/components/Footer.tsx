@@ -55,10 +55,17 @@ const Footer = (props: Props) => {
         }
     }
 
+    const handleOnWakeUp = () => {
+        if(onWakeUp) {
+            onWakeUp(true)
+        }
+    }
+
     React.useEffect(() => {
         const saved = window.localStorage.getItem(LS_KEY);
         if (saved !== null) setOpen(saved === '1');
     }, []);
+
     React.useEffect(() => {
         window.localStorage.setItem(LS_KEY, open ? '1' : '0');
     }, [open]);
@@ -97,13 +104,13 @@ const Footer = (props: Props) => {
                             <div>
                                 <Image src={RenderTransparentLogo()} width={208} height={58} alt={"logo"}/>
                             </div>
-                            <div className={"mt-8"}>
+                            <div className={"mt-8 lg:hidden"}>
                                 <div>
                                     <Typography variant={"muted"} className={"!text-[#999]"}>
                                         { t("select-region") }
                                     </Typography>
                                 </div>
-                                <div className={"mt-4 flex items-center !text-white cursor-pointer"} onClick={() => onWakeUp ? onWakeUp(true) : null}>
+                                <div className={"mt-4 flex items-center !text-white cursor-pointer"} onClick={() => handleOnWakeUp()}>
                                     <Globe className={"w-5 h-5"}/>
                                     <Typography variant={"muted"} className={"!text-white mx-2"}>
                                         { languageText(locale) }

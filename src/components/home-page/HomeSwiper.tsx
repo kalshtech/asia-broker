@@ -28,7 +28,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                     prevEl: ".home-swiper-prev",
                     nextEl: ".home-swiper-next",
                 }}
-                modules={[Pagination, Navigation]}
+                modules={[Autoplay, Pagination, Navigation]}
                 className="en-my-swiper h-full"
             >
                 {

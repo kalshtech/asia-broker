@@ -463,9 +463,7 @@ const Navigation = (props: Props) => {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [langOpen, setLangOpen] = useState(false);
     const [listOpen, setListOpen] = useState(false);
-
     const [responsiveList, setResponsiveList] = useState<any>([]);
-
     const rootRef = useRef<HTMLDivElement | null>(null);
 
     const localAry = [
@@ -513,7 +511,7 @@ const Navigation = (props: Props) => {
     }, []);
 
     useEffect(() => {
-        setLangOpen(switchLang)
+        setLangOpen(switchLang);
     }, [ switchLang ]);
 
     return (
@@ -537,13 +535,14 @@ const Navigation = (props: Props) => {
                         <NavigationMenu viewport={false} className={"hidden xl:flex"}>
                             <NavigationMenuList>
                                 <NavigationMenuItem value={"local"}>
-                                    <NavigationMenuTrigger
-                                        onClick={(e) => {
-                                            e.preventDefault()
-                                            setOpen((prev) => !prev)
-                                        }}
-                                        className={"flex justify-center items-center"}>
-                                        <div className={"flex items-center"}>
+                                    <NavigationMenuTrigger className={"flex justify-center items-center"}>
+                                        <div className={"flex items-center"}
+                                             id={"desk-lang-trigger"}
+                                             onClick={(e) => {
+                                                 e.preventDefault();
+                                                 setOpen((prev) => !prev);
+                                             }}
+                                        >
                                             <Globe/>
                                             <Typography variant={"p"} className={"ml-1"}>
                                                 {languageText(locale)}
@@ -554,7 +553,10 @@ const Navigation = (props: Props) => {
                                         open && (
                                             <NavigationMenuContent
                                                 className={"!fixed !w-full !top-[64px] !rounded-none !border-0 !m-0 !shadow-none py-12 px-30"}
-                                                onMouseLeave={() => setOpen(false)}
+                                                onMouseLeave={() => {
+                                                    setOpen(false)
+                                                    onWakeUp(false)
+                                                }}
                                             >
                                                 <div>
                                                     <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-16 gap-y-8 cursor-pointer">
