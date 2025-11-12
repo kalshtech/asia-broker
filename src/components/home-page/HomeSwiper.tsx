@@ -69,10 +69,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                             </Typography>
                                             <Typography
                                                 variant={"p"}
-                                                className={classnames(["font-normal mt-6 hidden xl:block", {
-                                                    "!text-[#979797]": item.theme === "dark",
-                                                    "!text-[#999999]": item.theme === "light",
-                                                }])}
+                                                className={classnames(["font-normal mt-6 hidden !text-white xl:block"])}
                                             >
                                                 {item.desc2}
                                             </Typography>
