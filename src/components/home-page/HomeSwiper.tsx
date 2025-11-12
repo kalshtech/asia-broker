@@ -28,7 +28,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                     prevEl: ".home-swiper-prev",
                     nextEl: ".home-swiper-next",
                 }}
-                modules={[Autoplay, Pagination, Navigation]}
+                modules={[Pagination, Navigation]}
                 className="en-my-swiper h-full"
             >
                 {
@@ -98,8 +98,8 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                     ))
                 }
             </Swiper>
-            <CircleChevronLeft className={"home-swiper-prev w-10 h-10 text-[#999999] absolute left-10 m-auto top-0 bottom-0 cursor-pointer z-100"}/>
-            <CircleChevronRight className={"home-swiper-next w-10 h-10 text-[#999999] absolute right-10 m-auto top-0 bottom-0 cursor-pointer z-100"}/>
+            <CircleChevronLeft className={"home-swiper-prev w-10 h-10 text-[#999999] hidden lg:block absolute left-10 m-auto top-0 bottom-0 cursor-pointer z-100"}/>
+            <CircleChevronRight className={"home-swiper-next w-10 h-10 text-[#999999] hidden lg:block absolute right-10 m-auto top-0 bottom-0 cursor-pointer z-100"}/>
         </div>
     )
 }

@@ -77,7 +77,7 @@ const BankCards = () => {
                                 <GeneralLinkBtn
                                     text={t("row.col1.understand")}
                                     theme={"light-solid"}
-                                    isLink
+                                    path={"/accounts/banks"}
                                 />
                             </div>
                         </div>
