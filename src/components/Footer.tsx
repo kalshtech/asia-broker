@@ -74,15 +74,15 @@ const Footer = (props: Props) => {
         <footer>
             <Collapsible open={open} onOpenChange={setOpen} className="relative">
                 <div className="relative">
-                    <div className="pointer-events-none absolute inset-x-0 -bottom-5 z-20 flex justify-center">
+                    <div className="pointer-events-none absolute inset-x-0 -bottom-4 z-20 flex justify-center">
                         <CollapsibleTrigger asChild>
                             <Button
                                 size="icon"
                                 variant="secondary"
-                                className="pointer-events-auto h-10 w-10 rounded-full bg-theme-active text-white hover:bg-theme-active"
+                                className="pointer-events-auto h-7 w-7 rounded-full bg-theme-active text-white hover:bg-theme-active"
                                 aria-label={open ? 'open' : 'close'}
                             >
-                                {open ? <Minus className="h-5 w-5" /> : <Plus className="h-5 w-5" />}
+                                {open ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
                             </Button>
                         </CollapsibleTrigger>
                     </div>
@@ -103,7 +103,7 @@ const Footer = (props: Props) => {
                         <div className={"col-span-12 lg:col-span-3"}>
                             <div>
                                 {/*<Image src={RenderTransparentLogo()} width={208} height={58} alt={"logo"}/>*/}
-                                <Image src={"/images/logo/footer-logo.png"} width={208} height={58} alt={"logo"}/>
+                                <Image src={"/images/logo/footer-logo.png"} width={140} height={42} alt={"logo"}/>
                             </div>
                             <div className={"mt-8 lg:hidden"}>
                                 <div>
