@@ -98,13 +98,13 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                     ))
                 }
             </Swiper>
-            <CircleChevronLeft className={"home-swiper-prev w-10 h-10 text-[#999999] absolute left-10 m-auto top-0 bottom-0 cursor-pointer z-1000"}/>
-            <CircleChevronRight className={"home-swiper-next w-10 h-10 text-[#999999] absolute right-10 m-auto top-0 bottom-0 cursor-pointer z-1000"}/>
+            <CircleChevronLeft className={"home-swiper-prev w-10 h-10 text-[#999999] absolute left-10 m-auto top-0 bottom-0 cursor-pointer z-100"}/>
+            <CircleChevronRight className={"home-swiper-next w-10 h-10 text-[#999999] absolute right-10 m-auto top-0 bottom-0 cursor-pointer z-100"}/>
         </div>
     )
 }
 
-const EnglishSwiper = () => {
+const HomeSwiper = () => {
     const t = useTranslations("Pages.home.swiper");
     const ary = [
         {
@@ -139,14 +139,6 @@ const EnglishSwiper = () => {
 
     return (
         <CustomBanner ary={ary}/>
-    )
-}
-
-const HomeSwiper = () => {
-    return (
-        <section>
-            <EnglishSwiper/>
-        </section>
     )
 }
 
