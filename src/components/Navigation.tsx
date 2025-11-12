@@ -447,7 +447,13 @@ export const navigationMap = () => {
     ]
 }
 
-const Navigation = () => {
+type Props = {
+    switchLang: boolean,
+    onWakeUp: (switchLang: boolean) => void;
+}
+
+const Navigation = (props: Props) => {
+    const { switchLang, onWakeUp } = props;
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
@@ -505,6 +511,10 @@ const Navigation = () => {
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
     }, []);
+
+    useEffect(() => {
+        setLangOpen(switchLang)
+    }, [ switchLang ]);
 
     return (
         <div id={"navigation"} className={"h-[64px] flex z-1000 fixed bg-white w-full"}>
@@ -675,7 +685,10 @@ const Navigation = () => {
                         </h2>
                     </div>
                     <button
-                        onClick={() => setLangOpen(false)}
+                        onClick={() => {
+                            setLangOpen(false);
+                            onWakeUp(false)
+                        }}
                         className="rounded-md p-2 text-slate-600 hover:bg-slate-100"
                         aria-label="close"
                     >

@@ -3553,6 +3553,8 @@
     "register": "Open Account"
   },
   "Footer": {
+    "prompt": "This information is provided for general risk disclosure purposes only and does not constitute investment advice. Please make decisions prudently based on your own circumstances.",
+    "select-region": "Select Language",
     "contact": {
       "title": "CONTACT",
       "phone": "(Lines open 24hrs, Monday - Friday)"
@@ -3569,10 +3571,10 @@
       "partner": "Partner Portal"
     },
     "join-us": {
-      "title": "Join Our Social Community"
+      "title": "Discover AFT on Social Media"
     },
     "risks": {
-      "title": "交易类投资有风险",
+      "title": "Risks",
       "list": {
         "1-title": "Risk Warning",
         "1-content": "OTC leveraged products, including CFDs, are complex instruments that carry a high risk of rapid financial loss due to leverage.  Industry data shows approximately 70 % of retail investor accounts lose money when trading CFDs.  Please ensure you fully understand how CFDs and other OTC leveraged products work, and only trade with capital you can afford to lose. ",
@@ -3583,6 +3585,11 @@
         "4-title": "Jurisdictional Information",
         "4-content": "The information on this site is not directed at residents of the United States and is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.  We do not provide services to individuals or companies in certain jurisdictions, including but not limited to Afghanistan, Canada, Congo (Kinshasa), Cuba, Cyprus, Hong Kong, Indonesia, Iran, Malaysia, North Korea, Singapore, Sudan, Syria, the United Arab Emirates, the United States, and Yemen.  Visitors from these regions should ensure that any decision to invest in our services complies with the laws and regulations of their country or jurisdiction.  We reserve the right to change, modify, or discontinue our products and services at any time. "
       }
+    },
+    "policy": {
+      "title": "Accessibility Policy｜Anti-Fraud Notice｜Customer Identification Program｜Client Relationship Summary｜Site Map",
+      "licence-title": "Regulated by the Australian Securities and Investments Commission (ASIC)",
+      "licence-number": "We operate as an ASIC Authorized Representative (AR No. 001313916), adhering to strict regulatory standards to ensure compliance, safeguard client funds, and maintain financial integrity."
     }
   },
   "Articles": {

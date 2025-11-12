@@ -25,18 +25,20 @@ import {
 import { languageText } from "@/utils/common";
 import {navigationMap} from "@/components/Navigation";
 import { Link } from "@/i18n/navigation"
+import NavigationAccordion from "./MobileNavigation";
 
 const LS_KEY = 'aft-footer-expanded';
 
 type Props = {
-    className?: string
+    className?: string;
+    onWakeUp?: (switchLang: boolean) => void;
 }
 
 const Footer = (props: Props) => {
     const t = useTranslations('Footer');
     const [open, setOpen] = React.useState(true);
     const locale = useLocale();
-    const { className } = props;
+    const { className, onWakeUp } = props;
 
     const navigationAry = navigationMap();
     
@@ -53,7 +55,6 @@ const Footer = (props: Props) => {
         }
     }
 
-    // 读取/保存展开状态（跨页面记忆）
     React.useEffect(() => {
         const saved = window.localStorage.getItem(LS_KEY);
         if (saved !== null) setOpen(saved === '1');
@@ -64,511 +65,295 @@ const Footer = (props: Props) => {
 
     return (
         <footer>
-            {/*<Collapsible open={open} onOpenChange={setOpen} className="relative">*/}
-            {/*    <div className="relative">*/}
-            {/*        <div className="pointer-events-none absolute inset-x-0 -bottom-5 z-20 flex justify-center">*/}
-            {/*            <CollapsibleTrigger asChild>*/}
-            {/*                <Button*/}
-            {/*                    size="icon"*/}
-            {/*                    variant="secondary"*/}
-            {/*                    className="pointer-events-auto h-10 w-10 rounded-full bg-theme-active text-white hover:bg-theme-active"*/}
-            {/*                    aria-label={open ? 'open' : 'close'}*/}
-            {/*                >*/}
-            {/*                    {open ? <Minus className="h-5 w-5" /> : <Plus className="h-5 w-5" />}*/}
-            {/*                </Button>*/}
-            {/*            </CollapsibleTrigger>*/}
-            {/*        </div>*/}
-            {/*        <CollapsibleContent*/}
-            {/*            className={classnames('overflow-hidden bg-[#DBDDE6] data-[state=closed]:animate-collapse-up data-[state=open]:animate-collapse-down')}*/}
-            {/*        >*/}
-            {/*            <Container className={"p-4"}>*/}
-            {/*                <Typography variant={"muted"}>*/}
-            {/*                    本信息仅用于一般性风险披露，不构成任何投资建议。请根据自身情况谨慎决策。*/}
-            {/*                </Typography>*/}
-            {/*            </Container>*/}
-            {/*        </CollapsibleContent>*/}
-            {/*    </div>*/}
-            {/*</Collapsible>*/}
-            {/*<div className={classNames(["bg-theme-deep-bg pt-10", className])}>*/}
-            {/*    <Container>*/}
-            {/*        <div className={"grid grid-cols-12 gap-4 lg:gap-8 space-y-4 lg:space-y-0"}>*/}
-            {/*            <div className={"col-span-12 lg:col-span-3"}>*/}
-            {/*                <div>*/}
-            {/*                    <Image src={RenderTransparentLogo()} width={208} height={58} alt={"logo"}/>*/}
-            {/*                </div>*/}
-            {/*                <div className={"mt-8"}>*/}
-            {/*                    <div>*/}
-            {/*                        <Typography variant={"muted"} className={"!text-[#999]"}>*/}
-            {/*                            Select region*/}
-            {/*                        </Typography>*/}
-            {/*                    </div>*/}
-            {/*                    <div className={"mt-4 flex items-center !text-white cursor-pointer"}>*/}
-            {/*                        <Globe className={"w-5 h-5"}/>*/}
-            {/*                        <Typography variant={"muted"} className={"!text-white mx-2"}>*/}
-            {/*                            { languageText(locale) }*/}
-            {/*                        </Typography>*/}
-            {/*                        <ChevronDown className={"w-5 h-5"}/>*/}
-            {/*                    </div>*/}
-
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*            <div className={"col-span-12 lg:col-span-3"}>*/}
-            {/*                <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
-            {/*                    {t("contact.title")}*/}
-            {/*                </Typography>*/}
-            {/*                <div className={"!mt-6"}>*/}
-            {/*                    <div className={"flex flex-col"}>*/}
-            {/*                        <div className={"flex items-center"}>*/}
-            {/*                            <Phone size={"20"} className={"!text-[#999] !text-base"}/>*/}
-            {/*                            <a className={"!ml-2 !text-[#999] text-sm"}*/}
-            {/*                               href={"tel:+61 042 047 1933"}*/}
-            {/*                            >*/}
-            {/*                                (AU) +61 042 047 1933*/}
-            {/*                            </a>*/}
-            {/*                        </div>*/}
-            {/*                        <Typography className={"!text-[#999] !text-xs !ml-6 !mt-1"}>*/}
-            {/*                            {t("contact.phone")}*/}
-            {/*                        </Typography>*/}
-            {/*                    </div>*/}
-
-            {/*                    <div className={"flex flex-col mt-6"}>*/}
-            {/*                        <div className={"flex items-center"}>*/}
-            {/*                            <Mail size={"20"} className={"!text-[#999]"}/>*/}
-            {/*                            <a className={"!ml-2 !text-[#999] text-sm hover:!text-active"}*/}
-            {/*                               href={"mailto:global@afttmarkets.com"}*/}
-            {/*                            >*/}
-            {/*                                global@afttmarkets.com*/}
-            {/*                            </a>*/}
-            {/*                        </div>*/}
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*            <div className={"col-span-12 lg:col-span-3"}>*/}
-            {/*                <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
-            {/*                    {t("login.title")}*/}
-            {/*                </Typography>*/}
-            {/*                <div className={"flex flex-col !mt-6"}>*/}
-            {/*                    <a className={"!text-[#999] text-sm"}*/}
-            {/*                       href={"https://client.afttmarkets.com"}*/}
-            {/*                       target={"_blank"}*/}
-            {/*                    >*/}
-            {/*                        {t("login.mt5")}*/}
-            {/*                    </a>*/}
-            {/*                    <a className={"!text-[#999] text-sm !mt-6"}*/}
-            {/*                       href={"https://client.afttmarkets.com/register"}*/}
-            {/*                       target={"_blank"}*/}
-            {/*                    >*/}
-            {/*                        {t("login.partner")}*/}
-            {/*                    </a>*/}
-            {/*                    <a className={"!text-[#999] text-sm !mt-6"}*/}
-            {/*                       href={"https://client.afttmarkets.com/register"}*/}
-            {/*                       target={"_blank"}*/}
-            {/*                    >*/}
-            {/*                        法律条款*/}
-            {/*                    </a>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*            <div className={"col-span-12 lg:col-span-3"}>*/}
-            {/*                <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
-            {/*                    {t("join-us.title")}*/}
-            {/*                </Typography>*/}
-            {/*                <div className={"mt-6"}>*/}
-            {/*                    <Typography variant={"muted"} className={"!text-[#999]"}>*/}
-            {/*                        Discover AFT on Social Media*/}
-            {/*                    </Typography>*/}
-            {/*                </div>*/}
-            {/*                <div className={"flex flex-col !mt-6"}>*/}
-            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
-            {/*                       target={"_blank"}*/}
-            {/*                       className={"flex items-center"}*/}
-            {/*                    >*/}
-            {/*                        <img src="/images/footer/facebook.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
-            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
-            {/*                            Facebook*/}
-            {/*                        </Typography>*/}
-            {/*                    </a>*/}
-            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
-            {/*                       target={"_blank"}*/}
-            {/*                       className={"flex items-center mt-5"}*/}
-            {/*                    >*/}
-            {/*                        <img src="/images/footer/instagram.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
-            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
-            {/*                            Instagram*/}
-            {/*                        </Typography>*/}
-            {/*                    </a>*/}
-            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
-            {/*                       target={"_blank"}*/}
-            {/*                       className={"flex items-center mt-5"}*/}
-            {/*                    >*/}
-            {/*                        <img src="/images/footer/linkedln.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
-            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
-            {/*                            Linkedln*/}
-            {/*                        </Typography>*/}
-            {/*                    </a>*/}
-            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
-            {/*                       target={"_blank"}*/}
-            {/*                       className={"flex items-center mt-5"}*/}
-            {/*                    >*/}
-            {/*                        <img src="/images/footer/linkedln.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
-            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
-            {/*                            Reddit*/}
-            {/*                        </Typography>*/}
-            {/*                    </a>*/}
-            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
-            {/*                       target={"_blank"}*/}
-            {/*                       className={"flex items-center mt-5"}*/}
-            {/*                    >*/}
-            {/*                        <img src="/images/footer/x.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
-            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
-            {/*                            X(Twitter)*/}
-            {/*                        </Typography>*/}
-            {/*                    </a>*/}
-            {/*                    <a href={"https://client.afttmarkets.com/register"}*/}
-            {/*                       target={"_blank"}*/}
-            {/*                       className={"flex items-center mt-5"}*/}
-            {/*                    >*/}
-            {/*                        <img src="/images/footer/youtube.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
-            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
-            {/*                            Youtube*/}
-            {/*                        </Typography>*/}
-            {/*                    </a>*/}
-            {/*                    <a*/}
-            {/*                        href={"https://client.afttmarkets.com/register"}*/}
-            {/*                        target={"_blank"}*/}
-            {/*                        className={"flex items-center mt-5"}*/}
-            {/*                    >*/}
-            {/*                        <img src="/images/footer/discord.webp" className={"w-5 h-5 object-cover"} alt=""/>*/}
-            {/*                        <Typography variant={"muted"} className={"!text-[#999] ml-3"}>*/}
-            {/*                            Discord*/}
-            {/*                        </Typography>*/}
-            {/*                    </a>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*        <Separator className={"bg-[#5C6379] my-8"}/>*/}
-            {/*        <div>*/}
-            {/*            <div className={"grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8"}>*/}
-            {/*                {*/}
-            {/*                    navigationAry[0].children.map((d, i) => (*/}
-            {/*                        <div className={""} key={i}>*/}
-            {/*                            <Typography variant={"muted"} className={"!text-white font-bold"}>*/}
-            {/*                                { d.title }*/}
-            {/*                            </Typography>*/}
-            {/*                            {*/}
-            {/*                                d.children.map((dItem, dIndex) => (*/}
-            {/*                                    <div className={"flex flex-col"} key={dIndex}>*/}
-            {/*                                        {*/}
-            {/*                                            dItem.ul.map((uItem, uIndex) => (*/}
-            {/*                                                <Link href={uItem.path} className={"mt-6"} key={uIndex}>*/}
-            {/*                                                    <Typography variant={"muted"}*/}
-            {/*                                                                className={"!text-[#999]"}>*/}
-            {/*                                                        {uItem.label}*/}
-            {/*                                                    </Typography>*/}
-            {/*                                                </Link>*/}
-            {/*                                            ))*/}
-            {/*                                        }*/}
-            {/*                                    </div>*/}
-            {/*                                ))*/}
-            {/*                            }*/}
-            {/*                        </div>*/}
-            {/*                    ))*/}
-            {/*                }*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*        <div className={"mt-16"}>*/}
-            {/*            <div className={"bg-[rgba(154,157,164,0.16)] py-6"}>*/}
-            {/*                <Typography*/}
-            {/*                    variant={"muted"}*/}
-            {/*                    className={"text-center !text-[#999]"}*/}
-            {/*                >*/}
-            {/*                    Accessibility Policy｜Anti-Fraud Notice｜Customer Identification Program Notice｜Customer Relationship Summary｜Site Map*/}
-            {/*                </Typography>*/}
-            {/*            </div>*/}
-
-            {/*            <div className={"mt-8"}>*/}
-            {/*                <Typography*/}
-            {/*                    variant={"muted"}*/}
-            {/*                    className={"!text-white text-center"}*/}
-            {/*                >*/}
-            {/*                    澳大利亚证券投资委员会监管*/}
-            {/*                </Typography>*/}
-            {/*                <Typography*/}
-            {/*                    variant={"muted"}*/}
-            {/*                    className={"!text-[#999] text-center mt-4"}*/}
-            {/*                >*/}
-            {/*                    我们持有澳大利亚ASIC 授权代表牌照（AR No. 001313916），严格遵循监管要求，合规经营，保障您的资金安全与信任。*/}
-            {/*                </Typography>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*        <Separator className={"bg-[#5C6379] my-10"}/>*/}
-            {/*        <div className={""}>*/}
-            {/*            <div className={"flex !items-center"}>*/}
-            {/*                <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}*/}
-            {/*                       alt={"australia"}*/}
-            {/*                       src={"/images/footer/australia.png"}/>*/}
-            {/*                <Typography className={"!ml-4 !text-white !text-base"}>*/}
-            {/*                    {t("future.australia")}*/}
-            {/*                </Typography>*/}
-            {/*            </div>*/}
-            {/*            <div className={"flex !items-center !mt-4"}>*/}
-            {/*                <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}*/}
-            {/*                       alt={"australia"}*/}
-            {/*                       src={"/images/footer/vin.png"}/>*/}
-            {/*                <Typography className={"!ml-4 !text-white !text-base"}>*/}
-            {/*                    {t("future.vin")}*/}
-            {/*                </Typography>*/}
-            {/*            </div>*/}
-            {/*            <div className={"flex flex-col mt-10"}>*/}
-            {/*                <div className={"flex flex-col"}>*/}
-            {/*                    <Typography className={"!text-white !text-base !font-medium"}>*/}
-            {/*                        {t("risks.list.1-title")}*/}
-            {/*                    </Typography>*/}
-            {/*                    <Typography className={"!text-white !text-base !mt-2"}>*/}
-            {/*                        {t("risks.list.1-content")}*/}
-            {/*                    </Typography>*/}
-            {/*                </div>*/}
-            {/*                <div className={"flex flex-col !mt-6"}>*/}
-            {/*                    <Typography className={"!text-white !text-base !font-medium"}>*/}
-            {/*                        {t("risks.list.2-title")}*/}
-            {/*                    </Typography>*/}
-            {/*                    <Typography className={"!text-white !text-base !mt-2"}>*/}
-            {/*                        {t("risks.list.2-content")}*/}
-            {/*                    </Typography>*/}
-            {/*                </div>*/}
-            {/*                <div className={"flex flex-col !mt-6"}>*/}
-            {/*                    <Typography className={"!text-white !text-base !font-medium"}>*/}
-            {/*                        {t("risks.list.3-title")}*/}
-            {/*                    </Typography>*/}
-            {/*                    <Typography className={"!text-white !text-base !mt-2"}>*/}
-            {/*                        {t("risks.list.3-content")}*/}
-            {/*                    </Typography>*/}
-            {/*                </div>*/}
-            {/*                <div className={"flex flex-col !mt-6"}>*/}
-            {/*                    <Typography className={"!text-white !text-base !font-medium"}>*/}
-            {/*                        {t("risks.list.4-title")}*/}
-            {/*                    </Typography>*/}
-            {/*                    <Typography className={"!text-white !text-base !mt-2"}>*/}
-            {/*                        {t("risks.list.4-content")}*/}
-            {/*                    </Typography>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*            <div className={"flex !my-4"}>*/}
-            {/*                <Typography className={"!text-[#7C808E] !text-base !mt-2"}>*/}
-            {/*                    © 2025 Asia Future Trading*/}
-            {/*                </Typography>*/}
-            {/*            </div>*/}
-            {/*            <div className={"flex"}>*/}
-            {/*                <Image className={"mx-auto"} src={"/images/footer/large-logo.png"} width={2400} height={320}*/}
-            {/*                       alt={"logo"}/>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </Container>*/}
-            {/*</div>*/}
+            <Collapsible open={open} onOpenChange={setOpen} className="relative">
+                <div className="relative">
+                    <div className="pointer-events-none absolute inset-x-0 -bottom-5 z-20 flex justify-center">
+                        <CollapsibleTrigger asChild>
+                            <Button
+                                size="icon"
+                                variant="secondary"
+                                className="pointer-events-auto h-10 w-10 rounded-full bg-theme-active text-white hover:bg-theme-active"
+                                aria-label={open ? 'open' : 'close'}
+                            >
+                                {open ? <Minus className="h-5 w-5" /> : <Plus className="h-5 w-5" />}
+                            </Button>
+                        </CollapsibleTrigger>
+                    </div>
+                    <CollapsibleContent
+                        className={classnames('overflow-hidden bg-[#DBDDE6] data-[state=closed]:animate-collapse-up data-[state=open]:animate-collapse-down')}
+                    >
+                        <Container className={"p-4"}>
+                            <Typography variant={"muted"}>
+                                { t("prompt") }
+                            </Typography>
+                        </Container>
+                    </CollapsibleContent>
+                </div>
+            </Collapsible>
             <div className={classNames(["bg-theme-deep-bg pt-10", className])}>
                 <Container>
-                    <div>
-                        <Image src={RenderTransparentLogo()} width={208} height={58} alt={"logo"}/>
-                    </div>
-                    <div>
-                        <div className={"grid grid-cols-12 gap-6"}>
-                            <div
-                                className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-4 xl:col-span-4"}>
-                                <Separator className={"!bg-[#5C6379] my-4"}/>
-                                <div className={"flex flex-col"}>
-                                    <Typography className={"!text-white !text-base !font-medium"}>
-                                        {t("contact.title")}
-                                    </Typography>
-                                    <div className={"flex flex-col !mt-4"}>
-                                        <div className={"flex items-center"}>
-                                            <Phone size={"20"} className={"!text-white !text-base"}/>
-                                            <a className={"!ml-2 !text-white !text-base hover:!text-active"}
-                                               href={"tel:+61 042 047 1933"}
-                                            >
-                                                (AU) +61 042 047 1933
-                                            </a>
-                                        </div>
-                                        <Typography className={"!text-white !text-xs !ml-6 !mt-1"}>
-                                            {t("contact.phone")}
-                                        </Typography>
-                                    </div>
-                                    <div className={"flex flex-col !mt-4"}>
-                                        <div className={"flex items-center"}>
-                                            <Phone size={"20"} className={"!text-white !text-base"}/>
-                                            <a className={"!ml-2 !text-white !text-base hover:!text-active"}
-                                               href={"tel:+852 3957 0742"}
-                                            >
-                                                (HK) +852 3957 0742
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className={"flex flex-col !mt-4"}>
-                                        <div className={"flex items-center"}>
-                                            <Mail size={"20"} className={"!text-white !text-base"}/>
-                                            <a className={"!ml-2 !text-white !text-base hover:!text-active"}
-                                               href={"mailto:global@afttmarkets.com"}
-                                            >
-                                                global@afttmarkets.com
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div className={"grid grid-cols-12 gap-4 lg:gap-8 space-y-4 lg:space-y-0"}>
+                        <div className={"col-span-12 lg:col-span-3"}>
+                            <div>
+                                <Image src={RenderTransparentLogo()} width={208} height={58} alt={"logo"}/>
                             </div>
-                            <div
-                                className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-8 xl:col-span-8"}>
-                                <Separator className={"!bg-[#5C6379] my-4"}/>
-                                <div className={"flex flex-col"}>
-                                    <Typography className={"!text-white !text-base !font-medium"}>
-                                        {t("future.title")}
+                            <div className={"mt-8"}>
+                                <div>
+                                    <Typography variant={"muted"} className={"!text-[#999]"}>
+                                        { t("select-region") }
                                     </Typography>
                                 </div>
-                                <div className={"flex flex-col !mt-4"}>
-                                    <div className={"flex !items-center"}>
-                                        <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}
-                                               alt={"australia"}
-                                               src={"/images/footer/australia.png"}/>
-                                        <Typography className={"!ml-4 !text-white !text-base"}>
-                                            {t("future.australia")}
-                                        </Typography>
-                                    </div>
-                                    <div className={"flex !items-center !mt-4"}>
-                                        <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}
-                                               alt={"australia"}
-                                               src={"/images/footer/vin.png"}/>
-                                        <Typography className={"!ml-4 !text-white !text-base"}>
-                                            {t("future.vin")}
-                                        </Typography>
-                                    </div>
-                                    {/*<div className={"flex !items-center !mt-4"}>*/}
-                                    {/*    <Image width={34} height={22} className={"!w-[34px] !h-[22px]"} alt={"australia"}*/}
-                                    {/*           src={"/images/footer/hongkong.png"}/>*/}
-                                    {/*    <Typography className={"!ml-4 !text-white !text-base"}>*/}
-                                    {/*        {t("future.hk")}*/}
-                                    {/*    </Typography>*/}
-                                    {/*</div>*/}
+                                <div className={"mt-4 flex items-center !text-white cursor-pointer"} onClick={() => onWakeUp ? onWakeUp(true) : null}>
+                                    <Globe className={"w-5 h-5"}/>
+                                    <Typography variant={"muted"} className={"!text-white mx-2"}>
+                                        { languageText(locale) }
+                                    </Typography>
+                                    <ChevronDown className={"w-5 h-5"}/>
                                 </div>
+
                             </div>
                         </div>
-                    </div>
-                    <div className={"flex flex-col"}>
-                        <div className={"grid grid-cols-12 gap-6"}>
-                            <div className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-4 xl:col-span-4"}>
-                                <Separator className={"!bg-[#5C6379] my-4"}/>
+                        <div className={"col-span-12 lg:col-span-3"}>
+                            <Typography variant={"muted"} className={"!text-white font-bold"}>
+                                {t("contact.title")}
+                            </Typography>
+                            <div className={"!mt-6"}>
                                 <div className={"flex flex-col"}>
-                                    <Typography className={"!text-white !text-base !font-medium"}>
-                                        {t("login.title")}
-                                    </Typography>
-                                    <a className={"!text-white !text-base underline !mt-4"}
-                                       href={"https://client.afttmarkets.com"}
-                                       target={"_blank"}
-                                    >
-                                        {t("login.mt5")}
-                                    </a>
-                                    <a className={"!text-white !text-base !mt-4 underline"}
-                                       href={"https://client.afttmarkets.com/register"}
-                                       target={"_blank"}
-                                    >
-                                        {t("login.partner")}
-                                    </a>
-                                </div>
-                            </div>
-                            <div className={"col-span-12 xs:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-8 xl:col-span-8"}>
-                                <Separator className={"!bg-[#5C6379] my-4"}/>
-                                <div className={"flex flex-col"}>
-                                    <Typography className={"!text-white !text-base !font-medium"}>
-                                        {t("join-us.title")}
-                                    </Typography>
-                                    <div className={"flex !mt-6"}>
-                                        {/*<Link href={"https://client.afttmarkets.com/register"} target={"_blank"} underline>*/}
-                                        {/*    <Facebook className={"!text-white text-3xl"} />*/}
-                                        {/*</Link>*/}
-                                        {/*<Link className={"!ml-8"} href={"https://client.afttmarkets.com/register"} target={"_blank"} underline>*/}
-                                        {/*    <Twitter className={"!text-white text-3xl"} />*/}
-                                        {/*</Link>*/}
-                                        {/*<Link className={"!ml-8"} href={"https://client.afttmarkets.com/register"} target={"_blank"} underline>*/}
-                                        {/*    <Youtube className={"!text-white text-3xl"} />*/}
-                                        {/*</Link>*/}
-                                        {/*<Link className={"!ml-8"} href={"https://client.afttmarkets.com/register"} target={"_blank"} underline>*/}
-                                        {/*    <Instagram className={"!text-white text-3xl"} />*/}
-                                        {/*</Link>*/}
-                                        {/*<Link className={"!ml-8"} href={"https://client.afttmarkets.com/register"} target={"_blank"} underline>*/}
-                                        {/*    <DiscordOutlined className={"!text-white text-3xl"} />*/}
-                                        {/*</Link>*/}
-                                        <a href={"https://api.whatsapp.com/send?phone=85297412403"} target={"_blank"}>
-                                            {/*<WhatsAppOutlined className={"!text-white text-3xl"} />*/}
-                                            <span role="img"
-                                                  aria-label="whats-app"
-                                                  className="anticon anticon-whats-app !text-white text-3xl"
-                                            >
-                                        <svg
-                                            viewBox="64 64 896 896"
-                                            focusable="false"
-                                            data-icon="whats-app"
-                                            width="1em"
-                                            height="1em"
-                                            fill="currentColor"
-                                            aria-hidden="true"
+                                    <div className={"flex items-center"}>
+                                        <Phone size={"20"} className={"!text-[#999] !text-base"}/>
+                                        <a className={"!ml-2 !text-[#999] text-sm"}
+                                           href={"tel:+61 042 047 1933"}
                                         >
-                                            <defs>
-                                                <style/>
-                                            </defs>
-                                            <path
-                                                d="M713.5 599.9c-10.9-5.6-65.2-32.2-75.3-35.8-10.1-3.8-17.5-5.6-24.8 5.6-7.4 11.1-28.4 35.8-35 43.3-6.4 7.4-12.9 8.3-23.8 2.8-64.8-32.4-107.3-57.8-150-131.1-11.3-19.5 11.3-18.1 32.4-60.2 3.6-7.4 1.8-13.7-1-19.3-2.8-5.6-24.8-59.8-34-81.9-8.9-21.5-18.1-18.5-24.8-18.9-6.4-.4-13.7-.4-21.1-.4-7.4 0-19.3 2.8-29.4 13.7-10.1 11.1-38.6 37.8-38.6 92s39.5 106.7 44.9 114.1c5.6 7.4 77.7 118.6 188.4 166.5 70 30.2 97.4 32.8 132.4 27.6 21.3-3.2 65.2-26.6 74.3-52.5 9.1-25.8 9.1-47.9 6.4-52.5-2.7-4.9-10.1-7.7-21-13z"></path>
-                                            <path
-                                                d="M925.2 338.4c-22.6-53.7-55-101.9-96.3-143.3a444.35 444.35 0 00-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.35 445.35 0 00-142 96.5c-40.9 41.3-73 89.3-95.2 142.8-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 00112 714v152a46 46 0 0046 46h152.1A449.4 449.4 0 00510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.48 444.48 0 00142.8-95.2c41.3-40.9 73.8-88.7 96.5-142 23.6-55.2 35.6-113.9 35.9-174.5.3-60.9-11.5-120-34.8-175.6zm-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8 69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9 44.6 18.7 84.6 45.6 119 80 34.3 34.3 61.3 74.4 80 119 19.4 46.2 29.1 95.2 28.9 145.8-.6 99.6-39.7 192.9-110.1 262.7z"></path>
-                                        </svg>
-                                    </span>
+                                            (AU) +61 042 047 1933
                                         </a>
-                                        <a className={"!ml-8"} href={"https://t.me/AsiaFutureTrading"} target={"_blank"}>
-                                            <img src="/images/telegram.svg" className={"w-[30px] h-[30px"} alt="telegram"/>
+                                    </div>
+                                    <Typography className={"!text-[#999] !text-xs !ml-6 !mt-1"}>
+                                        {t("contact.phone")}
+                                    </Typography>
+                                </div>
+
+                                <div className={"flex flex-col mt-6"}>
+                                    <div className={"flex items-center"}>
+                                        <Mail size={"20"} className={"!text-[#999]"}/>
+                                        <a className={"!ml-2 !text-[#999] text-sm hover:!text-active"}
+                                           href={"mailto:global@afttmarkets.com"}
+                                        >
+                                            global@afttmarkets.com
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div className={"col-span-12 lg:col-span-3"}>
+                            <Typography variant={"muted"} className={"!text-white font-bold"}>
+                                {t("login.title")}
+                            </Typography>
+                            <div className={"flex flex-col !mt-6"}>
+                                <a className={"!text-[#999] text-sm"}
+                                   href={"https://client.afttmarkets.com"}
+                                   target={"_blank"}
+                                >
+                                    {t("login.mt5")}
+                                </a>
+                                <a className={"!text-[#999] text-sm !mt-6"}
+                                   href={"https://client.afttmarkets.com/register"}
+                                   target={"_blank"}
+                                >
+                                    {t("login.partner")}
+                                </a>
+                            </div>
+                        </div>
+                        <div className={"col-span-12 lg:col-span-3"}>
+                            <Typography variant={"muted"} className={"!text-white font-bold"}>
+                                {t("join-us.title")}
+                            </Typography>
+                            <div className={"flex flex-col !mt-6"}>
+                                <a href={"https://client.afttmarkets.com/register"}
+                                   target={"_blank"}
+                                   className={"flex items-center"}
+                                >
+                                    <img src="/images/footer/facebook.webp" className={"w-5 h-5 object-cover"} alt=""/>
+                                    <Typography variant={"muted"} className={"!text-[#999] ml-3"}>
+                                        Facebook
+                                    </Typography>
+                                </a>
+                                <a href={"https://client.afttmarkets.com/register"}
+                                   target={"_blank"}
+                                   className={"flex items-center mt-5"}
+                                >
+                                    <img src="/images/footer/instagram.webp" className={"w-5 h-5 object-cover"} alt=""/>
+                                    <Typography variant={"muted"} className={"!text-[#999] ml-3"}>
+                                        Instagram
+                                    </Typography>
+                                </a>
+                                <a href={"https://client.afttmarkets.com/register"}
+                                   target={"_blank"}
+                                   className={"flex items-center mt-5"}
+                                >
+                                    <img src="/images/footer/linkedln.webp" className={"w-5 h-5 object-cover"} alt=""/>
+                                    <Typography variant={"muted"} className={"!text-[#999] ml-3"}>
+                                        Linkedln
+                                    </Typography>
+                                </a>
+                                <a href={"https://client.afttmarkets.com/register"}
+                                   target={"_blank"}
+                                   className={"flex items-center mt-5"}
+                                >
+                                    <img src="/images/footer/reddit.webp" className={"w-5 h-5 object-cover"} alt=""/>
+                                    <Typography variant={"muted"} className={"!text-[#999] ml-3"}>
+                                        Reddit
+                                    </Typography>
+                                </a>
+                                <a href={"https://client.afttmarkets.com/register"}
+                                   target={"_blank"}
+                                   className={"flex items-center mt-5"}
+                                >
+                                    <img src="/images/footer/x.webp" className={"w-5 h-5 object-cover"} alt=""/>
+                                    <Typography variant={"muted"} className={"!text-[#999] ml-3"}>
+                                        X(Twitter)
+                                    </Typography>
+                                </a>
+                                <a href={"https://client.afttmarkets.com/register"}
+                                   target={"_blank"}
+                                   className={"flex items-center mt-5"}
+                                >
+                                    <img src="/images/footer/youtube.webp" className={"w-5 h-5 object-cover"} alt=""/>
+                                    <Typography variant={"muted"} className={"!text-[#999] ml-3"}>
+                                        Youtube
+                                    </Typography>
+                                </a>
+                                <a
+                                    href={"https://client.afttmarkets.com/register"}
+                                    target={"_blank"}
+                                    className={"flex items-center mt-5"}
+                                >
+                                    <img src="/images/footer/discord.webp" className={"w-5 h-5 object-cover"} alt=""/>
+                                    <Typography variant={"muted"} className={"!text-[#999] ml-3"}>
+                                        Discord
+                                    </Typography>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <Separator className={"!bg-[#5C6379] my-4"}/>
-                    <div className={"flex flex-col"}>
-                        <div className={"flex flex-col"}>
-                            <Typography className={"!text-white !text-base !font-medium"}>
-                                {t("risks.list.1-title")}
-                            </Typography>
-                            <Typography className={"!text-white !text-base !mt-2"}>
-                                {t("risks.list.1-content")}
+                    <Separator className={"bg-[#5C6379] my-8"}/>
+                    <div className={"lg:hidden"}>
+                        <NavigationAccordion data={navigationAry[0].children}/>
+                    </div>
+                    <div className={"hidden lg:block"}>
+                        <div className={"grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8"}>
+                            {
+                                navigationAry[0].children.map((d, i) => (
+                                    <div className={""} key={i}>
+                                        <Typography variant={"muted"} className={"!text-white font-bold"}>
+                                            { d.title }
+                                        </Typography>
+                                        {
+                                            d.children.map((dItem, dIndex) => (
+                                                <div className={"flex flex-col"} key={dIndex}>
+                                                    {
+                                                        dItem.ul.map((uItem, uIndex) => (
+                                                            <Link href={uItem.path} className={"mt-6"} key={uIndex}>
+                                                                <Typography variant={"muted"}
+                                                                            className={"!text-[#999]"}>
+                                                                    {uItem.label}
+                                                                </Typography>
+                                                            </Link>
+                                                        ))
+                                                    }
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    <div className={"mt-16"}>
+                        <div className={"bg-[rgba(154,157,164,0.16)] py-6 px-4"}>
+                            <Typography
+                                variant={"muted"}
+                                className={"text-center !text-[#999]"}
+                            >
+                                { t("policy.title") }
                             </Typography>
                         </div>
-                        <div className={"flex flex-col !mt-6"}>
-                            <Typography className={"!text-white !text-base !font-medium"}>
-                                {t("risks.list.2-title")}
+
+                        <div className={"mt-8"}>
+                            <Typography
+                                variant={"muted"}
+                                className={"!text-white text-center"}
+                            >
+                                { t("policy.licence-title") }
                             </Typography>
-                            <Typography className={"!text-white !text-base !mt-2"}>
-                                {t("risks.list.2-content")}
-                            </Typography>
-                        </div>
-                        <div className={"flex flex-col !mt-6"}>
-                            <Typography className={"!text-white !text-base !font-medium"}>
-                                {t("risks.list.3-title")}
-                            </Typography>
-                            <Typography className={"!text-white !text-base !mt-2"}>
-                                {t("risks.list.3-content")}
-                            </Typography>
-                        </div>
-                        <div className={"flex flex-col !mt-6"}>
-                            <Typography className={"!text-white !text-base !font-medium"}>
-                                {t("risks.list.4-title")}
-                            </Typography>
-                            <Typography className={"!text-white !text-base !mt-2"}>
-                                {t("risks.list.4-content")}
+                            <Typography
+                                variant={"muted"}
+                                className={"!text-[#999] text-center mt-4"}
+                            >
+                                { t("policy.licence-number") }
                             </Typography>
                         </div>
                     </div>
-                    <div className={"flex !my-4"}>
-                        <Typography className={"!text-[#7C808E] !text-base !mt-2"}>
-                            © 2025 Asia Future Trading
-                        </Typography>
-                    </div>
-                    <div className={"flex"}>
-                        <Image className={"mx-auto"} src={"/images/footer/large-logo.png"} width={2400} height={320}
-                               alt={"logo"}/>
+                    <Separator className={"bg-[#5C6379] my-10"}/>
+                    <div className={""}>
+                        <div className={"flex !items-center"}>
+                            <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}
+                                   alt={"australia"}
+                                   src={"/images/footer/australia.png"}/>
+                            <Typography className={"!ml-4 !text-white !text-base"}>
+                                {t("future.australia")}
+                            </Typography>
+                        </div>
+                        <div className={"flex !items-center !mt-4"}>
+                            <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}
+                                   alt={"australia"}
+                                   src={"/images/footer/vin.png"}/>
+                            <Typography className={"!ml-4 !text-white !text-base"}>
+                                {t("future.vin")}
+                            </Typography>
+                        </div>
+                        <div className={"flex flex-col mt-10"}>
+                            <div className={"flex flex-col"}>
+                                <Typography className={"!text-white !text-base !font-medium"}>
+                                    {t("risks.list.1-title")}
+                                </Typography>
+                                <Typography className={"!text-white !text-base !mt-2"}>
+                                    {t("risks.list.1-content")}
+                                </Typography>
+                            </div>
+                            <div className={"flex flex-col !mt-6"}>
+                                <Typography className={"!text-white !text-base !font-medium"}>
+                                    {t("risks.list.2-title")}
+                                </Typography>
+                                <Typography className={"!text-white !text-base !mt-2"}>
+                                    {t("risks.list.2-content")}
+                                </Typography>
+                            </div>
+                            <div className={"flex flex-col !mt-6"}>
+                                <Typography className={"!text-white !text-base !font-medium"}>
+                                    {t("risks.list.3-title")}
+                                </Typography>
+                                <Typography className={"!text-white !text-base !mt-2"}>
+                                    {t("risks.list.3-content")}
+                                </Typography>
+                            </div>
+                            <div className={"flex flex-col !mt-6"}>
+                                <Typography className={"!text-white !text-base !font-medium"}>
+                                    {t("risks.list.4-title")}
+                                </Typography>
+                                <Typography className={"!text-white !text-base !mt-2"}>
+                                    {t("risks.list.4-content")}
+                                </Typography>
+                            </div>
+                        </div>
+                        <div className={"flex !my-4"}>
+                            <Typography className={"!text-[#7C808E] !text-base !mt-2"}>
+                                © 2025 Asia Future Trading
+                            </Typography>
+                        </div>
+                        <div className={"flex"}>
+                            <Image className={"mx-auto"} src={"/images/footer/large-logo.png"} width={2400} height={320}
+                                   alt={"logo"}/>
+                        </div>
                     </div>
                 </Container>
             </div>

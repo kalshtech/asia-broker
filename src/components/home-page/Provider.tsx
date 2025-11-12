@@ -1,20 +1,26 @@
 "use client";
-import React from 'react'
+import React, {useState} from 'react'
 import { ThemeProvider } from 'next-themes';
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 function Provider({ children }: { children: React.ReactNode }) {
+    const [langDrawer, setLangDrawer] = useState(false);
+
+    const handleSwitchMobileLang = (switchLang: boolean) => {
+        setLangDrawer(switchLang);
+    };
+
     return (
         <ThemeProvider attribute="class" defaultTheme="system">
             <div className={"flex flex-col"}>
                 <header className={"h-[64px] leading-[64px]"}>
-                    <Navigation/>
+                    <Navigation switchLang={langDrawer} onWakeUp={handleSwitchMobileLang} />
                 </header>
                 <main>
                     { children }
                 </main>
-                <Footer/>
+                <Footer onWakeUp={handleSwitchMobileLang} />
             </div>
         </ThemeProvider>
     )
