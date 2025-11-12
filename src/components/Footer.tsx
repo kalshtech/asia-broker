@@ -102,7 +102,8 @@ const Footer = (props: Props) => {
                     <div className={"grid grid-cols-12 gap-4 lg:gap-8 space-y-4 lg:space-y-0"}>
                         <div className={"col-span-12 lg:col-span-3"}>
                             <div>
-                                <Image src={RenderTransparentLogo()} width={208} height={58} alt={"logo"}/>
+                                {/*<Image src={RenderTransparentLogo()} width={208} height={58} alt={"logo"}/>*/}
+                                <Image src={"/images/logo/footer-logo.png"} width={208} height={58} alt={"logo"}/>
                             </div>
                             <div className={"mt-8 lg:hidden"}>
                                 <div>
@@ -352,15 +353,15 @@ const Footer = (props: Props) => {
                                 </Typography>
                             </div>
                         </div>
-                        <div className={"flex !my-4"}>
+                        <div className={"flex mt-4 mb-16"}>
                             <Typography className={"!text-[#7C808E] !text-base !mt-2"}>
                                 © 2025 Asia Future Trading
                             </Typography>
                         </div>
-                        <div className={"flex"}>
-                            <Image className={"mx-auto"} src={"/images/footer/large-logo.png"} width={2400} height={320}
-                                   alt={"logo"}/>
-                        </div>
+                        {/*<div className={"flex"}>*/}
+                        {/*    <Image className={"mx-auto"} src={"/images/footer/large-logo.png"} width={2400} height={320}*/}
+                        {/*           alt={"logo"}/>*/}
+                        {/*</div>*/}
                     </div>
                 </Container>
             </div>
