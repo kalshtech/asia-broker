@@ -1,6 +1,4 @@
 "use client";
-
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import {
@@ -9,6 +7,7 @@ import {
     AccordionTrigger,
     AccordionContent,
 } from "@/components/ui/accordion";
+import { Link } from "@/i18n/navigation";
 import { Typography } from "@/components/ui/typography";
 
 type RawChild = { label: string; path: string };
