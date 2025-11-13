@@ -2984,40 +2984,40 @@
       },
       "banks": {
         "banner": {
-          "title": "Live Smarter. Spend Freely.",
-          "desc": "Use your AFT balance instantly for global online and in-store payments — powered byVisa & Mastercard. ",
-          "btnText": "Get AFT Card",
-          "prompt": "Please contact your account manager to confirm regional availability. Availability may vary depending on local laws and regulations."
+          "title": "更聪明地生活，自由地消费",
+          "desc": "使用您的 AFT 余额，轻松完成全球线上与线下支付 —— 由 Visa 与 Mastercard 强力支持。",
+          "btnText": "获取 AFT Card",
+          "prompt": "请联系您的客户经理确认地区可用性。实际开通情况可能因当地法律法规而有所差异。"
         },
         "access": {
-          "title": "VIC Exclusive · Premium Access",
-          "desc": "Enjoy full card privileges with no monthly fees and instant global access. VIC members receive free virtual and physical cards — no USD 20/month subscription required.",
-          "btnText": "Upgrade to VIC"
+          "title": "VIC 专属 · 高端权益",
+          "desc": "尊享完整卡片权益，无需月费，全球即时可用。VIC 会员可免费领取虚拟与实体卡——无需支付每月 20 美元订阅费用。",
+          "btnText": "升级至 VIC"
         },
         "spend": {
           "row": {
             "col1": {
-              "title": "Earn as You Spend.",
-              "desc": "Get up to 10% cashback, capped at 150 USD, for every purchase made with your AFT Card.",
-              "prompt": "Exclusive reward program for selected users — designed to give back every time you trade, shop, or travel."
+              "title": "消费即可返现",
+              "desc": "使用 AFT Card 消费可获得最高 10% 返现，上限 150 美元。",
+              "prompt": "面向特选用户的专属奖励计划——无论交易、购物或旅行，每次使用都能享受回馈。"
             },
             "col2": {
-              "title": "Spend in Crypto or Fiat. Pay in Freedom.",
-              "desc": "Use your digital or fiat balance anywhere — online, in-store, or on the go.",
-              "fiat": "Fiat:",
+              "title": "加密与法币随心用 · 支付更自由",
+              "desc": "无论数字资产或法币余额，均可在全球任意场景使用——线上、线下或移动支付轻松完成。",
+              "fiat": "法币：",
               "fiat-currency": "USD",
-              "crypto": "Crypto: ",
+              "crypto": "加密资产：",
               "crypto-text": "BTC, ETH, USDT"
             }
           }
         },
         "beginning": {
-          "title": "Your AFT Card is just the beginning. Earn While You Trade in MT5",
+          "title": "AFT Card 只是开始 · 在 MT5 一边交易一边赚取收益",
           "content": {
-            "title": "Exclusive to Platinum & VIC Accounts",
-            "desc": "Activate your Future Earn Account directly in MT5 to turn idle balances into daily yield — fully integrated with your trading ecosystem.",
-            "learn": "Learn About Future Earn",
-            "activate": "Activate in MT5"
+            "title": "Platinum 与 VIC 账户专属",
+            "desc": "在 MT5 中激活 Future Earn Account，将闲置资金自动转化为每日收益——与您的交易生态深度整合。",
+            "learn": "了解 Future Earn",
+            "activate": "在 MT5 中激活"
           }
         }
       }

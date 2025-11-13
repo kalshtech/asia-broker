@@ -3277,26 +3277,26 @@
       },
       "banks": {
         "banner": {
-          "title": "Live Smarter. Spend Freely.",
-          "desc": "Use your AFT balance instantly for global online and in-store payments — powered byVisa & Mastercard. ",
-          "btnText": "Get AFT Card",
-          "prompt": "Please contact your account manager to confirm regional availability. Availability may vary depending on local laws and regulations."
+          "title": "よりスマートに、もっと自由に。",
+          "desc": "AFT残高をそのまま世界中のオンライン／店頭決済で即時利用可能。Visa・Mastercard による安心の決済ネットワークでスムーズにお支払い。",
+          "btnText": "AFTカードを申し込む",
+          "prompt": "ご利用可能エリアは地域の法令・規制により異なります。詳細は担当アカウントマネージャーへお問い合わせください。"
         },
         "access": {
-          "title": "VIC Exclusive · Premium Access",
-          "desc": "Enjoy full card privileges with no monthly fees and instant global access. VIC members receive free virtual and physical cards — no USD 20/month subscription required.",
-          "btnText": "Upgrade to VIC"
+          "title": "VIC限定 · プレミアムアクセス",
+          "desc": "月額手数料なしでカード特典をフル活用。VIC会員はバーチャルカード・物理カードを無料で取得でき、USD 20/月のサブスクリプションは不要です。",
+          "btnText": "VICへアップグレード"
         },
         "spend": {
           "row": {
             "col1": {
-              "title": "Earn as You Spend.",
-              "desc": "Get up to 10% cashback, capped at 150 USD, for every purchase made with your AFT Card.",
-              "prompt": "Exclusive reward program for selected users — designed to give back every time you trade, shop, or travel."
+              "title": "使うたびに、もっとお得に。",
+              "desc": "AFTカードでのご利用額に応じて、最大10%（上限150 USD）のキャッシュバックを獲得できます。",
+              "prompt": "一部のお客様向けの特別リワードプログラム。取引・ショッピング・旅行など、あらゆる場面でより多くの還元を受けられるよう設計されています。"
             },
             "col2": {
-              "title": "Spend in Crypto or Fiat. Pay in Freedom.",
-              "desc": "Use your digital or fiat balance anywhere — online, in-store, or on the go.",
+              "title": "暗号資産でも法定通貨でも。支払いは自由に。",
+              "desc": "デジタル資産でも法定通貨でも、オンライン・店頭・外出先など、どこでもスムーズに利用できます。",
               "fiat": "Fiat:",
               "fiat-currency": "USD",
               "crypto": "Crypto: ",
@@ -3305,12 +3305,12 @@
           }
         },
         "beginning": {
-          "title": "Your AFT Card is just the beginning. Earn While You Trade in MT5",
+          "title": "AFTカードは、始まりにすぎません。MT5で“Earn While You Trade”を実現",
           "content": {
-            "title": "Exclusive to Platinum & VIC Accounts",
-            "desc": "Activate your Future Earn Account directly in MT5 to turn idle balances into daily yield — fully integrated with your trading ecosystem.",
-            "learn": "Learn About Future Earn",
-            "activate": "Activate in MT5"
+            "title": "Platinum & VIC アカウント限定",
+            "desc": "MT5から直接 Future Earn Account を有効化し、余剰資金を日次利回りへ。取引エコシステムに完全統合されたスマート運用を実現します。",
+            "learn": "Future Earn について詳しく見る",
+            "activate": "MT5で有効化"
           }
         }
       }
