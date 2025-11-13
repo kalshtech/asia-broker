@@ -12,7 +12,7 @@ import {CircleChevronLeft, CircleChevronRight} from "lucide-react";
 const CustomBanner = ({ ary }: { ary: any }) => {
     const t = useTranslations("Common");
     return (
-        <div className={"h-120 lg:h-[632px] relative"}>
+        <div className={"h-[700px] lg:h-[632px] relative"}>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
