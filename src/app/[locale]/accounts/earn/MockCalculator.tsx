@@ -3,7 +3,13 @@ import * as React from 'react'
 import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import Container from "@/components/Container";
-import { Slider } from "@/components/ui/slider"
+import { Slider } from "@/components/ui/slider";
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { formatAmount } from "@/utils/common";
 
 const total = 500000;
@@ -76,7 +82,28 @@ const MockCalculator = (props: Props) => {
                         </Typography>
                         <div className={"mt-4"}>
                             <div className="[&_span.bg-primary]:bg-theme-active">
-                                <Slider value={slider} onValueChange={(value) => setSlider(value)} />
+                                {/*<Slider value={slider} onValueChange={(value) => setSlider(value)} />*/}
+
+                                <div className="relative py-6">
+                                    <div
+                                        className="absolute -top-4 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded shadow transition-all duration-75 "
+                                        style={{
+                                            left: `${slider[0]}%`,
+                                        }}
+                                    >
+                                        {slider[0]}%
+                                        <div className="absolute left-1/2 top-full -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black"/>
+                                    </div>
+
+                                    <Slider
+                                        value={slider}
+                                        min={0}
+                                        max={100}
+                                        step={1}
+                                        onValueChange={(value) => setSlider(value)}
+                                        className="w-full"
+                                    />
+                                </div>
                             </div>
                             <div className={"flex mt-2"}>
                                 <div className={"text-white"}>USD 0</div>
