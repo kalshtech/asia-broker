@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Typography } from "@/components/ui/typography";
 import {Button} from "@/components/ui/button";
 import Container from "@/components/Container";
+import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: -20 },
@@ -90,12 +91,12 @@ const JoinUS = () => {
                                     {t("row.col2.desc2")}
                                 </Typography>
                                 <div className={"mt-10"}>
-                                    <Button
-                                        className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                        <img src="/images/home/discord-logo.webp" className={"w-6 h-6 object-cover"}
-                                             alt=""/>
-                                        {t("row.col2.join")}
-                                    </Button>
+                                    <GeneralLinkBtn
+                                        text={t("row.col2.join")}
+                                        theme={"active-solid"}
+                                        tradeType={"discord"}
+                                        isLink
+                                    />
                                 </div>
                             </div>
                         </div>

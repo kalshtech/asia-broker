@@ -40,7 +40,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                         <div>
                                             <Typography
                                                 variant={"h1"}
-                                                className={classnames(["max-w-2xl",{
+                                                className={classnames(["text-center lg:text-left max-w-2xl",{
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
                                                 }])}
@@ -50,7 +50,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
 
                                             <Typography
                                                 variant={"h6"}
-                                                className={classnames(["font-normal mt-6 xl:hidden", {
+                                                className={classnames(["text-center lg:text-left  font-normal mt-6 xl:hidden", {
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
                                                 }])}
@@ -60,7 +60,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
 
                                             <Typography
                                                 variant={"h4"}
-                                                className={classnames(["font-normal mt-6 hidden xl:block", {
+                                                className={classnames(["text-center lg:text-left  font-normal mt-6 hidden xl:block", {
                                                     "!text-white": item.theme === "dark",
                                                     "!text-black": item.theme === "light",
                                                 }])}
@@ -69,11 +69,11 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                             </Typography>
                                             <Typography
                                                 variant={"p"}
-                                                className={classnames(["font-normal mt-6 hidden !text-white xl:block"])}
+                                                className={classnames(["text-center lg:text-left  font-normal mt-6 hidden !text-white xl:block"])}
                                             >
                                                 {item.desc2}
                                             </Typography>
-                                            <div className={"mt-16"}>
+                                            <div className={"mt-16 flex justify-center lg:justify-start"}>
                                                 <GeneralLinkBtn
                                                     text={t("startTrade")}
                                                     theme={"active-solid"}

@@ -31,9 +31,12 @@ const JoinCommunity = (props: Props) => {
                             {t("join-community")}
                         </Typography>
                         <div className={"mt-4 xl:mt-0 xl:ml-auto flex"}>
-                            <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                {t("join-community-btn")}
-                            </Button>
+                            <GeneralLinkBtn
+                                text={t("join-community-btn")}
+                                theme={"active-solid"}
+                                tradeType={"discord"}
+                                isLink
+                            />
                             <GeneralLinkBtn
                                 text={t("register")}
                                 theme={theme === "light" ? "active-hollow" : "light-hollow"}

@@ -3,9 +3,7 @@ import React from "react";
 import {useTranslations} from "next-intl";
 import {Typography} from "@/components/ui/typography";
 import {motion, Variants} from "framer-motion";
-import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import GeneralLinkBtn from "@/components/button/GeneralLinkBtn";
 
@@ -83,10 +81,12 @@ const Community = () => {
                                         {t("row.2.description2")}
                                     </Typography>
                                     <div className={"mt-8"}>
-                                        <Button className={"bg-theme-active hover:bg-theme-active-hover"}>
-                                            <img src="/images/home/discord-logo.webp" className={"w-6 h-6 object-cover"} alt=""/>
-                                            {t("row.2.btnText")}
-                                        </Button>
+                                        <GeneralLinkBtn
+                                            text={t("row.2.btnText")}
+                                            theme={"active-solid"}
+                                            tradeType={"discord"}
+                                            isLink
+                                        />
                                     </div>
                                 </div>
                                 <div className={"mt-32 lg:mt-auto flex justify-center"}>

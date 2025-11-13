@@ -59,16 +59,19 @@ const Banner = () => {
                         >
                             {t("tips")}
                         </Typography>
-                        <div className={"xl:ml-auto"}>
+                        <div className={"flex items-center xl:ml-auto"}>
                             <GeneralLinkBtn
                                 text={t("view")}
                                 isLink
                                 theme={"light-solid"}
                             />
-                            <Button
-                                className={"mt-4 xl:mt-0 ml-4 text-theme-active bg-transparent text-white border hover:bg-transparent"}>
-                                {t("join")}
-                            </Button>
+                            <GeneralLinkBtn
+                                text={t("join")}
+                                theme={"light-hollow"}
+                                tradeType={"discord"}
+                                className={"mt-4 xl:mt-0 ml-4"}
+                                isLink
+                            />
                         </div>
                     </div>
                 </Container>

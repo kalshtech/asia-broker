@@ -12,7 +12,7 @@ type Props = {
     theme?: "light-solid" | "light-hollow" | "dark-solid" | "dark-hollow" | "active-solid" | "active-hollow" | "share" | "transparent";
     children?: React.ReactNode;
     isLink?: boolean;
-    tradeType?: "register" | "login"
+    tradeType?: "register" | "login" | "discord"
 }
 
 const GeneralLinkBtn = (props: Props) => {
@@ -24,6 +24,8 @@ const GeneralLinkBtn = (props: Props) => {
                 return "https://portal.asiafuturetrading.com/register/trader";
             case "login":
                 return "https://portal.asiafuturetrading.com/login";
+            case "discord":
+                return "https://discord.gg/FF9rQKGy";
             default:
                 return path;
         }
@@ -103,6 +105,11 @@ const GeneralLinkBtn = (props: Props) => {
                        }])}
                        title={text}
                     >
+                        {
+                            tradeType === "discord" && (
+                                <img src="/images/home/discord-logo.webp" className={"w-6 h-6 mr-2 object-cover"} alt=""/>
+                            )
+                        }
                         {text}
                         {children}
                         {theme === "share" && (
@@ -117,11 +124,16 @@ const GeneralLinkBtn = (props: Props) => {
                         }])}
                         title={text}
                     >
-                        { text }
-                        { children }
-                        { theme === "share" && (
+                        {
+                            tradeType === "discord" && (
+                                <img src="/images/home/discord-logo.webp" className={"w-6 h-6 mr-2 object-cover"} alt=""/>
+                            )
+                        }
+                        {text}
+                        {children}
+                        {theme === "share" && (
                             <ExternalLink className={"ml-1"}/>
-                        ) }
+                        )}
                     </Link>
                 )
             }

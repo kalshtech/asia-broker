@@ -87,30 +87,35 @@ const PackageMenuItem = (props: any) => {
                                             <div>
                                                 <ul>
                                                     {
-                                                        c_d.ul.map((ul_d: any, ul_i: any) => (
-                                                            <li key={ul_i} className={"group/menu-active my-2 p-4 hover:rounded-md hover:bg-[#EEF2FF]"}>
-                                                                <Link
-                                                                    href={ul_d.path}
-                                                                    className={"text-theme-active hover:text-theme-active-hover"}
-                                                                    onClick={() => setOpen(false)}
-                                                                    target={item._blank ? "_blank" : "_self"}
-                                                                >
-                                                                    <div className={"flex items-center"}>
-                                                                        <Typography variant={"large"}>
-                                                                            {ul_d.label}
-                                                                        </Typography>
-                                                                        { ul_d.icon && ul_d.icon }
-                                                                        <MoveRight className={"ml-auto hidden group-hover/menu-active:block"} />
-                                                                    </div>
+                                                        c_d.ul.map((ul_d: any, ul_i: any) => {
+                                                            return (
+                                                                <li key={ul_i}
+                                                                    className={"group/menu-active my-2 p-4 hover:rounded-md hover:bg-[#EEF2FF]"}>
+                                                                    <Link
+                                                                        href={ul_d.path}
+                                                                        className={"text-theme-active hover:text-theme-active-hover"}
+                                                                        onClick={() => setOpen(false)}
+                                                                        target={ul_d._blank ? "_blank" : "_self"}
+                                                                    >
+                                                                        <div className={"flex items-center"}>
+                                                                            <Typography variant={"large"}>
+                                                                                {ul_d.label}
+                                                                            </Typography>
+                                                                            {ul_d.icon && ul_d.icon}
+                                                                            <MoveRight
+                                                                                className={"ml-auto hidden group-hover/menu-active:block"}/>
+                                                                        </div>
 
-                                                                    { ul_d.desc && (
-                                                                        <Typography variant={"muted"} className={"mt-2"}>
-                                                                            {ul_d.desc}
-                                                                        </Typography>
-                                                                    ) }
-                                                                </Link>
-                                                            </li>
-                                                        ))
+                                                                        {ul_d.desc && (
+                                                                            <Typography variant={"muted"}
+                                                                                        className={"mt-2"}>
+                                                                                {ul_d.desc}
+                                                                            </Typography>
+                                                                        )}
+                                                                    </Link>
+                                                                </li>
+                                                            )
+                                                        })
                                                     }
                                                 </ul>
                                             </div>
@@ -122,7 +127,8 @@ const PackageMenuItem = (props: any) => {
                                 <div className={"w-full p-4 bg-theme-light-bg rounded-lg"}>
                                     <div className={"relative"}>
                                         <img className={"w-full h-full"} src={item.btnImg} alt=""/>
-                                        <div className={"absolute bottom-4 flex justify-center left-0 mx-auto right-0 max-w-[calc(100%-16px)]"}>
+                                        <div
+                                            className={"absolute bottom-4 flex justify-center left-0 mx-auto right-0 max-w-[calc(100%-16px)]"}>
                                             <GeneralLinkBtn
                                                 text={item.btn}
                                                 path={item.btnPath}
@@ -135,7 +141,7 @@ const PackageMenuItem = (props: any) => {
                                         <Typography
                                             variant={"muted"}
                                         >
-                                            { item.description }
+                                            {item.description}
                                         </Typography>
                                     </div>
                                 </div>
@@ -377,7 +383,7 @@ export const navigationMap = () => {
                         {
                             title: t("menu.support.row.col-2.title"),
                             ul: [
-                                { label: t("menu.support.row.col-2.ul.li1"), path: "/" },
+                                { label: t("menu.support.row.col-2.ul.li1"), _blank: true, path: "https://discord.com/invite/FF9rQKGy" },
                             ]
                         }
                     ]
