@@ -35,7 +35,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                     ary.map((item: any, index: number) => (
                         <SwiperSlide key={index}>
                             <div className={classnames([item.urlImage, "h-full bg-cover bg-center"])}>
-                                <div className={"py-12 lg:py-24"}>
+                                <div className={"py-8 lg:py-24"}>
                                     <Container>
                                         <div>
                                             <Typography
