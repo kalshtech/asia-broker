@@ -73,7 +73,7 @@ const CustomBanner = ({ ary }: { ary: any }) => {
                                             >
                                                 {item.desc2}
                                             </Typography>
-                                            <div className={"mt-16 flex justify-center lg:justify-start"}>
+                                            <div className={"mt-8 lg:mt-16 flex justify-center lg:justify-start"}>
                                                 <GeneralLinkBtn
                                                     text={t("startTrade")}
                                                     theme={"active-solid"}
