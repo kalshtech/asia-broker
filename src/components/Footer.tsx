@@ -231,7 +231,7 @@ const Footer = (props: Props) => {
                                     </Typography>
                                 </a>
                                 <a
-                                    href={"https://client.afttmarkets.com/register"}
+                                    href={"https://discord.gg/FF9rQKGy"}
                                     target={"_blank"}
                                     className={"flex items-center mt-5"}
                                 >

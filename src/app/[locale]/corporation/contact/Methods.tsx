@@ -57,14 +57,14 @@ const Methods = () => {
             title: t("row.col2.title"),
             desc: t("row.col2.desc"),
             btnText: t("row.col2.btnText"),
-            path: "https://discord.gg/FF9rQKG"
+            path: "https://discord.gg/FF9rQKGy"
         },
         {
             imageUrl: "/images/corporation/contact-methods3.png",
             title: t("row.col3.title"),
             desc: t("row.col3.desc"),
             btnText: t("row.col2.btnText"),
-            path: "https://discord.gg/FF9rQKG"
+            path: "https://discord.gg/FF9rQKGy"
         },
     ];
 

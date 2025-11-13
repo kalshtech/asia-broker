@@ -2866,7 +2866,7 @@
           "board": {
             "rates": "Today's Reference Rate (SOFR): ",
             "from": "Source：Federal Reserve Bank of New York (FRED: SOFR)",
-            "desc": "Future Earn is Asia Future Trading's yield solution for idle balances.  Interest is calculated daily, automatically credited, and withdrawable anytime without affecting trading.  Rates are benchmarked to SOFR for transparency and market alignment.  All interest is paid directly by Asia Future Trading, not from reinvestment or market activity.  Funds are never used for asset management, and reference rates do not constitute investment advice or guaranteed returns. ",
+            "desc": "Annual interest rate — annual interest on deposits of accounts included into this group. Interest is calculated at the end of each trading day on the amount of free assets (Free Margin) of a client excluding credit assets. During a month the amount of calculated interest is accumulated. Then at the end of the month (the end of the last day of the month) the accumulated amount of interest is added to the client account as a separate deal of the INTEREST RATE type;",
             "tag": "Interest distribution and platform mechanism details are outlined in the User Agreement. "
           }
         },
