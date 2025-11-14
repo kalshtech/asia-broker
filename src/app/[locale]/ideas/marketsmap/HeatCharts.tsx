@@ -30,13 +30,19 @@ const HeatCharts = () => {
     const tab = searchParams.get("tab") || "Overview";
     const type = searchParams.get("type") || "cross";
 
-    const [ tabActive, setTabActive ] = React.useState<string>(tab)
-    const [ typeActive, setTypeActive ] = React.useState<string>(type)
+    const [ tabActive, setTabActive ] = React.useState<string>(tab);
+    const [ typeActive, setTypeActive ] = React.useState<string>(type);
+
+    const typeList = [
+        { label: t("type.cross"), value: "cross" },
+        { label: t("type.heat"), value: "heatmap" },
+    ];
+
     const tabList = [
-        { label: "Overview", value: "Overview" },
-        { label: "Europe & Americas", value: "Europe or Americas" },
-        { label: "Asia-Pacific, Middle East & Africa", value: "Asia-Pacific, Middle East or Africa" },
-        { label: "G7 & BRICS", value: "G7 or BRICS" },
+        { label: t("tabs.1"), value: "Overview" },
+        { label: t("tabs.2"), value: "Europe or Americas" },
+        { label: t("tabs.3"), value: "Asia-Pacific, Middle East or Africa" },
+        { label: t("tabs.4"), value: "G7 or BRICS" },
     ];
 
     const overViewCurrencies = ["EUR", "USD", "AUD", "GBP", "NZD", "CAD", "CHF", "JPY", "CNY"];
@@ -119,14 +125,17 @@ const HeatCharts = () => {
                           onValueChange={handleToggleTypeActive}
                     >
                         <TabsList className={"h-10"}>
-                            <TabsTrigger value={"cross"}
-                                         className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
-                                Cross rates
-                            </TabsTrigger>
-                            <TabsTrigger value={"heatmap"}
-                                         className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}>
-                                Heatmap
-                            </TabsTrigger>
+                            {
+                                typeList.map((d, index) => (
+                                    <TabsTrigger
+                                        value={d.value}
+                                        key={index}
+                                        className={"data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"}
+                                    >
+                                        { d.label }
+                                    </TabsTrigger>
+                                ))
+                            }
                         </TabsList>
                     </Tabs>
                 </div>

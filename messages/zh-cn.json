@@ -1569,7 +1569,17 @@
           "crypto-title": "加密货币热力图",
           "crypto-midst": "追踪主流与新兴加密资产的市场流向与波动情况。",
           "crypto-desc": "从 BTC、ETH 到 SOL、DOGE，加密热力图一览全局，清晰呈现资金流向与板块轮动。",
-          "crypto-explore": "探索加密资产"
+          "crypto-explore": "探索加密资产",
+          "type": {
+            "cross": "交叉汇率",
+            "heat": "热力图"
+          },
+          "tabs": {
+            "1": "总览",
+            "2": "欧美地区",
+            "3": "亚太、中东与非洲",
+            "4": "G7 / 金砖国家"
+          }
         },
         "marketBanner": {
           "title": "Asia Future Trading 全球市场热力图"

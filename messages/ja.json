@@ -1862,7 +1862,17 @@
           "crypto-title": "暗号資産ヒートマップ",
           "crypto-midst": "主要および新興暗号通貨の資金フローとボラティリティを追跡。",
           "crypto-desc": "BTC・ETHからSOL・DOGEまで、暗号資産ヒートマップは資金集中エリアやセクター間のローテーションを一目で示します。",
-          "crypto-explore": "暗号資産市場を見る"
+          "crypto-explore": "暗号資産市場を見る",
+          "type": {
+            "cross": "クロスレート",
+            "heat": "ヒートマップ"
+          },
+          "tabs": {
+            "1": "概要",
+            "2": "欧州・アメリカ地域",
+            "3": "アジア太平洋・中東・アフリカ",
+            "4": "G7・BRICS"
+          }
         },
         "marketBanner": {
           "title": "Asia Future Trading マーケットヒートマップ"

@@ -1569,7 +1569,17 @@
           "crypto-title": "Crypto Heatmap",
           "crypto-midst": "Track market flow and volatility across leading and emerging cryptocurrencies. ",
           "crypto-desc": "From BTC and ETH to SOL and DOGE, the crypto heatmap highlights sector rotations and capital concentration zones — all in one view. ",
-          "crypto-explore": "Explore Crypto"
+          "crypto-explore": "Explore Crypto",
+          "type": {
+            "cross": "Cross rates",
+            "heat": "Heatmap"
+          },
+          "tabs": {
+            "1": "Overview",
+            "2": "Europe or Americas",
+            "3": "Asia-Pacific, Middle East or Africa",
+            "4": "G7 or BRICS"
+          }
         },
         "marketBanner": {
           "title": "Asia Future Trading Market Heatmap"
