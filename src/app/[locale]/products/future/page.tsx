@@ -22,21 +22,48 @@ export default async function Page() {
     ];
 
     const secondList = [
-        { symbol: "ES", name: "S&P 500 Index Futures" },
-        { symbol: "MES", name: "Micro S&P 500 Index Futures" },
-        { symbol: "NQ", name: "Nasdaq-100 Index Futures" },
-        { symbol: "MNQ", name: "Micro Nasdaq-100 Index Futures" },
-        { symbol: "YM", name: "Dow Jones Index Futures" },
-        { symbol: "MYM", name: "Micro Dow Jones Index Futures" },
-        { symbol: "FDAX", name: "German DAX Index Futures" },
-        // { symbol: "FDXM", name: "Mini DAX Index Futures" },
-        // { symbol: "FESX", name: "EURO STOXX 50 Index Futures" },
-        // { symbol: "HSI", name: "Hang Seng Index Futures" },
-        // { symbol: "MHI", name: "Mini Hang Seng Index Futures" },
-        // { symbol: "HHI", name: "Hang Seng China Enterprises Index Futures" },
-        // { symbol: "HTI", name: "Hang Seng Tech Index Futures" },
-        // { symbol: "MCA", name: "Mid-Cap A-Share Index Futures" },
-        // { symbol: "MCH", name: "Small-Cap A-Share Index Futures" }
+        {
+            "symbol": "^TTIN",
+            "name": "S&P/TSX Capped Industrials Index",
+            "exchange": "TSX",
+            "currency": "CAD"
+        },
+        {
+            "symbol": "^NYA",
+            "name": "NYSE Composite",
+            "exchange": "NYSE",
+            "currency": "USD"
+        },
+        {
+            "symbol": "^XAX",
+            "name": "NYSE American Composite Index",
+            "exchange": "NYSE",
+            "currency": "USD"
+        },
+        {
+            "symbol": "^NYITR",
+            "name": "NYSE International 100 Index",
+            "exchange": "NYSE",
+            "currency": "USD"
+        },
+        {
+            "symbol": "^DJU",
+            "name": "Dow Jones Utility Average",
+            "exchange": "NASDAQ",
+            "currency": "USD"
+        },
+        {
+            "symbol": "^DJUSSC",
+            "name": "Dow Jones U.S. Semiconductors Index",
+            "exchange": "NASDAQ",
+            "currency": "USD"
+        },
+        {
+            "symbol": "^DJITR",
+            "name": "Dow Jones Industrial Average Total Return",
+            "exchange": "NASDAQ",
+            "currency": "USD"
+        }
     ];
 
     const otherList = [
@@ -64,7 +91,7 @@ export default async function Page() {
     ];
 
     const marketTabList = [
-        { label: t("markets.btn.main"), value: "main" },
+        // { label: t("markets.btn.main"), value: "main" },
         { label: t("markets.btn.second"), value: "second" },
         // { label: t("markets.btn.other"), value: "other" },
         // { label: t("markets.btn.other-meta"), value: "other-meta" },
@@ -130,15 +157,11 @@ export default async function Page() {
                 midst={t("banner.midst")}
             />
             <Markets
-                mainRaw={mainList}
-                secondRaw={secondList}
-                otherRaw={otherList}
-                other4Raw={other4List}
+                mainRaw={secondList}
                 tabList={marketTabList}
                 title={t("markets.title")}
                 desc={t("markets.desc")}
                 trade={t("markets.trade")}
-                type={"future"}
                 placeholder={t("markets.search")}
             />
             <Row ary={rowAry} title={t("professional.title")} />

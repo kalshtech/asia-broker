@@ -59,13 +59,12 @@ type Props = {
     desc?: string;
     tabList?: TabItem[];
     trade: string;
-    type?: string;
     placeholder?: string;
 };
 
 const Markets = (props: Props) => {
     const CommonT = useTranslations("Common");
-    const { mainRaw, secondRaw, otherRaw, title, desc, tabList, trade, other4Raw, type = "elementary", placeholder } = props;
+    const { mainRaw, secondRaw, otherRaw, title, desc, tabList, trade, other4Raw, placeholder } = props;
 
     const [ tabActive, setTabActive ] = React.useState<string>("main");
     const [ rawData, setRawData ] = React.useState<RawItem[]>(mainRaw);
@@ -141,11 +140,7 @@ const Markets = (props: Props) => {
     }, [query, rawData]);
 
     React.useEffect(() => {
-        if(type === "elementary") {
-            handleLoadQuoteData();
-        } else if (type === "future") {
-            setLoading(false);
-        }
+        handleLoadQuoteData();
     }, [ tabActive ]);
 
     return (
@@ -184,7 +179,7 @@ const Markets = (props: Props) => {
                     {/*/>*/}
                 </div>
                 {
-                    tabList && (
+                    tabList && tabList.length > 1 && (
                         <div className={"mt-10"}>
                             <div className={"lg:hidden"}>
                                 <Select value={tabActive} onValueChange={handleToggleTabActive}>
@@ -227,132 +222,90 @@ const Markets = (props: Props) => {
                     )
                 }
                 <div className={"mt-4 lg:mt-10"}>
-                    {type === "elementary" && (
-                        <>
-                            <Table>
-                                <TableHeader>
-                                    <TableRow className={"bg-theme-active hover:bg-theme-active"}>
-                                        <TableHead className={"text-white"}>{CommonT("code")}</TableHead>
-                                        <TableHead className={"text-white"}>{CommonT("price")}</TableHead>
-                                        <TableHead className={"text-white"}>{CommonT("changePercentage")}</TableHead>
-                                        <TableHead
-                                            className={"text-white hidden xl:table-cell"}>{CommonT("change")}</TableHead>
-                                        <TableHead
-                                            className={"text-white hidden xl:table-cell"}>{CommonT("open")}</TableHead>
-                                        <TableHead
-                                            className={"text-white hidden xl:table-cell"}>{CommonT("high")}</TableHead>
-                                        <TableHead
-                                            className={"text-white hidden xl:table-cell"}>{CommonT("low")}</TableHead>
-                                        {/*<TableHead className={"text-white hidden xl:table-cell"}>{CommonT("volume")}</TableHead>*/}
-                                        <TableHead className={"text-white text-right w-[80px]"}></TableHead>
+                    <Table>
+                        <TableHeader>
+                            <TableRow className={"bg-theme-active hover:bg-theme-active"}>
+                                <TableHead className={"text-white w-48 lg:w-64 max-w-48 lg:max-w-64"}>{CommonT("code")}</TableHead>
+                                <TableHead className={"text-white"}>{CommonT("price")}</TableHead>
+                                <TableHead className={"text-white"}>{CommonT("changePercentage")}</TableHead>
+                                <TableHead
+                                    className={"text-white hidden xl:table-cell"}>{CommonT("change")}</TableHead>
+                                <TableHead
+                                    className={"text-white hidden xl:table-cell"}>{CommonT("open")}</TableHead>
+                                <TableHead
+                                    className={"text-white hidden xl:table-cell"}>{CommonT("high")}</TableHead>
+                                <TableHead
+                                    className={"text-white hidden xl:table-cell"}>{CommonT("low")}</TableHead>
+                                {/*<TableHead className={"text-white hidden xl:table-cell"}>{CommonT("volume")}</TableHead>*/}
+                                <TableHead className={"text-white text-right w-[80px]"}></TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {loading ? (
+                                Array.from({length: 6}).map((_, i) => (
+                                    <TableRow key={i}>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
+                                        <TableCell><Skeleton className="h-4 w-32"/></TableCell>
                                     </TableRow>
-                                </TableHeader>
-                                <TableBody>
-                                    {loading ? (
-                                        Array.from({length: 6}).map((_, i) => (
-                                            <TableRow key={i}>
-                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                                <TableCell><Skeleton className="h-4 w-32"/></TableCell>
-                                            </TableRow>
-                                        ))
-                                    ) : filtered.map((item: any, index: number) => (
-                                        <TableRow key={index}>
-                                            <TableCell className={"flex"}>
-                                                <Typography variant={"p"} className="font-medium">
-                                                    {item.symbol}
-                                                </Typography>
-                                            </TableCell>
-                                            <TableCell>
+                                ))
+                            ) : filtered.map((item: any, index: number) => (
+                                <TableRow key={index}>
+                                    <TableCell className={"flex flex-col"}>
+                                        <Typography variant={"h6"} className="font-medium">
+                                            {item.symbol.replace("^", " ")}
+                                        </Typography>
+                                        <Typography variant={"muted"} className={"text-xs !text-[#999]"}>
+                                            {item.name}
+                                        </Typography>
+                                    </TableCell>
+                                    <TableCell>
                                                 <span className={rangeCls(item.changesPercentage)}>
                                                     {formatMaxFixed(item.open)}
                                                 </span>
-                                            </TableCell>
-                                            <TableCell>
+                                    </TableCell>
+                                    <TableCell>
                                                 <span className={rangeCls(item.changesPercentage)}>
                                                     {rangeChange(item.changesPercentage)}
                                                 </span>
-                                            </TableCell>
-                                            <TableCell className={"hidden text-right xl:text-left xl:table-cell"}>
+                                    </TableCell>
+                                    <TableCell className={"hidden text-right xl:text-left xl:table-cell"}>
                                                  <span className={rangeCls(item.changesPercentage)}>
                                                     {formatMaxFixed(item.change)}
                                                 </span>
-                                            </TableCell>
-                                            <TableCell
-                                                className={"hidden xl:table-cell"}>{formatMaxFixed(item.open)}</TableCell>
-                                            <TableCell
-                                                className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayHigh)}</TableCell>
-                                            <TableCell
-                                                className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayLow)}</TableCell>
-                                            {/*<TableCell className={"hidden xl:table-cell"}>{convert(item.volume)}</TableCell>*/}
-                                            <TableHead className={"text-right text-theme-active w-[80px]"}>
-                                                <a href="https://portal.asiafuturetrading.com" target={"_blank"}>
-                                                    {CommonT("trade")}
-                                                </a>
-                                            </TableHead>
-                                        </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-                            {
-                                filtered.length === 0 && (
-                                    <div className={"flex py-8 justify-center"}>
-                                        { CommonT("nodata") }
-                                    </div>
-                                )
-                            }
-                            <div className={"mt-8 flex justify-center xl:mt-16"}>
-                                <GeneralLinkBtn
-                                    text={trade}
-                                    theme={"active-solid"}
-                                    tradeType={"login"}
-                                    isLink
-                                />
+                                    </TableCell>
+                                    <TableCell
+                                        className={"hidden xl:table-cell"}>{formatMaxFixed(item.open)}</TableCell>
+                                    <TableCell
+                                        className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayHigh)}</TableCell>
+                                    <TableCell
+                                        className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayLow)}</TableCell>
+                                    {/*<TableCell className={"hidden xl:table-cell"}>{convert(item.volume)}</TableCell>*/}
+                                    <TableHead className={"text-right text-theme-active w-[80px]"}>
+                                        <a href="https://portal.asiafuturetrading.com" target={"_blank"}>
+                                            {CommonT("trade")}
+                                        </a>
+                                    </TableHead>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                    {
+                        filtered.length === 0 && (
+                            <div className={"flex py-8 justify-center"}>
+                                { CommonT("nodata") }
                             </div>
-                        </>
-                    )}
-
-
-                    {type === "future" && (
-                        <>
-                            <Table>
-                                <TableHeader>
-                                    <TableRow>
-                                        <TableHead>{CommonT("code")}</TableHead>
-                                        <TableHead>{CommonT("productName")}</TableHead>
-                                    </TableRow>
-                                </TableHeader>
-                                <TableBody>
-                                    {filtered.map((item: any, index: number) => (
-                                        <TableRow key={index}>
-                                            <TableCell className={"flex"}>
-                                                <Typography className="font-medium">
-                                                    {item.symbol}
-                                                </Typography>
-                                            </TableCell>
-                                            <TableCell>{item.name}</TableCell>
-                                        </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-                            {
-                                filtered.length === 0 && (
-                                    <div className={"flex py-8 justify-center"}>
-                                        { CommonT("nodata") }
-                                    </div>
-                                )
-                            }
-                            <div className={"mt-8 flex justify-center xl:mt-16"}>
-                                <GeneralLinkBtn
-                                    text={trade}
-                                    theme={"active-solid"}
-                                    tradeType={"login"}
-                                    isLink
-                                />
-                            </div>
-                        </>
-                    )}
+                        )
+                    }
+                    <div className={"mt-8 flex justify-center xl:mt-16"}>
+                        <GeneralLinkBtn
+                            text={trade}
+                            theme={"active-solid"}
+                            tradeType={"login"}
+                            isLink
+                        />
+                    </div>
                 </div>
             </Container>
         </section>

@@ -19,13 +19,15 @@ export default async function Page() {
     ];
 
     const mainList = [
-        { symbol: "USOIL",  name: "" },
-        { symbol: "UKOIL",  name: "" },
-        { symbol: "Heating Oil",  name: "" },
+        { symbol: "ZLUSX",  name: "" },
+        { symbol: "CLUSD",  name: "" },
+        { symbol: "BZUSD",  name: "" },
+        { symbol: "HOUSD",  name: "" },
     ];
 
     const sendList = [
-        { symbol: "NATGAS", name: "" }
+        { symbol: "NGUSD", name: "" },
+        { symbol: "RBUSD", name: "" },
     ]
 
     const marketTabList = [
