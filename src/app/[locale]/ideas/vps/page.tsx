@@ -33,7 +33,7 @@ export default async function Page() {
             <LocalServer/>
             <Running/>
             <GlobalPoints/>
-            <Subscribe/>
+            {/*<Subscribe/>*/}
             <QuestionAnswer data={QA_DATA}/>
             <Tools/>
         </div>
