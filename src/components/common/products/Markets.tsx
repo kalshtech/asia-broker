@@ -283,7 +283,10 @@ const Markets = (props: Props) => {
                                         className={"hidden xl:table-cell"}>{formatMaxFixed(item.dayLow)}</TableCell>
                                     {/*<TableCell className={"hidden xl:table-cell"}>{convert(item.volume)}</TableCell>*/}
                                     <TableHead className={"text-right text-theme-active w-[80px]"}>
-                                        <a href="https://portal.asiafuturetrading.com" target={"_blank"}>
+                                        <a href="https://portal.asiafuturetrading.com"
+                                           className={"bg-theme-active text-white p-2 cursor-pointer rounded-lg"}
+                                           target={"_blank"}
+                                        >
                                             {CommonT("trade")}
                                         </a>
                                     </TableHead>
