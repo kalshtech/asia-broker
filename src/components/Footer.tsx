@@ -286,40 +286,40 @@ const Footer = (props: Props) => {
                             </Typography>
                         </div>
 
-                        <div className={"mt-8"}>
-                            <Typography
-                                variant={"muted"}
-                                className={"!text-white text-center"}
-                            >
-                                { t("policy.licence-title") }
-                            </Typography>
-                            <Typography
-                                variant={"muted"}
-                                className={"!text-[#999] text-center mt-4"}
-                            >
-                                { t("policy.licence-number") }
-                            </Typography>
-                        </div>
+                        {/*<div className={"mt-8"}>*/}
+                        {/*    <Typography*/}
+                        {/*        variant={"muted"}*/}
+                        {/*        className={"!text-white text-center"}*/}
+                        {/*    >*/}
+                        {/*        { t("policy.licence-title") }*/}
+                        {/*    </Typography>*/}
+                        {/*    <Typography*/}
+                        {/*        variant={"muted"}*/}
+                        {/*        className={"!text-[#999] text-center mt-4"}*/}
+                        {/*    >*/}
+                        {/*        { t("policy.licence-number") }*/}
+                        {/*    </Typography>*/}
+                        {/*</div>*/}
                     </div>
                     <Separator className={"bg-[#5C6379] my-10"}/>
                     <div className={""}>
-                        <div className={"flex !items-center"}>
-                            <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}
-                                   alt={"australia"}
-                                   src={"/images/footer/australia.png"}/>
-                            <Typography className={"!ml-4 !text-white !text-base"}>
-                                {t("future.australia")}
-                            </Typography>
-                        </div>
-                        <div className={"flex !items-center !mt-4"}>
-                            <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}
-                                   alt={"australia"}
-                                   src={"/images/footer/vin.png"}/>
-                            <Typography className={"!ml-4 !text-white !text-base"}>
-                                {t("future.vin")}
-                            </Typography>
-                        </div>
-                        <div className={"flex flex-col mt-10"}>
+                        {/*<div className={"flex !items-center"}>*/}
+                        {/*    <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}*/}
+                        {/*           alt={"australia"}*/}
+                        {/*           src={"/images/footer/australia.png"}/>*/}
+                        {/*    <Typography className={"!ml-4 !text-white !text-base"}>*/}
+                        {/*        {t("future.australia")}*/}
+                        {/*    </Typography>*/}
+                        {/*</div>*/}
+                        {/*<div className={"flex !items-center !mt-4"}>*/}
+                        {/*    <Image width={34} height={22} className={"!w-[34px] !h-[22px]"}*/}
+                        {/*           alt={"australia"}*/}
+                        {/*           src={"/images/footer/vin.png"}/>*/}
+                        {/*    <Typography className={"!ml-4 !text-white !text-base"}>*/}
+                        {/*        {t("future.vin")}*/}
+                        {/*    </Typography>*/}
+                        {/*</div>*/}
+                        <div className={"flex flex-col"}>
                             <div className={"flex flex-col"}>
                                 <Typography className={"!text-white !text-base !font-medium"}>
                                     {t("risks.list.1-title")}
