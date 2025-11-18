@@ -385,7 +385,7 @@ const Assets = () => {
                                                         variant={"muted"}
                                                         className={"!text-white ml-3 mt-1 roboto lg:mt-3"}
                                                     >
-                                                        {t("text.type.ul-desc4")}
+                                                        {t("text.safe.ul-desc3")}
                                                     </Typography>
                                                 </li>
                                             </ul>

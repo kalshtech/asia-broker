@@ -178,25 +178,21 @@
           "description": "浏览 MT5 页面，了解行情、交易工具及全球一级流动性路由。",
           "btn": "了解更多"
         },
-      
         "3": {
           "title": "Platinum 账户 · 高性能低成本之选",
           "description": "浏览 Platinum 页面：原始点差 0.0 起，支持加入 AFT 收益计划。",
           "btn": "了解更多"
         },
-      
         "4": {
           "title": "VIC 账户 · 机构级交易服务",
           "description": "进入 VIC 页面，查看高净值与机构交易者的专属执行路线与支持方案。",
           "btn": "了解更多"
         },
-      
         "5": {
           "title": "AFT 收益计划 · 闲时也能赚最高 5.6% APY",
           "description": "了解可在 MT5 账户中直接开启的按日计息、随存随取收益方案。",
           "btn": "了解更多"
         },
-      
         "6": {
           "title": "低延迟 VPS · 稳定执行支持",
           "description": "访问 VPS 页面，查看全球节点支持，部署你的高速自动化策略。",
@@ -318,6 +314,8 @@
             "ul-desc2": "链上出入金即时处理，自动清算快速完成，平均低于 10 分钟到账。",
             "ul-title3": "法币或加密 · 自由选择",
             "ul-desc3": "支持本地货币与数字资产结算，满足多币种清算需求。",
+            "ul-title4": "Fully compliant by design",
+            "ul-desc4": "Real-time risk controls and AML monitoring ensure safe transfers. ",
             "more": "查看全部方式"
           },
           "safe": {
@@ -325,8 +323,8 @@
             "description": "透明费用与实时安全守护。",
             "ul-title1": "0 费用",
             "ul-desc1": "所有支持的入金与出金方式均免收平台手续费。",
-            "ul-title4": "合规与风控",
-            "ul-desc4": "实时风控与反洗钱监测系统全程运行，确保资金安全无忧。",
+            "ul-title2": "合规与风控",
+            "ul-desc2": "实时风控与反洗钱监测系统全程运行，确保资金安全无忧。",
             "ul-title3": "资金保护",
             "ul-desc3": "异常资金自动标注，并进入人工审核流程。",
             "more": "查看全部方式"
@@ -340,6 +338,8 @@
             "ul-desc2": "余额可用于交易、生活或日常消费——随时随地。",
             "ul-title3": "支持 Visa 与 Mastercard",
             "ul-desc3": "从交易台到餐厅账单——资金由你掌控，兼顾生活与投资。",
+            "ul-title4": "随时随地，任何用途皆可。",
+            "ul-desc4": "从交易台到晚餐账单——你的资金，你做主。",
             "more": "申请 AFT 卡"
           }
         }
