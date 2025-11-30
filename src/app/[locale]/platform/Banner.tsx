@@ -19,7 +19,7 @@ const Banner = () => {
     const t = useTranslations("Pages.platform.banner");
     const CommonT = useTranslations("Common");
     const downloadAry = [
-        { imageUrl: "/images/platform/windows.png", url: "https://document.afttjp.com/AFTT_setup.exe", download: t("download"), vision: t("ul.windows") },
+        { imageUrl: "/images/platform/windows.png", url: "https://download.mql5.com/cdn/web/asia.future.trading/mt5/asiafuturetrading5setup.exe", download: t("download"), vision: t("ul.windows") },
         { imageUrl: "/images/platform/apple.png", url: "https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/MetaTrader5.pkg.zip?utm_source=support.metaquotes.net&utm_campaign=download.mt5.macos", download: t("download"), vision: t("ul.macos") },
         { imageUrl: "/images/platform/apple.png", url: "https://download.metatrader.com/cdn/mobile/mt5/ios?server=AsiaFutureTrading-Server", download: t("download"), vision: t("ul.ios") },
         { imageUrl: "/images/platform/android.png", url: "https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/metatrader5.apk?utm_source=www.metatrader5.com&utm_campaign=install.metaquotes", download: t("download"), vision: t("ul.android") },
